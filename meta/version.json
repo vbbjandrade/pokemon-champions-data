@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-04-16",
+  "gameVersion": "Pokemon Champions",
+  "dataFormat": "JSON",
+  "sources": [
+    "Pokemon Showdown (base stats, abilities, moves baseline, learnsets, type chart)",
+    "Serebii.net Champions pages (move corrections, new abilities, mega abilities)",
+    "Community verification (ongoing)"
+  ],
+  "verification": {
+    "description": "Each entry has a championsVerified boolean. True = confirmed against in-game Champions data. False = using Showdown/Gen 9 baseline, may differ in Champions.",
+    "stats": {
+      "pokemon_verified": 258,
+      "pokemon_total": 258,
+      "abilities_verified": 190,
+      "abilities_total": 191,
+      "moves_verified": 20,
+      "moves_total": 900,
+      "learnsets_verified": 0,
+      "learnsets_total": 258
+    },
+    "overridePattern": "For moves, championsOverride contains confirmed Champions values. Apps should use override values when present, fall back to baseline otherwise."
+  },
+  "counts": {
+    "pokemon": 258,
+    "moves": 900,
+    "abilities": 191,
+    "items": 583,
+    "natures": 25,
+    "types": 18
+  }
+}
