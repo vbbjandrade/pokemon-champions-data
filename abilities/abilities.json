@@ -917,7 +917,7 @@
   {
     "name": "Unseen Fist",
     "description": "This Pokemon's contact moves ignore the target's protection, except Max Guard.",
-    "championsVerified": false,
+    "championsVerified": true,
     "championsNote": "Damage reduced to 25% when breaking protection"
   },
   {

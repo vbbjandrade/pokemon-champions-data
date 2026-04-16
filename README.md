@@ -37,13 +37,13 @@ The 258 playable characters include base forms, mega evolutions, and regional va
 Fetch the full roster directly from the raw GitHub URL:
 
 ```bash
-curl https://raw.githubusercontent.com/otterlyclueless/pokemon-champions-data/main/pokemon/roster.json
+curl https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/pokemon/roster.json
 ```
 
 Fetch a single character's base stats:
 
 ```bash
-curl https://raw.githubusercontent.com/otterlyclueless/pokemon-champions-data/main/pokemon/base-stats.json \
+curl https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/pokemon/base-stats.json \
   | python3 -c "import sys, json; data = json.load(sys.stdin); print(json.dumps(data['charizard'], indent=2))"
 ```
 
@@ -52,7 +52,7 @@ curl https://raw.githubusercontent.com/otterlyclueless/pokemon-champions-data/ma
 ```js
 // Fetch and filter to Fire-type characters
 const roster = await fetch(
-  'https://raw.githubusercontent.com/otterlyclueless/pokemon-champions-data/main/pokemon/roster.json'
+  'https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/pokemon/roster.json'
 ).then(r => r.json());
 
 const fireTypes = roster.filter(p => p.types.includes('Fire'));
@@ -62,7 +62,7 @@ console.log(`Fire-type characters: ${fireTypes.length}`);
 ```js
 // Load base stats and find the fastest characters
 const baseStats = await fetch(
-  'https://raw.githubusercontent.com/otterlyclueless/pokemon-champions-data/main/pokemon/base-stats.json'
+  'https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/pokemon/base-stats.json'
 ).then(r => r.json());
 
 const bySpeed = Object.entries(baseStats)
@@ -80,7 +80,7 @@ bySpeed.forEach(([name, stats]) => {
 import json, urllib.request
 
 def fetch(path):
-    base = "https://raw.githubusercontent.com/otterlyclueless/pokemon-champions-data/main"
+    base = "https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main"
     with urllib.request.urlopen(f"{base}/{path}") as r:
         return json.load(r)
 
@@ -187,7 +187,7 @@ Pokemon is a trademark of Nintendo / Game Freak / The Pokemon Company Internatio
 
 Licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE). You are free to use, share, and adapt this data for any purpose, including commercial applications, as long as you give appropriate credit.
 
-**Credit line:** `Pokemon Champions Data — github.com/otterlyclueless/pokemon-champions-data (CC BY 4.0)`
+**Credit line:** `Pokemon Champions Data — github.com/pokemon-champions-data/pokemon-champions-data (CC BY 4.0)`
 
 ---
 
