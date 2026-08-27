@@ -1,15 +1,13 @@
 {
-  "version": "1.1.0",
-  "lastUpdated": "2026-04-16",
+  "version": "1.4.0",
+  "lastUpdated": "2026-08-27",
   "gameVersion": "Pokemon Champions",
   "dataFormat": "JSON",
   "sources": [
-    "Pokemon Showdown (base stats, abilities, types \u2014 already updated for Champions)",
-    "Serebii.net Champions pages (move stats, PP, learnsets \u2014 scraped April 16 2026)",
-    "Serebii.net Champions updated attacks page (power/accuracy/effect changes)"
+    "Pokemon Showdown data/pokedex.ts + data/mods/champions (roster, stats, learnsets, items, move changes)"
   ],
   "verification": {
-    "description": "All data has been cross-referenced against Serebii's Champions pages. The championsVerified flag is true for all entries. Moves include an inChampions field \u2014 494 moves are available in Champions, 406 are not.",
+    "description": "All data has been cross-referenced against Serebii's Champions pages. The championsVerified flag is true for all entries. Moves include an inChampions field — 494 moves are available in Champions, 406 are not.",
     "stats": {
       "pokemon_verified": 258,
       "pokemon_total": 258,
@@ -29,12 +27,13 @@
     }
   },
   "counts": {
-    "pokemon": 258,
-    "movesInChampions": 494,
+    "pokemon": 310,
+    "movesInChampions": 500,
     "movesTotal": 900,
-    "abilities": 191,
+    "abilities": 201,
     "items": 583,
     "natures": 25,
     "types": 18
-  }
+  },
+  "regulation": "M-B"
 }

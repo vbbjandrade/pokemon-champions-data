@@ -3552,5 +3552,715 @@
       "H": "Sticky Hold"
     },
     "championsVerified": true
+  },
+  {
+    "name": "Mega Raichu X",
+    "dexNumber": 26,
+    "types": [
+      "Electric"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Electric Surge"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Raichu Y",
+    "dexNumber": 26,
+    "types": [
+      "Electric"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "No Guard"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Vileplume",
+    "dexNumber": 45,
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Chlorophyll",
+      "H": "Effect Spore"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Tauros-Paldea-Aqua",
+    "dexNumber": 128,
+    "types": [
+      "Fighting",
+      "Water"
+    ],
+    "form": "Aqua",
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Anger Point",
+      "H": "Cud Chew"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Tauros-Paldea-Blaze",
+    "dexNumber": 128,
+    "types": [
+      "Fighting",
+      "Fire"
+    ],
+    "form": "Blaze",
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Anger Point",
+      "H": "Cud Chew"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Qwilfish",
+    "dexNumber": 211,
+    "types": [
+      "Water",
+      "Poison"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Swift Swim",
+      "H": "Intimidate"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Sceptile",
+    "dexNumber": 254,
+    "types": [
+      "Grass",
+      "Dragon"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Lightning Rod"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Sceptile",
+    "dexNumber": 254,
+    "types": [
+      "Grass"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Overgrow",
+      "H": "Unburden"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Blaziken",
+    "dexNumber": 257,
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Speed Boost"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Blaziken",
+    "dexNumber": 257,
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Blaze",
+      "H": "Speed Boost"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Swampert",
+    "dexNumber": 260,
+    "types": [
+      "Water",
+      "Ground"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Swift Swim"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Swampert",
+    "dexNumber": 260,
+    "types": [
+      "Water",
+      "Ground"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Torrent",
+      "H": "Damp"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Mawile",
+    "dexNumber": 303,
+    "types": [
+      "Steel",
+      "Fairy"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Huge Power"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mawile",
+    "dexNumber": 303,
+    "types": [
+      "Steel",
+      "Fairy"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Hyper Cutter",
+      "1": "Intimidate",
+      "H": "Sheer Force"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Metagross",
+    "dexNumber": 376,
+    "types": [
+      "Steel",
+      "Psychic"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Tough Claws"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Metagross",
+    "dexNumber": 376,
+    "types": [
+      "Steel",
+      "Psychic"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Clear Body",
+      "H": "Light Metal"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Staraptor",
+    "dexNumber": 398,
+    "types": [
+      "Fighting",
+      "Flying"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Contrary"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Staraptor",
+    "dexNumber": 398,
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Intimidate",
+      "H": "Reckless"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Rotom-Fan",
+    "dexNumber": 479,
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "form": "Fan",
+    "abilities": {
+      "0": "Levitate"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Rotom-Frost",
+    "dexNumber": 479,
+    "types": [
+      "Electric",
+      "Ice"
+    ],
+    "form": "Frost",
+    "abilities": {
+      "0": "Levitate"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Rotom-Heat",
+    "dexNumber": 479,
+    "types": [
+      "Electric",
+      "Fire"
+    ],
+    "form": "Heat",
+    "abilities": {
+      "0": "Levitate"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Rotom-Mow",
+    "dexNumber": 479,
+    "types": [
+      "Electric",
+      "Grass"
+    ],
+    "form": "Mow",
+    "abilities": {
+      "0": "Levitate"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Rotom-Wash",
+    "dexNumber": 479,
+    "types": [
+      "Electric",
+      "Water"
+    ],
+    "form": "Wash",
+    "abilities": {
+      "0": "Levitate"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Musharna",
+    "dexNumber": 518,
+    "types": [
+      "Psychic"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Forewarn",
+      "1": "Synchronize",
+      "H": "Telepathy"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Scolipede",
+    "dexNumber": 545,
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Shell Armor"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Scolipede",
+    "dexNumber": 545,
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Swarm",
+      "H": "Speed Boost"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Scrafty",
+    "dexNumber": 560,
+    "types": [
+      "Dark",
+      "Fighting"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Intimidate"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Scrafty",
+    "dexNumber": 560,
+    "types": [
+      "Dark",
+      "Fighting"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Shed Skin",
+      "1": "Moxie",
+      "H": "Intimidate"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Eelektross",
+    "dexNumber": 604,
+    "types": [
+      "Electric"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Eelevate"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Eelektross",
+    "dexNumber": 604,
+    "types": [
+      "Electric"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Levitate"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Pyroar",
+    "dexNumber": 668,
+    "types": [
+      "Fire",
+      "Normal"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Fire Mane"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Pyroar",
+    "dexNumber": 668,
+    "types": [
+      "Fire",
+      "Normal"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Rivalry",
+      "1": "Unnerve",
+      "H": "Moxie"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Meowstic-F",
+    "dexNumber": 678,
+    "types": [
+      "Psychic"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Trace"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Malamar",
+    "dexNumber": 687,
+    "types": [
+      "Dark",
+      "Psychic"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Contrary"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Malamar",
+    "dexNumber": 687,
+    "types": [
+      "Dark",
+      "Psychic"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Contrary",
+      "1": "Suction Cups",
+      "H": "Infiltrator"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Barbaracle",
+    "dexNumber": 689,
+    "types": [
+      "Rock",
+      "Fighting"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Tough Claws"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Barbaracle",
+    "dexNumber": 689,
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Tough Claws",
+      "1": "Sniper",
+      "H": "Pickpocket"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Dragalge",
+    "dexNumber": 691,
+    "types": [
+      "Poison",
+      "Dragon"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Regenerator"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Dragalge",
+    "dexNumber": 691,
+    "types": [
+      "Poison",
+      "Dragon"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Poison Touch",
+      "H": "Adaptability"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Gourgeist-Large",
+    "dexNumber": 711,
+    "types": [
+      "Ghost",
+      "Grass"
+    ],
+    "form": "Large",
+    "abilities": {
+      "0": "Pickup",
+      "1": "Frisk",
+      "H": "Insomnia"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Gourgeist-Small",
+    "dexNumber": 711,
+    "types": [
+      "Ghost",
+      "Grass"
+    ],
+    "form": "Small",
+    "abilities": {
+      "0": "Pickup",
+      "1": "Frisk",
+      "H": "Insomnia"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Gourgeist-Super",
+    "dexNumber": 711,
+    "types": [
+      "Ghost",
+      "Grass"
+    ],
+    "form": "Super",
+    "abilities": {
+      "0": "Pickup",
+      "1": "Frisk",
+      "H": "Insomnia"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Lycanroc-Dusk",
+    "dexNumber": 745,
+    "types": [
+      "Rock"
+    ],
+    "form": "Dusk",
+    "abilities": {
+      "0": "Tough Claws"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Lycanroc-Midnight",
+    "dexNumber": 745,
+    "types": [
+      "Rock"
+    ],
+    "form": "Midnight",
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Vital Spirit",
+      "H": "No Guard"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Grimmsnarl",
+    "dexNumber": 861,
+    "types": [
+      "Dark",
+      "Fairy"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Prankster",
+      "1": "Frisk",
+      "H": "Pickpocket"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Mega Falinks",
+    "dexNumber": 870,
+    "types": [
+      "Fighting"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Defiant"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Falinks",
+    "dexNumber": 870,
+    "types": [
+      "Fighting"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Battle Armor",
+      "H": "Defiant"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Basculegion-F",
+    "dexNumber": 902,
+    "types": [
+      "Water",
+      "Ghost"
+    ],
+    "form": "F",
+    "abilities": {
+      "0": "Swift Swim",
+      "1": "Adaptability",
+      "H": "Mold Breaker"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Overqwil",
+    "dexNumber": 904,
+    "types": [
+      "Dark",
+      "Poison"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Swift Swim",
+      "H": "Intimidate"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Houndstone",
+    "dexNumber": 972,
+    "types": [
+      "Ghost"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Sand Rush",
+      "H": "Fluffy"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Annihilape",
+    "dexNumber": 979,
+    "types": [
+      "Fighting",
+      "Ghost"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Vital Spirit",
+      "1": "Inner Focus",
+      "H": "Defiant"
+    },
+    "championsVerified": true
+  },
+  {
+    "name": "Gholdengo",
+    "dexNumber": 1000,
+    "types": [
+      "Steel",
+      "Ghost"
+    ],
+    "form": "Base",
+    "abilities": {
+      "0": "Good as Gold"
+    },
+    "championsVerified": true
   }
 ]

@@ -954,5 +954,55 @@
     "name": "Zero to Hero",
     "description": "If this Pokemon is a Palafin in Zero Form, switching out has it change to Hero Form.",
     "championsVerified": true
+  },
+  {
+    "name": "Battle Armor",
+    "description": "",
+    "championsVerified": true
+  },
+  {
+    "name": "Eelevate",
+    "description": "",
+    "championsVerified": true
+  },
+  {
+    "name": "Effect Spore",
+    "description": "",
+    "championsVerified": true
+  },
+  {
+    "name": "Electric Surge",
+    "description": "",
+    "championsVerified": true
+  },
+  {
+    "name": "Fire Mane",
+    "description": "",
+    "championsVerified": true
+  },
+  {
+    "name": "Fluffy",
+    "description": "",
+    "championsVerified": true
+  },
+  {
+    "name": "Forewarn",
+    "description": "",
+    "championsVerified": true
+  },
+  {
+    "name": "Good as Gold",
+    "description": "",
+    "championsVerified": true
+  },
+  {
+    "name": "Suction Cups",
+    "description": "",
+    "championsVerified": true
+  },
+  {
+    "name": "Vital Spirit",
+    "description": "",
+    "championsVerified": true
   }
 ]
