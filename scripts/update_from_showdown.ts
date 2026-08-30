@@ -23,7 +23,7 @@ import {
   type RepoPokemon,
   SHOWDOWN_SOURCE,
 } from './showdown_parser.ts';
-import { REGULATIONS, type RegulationDefinition } from './regulations.ts';
+import { getRegulation, REGULATIONS, type RegulationDefinition } from './regulations.ts';
 
 const ROOT_DIR = resolve(import.meta.dir, '..');
 const SOURCES_DIR = join(ROOT_DIR, 'data', 'sources');
@@ -242,19 +242,40 @@ async function main(): Promise<void> {
   writeJson(join(MASTER_DIR, 'moves.json'), sorted(master.moves), dryRun);
   writeJson(join(MASTER_DIR, 'abilities.json'), sorted(master.abilities), dryRun);
   writeJson(join(MASTER_DIR, 'items.json'), sorted(master.items), dryRun);
-  let resolved: ResolvedData = {
+  const masterResolved: ResolvedData = {
     roster: master.roster,
     moves: withSource(parsedMoves),
     abilities: master.abilities,
     items: master.items,
   };
+  const resolvedByRegulation = new Map<string, ResolvedData>();
+  const generatedRegulations = new Set<string>();
+  const generatingRegulations = new Set<string>();
 
-  for (const regulation of REGULATIONS) {
+  async function generateRegulation(regulation: RegulationDefinition): Promise<void> {
+    if (generatedRegulations.has(regulation.regulationId)) return;
+    if (generatingRegulations.has(regulation.regulationId)) {
+      throw new Error(`Circular regulation base detected at "${regulation.regulationId}".`);
+    }
+    generatingRegulations.add(regulation.regulationId);
+
+    let base = masterResolved;
+    if (regulation.baseRegulationId) {
+      await generateRegulation(getRegulation(regulation.baseRegulationId));
+      base = resolvedByRegulation.get(regulation.baseRegulationId)!;
+    }
+
     console.log(`Generating ${regulation.regulationId} delta...`);
     const deltaPath = join(ROOT_DIR, 'data', regulation.directoryName, 'delta.json');
-    const generated = makeDelta(regulation, resolved, await importMod(regulation), { moves: MovesText as RawRecord, abilities: AbilitiesText as RawRecord, items: ItemsText as RawRecord });
+    const generated = makeDelta(regulation, base, await importMod(regulation), { moves: MovesText as RawRecord, abilities: AbilitiesText as RawRecord, items: ItemsText as RawRecord });
     writeJson(deltaPath, preserveCustomDeltaValues(generated.delta, deltaPath), dryRun);
-    resolved = generated.resolved;
+    resolvedByRegulation.set(regulation.regulationId, generated.resolved);
+    generatedRegulations.add(regulation.regulationId);
+    generatingRegulations.delete(regulation.regulationId);
+  }
+
+  for (const regulation of REGULATIONS) {
+    await generateRegulation(regulation);
   }
 }
 

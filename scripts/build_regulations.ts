@@ -13,7 +13,7 @@ import type {
   RepoMove,
   RepoPokemon,
 } from './showdown_parser.ts';
-import { REGULATIONS, type RegulationDefinition } from './regulations.ts';
+import { getRegulationChain, REGULATIONS, type RegulationDefinition } from './regulations.ts';
 
 const ROOT_DIR = resolve(import.meta.dir, '..');
 const MASTER_DIR = join(ROOT_DIR, 'data', 'master');
@@ -86,9 +86,7 @@ function compile(regulation: RegulationDefinition): void {
   const masterAbilities = loadJson<Record<string, RepoAbility>>(join(MASTER_DIR, 'abilities.json'));
   const masterItems = loadJson<Record<string, RepoItem>>(join(MASTER_DIR, 'items.json'));
 
-  const targetIndex = REGULATIONS.findIndex(({ regulationId }) => regulationId === regulation.regulationId);
-  if (targetIndex < 0) throw new Error(`Unknown regulation "${regulation.regulationId}".`);
-  const layers = REGULATIONS.slice(0, targetIndex + 1).map((layer) => {
+  const layers = getRegulationChain(regulation.regulationId).map((layer) => {
     const delta = loadJson<RegulationDelta>(join(ROOT_DIR, 'data', layer.directoryName, 'delta.json'));
     if (delta.regulationId !== layer.regulationId) {
       throw new Error(`${layer.directoryName}/delta.json has regulationId "${delta.regulationId}"; expected "${layer.regulationId}".`);

@@ -31,7 +31,7 @@ The editable data is split into an unfiltered Showdown baseline and small, regul
 - `data/regm-a/delta.json` and `data/regm-b/delta.json` define legal roster entries and only the resource properties changed by that regulation. Learnsets are regulation-owned and stored in the delta because Showdown provides their complete regulation-specific sets.
 - `dist/regm-a/` and `dist/regm-b/` contain compiled consumer files: `roster.json`, `learnsets.json`, `moves.json`, `abilities.json`, and `items.json`.
 
-Reg M-B overrides master data. Each older regulation then overrides the resolved newer regulation, so Reg M-A is compiled as `master → Reg M-B → Reg M-A`.
+Each regulation declares its `baseRegulationId` in `scripts/regulations.ts`. A regulation without one overrides master data; a regulation with one applies on top of that base. For example, Reg M-A is compiled as `master → Reg M-B → Reg M-A`. This supports separate regulation families, such as M-* and Z-*, without relying on list order.
 
 `overrides.roster` is the regulation's legal-species list: an empty object keeps a master Pokémon unchanged, while supplied properties patch it. `baseStats` patches by stat; all other override properties replace their master value.
 
