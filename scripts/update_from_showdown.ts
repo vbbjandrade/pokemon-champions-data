@@ -94,6 +94,8 @@ function availabilityDelta<T extends RawRecord>(
       continue;
     }
     const changes = diffEntry(baseEntries[id], currentEntries[id]!);
+    // @ts-ignore
+    // TODO: fix this
     if (!baseAvailable.has(id) || Object.keys(changes).length > 0) delta[id] = changes;
   }
   return delta;
@@ -272,7 +274,10 @@ async function main(): Promise<void> {
   const parsedAbilities = parseAbilitiesEntries(rawAbilities as RawRecord, AbilitiesText as RawRecord);
   const parsedItems = parseItems(rawItems as RawRecord, ItemsText as RawRecord);
   const master = {
-    roster: withSources(parsePokedex(Object.fromEntries(Object.entries(Pokedex as RawRecord).filter(([, entry]) => entry.isNonstandard !== 'CAP')), { nameToIdMap: abilityIds, aliases: SHOWDOWN_ALIASES })),
+    roster: withSources(parsePokedex(
+      Object.fromEntries(Object.entries(Pokedex as RawRecord).filter(([, entry]) => Number(entry.num) > 0)),
+      { nameToIdMap: abilityIds, aliases: SHOWDOWN_ALIASES }
+    )),
     moves: withSources(Object.fromEntries(Object.entries(parsedMoves).map(([id, entry]) => { const { isNonstandard: _ignored, ...move } = entry; return [id, move]; })) as Record<string, RepoMove>),
     abilities: withSources(Object.fromEntries(Object.entries(parsedAbilities).map(([id, entry]) => [id, { name: entry.name ?? '', desc: entry.desc ?? null, shortDesc: entry.shortDesc ?? null, ...(entry.flags ? { flags: entry.flags } : {}) }])) as Record<string, RepoAbility>),
     items: withSources(Object.fromEntries(Object.entries(parsedItems).map(([id, entry]) => [id, { name: entry.name ?? '', desc: entry.desc ?? null, shortDesc: entry.shortDesc ?? null, ...(entry.flags ? { flags: entry.flags } : {}), isNonstandard: entry.isNonstandard ?? null }])) as Record<string, RepoItem>),

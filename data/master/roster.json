@@ -1,36 +1,4 @@
 {
-  "ababo": {
-    "dexNumber": -69,
-    "name": "Ababo",
-    "types": [
-      "Fairy"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "pixilate",
-      "1": "rattled",
-      "H": "owntempo"
-    },
-    "weightKg": 3.5,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 42,
-      "atk": 35,
-      "def": 27,
-      "spa": 35,
-      "spd": 35,
-      "spe": 38
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "abomasnow": {
     "dexNumber": 460,
     "name": "Abomasnow",
@@ -564,25 +532,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "alcremiecaramelswirl": {
-    "dexNumber": 0,
-    "name": "Alcremie-Caramel-Swirl",
-    "types": [],
-    "form": "Caramel-Swirl",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "alcremiegmax": {
     "dexNumber": 869,
     "name": "Gmax Alcremie",
@@ -609,120 +558,6 @@
       "spd": 121,
       "spe": 64
     },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "alcremielemoncream": {
-    "dexNumber": 0,
-    "name": "Alcremie-Lemon-Cream",
-    "types": [],
-    "form": "Lemon-Cream",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "alcremiematchacream": {
-    "dexNumber": 0,
-    "name": "Alcremie-Matcha-Cream",
-    "types": [],
-    "form": "Matcha-Cream",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "alcremiemintcream": {
-    "dexNumber": 0,
-    "name": "Alcremie-Mint-Cream",
-    "types": [],
-    "form": "Mint-Cream",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "alcremierainbowswirl": {
-    "dexNumber": 0,
-    "name": "Alcremie-Rainbow-Swirl",
-    "types": [],
-    "form": "Rainbow-Swirl",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "alcremierubycream": {
-    "dexNumber": 0,
-    "name": "Alcremie-Ruby-Cream",
-    "types": [],
-    "form": "Ruby-Cream",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "alcremierubyswirl": {
-    "dexNumber": 0,
-    "name": "Alcremie-Ruby-Swirl",
-    "types": [],
-    "form": "Ruby-Swirl",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
     "sources": [
       "smogon/pokemon-showdown"
     ]
@@ -2049,71 +1884,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "argalis": {
-    "dexNumber": -26,
-    "name": "Argalis",
-    "types": [
-      "Bug",
-      "Psychic"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "shedskin",
-      "1": "compoundeyes",
-      "H": "overcoat"
-    },
-    "weightKg": 341.4,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 60,
-      "atk": 90,
-      "def": 89,
-      "spa": 87,
-      "spd": 40,
-      "spe": 54
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "arghonaut": {
-    "dexNumber": -13,
-    "name": "Arghonaut",
-    "types": [
-      "Water",
-      "Fighting"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "unaware",
-      "H": "technician"
-    },
-    "weightKg": 151,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 105,
-      "atk": 110,
-      "def": 95,
-      "spa": 70,
-      "spd": 100,
-      "spe": 75
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "ariados": {
     "dexNumber": 168,
     "name": "Ariados",
@@ -2367,39 +2137,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "astrolotl": {
-    "dexNumber": -57,
-    "name": "Astrolotl",
-    "types": [
-      "Fire",
-      "Dragon"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "regenerator",
-      "1": "vitalspirit",
-      "H": "magician"
-    },
-    "weightKg": 50,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 108,
-      "atk": 108,
-      "def": 74,
-      "spa": 92,
-      "spd": 64,
-      "spe": 114
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "audino": {
     "dexNumber": 531,
     "name": "Audino",
@@ -2490,39 +2227,6 @@
       "spa": 99,
       "spd": 92,
       "spe": 58
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "aurumoth": {
-    "dexNumber": -27,
-    "name": "Aurumoth",
-    "types": [
-      "Bug",
-      "Psychic"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "weakarmor",
-      "1": "noguard",
-      "H": "lightmetal"
-    },
-    "weightKg": 193,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 110,
-      "atk": 120,
-      "def": 99,
-      "spa": 117,
-      "spd": 60,
-      "spe": 94
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -4305,39 +4009,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "brattler": {
-    "dexNumber": -28,
-    "name": "Brattler",
-    "types": [
-      "Dark",
-      "Grass"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "harvest",
-      "1": "infiltrator",
-      "H": "rattled"
-    },
-    "weightKg": 11.5,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 80,
-      "atk": 70,
-      "def": 40,
-      "spa": 20,
-      "spd": 90,
-      "spe": 30
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "braviary": {
     "dexNumber": 628,
     "name": "Braviary",
@@ -4397,39 +4068,6 @@
       "spa": 112,
       "spd": 70,
       "spe": 65
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "breezi": {
-    "dexNumber": -7,
-    "name": "Breezi",
-    "types": [
-      "Poison",
-      "Flying"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "unburden",
-      "1": "owntempo",
-      "H": "frisk"
-    },
-    "weightKg": 0.6,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 50,
-      "atk": 46,
-      "def": 69,
-      "spa": 60,
-      "spd": 50,
-      "spe": 75
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -4817,44 +4455,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "burmysandy": {
-    "dexNumber": 0,
-    "name": "Burmy-Sandy",
-    "types": [],
-    "form": "Sandy",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "burmytrash": {
-    "dexNumber": 0,
-    "name": "Burmy-Trash",
-    "types": [],
-    "form": "Trash",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "butterfree": {
     "dexNumber": 12,
     "name": "Butterfree",
@@ -5007,39 +4607,6 @@
       "spa": 115,
       "spd": 60,
       "spe": 55
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "caimanoe": {
-    "dexNumber": -37,
-    "name": "Caimanoe",
-    "types": [
-      "Water",
-      "Steel"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "waterveil",
-      "1": "heatproof",
-      "H": "lightmetal"
-    },
-    "weightKg": 72.5,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 73,
-      "atk": 85,
-      "def": 65,
-      "spa": 80,
-      "spd": 40,
-      "spe": 87
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -5257,38 +4824,6 @@
       "spa": 50,
       "spd": 150,
       "spe": 50
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "caribolt": {
-    "dexNumber": -47,
-    "name": "Caribolt",
-    "types": [
-      "Grass",
-      "Electric"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "overgrow",
-      "H": "galvanize"
-    },
-    "weightKg": 140,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 84,
-      "atk": 106,
-      "def": 82,
-      "spa": 77,
-      "spd": 80,
-      "spe": 106
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -5598,72 +5133,6 @@
       "spa": 20,
       "spd": 20,
       "spe": 45
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "cawdet": {
-    "dexNumber": -30,
-    "name": "Cawdet",
-    "types": [
-      "Steel",
-      "Flying"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "keeneye",
-      "1": "voltabsorb",
-      "H": "bigpecks"
-    },
-    "weightKg": 25,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 35,
-      "atk": 72,
-      "def": 85,
-      "spa": 40,
-      "spd": 55,
-      "spe": 88
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "cawmodore": {
-    "dexNumber": -31,
-    "name": "Cawmodore",
-    "types": [
-      "Steel",
-      "Flying"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "intimidate",
-      "1": "voltabsorb",
-      "H": "bigpecks"
-    },
-    "weightKg": 37,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 50,
-      "atk": 92,
-      "def": 130,
-      "spa": 65,
-      "spd": 75,
-      "spe": 118
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -6731,102 +6200,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "chromera": {
-    "dexNumber": -60,
-    "name": "Chromera",
-    "types": [
-      "Dark",
-      "Normal"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "colorchange"
-    },
-    "weightKg": 215,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 85,
-      "atk": 85,
-      "def": 115,
-      "spa": 115,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "chuggalong": {
-    "dexNumber": -75,
-    "name": "Chuggalong",
-    "types": [
-      "Dragon",
-      "Poison"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "armortail",
-      "1": "whitesmoke",
-      "H": "slowstart"
-    },
-    "weightKg": 201.6,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 45,
-      "atk": 43,
-      "def": 117,
-      "spa": 120,
-      "spd": 110,
-      "spe": 108
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "chuggon": {
-    "dexNumber": -73,
-    "name": "Chuggon",
-    "types": [
-      "Dragon",
-      "Poison"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "shellarmor",
-      "1": "whitesmoke",
-      "H": "slowstart"
-    },
-    "weightKg": 50,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 30,
-      "atk": 23,
-      "def": 77,
-      "spa": 55,
-      "spd": 65,
-      "spe": 30
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "cinccino": {
     "dexNumber": 573,
     "name": "Cinccino",
@@ -7392,39 +6765,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "colossoil": {
-    "dexNumber": -16,
-    "name": "Colossoil",
-    "types": [
-      "Ground",
-      "Dark"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "rebound",
-      "1": "guts",
-      "H": "unnerve"
-    },
-    "weightKg": 683.6,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 133,
-      "atk": 122,
-      "def": 72,
-      "spa": 71,
-      "spd": 72,
-      "spe": 95
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "combee": {
     "dexNumber": 415,
     "name": "Combee",
@@ -7610,38 +6950,6 @@
       "spa": 80,
       "spd": 69,
       "spe": 30
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "coribalis": {
-    "dexNumber": -52,
-    "name": "Coribalis",
-    "types": [
-      "Water",
-      "Bug"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "torrent",
-      "H": "poisonheal"
-    },
-    "weightKg": 24.5,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 76,
-      "atk": 69,
-      "def": 90,
-      "spa": 65,
-      "spd": 77,
-      "spe": 43
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -8217,39 +7525,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "cresceidon": {
-    "dexNumber": -72,
-    "name": "Cresceidon",
-    "types": [
-      "Water",
-      "Fairy"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "multiscale",
-      "1": "roughskin",
-      "H": "waterveil"
-    },
-    "weightKg": 999.9,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 80,
-      "atk": 32,
-      "def": 111,
-      "spa": 88,
-      "spd": 99,
-      "spe": 124
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "cresselia": {
     "dexNumber": 488,
     "name": "Cresselia",
@@ -8401,70 +7676,6 @@
       "spa": 59,
       "spd": 63,
       "spe": 58
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "crucibelle": {
-    "dexNumber": -39,
-    "name": "Crucibelle",
-    "types": [
-      "Rock",
-      "Poison"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "regenerator",
-      "1": "moldbreaker",
-      "H": "liquidooze"
-    },
-    "weightKg": 23.6,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 106,
-      "atk": 105,
-      "def": 65,
-      "spa": 75,
-      "spd": 85,
-      "spe": 104
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "crucibellemega": {
-    "dexNumber": -39,
-    "name": "Mega Crucibelle",
-    "types": [
-      "Rock",
-      "Poison"
-    ],
-    "form": "Mega",
-    "abilities": {
-      "0": "magicguard"
-    },
-    "weightKg": 22.5,
-    "requiredItem": "Crucibellite",
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 106,
-      "atk": 135,
-      "def": 75,
-      "spa": 91,
-      "spd": 125,
-      "spe": 108
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -8627,39 +7838,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "cupra": {
-    "dexNumber": -25,
-    "name": "Cupra",
-    "types": [
-      "Bug",
-      "Psychic"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "shielddust",
-      "1": "keeneye",
-      "H": "magicguard"
-    },
-    "weightKg": 4.8,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 50,
-      "atk": 60,
-      "def": 49,
-      "spa": 67,
-      "spd": 30,
-      "spe": 44
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "cursola": {
     "dexNumber": 864,
     "name": "Cursola",
@@ -8751,39 +7929,6 @@
       "spa": 85,
       "spd": 65,
       "spe": 121
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "cyclohm": {
-    "dexNumber": -15,
-    "name": "Cyclohm",
-    "types": [
-      "Electric",
-      "Dragon"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "shielddust",
-      "1": "static",
-      "H": "damp"
-    },
-    "weightKg": 59,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 108,
-      "atk": 60,
-      "def": 118,
-      "spa": 112,
-      "spd": 70,
-      "spe": 80
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -9253,63 +8398,6 @@
       "spd": 50,
       "spe": 75
     },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "deerlingautumn": {
-    "dexNumber": 0,
-    "name": "Deerling-Autumn",
-    "types": [],
-    "form": "Autumn",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "deerlingsummer": {
-    "dexNumber": 0,
-    "name": "Deerling-Summer",
-    "types": [],
-    "form": "Summer",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "deerlingwinter": {
-    "dexNumber": 0,
-    "name": "Deerling-Winter",
-    "types": [],
-    "form": "Winter",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
     "sources": [
       "smogon/pokemon-showdown"
     ]
@@ -10159,38 +9247,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "dorsoil": {
-    "dexNumber": -64,
-    "name": "Dorsoil",
-    "types": [
-      "Ground"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "oblivious",
-      "1": "guts",
-      "H": "unnerve"
-    },
-    "weightKg": 145,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 103,
-      "atk": 72,
-      "def": 52,
-      "spa": 61,
-      "spd": 52,
-      "spe": 65
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "dottler": {
     "dexNumber": 825,
     "name": "Dottler",
@@ -10411,39 +9467,6 @@
       "spa": 100,
       "spd": 75,
       "spe": 142
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "draggalong": {
-    "dexNumber": -74,
-    "name": "Draggalong",
-    "types": [
-      "Dragon",
-      "Poison"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "armortail",
-      "1": "whitesmoke",
-      "H": "slowstart"
-    },
-    "weightKg": 110,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 40,
-      "atk": 33,
-      "def": 92,
-      "spa": 95,
-      "spd": 80,
-      "spe": 85
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -11222,39 +10245,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "duohm": {
-    "dexNumber": -63,
-    "name": "Duohm",
-    "types": [
-      "Electric",
-      "Dragon"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "shielddust",
-      "1": "static",
-      "H": "damp"
-    },
-    "weightKg": 19.2,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 88,
-      "atk": 40,
-      "def": 103,
-      "spa": 77,
-      "spd": 60,
-      "spe": 60
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "duosion": {
     "dexNumber": 578,
     "name": "Duosion",
@@ -11916,38 +10906,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "electrelk": {
-    "dexNumber": -46,
-    "name": "Electrelk",
-    "types": [
-      "Grass",
-      "Electric"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "overgrow",
-      "H": "galvanize"
-    },
-    "weightKg": 41.5,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 59,
-      "atk": 81,
-      "def": 67,
-      "spa": 57,
-      "spd": 55,
-      "spe": 101
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "electrike": {
     "dexNumber": 309,
     "name": "Electrike",
@@ -12101,39 +11059,6 @@
       "spa": 85,
       "spd": 55,
       "spe": 30
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "embirch": {
-    "dexNumber": -4,
-    "name": "Embirch",
-    "types": [
-      "Fire",
-      "Grass"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "reckless",
-      "1": "leafguard",
-      "H": "chlorophyll"
-    },
-    "weightKg": 15,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 60,
-      "atk": 40,
-      "def": 55,
-      "spa": 65,
-      "spd": 40,
-      "spe": 60
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -12352,38 +11277,6 @@
       "spa": 90,
       "spd": 75,
       "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "equilibra": {
-    "dexNumber": -55,
-    "name": "Equilibra",
-    "types": [
-      "Steel",
-      "Ground"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "levitate",
-      "1": "bulletproof",
-      "H": "justified"
-    },
-    "weightKg": 51.3,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 102,
-      "atk": 50,
-      "def": 96,
-      "spa": 133,
-      "spd": 118,
-      "spe": 60
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -12924,37 +11817,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "fawnifer": {
-    "dexNumber": -45,
-    "name": "Fawnifer",
-    "types": [
-      "Grass"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "overgrow",
-      "H": "lightningrod"
-    },
-    "weightKg": 6.9,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 49,
-      "atk": 61,
-      "def": 42,
-      "spa": 52,
-      "spd": 40,
-      "spe": 76
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "fearow": {
     "dexNumber": 22,
     "name": "Fearow",
@@ -13201,39 +12063,6 @@
       "spa": 70,
       "spd": 125,
       "spe": 99
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "fidgit": {
-    "dexNumber": -8,
-    "name": "Fidgit",
-    "types": [
-      "Poison",
-      "Ground"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "persistent",
-      "1": "vitalspirit",
-      "H": "frisk"
-    },
-    "weightKg": 53,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 95,
-      "atk": 76,
-      "def": 109,
-      "spa": 90,
-      "spd": 80,
-      "spe": 105
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -13492,39 +12321,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "flarelm": {
-    "dexNumber": -5,
-    "name": "Flarelm",
-    "types": [
-      "Fire",
-      "Grass"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "rockhead",
-      "1": "battlearmor",
-      "H": "whitesmoke"
-    },
-    "weightKg": 73,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 90,
-      "atk": 50,
-      "def": 95,
-      "spa": 75,
-      "spd": 70,
-      "spe": 40
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "flareon": {
     "dexNumber": 136,
     "name": "Flareon",
@@ -13647,38 +12443,6 @@
       "spa": 55,
       "spd": 30,
       "spe": 75
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "floatoy": {
-    "dexNumber": -36,
-    "name": "Floatoy",
-    "types": [
-      "Water"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "waterveil",
-      "1": "heatproof",
-      "H": "swiftswim"
-    },
-    "weightKg": 1.9,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 48,
-      "atk": 70,
-      "def": 40,
-      "spa": 70,
-      "spd": 30,
-      "spe": 77
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -13860,39 +12624,6 @@
       "spa": 112,
       "spd": 154,
       "spe": 75
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "flox": {
-    "dexNumber": -76,
-    "name": "Flox",
-    "types": [
-      "Normal",
-      "Electric"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "static",
-      "1": "stickyhold",
-      "H": "cudchew"
-    },
-    "weightKg": 66.6,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 96,
-      "atk": 25,
-      "def": 67,
-      "spa": 73,
-      "spd": 68,
-      "spe": 61
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -14839,25 +13570,6 @@
       "spd": 82,
       "spe": 39
     },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "gastrodoneast": {
-    "dexNumber": 0,
-    "name": "Gastrodon-East",
-    "types": [],
-    "form": "East",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
     "sources": [
       "smogon/pokemon-showdown"
     ]
@@ -18047,39 +16759,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "hemogoblin": {
-    "dexNumber": -71,
-    "name": "Hemogoblin",
-    "types": [
-      "Fairy",
-      "Fire"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "pixilate",
-      "1": "intimidate",
-      "H": "owntempo"
-    },
-    "weightKg": 85,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 90,
-      "atk": 96,
-      "def": 87,
-      "spa": 96,
-      "spd": 89,
-      "spe": 55
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "heracross": {
     "dexNumber": 214,
     "name": "Heracross",
@@ -19682,39 +18361,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "jumbao": {
-    "dexNumber": -44,
-    "name": "Jumbao",
-    "types": [
-      "Grass",
-      "Fairy"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "trace",
-      "1": "overcoat",
-      "H": "drought"
-    },
-    "weightKg": 200,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 92,
-      "atk": 63,
-      "def": 97,
-      "spa": 124,
-      "spd": 104,
-      "spe": 96
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "jumpluff": {
     "dexNumber": 189,
     "name": "Jumpluff",
@@ -19743,38 +18389,6 @@
       "spa": 55,
       "spd": 95,
       "spe": 110
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "justyke": {
-    "dexNumber": -54,
-    "name": "Justyke",
-    "types": [
-      "Steel",
-      "Ground"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "levitate",
-      "1": "bulletproof",
-      "H": "justified"
-    },
-    "weightKg": 36.5,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 72,
-      "atk": 70,
-      "def": 56,
-      "spa": 83,
-      "spd": 68,
-      "spe": 30
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -20154,39 +18768,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "kerfluffle": {
-    "dexNumber": -41,
-    "name": "Kerfluffle",
-    "types": [
-      "Fairy",
-      "Fighting"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "naturalcure",
-      "1": "aromaveil",
-      "H": "friendguard"
-    },
-    "weightKg": 24.2,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 84,
-      "atk": 78,
-      "def": 86,
-      "spa": 115,
-      "spd": 88,
-      "spe": 119
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "kilowattrel": {
     "dexNumber": 941,
     "name": "Kilowattrel",
@@ -20378,39 +18959,6 @@
       "spa": 65,
       "spd": 55,
       "spe": 50
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "kitsunoh": {
-    "dexNumber": -14,
-    "name": "Kitsunoh",
-    "types": [
-      "Ghost",
-      "Steel"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "frisk",
-      "1": "limber",
-      "H": "trace"
-    },
-    "weightKg": 51,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 80,
-      "atk": 103,
-      "def": 85,
-      "spa": 55,
-      "spd": 80,
-      "spe": 120
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -20851,39 +19399,6 @@
       "spa": 55,
       "spd": 51,
       "spe": 65
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "krilowatt": {
-    "dexNumber": -17,
-    "name": "Krilowatt",
-    "types": [
-      "Electric",
-      "Water"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "trace",
-      "1": "magicguard",
-      "H": "minus"
-    },
-    "weightKg": 10.6,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 151,
-      "atk": 84,
-      "def": 73,
-      "spa": 83,
-      "spd": 74,
-      "spe": 105
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -23348,39 +21863,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "malaconda": {
-    "dexNumber": -29,
-    "name": "Malaconda",
-    "types": [
-      "Dark",
-      "Grass"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "harvest",
-      "1": "infiltrator",
-      "H": "drought"
-    },
-    "weightKg": 108.8,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 115,
-      "atk": 100,
-      "def": 60,
-      "spa": 40,
-      "spd": 130,
-      "spe": 55
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "malamar": {
     "dexNumber": 687,
     "name": "Malamar",
@@ -25029,72 +23511,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "miasmaw": {
-    "dexNumber": -59,
-    "name": "Miasmaw",
-    "types": [
-      "Bug",
-      "Dragon"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "neutralizinggas",
-      "1": "hypercutter",
-      "H": "compoundeyes"
-    },
-    "weightKg": 57,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 85,
-      "atk": 135,
-      "def": 60,
-      "spa": 88,
-      "spd": 105,
-      "spe": 99
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "miasmite": {
-    "dexNumber": -58,
-    "name": "Miasmite",
-    "types": [
-      "Bug",
-      "Dragon"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "neutralizinggas",
-      "1": "hypercutter",
-      "H": "compoundeyes"
-    },
-    "weightKg": 10.1,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 40,
-      "atk": 85,
-      "def": 60,
-      "spa": 52,
-      "spd": 52,
-      "spe": 44
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "mienfoo": {
     "dexNumber": 619,
     "name": "Mienfoo",
@@ -25503,63 +23919,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "miniorblue": {
-    "dexNumber": 0,
-    "name": "Minior-Blue",
-    "types": [],
-    "form": "Blue",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "miniorgreen": {
-    "dexNumber": 0,
-    "name": "Minior-Green",
-    "types": [],
-    "form": "Green",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "miniorindigo": {
-    "dexNumber": 0,
-    "name": "Minior-Indigo",
-    "types": [],
-    "form": "Indigo",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "miniormeteor": {
     "dexNumber": 774,
     "name": "Minior-Meteor",
@@ -25586,63 +23945,6 @@
       "spd": 100,
       "spe": 60
     },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "miniororange": {
-    "dexNumber": 0,
-    "name": "Minior-Orange",
-    "types": [],
-    "form": "Orange",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "miniorviolet": {
-    "dexNumber": 0,
-    "name": "Minior-Violet",
-    "types": [],
-    "form": "Violet",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "minioryellow": {
-    "dexNumber": 0,
-    "name": "Minior-Yellow",
-    "types": [],
-    "form": "Yellow",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
     "sources": [
       "smogon/pokemon-showdown"
     ]
@@ -25768,67 +24070,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "missingno": {
-    "dexNumber": 0,
-    "name": "MissingNo.",
-    "types": [
-      "Bird",
-      "Normal"
-    ],
-    "form": null,
-    "abilities": null,
-    "weightKg": 1590.8,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 33,
-      "atk": 136,
-      "def": 0,
-      "spa": 6,
-      "spd": 6,
-      "spe": 29
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "mollux": {
-    "dexNumber": -24,
-    "name": "Mollux",
-    "types": [
-      "Fire",
-      "Poison"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "dryskin",
-      "H": "illuminate"
-    },
-    "weightKg": 41,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 95,
-      "atk": 45,
-      "def": 83,
-      "spa": 131,
-      "spd": 105,
-      "spe": 76
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "moltres": {
     "dexNumber": 146,
     "name": "Moltres",
@@ -25917,38 +24158,6 @@
       "spa": 78,
       "spd": 52,
       "spe": 81
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "monohm": {
-    "dexNumber": -62,
-    "name": "Monohm",
-    "types": [
-      "Electric"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "shielddust",
-      "1": "static",
-      "H": "damp"
-    },
-    "weightKg": 4.1,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 53,
-      "atk": 40,
-      "def": 58,
-      "spa": 67,
-      "spd": 55,
-      "spe": 55
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -26371,39 +24580,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "mumbao": {
-    "dexNumber": -43,
-    "name": "Mumbao",
-    "types": [
-      "Grass",
-      "Fairy"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "trace",
-      "1": "overcoat",
-      "H": "solarpower"
-    },
-    "weightKg": 83,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 55,
-      "atk": 30,
-      "def": 64,
-      "spa": 87,
-      "spd": 73,
-      "spe": 66
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "munchlax": {
     "dexNumber": 446,
     "name": "Munchlax",
@@ -26691,39 +24867,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "naviathan": {
-    "dexNumber": -38,
-    "name": "Naviathan",
-    "types": [
-      "Water",
-      "Steel"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "guts",
-      "1": "heatproof",
-      "H": "lightmetal"
-    },
-    "weightKg": 510,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 103,
-      "atk": 110,
-      "def": 90,
-      "spa": 95,
-      "spd": 65,
-      "spe": 97
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "necrozma": {
     "dexNumber": 800,
     "name": "Necrozma",
@@ -26838,68 +24981,6 @@
       "spa": 167,
       "spd": 97,
       "spe": 129
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "necturine": {
-    "dexNumber": -22,
-    "name": "Necturine",
-    "types": [
-      "Grass",
-      "Ghost"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "anticipation",
-      "H": "telepathy"
-    },
-    "weightKg": 1.8,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "F"
-    ],
-    "baseStats": {
-      "hp": 49,
-      "atk": 55,
-      "def": 60,
-      "spa": 50,
-      "spd": 75,
-      "spe": 51
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "necturna": {
-    "dexNumber": -23,
-    "name": "Necturna",
-    "types": [
-      "Grass",
-      "Ghost"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "forewarn",
-      "H": "telepathy"
-    },
-    "weightKg": 49.6,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "F"
-    ],
-    "baseStats": {
-      "hp": 64,
-      "atk": 120,
-      "def": 100,
-      "spa": 85,
-      "spd": 120,
-      "spe": 58
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -27315,38 +25396,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "nohface": {
-    "dexNumber": -61,
-    "name": "Nohface",
-    "types": [
-      "Ghost"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "frisk",
-      "1": "limber",
-      "H": "unnerve"
-    },
-    "weightKg": 5.9,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 50,
-      "atk": 73,
-      "def": 50,
-      "spa": 30,
-      "spd": 50,
-      "spe": 80
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "noibat": {
     "dexNumber": 714,
     "name": "Noibat",
@@ -27537,39 +25586,6 @@
       "spa": 21,
       "spd": 25,
       "spe": 45
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "obliteryx": {
-    "dexNumber": -80,
-    "name": "Obliteryx",
-    "types": [
-      "Dark",
-      "Flying"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "opportunist",
-      "1": "earlybird",
-      "H": "sniper"
-    },
-    "weightKg": 62,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 102,
-      "atk": 128,
-      "def": 126,
-      "spa": 45,
-      "spd": 78,
-      "spe": 64
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -28447,37 +26463,6 @@
       "spa": 45,
       "spd": 90,
       "spe": 95
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pajantom": {
-    "dexNumber": -42,
-    "name": "Pajantom",
-    "types": [
-      "Dragon",
-      "Ghost"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "comatose"
-    },
-    "weightKg": 3.1,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 84,
-      "atk": 133,
-      "def": 71,
-      "spa": 51,
-      "spd": 111,
-      "spe": 101
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -30386,71 +28371,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "plasmanta": {
-    "dexNumber": -35,
-    "name": "Plasmanta",
-    "types": [
-      "Electric",
-      "Poison"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "stormdrain",
-      "1": "vitalspirit",
-      "H": "telepathy"
-    },
-    "weightKg": 460,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 60,
-      "atk": 57,
-      "def": 119,
-      "spa": 131,
-      "spd": 98,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pluffle": {
-    "dexNumber": -40,
-    "name": "Pluffle",
-    "types": [
-      "Fairy"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "naturalcure",
-      "1": "aromaveil",
-      "H": "friendguard"
-    },
-    "weightKg": 1.8,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 74,
-      "atk": 38,
-      "def": 51,
-      "spa": 65,
-      "spd": 78,
-      "spe": 49
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "plusle": {
     "dexNumber": 311,
     "name": "Plusle",
@@ -30506,515 +28426,6 @@
       "spa": 73,
       "spd": 67,
       "spe": 73
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarblackbelt": {
-    "dexNumber": -5014,
-    "name": "Pokestar Black Belt",
-    "types": [
-      "Fighting"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "hugepower"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarblackdoor": {
-    "dexNumber": -5012,
-    "name": "Pokestar Black Door",
-    "types": [
-      "Grass"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "earlybird"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "F"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarbrycenman": {
-    "dexNumber": -5002,
-    "name": "Pokestar Brycen-Man",
-    "types": [
-      "Dark",
-      "Psychic"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "levitate"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarf00": {
-    "dexNumber": -5009,
-    "name": "Pokestar F-00",
-    "types": [
-      "Steel",
-      "Normal"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "voltabsorb"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarf002": {
-    "dexNumber": -5010,
-    "name": "Pokestar F-002",
-    "types": [
-      "Steel",
-      "Normal"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "reckless"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestargiant": {
-    "dexNumber": -5006,
-    "name": "Pokestar Giant",
-    "types": [
-      "Normal"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "hugepower"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "F"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarhumanoid": {
-    "dexNumber": -5007,
-    "name": "Pokestar Humanoid",
-    "types": [
-      "Normal"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "insomnia"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarmonster": {
-    "dexNumber": -5008,
-    "name": "Pokestar Monster",
-    "types": [
-      "Dark"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "pressure"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarmt": {
-    "dexNumber": -5003,
-    "name": "Pokestar MT",
-    "types": [
-      "Steel"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "analytic"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarmt2": {
-    "dexNumber": -5004,
-    "name": "Pokestar MT2",
-    "types": [
-      "Steel",
-      "Electric"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "flashfire"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarsmeargle": {
-    "dexNumber": -5000,
-    "name": "Pokestar Smeargle",
-    "types": [
-      "Normal"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "owntempo",
-      "1": "technician",
-      "H": "moody"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 55,
-      "atk": 20,
-      "def": 35,
-      "spa": 20,
-      "spd": 45,
-      "spe": 75
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarspirit": {
-    "dexNumber": -5011,
-    "name": "Pokestar Spirit",
-    "types": [
-      "Dark",
-      "Ghost"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "wonderguard"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestartransport": {
-    "dexNumber": -5005,
-    "name": "Pokestar Transport",
-    "types": [
-      "Steel"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "motordrive"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarufo": {
-    "dexNumber": -5001,
-    "name": "Pokestar UFO",
-    "types": [
-      "Flying",
-      "Electric"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "levitate"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarufo2": {
-    "dexNumber": -5001,
-    "name": "Pokestar UFO-2",
-    "types": [
-      "Psychic",
-      "Electric"
-    ],
-    "form": "2",
-    "abilities": {
-      "0": "levitate"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarufopropu2": {
-    "dexNumber": -5001,
-    "name": "Pokestar UFO-PropU2",
-    "types": [
-      "Psychic",
-      "Electric"
-    ],
-    "form": "PropU2",
-    "abilities": {
-      "0": "levitate"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pokestarwhitedoor": {
-    "dexNumber": -5013,
-    "name": "Pokestar White Door",
-    "types": [
-      "Fire"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "blaze"
-    },
-    "weightKg": 61,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 100,
-      "spa": 100,
-      "spd": 100,
-      "spe": 100
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -31586,38 +28997,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "privatyke": {
-    "dexNumber": -12,
-    "name": "Privatyke",
-    "types": [
-      "Water",
-      "Fighting"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "unaware",
-      "H": "technician"
-    },
-    "weightKg": 35,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 65,
-      "atk": 75,
-      "def": 65,
-      "spa": 40,
-      "spd": 60,
-      "spe": 45
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "probopass": {
     "dexNumber": 476,
     "name": "Probopass",
@@ -31646,39 +29025,6 @@
       "spa": 75,
       "spd": 150,
       "spe": 40
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "protowatt": {
-    "dexNumber": -65,
-    "name": "Protowatt",
-    "types": [
-      "Electric",
-      "Water"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "trace",
-      "1": "magicguard",
-      "H": "minus"
-    },
-    "weightKg": 0.1,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 51,
-      "atk": 44,
-      "def": 33,
-      "spa": 43,
-      "spd": 34,
-      "spe": 65
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -31938,39 +29284,6 @@
       "spa": 64,
       "spd": 59,
       "spe": 112
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "pyroak": {
-    "dexNumber": -6,
-    "name": "Pyroak",
-    "types": [
-      "Fire",
-      "Grass"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "rockhead",
-      "1": "battlearmor",
-      "H": "contrary"
-    },
-    "weightKg": 168,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 120,
-      "atk": 70,
-      "def": 105,
-      "spa": 70,
-      "spd": 65,
-      "spe": 60
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -32604,66 +29917,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "ramnarok": {
-    "dexNumber": -78,
-    "name": "Ramnarok",
-    "types": [
-      "Fire",
-      "Steel"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "noguard"
-    },
-    "weightKg": 250,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 110,
-      "atk": 56,
-      "def": 104,
-      "spa": 111,
-      "spd": 134,
-      "spe": 85
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "ramnarokradiant": {
-    "dexNumber": -78,
-    "name": "Ramnarok-Radiant",
-    "types": [
-      "Fire",
-      "Ice"
-    ],
-    "form": "Radiant",
-    "abilities": {
-      "0": "noguard"
-    },
-    "weightKg": 182,
-    "requiredItem": null,
-    "requiredMove": "Polar Flare",
-    "canEvolve": false,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 110,
-      "atk": 56,
-      "def": 85,
-      "spa": 141,
-      "spd": 54,
-      "spe": 154
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "rampardos": {
     "dexNumber": 409,
     "name": "Rampardos",
@@ -32976,37 +30229,6 @@
       "spa": 180,
       "spd": 100,
       "spe": 115
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "rebble": {
-    "dexNumber": -9,
-    "name": "Rebble",
-    "types": [
-      "Rock"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "levitate",
-      "1": "solidrock",
-      "H": "sniper"
-    },
-    "weightKg": 7,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 45,
-      "atk": 25,
-      "def": 65,
-      "spa": 75,
-      "spd": 55,
-      "spe": 80
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -33374,39 +30596,6 @@
       "spa": 54,
       "spd": 67,
       "spe": 90
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "revenankh": {
-    "dexNumber": -3,
-    "name": "Revenankh",
-    "types": [
-      "Ghost",
-      "Fighting"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "airlock",
-      "1": "triage",
-      "H": "shedskin"
-    },
-    "weightKg": 44,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 90,
-      "atk": 105,
-      "def": 90,
-      "spa": 65,
-      "spd": 110,
-      "spe": 65
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -34263,70 +31452,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "saharaja": {
-    "dexNumber": -68,
-    "name": "Saharaja",
-    "types": [
-      "Ground"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "waterabsorb",
-      "1": "serenegrace",
-      "H": "sandspit"
-    },
-    "weightKg": 303.9,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 70,
-      "atk": 112,
-      "def": 105,
-      "spa": 65,
-      "spd": 123,
-      "spe": 78
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "saharascal": {
-    "dexNumber": -67,
-    "name": "Saharascal",
-    "types": [
-      "Ground"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "waterabsorb",
-      "1": "pickpocket",
-      "H": "sandspit"
-    },
-    "weightKg": 48,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 50,
-      "atk": 80,
-      "def": 65,
-      "spa": 45,
-      "spd": 90,
-      "spe": 70
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "salamence": {
     "dexNumber": 373,
     "name": "Salamence",
@@ -34927,38 +32052,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "scattervein": {
-    "dexNumber": -70,
-    "name": "Scattervein",
-    "types": [
-      "Fairy"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "pixilate",
-      "1": "intimidate",
-      "H": "owntempo"
-    },
-    "weightKg": 25,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 75,
-      "atk": 74,
-      "def": 87,
-      "spa": 62,
-      "spd": 89,
-      "spe": 63
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "sceptile": {
     "dexNumber": 254,
     "name": "Sceptile",
@@ -35336,39 +32429,6 @@
       "spa": 35,
       "spd": 70,
       "spe": 48
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "scratchet": {
-    "dexNumber": -20,
-    "name": "Scratchet",
-    "types": [
-      "Normal",
-      "Fighting"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "scrappy",
-      "1": "prankster",
-      "H": "vitalspirit"
-    },
-    "weightKg": 20,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 55,
-      "atk": 85,
-      "def": 80,
-      "spa": 20,
-      "spd": 70,
-      "spe": 40
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -36036,25 +33096,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "shelloseast": {
-    "dexNumber": 0,
-    "name": "Shellos-East",
-    "types": [],
-    "form": "East",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "shelmet": {
     "dexNumber": 616,
     "name": "Shelmet",
@@ -36212,39 +33253,6 @@
       "spa": 40,
       "spd": 34,
       "spe": 45
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "shox": {
-    "dexNumber": -77,
-    "name": "Shox",
-    "types": [
-      "Normal",
-      "Electric"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "electromorphosis",
-      "1": "stickyhold",
-      "H": "cudchew"
-    },
-    "weightKg": 99.9,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 136,
-      "atk": 55,
-      "def": 87,
-      "spa": 108,
-      "spd": 108,
-      "spe": 56
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -38076,101 +35084,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "smogecko": {
-    "dexNumber": -48,
-    "name": "Smogecko",
-    "types": [
-      "Fire"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "blaze",
-      "H": "technician"
-    },
-    "weightKg": 8.5,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 48,
-      "atk": 66,
-      "def": 43,
-      "spa": 58,
-      "spd": 48,
-      "spe": 56
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "smoguana": {
-    "dexNumber": -49,
-    "name": "Smoguana",
-    "types": [
-      "Fire",
-      "Ground"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "blaze",
-      "H": "technician"
-    },
-    "weightKg": 22.2,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 68,
-      "atk": 86,
-      "def": 53,
-      "spa": 68,
-      "spd": 68,
-      "spe": 76
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "smokomodo": {
-    "dexNumber": -50,
-    "name": "Smokomodo",
-    "types": [
-      "Fire",
-      "Ground"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "blaze",
-      "H": "technician"
-    },
-    "weightKg": 205,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 88,
-      "atk": 116,
-      "def": 67,
-      "spa": 88,
-      "spd": 78,
-      "spe": 97
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "smoliv": {
     "dexNumber": 928,
     "name": "Smoliv",
@@ -38230,38 +35143,6 @@
       "spa": 85,
       "spd": 65,
       "spe": 65
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "snaelstrom": {
-    "dexNumber": -53,
-    "name": "Snaelstrom",
-    "types": [
-      "Water",
-      "Bug"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "torrent",
-      "H": "poisonheal"
-    },
-    "weightKg": 120,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 91,
-      "atk": 94,
-      "def": 110,
-      "spa": 80,
-      "spd": 97,
-      "spe": 63
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -38589,39 +35470,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "snugglow": {
-    "dexNumber": -34,
-    "name": "Snugglow",
-    "types": [
-      "Electric",
-      "Poison"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "stormdrain",
-      "1": "vitalspirit",
-      "H": "telepathy"
-    },
-    "weightKg": 6,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 40,
-      "atk": 37,
-      "def": 79,
-      "spa": 91,
-      "spd": 68,
-      "spe": 70
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "sobble": {
     "dexNumber": 816,
     "name": "Sobble",
@@ -38710,39 +35558,6 @@
       "spa": 105,
       "spd": 50,
       "spe": 20
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "solotl": {
-    "dexNumber": -56,
-    "name": "Solotl",
-    "types": [
-      "Fire",
-      "Dragon"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "regenerator",
-      "1": "vitalspirit",
-      "H": "magician"
-    },
-    "weightKg": 11.8,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 68,
-      "atk": 48,
-      "def": 34,
-      "spa": 72,
-      "spd": 24,
-      "spe": 84
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -39727,37 +36542,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "stratagem": {
-    "dexNumber": -11,
-    "name": "Stratagem",
-    "types": [
-      "Rock"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "levitate",
-      "1": "technician",
-      "H": "sniper"
-    },
-    "weightKg": 45,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 90,
-      "atk": 60,
-      "def": 65,
-      "spa": 120,
-      "spd": 70,
-      "spe": 130
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "stufful": {
     "dexNumber": 759,
     "name": "Stufful",
@@ -40335,37 +37119,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "swirlpool": {
-    "dexNumber": -51,
-    "name": "Swirlpool",
-    "types": [
-      "Water"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "torrent",
-      "H": "poisonheal"
-    },
-    "weightKg": 7,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 61,
-      "atk": 49,
-      "def": 70,
-      "spa": 50,
-      "spd": 62,
-      "spe": 28
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "swoobat": {
     "dexNumber": 528,
     "name": "Swoobat",
@@ -40399,72 +37152,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "syclant": {
-    "dexNumber": -2,
-    "name": "Syclant",
-    "types": [
-      "Ice",
-      "Bug"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "compoundeyes",
-      "1": "mountaineer",
-      "H": "icebody"
-    },
-    "weightKg": 52,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 70,
-      "atk": 116,
-      "def": 70,
-      "spa": 114,
-      "spd": 64,
-      "spe": 121
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "syclar": {
-    "dexNumber": -1,
-    "name": "Syclar",
-    "types": [
-      "Ice",
-      "Bug"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "compoundeyes",
-      "1": "snowcloak",
-      "H": "icebody"
-    },
-    "weightKg": 4,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 40,
-      "atk": 76,
-      "def": 45,
-      "spa": 74,
-      "spd": 39,
-      "spe": 91
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "sylveon": {
     "dexNumber": 700,
     "name": "Sylveon",
@@ -40491,37 +37178,6 @@
       "spa": 110,
       "spd": 130,
       "spe": 60
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "tactite": {
-    "dexNumber": -10,
-    "name": "Tactite",
-    "types": [
-      "Rock"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "levitate",
-      "1": "technician",
-      "H": "sniper"
-    },
-    "weightKg": 16,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 70,
-      "atk": 40,
-      "def": 65,
-      "spa": 100,
-      "spd": 65,
-      "spe": 95
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -42005,39 +38661,6 @@
       "spa": 80,
       "spd": 105,
       "spe": 40
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "tomohawk": {
-    "dexNumber": -21,
-    "name": "Tomohawk",
-    "types": [
-      "Flying",
-      "Fighting"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "intimidate",
-      "1": "prankster",
-      "H": "justified"
-    },
-    "weightKg": 37.2,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 105,
-      "atk": 60,
-      "def": 90,
-      "spa": 115,
-      "spd": 80,
-      "spe": 85
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -43720,67 +40343,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "venomicon": {
-    "dexNumber": -66,
-    "name": "Venomicon",
-    "types": [
-      "Poison",
-      "Flying"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "stamina",
-      "H": "powerofalchemy"
-    },
-    "weightKg": 11.5,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 85,
-      "atk": 50,
-      "def": 113,
-      "spa": 118,
-      "spd": 90,
-      "spe": 64
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "venomiconepilogue": {
-    "dexNumber": -66,
-    "name": "Venomicon-Epilogue",
-    "types": [
-      "Poison",
-      "Flying"
-    ],
-    "form": "Epilogue",
-    "abilities": {
-      "0": "tintedlens"
-    },
-    "weightKg": 12.4,
-    "requiredItem": "Vile Vial",
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "N"
-    ],
-    "baseStats": {
-      "hp": 85,
-      "atk": 102,
-      "def": 85,
-      "spa": 62,
-      "spd": 85,
-      "spe": 101
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "venomoth": {
     "dexNumber": 49,
     "name": "Venomoth",
@@ -44284,63 +40846,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "vivillonarchipelago": {
-    "dexNumber": 0,
-    "name": "Vivillon-Archipelago",
-    "types": [],
-    "form": "Archipelago",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivilloncontinental": {
-    "dexNumber": 0,
-    "name": "Vivillon-Continental",
-    "types": [],
-    "form": "Continental",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivillonelegant": {
-    "dexNumber": 0,
-    "name": "Vivillon-Elegant",
-    "types": [],
-    "form": "Elegant",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "vivillonfancy": {
     "dexNumber": 666,
     "name": "Vivillon-Fancy",
@@ -44374,158 +40879,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "vivillongarden": {
-    "dexNumber": 0,
-    "name": "Vivillon-Garden",
-    "types": [],
-    "form": "Garden",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivillonhighplains": {
-    "dexNumber": 0,
-    "name": "Vivillon-High Plains",
-    "types": [],
-    "form": "High Plains",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivillonicysnow": {
-    "dexNumber": 0,
-    "name": "Vivillon-Icy Snow",
-    "types": [],
-    "form": "Icy Snow",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivillonjungle": {
-    "dexNumber": 0,
-    "name": "Vivillon-Jungle",
-    "types": [],
-    "form": "Jungle",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivillonmarine": {
-    "dexNumber": 0,
-    "name": "Vivillon-Marine",
-    "types": [],
-    "form": "Marine",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivillonmodern": {
-    "dexNumber": 0,
-    "name": "Vivillon-Modern",
-    "types": [],
-    "form": "Modern",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivillonmonsoon": {
-    "dexNumber": 0,
-    "name": "Vivillon-Monsoon",
-    "types": [],
-    "form": "Monsoon",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivillonocean": {
-    "dexNumber": 0,
-    "name": "Vivillon-Ocean",
-    "types": [],
-    "form": "Ocean",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "vivillonpokeball": {
     "dexNumber": 666,
     "name": "Vivillon-Pokeball",
@@ -44555,120 +40908,6 @@
       "spd": 50,
       "spe": 89
     },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivillonpolar": {
-    "dexNumber": 0,
-    "name": "Vivillon-Polar",
-    "types": [],
-    "form": "Polar",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivillonriver": {
-    "dexNumber": 0,
-    "name": "Vivillon-River",
-    "types": [],
-    "form": "River",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivillonsandstorm": {
-    "dexNumber": 0,
-    "name": "Vivillon-Sandstorm",
-    "types": [],
-    "form": "Sandstorm",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivillonsavanna": {
-    "dexNumber": 0,
-    "name": "Vivillon-Savanna",
-    "types": [],
-    "form": "Savanna",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivillonsun": {
-    "dexNumber": 0,
-    "name": "Vivillon-Sun",
-    "types": [],
-    "form": "Sun",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "vivillontundra": {
-    "dexNumber": 0,
-    "name": "Vivillon-Tundra",
-    "types": [],
-    "form": "Tundra",
-    "abilities": null,
-    "weightKg": 0,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": null,
     "sources": [
       "smogon/pokemon-showdown"
     ]
@@ -44766,72 +41005,6 @@
       "smogon/pokemon-showdown"
     ]
   },
-  "volkraken": {
-    "dexNumber": -33,
-    "name": "Volkraken",
-    "types": [
-      "Water",
-      "Fire"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "analytic",
-      "1": "infiltrator",
-      "H": "pressure"
-    },
-    "weightKg": 44.5,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 100,
-      "atk": 45,
-      "def": 80,
-      "spa": 135,
-      "spd": 100,
-      "spe": 95
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "volkritter": {
-    "dexNumber": -32,
-    "name": "Volkritter",
-    "types": [
-      "Water",
-      "Fire"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "anticipation",
-      "1": "infiltrator",
-      "H": "unnerve"
-    },
-    "weightKg": 15,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 60,
-      "atk": 30,
-      "def": 50,
-      "spa": 80,
-      "spd": 60,
-      "spe": 70
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
   "voltorb": {
     "dexNumber": 100,
     "name": "Voltorb",
@@ -44890,72 +41063,6 @@
       "spa": 55,
       "spd": 55,
       "spe": 100
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "voodoll": {
-    "dexNumber": -18,
-    "name": "Voodoll",
-    "types": [
-      "Normal",
-      "Dark"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "voltabsorb",
-      "1": "lightningrod",
-      "H": "cursedbody"
-    },
-    "weightKg": 25,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": true,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 55,
-      "atk": 40,
-      "def": 55,
-      "spa": 75,
-      "spd": 50,
-      "spe": 70
-    },
-    "sources": [
-      "smogon/pokemon-showdown"
-    ]
-  },
-  "voodoom": {
-    "dexNumber": -19,
-    "name": "Voodoom",
-    "types": [
-      "Fighting",
-      "Dark"
-    ],
-    "form": null,
-    "abilities": {
-      "0": "voltabsorb",
-      "1": "lightningrod",
-      "H": "cursedbody"
-    },
-    "weightKg": 75.5,
-    "requiredItem": null,
-    "requiredMove": null,
-    "canEvolve": false,
-    "genders": [
-      "M",
-      "F"
-    ],
-    "baseStats": {
-      "hp": 90,
-      "atk": 85,
-      "def": 80,
-      "spa": 130,
-      "spd": 80,
-      "spe": 110
     },
     "sources": [
       "smogon/pokemon-showdown"
