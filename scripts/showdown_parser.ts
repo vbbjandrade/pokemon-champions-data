@@ -92,7 +92,6 @@ export interface VersionInfo {
 }
 
 export const SHOWDOWN_SOURCE = 'smogon/pokemon-showdown';
-export const SHOWDOWN_CHAMPIONS_SOURCE = 'showdown-champions';
 
 /**
  * Normalizes a string to a Showdown-style identifier (lowercase alphanumeric).
@@ -485,7 +484,7 @@ export interface SyncResult<T> {
  *   - If identical: keep repo entry (and its verified flag).
  *   - If different: update payload, keep custom source if present, mark verified = false.
  */
-export function syncCollection<T extends { source?: string; verified?: boolean; name?: string; [key: string]: any }>(
+export function syncCollection<T extends { source?: string; verified?: boolean; name?: string;[key: string]: any }>(
   collectionName: string,
   repoData: Record<string, T>,
   showdownData: Record<string, T>,
@@ -565,7 +564,7 @@ export function syncCollection<T extends { source?: string; verified?: boolean; 
         });
       } else {
         // Values changed
-        const isCustomSource = repoSource && repoSource !== defaultSource && repoSource !== SHOWDOWN_CHAMPIONS_SOURCE;
+        const isCustomSource = repoSource && repoSource !== defaultSource;
         const finalSource = isCustomSource ? repoSource : defaultSource;
 
         result[id] = {

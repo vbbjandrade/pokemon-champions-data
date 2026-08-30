@@ -26,7 +26,6 @@ import {
   type RepoLearnset,
   type RepoMove,
   type RepoPokemon,
-  SHOWDOWN_CHAMPIONS_SOURCE,
   SHOWDOWN_SOURCE,
   syncCollection,
   type SyncLogEntry,
@@ -365,7 +364,7 @@ Options:
       dexNumber: pk.dexNumber,
       form: pk.form,
       moves: moveList,
-      source: SHOWDOWN_CHAMPIONS_SOURCE,
+      source: SHOWDOWN_SOURCE,
       verified: false,
     };
 
@@ -382,7 +381,7 @@ Options:
     'Learnsets',
     repoLearnsets,
     sdLearnsets,
-    SHOWDOWN_CHAMPIONS_SOURCE,
+    SHOWDOWN_SOURCE,
     dexOrder
   );
   logger.addSyncLogs(syncedLearnsets.logs);

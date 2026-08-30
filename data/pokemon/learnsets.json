@@ -61,7 +61,7 @@
       "weatherball",
       "worryseed"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "venusaurmega": {
@@ -126,7 +126,7 @@
       "weatherball",
       "worryseed"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "charizard": {
@@ -206,7 +206,7 @@
       "weatherball",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "charizardmegax": {
@@ -286,7 +286,7 @@
       "weatherball",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "charizardmegay": {
@@ -366,7 +366,7 @@
       "weatherball",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "blastoise": {
@@ -447,7 +447,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "blastoisemega": {
@@ -528,7 +528,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "beedrill": {
@@ -589,7 +589,7 @@
       "venoshock",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "beedrillmega": {
@@ -650,7 +650,7 @@
       "venoshock",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "pidgeot": {
@@ -689,7 +689,7 @@
       "uturn",
       "whirlwind"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "pidgeotmega": {
@@ -728,7 +728,7 @@
       "uturn",
       "whirlwind"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "arbok": {
@@ -806,7 +806,7 @@
       "venoshock",
       "wrap"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "pikachu": {
@@ -874,7 +874,7 @@
       "wish",
       "zapcannon"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "raichu": {
@@ -948,7 +948,7 @@
       "wish",
       "zapcannon"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "raichualola": {
@@ -1030,7 +1030,7 @@
       "wish",
       "zapcannon"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "raichumegax": {
@@ -1104,7 +1104,7 @@
       "wish",
       "zapcannon"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "raichumegay": {
@@ -1178,7 +1178,7 @@
       "wish",
       "zapcannon"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "clefable": {
@@ -1277,7 +1277,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "clefablemega": {
@@ -1376,7 +1376,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "ninetales": {
@@ -1451,7 +1451,7 @@
       "willowisp",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "ninetalesalola": {
@@ -1523,7 +1523,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "vileplume": {
@@ -1585,7 +1585,7 @@
       "venoshock",
       "weatherball"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "arcanine": {
@@ -1650,7 +1650,7 @@
       "wildcharge",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "arcaninehisui": {
@@ -1722,7 +1722,7 @@
       "wildcharge",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "alakazam": {
@@ -1790,7 +1790,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "alakazammega": {
@@ -1858,7 +1858,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "machamp": {
@@ -1932,7 +1932,7 @@
       "tickle",
       "wideguard"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "victreebel": {
@@ -1999,7 +1999,7 @@
       "worryseed",
       "wrap"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "victreebelmega": {
@@ -2066,7 +2066,7 @@
       "worryseed",
       "wrap"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "slowbro": {
@@ -2152,7 +2152,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "slowbromega": {
@@ -2238,7 +2238,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "slowbrogalar": {
@@ -2338,7 +2338,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "gengar": {
@@ -2422,7 +2422,7 @@
       "willowisp",
       "wonderroom"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "gengarmega": {
@@ -2506,7 +2506,7 @@
       "willowisp",
       "wonderroom"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "kangaskhan": {
@@ -2581,7 +2581,7 @@
       "uproar",
       "whirlpool"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "kangaskhanmega": {
@@ -2656,7 +2656,7 @@
       "uproar",
       "whirlpool"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "starmie": {
@@ -2726,7 +2726,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "starmiemega": {
@@ -2796,7 +2796,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "pinsir": {
@@ -2857,7 +2857,7 @@
       "throatchop",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "pinsirmega": {
@@ -2918,7 +2918,7 @@
       "throatchop",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "tauros": {
@@ -2983,7 +2983,7 @@
       "wildcharge",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "taurospaldeacombat": {
@@ -3039,7 +3039,7 @@
       "wildcharge",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "taurospaldeablaze": {
@@ -3100,7 +3100,7 @@
       "willowisp",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "taurospaldeaaqua": {
@@ -3160,7 +3160,7 @@
       "wildcharge",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "gyarados": {
@@ -3235,7 +3235,7 @@
       "waterpulse",
       "whirlpool"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "gyaradosmega": {
@@ -3310,7 +3310,7 @@
       "waterpulse",
       "whirlpool"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "ditto": {
@@ -3319,7 +3319,7 @@
     "moves": [
       "transform"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "vaporeon": {
@@ -3386,7 +3386,7 @@
       "wish",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "jolteon": {
@@ -3453,7 +3453,7 @@
       "wish",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "flareon": {
@@ -3518,7 +3518,7 @@
       "wish",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "aerodactyl": {
@@ -3584,7 +3584,7 @@
       "whirlwind",
       "wideguard"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "aerodactylmega": {
@@ -3650,7 +3650,7 @@
       "whirlwind",
       "wideguard"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "snorlax": {
@@ -3741,7 +3741,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "dragonite": {
@@ -3832,7 +3832,7 @@
       "whirlwind",
       "wrap"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "dragonitemega": {
@@ -3923,7 +3923,7 @@
       "whirlwind",
       "wrap"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "meganium": {
@@ -3992,7 +3992,7 @@
       "weatherball",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "meganiummega": {
@@ -4061,7 +4061,7 @@
       "weatherball",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "typhlosion": {
@@ -4132,7 +4132,7 @@
       "willowisp",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "typhlosionhisui": {
@@ -4206,7 +4206,7 @@
       "willowisp",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "feraligatr": {
@@ -4296,7 +4296,7 @@
       "waterpulse",
       "whirlpool"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "feraligatrmega": {
@@ -4386,7 +4386,7 @@
       "waterpulse",
       "whirlpool"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "ariados": {
@@ -4458,7 +4458,7 @@
       "venoshock",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "ampharos": {
@@ -4533,7 +4533,7 @@
       "wildcharge",
       "zapcannon"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "ampharosmega": {
@@ -4608,7 +4608,7 @@
       "wildcharge",
       "zapcannon"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "azumarill": {
@@ -4682,7 +4682,7 @@
       "waterpulse",
       "whirlpool"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "politoed": {
@@ -4747,7 +4747,7 @@
       "weatherball",
       "whirlpool"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "espeon": {
@@ -4822,7 +4822,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "umbreon": {
@@ -4897,7 +4897,7 @@
       "wish",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "slowking": {
@@ -4990,7 +4990,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "slowkinggalar": {
@@ -5093,7 +5093,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "forretress": {
@@ -5170,7 +5170,7 @@
       "voltswitch",
       "zapcannon"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "steelix": {
@@ -5244,7 +5244,7 @@
       "thunderfang",
       "wideguard"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "steelixmega": {
@@ -5318,7 +5318,7 @@
       "thunderfang",
       "wideguard"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "qwilfish": {
@@ -5390,7 +5390,7 @@
       "waterpulse",
       "whirlpool"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "scizor": {
@@ -5462,7 +5462,7 @@
       "vacuumwave",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "scizormega": {
@@ -5534,7 +5534,7 @@
       "vacuumwave",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "heracross": {
@@ -5608,7 +5608,7 @@
       "upperhand",
       "vacuumwave"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "heracrossmega": {
@@ -5682,7 +5682,7 @@
       "upperhand",
       "vacuumwave"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "skarmory": {
@@ -5741,7 +5741,7 @@
       "whirlwind",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "skarmorymega": {
@@ -5800,7 +5800,7 @@
       "whirlwind",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "houndoom": {
@@ -5875,7 +5875,7 @@
       "uproar",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "houndoommega": {
@@ -5950,7 +5950,7 @@
       "uproar",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "tyranitar": {
@@ -6050,7 +6050,7 @@
       "thunderwave",
       "uproar"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "tyranitarmega": {
@@ -6150,7 +6150,7 @@
       "thunderwave",
       "uproar"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "sceptile": {
@@ -6235,7 +6235,7 @@
       "worryseed",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "sceptilemega": {
@@ -6320,7 +6320,7 @@
       "worryseed",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "blaziken": {
@@ -6406,7 +6406,7 @@
       "vacuumwave",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "blazikenmega": {
@@ -6492,7 +6492,7 @@
       "vacuumwave",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "swampert": {
@@ -6577,7 +6577,7 @@
       "wideguard",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "swampertmega": {
@@ -6662,7 +6662,7 @@
       "wideguard",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "pelipper": {
@@ -6723,7 +6723,7 @@
       "whirlpool",
       "wideguard"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "gardevoir": {
@@ -6811,7 +6811,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "gardevoirmega": {
@@ -6899,7 +6899,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "sableye": {
@@ -6995,7 +6995,7 @@
       "xscissor",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "sableyemega": {
@@ -7091,7 +7091,7 @@
       "xscissor",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "mawile": {
@@ -7170,7 +7170,7 @@
       "thunderpunch",
       "tickle"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "mawilemega": {
@@ -7249,7 +7249,7 @@
       "thunderpunch",
       "tickle"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "aggron": {
@@ -7340,7 +7340,7 @@
       "uproar",
       "whirlpool"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "aggronmega": {
@@ -7431,7 +7431,7 @@
       "uproar",
       "whirlpool"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "medicham": {
@@ -7516,7 +7516,7 @@
       "vacuumwave",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "medichammega": {
@@ -7601,7 +7601,7 @@
       "vacuumwave",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "manectric": {
@@ -7658,7 +7658,7 @@
       "voltswitch",
       "wildcharge"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "manectricmega": {
@@ -7715,7 +7715,7 @@
       "voltswitch",
       "wildcharge"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "sharpedo": {
@@ -7780,7 +7780,7 @@
       "whirlpool",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "sharpedomega": {
@@ -7845,7 +7845,7 @@
       "whirlpool",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "camerupt": {
@@ -7920,7 +7920,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "cameruptmega": {
@@ -7995,7 +7995,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "torkoal": {
@@ -8060,7 +8060,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "altaria": {
@@ -8133,7 +8133,7 @@
       "willowisp",
       "wonderroom"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "altariamega": {
@@ -8206,7 +8206,7 @@
       "willowisp",
       "wonderroom"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "milotic": {
@@ -8275,7 +8275,7 @@
       "whirlpool",
       "wrap"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "castform": {
@@ -8320,7 +8320,7 @@
       "thunderwave",
       "weatherball"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "banette": {
@@ -8394,7 +8394,7 @@
       "willowisp",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "banettemega": {
@@ -8468,7 +8468,7 @@
       "willowisp",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "chimecho": {
@@ -8541,7 +8541,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "chimechomega": {
@@ -8614,7 +8614,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "absol": {
@@ -8693,7 +8693,7 @@
       "xscissor",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "absolmega": {
@@ -8772,7 +8772,7 @@
       "xscissor",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "glalie": {
@@ -8834,7 +8834,7 @@
       "waterpulse",
       "weatherball"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "glaliemega": {
@@ -8896,7 +8896,7 @@
       "waterpulse",
       "weatherball"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "metagross": {
@@ -8972,7 +8972,7 @@
       "trick",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "metagrossmega": {
@@ -9048,7 +9048,7 @@
       "trick",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "torterra": {
@@ -9128,7 +9128,7 @@
       "worryseed",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "infernape": {
@@ -9224,7 +9224,7 @@
       "willowisp",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "empoleon": {
@@ -9306,7 +9306,7 @@
       "whirlpool",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "staraptor": {
@@ -9357,7 +9357,7 @@
       "uturn",
       "whirlwind"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "staraptormega": {
@@ -9408,7 +9408,7 @@
       "uturn",
       "whirlwind"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "luxray": {
@@ -9469,7 +9469,7 @@
       "voltswitch",
       "wildcharge"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "roserade": {
@@ -9528,7 +9528,7 @@
       "weatherball",
       "worryseed"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "rampardos": {
@@ -9610,7 +9610,7 @@
       "whirlwind",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "bastiodon": {
@@ -9686,7 +9686,7 @@
       "trailblaze",
       "wideguard"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "lopunny": {
@@ -9770,7 +9770,7 @@
       "uproar",
       "uturn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "lopunnymega": {
@@ -9854,7 +9854,7 @@
       "uproar",
       "uturn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "spiritomb": {
@@ -9916,7 +9916,7 @@
       "willowisp",
       "wonderroom"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "garchomp": {
@@ -9982,7 +9982,7 @@
       "thrash",
       "thunderfang"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "garchompmega": {
@@ -10048,7 +10048,7 @@
       "thrash",
       "thunderfang"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "lucario": {
@@ -10139,7 +10139,7 @@
       "waterpulse",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "lucariomega": {
@@ -10230,7 +10230,7 @@
       "waterpulse",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "hippowdon": {
@@ -10289,7 +10289,7 @@
       "whirlwind",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "toxicroak": {
@@ -10378,7 +10378,7 @@
       "venoshock",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "abomasnow": {
@@ -10451,7 +10451,7 @@
       "weatherball",
       "woodhammer"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "abomasnowmega": {
@@ -10524,7 +10524,7 @@
       "weatherball",
       "woodhammer"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "weavile": {
@@ -10604,7 +10604,7 @@
       "waterpulse",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "rhyperior": {
@@ -10703,7 +10703,7 @@
       "thunderpunch",
       "uproar"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "leafeon": {
@@ -10769,7 +10769,7 @@
       "xscissor",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "glaceon": {
@@ -10835,7 +10835,7 @@
       "wish",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "gliscor": {
@@ -10917,7 +10917,7 @@
       "venoshock",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "mamoswine": {
@@ -10988,7 +10988,7 @@
       "throatchop",
       "trailblaze"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "gallade": {
@@ -11101,7 +11101,7 @@
       "xscissor",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "gallademega": {
@@ -11214,7 +11214,7 @@
       "xscissor",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "froslass": {
@@ -11290,7 +11290,7 @@
       "weatherball",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "froslassmega": {
@@ -11366,7 +11366,7 @@
       "weatherball",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "rotom": {
@@ -11416,7 +11416,7 @@
       "voltswitch",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "rotomheat": {
@@ -11467,7 +11467,7 @@
       "voltswitch",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "rotomwash": {
@@ -11518,7 +11518,7 @@
       "voltswitch",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "rotomfrost": {
@@ -11569,7 +11569,7 @@
       "voltswitch",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "rotomfan": {
@@ -11620,7 +11620,7 @@
       "voltswitch",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "rotommow": {
@@ -11671,7 +11671,7 @@
       "voltswitch",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "serperior": {
@@ -11732,7 +11732,7 @@
       "trailblaze",
       "wrap"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "emboar": {
@@ -11819,7 +11819,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "emboarmega": {
@@ -11906,7 +11906,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "samurott": {
@@ -11975,7 +11975,7 @@
       "whirlpool",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "samurotthisui": {
@@ -12050,7 +12050,7 @@
       "whirlpool",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "watchog": {
@@ -12110,7 +12110,7 @@
       "trailblaze",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "liepard": {
@@ -12178,7 +12178,7 @@
       "uturn",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "simisage": {
@@ -12236,7 +12236,7 @@
       "trailblaze",
       "uproar"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "simisear": {
@@ -12299,7 +12299,7 @@
       "willowisp",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "simipour": {
@@ -12359,7 +12359,7 @@
       "uproar",
       "waterfall"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "musharna": {
@@ -12417,7 +12417,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "excadrill": {
@@ -12478,7 +12478,7 @@
       "throatchop",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "excadrillmega": {
@@ -12539,7 +12539,7 @@
       "throatchop",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "audino": {
@@ -12616,7 +12616,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "audinomega": {
@@ -12693,7 +12693,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "conkeldurr": {
@@ -12762,7 +12762,7 @@
       "upperhand",
       "wideguard"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "scolipede": {
@@ -12823,7 +12823,7 @@
       "venoshock",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "scolipedemega": {
@@ -12884,7 +12884,7 @@
       "venoshock",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "whimsicott": {
@@ -12942,7 +12942,7 @@
       "uturn",
       "worryseed"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "krookodile": {
@@ -13033,7 +13033,7 @@
       "torment",
       "uproar"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "scrafty": {
@@ -13123,7 +13123,7 @@
       "uproar",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "scraftymega": {
@@ -13213,7 +13213,7 @@
       "uproar",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "cofagrigus": {
@@ -13275,7 +13275,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "garbodor": {
@@ -13336,7 +13336,7 @@
       "toxicspikes",
       "venoshock"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "zoroark": {
@@ -13414,7 +13414,7 @@
       "uproar",
       "uturn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "zoroarkhisui": {
@@ -13495,7 +13495,7 @@
       "uturn",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "reuniclus": {
@@ -13569,7 +13569,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "vanilluxe": {
@@ -13618,7 +13618,7 @@
       "uproar",
       "weatherball"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "emolga": {
@@ -13672,7 +13672,7 @@
       "voltswitch",
       "wildcharge"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "eelektross": {
@@ -13755,7 +13755,7 @@
       "zapcannon",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "eelektrossmega": {
@@ -13838,7 +13838,7 @@
       "zapcannon",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "chandelure": {
@@ -13900,7 +13900,7 @@
       "trickroom",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "chandeluremega": {
@@ -13962,7 +13962,7 @@
       "trickroom",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "beartic": {
@@ -14045,7 +14045,7 @@
       "xscissor",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "stunfisk": {
@@ -14101,7 +14101,7 @@
       "uproar",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "stunfiskgalar": {
@@ -14161,7 +14161,7 @@
       "uproar",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "golurk": {
@@ -14247,7 +14247,7 @@
       "trick",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "golurkmega": {
@@ -14333,7 +14333,7 @@
       "trick",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "hydreigon": {
@@ -14419,7 +14419,7 @@
       "uturn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "volcarona": {
@@ -14484,7 +14484,7 @@
       "willowisp",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "chesnaught": {
@@ -14579,7 +14579,7 @@
       "woodhammer",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "chesnaughtmega": {
@@ -14674,7 +14674,7 @@
       "woodhammer",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "delphox": {
@@ -14754,7 +14754,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "delphoxmega": {
@@ -14834,7 +14834,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "greninja": {
@@ -14906,7 +14906,7 @@
       "watershuriken",
       "weatherball"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "greninjamega": {
@@ -14978,7 +14978,7 @@
       "watershuriken",
       "weatherball"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "diggersby": {
@@ -15044,7 +15044,7 @@
       "uturn",
       "wildcharge"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "talonflame": {
@@ -15102,7 +15102,7 @@
       "whirlwind",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "vivillon": {
@@ -15153,7 +15153,7 @@
       "weatherball",
       "whirlwind"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "pyroar": {
@@ -15210,7 +15210,7 @@
       "willowisp",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "pyroarmega": {
@@ -15267,7 +15267,7 @@
       "willowisp",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "floetteeternal": {
@@ -15316,7 +15316,7 @@
       "trick",
       "wish"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "floettemega": {
@@ -15365,7 +15365,7 @@
       "trick",
       "wish"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "florges": {
@@ -15419,7 +15419,7 @@
       "trick",
       "wish"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "pangoro": {
@@ -15507,7 +15507,7 @@
       "xscissor",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "furfrou": {
@@ -15555,7 +15555,7 @@
       "wildcharge",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "meowstic": {
@@ -15622,7 +15622,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "meowsticmmega": {
@@ -15689,7 +15689,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "meowsticfmega": {
@@ -15753,7 +15753,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "aegislash": {
@@ -15806,7 +15806,7 @@
       "wideguard",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "aromatisse": {
@@ -15862,7 +15862,7 @@
       "trickroom",
       "wish"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "slurpuff": {
@@ -15912,7 +15912,7 @@
       "wish",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "malamar": {
@@ -15988,7 +15988,7 @@
       "wrap",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "malamarmega": {
@@ -16064,7 +16064,7 @@
       "wrap",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "barbaracle": {
@@ -16143,7 +16143,7 @@
       "whirlpool",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "barbaraclemega": {
@@ -16222,7 +16222,7 @@
       "whirlpool",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "dragalge": {
@@ -16282,7 +16282,7 @@
       "waterpulse",
       "whirlpool"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "dragalgemega": {
@@ -16342,7 +16342,7 @@
       "waterpulse",
       "whirlpool"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "clawitzer": {
@@ -16402,7 +16402,7 @@
       "waterpulse",
       "weatherball"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "heliolisk": {
@@ -16473,7 +16473,7 @@
       "weatherball",
       "wildcharge"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "tyrantrum": {
@@ -16545,7 +16545,7 @@
       "thunderfang",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "aurorus": {
@@ -16609,7 +16609,7 @@
       "weatherball",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "sylveon": {
@@ -16672,7 +16672,7 @@
       "wish",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "hawlucha": {
@@ -16754,7 +16754,7 @@
       "xscissor",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "hawluchamega": {
@@ -16836,7 +16836,7 @@
       "xscissor",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "dedenne": {
@@ -16894,7 +16894,7 @@
       "voltswitch",
       "wildcharge"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "goodra": {
@@ -16967,7 +16967,7 @@
       "waterpulse",
       "weatherball"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "goodrahisui": {
@@ -17038,7 +17038,7 @@
       "waterpulse",
       "weatherball"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "klefki": {
@@ -17090,7 +17090,7 @@
       "torment",
       "trickroom"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "trevenant": {
@@ -17171,7 +17171,7 @@
       "woodhammer",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "gourgeist": {
@@ -17239,7 +17239,7 @@
       "willowisp",
       "worryseed"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "gourgeistsmall": {
@@ -17307,7 +17307,7 @@
       "willowisp",
       "worryseed"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "gourgeistlarge": {
@@ -17375,7 +17375,7 @@
       "willowisp",
       "worryseed"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "gourgeistsuper": {
@@ -17443,7 +17443,7 @@
       "willowisp",
       "worryseed"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "avalugg": {
@@ -17500,7 +17500,7 @@
       "surf",
       "wideguard"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "avalugghisui": {
@@ -17557,7 +17557,7 @@
       "substitute",
       "wideguard"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "noivern": {
@@ -17629,7 +17629,7 @@
       "wildcharge",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "decidueye": {
@@ -17703,7 +17703,7 @@
       "trailblaze",
       "uturn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "decidueyehisui": {
@@ -17777,7 +17777,7 @@
       "upperhand",
       "uturn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "incineroar": {
@@ -17862,7 +17862,7 @@
       "trailblaze",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "primarina": {
@@ -17933,7 +17933,7 @@
       "whirlpool",
       "wonderroom"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "toucannon": {
@@ -17994,7 +17994,7 @@
       "uproar",
       "uturn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "crabominable": {
@@ -18065,7 +18065,7 @@
       "wideguard",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "crabominablemega": {
@@ -18136,7 +18136,7 @@
       "wideguard",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "lycanroc": {
@@ -18202,7 +18202,7 @@
       "trailblaze",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "lycanrocmidnight": {
@@ -18278,7 +18278,7 @@
       "uproar",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "lycanrocdusk": {
@@ -18347,7 +18347,7 @@
       "trailblaze",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "toxapex": {
@@ -18406,7 +18406,7 @@
       "waterpulse",
       "wideguard"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "mudsdale": {
@@ -18459,7 +18459,7 @@
       "sunnyday",
       "superpower"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "araquanid": {
@@ -18518,7 +18518,7 @@
       "wonderroom",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "salazzle": {
@@ -18596,7 +18596,7 @@
       "venoshock",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "tsareena": {
@@ -18658,7 +18658,7 @@
       "uturn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "oranguru": {
@@ -18730,7 +18730,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "passimian": {
@@ -18804,7 +18804,7 @@
       "uturn",
       "vacuumwave"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "mimikyu": {
@@ -18872,7 +18872,7 @@
       "woodhammer",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "drampa": {
@@ -18946,7 +18946,7 @@
       "uproar",
       "whirlwind"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "drampamega": {
@@ -19020,7 +19020,7 @@
       "uproar",
       "whirlwind"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "kommoo": {
@@ -19106,7 +19106,7 @@
       "vacuumwave",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "corviknight": {
@@ -19169,7 +19169,7 @@
       "thief",
       "uturn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "flapple": {
@@ -19221,7 +19221,7 @@
       "trailblaze",
       "uturn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "appletun": {
@@ -19280,7 +19280,7 @@
       "trailblaze",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "sandaconda": {
@@ -19336,7 +19336,7 @@
       "wrap",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "polteageist": {
@@ -19390,7 +19390,7 @@
       "willowisp",
       "wonderroom"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "hatterene": {
@@ -19457,7 +19457,7 @@
       "trickroom",
       "wonderroom"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "grimmsnarl": {
@@ -19529,7 +19529,7 @@
       "uproar",
       "wonderroom"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "mrrime": {
@@ -19630,7 +19630,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "runerigus": {
@@ -19707,7 +19707,7 @@
       "wonderroom",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "alcremie": {
@@ -19764,7 +19764,7 @@
       "triattack",
       "wonderroom"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "falinks": {
@@ -19823,7 +19823,7 @@
       "uproar",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "falinksmega": {
@@ -19882,7 +19882,7 @@
       "uproar",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "morpeko": {
@@ -19955,7 +19955,7 @@
       "voltswitch",
       "wildcharge"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "dragapult": {
@@ -20026,7 +20026,7 @@
       "uturn",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "wyrdeer": {
@@ -20095,7 +20095,7 @@
       "wildcharge",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "kleavor": {
@@ -20159,7 +20159,7 @@
       "vacuumwave",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "basculegion": {
@@ -20216,7 +20216,7 @@
       "whirlpool",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "basculegionf": {
@@ -20273,7 +20273,7 @@
       "whirlpool",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "sneasler": {
@@ -20342,7 +20342,7 @@
       "venoshock",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "overqwil": {
@@ -20410,7 +20410,7 @@
       "waterfall",
       "waterpulse"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "meowscarada": {
@@ -20483,7 +20483,7 @@
       "uturn",
       "worryseed"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "skeledirge": {
@@ -20547,7 +20547,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "quaquaval": {
@@ -20614,7 +20614,7 @@
       "wavecrash",
       "whirlpool"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "maushold": {
@@ -20672,7 +20672,7 @@
       "uturn",
       "waterpulse"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "garganacl": {
@@ -20734,7 +20734,7 @@
       "wideguard",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "armarouge": {
@@ -20797,7 +20797,7 @@
       "wideguard",
       "willowisp"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "ceruledge": {
@@ -20860,7 +20860,7 @@
       "willowisp",
       "xscissor"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "bellibolt": {
@@ -20907,7 +20907,7 @@
       "wildcharge",
       "zapcannon"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "scovillain": {
@@ -20963,7 +20963,7 @@
       "worryseed",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "scovillainmega": {
@@ -21019,7 +21019,7 @@
       "worryseed",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "espathra": {
@@ -21084,7 +21084,7 @@
       "uturn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "tinkaton": {
@@ -21139,7 +21139,7 @@
       "thunderwave",
       "woodhammer"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "palafin": {
@@ -21205,7 +21205,7 @@
       "whirlpool",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "orthworm": {
@@ -21253,7 +21253,7 @@
       "substitute",
       "wrap"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "glimmora": {
@@ -21307,7 +21307,7 @@
       "toxicspikes",
       "venoshock"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "glimmoramega": {
@@ -21361,7 +21361,7 @@
       "toxicspikes",
       "venoshock"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "houndstone": {
@@ -21421,7 +21421,7 @@
       "yawn",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "annihilape": {
@@ -21504,7 +21504,7 @@
       "uturn",
       "vacuumwave"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "farigiraf": {
@@ -21582,7 +21582,7 @@
       "wish",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "kingambit": {
@@ -21642,7 +21642,7 @@
       "xscissor",
       "zenheadbutt"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "gholdengo": {
@@ -21692,7 +21692,7 @@
       "thunderpunch",
       "trick"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "sinistcha": {
@@ -21735,7 +21735,7 @@
       "trickroom",
       "uproar"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "archaludon": {
@@ -21794,7 +21794,7 @@
       "thunderbolt",
       "thunderwave"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   },
   "hydrapple": {
@@ -21853,7 +21853,7 @@
       "uproar",
       "yawn"
     ],
-    "source": "showdown-champions",
+    "source": "smogon/pokemon-showdown",
     "verified": false
   }
 }
