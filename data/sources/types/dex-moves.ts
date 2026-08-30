@@ -1,7 +1,7 @@
 /**
  * AUTO-GENERATED — DO NOT EDIT MANUALLY
  * Synced from: https://raw.githubusercontent.com/smogon/pokemon-showdown/master/sim/dex-moves.ts
- * Synced at:   Sun, 30 Aug 2026 05:25:40 UTC
+ * Synced at:   Sun, 30 Aug 2026 05:32:37 UTC
  * Branch:      master
  *
  * Runtime-only Showdown types (Battle, Pokemon, Side, etc.) and all import
@@ -30,7 +30,6 @@ type ModdedEffectText = Record<string, unknown>;
 type BasicEffect = Record<string, any>;
 type Ability = {
   flags?: Record<string, 1 | undefined>;
-  rating?: number;
   suppressWeather?: boolean;
 };
 type Item = {

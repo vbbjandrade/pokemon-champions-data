@@ -44,7 +44,6 @@ type ModdedEffectText = Record<string, unknown>;
 type BasicEffect = Record<string, any>;
 type Ability = {
   flags?: Record<string, 1 | undefined>;
-  rating?: number;
   suppressWeather?: boolean;
 };
 type Item = {

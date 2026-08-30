@@ -37,7 +37,6 @@ export interface RepoLearnset {
 }
 
 import type {
-  AbilityData as ShowdownAbilityData,
   AbilityFlags as ShowdownAbilityFlags,
 } from '../data/sources/types/dex-abilities.ts';
 import type {
@@ -146,7 +145,6 @@ export type ParsedMove = RepoMove & { isNonstandard: string | null };
 
 /** Declarative ability properties preserved from the synced Showdown types. */
 export type AbilityEffectFlags = ShowdownAbilityFlags & {
-  rating?: ShowdownAbilityData['rating'];
   suppressWeather?: true;
 };
 
@@ -766,10 +764,6 @@ export function extractAbilityFlags(
   if (a.suppressWeather) {
     flags.suppressWeather = true;
   }
-  if (typeof a.rating === 'number') {
-    flags.rating = a.rating;
-  }
-
   if (id && onCallbackWarning) {
     let hasCallback = false;
     for (const [k, v] of Object.entries(a)) {
@@ -778,8 +772,7 @@ export function extractAbilityFlags(
         break;
       }
     }
-    // Ratings are useful metadata, but they do not describe a battle effect.
-    const hasExtractedEffect = Object.keys(flags).some((key) => key !== 'rating');
+    const hasExtractedEffect = Object.keys(flags).length > 0;
     if (hasCallback && !hasExtractedEffect) {
       onCallbackWarning(`[CALLBACK-ONLY] ${id}: has handler callbacks but no declarative effect flags`);
     }
