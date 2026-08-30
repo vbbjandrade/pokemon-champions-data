@@ -25,6 +25,7 @@ import {
   type RepoItem,
   type RepoLearnset,
   type RepoMove,
+  type ParsedMove,
   type RepoPokemon,
   SHOWDOWN_SOURCE,
   syncCollection,
@@ -305,7 +306,7 @@ Options:
   const movesMainParsed = parseMovesMain(MovesMain as Record<string, any>, MovesText as Record<string, any>);
   const moveModsParsed = parseMoveMods(ChampionsMoves as Record<string, any>);
 
-  const sdChampionsMovedex: Record<string, RepoMove> = { ...movesMainParsed };
+  const sdChampionsMovedex: Record<string, ParsedMove> = { ...movesMainParsed };
   for (const [mid, mod] of Object.entries(moveModsParsed)) {
     const base = sdChampionsMovedex[mid] ?? {
       name: '',
@@ -320,7 +321,7 @@ Options:
       shortDesc: null,
       isNonstandard: null,
     };
-    const merged: RepoMove = mod.inherit ? { ...base } : { ...base };
+    const merged: ParsedMove = mod.inherit ? { ...base } : { ...base };
     if (mod.name !== undefined) merged.name = mod.name;
     if (mod.type !== undefined) merged.type = mod.type;
     if (mod.category !== undefined) merged.category = mod.category;
@@ -340,7 +341,7 @@ Options:
   }
 
   // Filter legal moves in Champions
-  const legalChampionsMoves: Record<string, RepoMove> = {};
+  const legalChampionsMoves: Record<string, ParsedMove> = {};
   for (const [mid, m] of Object.entries(sdChampionsMovedex)) {
     if (!m.isNonstandard) {
       legalChampionsMoves[mid] = m;
@@ -372,7 +373,8 @@ Options:
       if (!legalChampionsMoves[mid]) {
         logger.error(`Move "${mid}" used by ${pid} is missing or non-standard in movedex.`);
       } else {
-        usedMoves[mid] = legalChampionsMoves[mid]!;
+        const { isNonstandard: _drop, ...moveData } = legalChampionsMoves[mid]!;
+        usedMoves[mid] = moveData as RepoMove;
       }
     }
   }

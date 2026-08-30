@@ -47,10 +47,12 @@ export interface RepoMove {
   target: string | null;
   desc: string | null;
   shortDesc: string | null;
-  isNonstandard: string | null;
   source?: string;
   verified?: boolean;
 }
+
+/** Internal type used during parsing/merging; `isNonstandard` is stripped before output. */
+export type ParsedMove = RepoMove & { isNonstandard: string | null };
 
 export interface RepoAbility {
   name: string;
@@ -309,8 +311,8 @@ export function parseLearnsets(rawLearnsets: Record<string, { learnset?: Record<
 export function parseMovesMain(
   rawMoves: Record<string, any>,
   textEntries?: Record<string, any>
-): Record<string, RepoMove> {
-  const out: Record<string, RepoMove> = {};
+): Record<string, ParsedMove> {
+  const out: Record<string, ParsedMove> = {};
   for (const [key, m] of Object.entries(rawMoves)) {
     if (m.isNonstandard === 'CAP') continue;
     const text = extractTextOverrides(textEntries?.[key]);
@@ -334,10 +336,10 @@ export function parseMovesMain(
 /**
  * Parses Champions move modifications and overrides.
  */
-export function parseMoveMods(rawMods: Record<string, any>): Record<string, Partial<RepoMove> & { inherit?: boolean }> {
-  const out: Record<string, Partial<RepoMove> & { inherit?: boolean }> = {};
+export function parseMoveMods(rawMods: Record<string, any>): Record<string, Partial<ParsedMove> & { inherit?: boolean }> {
+  const out: Record<string, Partial<ParsedMove> & { inherit?: boolean }> = {};
   for (const [key, mod] of Object.entries(rawMods)) {
-    const entry: Partial<RepoMove> & { inherit?: boolean } = {
+    const entry: Partial<ParsedMove> & { inherit?: boolean } = {
       inherit: mod.inherit === true,
     };
     if (mod.name !== undefined) entry.name = mod.name;

@@ -244,11 +244,6 @@
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
-  "condition": {
-    "name": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
-  },
   "contrary": {
     "name": "Contrary",
     "desc": null,
@@ -512,11 +507,6 @@
     "name": "Fire Mane",
     "desc": null,
     "shortDesc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Fire-type attack.",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
-  },
-  "flags": {
-    "name": null,
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
