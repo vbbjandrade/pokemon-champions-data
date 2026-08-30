@@ -483,8 +483,8 @@ export interface SyncResult<T> {
  * - If NOT in repo but IS in Showdown: add with verified = false.
  * - If IS in repo but NOT in Showdown: mark verified = false.
  * - If IS in both: deep compare payloads (excluding source & verified).
- *   - If identical: keep repo entry (and its verified flag).
- *   - If different: update payload, keep custom source if present, mark verified = false.
+ * - If identical: keep repo entry (and its verified flag).
+ * - If different: update payload, keep custom source if present, mark verified = false.
  */
 export function syncCollection<T extends { source?: string; verified?: boolean; name?: string;[key: string]: any }>(
   collectionName: string,

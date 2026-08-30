@@ -508,7 +508,7 @@ Options:
     ...repoVersion,
     lastUpdated: today,
     sources: [
-      'Pokemon Showdown data/pokedex.ts + data/mods/champions (roster, stats, learnsets, items, move changes)',
+      'smogon/pokemon-showdown',
     ],
     counts: {
       pokemon: Object.keys(syncedRoster.result).length,

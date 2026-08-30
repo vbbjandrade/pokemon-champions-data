@@ -6,8 +6,9 @@
     },
     "bashful": {
         "name": "Bashful",
-        "increasedStat": null,
-        "decreasedStat": null
+        "increasedStat": "sp_attack",
+        "decreasedStat": "sp_attack",
+        "replacedBy": "serious"
     },
     "bold": {
         "name": "Bold",
@@ -31,8 +32,9 @@
     },
     "docile": {
         "name": "Docile",
-        "increasedStat": null,
-        "decreasedStat": null
+        "increasedStat": "defense",
+        "decreasedStat": "defense",
+        "replacedBy": "serious"
     },
     "gentle": {
         "name": "Gentle",
@@ -41,8 +43,9 @@
     },
     "hardy": {
         "name": "Hardy",
-        "increasedStat": null,
-        "decreasedStat": null
+        "increasedStat": "attack",
+        "decreasedStat": "attack",
+        "replacedBy": "serious"
     },
     "hasty": {
         "name": "Hasty",
@@ -96,8 +99,9 @@
     },
     "quirky": {
         "name": "Quirky",
-        "increasedStat": null,
-        "decreasedStat": null
+        "increasedStat": "sp_defense",
+        "decreasedStat": "sp_defense",
+        "replacedBy": "serious"
     },
     "rash": {
         "name": "Rash",
@@ -116,8 +120,8 @@
     },
     "serious": {
         "name": "Serious",
-        "increasedStat": null,
-        "decreasedStat": null
+        "increasedStat": "speed",
+        "decreasedStat": "speed"
     },
     "timid": {
         "name": "Timid",

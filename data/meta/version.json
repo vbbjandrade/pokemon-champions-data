@@ -4,10 +4,10 @@
   "gameVersion": "Pokemon Champions",
   "dataFormat": "JSON",
   "sources": [
-    "Pokemon Showdown data/pokedex.ts + data/mods/champions (roster, stats, learnsets, items, move changes)"
+    "smogon/pokemon-showdown"
   ],
   "verification": {
-    "description": "All data has been cross-referenced against Serebii's Champions pages. The championsVerified flag is true for all entries. Moves include an inChampions field — 494 moves are available in Champions, 406 are not.",
+    "description": "All data has been cross-referenced against Serebii's Champions pages or in-game data verified by contributors.",
     "stats": {
       "pokemon_verified": 258,
       "pokemon_total": 258,

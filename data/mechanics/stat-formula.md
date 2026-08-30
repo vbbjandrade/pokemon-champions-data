@@ -2,7 +2,7 @@
 
 ## Base Stats
 
-Every character in Pokemon Champions has 6 base stats: HP, Attack, Defense, Special Attack, Special Defense, and Speed. These are fixed values that define the character's strengths and weaknesses. Base stats are identical to the values used in standard Pokemon games.
+Every character in Pokemon Champions has 6 base stats: HP, Attack, Defense, Special Attack, Special Defense, and Speed. These are fixed values that define the character's strengths and weaknesses. The base stat system is identical to the values used in standard Pokemon games and for the most part characters should keep similar values to their mainline game counterparts.
 
 ## SP (Stat Points) System
 
@@ -12,36 +12,31 @@ Champions replaces the traditional EV (Effort Value) system with SP:
 - **Maximum 32 SP** per individual stat
 - Minimum 0 SP per stat
 
-See [sp-system.md](sp-system.md) for detailed strategy implications.
+See [sp-system.md](sp-system.md) for more details.
 
-## Nature Modifiers
+## Stat Alignments
 
-Each nature modifies two stats (one up, one down) by 10%:
+Stat Alignments are the replacement (in name only) for the nature system in the mainline games. Each stat alignment modifies two stats (one up, one down) by 10%:
 
 - **Beneficial nature**: x1.1 to one stat
 - **Hindering nature**: x0.9 to one stat
-- **Neutral natures** (Hardy, Docile, Serious, Bashful, Quirky): no modification
+- **Neutral nature**: x1.1 and x0.9 to the same stat - no modification
 
 ## Stat Calculation
 
-The formulas below are adapted from the standard Pokemon formula. The exact mapping from SP (0-32) to the formula's EV equivalent is still being community-verified.
+$$ HP=Base+StatPoints+75 $$
 
-**HP:**
-```
-floor((2 * Base + IV + floor(EV/4)) * Level / 100 + Level + 10)
-```
+$$ OtherStat=(Base+StatPoints+20) \times Alignment $$
 
-**Other stats:**
-```
-floor(((2 * Base + IV + floor(EV/4)) * Level / 100 + 5) * NatureModifier)
-```
+where:
+    Base is 
+    Alignment is .
+     
 
 Where:
-- `Base` = the character's base stat value
-- `IV` = Individual Value (0-31) — how IVs map to Champions is unverified
-- `EV` = the SP equivalent — the conversion from SP (0-32) to the 0-252 EV scale is unverified
-- `Level` = battle level (see below)
-- `NatureModifier` = 1.1 (beneficial), 0.9 (hindering), or 1.0 (neutral)
+- `Base` = the species' base value for that stat.
+- `Alignment` = 0.9 if the Pokémon's stat alignment lowers that stat, 1.1 if it raises that stat, and 1 otherwise
+- `StatPoints` = is the amount of stat points the Pokémon has in the respective stat.
 
 ## Battle Level
 
@@ -51,6 +46,7 @@ Champions competitive play uses **Level 50** for all ranked battles. At Level 50
 - Base stats have approximately 2x impact on the final value compared to EVs
 - Nature modifiers affect the final stat, not the base
 
-## Verification Status
+## Sources
 
-The stat calculation mechanics are being actively verified by the community. The standard Pokemon formula is used as a baseline. If you have verified the exact SP-to-stat mapping in Champions, please submit a correction via the [data correction template](../.github/ISSUE_TEMPLATE/data-correction.yml).
+- [Stat point - Bulbapedia, the community-driven Pokémon encyclopedia](https://bulbapedia.bulbagarden.net/wiki/Stat_point)
+- [Pokémon Damage Calculator (Champions mode)](https://calc.pokemonshowdown.com/champions.html?mode=champions)
