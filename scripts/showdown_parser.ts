@@ -36,7 +36,10 @@ export interface RepoLearnset {
   verified?: boolean;
 }
 
-import type { MoveFlags as ShowdownMoveFlags } from '../data/sources/types/dex-moves.ts';
+import type {
+  MoveData as ShowdownMoveData,
+  MoveFlags as ShowdownMoveFlags,
+} from '../data/sources/types/dex-moves.ts';
 
 export type StatName = 'atk' | 'def' | 'spa' | 'spd' | 'spe' | 'accuracy' | 'evasion';
 
@@ -55,40 +58,15 @@ export interface MaxMoveData {
   basePower: number;
 }
 
-export interface MoveFlags extends Record<string, any> {
-  // Standard Showdown flags (excluding allyanim, mustpressure, nonsky, distance)
-  contact?: 1;
-  protect?: 1;
-  mirror?: 1;
-  slicing?: 1;
-  punch?: 1;
-  sound?: 1;
-  bullet?: 1;
-  pulse?: 1;
-  bite?: 1;
-  dance?: 1;
-  defrost?: 1;
-  wind?: 1;
-  powder?: 1;
-  bypasssub?: 1;
-  charge?: 1;
-  recharge?: 1;
-  snatch?: 1;
-  reflectable?: 1;
-  gravity?: 1;
-  metronome?: 1;
-  cantusetwice?: 1;
-  failcopycat?: 1;
-  failinstruct?: 1;
-  failmefirst?: 1;
-  failmimic?: 1;
-  failencore?: 1;
-  noassist?: 1;
-  nosketch?: 1;
-  nosleeptalk?: 1;
-  minimize?: 1;
-  noparentalbond?: 1;
-  pledgecombo?: 1;
+/** Standard Showdown flags with excluded and overridden keys omitted */
+export type CleanedShowdownFlags = Omit<
+  ShowdownMoveFlags,
+  'allyanim' | 'mustpressure' | 'nonsky' | 'distance' | 'heal'
+>;
+
+export interface MoveFlags extends CleanedShowdownFlags, Record<string, any> {
+  // Overridden / enriched Showdown flags
+  heal?: [number, number] | 1;
 
   // Stat alterations
   raisesTarget?: Partial<Record<StatName, number>>;
@@ -103,13 +81,12 @@ export interface MoveFlags extends Record<string, any> {
   sideCondition?: string[];
   field?: string[];
 
-  // Hit effects & battle mechanics
-  ohko?: true | 'Ice';
+  // Hit effects & battle mechanics (inferred from Showdown MoveData)
+  ohko?: ShowdownMoveData['ohko'];
   thawsTarget?: true;
-  heal?: [number, number] | 1;
   forceSwitch?: true;
-  selfSwitch?: true | 'copyvolatile' | 'shedtail';
-  selfdestruct?: 'always' | 'ifHit' | true;
+  selfSwitch?: ShowdownMoveData['selfSwitch'];
+  selfdestruct?: ShowdownMoveData['selfdestruct'];
   breaksProtect?: true;
   recoil?: [number, number] | RecoilEffect;
   drain?: [number, number];
@@ -117,26 +94,26 @@ export interface MoveFlags extends Record<string, any> {
   hasCrashDamage?: true;
   stallingMove?: true;
 
-  // Hit effect modifiers
+  // Hit effect modifiers (inferred from Showdown MoveData)
   critRatio?: number;
-  multihit?: number | [number, number];
+  multihit?: ShowdownMoveData['multihit'];
   damage?: number | 'level';
   overrideOffensiveStat?: StatName;
-  overrideOffensivePokemon?: 'target' | 'source';
+  overrideOffensivePokemon?: ShowdownMoveData['overrideOffensivePokemon'];
   overrideDefensiveStat?: StatName;
   ignoreDefensive?: true;
   ignoreEvasion?: true;
   ignoreAbility?: true;
-  ignoreImmunity?: true | Record<string, boolean>;
+  ignoreImmunity?: ShowdownMoveData['ignoreImmunity'];
   callsMove?: true;
   sleepUsable?: true;
   smartTarget?: true;
   tracksTarget?: true;
 
   // Z-Move and Max Move data
-  isZ?: boolean | string;
+  isZ?: ShowdownMoveData['isZ'];
   zMove?: ZMoveData;
-  isMax?: boolean | string;
+  isMax?: ShowdownMoveData['isMax'];
   maxMove?: MaxMoveData;
 }
 
