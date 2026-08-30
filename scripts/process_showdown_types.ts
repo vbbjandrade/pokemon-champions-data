@@ -42,11 +42,46 @@ type ModdedConditionData = Record<string, unknown>;
 type ModdedEffectText = Record<string, unknown>;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type BasicEffect = Record<string, any>;
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-type Ability = Record<string, any>;
+type Ability = {
+  flags?: Record<string, 1 | undefined>;
+  rating?: number;
+  suppressWeather?: boolean;
+};
+type Item = {
+  fling?: { basePower: number; status?: string; volatileStatus?: string };
+  isBerry?: boolean;
+  isChoice?: boolean;
+  isGem?: boolean;
+  isPokeball?: boolean;
+  isPrimalOrb?: boolean;
+  ignoreKlutz?: boolean;
+  megaStone?: Record<string, string>;
+  onDrive?: string;
+  onMemory?: string;
+  onPlate?: string;
+  zMove?: true | string;
+  zMoveType?: string;
+  zMoveFrom?: string;
+  itemUser?: string[];
+  forcedForme?: string;
+  naturalGift?: { basePower: number; type: string };
+  boosts?: SparseBoostsTable;
+};
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type AnyFn = (...args: any[]) => any;
-type MoveEventMethods = Record<string, AnyFn | undefined>;`;
+type MoveEventMethods = Record<string, AnyFn | undefined>;
+type AbilityEventMethods = Record<string, unknown>;
+type PokemonEventMethods = Record<string, unknown>;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type Battle = any;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type Pokemon = any;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type Side = any;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type Field = any;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type CommonHandlers = Record<string, any>;`;
 
 const HEADER = `\
 /**
@@ -57,8 +92,7 @@ const HEADER = `\
  *
  * Runtime-only Showdown types (Battle, Pokemon, Side, etc.) and all import
  * statements have been removed. Stub types are provided where needed to keep
- * the interfaces we care about (MoveFlags, HitEffect, SecondaryEffect,
- * MoveData) self-contained and importable without the full Showdown codebase.
+ * the interfaces we care about self-contained and importable without the full Showdown codebase.
  *
  * Use \`bash scripts/sync_showdown_types.sh\` to re-sync.
  */
@@ -66,10 +100,13 @@ const HEADER = `\
 ${STUBS}`;
 
 // Interfaces/types to remove entirely (runtime-only, replaced by stubs or unused)
-const DROP_INTERFACES = ['MoveEventMethods', 'MoveHitData', 'MutableMove', 'ActiveMove'];
+const DROP_INTERFACES = [
+  'MoveEventMethods', 'MoveHitData', 'MutableMove', 'ActiveMove',
+  'AbilityEventMethods', 'PokemonEventMethods',
+];
 
 // Runtime class/function export blocks to drop
-const DROP_EXPORTS = ['DexMoves', 'DataMove'];
+const DROP_EXPORTS = ['DexMoves', 'DataMove', 'DexAbilities', 'Ability', 'DexItems', 'Item'];
 
 let src = readFileSync(inputFile, 'utf8');
 
@@ -92,9 +129,9 @@ function stripClassBlock(source: string, className: string): string {
     else if (source[i] === '}') {
       depth--;
       if (foundOpen && depth === 0) {
-        // Also consume trailing const that references this class (e.g. EMPTY_MOVE)
+        // Also consume trailing const that references this class (e.g. EMPTY_MOVE, EMPTY_ABILITY, EMPTY_ITEM)
         let end = i + 1;
-        const trailingConst = /^[\s\S]*?\n(?:const|export const)\s+\w+\s*=\s*\S[^\n]*new\s+DataMove[^\n]*;/m.exec(source.slice(end));
+        const trailingConst = /^[\s\S]*?\n(?:const|export const)\s+\w+\s*=\s*\S[^\n]*new\s+(?:DataMove|Ability|Item)[^\n]*;/m.exec(source.slice(end));
         if (trailingConst && trailingConst.index === 0) {
           end += trailingConst[0].length;
         }
@@ -121,10 +158,12 @@ for (const name of DROP_INTERFACES) {
   );
 }
 
-// 4. Export MoveFlags (private in original source)
+// 5. Ensure private interfaces are exported
 src = src.replace(/^interface MoveFlags\b/m, 'export interface MoveFlags');
+src = src.replace(/^interface AbilityFlags\b/m, 'export interface AbilityFlags');
+src = src.replace(/^interface FlingData\b/m, 'export interface FlingData');
 
-// 5. Collapse excessive blank lines
+// 6. Collapse excessive blank lines
 src = src.replace(/\n{3,}/g, '\n\n').trim();
 
 const output = `${HEADER}\n\n${src}\n`;

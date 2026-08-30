@@ -9,7 +9,7 @@
 # importable without the full Showdown codebase.
 #
 # Usage:
-#   bash scripts/sync_showdown_types.sh [--branch <branch>]
+#   ./scripts/sync_showdown_types.sh [--branch <branch>]
 #
 # Options:
 #   --branch <branch>   Showdown branch to sync from (default: master)
@@ -48,6 +48,8 @@ mkdir -p "$DEST_ABS"
 # ---------------------------------------------------------------------------
 declare -A FILES
 FILES["sim/dex-moves.ts"]="dex-moves.ts"
+FILES["sim/dex-abilities.ts"]="dex-abilities.ts"
+FILES["sim/dex-items.ts"]="dex-items.ts"
 
 # ---------------------------------------------------------------------------
 # Main

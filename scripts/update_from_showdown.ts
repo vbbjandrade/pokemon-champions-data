@@ -409,11 +409,13 @@ Options:
   logger.log(`\n--- Processing Abilities ---`);
   const abilitiesMainParsed = parseAbilitiesEntries(
     AbilitiesMain as Record<string, any>,
-    AbilitiesText as Record<string, any>
+    AbilitiesText as Record<string, any>,
+    (msg) => logger.warn(msg)
   );
   const abilitiesModParsed = parseAbilitiesEntries(
     ChampionsAbilities as Record<string, any>,
-    AbilitiesText as Record<string, any>
+    AbilitiesText as Record<string, any>,
+    (msg) => logger.warn(msg)
   );
 
   const sdChampionsAbilitydex: Record<string, RepoAbility> = {};
@@ -422,6 +424,7 @@ Options:
       name: a.name ?? '',
       desc: a.desc ?? null,
       shortDesc: a.shortDesc ?? null,
+      ...(a.flags ? { flags: a.flags } : {}),
     };
   }
 
@@ -433,6 +436,7 @@ Options:
     const textOverrides = extractTextOverrides((AbilitiesText as Record<string, any>)[aid]);
     merged.desc = mod.desc ?? textOverrides.desc ?? merged.desc ?? null;
     merged.shortDesc = mod.shortDesc ?? textOverrides.shortDesc ?? merged.shortDesc ?? null;
+    if (mod.flags !== undefined) merged.flags = { ...merged.flags, ...mod.flags };
 
     sdChampionsAbilitydex[aid] = merged;
   }
@@ -444,6 +448,7 @@ Options:
       name: a.name,
       desc: a.desc,
       shortDesc: a.shortDesc,
+      ...(a.flags ? { flags: a.flags } : {}),
     };
   }
 
@@ -459,11 +464,13 @@ Options:
   logger.log(`\n--- Processing Items ---`);
   const itemsMainParsed = parseItems(
     ItemsMain as Record<string, any>,
-    ItemsText as Record<string, any>
+    ItemsText as Record<string, any>,
+    (msg) => logger.warn(msg)
   );
   const itemsModParsed = parseItems(
     ChampionsItems as Record<string, any>,
-    ItemsText as Record<string, any>
+    ItemsText as Record<string, any>,
+    (msg) => logger.warn(msg)
   );
 
   const sdChampionsItemdex: Record<string, RepoItem> = {};
@@ -472,6 +479,7 @@ Options:
       name: item.name ?? '',
       desc: item.desc ?? null,
       shortDesc: item.shortDesc ?? null,
+      ...(item.flags ? { flags: item.flags } : {}),
       isNonstandard: item.isNonstandard ?? null,
     };
   }
@@ -484,6 +492,7 @@ Options:
     const textOverrides = extractTextOverrides((ItemsText as Record<string, any>)[iid]);
     merged.desc = mod.desc ?? textOverrides.desc ?? merged.desc ?? null;
     merged.shortDesc = mod.shortDesc ?? textOverrides.shortDesc ?? merged.shortDesc ?? null;
+    if (mod.flags !== undefined) merged.flags = { ...merged.flags, ...mod.flags };
 
     if (mod.isNonstandard !== undefined) merged.isNonstandard = mod.isNonstandard;
     sdChampionsItemdex[iid] = merged;
@@ -496,6 +505,7 @@ Options:
         name: item.name,
         desc: item.desc,
         shortDesc: item.shortDesc,
+        ...(item.flags ? { flags: item.flags } : {}),
       };
     }
   }

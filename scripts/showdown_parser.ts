@@ -37,6 +37,14 @@ export interface RepoLearnset {
 }
 
 import type {
+  AbilityData as ShowdownAbilityData,
+  AbilityFlags as ShowdownAbilityFlags,
+} from '../data/sources/types/dex-abilities.ts';
+import type {
+  FlingData as ShowdownFlingData,
+  ItemData as ShowdownItemData,
+} from '../data/sources/types/dex-items.ts';
+import type {
   MoveData as ShowdownMoveData,
   MoveFlags as ShowdownMoveFlags,
 } from '../data/sources/types/dex-moves.ts';
@@ -136,18 +144,67 @@ export interface RepoMove {
 /** Internal type used during parsing/merging; `isNonstandard` is stripped before output. */
 export type ParsedMove = RepoMove & { isNonstandard: string | null };
 
+/** Declarative ability properties preserved from the synced Showdown types. */
+export type AbilityEffectFlags = ShowdownAbilityFlags & {
+  rating?: ShowdownAbilityData['rating'];
+  suppressWeather?: true;
+};
+
+/** @deprecated Use AbilityEffectFlags. */
+export type AbilityFlags = AbilityEffectFlags;
+
 export interface RepoAbility {
   name: string;
   desc: string | null;
   shortDesc: string | null;
+  flags?: AbilityFlags;
   source?: string;
   verified?: boolean;
 }
+
+/** Declarative item properties preserved from the synced Showdown types. */
+export type ItemEffectFlags = Omit<Pick<
+  ShowdownItemData,
+  | 'fling'
+  | 'megaStone'
+  | 'onDrive'
+  | 'onMemory'
+  | 'onPlate'
+  | 'zMove'
+  | 'zMoveType'
+  | 'zMoveFrom'
+  | 'itemUser'
+  | 'forcedForme'
+  | 'naturalGift'
+  | 'boosts'
+>, 'fling' | 'boosts'> & {
+  fling?: ShowdownFlingData;
+  isBerry?: true;
+  isChoice?: true;
+  isGem?: true;
+  isPokeball?: true;
+  isPrimalOrb?: true;
+  ignoreKlutz?: true;
+  megaStone?: Record<string, string>;
+  onDrive?: string;
+  onMemory?: string;
+  onPlate?: string;
+  zMove?: true | string;
+  zMoveType?: string;
+  zMoveFrom?: string;
+  itemUser?: string[];
+  forcedForme?: string;
+  boosts?: Partial<Record<StatName, number>>;
+};
+
+/** @deprecated Use ItemEffectFlags. */
+export type ItemFlags = ItemEffectFlags;
 
 export interface RepoItem {
   name: string;
   desc: string | null;
   shortDesc: string | null;
+  flags?: ItemFlags;
   isNonstandard?: string | null;
   source?: string;
   verified?: boolean;
@@ -689,22 +746,68 @@ export function parseMoveMods(rawMods: Record<string, any>): Record<string, Part
 }
 
 /**
+ * Extracts searchable effect tags and standard flags from a raw Showdown ability definition.
+ */
+export function extractAbilityFlags(
+  a: Record<string, any>,
+  id?: string,
+  onCallbackWarning?: (msg: string) => void
+): AbilityFlags {
+  const flags: AbilityFlags = {};
+
+  if (a.flags) {
+    for (const [k, v] of Object.entries(a.flags)) {
+      if (v) {
+        Object.assign(flags, { [k]: v });
+      }
+    }
+  }
+
+  if (a.suppressWeather) {
+    flags.suppressWeather = true;
+  }
+  if (typeof a.rating === 'number') {
+    flags.rating = a.rating;
+  }
+
+  if (id && onCallbackWarning) {
+    let hasCallback = false;
+    for (const [k, v] of Object.entries(a)) {
+      if (typeof v === 'function' && k.startsWith('on')) {
+        hasCallback = true;
+        break;
+      }
+    }
+    // Ratings are useful metadata, but they do not describe a battle effect.
+    const hasExtractedEffect = Object.keys(flags).some((key) => key !== 'rating');
+    if (hasCallback && !hasExtractedEffect) {
+      onCallbackWarning(`[CALLBACK-ONLY] ${id}: has handler callbacks but no declarative effect flags`);
+    }
+  }
+
+  return flags;
+}
+
+/**
  * Parses ability definitions from abilities source files.
  */
 export function parseAbilitiesEntries(
   rawAbilities: Record<string, any>,
-  textEntries?: Record<string, any>
+  textEntries?: Record<string, any>,
+  onCallbackWarning?: (msg: string) => void
 ): Record<string, Partial<RepoAbility> & { inherit?: boolean; isNonstandard?: string | null }> {
   const out: Record<string, Partial<RepoAbility> & { inherit?: boolean; isNonstandard?: string | null }> = {};
   for (const [key, a] of Object.entries(rawAbilities)) {
     if (a.isNonstandard === 'CAP') continue;
     const text = extractTextOverrides(textEntries?.[key]);
+    const flags = extractAbilityFlags(a, key, onCallbackWarning);
     const entry: Partial<RepoAbility> & { inherit?: boolean; isNonstandard?: string | null } = {
       inherit: a.inherit === true,
     };
     if (a.name !== undefined) entry.name = a.name;
     entry.desc = text.desc ?? a.desc ?? null;
     entry.shortDesc = text.shortDesc ?? a.shortDesc ?? null;
+    if (Object.keys(flags).length > 0) entry.flags = flags;
     if (a.isNonstandard !== undefined) entry.isNonstandard = a.isNonstandard;
     out[key] = entry;
   }
@@ -728,22 +831,71 @@ export function parseAbilitiesDescriptions(rawText: Record<string, any>): Record
 }
 
 /**
+ * Extracts searchable effect tags and standard flags from a raw Showdown item definition.
+ */
+export function extractItemFlags(
+  item: Record<string, any>,
+  id?: string,
+  onCallbackWarning?: (msg: string) => void
+): ItemFlags {
+  const flags: ItemFlags = {};
+
+  if (item.fling) flags.fling = item.fling;
+  if (item.isBerry) flags.isBerry = true;
+  if (item.isChoice) flags.isChoice = true;
+  if (item.isGem) flags.isGem = true;
+  if (item.isPokeball) flags.isPokeball = true;
+  if (item.isPrimalOrb) flags.isPrimalOrb = true;
+  if (item.ignoreKlutz) flags.ignoreKlutz = true;
+  if (item.megaStone) flags.megaStone = item.megaStone;
+  if (item.onDrive) flags.onDrive = item.onDrive;
+  if (item.onMemory) flags.onMemory = item.onMemory;
+  if (item.onPlate) flags.onPlate = item.onPlate;
+  if (item.zMove !== undefined) flags.zMove = item.zMove;
+  if (item.zMoveType) flags.zMoveType = item.zMoveType;
+  if (item.zMoveFrom) flags.zMoveFrom = item.zMoveFrom;
+  if (item.itemUser) flags.itemUser = item.itemUser;
+  if (item.forcedForme) flags.forcedForme = item.forcedForme;
+  if (item.naturalGift) flags.naturalGift = item.naturalGift;
+  if (item.boosts) flags.boosts = item.boosts;
+
+  if (id && onCallbackWarning) {
+    let hasCallback = false;
+    for (const [k, v] of Object.entries(item)) {
+      if (typeof v === 'function' && (k.startsWith('on') || k === 'condition')) {
+        hasCallback = true;
+        break;
+      }
+    }
+    const hasExtractedEffect = Object.keys(flags).length > 0;
+    if (hasCallback && !hasExtractedEffect) {
+      onCallbackWarning(`[CALLBACK-ONLY] ${id}: has handler callbacks but no declarative effect flags`);
+    }
+  }
+
+  return flags;
+}
+
+/**
  * Normalizes item definitions from Showdown sources.
  */
 export function parseItems(
   rawItems: Record<string, any>,
-  textEntries?: Record<string, any>
+  textEntries?: Record<string, any>,
+  onCallbackWarning?: (msg: string) => void
 ): Record<string, Partial<RepoItem> & { inherit?: boolean }> {
   const out: Record<string, Partial<RepoItem> & { inherit?: boolean }> = {};
   for (const [key, item] of Object.entries(rawItems)) {
     if (item.isNonstandard === 'CAP') continue;
     const text = extractTextOverrides(textEntries?.[key]);
+    const flags = extractItemFlags(item, key, onCallbackWarning);
     const entry: Partial<RepoItem> & { inherit?: boolean } = {
       inherit: item.inherit === true,
     };
     if (item.name !== undefined) entry.name = item.name;
     entry.desc = text.desc ?? item.desc ?? null;
     entry.shortDesc = text.shortDesc ?? item.shortDesc ?? null;
+    if (Object.keys(flags).length > 0) entry.flags = flags;
     if (item.isNonstandard !== undefined) entry.isNonstandard = item.isNonstandard;
     out[key] = entry;
   }
