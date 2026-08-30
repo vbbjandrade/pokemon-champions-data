@@ -1,0 +1,1597 @@
+{
+  "noability": {
+    "name": "No Ability",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "flags": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "adaptability": {
+    "name": "Adaptability",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "aerilate": {
+    "name": "Aerilate",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "aftermath": {
+    "name": "Aftermath",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "airlock": {
+    "name": "Air Lock",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "analytic": {
+    "name": "Analytic",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "angerpoint": {
+    "name": "Anger Point",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "angershell": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "anticipation": {
+    "name": "Anticipation",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "arenatrap": {
+    "name": "Arena Trap",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "armortail": {
+    "name": "Armor Tail",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "aromaveil": {
+    "name": "Aroma Veil",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "asoneglastrier": {
+    "name": "As One (Glastrier)",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "asonespectrier": {
+    "name": "As One (Spectrier)",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "aurabreak": {
+    "name": "Aura Break",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "baddreams": {
+    "name": "Bad Dreams",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "ballfetch": {
+    "name": "Ball Fetch",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "battery": {
+    "name": "Battery",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "battlearmor": {
+    "name": "Battle Armor",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "battlebond": {
+    "name": "Battle Bond",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "beadsofruin": {
+    "name": "Beads of Ruin",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "beastboost": {
+    "name": "Beast Boost",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "berserk": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "bigpecks": {
+    "name": "Big Pecks",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "blaze": {
+    "name": "Blaze",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "bulletproof": {
+    "name": "Bulletproof",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "cheekpouch": {
+    "name": "Cheek Pouch",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "chillingneigh": {
+    "name": "Chilling Neigh",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "chlorophyll": {
+    "name": "Chlorophyll",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "clearbody": {
+    "name": "Clear Body",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "cloudnine": {
+    "name": "Cloud Nine",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "colorchange": {
+    "name": "Color Change",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "comatose": {
+    "name": "Comatose",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "commander": {
+    "name": "Commander",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "competitive": {
+    "name": "Competitive",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "compoundeyes": {
+    "name": "Compound Eyes",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "contrary": {
+    "name": "Contrary",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "corrosion": {
+    "name": "Corrosion",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "costar": {
+    "name": "Costar",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "cottondown": {
+    "name": "Cotton Down",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "cudchew": {
+    "name": "Cud Chew",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "curiousmedicine": {
+    "name": "Curious Medicine",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "cursedbody": {
+    "name": "Cursed Body",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "cutecharm": {
+    "name": "Cute Charm",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "damp": {
+    "name": "Damp",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "dancer": {
+    "name": "Dancer",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "darkaura": {
+    "name": "Dark Aura",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "dauntlessshield": {
+    "name": "Dauntless Shield",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "dazzling": {
+    "name": "Dazzling",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "defeatist": {
+    "name": "Defeatist",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "defiant": {
+    "name": "Defiant",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "deltastream": {
+    "name": "Delta Stream",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "desolateland": {
+    "name": "Desolate Land",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "disguise": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "download": {
+    "name": "Download",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "dragonize": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "dragonsmaw": {
+    "name": "Dragon",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "drizzle": {
+    "name": "Drizzle",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "drought": {
+    "name": "Drought",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "dryskin": {
+    "name": "Dry Skin",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "earlybird": {
+    "name": "Early Bird",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "eartheater": {
+    "name": "Earth Eater",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "eelevate": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "effectspore": {
+    "name": "Effect Spore",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "electricsurge": {
+    "name": "Electric Surge",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "electromorphosis": {
+    "name": "Electromorphosis",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "embodyaspectcornerstone": {
+    "name": "Embody Aspect (Cornerstone)",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "embodyaspecthearthflame": {
+    "name": "Embody Aspect (Hearthflame)",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "embodyaspectteal": {
+    "name": "Embody Aspect (Teal)",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "embodyaspectwellspring": {
+    "name": "Embody Aspect (Wellspring)",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "emergencyexit": {
+    "name": "Emergency Exit",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "fairyaura": {
+    "name": "Fairy Aura",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "filter": {
+    "name": "Filter",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "firemane": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "flamebody": {
+    "name": "Flame Body",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "flareboost": {
+    "name": "Flare Boost",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "flashfire": {
+    "name": "Flash Fire",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "condition": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "flowergift": {
+    "name": "Flower Gift",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "flowerveil": {
+    "name": "Flower Veil",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "fluffy": {
+    "name": "Fluffy",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "forecast": {
+    "name": "Forecast",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "forewarn": {
+    "name": "Forewarn",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "friendguard": {
+    "name": "Friend Guard",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "frisk": {
+    "name": "Frisk",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "fullmetalbody": {
+    "name": "Full Metal Body",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "furcoat": {
+    "name": "Fur Coat",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "galewings": {
+    "name": "Gale Wings",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "galvanize": {
+    "name": "Galvanize",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gluttony": {
+    "name": "Gluttony",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "goodasgold": {
+    "name": "Good as Gold",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gooey": {
+    "name": "Gooey",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gorillatactics": {
+    "name": "Gorilla Tactics",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "grasspelt": {
+    "name": "Grass Pelt",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "grassysurge": {
+    "name": "Grassy Surge",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "grimneigh": {
+    "name": "Grim Neigh",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "guarddog": {
+    "name": "Guard Dog",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gulpmissile": {
+    "name": "Gulp Missile",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "guts": {
+    "name": "Guts",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "hadronengine": {
+    "name": "Hadron Engine",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "harvest": {
+    "name": "Harvest",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "healer": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "heatproof": {
+    "name": "Heatproof",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "heavymetal": {
+    "name": "Heavy Metal",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "honeygather": {
+    "name": "Honey Gather",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "hospitality": {
+    "name": "Hospitality",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "hugepower": {
+    "name": "Huge Power",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "hungerswitch": {
+    "name": "Hunger Switch",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "hustle": {
+    "name": "Hustle",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "hydration": {
+    "name": "Hydration",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "hypercutter": {
+    "name": "Hyper Cutter",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "icebody": {
+    "name": "Ice Body",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "iceface": {
+    "name": "Ice Face",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "icescales": {
+    "name": "Ice Scales",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "illuminate": {
+    "name": "Illuminate",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "illusion": {
+    "name": "Illusion",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "immunity": {
+    "name": "Immunity",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "imposter": {
+    "name": "Imposter",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "infiltrator": {
+    "name": "Infiltrator",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "innardsout": {
+    "name": "Innards Out",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "innerfocus": {
+    "name": "Inner Focus",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "insomnia": {
+    "name": "Insomnia",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "intimidate": {
+    "name": "Intimidate",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "intrepidsword": {
+    "name": "Intrepid Sword",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "ironbarbs": {
+    "name": "Iron Barbs",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "ironfist": {
+    "name": "Iron Fist",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "justified": {
+    "name": "Justified",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "keeneye": {
+    "name": "Keen Eye",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "klutz": {
+    "name": "Klutz",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "leafguard": {
+    "name": "Leaf Guard",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "levitate": {
+    "name": "Levitate",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "libero": {
+    "name": "Libero",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "lightmetal": {
+    "name": "Light Metal",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "lightningrod": {
+    "name": "Lightning Rod",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "limber": {
+    "name": "Limber",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "lingeringaroma": {
+    "name": "Lingering Aroma",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "liquidooze": {
+    "name": "Liquid Ooze",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "liquidvoice": {
+    "name": "Liquid Voice",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "longreach": {
+    "name": "Long Reach",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "magicbounce": {
+    "name": "Magic Bounce",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "magicguard": {
+    "name": "Magic Guard",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "magician": {
+    "name": "Magician",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "magmaarmor": {
+    "name": "Magma Armor",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "magnetpull": {
+    "name": "Magnet Pull",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "marvelscale": {
+    "name": "Marvel Scale",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "megalauncher": {
+    "name": "Mega Launcher",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "megasol": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "merciless": {
+    "name": "Merciless",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "mimicry": {
+    "name": "Mimicry",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "mindseye": {
+    "name": "Mind",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "minus": {
+    "name": "Minus",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "mirrorarmor": {
+    "name": "Mirror Armor",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "mistysurge": {
+    "name": "Misty Surge",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "moldbreaker": {
+    "name": "Mold Breaker",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "moody": {
+    "name": "Moody",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "motordrive": {
+    "name": "Motor Drive",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "moxie": {
+    "name": "Moxie",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "multiscale": {
+    "name": "Multiscale",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "multitype": {
+    "name": "Multitype",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "mummy": {
+    "name": "Mummy",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "myceliummight": {
+    "name": "Mycelium Might",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "naturalcure": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "neuroforce": {
+    "name": "Neuroforce",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "neutralizinggas": {
+    "name": "Neutralizing Gas",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "noguard": {
+    "name": "No Guard",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "normalize": {
+    "name": "Normalize",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "oblivious": {
+    "name": "Oblivious",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "opportunist": {
+    "name": "Opportunist",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "orichalcumpulse": {
+    "name": "Orichalcum Pulse",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "overcoat": {
+    "name": "Overcoat",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "overgrow": {
+    "name": "Overgrow",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "owntempo": {
+    "name": "Own Tempo",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "parentalbond": {
+    "name": "Parental Bond",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "pastelveil": {
+    "name": "Pastel Veil",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "perishbody": {
+    "name": "Perish Body",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "pickpocket": {
+    "name": "Pickpocket",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "pickup": {
+    "name": "Pickup",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "piercingdrill": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "pixilate": {
+    "name": "Pixilate",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "plus": {
+    "name": "Plus",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "poisonheal": {
+    "name": "Poison Heal",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "poisonpoint": {
+    "name": "Poison Point",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "poisonpuppeteer": {
+    "name": "Poison Puppeteer",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "poisontouch": {
+    "name": "Poison Touch",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "powerconstruct": {
+    "name": "Power Construct",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "powerofalchemy": {
+    "name": "Power of Alchemy",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "powerspot": {
+    "name": "Power Spot",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "prankster": {
+    "name": "Prankster",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "pressure": {
+    "name": "Pressure",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "primordialsea": {
+    "name": "Primordial Sea",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "prismarmor": {
+    "name": "Prism Armor",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "propellertail": {
+    "name": "Propeller Tail",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "protean": {
+    "name": "Protean",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "protosynthesis": {
+    "name": "Protosynthesis",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "psychicsurge": {
+    "name": "Psychic Surge",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "punkrock": {
+    "name": "Punk Rock",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "purepower": {
+    "name": "Pure Power",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "purifyingsalt": {
+    "name": "Purifying Salt",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "quarkdrive": {
+    "name": "Quark Drive",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "queenlymajesty": {
+    "name": "Queenly Majesty",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "quickdraw": {
+    "name": "Quick Draw",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "quickfeet": {
+    "name": "Quick Feet",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "raindish": {
+    "name": "Rain Dish",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "rattled": {
+    "name": "Rattled",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "receiver": {
+    "name": "Receiver",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "reckless": {
+    "name": "Reckless",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "refrigerate": {
+    "name": "Refrigerate",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "regenerator": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "ripen": {
+    "name": "Ripen",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "rivalry": {
+    "name": "Rivalry",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "rkssystem": {
+    "name": "RKS System",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "rockhead": {
+    "name": "Rock Head",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "rockypayload": {
+    "name": "Rocky Payload",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "roughskin": {
+    "name": "Rough Skin",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "runaway": {
+    "name": "Run Away",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sandforce": {
+    "name": "Sand Force",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sandrush": {
+    "name": "Sand Rush",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sandspit": {
+    "name": "Sand Spit",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sandstream": {
+    "name": "Sand Stream",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sandveil": {
+    "name": "Sand Veil",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sapsipper": {
+    "name": "Sap Sipper",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "schooling": {
+    "name": "Schooling",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "scrappy": {
+    "name": "Scrappy",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "screencleaner": {
+    "name": "Screen Cleaner",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "seedsower": {
+    "name": "Seed Sower",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "serenegrace": {
+    "name": "Serene Grace",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "shadowshield": {
+    "name": "Shadow Shield",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "shadowtag": {
+    "name": "Shadow Tag",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sharpness": {
+    "name": "Sharpness",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "shedskin": {
+    "name": "Shed Skin",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sheerforce": {
+    "name": "Sheer Force",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "shellarmor": {
+    "name": "Shell Armor",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "shielddust": {
+    "name": "Shield Dust",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "shieldsdown": {
+    "name": "Shields Down",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "simple": {
+    "name": "Simple",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "skilllink": {
+    "name": "Skill Link",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "slowstart": {
+    "name": "Slow Start",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "slushrush": {
+    "name": "Slush Rush",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sniper": {
+    "name": "Sniper",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "snowcloak": {
+    "name": "Snow Cloak",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "snowwarning": {
+    "name": "Snow Warning",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "solarpower": {
+    "name": "Solar Power",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "solidrock": {
+    "name": "Solid Rock",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "soulheart": {
+    "name": "Soul-Heart",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "soundproof": {
+    "name": "Soundproof",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "speedboost": {
+    "name": "Speed Boost",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "spicyspray": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "stakeout": {
+    "name": "Stakeout",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "stall": {
+    "name": "Stall",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "stalwart": {
+    "name": "Stalwart",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "stamina": {
+    "name": "Stamina",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "stancechange": {
+    "name": "Stance Change",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "static": {
+    "name": "Static",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "steadfast": {
+    "name": "Steadfast",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "steamengine": {
+    "name": "Steam Engine",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "steelworker": {
+    "name": "Steelworker",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "steelyspirit": {
+    "name": "Steely Spirit",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "stench": {
+    "name": "Stench",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "stickyhold": {
+    "name": "Sticky Hold",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "stormdrain": {
+    "name": "Storm Drain",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "strongjaw": {
+    "name": "Strong Jaw",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sturdy": {
+    "name": "Sturdy",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "suctioncups": {
+    "name": "Suction Cups",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "superluck": {
+    "name": "Super Luck",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "supersweetsyrup": {
+    "name": "Supersweet Syrup",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "supremeoverlord": {
+    "name": "Supreme Overlord",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "surgesurfer": {
+    "name": "Surge Surfer",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "swarm": {
+    "name": "Swarm",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sweetveil": {
+    "name": "Sweet Veil",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "swiftswim": {
+    "name": "Swift Swim",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "swordofruin": {
+    "name": "Sword of Ruin",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "symbiosis": {
+    "name": "Symbiosis",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "synchronize": {
+    "name": "Synchronize",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "tabletsofruin": {
+    "name": "Tablets of Ruin",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "tangledfeet": {
+    "name": "Tangled Feet",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "tanglinghair": {
+    "name": "Tangling Hair",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "technician": {
+    "name": "Technician",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "telepathy": {
+    "name": "Telepathy",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "teraformzero": {
+    "name": "Teraform Zero",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "terashell": {
+    "name": "Tera Shell",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "terashift": {
+    "name": "Tera Shift",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "teravolt": {
+    "name": "Teravolt",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "thermalexchange": {
+    "name": "Thermal Exchange",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "thickfat": {
+    "name": "Thick Fat",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "tintedlens": {
+    "name": "Tinted Lens",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "torrent": {
+    "name": "Torrent",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "toughclaws": {
+    "name": "Tough Claws",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "toxicboost": {
+    "name": "Toxic Boost",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "toxicchain": {
+    "name": "Toxic Chain",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "toxicdebris": {
+    "name": "Toxic Debris",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "trace": {
+    "name": "Trace",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "transistor": {
+    "name": "Transistor",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "triage": {
+    "name": "Triage",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "truant": {
+    "name": "Truant",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "turboblaze": {
+    "name": "Turboblaze",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "unaware": {
+    "name": "Unaware",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "unburden": {
+    "name": "Unburden",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "unnerve": {
+    "name": "Unnerve",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "unseenfist": {
+    "name": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "vesselofruin": {
+    "name": "Vessel of Ruin",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "victorystar": {
+    "name": "Victory Star",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "vitalspirit": {
+    "name": "Vital Spirit",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "voltabsorb": {
+    "name": "Volt Absorb",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "wanderingspirit": {
+    "name": "Wandering Spirit",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "waterabsorb": {
+    "name": "Water Absorb",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "waterbubble": {
+    "name": "Water Bubble",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "watercompaction": {
+    "name": "Water Compaction",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "waterveil": {
+    "name": "Water Veil",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "weakarmor": {
+    "name": "Weak Armor",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "wellbakedbody": {
+    "name": "Well-Baked Body",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "whitesmoke": {
+    "name": "White Smoke",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "wimpout": {
+    "name": "Wimp Out",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "windpower": {
+    "name": "Wind Power",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "windrider": {
+    "name": "Wind Rider",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "wonderguard": {
+    "name": "Wonder Guard",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "wonderskin": {
+    "name": "Wonder Skin",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "zenmode": {
+    "name": "Zen Mode",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "zerotohero": {
+    "name": "Zero to Hero",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  }
+}

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 #   Usage:
-#   scripts/fetch_sources.sh                                Fetch input data into sources/
+#   scripts/fetch_sources.sh                                Fetch input data into data/sources/
 #   python3 scripts/update_from_showdown.py [--dry-run]
 #   python3 scripts/validate.py                             Validate the consistency of the generated output
 
@@ -16,13 +16,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from showdown_parser import (  # noqa: E402
-    parse_abilities_ts, parse_blocks, parse_items, parse_learnsets,
-    parse_legal_species, parse_move_overrides, parse_moves_main,
+    parse_abilities_entries, parse_abilities_descriptions, parse_blocks, parse_items, parse_learnsets,
+    parse_legal_species, parse_move_mods, parse_moves_main,
     parse_pokedex, repo_form, to_repo_name,
 )
 
 ROOT = Path(__file__).parent.parent
-SRC = ROOT / 'sources'
+SRC = ROOT / 'data/sources'
 
 #   Forms that should be collapsed into a single entry
 COLLAPSED_FORMS = {
@@ -47,6 +47,8 @@ SHOWDOWN_ALIASES = {
     'taurospaldeacombat': 'Paldean Tauros',
 }
 
+SHOWDOWN_SOURCE = "smogon/pokemon-showdown"
+
 def load(path):
     return json.loads((ROOT / path).read_text())
 
@@ -57,7 +59,6 @@ def save(path, data, dry):
     else:
         (ROOT / path).write_text(text)
         print(f'  wrote {path}')
-
 
 def die(msg):
     print(f'\nERROR: {msg}', file=sys.stderr)
@@ -79,208 +80,202 @@ def main():
         'abilities-main.ts',
         'champions-abilities.ts']:
         if not (SRC / f).exists():
-            die(f'sources/{f} is missing. Please run scripts/fetch_sources.sh first.')
+            die(f'data/sources/{f} is missing. Please run scripts/fetch_sources.sh first.')
 
-    dex = parse_pokedex((SRC / 'pokedex.ts').read_text())
+    sd_dex = parse_pokedex((SRC / 'pokedex.ts').read_text())
+    repo_roster = load('data/pokemon/roster.json')
+    
+    # Showdown's learnsets for champions are all contained in the mod file 
     learnsets_mod = parse_learnsets((SRC / 'champions-learnsets.ts').read_text())
+    repo_learnsets = load('data/pokemon/learnsets.json')
+
     moves_main = parse_moves_main((SRC / 'moves-main.ts').read_text())
-    move_overrides = parse_move_overrides((SRC / 'champions-moves.ts').read_text())
+    move_mods = parse_move_mods((SRC / 'champions-moves.ts').read_text())
+
     items_main = parse_items((SRC / 'items-main.ts').read_text())
     items_mod = parse_items((SRC / 'champions-items.ts').read_text())
-    abilities_main = parse_abilities_ts((SRC / 'abilities-main.ts').read_text())
-    abilities_mod = parse_abilities_ts((SRC / 'champions-abilities.ts').read_text())
+    
+    repo_abilities = load('data/abilities/abilities.json')
+    abilities_main = parse_abilities_entries((SRC / 'abilities-main.ts').read_text())
+    abilities_descriptions = parse_abilities_descriptions((SRC / 'abilities-text.ts').read_text())
+    abilities_mod = parse_abilities_entries((SRC / 'champions-abilities.ts').read_text())
 
-    roster = load('pokemon/roster.json')
-    base_stats = load('pokemon/base-stats.json')
-    learnsets = load('learnsets/learnsets.json')
-    moves = load('moves/moves.json')
-    items = load('items/items.json')
-    abilities = load('abilities/abilities.json')
+    #   Roster
+    champions_legal_roster_ids = parse_legal_species((SRC / 'champions-formats-data.ts').read_text())
+    unique_roster_ids = {k for k in champions_legal_roster_ids if k not in COLLAPSED_FORMS}
+    unknown = [i for i in unique_roster_ids if i not in sd_dex]
 
-    #   1. Roster
-    legal_roster = parse_legal_species((SRC / 'champions-formats-data.ts').read_text())
-    new_roster = []
-    new_base_stats = []
-
-    target_ids = sorted(i for i in legal_roster if i not in COLLAPSED_FORMS)
-    unknown = [i for i in target_ids if i not in dex]
     if unknown:
-        die(f'species missing from pokedex: {unknown}')
+        die(f'species missing from showdown pokedex: {unknown}')
 
-    def repo_name_for(sid):
-        return SHOWDOWN_ALIASES.get(sid) or to_repo_name(dex[sid]['name'])
+    sd_unique_dex = {k: v for k, v in sd_dex.items() if k in unique_roster_ids}
+    
+    def repo_name_for(mon_id):
+        return SHOWDOWN_ALIASES.get(mon_id) or to_repo_name(sd_unique_dex[mon_id]['name'])
 
-    def order_key(sid):
-        e = dex[sid]
+    def order_key(mon_id):
+        e = sd_unique_dex[mon_id]
         form = repo_form(e['name'])
         rank = {'Mega': 0, 'Regional': 1}.get(form, 2)
         xyz = 0 if e['name'].endswith('-X') else 1 if e['name'].endswith('-Y') else 2 if e['name'].endswith('-Z') else 3
-        return (e['num'], rank, xyz)
+        return (e['dexNumber'], rank, xyz)
 
-    for sid in target_ids:
-        print(f"  {dex[sid]['num']:>4} {to_repo_name(dex[sid]['name'])}")
+    updated_roster = repo_roster
 
-    for sid in target_ids:
-        e = dex[sid]
-        name = to_repo_name(e['name'])
-        new_roster.append({
-            'name': name,
-            'dexNumber': e['num'],
-            'types': e['types'],
-            'form': repo_form(e['name']),
-            'abilities': e['abilities'],
-            'championsVerified': True,
-        })
-        stats = e['baseStats']
-        new_base_stats.append({
-            'name': name,
-            'dexNumber': e['num'],
-            'form': repo_form(e['name']),
-            'hp': stats['hp'], 'atk': stats['atk'], 'def': stats['def'],
-            'spa': stats['spa'], 'spd': stats['spd'], 'spe': stats['spe'],
-            'total': sum(stats.values()),
-            'championsVerified': True,
-        })
+    for repo_mon_id, repo_mon in repo_roster.items():
+        if not sd_unique_dex.get(repo_mon_id):
+            print(f'missing showdown champions dex entry for: {repo_mon['name']}.\nPlease check for removal')
+            repo_mon['verified'] = False
 
+    for sd_mon_id, sd_mon in sd_unique_dex.items():
+        new = sd_mon_id not in repo_roster
+        sd_mon['name'] = repo_name_for(sd_mon_id)
+
+        if new:
+            print(f"new showdown champions dex entry for: {sd_mon['name']}.\nPlease check for authenticity.")
+            sd_mon['source'] = SHOWDOWN_SOURCE
+            sd_mon['verified'] = False
+        else: 
+            repo_mon = repo_roster[sd_mon_id]
+            repo_mon_source = repo_mon.pop('source')
+            repo_mon_verified = repo_mon.pop('verified')
+
+            different = repo_mon != sd_mon
+            if different:
+                if repo_mon_source == SHOWDOWN_SOURCE:
+                    print(f'updated showdown champions dex entry for: {sd_mon['name']}')
+                    sd_mon['source'] = SHOWDOWN_SOURCE
+                else:
+                    print(f'divergent values found on showdown champions dex entry for: {sd_mon['name']}.\nRequires manual checking of provided source: "{repo_mon_source}".')
+                    sd_mon['source'] = repo_mon_source
+                sd_mon['verified'] = False
+            else:
+                sd_mon['source'] = repo_mon_source
+                sd_mon['verified'] = bool(repo_mon_verified)
+
+        updated_roster[sd_mon_id] = sd_mon
+
+    #   Moves
     def base_species_id(sid):
         if sid in LEARNSET_FALLBACKS:
             return LEARNSET_FALLBACKS[sid]
-        for suffix in ('megax', 'megay', 'megaz', 'mega'):
+        for suffix in ('megax', 'megay', 'megaz', 'mega', 'gmax'):
             if sid.endswith(suffix) and learnsets_mod.get(sid[:-len(suffix)]):
                 return sid[:-len(suffix)]
         return sid
-
-    #   2. Moves
-    move_name_by_id = {mid: m['name'] for mid, m in moves_main.items()}
-    for sid in target_ids:
-        e = dex[sid]
-        name = to_repo_name(e['name'])
-        src_id = base_species_id(sid)
-        if not learnsets_mod.get(src_id):
-            die(f'missing learnset for: {sid} (base: {src_id})')
-        move_names = []
-        for mid in learnsets_mod[src_id]:
-            if mid not in move_name_by_id:
-                die(f'moves.ts missing move: {mid} ({sid})')
-            move_names.append(move_name_by_id[mid])
-        learnsets[name] = {
-            'dexNumber': e['num'],
-            'form': repo_form(e['name']),
-            'championsVerified': True,
-            'source': 'showdown-champions',
-            'moves': [{'name': n} for n in sorted(set(move_names))],
-        }
-
-    moves_by_name = {m['name']: m for m in moves}
-
-    for mid, ov in move_overrides.items():
-        name = move_name_by_id.get(mid)
-        if not name or name not in moves_by_name:
-            continue
-        entry = moves_by_name[name]
-        for field in ('power', 'accuracy', 'pp', 'priority', 'type', 'category'):
-            if field in ov:
-                new_val = ov[field].lower() if field in ('type', 'category') and isinstance(ov[field], str) else ov[field]
-                cur_val = entry.get(field)
-                if field in ('type', 'category'):
-                    new_val = ov[field]
-                if cur_val != new_val and not (field == 'power' and cur_val is None and new_val == 0):
-                    entry[field] = new_val
-        if ov['unlocked'] and not entry.get('inChampions'):
-            entry['inChampions'] = True
-
-    used_move_ids = {mid for mvs in learnsets_mod.values() for mid in mvs}
-
-    for mid, ov in move_overrides.items():
-        if not ov.get('removed') or mid in used_move_ids:
-            continue
-        name = move_name_by_id.get(mid)
-        if name and name in moves_by_name and moves_by_name[name].get('inChampions'):
-            moves_by_name[name]['inChampions'] = False
-    flipped = 0
-    missing_moves = []
-    for mid in sorted(used_move_ids):
-        name = move_name_by_id.get(mid)
-        if name is None:
-            die(f'moves.ts missing move: {mid}')
-        if name in moves_by_name:
-            if not moves_by_name[name].get('inChampions'):
-                moves_by_name[name]['inChampions'] = True
-                flipped += 1
+    
+    sd_champions_movedex = moves_main
+    for mid, move in move_mods.items():
+        if move.get('inherit') == True:
+            sd_champions_movedex[mid] = {**sd_champions_movedex[mid], **move}
         else:
-            missing_moves.append(mid)
+            sd_champions_movedex[mid] = move
+    sd_champions_movedex = {k: v for k, v in sd_champions_movedex.items() if v.get('isNonstandard') == None}
 
-    for mid in sorted(missing_moves):
-        m = moves_main[mid]
-        moves.append({
-            'name': m['name'],
-            'type': m['type'],
-            'category': m['category'],
-            'description': m['desc'] or '',
-            'target': m['target'] or 'normal',
-            'inChampions': True,
-            'championsVerified': True,
-            'power': m['power'] or 0,
-            'accuracy': m['accuracy'] if m['accuracy'] is not None else 0,
-            'pp': m['pp'] or 10,
-            'priority': m['priority'],
-            'secondary': m['secondary'],
-            'flags': m['flags'],
-        })
+    learnsets = {}
+    used_moves = {}
 
-    #   3. Items
-    item_names = {i['name'] for i in items}
-    new_items = []
-    for iid, it in sorted(items_mod.items()):
-        name = it['name'] or (items_main.get(iid) or {}).get('name')
-        if not name:
-            continue
-        if name in item_names:
-            continue
-        desc = it['desc'] or (items_main.get(iid) or {}).get('desc') or ''
-        new_items.append({'name': name, 'description': desc})
-    for it in sorted(new_items, key=lambda x: x['name']):
-        items.append(it)
+    for pid, pk in updated_roster.items():
+        mapped_species_id = base_species_id(pid)
+        
+        if not learnsets_mod.get(mapped_species_id):
+            print(f'missing showdown champions learnset for: {pid} (base: {mapped_species_id})\nPlease check for removal.')
+            repo_matching_learnset = repo_learnsets.get(pid)
+            if not repo_matching_learnset:
+                print(f'learnset match not found in repo for: {pid}')
+                continue
+            else:
+                repo_matching_learnset['verified'] = False
+                learnsets[pid] = repo_matching_learnset
+                continue
 
-    #   4. Abilities
-    ability_names = {a['name'] for a in abilities}
-    needed = set()
-    new_abilities = []
-    for sid in target_ids:
-        needed.update(dex[sid]['abilities'].values())
-    for aid, ab in abilities_mod.items():
-        if ab['unlocked']:
-            main_ab = abilities_main.get(aid) or {}
-            needed.add(main_ab.get('name') or (ab['name'] or ''))
-    for name in sorted(n for n in needed if n and n not in ability_names):
-        aid = name.lower().replace(' ', '').replace('-', '').replace("'", '')
-        desc = (abilities_main.get(aid) or {}).get('desc') or ''
-        new_abilities.append({'name': name, 'description': desc, 'championsVerified': True})
+        for mid in learnsets_mod[mapped_species_id]:
+            if mid not in sd_champions_movedex:
+                die(f'moves-main.ts missing move: {mid} ({pid})')            
+            learnsets[pid] = {
+                'dexNumber': pk['dexNumber'],
+                'form': pk['form'],
+                'moves': [m for m in learnsets_mod[mapped_species_id]],
+                'source': 'showdown-champions',
+                'verified': False,
+            }
 
-    version = load('meta/version.json')
+            if mid not in used_moves:
+                used_moves[mid] = sd_champions_movedex[mid]
+
+    used_moves = dict(sorted(used_moves.items()))
+
+    #   Abilities
+    sd_champions_abilitydex = abilities_main
+    for aid, ability in abilities_mod.items():
+        if ability.get('inherit') == True:
+            sd_champions_abilitydex[aid] = {**sd_champions_abilitydex[aid], **ability}
+        else:
+            sd_champions_abilitydex[aid] = ability
+    sd_champions_abilitydex = {k: v for k, v in sd_champions_abilitydex.items() if v.get('isNonstandard') == None}
+
+    abilities_name_to_id = {}
+    full_abilitydex = {}
+
+    for repo_abl_id, repo_abl in repo_abilities.items():
+        if not sd_champions_abilitydex.get(repo_abl_id):
+            print(f'missing showdown champions ability entry for: {repo_abl['name']}.\nPlease check for removal')
+            repo_abl['verified'] = False
+
+    for sd_abl_id, sd_abl in sd_champions_abilitydex.items():
+        new = sd_abl_id not in repo_abilities
+
+        if new:
+            print(f"new showdown champions ability entry for: {sd_abl['name']}.\nPlease check for authenticity.")
+            sd_abl['source'] = SHOWDOWN_SOURCE
+            sd_abl['verified'] = False
+        else: 
+            repo_abl = repo_roster[sd_abl_id]
+            repo_abl_source = repo_mon.pop('source')
+            repo_abl_verified = repo_mon.pop('verified')
+
+            different = repo_abl != sd_abl
+            if different:
+                if repo_abl_source == SHOWDOWN_SOURCE:
+                    print(f'updated showdown champions ability entry for: {sd_abl['name']}')
+                    sd_abl['source'] = SHOWDOWN_SOURCE
+                else:
+                    print(f'divergent values found on showdown for: {sd_abl['name']}.\nRequires manual checking of provided source: "{repo_abl_source}".')
+                    sd_abl['source'] = repo_abl_source
+                sd_abl['verified'] = False
+            else:
+                sd_abl['source'] = repo_mon_source
+                sd_abl['verified'] = bool(repo_mon_verified)
+
+        full_abilitydex[sd_abl_id] = sd_abl
+        abilities_name_to_id[sd_abl['name']] = sd_abl_id
+
+    used_abilities = full_abilitydex
+
+    #   Items
+    items = {}
+
+    version = load('data/meta/version.json')
     version['version'] = '1.4.0'
     version['lastUpdated'] = datetime.date.today().isoformat()
     version['regulation'] = 'M-B'
     version['sources'] = [
-        'Pokemon Showdown data/pokedex.ts + data/mods/champions (roster, stats, learnsets, items, move changes)',
+        'Pokemon Showdown data/pokedex.ts + data/mods/champions (roster, learnsets, items, move changes)',
     ]
     version['counts'] = {
-        'pokemon': len(roster),
-        'movesInChampions': sum(1 for m in moves if m.get('inChampions')),
-        'movesTotal': len(moves),
-        'abilities': len(abilities),
+        'pokemon': len(updated_roster),
+        'moves': sum(1 for m in used_moves),
+        'abilities': len(used_abilities),
         'items': len(items),
         'natures': version['counts'].get('natures', 25),
         'types': 18,
     }
 
-    save('pokemon/roster.json', roster, args.dry_run)
-    save('pokemon/base-stats.json', base_stats, args.dry_run)
-    save('learnsets/learnsets.json', learnsets, args.dry_run)
-    save('moves/moves.json', moves, args.dry_run)
-    save('items/items.json', items, args.dry_run)
-    save('abilities/abilities.json', abilities, args.dry_run)
-    save('meta/version.json', version, args.dry_run)
+    save('data/pokemon/roster.json', updated_roster, args.dry_run)
+    save('data/pokemon/learnsets.json', learnsets, args.dry_run)
+    save('data/moves/moves.json', used_moves, args.dry_run)
+    save('data/items/items.json', items, args.dry_run)
+    save('data/abilities/abilities.json', used_abilities, args.dry_run)
     print('\nDone. Next, please run `python3 scripts/validate.py`.')
 
 if __name__ == '__main__':

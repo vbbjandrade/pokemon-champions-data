@@ -1,0 +1,7323 @@
+{
+  "venusaur": {
+    "dexNumber": 3,
+    "name": "Venusaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Overgrow",
+      "H": "Chlorophyll"
+    },
+    "weightKg": 100,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "venusaurmega": {
+    "dexNumber": 3,
+    "name": "Mega Venusaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Thick Fat"
+    },
+    "weightKg": 155,
+    "requiredItem": "Venusaurite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "charizard": {
+    "dexNumber": 6,
+    "name": "Charizard",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Blaze",
+      "H": "Solar Power"
+    },
+    "weightKg": 90,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "charizardmegax": {
+    "dexNumber": 6,
+    "name": "Mega Charizard X",
+    "types": [
+      "Fire",
+      "Dragon"
+    ],
+    "form": "Mega-X",
+    "abilities": {
+      "0": "Tough Claws"
+    },
+    "weightKg": 110,
+    "requiredItem": "Charizardite X",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "charizardmegay": {
+    "dexNumber": 6,
+    "name": "Mega Charizard Y",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "form": "Mega-Y",
+    "abilities": {
+      "0": "Drought"
+    },
+    "weightKg": 100,
+    "requiredItem": "Charizardite Y",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "blastoise": {
+    "dexNumber": 9,
+    "name": "Blastoise",
+    "types": [
+      "Water"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Torrent",
+      "H": "Rain Dish"
+    },
+    "weightKg": 85,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "blastoisemega": {
+    "dexNumber": 9,
+    "name": "Mega Blastoise",
+    "types": [
+      "Water"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Mega Launcher"
+    },
+    "weightKg": 101,
+    "requiredItem": "Blastoisinite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "beedrill": {
+    "dexNumber": 15,
+    "name": "Beedrill",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Swarm",
+      "H": "Sniper"
+    },
+    "weightKg": 29,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "beedrillmega": {
+    "dexNumber": 15,
+    "name": "Mega Beedrill",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Adaptability"
+    },
+    "weightKg": 40,
+    "requiredItem": "Beedrillite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "pidgeot": {
+    "dexNumber": 18,
+    "name": "Pidgeot",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Tangled Feet",
+      "H": "Big Pecks"
+    },
+    "weightKg": 39,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "pidgeotmega": {
+    "dexNumber": 18,
+    "name": "Mega Pidgeot",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "No Guard"
+    },
+    "weightKg": 50,
+    "requiredItem": "Pidgeotite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "arbok": {
+    "dexNumber": 24,
+    "name": "Arbok",
+    "types": [
+      "Poison"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Shed Skin",
+      "H": "Unnerve"
+    },
+    "weightKg": 65,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "pikachu": {
+    "dexNumber": 25,
+    "name": "Pikachu",
+    "types": [
+      "Electric"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Static",
+      "H": "Lightning Rod"
+    },
+    "weightKg": 6,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": true,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "raichu": {
+    "dexNumber": 26,
+    "name": "Raichu",
+    "types": [
+      "Electric"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Static",
+      "H": "Lightning Rod"
+    },
+    "weightKg": 30,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "raichualola": {
+    "dexNumber": 26,
+    "name": "Alolan Raichu",
+    "types": [
+      "Electric",
+      "Psychic"
+    ],
+    "form": "Alola",
+    "abilities": {
+      "0": "Surge Surfer"
+    },
+    "weightKg": 21,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "raichumegax": {
+    "dexNumber": 26,
+    "name": "Mega Raichu X",
+    "types": [
+      "Electric"
+    ],
+    "form": "Mega-X",
+    "abilities": {
+      "0": "Electric Surge"
+    },
+    "weightKg": 38,
+    "requiredItem": "Raichunite X",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "raichumegay": {
+    "dexNumber": 26,
+    "name": "Mega Raichu Y",
+    "types": [
+      "Electric"
+    ],
+    "form": "Mega-Y",
+    "abilities": {
+      "0": "No Guard"
+    },
+    "weightKg": 26,
+    "requiredItem": "Raichunite Y",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "clefable": {
+    "dexNumber": 36,
+    "name": "Clefable",
+    "types": [
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Cute Charm",
+      "1": "Magic Guard",
+      "H": "Unaware"
+    },
+    "weightKg": 40,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "clefablemega": {
+    "dexNumber": 36,
+    "name": "Mega Clefable",
+    "types": [
+      "Fairy",
+      "Flying"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Magic Bounce"
+    },
+    "weightKg": 42,
+    "requiredItem": "Clefablite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "ninetales": {
+    "dexNumber": 38,
+    "name": "Ninetales",
+    "types": [
+      "Fire"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Flash Fire",
+      "H": "Drought"
+    },
+    "weightKg": 19,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "ninetalesalola": {
+    "dexNumber": 38,
+    "name": "Alolan Ninetales",
+    "types": [
+      "Ice",
+      "Fairy"
+    ],
+    "form": "Alola",
+    "abilities": {
+      "0": "Snow Cloak",
+      "H": "Snow Warning"
+    },
+    "weightKg": 19,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "vileplume": {
+    "dexNumber": 45,
+    "name": "Vileplume",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Chlorophyll",
+      "H": "Effect Spore"
+    },
+    "weightKg": 18,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "arcanine": {
+    "dexNumber": 59,
+    "name": "Arcanine",
+    "types": [
+      "Fire"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Flash Fire",
+      "H": "Justified"
+    },
+    "weightKg": 155,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "arcaninehisui": {
+    "dexNumber": 59,
+    "name": "Hisuian Arcanine",
+    "types": [
+      "Fire",
+      "Rock"
+    ],
+    "form": "Hisui",
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Flash Fire",
+      "H": "Rock Head"
+    },
+    "weightKg": 168,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "alakazam": {
+    "dexNumber": 65,
+    "name": "Alakazam",
+    "types": [
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Synchronize",
+      "1": "Inner Focus",
+      "H": "Magic Guard"
+    },
+    "weightKg": 48,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "alakazammega": {
+    "dexNumber": 65,
+    "name": "Mega Alakazam",
+    "types": [
+      "Psychic"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Trace"
+    },
+    "weightKg": 48,
+    "requiredItem": "Alakazite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "machamp": {
+    "dexNumber": 68,
+    "name": "Machamp",
+    "types": [
+      "Fighting"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Guts",
+      "1": "No Guard",
+      "H": "Steadfast"
+    },
+    "weightKg": 130,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "victreebel": {
+    "dexNumber": 71,
+    "name": "Victreebel",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Chlorophyll",
+      "H": "Gluttony"
+    },
+    "weightKg": 15,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "victreebelmega": {
+    "dexNumber": 71,
+    "name": "Mega Victreebel",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Innards Out"
+    },
+    "weightKg": 125,
+    "requiredItem": "Victreebelite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "slowbro": {
+    "dexNumber": 80,
+    "name": "Slowbro",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Oblivious",
+      "1": "Own Tempo",
+      "H": "Regenerator"
+    },
+    "weightKg": 78,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "slowbromega": {
+    "dexNumber": 80,
+    "name": "Mega Slowbro",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Shell Armor"
+    },
+    "weightKg": 120,
+    "requiredItem": "Slowbronite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "slowbrogalar": {
+    "dexNumber": 80,
+    "name": "Galarian Slowbro",
+    "types": [
+      "Poison",
+      "Psychic"
+    ],
+    "form": "Galar",
+    "abilities": {
+      "0": "Quick Draw",
+      "1": "Own Tempo",
+      "H": "Regenerator"
+    },
+    "weightKg": 70,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gengar": {
+    "dexNumber": 94,
+    "name": "Gengar",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Cursed Body"
+    },
+    "weightKg": 40,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gengarmega": {
+    "dexNumber": 94,
+    "name": "Mega Gengar",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Shadow Tag"
+    },
+    "weightKg": 40,
+    "requiredItem": "Gengarite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "kangaskhan": {
+    "dexNumber": 115,
+    "name": "Kangaskhan",
+    "types": [
+      "Normal"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Early Bird",
+      "1": "Scrappy",
+      "H": "Inner Focus"
+    },
+    "weightKg": 80,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "kangaskhanmega": {
+    "dexNumber": 115,
+    "name": "Mega Kangaskhan",
+    "types": [
+      "Normal"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Parental Bond"
+    },
+    "weightKg": 100,
+    "requiredItem": "Kangaskhanite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "starmie": {
+    "dexNumber": 121,
+    "name": "Starmie",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Illuminate",
+      "1": "Natural Cure",
+      "H": "Analytic"
+    },
+    "weightKg": 80,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "starmiemega": {
+    "dexNumber": 121,
+    "name": "Mega Starmie",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Huge Power"
+    },
+    "weightKg": 80,
+    "requiredItem": "Starminite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "pinsir": {
+    "dexNumber": 127,
+    "name": "Pinsir",
+    "types": [
+      "Bug"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Hyper Cutter",
+      "1": "Mold Breaker",
+      "H": "Moxie"
+    },
+    "weightKg": 55,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "pinsirmega": {
+    "dexNumber": 127,
+    "name": "Mega Pinsir",
+    "types": [
+      "Bug",
+      "Flying"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Aerilate"
+    },
+    "weightKg": 59,
+    "requiredItem": "Pinsirite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "tauros": {
+    "dexNumber": 128,
+    "name": "Tauros",
+    "types": [
+      "Normal"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Anger Point",
+      "H": "Sheer Force"
+    },
+    "weightKg": 88,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "taurospaldeacombat": {
+    "dexNumber": 128,
+    "name": "Paldean Tauros",
+    "types": [
+      "Fighting"
+    ],
+    "form": "Paldea-Combat",
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Anger Point",
+      "H": "Cud Chew"
+    },
+    "weightKg": 115,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "taurospaldeablaze": {
+    "dexNumber": 128,
+    "name": "Tauros-Paldea-Blaze",
+    "types": [
+      "Fighting",
+      "Fire"
+    ],
+    "form": "Paldea-Blaze",
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Anger Point",
+      "H": "Cud Chew"
+    },
+    "weightKg": 85,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "taurospaldeaaqua": {
+    "dexNumber": 128,
+    "name": "Tauros-Paldea-Aqua",
+    "types": [
+      "Fighting",
+      "Water"
+    ],
+    "form": "Paldea-Aqua",
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Anger Point",
+      "H": "Cud Chew"
+    },
+    "weightKg": 110,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gyarados": {
+    "dexNumber": 130,
+    "name": "Gyarados",
+    "types": [
+      "Water",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Intimidate",
+      "H": "Moxie"
+    },
+    "weightKg": 235,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gyaradosmega": {
+    "dexNumber": 130,
+    "name": "Mega Gyarados",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Mold Breaker"
+    },
+    "weightKg": 305,
+    "requiredItem": "Gyaradosite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "ditto": {
+    "dexNumber": 132,
+    "name": "Ditto",
+    "types": [
+      "Normal"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Limber",
+      "H": "Imposter"
+    },
+    "weightKg": 4,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "vaporeon": {
+    "dexNumber": 134,
+    "name": "Vaporeon",
+    "types": [
+      "Water"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Water Absorb",
+      "H": "Hydration"
+    },
+    "weightKg": 29,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "jolteon": {
+    "dexNumber": 135,
+    "name": "Jolteon",
+    "types": [
+      "Electric"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Volt Absorb",
+      "H": "Quick Feet"
+    },
+    "weightKg": 24,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "flareon": {
+    "dexNumber": 136,
+    "name": "Flareon",
+    "types": [
+      "Fire"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Flash Fire",
+      "H": "Guts"
+    },
+    "weightKg": 25,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "aerodactyl": {
+    "dexNumber": 142,
+    "name": "Aerodactyl",
+    "types": [
+      "Rock",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Rock Head",
+      "1": "Pressure",
+      "H": "Unnerve"
+    },
+    "weightKg": 59,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "aerodactylmega": {
+    "dexNumber": 142,
+    "name": "Mega Aerodactyl",
+    "types": [
+      "Rock",
+      "Flying"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Tough Claws"
+    },
+    "weightKg": 79,
+    "requiredItem": "Aerodactylite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "snorlax": {
+    "dexNumber": 143,
+    "name": "Snorlax",
+    "types": [
+      "Normal"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Immunity",
+      "1": "Thick Fat",
+      "H": "Gluttony"
+    },
+    "weightKg": 460,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "dragonite": {
+    "dexNumber": 149,
+    "name": "Dragonite",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Inner Focus",
+      "H": "Multiscale"
+    },
+    "weightKg": 210,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "dragonitemega": {
+    "dexNumber": 149,
+    "name": "Mega Dragonite",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Multiscale"
+    },
+    "weightKg": 290,
+    "requiredItem": "Dragoninite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "meganium": {
+    "dexNumber": 154,
+    "name": "Meganium",
+    "types": [
+      "Grass"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Overgrow",
+      "H": "Leaf Guard"
+    },
+    "weightKg": 100,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "meganiummega": {
+    "dexNumber": 154,
+    "name": "Mega Meganium",
+    "types": [
+      "Grass",
+      "Fairy"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Mega Sol"
+    },
+    "weightKg": 201,
+    "requiredItem": "Meganiumite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "typhlosion": {
+    "dexNumber": 157,
+    "name": "Typhlosion",
+    "types": [
+      "Fire"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Blaze",
+      "H": "Flash Fire"
+    },
+    "weightKg": 79,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "typhlosionhisui": {
+    "dexNumber": 157,
+    "name": "Hisuian Typhlosion",
+    "types": [
+      "Fire",
+      "Ghost"
+    ],
+    "form": "Hisui",
+    "abilities": {
+      "0": "Blaze",
+      "H": "Frisk"
+    },
+    "weightKg": 69,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "feraligatr": {
+    "dexNumber": 160,
+    "name": "Feraligatr",
+    "types": [
+      "Water"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Torrent",
+      "H": "Sheer Force"
+    },
+    "weightKg": 88,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "feraligatrmega": {
+    "dexNumber": 160,
+    "name": "Mega Feraligatr",
+    "types": [
+      "Water",
+      "Dragon"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Dragonize"
+    },
+    "weightKg": 108,
+    "requiredItem": "Feraligite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "ariados": {
+    "dexNumber": 168,
+    "name": "Ariados",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Swarm",
+      "1": "Insomnia",
+      "H": "Sniper"
+    },
+    "weightKg": 33,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "ampharos": {
+    "dexNumber": 181,
+    "name": "Ampharos",
+    "types": [
+      "Electric"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Static",
+      "H": "Plus"
+    },
+    "weightKg": 61,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "ampharosmega": {
+    "dexNumber": 181,
+    "name": "Mega Ampharos",
+    "types": [
+      "Electric",
+      "Dragon"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Mold Breaker"
+    },
+    "weightKg": 61,
+    "requiredItem": "Ampharosite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "azumarill": {
+    "dexNumber": 184,
+    "name": "Azumarill",
+    "types": [
+      "Water",
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Thick Fat",
+      "1": "Huge Power",
+      "H": "Sap Sipper"
+    },
+    "weightKg": 28,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "politoed": {
+    "dexNumber": 186,
+    "name": "Politoed",
+    "types": [
+      "Water"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Water Absorb",
+      "1": "Damp",
+      "H": "Drizzle"
+    },
+    "weightKg": 33,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "espeon": {
+    "dexNumber": 196,
+    "name": "Espeon",
+    "types": [
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Synchronize",
+      "H": "Magic Bounce"
+    },
+    "weightKg": 26,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "umbreon": {
+    "dexNumber": 197,
+    "name": "Umbreon",
+    "types": [
+      "Dark"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Synchronize",
+      "H": "Inner Focus"
+    },
+    "weightKg": 27,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "slowking": {
+    "dexNumber": 199,
+    "name": "Slowking",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Oblivious",
+      "1": "Own Tempo",
+      "H": "Regenerator"
+    },
+    "weightKg": 79,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "slowkinggalar": {
+    "dexNumber": 199,
+    "name": "Galarian Slowking",
+    "types": [
+      "Poison",
+      "Psychic"
+    ],
+    "form": "Galar",
+    "abilities": {
+      "0": "Curious Medicine",
+      "1": "Own Tempo",
+      "H": "Regenerator"
+    },
+    "weightKg": 79,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "forretress": {
+    "dexNumber": 205,
+    "name": "Forretress",
+    "types": [
+      "Bug",
+      "Steel"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Sturdy",
+      "H": "Overcoat"
+    },
+    "weightKg": 125,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "steelix": {
+    "dexNumber": 208,
+    "name": "Steelix",
+    "types": [
+      "Steel",
+      "Ground"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Rock Head",
+      "1": "Sturdy",
+      "H": "Sheer Force"
+    },
+    "weightKg": 400,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "steelixmega": {
+    "dexNumber": 208,
+    "name": "Mega Steelix",
+    "types": [
+      "Steel",
+      "Ground"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Sand Force"
+    },
+    "weightKg": 740,
+    "requiredItem": "Steelixite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "qwilfish": {
+    "dexNumber": 211,
+    "name": "Qwilfish",
+    "types": [
+      "Water",
+      "Poison"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Swift Swim",
+      "H": "Intimidate"
+    },
+    "weightKg": 3,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "scizor": {
+    "dexNumber": 212,
+    "name": "Scizor",
+    "types": [
+      "Bug",
+      "Steel"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Swarm",
+      "1": "Technician",
+      "H": "Light Metal"
+    },
+    "weightKg": 118,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "scizormega": {
+    "dexNumber": 212,
+    "name": "Mega Scizor",
+    "types": [
+      "Bug",
+      "Steel"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Technician"
+    },
+    "weightKg": 125,
+    "requiredItem": "Scizorite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "heracross": {
+    "dexNumber": 214,
+    "name": "Heracross",
+    "types": [
+      "Bug",
+      "Fighting"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Swarm",
+      "1": "Guts",
+      "H": "Moxie"
+    },
+    "weightKg": 54,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "heracrossmega": {
+    "dexNumber": 214,
+    "name": "Mega Heracross",
+    "types": [
+      "Bug",
+      "Fighting"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Skill Link"
+    },
+    "weightKg": 62,
+    "requiredItem": "Heracronite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "skarmory": {
+    "dexNumber": 227,
+    "name": "Skarmory",
+    "types": [
+      "Steel",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Sturdy",
+      "H": "Weak Armor"
+    },
+    "weightKg": 50,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "skarmorymega": {
+    "dexNumber": 227,
+    "name": "Mega Skarmory",
+    "types": [
+      "Steel",
+      "Flying"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Stalwart"
+    },
+    "weightKg": 40,
+    "requiredItem": "Skarmorite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "houndoom": {
+    "dexNumber": 229,
+    "name": "Houndoom",
+    "types": [
+      "Dark",
+      "Fire"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Early Bird",
+      "1": "Flash Fire",
+      "H": "Unnerve"
+    },
+    "weightKg": 35,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "houndoommega": {
+    "dexNumber": 229,
+    "name": "Mega Houndoom",
+    "types": [
+      "Dark",
+      "Fire"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Solar Power"
+    },
+    "weightKg": 49,
+    "requiredItem": "Houndoominite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "tyranitar": {
+    "dexNumber": 248,
+    "name": "Tyranitar",
+    "types": [
+      "Rock",
+      "Dark"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Sand Stream",
+      "H": "Unnerve"
+    },
+    "weightKg": 202,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "tyranitarmega": {
+    "dexNumber": 248,
+    "name": "Mega Tyranitar",
+    "types": [
+      "Rock",
+      "Dark"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Sand Stream"
+    },
+    "weightKg": 255,
+    "requiredItem": "Tyranitarite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sceptile": {
+    "dexNumber": 254,
+    "name": "Sceptile",
+    "types": [
+      "Grass"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Overgrow",
+      "H": "Unburden"
+    },
+    "weightKg": 52,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sceptilemega": {
+    "dexNumber": 254,
+    "name": "Mega Sceptile",
+    "types": [
+      "Grass",
+      "Dragon"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Lightning Rod"
+    },
+    "weightKg": 55,
+    "requiredItem": "Sceptilite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "blaziken": {
+    "dexNumber": 257,
+    "name": "Blaziken",
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Blaze",
+      "H": "Speed Boost"
+    },
+    "weightKg": 52,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "blazikenmega": {
+    "dexNumber": 257,
+    "name": "Mega Blaziken",
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Speed Boost"
+    },
+    "weightKg": 52,
+    "requiredItem": "Blazikenite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "swampert": {
+    "dexNumber": 260,
+    "name": "Swampert",
+    "types": [
+      "Water",
+      "Ground"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Torrent",
+      "H": "Damp"
+    },
+    "weightKg": 81,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "swampertmega": {
+    "dexNumber": 260,
+    "name": "Mega Swampert",
+    "types": [
+      "Water",
+      "Ground"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Swift Swim"
+    },
+    "weightKg": 102,
+    "requiredItem": "Swampertite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "pelipper": {
+    "dexNumber": 279,
+    "name": "Pelipper",
+    "types": [
+      "Water",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Drizzle",
+      "H": "Rain Dish"
+    },
+    "weightKg": 28,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gardevoir": {
+    "dexNumber": 282,
+    "name": "Gardevoir",
+    "types": [
+      "Psychic",
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Synchronize",
+      "1": "Trace",
+      "H": "Telepathy"
+    },
+    "weightKg": 48,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gardevoirmega": {
+    "dexNumber": 282,
+    "name": "Mega Gardevoir",
+    "types": [
+      "Psychic",
+      "Fairy"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Pixilate"
+    },
+    "weightKg": 48,
+    "requiredItem": "Gardevoirite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sableye": {
+    "dexNumber": 302,
+    "name": "Sableye",
+    "types": [
+      "Dark",
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Stall",
+      "H": "Prankster"
+    },
+    "weightKg": 11,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sableyemega": {
+    "dexNumber": 302,
+    "name": "Mega Sableye",
+    "types": [
+      "Dark",
+      "Ghost"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Magic Bounce"
+    },
+    "weightKg": 161,
+    "requiredItem": "Sablenite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "mawile": {
+    "dexNumber": 303,
+    "name": "Mawile",
+    "types": [
+      "Steel",
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Hyper Cutter",
+      "1": "Intimidate",
+      "H": "Sheer Force"
+    },
+    "weightKg": 11,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "mawilemega": {
+    "dexNumber": 303,
+    "name": "Mega Mawile",
+    "types": [
+      "Steel",
+      "Fairy"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Huge Power"
+    },
+    "weightKg": 23,
+    "requiredItem": "Mawilite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "aggron": {
+    "dexNumber": 306,
+    "name": "Aggron",
+    "types": [
+      "Steel",
+      "Rock"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Sturdy",
+      "1": "Rock Head",
+      "H": "Heavy Metal"
+    },
+    "weightKg": 360,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "aggronmega": {
+    "dexNumber": 306,
+    "name": "Mega Aggron",
+    "types": [
+      "Steel"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Filter"
+    },
+    "weightKg": 395,
+    "requiredItem": "Aggronite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "medicham": {
+    "dexNumber": 308,
+    "name": "Medicham",
+    "types": [
+      "Fighting",
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Pure Power",
+      "H": "Telepathy"
+    },
+    "weightKg": 31,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "medichammega": {
+    "dexNumber": 308,
+    "name": "Mega Medicham",
+    "types": [
+      "Fighting",
+      "Psychic"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Pure Power"
+    },
+    "weightKg": 31,
+    "requiredItem": "Medichamite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "manectric": {
+    "dexNumber": 310,
+    "name": "Manectric",
+    "types": [
+      "Electric"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Static",
+      "1": "Lightning Rod",
+      "H": "Minus"
+    },
+    "weightKg": 40,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "manectricmega": {
+    "dexNumber": 310,
+    "name": "Mega Manectric",
+    "types": [
+      "Electric"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Intimidate"
+    },
+    "weightKg": 44,
+    "requiredItem": "Manectite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sharpedo": {
+    "dexNumber": 319,
+    "name": "Sharpedo",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Rough Skin",
+      "H": "Speed Boost"
+    },
+    "weightKg": 88,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sharpedomega": {
+    "dexNumber": 319,
+    "name": "Mega Sharpedo",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Strong Jaw"
+    },
+    "weightKg": 130,
+    "requiredItem": "Sharpedonite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "camerupt": {
+    "dexNumber": 323,
+    "name": "Camerupt",
+    "types": [
+      "Fire",
+      "Ground"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Magma Armor",
+      "1": "Solid Rock",
+      "H": "Anger Point"
+    },
+    "weightKg": 220,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "cameruptmega": {
+    "dexNumber": 323,
+    "name": "Mega Camerupt",
+    "types": [
+      "Fire",
+      "Ground"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Sheer Force"
+    },
+    "weightKg": 320,
+    "requiredItem": "Cameruptite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "torkoal": {
+    "dexNumber": 324,
+    "name": "Torkoal",
+    "types": [
+      "Fire"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "White Smoke",
+      "1": "Drought",
+      "H": "Shell Armor"
+    },
+    "weightKg": 80,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "altaria": {
+    "dexNumber": 334,
+    "name": "Altaria",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Natural Cure",
+      "H": "Cloud Nine"
+    },
+    "weightKg": 20,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "altariamega": {
+    "dexNumber": 334,
+    "name": "Mega Altaria",
+    "types": [
+      "Dragon",
+      "Fairy"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Pixilate"
+    },
+    "weightKg": 20,
+    "requiredItem": "Altarianite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "milotic": {
+    "dexNumber": 350,
+    "name": "Milotic",
+    "types": [
+      "Water"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Marvel Scale",
+      "1": "Competitive",
+      "H": "Cute Charm"
+    },
+    "weightKg": 162,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "castform": {
+    "dexNumber": 351,
+    "name": "Castform",
+    "types": [
+      "Normal"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Forecast"
+    },
+    "weightKg": 0,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "banette": {
+    "dexNumber": 354,
+    "name": "Banette",
+    "types": [
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Insomnia",
+      "1": "Frisk",
+      "H": "Cursed Body"
+    },
+    "weightKg": 12,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "banettemega": {
+    "dexNumber": 354,
+    "name": "Mega Banette",
+    "types": [
+      "Ghost"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Prankster"
+    },
+    "weightKg": 13,
+    "requiredItem": "Banettite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "chimecho": {
+    "dexNumber": 358,
+    "name": "Chimecho",
+    "types": [
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Levitate"
+    },
+    "weightKg": 1,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "chimechomega": {
+    "dexNumber": 358,
+    "name": "Mega Chimecho",
+    "types": [
+      "Psychic",
+      "Steel"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Levitate"
+    },
+    "weightKg": 8,
+    "requiredItem": "Chimechite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "absol": {
+    "dexNumber": 359,
+    "name": "Absol",
+    "types": [
+      "Dark"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Pressure",
+      "1": "Super Luck",
+      "H": "Justified"
+    },
+    "weightKg": 47,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "absolmega": {
+    "dexNumber": 359,
+    "name": "Mega Absol",
+    "types": [
+      "Dark"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Magic Bounce"
+    },
+    "weightKg": 49,
+    "requiredItem": "Absolite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "glalie": {
+    "dexNumber": 362,
+    "name": "Glalie",
+    "types": [
+      "Ice"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Inner Focus",
+      "1": "Ice Body",
+      "H": "Moody"
+    },
+    "weightKg": 256,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "glaliemega": {
+    "dexNumber": 362,
+    "name": "Mega Glalie",
+    "types": [
+      "Ice"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Refrigerate"
+    },
+    "weightKg": 350,
+    "requiredItem": "Glalitite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "metagross": {
+    "dexNumber": 376,
+    "name": "Metagross",
+    "types": [
+      "Steel",
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Clear Body",
+      "H": "Light Metal"
+    },
+    "weightKg": 550,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "metagrossmega": {
+    "dexNumber": 376,
+    "name": "Mega Metagross",
+    "types": [
+      "Steel",
+      "Psychic"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Tough Claws"
+    },
+    "weightKg": 942,
+    "requiredItem": "Metagrossite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "torterra": {
+    "dexNumber": 389,
+    "name": "Torterra",
+    "types": [
+      "Grass",
+      "Ground"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Overgrow",
+      "H": "Shell Armor"
+    },
+    "weightKg": 310,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "infernape": {
+    "dexNumber": 392,
+    "name": "Infernape",
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Blaze",
+      "H": "Iron Fist"
+    },
+    "weightKg": 55,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "empoleon": {
+    "dexNumber": 395,
+    "name": "Empoleon",
+    "types": [
+      "Water",
+      "Steel"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Torrent",
+      "H": "Competitive"
+    },
+    "weightKg": 84,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "staraptor": {
+    "dexNumber": 398,
+    "name": "Staraptor",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Intimidate",
+      "H": "Reckless"
+    },
+    "weightKg": 24,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "staraptormega": {
+    "dexNumber": 398,
+    "name": "Mega Staraptor",
+    "types": [
+      "Fighting",
+      "Flying"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Contrary"
+    },
+    "weightKg": 50,
+    "requiredItem": "Staraptite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "luxray": {
+    "dexNumber": 405,
+    "name": "Luxray",
+    "types": [
+      "Electric"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Rivalry",
+      "1": "Intimidate",
+      "H": "Guts"
+    },
+    "weightKg": 42,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "roserade": {
+    "dexNumber": 407,
+    "name": "Roserade",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Natural Cure",
+      "1": "Poison Point",
+      "H": "Technician"
+    },
+    "weightKg": 14,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "rampardos": {
+    "dexNumber": 409,
+    "name": "Rampardos",
+    "types": [
+      "Rock"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Mold Breaker",
+      "H": "Sheer Force"
+    },
+    "weightKg": 102,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "bastiodon": {
+    "dexNumber": 411,
+    "name": "Bastiodon",
+    "types": [
+      "Rock",
+      "Steel"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Sturdy",
+      "H": "Soundproof"
+    },
+    "weightKg": 149,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "lopunny": {
+    "dexNumber": 428,
+    "name": "Lopunny",
+    "types": [
+      "Normal"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Cute Charm",
+      "1": "Klutz",
+      "H": "Limber"
+    },
+    "weightKg": 33,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "lopunnymega": {
+    "dexNumber": 428,
+    "name": "Mega Lopunny",
+    "types": [
+      "Normal",
+      "Fighting"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Scrappy"
+    },
+    "weightKg": 28,
+    "requiredItem": "Lopunnite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "spiritomb": {
+    "dexNumber": 442,
+    "name": "Spiritomb",
+    "types": [
+      "Ghost",
+      "Dark"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Pressure",
+      "H": "Infiltrator"
+    },
+    "weightKg": 108,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "garchomp": {
+    "dexNumber": 445,
+    "name": "Garchomp",
+    "types": [
+      "Dragon",
+      "Ground"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Sand Veil",
+      "H": "Rough Skin"
+    },
+    "weightKg": 95,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "garchompmega": {
+    "dexNumber": 445,
+    "name": "Mega Garchomp",
+    "types": [
+      "Dragon",
+      "Ground"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Sand Force"
+    },
+    "weightKg": 95,
+    "requiredItem": "Garchompite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "lucario": {
+    "dexNumber": 448,
+    "name": "Lucario",
+    "types": [
+      "Fighting",
+      "Steel"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Steadfast",
+      "1": "Inner Focus",
+      "H": "Justified"
+    },
+    "weightKg": 54,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "lucariomega": {
+    "dexNumber": 448,
+    "name": "Mega Lucario",
+    "types": [
+      "Fighting",
+      "Steel"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Adaptability"
+    },
+    "weightKg": 57,
+    "requiredItem": "Lucarionite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "hippowdon": {
+    "dexNumber": 450,
+    "name": "Hippowdon",
+    "types": [
+      "Ground"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Sand Stream",
+      "H": "Sand Force"
+    },
+    "weightKg": 300,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "toxicroak": {
+    "dexNumber": 454,
+    "name": "Toxicroak",
+    "types": [
+      "Poison",
+      "Fighting"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Anticipation",
+      "1": "Dry Skin",
+      "H": "Poison Touch"
+    },
+    "weightKg": 44,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "abomasnow": {
+    "dexNumber": 460,
+    "name": "Abomasnow",
+    "types": [
+      "Grass",
+      "Ice"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Snow Warning",
+      "H": "Soundproof"
+    },
+    "weightKg": 135,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "abomasnowmega": {
+    "dexNumber": 460,
+    "name": "Mega Abomasnow",
+    "types": [
+      "Grass",
+      "Ice"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Snow Warning"
+    },
+    "weightKg": 185,
+    "requiredItem": "Abomasite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "weavile": {
+    "dexNumber": 461,
+    "name": "Weavile",
+    "types": [
+      "Dark",
+      "Ice"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Pressure",
+      "H": "Pickpocket"
+    },
+    "weightKg": 34,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "rhyperior": {
+    "dexNumber": 464,
+    "name": "Rhyperior",
+    "types": [
+      "Ground",
+      "Rock"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Lightning Rod",
+      "1": "Solid Rock",
+      "H": "Reckless"
+    },
+    "weightKg": 282,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "leafeon": {
+    "dexNumber": 470,
+    "name": "Leafeon",
+    "types": [
+      "Grass"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Leaf Guard",
+      "H": "Chlorophyll"
+    },
+    "weightKg": 25,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "glaceon": {
+    "dexNumber": 471,
+    "name": "Glaceon",
+    "types": [
+      "Ice"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Snow Cloak",
+      "H": "Ice Body"
+    },
+    "weightKg": 25,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gliscor": {
+    "dexNumber": 472,
+    "name": "Gliscor",
+    "types": [
+      "Ground",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Hyper Cutter",
+      "1": "Sand Veil",
+      "H": "Poison Heal"
+    },
+    "weightKg": 42,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "mamoswine": {
+    "dexNumber": 473,
+    "name": "Mamoswine",
+    "types": [
+      "Ice",
+      "Ground"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Oblivious",
+      "1": "Snow Cloak",
+      "H": "Thick Fat"
+    },
+    "weightKg": 291,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gallade": {
+    "dexNumber": 475,
+    "name": "Gallade",
+    "types": [
+      "Psychic",
+      "Fighting"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Steadfast",
+      "1": "Sharpness",
+      "H": "Justified"
+    },
+    "weightKg": 52,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gallademega": {
+    "dexNumber": 475,
+    "name": "Mega Gallade",
+    "types": [
+      "Psychic",
+      "Fighting"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Inner Focus"
+    },
+    "weightKg": 56,
+    "requiredItem": "Galladite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "froslass": {
+    "dexNumber": 478,
+    "name": "Froslass",
+    "types": [
+      "Ice",
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Snow Cloak",
+      "H": "Cursed Body"
+    },
+    "weightKg": 26,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "froslassmega": {
+    "dexNumber": 478,
+    "name": "Mega Froslass",
+    "types": [
+      "Ice",
+      "Ghost"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Snow Warning"
+    },
+    "weightKg": 29,
+    "requiredItem": "Froslassite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "rotom": {
+    "dexNumber": 479,
+    "name": "Rotom",
+    "types": [
+      "Electric",
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Levitate"
+    },
+    "weightKg": 0,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "rotomheat": {
+    "dexNumber": 479,
+    "name": "Rotom-Heat",
+    "types": [
+      "Electric",
+      "Fire"
+    ],
+    "form": "Heat",
+    "abilities": {
+      "0": "Levitate"
+    },
+    "weightKg": 0,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "rotomwash": {
+    "dexNumber": 479,
+    "name": "Rotom-Wash",
+    "types": [
+      "Electric",
+      "Water"
+    ],
+    "form": "Wash",
+    "abilities": {
+      "0": "Levitate"
+    },
+    "weightKg": 0,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "rotomfrost": {
+    "dexNumber": 479,
+    "name": "Rotom-Frost",
+    "types": [
+      "Electric",
+      "Ice"
+    ],
+    "form": "Frost",
+    "abilities": {
+      "0": "Levitate"
+    },
+    "weightKg": 0,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "rotomfan": {
+    "dexNumber": 479,
+    "name": "Rotom-Fan",
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "form": "Fan",
+    "abilities": {
+      "0": "Levitate"
+    },
+    "weightKg": 0,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "rotommow": {
+    "dexNumber": 479,
+    "name": "Rotom-Mow",
+    "types": [
+      "Electric",
+      "Grass"
+    ],
+    "form": "Mow",
+    "abilities": {
+      "0": "Levitate"
+    },
+    "weightKg": 0,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "serperior": {
+    "dexNumber": 497,
+    "name": "Serperior",
+    "types": [
+      "Grass"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Overgrow",
+      "H": "Contrary"
+    },
+    "weightKg": 63,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "emboar": {
+    "dexNumber": 500,
+    "name": "Emboar",
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Blaze",
+      "H": "Reckless"
+    },
+    "weightKg": 150,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "emboarmega": {
+    "dexNumber": 500,
+    "name": "Mega Emboar",
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Mold Breaker"
+    },
+    "weightKg": 180,
+    "requiredItem": "Emboarite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "samurott": {
+    "dexNumber": 503,
+    "name": "Samurott",
+    "types": [
+      "Water"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Torrent",
+      "H": "Shell Armor"
+    },
+    "weightKg": 94,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "samurotthisui": {
+    "dexNumber": 503,
+    "name": "Hisuian Samurott",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "form": "Hisui",
+    "abilities": {
+      "0": "Torrent",
+      "H": "Sharpness"
+    },
+    "weightKg": 58,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "watchog": {
+    "dexNumber": 505,
+    "name": "Watchog",
+    "types": [
+      "Normal"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Illuminate",
+      "1": "Keen Eye",
+      "H": "Analytic"
+    },
+    "weightKg": 27,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "liepard": {
+    "dexNumber": 510,
+    "name": "Liepard",
+    "types": [
+      "Dark"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Limber",
+      "1": "Unburden",
+      "H": "Prankster"
+    },
+    "weightKg": 37,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "simisage": {
+    "dexNumber": 512,
+    "name": "Simisage",
+    "types": [
+      "Grass"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Gluttony",
+      "H": "Overgrow"
+    },
+    "weightKg": 30,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "simisear": {
+    "dexNumber": 514,
+    "name": "Simisear",
+    "types": [
+      "Fire"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Gluttony",
+      "H": "Blaze"
+    },
+    "weightKg": 28,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "simipour": {
+    "dexNumber": 516,
+    "name": "Simipour",
+    "types": [
+      "Water"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Gluttony",
+      "H": "Torrent"
+    },
+    "weightKg": 29,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "musharna": {
+    "dexNumber": 518,
+    "name": "Musharna",
+    "types": [
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Forewarn",
+      "1": "Synchronize",
+      "H": "Telepathy"
+    },
+    "weightKg": 60,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "excadrill": {
+    "dexNumber": 530,
+    "name": "Excadrill",
+    "types": [
+      "Ground",
+      "Steel"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Sand Rush",
+      "1": "Sand Force",
+      "H": "Mold Breaker"
+    },
+    "weightKg": 40,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "excadrillmega": {
+    "dexNumber": 530,
+    "name": "Mega Excadrill",
+    "types": [
+      "Ground",
+      "Steel"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Piercing Drill"
+    },
+    "weightKg": 60,
+    "requiredItem": "Excadrite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "audino": {
+    "dexNumber": 531,
+    "name": "Audino",
+    "types": [
+      "Normal"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Healer",
+      "1": "Regenerator",
+      "H": "Klutz"
+    },
+    "weightKg": 31,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "audinomega": {
+    "dexNumber": 531,
+    "name": "Mega Audino",
+    "types": [
+      "Normal",
+      "Fairy"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Healer"
+    },
+    "weightKg": 32,
+    "requiredItem": "Audinite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "conkeldurr": {
+    "dexNumber": 534,
+    "name": "Conkeldurr",
+    "types": [
+      "Fighting"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Guts",
+      "1": "Sheer Force",
+      "H": "Iron Fist"
+    },
+    "weightKg": 87,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "scolipede": {
+    "dexNumber": 545,
+    "name": "Scolipede",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Swarm",
+      "H": "Speed Boost"
+    },
+    "weightKg": 200,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "scolipedemega": {
+    "dexNumber": 545,
+    "name": "Mega Scolipede",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Shell Armor"
+    },
+    "weightKg": 230,
+    "requiredItem": "Scolipite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "whimsicott": {
+    "dexNumber": 547,
+    "name": "Whimsicott",
+    "types": [
+      "Grass",
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Prankster",
+      "1": "Infiltrator",
+      "H": "Chlorophyll"
+    },
+    "weightKg": 6,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "krookodile": {
+    "dexNumber": 553,
+    "name": "Krookodile",
+    "types": [
+      "Ground",
+      "Dark"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Moxie",
+      "H": "Anger Point"
+    },
+    "weightKg": 96,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "scrafty": {
+    "dexNumber": 560,
+    "name": "Scrafty",
+    "types": [
+      "Dark",
+      "Fighting"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Shed Skin",
+      "1": "Moxie",
+      "H": "Intimidate"
+    },
+    "weightKg": 30,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "scraftymega": {
+    "dexNumber": 560,
+    "name": "Mega Scrafty",
+    "types": [
+      "Dark",
+      "Fighting"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Intimidate"
+    },
+    "weightKg": 31,
+    "requiredItem": "Scraftinite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "cofagrigus": {
+    "dexNumber": 563,
+    "name": "Cofagrigus",
+    "types": [
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Mummy"
+    },
+    "weightKg": 76,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "garbodor": {
+    "dexNumber": 569,
+    "name": "Garbodor",
+    "types": [
+      "Poison"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Stench",
+      "1": "Weak Armor",
+      "H": "Aftermath"
+    },
+    "weightKg": 107,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "zoroark": {
+    "dexNumber": 571,
+    "name": "Zoroark",
+    "types": [
+      "Dark"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Illusion"
+    },
+    "weightKg": 81,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "zoroarkhisui": {
+    "dexNumber": 571,
+    "name": "Hisuian Zoroark",
+    "types": [
+      "Normal",
+      "Ghost"
+    ],
+    "form": "Hisui",
+    "abilities": {
+      "0": "Illusion"
+    },
+    "weightKg": 73,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "reuniclus": {
+    "dexNumber": 579,
+    "name": "Reuniclus",
+    "types": [
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Overcoat",
+      "1": "Magic Guard",
+      "H": "Regenerator"
+    },
+    "weightKg": 20,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "vanilluxe": {
+    "dexNumber": 584,
+    "name": "Vanilluxe",
+    "types": [
+      "Ice"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Ice Body",
+      "1": "Snow Warning",
+      "H": "Weak Armor"
+    },
+    "weightKg": 57,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "emolga": {
+    "dexNumber": 587,
+    "name": "Emolga",
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Static",
+      "H": "Motor Drive"
+    },
+    "weightKg": 5,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "eelektross": {
+    "dexNumber": 604,
+    "name": "Eelektross",
+    "types": [
+      "Electric"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Levitate"
+    },
+    "weightKg": 80,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "eelektrossmega": {
+    "dexNumber": 604,
+    "name": "Mega Eelektross",
+    "types": [
+      "Electric"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Eelevate"
+    },
+    "weightKg": 180,
+    "requiredItem": "Eelektrossite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "chandelure": {
+    "dexNumber": 609,
+    "name": "Chandelure",
+    "types": [
+      "Ghost",
+      "Fire"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Flash Fire",
+      "1": "Flame Body",
+      "H": "Infiltrator"
+    },
+    "weightKg": 34,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "chandeluremega": {
+    "dexNumber": 609,
+    "name": "Mega Chandelure",
+    "types": [
+      "Ghost",
+      "Fire"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Infiltrator"
+    },
+    "weightKg": 69,
+    "requiredItem": "Chandelurite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "beartic": {
+    "dexNumber": 614,
+    "name": "Beartic",
+    "types": [
+      "Ice"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Snow Cloak",
+      "1": "Slush Rush",
+      "H": "Swift Swim"
+    },
+    "weightKg": 260,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "stunfisk": {
+    "dexNumber": 618,
+    "name": "Stunfisk",
+    "types": [
+      "Ground",
+      "Electric"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Static",
+      "1": "Limber",
+      "H": "Sand Veil"
+    },
+    "weightKg": 11,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "stunfiskgalar": {
+    "dexNumber": 618,
+    "name": "Galarian Stunfisk",
+    "types": [
+      "Ground",
+      "Steel"
+    ],
+    "form": "Galar",
+    "abilities": {
+      "0": "Mimicry"
+    },
+    "weightKg": 20,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "golurk": {
+    "dexNumber": 623,
+    "name": "Golurk",
+    "types": [
+      "Ground",
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Iron Fist",
+      "1": "Klutz",
+      "H": "No Guard"
+    },
+    "weightKg": 330,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "golurkmega": {
+    "dexNumber": 623,
+    "name": "Mega Golurk",
+    "types": [
+      "Ground",
+      "Ghost"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Unseen Fist"
+    },
+    "weightKg": 330,
+    "requiredItem": "Golurkite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "hydreigon": {
+    "dexNumber": 635,
+    "name": "Hydreigon",
+    "types": [
+      "Dark",
+      "Dragon"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Levitate"
+    },
+    "weightKg": 160,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "volcarona": {
+    "dexNumber": 637,
+    "name": "Volcarona",
+    "types": [
+      "Bug",
+      "Fire"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Flame Body",
+      "H": "Swarm"
+    },
+    "weightKg": 46,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "chesnaught": {
+    "dexNumber": 652,
+    "name": "Chesnaught",
+    "types": [
+      "Grass",
+      "Fighting"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Overgrow",
+      "H": "Bulletproof"
+    },
+    "weightKg": 90,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "chesnaughtmega": {
+    "dexNumber": 652,
+    "name": "Mega Chesnaught",
+    "types": [
+      "Grass",
+      "Fighting"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Bulletproof"
+    },
+    "weightKg": 90,
+    "requiredItem": "Chesnaughtite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "delphox": {
+    "dexNumber": 655,
+    "name": "Delphox",
+    "types": [
+      "Fire",
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Blaze",
+      "H": "Magician"
+    },
+    "weightKg": 39,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "delphoxmega": {
+    "dexNumber": 655,
+    "name": "Mega Delphox",
+    "types": [
+      "Fire",
+      "Psychic"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Levitate"
+    },
+    "weightKg": 39,
+    "requiredItem": "Delphoxite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "greninja": {
+    "dexNumber": 658,
+    "name": "Greninja",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Torrent",
+      "H": "Protean",
+      "S": "Battle Bond"
+    },
+    "weightKg": 40,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "greninjamega": {
+    "dexNumber": 658,
+    "name": "Mega Greninja",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Protean"
+    },
+    "weightKg": 40,
+    "requiredItem": "Greninjite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "diggersby": {
+    "dexNumber": 660,
+    "name": "Diggersby",
+    "types": [
+      "Normal",
+      "Ground"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Pickup",
+      "1": "Cheek Pouch",
+      "H": "Huge Power"
+    },
+    "weightKg": 42,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "talonflame": {
+    "dexNumber": 663,
+    "name": "Talonflame",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Flame Body",
+      "H": "Gale Wings"
+    },
+    "weightKg": 24,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "vivillon": {
+    "dexNumber": 666,
+    "name": "Vivillon",
+    "types": [
+      "Bug",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Shield Dust",
+      "1": "Compound Eyes",
+      "H": "Friend Guard"
+    },
+    "weightKg": 17,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "pyroar": {
+    "dexNumber": 668,
+    "name": "Pyroar",
+    "types": [
+      "Fire",
+      "Normal"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Rivalry",
+      "1": "Unnerve",
+      "H": "Moxie"
+    },
+    "weightKg": 81,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "pyroarmega": {
+    "dexNumber": 668,
+    "name": "Mega Pyroar",
+    "types": [
+      "Fire",
+      "Normal"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Fire Mane"
+    },
+    "weightKg": 93,
+    "requiredItem": "Pyroarite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "floetteeternal": {
+    "dexNumber": 670,
+    "name": "Floette-Eternal",
+    "types": [
+      "Fairy"
+    ],
+    "form": "Eternal",
+    "abilities": {
+      "0": "Flower Veil",
+      "H": "Symbiosis"
+    },
+    "weightKg": 0,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "floettemega": {
+    "dexNumber": 670,
+    "name": "Mega Floette",
+    "types": [
+      "Fairy"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Fairy Aura"
+    },
+    "weightKg": 100,
+    "requiredItem": "Floettite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "florges": {
+    "dexNumber": 671,
+    "name": "Florges",
+    "types": [
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Flower Veil",
+      "H": "Symbiosis"
+    },
+    "weightKg": 10,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "pangoro": {
+    "dexNumber": 675,
+    "name": "Pangoro",
+    "types": [
+      "Fighting",
+      "Dark"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Iron Fist",
+      "1": "Mold Breaker",
+      "H": "Scrappy"
+    },
+    "weightKg": 136,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "furfrou": {
+    "dexNumber": 676,
+    "name": "Furfrou",
+    "types": [
+      "Normal"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Fur Coat"
+    },
+    "weightKg": 28,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "meowstic": {
+    "dexNumber": 678,
+    "name": "Meowstic",
+    "types": [
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Infiltrator",
+      "H": "Prankster"
+    },
+    "weightKg": 8,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "meowsticmmega": {
+    "dexNumber": 678,
+    "name": "Mega Meowstic",
+    "types": [
+      "Psychic"
+    ],
+    "form": "M-Mega",
+    "abilities": {
+      "0": "Trace"
+    },
+    "weightKg": 10,
+    "requiredItem": "Meowsticite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "meowsticfmega": {
+    "dexNumber": 678,
+    "name": "Mega Meowstic-F",
+    "types": [
+      "Psychic"
+    ],
+    "form": "F-Mega",
+    "abilities": {
+      "0": "Trace"
+    },
+    "weightKg": 10,
+    "requiredItem": "Meowsticite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "aegislash": {
+    "dexNumber": 681,
+    "name": "Aegislash",
+    "types": [
+      "Steel",
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Stance Change"
+    },
+    "weightKg": 53,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "aromatisse": {
+    "dexNumber": 683,
+    "name": "Aromatisse",
+    "types": [
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Healer",
+      "H": "Aroma Veil"
+    },
+    "weightKg": 15,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "slurpuff": {
+    "dexNumber": 685,
+    "name": "Slurpuff",
+    "types": [
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Sweet Veil",
+      "H": "Unburden"
+    },
+    "weightKg": 5,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "malamar": {
+    "dexNumber": 687,
+    "name": "Malamar",
+    "types": [
+      "Dark",
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Contrary",
+      "1": "Suction Cups",
+      "H": "Infiltrator"
+    },
+    "weightKg": 47,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "malamarmega": {
+    "dexNumber": 687,
+    "name": "Mega Malamar",
+    "types": [
+      "Dark",
+      "Psychic"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Contrary"
+    },
+    "weightKg": 69,
+    "requiredItem": "Malamarite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "barbaracle": {
+    "dexNumber": 689,
+    "name": "Barbaracle",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Tough Claws",
+      "1": "Sniper",
+      "H": "Pickpocket"
+    },
+    "weightKg": 96,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "barbaraclemega": {
+    "dexNumber": 689,
+    "name": "Mega Barbaracle",
+    "types": [
+      "Rock",
+      "Fighting"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Tough Claws"
+    },
+    "weightKg": 100,
+    "requiredItem": "Barbaracite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "dragalge": {
+    "dexNumber": 691,
+    "name": "Dragalge",
+    "types": [
+      "Poison",
+      "Dragon"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Poison Touch",
+      "H": "Adaptability"
+    },
+    "weightKg": 81,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "dragalgemega": {
+    "dexNumber": 691,
+    "name": "Mega Dragalge",
+    "types": [
+      "Poison",
+      "Dragon"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Regenerator"
+    },
+    "weightKg": 100,
+    "requiredItem": "Dragalgite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "clawitzer": {
+    "dexNumber": 693,
+    "name": "Clawitzer",
+    "types": [
+      "Water"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Mega Launcher"
+    },
+    "weightKg": 35,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "heliolisk": {
+    "dexNumber": 695,
+    "name": "Heliolisk",
+    "types": [
+      "Electric",
+      "Normal"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Dry Skin",
+      "1": "Sand Veil",
+      "H": "Solar Power"
+    },
+    "weightKg": 21,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "tyrantrum": {
+    "dexNumber": 697,
+    "name": "Tyrantrum",
+    "types": [
+      "Rock",
+      "Dragon"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Strong Jaw",
+      "H": "Rock Head"
+    },
+    "weightKg": 270,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "aurorus": {
+    "dexNumber": 699,
+    "name": "Aurorus",
+    "types": [
+      "Rock",
+      "Ice"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Refrigerate",
+      "H": "Snow Warning"
+    },
+    "weightKg": 225,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sylveon": {
+    "dexNumber": 700,
+    "name": "Sylveon",
+    "types": [
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Cute Charm",
+      "H": "Pixilate"
+    },
+    "weightKg": 23,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "hawlucha": {
+    "dexNumber": 701,
+    "name": "Hawlucha",
+    "types": [
+      "Fighting",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Limber",
+      "1": "Unburden",
+      "H": "Mold Breaker"
+    },
+    "weightKg": 21,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "hawluchamega": {
+    "dexNumber": 701,
+    "name": "Mega Hawlucha",
+    "types": [
+      "Fighting",
+      "Flying"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "No Guard"
+    },
+    "weightKg": 25,
+    "requiredItem": "Hawluchanite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "dedenne": {
+    "dexNumber": 702,
+    "name": "Dedenne",
+    "types": [
+      "Electric",
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Cheek Pouch",
+      "1": "Pickup",
+      "H": "Plus"
+    },
+    "weightKg": 2,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "goodra": {
+    "dexNumber": 706,
+    "name": "Goodra",
+    "types": [
+      "Dragon"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Sap Sipper",
+      "1": "Hydration",
+      "H": "Gooey"
+    },
+    "weightKg": 150,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "goodrahisui": {
+    "dexNumber": 706,
+    "name": "Hisuian Goodra",
+    "types": [
+      "Steel",
+      "Dragon"
+    ],
+    "form": "Hisui",
+    "abilities": {
+      "0": "Sap Sipper",
+      "1": "Shell Armor",
+      "H": "Gooey"
+    },
+    "weightKg": 334,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "klefki": {
+    "dexNumber": 707,
+    "name": "Klefki",
+    "types": [
+      "Steel",
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Prankster",
+      "H": "Magician"
+    },
+    "weightKg": 3,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "trevenant": {
+    "dexNumber": 709,
+    "name": "Trevenant",
+    "types": [
+      "Ghost",
+      "Grass"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Natural Cure",
+      "1": "Frisk",
+      "H": "Harvest"
+    },
+    "weightKg": 71,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gourgeist": {
+    "dexNumber": 711,
+    "name": "Gourgeist",
+    "types": [
+      "Ghost",
+      "Grass"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Pickup",
+      "1": "Frisk",
+      "H": "Insomnia"
+    },
+    "weightKg": 12,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gourgeistsmall": {
+    "dexNumber": 711,
+    "name": "Gourgeist-Small",
+    "types": [
+      "Ghost",
+      "Grass"
+    ],
+    "form": "Small",
+    "abilities": {
+      "0": "Pickup",
+      "1": "Frisk",
+      "H": "Insomnia"
+    },
+    "weightKg": 9,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gourgeistlarge": {
+    "dexNumber": 711,
+    "name": "Gourgeist-Large",
+    "types": [
+      "Ghost",
+      "Grass"
+    ],
+    "form": "Large",
+    "abilities": {
+      "0": "Pickup",
+      "1": "Frisk",
+      "H": "Insomnia"
+    },
+    "weightKg": 14,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gourgeistsuper": {
+    "dexNumber": 711,
+    "name": "Gourgeist-Super",
+    "types": [
+      "Ghost",
+      "Grass"
+    ],
+    "form": "Super",
+    "abilities": {
+      "0": "Pickup",
+      "1": "Frisk",
+      "H": "Insomnia"
+    },
+    "weightKg": 39,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "avalugg": {
+    "dexNumber": 713,
+    "name": "Avalugg",
+    "types": [
+      "Ice"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Own Tempo",
+      "1": "Ice Body",
+      "H": "Sturdy"
+    },
+    "weightKg": 505,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "avalugghisui": {
+    "dexNumber": 713,
+    "name": "Hisuian Avalugg",
+    "types": [
+      "Ice",
+      "Rock"
+    ],
+    "form": "Hisui",
+    "abilities": {
+      "0": "Strong Jaw",
+      "1": "Ice Body",
+      "H": "Sturdy"
+    },
+    "weightKg": 262,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "noivern": {
+    "dexNumber": 715,
+    "name": "Noivern",
+    "types": [
+      "Flying",
+      "Dragon"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Frisk",
+      "1": "Infiltrator",
+      "H": "Telepathy"
+    },
+    "weightKg": 85,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "decidueye": {
+    "dexNumber": 724,
+    "name": "Decidueye",
+    "types": [
+      "Grass",
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Overgrow",
+      "H": "Long Reach"
+    },
+    "weightKg": 36,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "decidueyehisui": {
+    "dexNumber": 724,
+    "name": "Hisuian Decidueye",
+    "types": [
+      "Grass",
+      "Fighting"
+    ],
+    "form": "Hisui",
+    "abilities": {
+      "0": "Overgrow",
+      "H": "Scrappy"
+    },
+    "weightKg": 37,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "incineroar": {
+    "dexNumber": 727,
+    "name": "Incineroar",
+    "types": [
+      "Fire",
+      "Dark"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Blaze",
+      "H": "Intimidate"
+    },
+    "weightKg": 83,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "primarina": {
+    "dexNumber": 730,
+    "name": "Primarina",
+    "types": [
+      "Water",
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Torrent",
+      "H": "Liquid Voice"
+    },
+    "weightKg": 44,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "toucannon": {
+    "dexNumber": 733,
+    "name": "Toucannon",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Skill Link",
+      "H": "Sheer Force"
+    },
+    "weightKg": 26,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "crabominable": {
+    "dexNumber": 740,
+    "name": "Crabominable",
+    "types": [
+      "Fighting",
+      "Ice"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Hyper Cutter",
+      "1": "Iron Fist",
+      "H": "Anger Point"
+    },
+    "weightKg": 180,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "crabominablemega": {
+    "dexNumber": 740,
+    "name": "Mega Crabominable",
+    "types": [
+      "Fighting",
+      "Ice"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Iron Fist"
+    },
+    "weightKg": 252,
+    "requiredItem": "Crabominite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "lycanroc": {
+    "dexNumber": 745,
+    "name": "Lycanroc",
+    "types": [
+      "Rock"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Sand Rush",
+      "H": "Steadfast"
+    },
+    "weightKg": 25,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "lycanrocmidnight": {
+    "dexNumber": 745,
+    "name": "Lycanroc-Midnight",
+    "types": [
+      "Rock"
+    ],
+    "form": "Midnight",
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Vital Spirit",
+      "H": "No Guard"
+    },
+    "weightKg": 25,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "lycanrocdusk": {
+    "dexNumber": 745,
+    "name": "Lycanroc-Dusk",
+    "types": [
+      "Rock"
+    ],
+    "form": "Dusk",
+    "abilities": {
+      "0": "Tough Claws"
+    },
+    "weightKg": 25,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "toxapex": {
+    "dexNumber": 748,
+    "name": "Toxapex",
+    "types": [
+      "Poison",
+      "Water"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Merciless",
+      "1": "Limber",
+      "H": "Regenerator"
+    },
+    "weightKg": 14,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "mudsdale": {
+    "dexNumber": 750,
+    "name": "Mudsdale",
+    "types": [
+      "Ground"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Own Tempo",
+      "1": "Stamina",
+      "H": "Inner Focus"
+    },
+    "weightKg": 920,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "araquanid": {
+    "dexNumber": 752,
+    "name": "Araquanid",
+    "types": [
+      "Water",
+      "Bug"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Water Bubble",
+      "H": "Water Absorb"
+    },
+    "weightKg": 82,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "salazzle": {
+    "dexNumber": 758,
+    "name": "Salazzle",
+    "types": [
+      "Poison",
+      "Fire"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Corrosion",
+      "H": "Oblivious"
+    },
+    "weightKg": 22,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "tsareena": {
+    "dexNumber": 763,
+    "name": "Tsareena",
+    "types": [
+      "Grass"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Leaf Guard",
+      "1": "Queenly Majesty",
+      "H": "Sweet Veil"
+    },
+    "weightKg": 21,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "oranguru": {
+    "dexNumber": 765,
+    "name": "Oranguru",
+    "types": [
+      "Normal",
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Inner Focus",
+      "1": "Telepathy",
+      "H": "Symbiosis"
+    },
+    "weightKg": 76,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "passimian": {
+    "dexNumber": 766,
+    "name": "Passimian",
+    "types": [
+      "Fighting"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Receiver",
+      "H": "Defiant"
+    },
+    "weightKg": 82,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "mimikyu": {
+    "dexNumber": 778,
+    "name": "Mimikyu",
+    "types": [
+      "Ghost",
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Disguise"
+    },
+    "weightKg": 0,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "drampa": {
+    "dexNumber": 780,
+    "name": "Drampa",
+    "types": [
+      "Normal",
+      "Dragon"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Berserk",
+      "1": "Sap Sipper",
+      "H": "Cloud Nine"
+    },
+    "weightKg": 185,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "drampamega": {
+    "dexNumber": 780,
+    "name": "Mega Drampa",
+    "types": [
+      "Normal",
+      "Dragon"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Berserk"
+    },
+    "weightKg": 240,
+    "requiredItem": "Drampanite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "kommoo": {
+    "dexNumber": 784,
+    "name": "Kommo-o",
+    "types": [
+      "Dragon",
+      "Fighting"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Bulletproof",
+      "1": "Soundproof",
+      "H": "Overcoat"
+    },
+    "weightKg": 78,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "corviknight": {
+    "dexNumber": 823,
+    "name": "Corviknight",
+    "types": [
+      "Flying",
+      "Steel"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Pressure",
+      "1": "Unnerve",
+      "H": "Mirror Armor"
+    },
+    "weightKg": 75,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "flapple": {
+    "dexNumber": 841,
+    "name": "Flapple",
+    "types": [
+      "Grass",
+      "Dragon"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Ripen",
+      "1": "Gluttony",
+      "H": "Hustle"
+    },
+    "weightKg": 1,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "appletun": {
+    "dexNumber": 842,
+    "name": "Appletun",
+    "types": [
+      "Grass",
+      "Dragon"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Ripen",
+      "1": "Gluttony",
+      "H": "Thick Fat"
+    },
+    "weightKg": 13,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sandaconda": {
+    "dexNumber": 844,
+    "name": "Sandaconda",
+    "types": [
+      "Ground"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Sand Spit",
+      "1": "Shed Skin",
+      "H": "Sand Veil"
+    },
+    "weightKg": 65,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "polteageist": {
+    "dexNumber": 855,
+    "name": "Polteageist",
+    "types": [
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Weak Armor",
+      "H": "Cursed Body"
+    },
+    "weightKg": 0,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "hatterene": {
+    "dexNumber": 858,
+    "name": "Hatterene",
+    "types": [
+      "Psychic",
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Healer",
+      "1": "Anticipation",
+      "H": "Magic Bounce"
+    },
+    "weightKg": 5,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "grimmsnarl": {
+    "dexNumber": 861,
+    "name": "Grimmsnarl",
+    "types": [
+      "Dark",
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Prankster",
+      "1": "Frisk",
+      "H": "Pickpocket"
+    },
+    "weightKg": 61,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "mrrime": {
+    "dexNumber": 866,
+    "name": "Mr. Rime",
+    "types": [
+      "Ice",
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Tangled Feet",
+      "1": "Screen Cleaner",
+      "H": "Ice Body"
+    },
+    "weightKg": 58,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "runerigus": {
+    "dexNumber": 867,
+    "name": "Runerigus",
+    "types": [
+      "Ground",
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Wandering Spirit"
+    },
+    "weightKg": 66,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "alcremie": {
+    "dexNumber": 869,
+    "name": "Alcremie",
+    "types": [
+      "Fairy"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Sweet Veil",
+      "H": "Aroma Veil"
+    },
+    "weightKg": 0,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "falinks": {
+    "dexNumber": 870,
+    "name": "Falinks",
+    "types": [
+      "Fighting"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Battle Armor",
+      "H": "Defiant"
+    },
+    "weightKg": 62,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "falinksmega": {
+    "dexNumber": 870,
+    "name": "Mega Falinks",
+    "types": [
+      "Fighting"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Defiant"
+    },
+    "weightKg": 99,
+    "requiredItem": "Falinksite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "morpeko": {
+    "dexNumber": 877,
+    "name": "Morpeko",
+    "types": [
+      "Electric",
+      "Dark"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Hunger Switch"
+    },
+    "weightKg": 3,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "dragapult": {
+    "dexNumber": 887,
+    "name": "Dragapult",
+    "types": [
+      "Dragon",
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Clear Body",
+      "1": "Infiltrator",
+      "H": "Cursed Body"
+    },
+    "weightKg": 50,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "wyrdeer": {
+    "dexNumber": 899,
+    "name": "Wyrdeer",
+    "types": [
+      "Normal",
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Frisk",
+      "H": "Sap Sipper"
+    },
+    "weightKg": 95,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "kleavor": {
+    "dexNumber": 900,
+    "name": "Kleavor",
+    "types": [
+      "Bug",
+      "Rock"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Swarm",
+      "1": "Sheer Force",
+      "H": "Sharpness"
+    },
+    "weightKg": 89,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "basculegion": {
+    "dexNumber": 902,
+    "name": "Basculegion",
+    "types": [
+      "Water",
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Swift Swim",
+      "1": "Adaptability",
+      "H": "Mold Breaker"
+    },
+    "weightKg": 110,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "basculegionf": {
+    "dexNumber": 902,
+    "name": "Basculegion-F",
+    "types": [
+      "Water",
+      "Ghost"
+    ],
+    "form": "F",
+    "abilities": {
+      "0": "Swift Swim",
+      "1": "Adaptability",
+      "H": "Mold Breaker"
+    },
+    "weightKg": 110,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sneasler": {
+    "dexNumber": 903,
+    "name": "Sneasler",
+    "types": [
+      "Fighting",
+      "Poison"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Pressure",
+      "1": "Unburden",
+      "H": "Poison Touch"
+    },
+    "weightKg": 43,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "overqwil": {
+    "dexNumber": 904,
+    "name": "Overqwil",
+    "types": [
+      "Dark",
+      "Poison"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Swift Swim",
+      "H": "Intimidate"
+    },
+    "weightKg": 60,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "meowscarada": {
+    "dexNumber": 908,
+    "name": "Meowscarada",
+    "types": [
+      "Grass",
+      "Dark"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Overgrow",
+      "H": "Protean"
+    },
+    "weightKg": 31,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "skeledirge": {
+    "dexNumber": 911,
+    "name": "Skeledirge",
+    "types": [
+      "Fire",
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Blaze",
+      "H": "Unaware"
+    },
+    "weightKg": 326,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "quaquaval": {
+    "dexNumber": 914,
+    "name": "Quaquaval",
+    "types": [
+      "Water",
+      "Fighting"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Torrent",
+      "H": "Moxie"
+    },
+    "weightKg": 61,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "maushold": {
+    "dexNumber": 925,
+    "name": "Maushold",
+    "types": [
+      "Normal"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Friend Guard",
+      "1": "Cheek Pouch",
+      "H": "Technician"
+    },
+    "weightKg": 2,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "garganacl": {
+    "dexNumber": 934,
+    "name": "Garganacl",
+    "types": [
+      "Rock"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Purifying Salt",
+      "1": "Sturdy",
+      "H": "Clear Body"
+    },
+    "weightKg": 240,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "armarouge": {
+    "dexNumber": 936,
+    "name": "Armarouge",
+    "types": [
+      "Fire",
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Flash Fire",
+      "H": "Weak Armor"
+    },
+    "weightKg": 85,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "ceruledge": {
+    "dexNumber": 937,
+    "name": "Ceruledge",
+    "types": [
+      "Fire",
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Flash Fire",
+      "H": "Weak Armor"
+    },
+    "weightKg": 62,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "bellibolt": {
+    "dexNumber": 939,
+    "name": "Bellibolt",
+    "types": [
+      "Electric"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Electromorphosis",
+      "1": "Static",
+      "H": "Damp"
+    },
+    "weightKg": 113,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "scovillain": {
+    "dexNumber": 952,
+    "name": "Scovillain",
+    "types": [
+      "Grass",
+      "Fire"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Chlorophyll",
+      "1": "Insomnia",
+      "H": "Moody"
+    },
+    "weightKg": 15,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "scovillainmega": {
+    "dexNumber": 952,
+    "name": "Mega Scovillain",
+    "types": [
+      "Grass",
+      "Fire"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Spicy Spray"
+    },
+    "weightKg": 22,
+    "requiredItem": "Scovillainite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "espathra": {
+    "dexNumber": 956,
+    "name": "Espathra",
+    "types": [
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Opportunist",
+      "1": "Frisk",
+      "H": "Speed Boost"
+    },
+    "weightKg": 90,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "tinkaton": {
+    "dexNumber": 959,
+    "name": "Tinkaton",
+    "types": [
+      "Fairy",
+      "Steel"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Mold Breaker",
+      "1": "Own Tempo",
+      "H": "Pickpocket"
+    },
+    "weightKg": 112,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "palafin": {
+    "dexNumber": 964,
+    "name": "Palafin",
+    "types": [
+      "Water"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Zero to Hero"
+    },
+    "weightKg": 60,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "orthworm": {
+    "dexNumber": 968,
+    "name": "Orthworm",
+    "types": [
+      "Steel"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Earth Eater",
+      "H": "Sand Veil"
+    },
+    "weightKg": 310,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "glimmora": {
+    "dexNumber": 970,
+    "name": "Glimmora",
+    "types": [
+      "Rock",
+      "Poison"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Toxic Debris",
+      "H": "Corrosion"
+    },
+    "weightKg": 45,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "glimmoramega": {
+    "dexNumber": 970,
+    "name": "Mega Glimmora",
+    "types": [
+      "Rock",
+      "Poison"
+    ],
+    "form": "Mega",
+    "abilities": {
+      "0": "Adaptability"
+    },
+    "weightKg": 77,
+    "requiredItem": "Glimmoranite",
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "houndstone": {
+    "dexNumber": 972,
+    "name": "Houndstone",
+    "types": [
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Sand Rush",
+      "H": "Fluffy"
+    },
+    "weightKg": 15,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "annihilape": {
+    "dexNumber": 979,
+    "name": "Annihilape",
+    "types": [
+      "Fighting",
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Vital Spirit",
+      "1": "Inner Focus",
+      "H": "Defiant"
+    },
+    "weightKg": 56,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "farigiraf": {
+    "dexNumber": 981,
+    "name": "Farigiraf",
+    "types": [
+      "Normal",
+      "Psychic"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Cud Chew",
+      "1": "Armor Tail",
+      "H": "Sap Sipper"
+    },
+    "weightKg": 160,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "kingambit": {
+    "dexNumber": 983,
+    "name": "Kingambit",
+    "types": [
+      "Dark",
+      "Steel"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Defiant",
+      "1": "Supreme Overlord",
+      "H": "Pressure"
+    },
+    "weightKg": 120,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "gholdengo": {
+    "dexNumber": 1000,
+    "name": "Gholdengo",
+    "types": [
+      "Steel",
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Good as Gold"
+    },
+    "weightKg": 30,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "sinistcha": {
+    "dexNumber": 1013,
+    "name": "Sinistcha",
+    "types": [
+      "Grass",
+      "Ghost"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Hospitality",
+      "H": "Heatproof"
+    },
+    "weightKg": 2,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "N"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "archaludon": {
+    "dexNumber": 1018,
+    "name": "Archaludon",
+    "types": [
+      "Steel",
+      "Dragon"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Stamina",
+      "1": "Sturdy",
+      "H": "Stalwart"
+    },
+    "weightKg": 60,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "hydrapple": {
+    "dexNumber": 1019,
+    "name": "Hydrapple",
+    "types": [
+      "Grass",
+      "Dragon"
+    ],
+    "form": null,
+    "abilities": {
+      "0": "Supersweet Syrup",
+      "1": "Regenerator",
+      "H": "Sticky Hold"
+    },
+    "weightKg": 93,
+    "requiredItem": null,
+    "requiredMove": null,
+    "canEvolve": false,
+    "genders": [
+      "M",
+      "F"
+    ],
+    "baseStats": null,
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  }
+}
