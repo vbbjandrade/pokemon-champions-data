@@ -1,0 +1,41 @@
+name: Generate regulation data
+
+on:
+  push:
+    paths:
+      - 'data/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'bun.lock'
+      - '.github/workflows/generate-regulations.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    # Avoid committing again after this workflow's generated-data commit.
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: oven-sh/setup-bun@v2
+
+      - run: bun install --frozen-lockfile
+      - run: ./scripts/fetch_sources.sh
+      - run: bun run generate
+
+      - name: Commit generated data
+        run: |
+          git add data/master data/regm-a data/regm-b dist
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: regenerate regulation data'
+          git push

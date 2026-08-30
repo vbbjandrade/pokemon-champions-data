@@ -1,7 +1,7 @@
 /**
  * AUTO-GENERATED — DO NOT EDIT MANUALLY
  * Synced from: https://raw.githubusercontent.com/smogon/pokemon-showdown/master/sim/dex-items.ts
- * Synced at:   Sun, 30 Aug 2026 05:32:36 UTC
+ * Synced at:   Sun, 30 Aug 2026 07:38:05 UTC
  * Branch:      master
  *
  * Runtime-only Showdown types (Battle, Pokemon, Side, etc.) and all import

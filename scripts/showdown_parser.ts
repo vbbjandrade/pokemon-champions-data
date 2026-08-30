@@ -227,6 +227,20 @@ export interface VersionInfo {
   };
 }
 
+export interface RegulationDelta {
+  regulationId: string;
+  regulationName: string;
+  begin: string | null;
+  end: string | null;
+  overrides: {
+    roster: Record<string, Partial<RepoPokemon>>;
+    learnsets: Record<string, RepoLearnset>;
+    moves: Record<string, Partial<RepoMove>>;
+    abilities: Record<string, Partial<RepoAbility>>;
+    items: Record<string, Partial<RepoItem>>;
+  };
+}
+
 export const SHOWDOWN_SOURCE = 'smogon/pokemon-showdown';
 
 /**
@@ -360,15 +374,15 @@ export function mapAbilitiesToIds(
 }
 
 /**
- * Extracts desc and shortDesc checking for Champions-specific overrides first.
+ * Extracts desc and shortDesc, optionally selecting a Showdown mod override.
  */
-export function extractTextOverrides(textEntry?: any): { desc: string | null; shortDesc: string | null } {
+export function extractTextOverrides(textEntry?: any, modId?: string): { desc: string | null; shortDesc: string | null } {
   if (!textEntry) {
     return { desc: null, shortDesc: null };
   }
-  const champ = textEntry.champions;
-  const desc = champ?.desc ?? textEntry.desc ?? null;
-  const shortDesc = champ?.shortDesc ?? textEntry.shortDesc ?? null;
+  const mod = modId ? textEntry[modId] : undefined;
+  const desc = mod?.desc ?? textEntry.desc ?? null;
+  const shortDesc = mod?.shortDesc ?? textEntry.shortDesc ?? null;
   return { desc, shortDesc };
 }
 
@@ -681,12 +695,12 @@ export function extractMoveFlags(
 export function parseMovesMain(
   rawMoves: Record<string, any>,
   textEntries?: Record<string, any>,
-  onCallbackWarning?: (msg: string) => void
+  onCallbackWarning?: (msg: string) => void,
+  textModId?: string
 ): Record<string, ParsedMove> {
   const out: Record<string, ParsedMove> = {};
   for (const [key, m] of Object.entries(rawMoves)) {
-    if (m.isNonstandard === 'CAP') continue;
-    const text = extractTextOverrides(textEntries?.[key]);
+    const text = extractTextOverrides(textEntries?.[key], textModId);
     const flags = extractMoveFlags(m, key, onCallbackWarning);
     out[key] = {
       name: m.name ?? '',
@@ -784,12 +798,12 @@ export function extractAbilityFlags(
 export function parseAbilitiesEntries(
   rawAbilities: Record<string, any>,
   textEntries?: Record<string, any>,
-  onCallbackWarning?: (msg: string) => void
+  onCallbackWarning?: (msg: string) => void,
+  textModId?: string
 ): Record<string, Partial<RepoAbility> & { inherit?: boolean; isNonstandard?: string | null }> {
   const out: Record<string, Partial<RepoAbility> & { inherit?: boolean; isNonstandard?: string | null }> = {};
   for (const [key, a] of Object.entries(rawAbilities)) {
-    if (a.isNonstandard === 'CAP') continue;
-    const text = extractTextOverrides(textEntries?.[key]);
+    const text = extractTextOverrides(textEntries?.[key], textModId);
     const flags = extractAbilityFlags(a, key, onCallbackWarning);
     const entry: Partial<RepoAbility> & { inherit?: boolean; isNonstandard?: string | null } = {
       inherit: a.inherit === true,
@@ -807,10 +821,10 @@ export function parseAbilitiesEntries(
 /**
  * Parses ability descriptions from text source files with support for Champions overrides.
  */
-export function parseAbilitiesDescriptions(rawText: Record<string, any>): Record<string, { name?: string; desc: string | null; shortDesc: string | null }> {
+export function parseAbilitiesDescriptions(rawText: Record<string, any>, textModId?: string): Record<string, { name?: string; desc: string | null; shortDesc: string | null }> {
   const out: Record<string, { name?: string; desc: string | null; shortDesc: string | null }> = {};
   for (const [key, entry] of Object.entries(rawText)) {
-    const text = extractTextOverrides(entry);
+    const text = extractTextOverrides(entry, textModId);
     out[key] = {
       name: entry.name,
       desc: text.desc,
@@ -872,12 +886,12 @@ export function extractItemFlags(
 export function parseItems(
   rawItems: Record<string, any>,
   textEntries?: Record<string, any>,
-  onCallbackWarning?: (msg: string) => void
+  onCallbackWarning?: (msg: string) => void,
+  textModId?: string
 ): Record<string, Partial<RepoItem> & { inherit?: boolean }> {
   const out: Record<string, Partial<RepoItem> & { inherit?: boolean }> = {};
   for (const [key, item] of Object.entries(rawItems)) {
-    if (item.isNonstandard === 'CAP') continue;
-    const text = extractTextOverrides(textEntries?.[key]);
+    const text = extractTextOverrides(textEntries?.[key], textModId);
     const flags = extractItemFlags(item, key, onCallbackWarning);
     const entry: Partial<RepoItem> & { inherit?: boolean } = {
       inherit: item.inherit === true,

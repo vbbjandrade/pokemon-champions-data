@@ -864,8 +864,8 @@
   },
   "healer": {
     "name": "Healer",
-    "desc": "50% chance this Pokemon's ally has its non-volatile status condition cured at the end of each turn.",
-    "shortDesc": "50% chance this Pokemon's ally has its status cured at the end of each turn.",
+    "desc": "30% chance this Pokemon's ally has its non-volatile status condition cured at the end of each turn.",
+    "shortDesc": "30% chance this Pokemon's ally has its status cured at the end of each turn.",
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1338,6 +1338,16 @@
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
+  "mountaineer": {
+    "name": "Mountaineer",
+    "desc": null,
+    "shortDesc": "On switch-in, this Pokemon avoids all Rock-type attacks and Stealth Rock.",
+    "flags": {
+      "breakable": 1
+    },
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
   "moxie": {
     "name": "Moxie",
     "desc": "This Pokemon's Attack is raised by 1 stage if it attacks and knocks out another Pokemon.",
@@ -1506,6 +1516,13 @@
     "name": "Perish Body",
     "desc": "Making contact with this Pokemon starts the Perish Song effect for it and the attacker. This effect does not happen for this Pokemon if the attacker already has a perish count.",
     "shortDesc": "Making contact with this Pokemon starts the Perish Song effect for it and the attacker.",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "persistent": {
+    "name": "Persistent",
+    "desc": "The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokemon.",
+    "shortDesc": "When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns.",
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1755,6 +1772,16 @@
     "name": "Rattled",
     "desc": "This Pokemon's Speed is raised by 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or if an opposing Pokemon affected this Pokemon with the Intimidate Ability.",
     "shortDesc": "Speed is raised 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or Intimidated.",
+    "source": "smogon/pokemon-showdown",
+    "verified": false
+  },
+  "rebound": {
+    "name": "Rebound",
+    "desc": "On switch-in, this Pokemon blocks certain status moves and instead uses the move against the original user.",
+    "shortDesc": "On switch-in, blocks certain status moves and bounces them back to the user.",
+    "flags": {
+      "breakable": 1
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2541,7 +2568,7 @@
   "unseenfist": {
     "name": "Unseen Fist",
     "desc": null,
-    "shortDesc": "This Pokemon's contact moves ignore a target's protection and deal 1/4 the usual damage.",
+    "shortDesc": "This Pokemon's contact moves ignore the target's protection, except Max Guard.",
     "source": "smogon/pokemon-showdown",
     "verified": false
   },

@@ -1,10 +1,5 @@
 #!/usr/bin/env bun
-/**
- * Update dataset from Pokemon Showdown source files.
- *
- * Usage:
- *   bun run scripts/update_from_showdown.ts [--dry-run] [--log-file <path>]
- */
+/** Generates unfiltered master data and regulation-specific Showdown deltas. */
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
@@ -13,572 +8,257 @@ import { parseArgs } from 'node:util';
 import {
   extractTextOverrides,
   isDeepEqual,
-  parseAbilitiesDescriptions,
   parseAbilitiesEntries,
   parseItems,
-  parseLearnsets,
   parseLegalSpecies,
   parseMoveMods,
   parseMovesMain,
   parsePokedex,
+  type ParsedMove,
+  type RegulationDelta,
   type RepoAbility,
   type RepoItem,
   type RepoLearnset,
   type RepoMove,
-  type ParsedMove,
   type RepoPokemon,
   SHOWDOWN_SOURCE,
-  syncCollection,
-  type SyncLogEntry,
-  type SyncResult,
-  toID,
-  type VersionInfo,
 } from './showdown_parser.ts';
+import { REGULATIONS, type RegulationDefinition } from './regulations.ts';
 
-// ---------------------------------------------------------------------------
-// Path definitions
-// ---------------------------------------------------------------------------
 const ROOT_DIR = resolve(import.meta.dir, '..');
-const DATA_DIR = join(ROOT_DIR, 'data');
-const SOURCES_DIR = join(DATA_DIR, 'sources');
-const LOGS_DIR = join(ROOT_DIR, 'logs');
-
-const REQUIRED_SOURCES = [
-  'pokedex.ts',
-  'champions-formats-data.ts',
-  'champions-learnsets.ts',
-  'moves-main.ts',
-  'moves-text.ts',
-  'champions-moves.ts',
-  'items-main.ts',
-  'items-text.ts',
-  'champions-items.ts',
-  'abilities-main.ts',
-  'abilities-text.ts',
-  'champions-abilities.ts',
-];
-
-// Forms that should be collapsed into a single entry
+const SOURCES_DIR = join(ROOT_DIR, 'data', 'sources');
+const MASTER_DIR = join(ROOT_DIR, 'data', 'master');
+const MAIN_FILES = ['pokedex.ts', 'moves-main.ts', 'moves-text.ts', 'items-main.ts', 'items-text.ts', 'abilities-main.ts', 'abilities-text.ts'];
+const MOD_FILES = ['formats-data.ts', 'learnsets.ts', 'moves.ts', 'items.ts', 'abilities.ts'];
+// These forms only exist during battle and do not have standalone learnsets.
 const COLLAPSED_FORMS = new Set([
-  'aegislashblade', // Form change only happens during battle
-  'castformrainy', 'castformsnowy', 'castformsunny', // Form change only happens during battle
-  'meowsticf', // Only Meowstic M is allowed as of Reg M-B
+  'aegislashblade',
+  'castformrainy',
+  'castformsnowy',
+  'castformsunny',
+  'meowsticf',
 ]);
+const LEARNSET_FALLBACKS: Record<string, string> = { gourgeistsmall: 'gourgeist', gourgeistlarge: 'gourgeist', gourgeistsuper: 'gourgeist', floettemega: 'floetteeternal', meowsticmmega: 'meowstic' };
+const SHOWDOWN_ALIASES: Record<string, string> = { meowsticmmega: 'Mega Meowstic', taurospaldeacombat: 'Paldean Tauros' };
 
-// Forms with no learnset on Showdown that should inherit moves from other entries
-const LEARNSET_FALLBACKS: Record<string, string> = {
-  gourgeistsmall: 'gourgeist',
-  gourgeistlarge: 'gourgeist',
-  gourgeistsuper: 'gourgeist',
-  floettemega: 'floetteeternal',
-  meowsticmmega: 'meowstic',
+type RawRecord = Record<string, any>;
+type ResolvedData = {
+  roster: Record<string, RepoPokemon>;
+  moves: Record<string, ParsedMove>;
+  abilities: Record<string, RepoAbility>;
+  items: Record<string, RepoItem>;
 };
 
-// Mapping table for Showdown forms maintained under unique names in the repository
-const SHOWDOWN_ALIASES: Record<string, string> = {
-  meowsticmmega: 'Mega Meowstic',
-  taurospaldeacombat: 'Paldean Tauros',
-};
+function writeJson(path: string, value: unknown, dryRun: boolean): void {
+  if (dryRun) return void console.log(`  [dry-run] would write ${path.slice(ROOT_DIR.length + 1)}`);
+  mkdirSync(dirname(path), { recursive: true });
+  writeFileSync(path, `${JSON.stringify(value, null, 2)}\n`, 'utf-8');
+  console.log(`  wrote ${path.slice(ROOT_DIR.length + 1)}`);
+}
 
-// ---------------------------------------------------------------------------
-// Logger Helper
-// ---------------------------------------------------------------------------
-class UpdateLogger {
-  private logEntries: string[] = [];
-  private logFilePath: string;
+function sorted<T>(entries: Record<string, T>): Record<string, T> {
+  return Object.fromEntries(Object.entries(entries).sort(([a], [b]) => a.localeCompare(b)));
+}
 
-  constructor(logFilePath: string) {
-    this.logFilePath = logFilePath;
-  }
+function withSource<T extends object>(entries: Record<string, T>): Record<string, T & { source: string; verified: boolean }> {
+  return Object.fromEntries(Object.entries(entries).map(([id, entry]) => [id, { ...entry, source: SHOWDOWN_SOURCE, verified: false }]));
+}
 
-  log(msg: string = '') {
-    console.log(msg);
-    this.logEntries.push(msg);
-  }
+function diffEntry(base: RawRecord | undefined, resolved: RawRecord): RawRecord {
+  if (!base) return resolved;
+  const delta: RawRecord = {};
+  for (const [key, value] of Object.entries(resolved)) if (!isDeepEqual(base[key], value)) delta[key] = value;
+  return delta;
+}
 
-  info(msg: string) {
-    this.log(`  INFO: ${msg}`);
-  }
-
-  warn(msg: string) {
-    this.log(`  WARN: ${msg}`);
-  }
-
-  error(msg: string) {
-    console.error(`  ERROR: ${msg}`);
-    this.log(`  ERROR: ${msg}`);
-  }
-
-  addSyncLogs(logs: SyncLogEntry[]) {
-    for (const entry of logs) {
-      if (entry.type === 'UNCHANGED') continue;
-      const prefix = `[${entry.type}] ${entry.collection}: "${entry.id}"${entry.name ? ` (${entry.name})` : ''}`;
-      this.log(`  ${prefix} -> ${entry.message}`);
+function preserveCustomDeltaValues(delta: RegulationDelta, path: string): RegulationDelta {
+  if (!existsSync(path)) return delta;
+  const existing = JSON.parse(readFileSync(path, 'utf-8')) as RegulationDelta;
+  if (existing.regulationId !== delta.regulationId) return delta;
+  delta.begin = existing.begin;
+  delta.end = existing.end;
+  for (const resource of ['roster', 'learnsets', 'moves', 'abilities', 'items'] as const) {
+    const generated = delta.overrides[resource] as RawRecord;
+    const previous = existing.overrides?.[resource] as RawRecord | undefined;
+    if (!previous) continue;
+    for (const [id, override] of Object.entries(previous)) {
+      if ((override as RawRecord).source && (override as RawRecord).source !== SHOWDOWN_SOURCE) {
+        if (resource !== 'roster' || generated[id]) generated[id] = { ...generated[id], ...override };
+      }
     }
   }
-
-  flush(dryRun: boolean) {
-    const timestamp = new Date().toISOString();
-    const header = [
-      `================================================================================`,
-      `Pokemon Champions Data Update Log`,
-      `Executed at: ${timestamp}`,
-      `Dry Run: ${dryRun ? 'YES' : 'NO'}`,
-      `================================================================================`,
-      '',
-    ].join('\n');
-
-    const content = `${header}${this.logEntries.join('\n')}\n`;
-    mkdirSync(dirname(this.logFilePath), { recursive: true });
-    writeFileSync(this.logFilePath, content, 'utf-8');
-    this.log(`\nLog written to ${this.logFilePath}`);
-  }
+  return delta;
 }
 
-// ---------------------------------------------------------------------------
-// Helper Functions
-// ---------------------------------------------------------------------------
-function loadJson<T>(relativePath: string, fallback: T): T {
-  const fullPath = join(ROOT_DIR, relativePath);
-  if (!existsSync(fullPath)) return fallback;
-  try {
-    return JSON.parse(readFileSync(fullPath, 'utf-8')) as T;
-  } catch (err) {
-    console.warn(`Failed to parse ${relativePath}, using fallback.`);
-    return fallback;
-  }
-}
-
-function saveJson(relativePath: string, data: any, dryRun: boolean, logger: UpdateLogger): void {
-  const text = `${JSON.stringify(data, null, 2)}\n`;
-  const fullPath = join(ROOT_DIR, relativePath);
-  if (dryRun) {
-    logger.log(`  [dry-run] would write ${relativePath}`);
-  } else {
-    mkdirSync(dirname(fullPath), { recursive: true });
-    writeFileSync(fullPath, text, 'utf-8');
-    logger.log(`  wrote ${relativePath}`);
-  }
-}
-
-function resolveBaseSpeciesId(sid: string, learnsetsMod: Record<string, any>): string {
-  if (LEARNSET_FALLBACKS[sid]) {
-    return LEARNSET_FALLBACKS[sid]!;
-  }
+function learnsetId(speciesId: string, learnsets: RawRecord): string {
+  if (LEARNSET_FALLBACKS[speciesId]) return LEARNSET_FALLBACKS[speciesId]!;
   for (const suffix of ['megax', 'megay', 'megaz', 'mega', 'gmax']) {
-    if (sid.endsWith(suffix)) {
-      const baseCandidate = sid.slice(0, -suffix.length);
-      if (learnsetsMod[baseCandidate]) {
-        return baseCandidate;
-      }
-    }
+    const candidate = speciesId.endsWith(suffix) ? speciesId.slice(0, -suffix.length) : '';
+    if (candidate in learnsets) return candidate;
   }
-  return sid;
+  return speciesId;
 }
 
-// ---------------------------------------------------------------------------
-// Main Execution
-// ---------------------------------------------------------------------------
-async function main() {
-  const { values } = parseArgs({
-    args: process.argv.slice(2),
-    options: {
-      'dry-run': { type: 'boolean', default: false },
-      'log-file': { type: 'string', default: join(LOGS_DIR, 'update.log') },
-      help: { type: 'boolean', default: false },
-    },
-    allowPositionals: true,
-  });
+function resolveMoves(master: Record<string, ParsedMove>, mods: ReturnType<typeof parseMoveMods>, text: RawRecord, textModId: string): Record<string, ParsedMove> {
+  const result = { ...master };
+  for (const [id, mod] of Object.entries(mods)) {
+    const base = result[id] ?? { name: '', type: '', category: '', power: null, accuracy: null, pp: null, priority: 0, target: null, desc: null, shortDesc: null, flags: {}, isNonstandard: null };
+    const entry: ParsedMove = mod.inherit
+      ? { ...base, flags: { ...base.flags } }
+      : { name: '', type: '', category: '', power: null, accuracy: null, pp: null, priority: 0, target: null, desc: null, shortDesc: null, flags: {}, isNonstandard: null };
+    if (mod.name !== undefined) entry.name = mod.name;
+    if (mod.type !== undefined) entry.type = mod.type;
+    if (mod.category !== undefined) entry.category = mod.category;
+    if (mod.power !== undefined) entry.power = mod.power;
+    if (mod.accuracy !== undefined) entry.accuracy = mod.accuracy;
+    if (mod.pp !== undefined) entry.pp = mod.pp;
+    if (mod.priority !== undefined) entry.priority = mod.priority;
+    if (mod.target !== undefined) entry.target = mod.target;
+    if (mod.flags !== undefined) entry.flags = { ...entry.flags, ...mod.flags };
+    const overrides = extractTextOverrides(text[id], textModId);
+    entry.desc = mod.desc ?? overrides.desc ?? entry.desc ?? null;
+    entry.shortDesc = mod.shortDesc ?? overrides.shortDesc ?? entry.shortDesc ?? null;
+    if (mod.isNonstandard !== undefined) entry.isNonstandard = mod.isNonstandard;
+    if (!entry.source) {
+      entry.source = SHOWDOWN_SOURCE;
+      entry.verified = false;
+    }
+    result[id] = entry;
+  }
+  return result;
+}
 
-  if (values.help) {
-    console.log(`
-Usage: bun run scripts/update_from_showdown.ts [options]
+function resolveAbilities(master: Record<string, RepoAbility>, mods: ReturnType<typeof parseAbilitiesEntries>, text: RawRecord, textModId: string): Record<string, RepoAbility> {
+  const result = { ...master };
+  for (const [id, mod] of Object.entries(mods)) {
+    const base = result[id] ?? { name: '', desc: null, shortDesc: null };
+    const entry: RepoAbility = mod.inherit ? { ...base } : { name: '', desc: null, shortDesc: null };
+    if (mod.name !== undefined) entry.name = mod.name;
+    const overrides = extractTextOverrides(text[id], textModId);
+    entry.desc = mod.desc ?? overrides.desc ?? entry.desc ?? null;
+    entry.shortDesc = mod.shortDesc ?? overrides.shortDesc ?? entry.shortDesc ?? null;
+    if (mod.flags !== undefined) entry.flags = { ...entry.flags, ...mod.flags };
+    if (!entry.source) {
+      entry.source = SHOWDOWN_SOURCE;
+      entry.verified = false;
+    }
+    result[id] = entry;
+  }
+  return result;
+}
 
-Options:
-  --dry-run            Run comparison and print changes without writing JSON files
-  --log-file <path>    Specify output log file (default: logs/update.log)
-  --help               Display this help message
-    `);
-    process.exit(0);
+function resolveItems(master: Record<string, RepoItem>, mods: ReturnType<typeof parseItems>, text: RawRecord, textModId: string): Record<string, RepoItem> {
+  const result = { ...master };
+  for (const [id, mod] of Object.entries(mods)) {
+    const base = result[id] ?? { name: '', desc: null, shortDesc: null };
+    const entry: RepoItem = mod.inherit ? { ...base } : { name: '', desc: null, shortDesc: null, isNonstandard: null };
+    if (mod.name !== undefined) entry.name = mod.name;
+    const overrides = extractTextOverrides(text[id], textModId);
+    entry.desc = mod.desc ?? overrides.desc ?? entry.desc ?? null;
+    entry.shortDesc = mod.shortDesc ?? overrides.shortDesc ?? entry.shortDesc ?? null;
+    if (mod.flags !== undefined) entry.flags = { ...entry.flags, ...mod.flags };
+    if (mod.isNonstandard !== undefined) entry.isNonstandard = mod.isNonstandard;
+    if (!entry.source) {
+      entry.source = SHOWDOWN_SOURCE;
+      entry.verified = false;
+    }
+    result[id] = entry;
+  }
+  return result;
+}
+
+async function importMod(regulation: RegulationDefinition) {
+  const source = `../data/sources/${regulation.regulationId}`;
+  const [{ FormatsData }, { Learnsets }, { Moves }, { Items }, { Abilities }] = await Promise.all([
+    import(`${source}/formats-data.ts`), import(`${source}/learnsets.ts`), import(`${source}/moves.ts`), import(`${source}/items.ts`), import(`${source}/abilities.ts`),
+  ]);
+  return { formatsData: FormatsData as RawRecord, learnsets: Learnsets as RawRecord, moves: Moves as RawRecord, items: Items as RawRecord, abilities: Abilities as RawRecord };
+}
+
+function makeDelta(regulation: RegulationDefinition, base: ResolvedData, mod: Awaited<ReturnType<typeof importMod>>, text: { moves: RawRecord; abilities: RawRecord; items: RawRecord }): { delta: RegulationDelta; resolved: ResolvedData } {
+  const textModId = regulation === REGULATIONS[0] ? 'champions' : regulation.regulationId;
+  const roster: RegulationDelta['overrides']['roster'] = {};
+  const learnsets: RegulationDelta['overrides']['learnsets'] = {};
+  for (const id of [...parseLegalSpecies(mod.formatsData)].filter((id) => !COLLAPSED_FORMS.has(id)).sort()) {
+    const pokemon = base.roster[id];
+    if (!pokemon) throw new Error(`${regulation.regulationId}: legal species "${id}" is absent from master roster.`);
+    roster[id] = {};
+    const sourceId = learnsetId(id, mod.learnsets);
+    const rawLearnset = mod.learnsets[sourceId]?.learnset;
+    if (!rawLearnset) throw new Error(`${regulation.regulationId}: missing learnset for "${id}" (mapped to "${sourceId}").`);
+    learnsets[id] = { dexNumber: pokemon.dexNumber, form: pokemon.form, moves: Object.keys(rawLearnset).sort(), source: SHOWDOWN_SOURCE, verified: false } satisfies RepoLearnset;
   }
 
+  const moveDeltas: RegulationDelta['overrides']['moves'] = {};
+  const resolvedMoves = resolveMoves(base.moves, parseMoveMods(mod.moves), text.moves, textModId);
+  for (const [id, entry] of Object.entries(resolvedMoves)) {
+    const { isNonstandard: _ignored, ...move } = entry;
+    const delta = diffEntry(base.moves[id] as RawRecord | undefined, move);
+    if (Object.keys(delta).length) moveDeltas[id] = delta;
+  }
+
+  const abilityDeltas: RegulationDelta['overrides']['abilities'] = {};
+  const resolvedAbilities = resolveAbilities(base.abilities, parseAbilitiesEntries(mod.abilities, text.abilities, undefined, textModId), text.abilities, textModId);
+  for (const [id, entry] of Object.entries(resolvedAbilities)) {
+    const delta = diffEntry(base.abilities[id] as RawRecord | undefined, entry);
+    if (Object.keys(delta).length) abilityDeltas[id] = delta;
+  }
+
+  const itemDeltas: RegulationDelta['overrides']['items'] = {};
+  const resolvedItems = resolveItems(base.items, parseItems(mod.items, text.items, undefined, textModId), text.items, textModId);
+  for (const [id, entry] of Object.entries(resolvedItems)) {
+    const delta = diffEntry(base.items[id] as RawRecord | undefined, entry);
+    if (Object.keys(delta).length) itemDeltas[id] = delta;
+  }
+
+  return {
+    delta: { regulationId: regulation.regulationId, regulationName: regulation.regulationName, begin: null, end: null, overrides: { roster: sorted(roster), learnsets: sorted(learnsets), moves: sorted(moveDeltas), abilities: sorted(abilityDeltas), items: sorted(itemDeltas) } },
+    resolved: { roster: base.roster, moves: resolvedMoves, abilities: resolvedAbilities, items: resolvedItems },
+  };
+}
+
+async function main(): Promise<void> {
+  const { values } = parseArgs({ args: process.argv.slice(2), options: { 'dry-run': { type: 'boolean', default: false } } });
   const dryRun = Boolean(values['dry-run']);
-  const logFile = values['log-file']!;
-  const logger = new UpdateLogger(logFile);
-  const sources: string[] = [];
+  for (const file of MAIN_FILES) if (!existsSync(join(SOURCES_DIR, file))) throw new Error(`Missing data/sources/${file}. Run scripts/fetch_sources.sh first.`);
+  for (const regulation of REGULATIONS) for (const file of MOD_FILES) if (!existsSync(join(SOURCES_DIR, regulation.regulationId, file))) throw new Error(`Missing data/sources/${regulation.regulationId}/${file}. Run scripts/fetch_sources.sh first.`);
 
-  function addUniqueSources<T extends { source?: string }>(collection: Record<string, T>): void {
-    for (const entry of Object.values(collection)) {
-      const source = entry.source;
-      if (source && source !== SHOWDOWN_SOURCE && !sources.includes(source)) {
-        sources.push(source);
-      }
-    }
-  }
-
-  function countVerified<T extends { verified?: boolean }>(collection: Record<string, T>): number {
-    return Object.values(collection).filter((entry) => entry.verified === true).length;
-  }
-
-  logger.log(`\n========================================================`);
-  logger.log(`Pokemon Champions Data Update from Showdown Sources`);
-  logger.log(`Mode: ${dryRun ? 'DRY-RUN' : 'LIVE WRITE'}`);
-  logger.log(`========================================================\n`);
-
-  // 1. Verify sources exist
-  for (const file of REQUIRED_SOURCES) {
-    const fullPath = join(SOURCES_DIR, file);
-    if (!existsSync(fullPath)) {
-      logger.error(`Missing data source: data/sources/${file}. Run scripts/fetch_sources.sh first.`);
-      process.exit(1);
-    }
-  }
-
-  // 2. Load existing repository JSON data
-  logger.log(`Loading existing repository data...`);
-  const repoRoster = loadJson<Record<string, RepoPokemon>>('data/pokemon/roster.json', {});
-  const repoLearnsets = loadJson<Record<string, RepoLearnset>>('data/pokemon/learnsets.json', {});
-  const repoMoves = loadJson<Record<string, RepoMove>>('data/moves/moves.json', {});
-  const repoAbilities = loadJson<Record<string, RepoAbility>>('data/abilities/abilities.json', {});
-  const repoItems = loadJson<Record<string, RepoItem>>('data/items/items.json', {});
-  const repoVersion = loadJson<VersionInfo>('data/meta/version.json', {
-    lastUpdated: '08/04/2026',
-    gameVersion: '1.0.0',
-    latestRegulation: 'M-A',
-    records: {
-      pokemon: 0,
-      moves: 0,
-      abilities: 0,
-      items: 0,
-    },
-    verifications: {
-      pokemon: 0,
-      moves: 0,
-      abilities: 0,
-      items: 0
-    },
-    sources: [],
-  });
-
-  // 3. Dynamically import Showdown data files
-  logger.log(`Importing Showdown data modules...`);
-  const { Pokedex } = await import('../data/sources/pokedex.ts');
-  const { FormatsData: ChampionsFormatsData } = await import('../data/sources/champions-formats-data.ts');
-  const { Learnsets: ChampionsLearnsets } = await import('../data/sources/champions-learnsets.ts');
-  const { Moves: MovesMain } = await import('../data/sources/moves-main.ts');
-  const { MovesText } = await import('../data/sources/moves-text.ts');
-  const { Moves: ChampionsMoves } = await import('../data/sources/champions-moves.ts');
-  const { Items: ItemsMain } = await import('../data/sources/items-main.ts');
-  const { ItemsText } = await import('../data/sources/items-text.ts');
-  const { Items: ChampionsItems } = await import('../data/sources/champions-items.ts');
-  const { Abilities: AbilitiesMain } = await import('../data/sources/abilities-main.ts');
-  const { AbilitiesText } = await import('../data/sources/abilities-text.ts');
-  const { Abilities: ChampionsAbilities } = await import('../data/sources/champions-abilities.ts');
-
-  // Build ability name -> ability ID lookup map
-  const abilityNameToIdMap = new Map<string, string>();
-  for (const [id, data] of Object.entries(AbilitiesMain as Record<string, any>)) {
-    if (data?.name) abilityNameToIdMap.set(data.name, id);
-  }
-  for (const [id, data] of Object.entries(ChampionsAbilities as Record<string, any>)) {
-    if (data?.name) abilityNameToIdMap.set(data.name, id);
-  }
-
-  // ---------------------------------------------------------------------------
-  // 4. Process Roster
-  // ---------------------------------------------------------------------------
-  logger.log(`\n--- Processing Roster ---`);
-  const legalSpecies = parseLegalSpecies(ChampionsFormatsData);
-  const uniqueRosterIds = Array.from(legalSpecies).filter((id) => !COLLAPSED_FORMS.has(id));
-
-  // Determine dex ordering matching Showdown source file sequence
-  const dexOrder = Object.keys(Pokedex).filter((id) => uniqueRosterIds.includes(id));
-
-  const missingFromDex = uniqueRosterIds.filter((id) => !(id in Pokedex));
-  if (missingFromDex.length > 0) {
-    logger.error(`Species missing from Showdown pokedex: ${missingFromDex.join(', ')}`);
-    process.exit(1);
-  }
-
-  const rawUniqueDex: Record<string, any> = {};
-  for (const id of uniqueRosterIds) {
-    rawUniqueDex[id] = (Pokedex as Record<string, any>)[id];
-  }
-
-  const sdParsedDex = parsePokedex(rawUniqueDex, {
-    nameToIdMap: abilityNameToIdMap,
-    aliases: SHOWDOWN_ALIASES,
-  });
-
-  const syncedRoster = syncCollection('Roster', repoRoster, sdParsedDex, SHOWDOWN_SOURCE, dexOrder);
-  addUniqueSources(syncedRoster.result);
-  logger.addSyncLogs(syncedRoster.logs);
-  logger.info(
-    `Roster summary: ${syncedRoster.stats.total} total, ${syncedRoster.stats.newCount} new, ${syncedRoster.stats.updatedCount} updated, ${syncedRoster.stats.unchangedCount} unchanged, ${syncedRoster.stats.missingCount} missing from Showdown.`
-  );
-
-  // ---------------------------------------------------------------------------
-  // 5. Process Moves & Learnsets
-  // ---------------------------------------------------------------------------
-  logger.log(`\n--- Processing Moves & Learnsets ---`);
-  const movesMainParsed = parseMovesMain(
-    MovesMain as Record<string, any>,
-    MovesText as Record<string, any>,
-    (msg) => logger.warn(msg)
-  );
-  const moveModsParsed = parseMoveMods(ChampionsMoves as Record<string, any>);
-
-  const sdChampionsMovedex: Record<string, ParsedMove> = { ...movesMainParsed };
-  for (const [mid, mod] of Object.entries(moveModsParsed)) {
-    const base = sdChampionsMovedex[mid] ?? {
-      name: '',
-      type: '',
-      category: '',
-      power: null,
-      accuracy: null,
-      pp: null,
-      priority: 0,
-      target: null,
-      desc: null,
-      shortDesc: null,
-      flags: {},
-      isNonstandard: null,
-    };
-    const merged: ParsedMove = mod.inherit ? { ...base, flags: { ...base.flags } } : { ...base, flags: {} };
-    if (mod.name !== undefined) merged.name = mod.name;
-    if (mod.type !== undefined) merged.type = mod.type;
-    if (mod.category !== undefined) merged.category = mod.category;
-    if (mod.power !== undefined) merged.power = mod.power;
-    if (mod.accuracy !== undefined) merged.accuracy = mod.accuracy;
-    if (mod.pp !== undefined) merged.pp = mod.pp;
-    if (mod.priority !== undefined) merged.priority = mod.priority;
-    if (mod.target !== undefined) merged.target = mod.target;
-    if (mod.flags !== undefined) merged.flags = { ...merged.flags, ...mod.flags };
-
-    // Check mod descriptions or text overrides (including champions specific overrides)
-    const textOverrides = extractTextOverrides((MovesText as Record<string, any>)[mid]);
-    merged.desc = mod.desc ?? textOverrides.desc ?? merged.desc ?? null;
-    merged.shortDesc = mod.shortDesc ?? textOverrides.shortDesc ?? merged.shortDesc ?? null;
-
-    if (mod.isNonstandard !== undefined) merged.isNonstandard = mod.isNonstandard;
-    sdChampionsMovedex[mid] = merged;
-  }
-
-  // Filter legal moves in Champions
-  const legalChampionsMoves: Record<string, ParsedMove> = {};
-  for (const [mid, m] of Object.entries(sdChampionsMovedex)) {
-    if (!m.isNonstandard) {
-      legalChampionsMoves[mid] = m;
-    }
-  }
-
-  const sdLearnsets: Record<string, RepoLearnset> = {};
-  const usedMoves: Record<string, RepoMove> = {};
-
-  for (const [pid, pk] of Object.entries(syncedRoster.result)) {
-    const mappedSpeciesId = resolveBaseSpeciesId(pid, ChampionsLearnsets);
-    const lsEntry = (ChampionsLearnsets as Record<string, any>)[mappedSpeciesId];
-
-    if (!lsEntry || !lsEntry.learnset) {
-      logger.warn(`Missing Showdown learnset for ${pid} (mapped: ${mappedSpeciesId}).`);
-      continue;
-    }
-
-    const moveList = Object.keys(lsEntry.learnset).sort();
-    sdLearnsets[pid] = {
-      dexNumber: pk.dexNumber,
-      form: pk.form,
-      moves: moveList,
-      source: SHOWDOWN_SOURCE,
-      verified: false,
-    };
-
-    for (const mid of moveList) {
-      if (!legalChampionsMoves[mid]) {
-        logger.error(`Move "${mid}" used by ${pid} is missing or non-standard in movedex.`);
-      } else {
-        const { isNonstandard: _drop, ...moveData } = legalChampionsMoves[mid]!;
-        usedMoves[mid] = moveData as RepoMove;
-      }
-    }
-  }
-
-  const syncedLearnsets = syncCollection(
-    'Learnsets',
-    repoLearnsets,
-    sdLearnsets,
-    SHOWDOWN_SOURCE,
-    dexOrder
-  );
-  logger.addSyncLogs(syncedLearnsets.logs);
-  logger.info(
-    `Learnsets summary: ${syncedLearnsets.stats.total} total, ${syncedLearnsets.stats.newCount} new, ${syncedLearnsets.stats.updatedCount} updated, ${syncedLearnsets.stats.unchangedCount} unchanged.`
-  );
-
-  const syncedMoves = syncCollection('Moves', repoMoves, usedMoves, SHOWDOWN_SOURCE);
-  addUniqueSources(syncedMoves.result);
-  logger.addSyncLogs(syncedMoves.logs);
-  logger.info(
-    `Moves summary: ${syncedMoves.stats.total} total, ${syncedMoves.stats.newCount} new, ${syncedMoves.stats.updatedCount} updated, ${syncedMoves.stats.unchangedCount} unchanged.`
-  );
-
-  // ---------------------------------------------------------------------------
-  // 6. Process Abilities
-  // ---------------------------------------------------------------------------
-  logger.log(`\n--- Processing Abilities ---`);
-  const abilitiesMainParsed = parseAbilitiesEntries(
-    AbilitiesMain as Record<string, any>,
-    AbilitiesText as Record<string, any>,
-    (msg) => logger.warn(msg)
-  );
-  const abilitiesModParsed = parseAbilitiesEntries(
-    ChampionsAbilities as Record<string, any>,
-    AbilitiesText as Record<string, any>,
-    (msg) => logger.warn(msg)
-  );
-
-  const sdChampionsAbilitydex: Record<string, RepoAbility> = {};
-  for (const [aid, a] of Object.entries(abilitiesMainParsed)) {
-    sdChampionsAbilitydex[aid] = {
-      name: a.name ?? '',
-      desc: a.desc ?? null,
-      shortDesc: a.shortDesc ?? null,
-      ...(a.flags ? { flags: a.flags } : {}),
-    };
-  }
-
-  for (const [aid, mod] of Object.entries(abilitiesModParsed)) {
-    const base = sdChampionsAbilitydex[aid] ?? { name: '', desc: null, shortDesc: null };
-    const merged: RepoAbility = mod.inherit ? { ...base } : { name: '', desc: null, shortDesc: null };
-    if (mod.name !== undefined) merged.name = mod.name;
-
-    const textOverrides = extractTextOverrides((AbilitiesText as Record<string, any>)[aid]);
-    merged.desc = mod.desc ?? textOverrides.desc ?? merged.desc ?? null;
-    merged.shortDesc = mod.shortDesc ?? textOverrides.shortDesc ?? merged.shortDesc ?? null;
-    if (mod.flags !== undefined) merged.flags = { ...merged.flags, ...mod.flags };
-
-    sdChampionsAbilitydex[aid] = merged;
-  }
-
-  // Filter out nonstandard abilities
-  const legalAbilities: Record<string, RepoAbility> = {};
-  for (const [aid, a] of Object.entries(sdChampionsAbilitydex)) {
-    legalAbilities[aid] = {
-      name: a.name,
-      desc: a.desc,
-      shortDesc: a.shortDesc,
-      ...(a.flags ? { flags: a.flags } : {}),
-    };
-  }
-
-  const syncedAbilities = syncCollection('Abilities', repoAbilities, legalAbilities, SHOWDOWN_SOURCE);
-  addUniqueSources(syncedAbilities.result);
-  logger.addSyncLogs(syncedAbilities.logs);
-  logger.info(
-    `Abilities summary: ${syncedAbilities.stats.total} total, ${syncedAbilities.stats.newCount} new, ${syncedAbilities.stats.updatedCount} updated, ${syncedAbilities.stats.unchangedCount} unchanged.`
-  );
-
-  // ---------------------------------------------------------------------------
-  // 7. Process Items
-  // ---------------------------------------------------------------------------
-  logger.log(`\n--- Processing Items ---`);
-  const itemsMainParsed = parseItems(
-    ItemsMain as Record<string, any>,
-    ItemsText as Record<string, any>,
-    (msg) => logger.warn(msg)
-  );
-  const itemsModParsed = parseItems(
-    ChampionsItems as Record<string, any>,
-    ItemsText as Record<string, any>,
-    (msg) => logger.warn(msg)
-  );
-
-  const sdChampionsItemdex: Record<string, RepoItem> = {};
-  for (const [iid, item] of Object.entries(itemsMainParsed)) {
-    sdChampionsItemdex[iid] = {
-      name: item.name ?? '',
-      desc: item.desc ?? null,
-      shortDesc: item.shortDesc ?? null,
-      ...(item.flags ? { flags: item.flags } : {}),
-      isNonstandard: item.isNonstandard ?? null,
-    };
-  }
-
-  for (const [iid, mod] of Object.entries(itemsModParsed)) {
-    const base = sdChampionsItemdex[iid] ?? { name: '', desc: null, shortDesc: null, isNonstandard: null };
-    const merged: RepoItem = mod.inherit ? { ...base } : { name: '', desc: null, shortDesc: null, isNonstandard: null };
-    if (mod.name !== undefined) merged.name = mod.name;
-
-    const textOverrides = extractTextOverrides((ItemsText as Record<string, any>)[iid]);
-    merged.desc = mod.desc ?? textOverrides.desc ?? merged.desc ?? null;
-    merged.shortDesc = mod.shortDesc ?? textOverrides.shortDesc ?? merged.shortDesc ?? null;
-    if (mod.flags !== undefined) merged.flags = { ...merged.flags, ...mod.flags };
-
-    if (mod.isNonstandard !== undefined) merged.isNonstandard = mod.isNonstandard;
-    sdChampionsItemdex[iid] = merged;
-  }
-
-  const legalItems: Record<string, RepoItem> = {};
-  for (const [iid, item] of Object.entries(sdChampionsItemdex)) {
-    if (!item.isNonstandard) {
-      legalItems[iid] = {
-        name: item.name,
-        desc: item.desc,
-        shortDesc: item.shortDesc,
-        ...(item.flags ? { flags: item.flags } : {}),
-      };
-    }
-  }
-
-  const syncedItems = syncCollection('Items', repoItems, legalItems, SHOWDOWN_SOURCE);
-  addUniqueSources(syncedItems.result);
-  logger.addSyncLogs(syncedItems.logs);
-  logger.info(
-    `Items summary: ${syncedItems.stats.total} total, ${syncedItems.stats.newCount} new, ${syncedItems.stats.updatedCount} updated, ${syncedItems.stats.unchangedCount} unchanged.`
-  );
-
-  // ---------------------------------------------------------------------------
-  // 8. Process Meta / Version
-  // ---------------------------------------------------------------------------
-  const today = new Date().toISOString().split('T')[0]!;
-  const updatedVersion: VersionInfo = {
-    ...repoVersion,
-    lastUpdated: today,
-    records: {
-      pokemon: Object.keys(syncedRoster.result).length,
-      moves: Object.keys(syncedMoves.result).length,
-      abilities: Object.keys(syncedAbilities.result).length,
-      items: Object.keys(syncedItems.result).length,
-    },
-    verifications: {
-      pokemon: countVerified(syncedRoster.result),
-      moves: countVerified(syncedMoves.result),
-      abilities: countVerified(syncedAbilities.result),
-      items: countVerified(syncedItems.result),
-    },
-    sources: [...sources, SHOWDOWN_SOURCE],
+  const [{ Pokedex }, { Moves: rawMoves }, { MovesText }, { Items: rawItems }, { ItemsText }, { Abilities: rawAbilities }, { AbilitiesText }] = await Promise.all([
+    import('../data/sources/pokedex.ts'), import('../data/sources/moves-main.ts'), import('../data/sources/moves-text.ts'), import('../data/sources/items-main.ts'), import('../data/sources/items-text.ts'), import('../data/sources/abilities-main.ts'), import('../data/sources/abilities-text.ts'),
+  ]);
+  const abilityIds = new Map<string, string>();
+  for (const [id, ability] of Object.entries(rawAbilities as RawRecord)) if (ability.name) abilityIds.set(ability.name, id);
+  const parsedMoves = parseMovesMain(rawMoves as RawRecord, MovesText as RawRecord);
+  const parsedAbilities = parseAbilitiesEntries(rawAbilities as RawRecord, AbilitiesText as RawRecord);
+  const parsedItems = parseItems(rawItems as RawRecord, ItemsText as RawRecord);
+  const master = {
+    roster: withSource(parsePokedex(Object.fromEntries(Object.entries(Pokedex as RawRecord).filter(([, entry]) => entry.isNonstandard !== 'CAP')), { nameToIdMap: abilityIds, aliases: SHOWDOWN_ALIASES })),    
+    moves: withSource(Object.fromEntries(Object.entries(parsedMoves).map(([id, entry]) => { const { isNonstandard: _ignored, ...move } = entry; return [id, move]; })) as Record<string, RepoMove>),
+    abilities: withSource(Object.fromEntries(Object.entries(parsedAbilities).map(([id, entry]) => [id, { name: entry.name ?? '', desc: entry.desc ?? null, shortDesc: entry.shortDesc ?? null, ...(entry.flags ? { flags: entry.flags } : {}) }])) as Record<string, RepoAbility>),
+    items: withSource(Object.fromEntries(Object.entries(parsedItems).map(([id, entry]) => [id, { name: entry.name ?? '', desc: entry.desc ?? null, shortDesc: entry.shortDesc ?? null, ...(entry.flags ? { flags: entry.flags } : {}), isNonstandard: entry.isNonstandard ?? null }])) as Record<string, RepoItem>),
+  };
+  console.log('Writing unfiltered master data...');
+  writeJson(join(MASTER_DIR, 'roster.json'), sorted(master.roster), dryRun);
+  writeJson(join(MASTER_DIR, 'moves.json'), sorted(master.moves), dryRun);
+  writeJson(join(MASTER_DIR, 'abilities.json'), sorted(master.abilities), dryRun);
+  writeJson(join(MASTER_DIR, 'items.json'), sorted(master.items), dryRun);
+  let resolved: ResolvedData = {
+    roster: master.roster,
+    moves: withSource(parsedMoves),
+    abilities: master.abilities,
+    items: master.items,
   };
 
-  // ---------------------------------------------------------------------------
-  // 9. Save Files
-  // ---------------------------------------------------------------------------
-  logger.log(`\n--- Writing Outputs ---`);
-  saveJson('data/pokemon/roster.json', syncedRoster.result, dryRun, logger);
-  saveJson('data/pokemon/learnsets.json', syncedLearnsets.result, dryRun, logger);
-  saveJson('data/moves/moves.json', syncedMoves.result, dryRun, logger);
-  saveJson('data/abilities/abilities.json', syncedAbilities.result, dryRun, logger);
-  saveJson('data/items/items.json', syncedItems.result, dryRun, logger);
-  saveJson('data/meta/version.json', updatedVersion, dryRun, logger);
-
-  // 10. Flush Log File
-  logger.flush(dryRun);
-
-  logger.log(`\n========================================================`);
-  logger.log(`Update completed successfully!`);
-  logger.log(`========================================================\n`);
+  for (const regulation of REGULATIONS) {
+    console.log(`Generating ${regulation.regulationId} delta...`);
+    const deltaPath = join(ROOT_DIR, 'data', regulation.directoryName, 'delta.json');
+    const generated = makeDelta(regulation, resolved, await importMod(regulation), { moves: MovesText as RawRecord, abilities: AbilitiesText as RawRecord, items: ItemsText as RawRecord });
+    writeJson(deltaPath, preserveCustomDeltaValues(generated.delta, deltaPath), dryRun);
+    resolved = generated.resolved;
+  }
 }
 
-main().catch((err) => {
-  console.error('\nFATAL ERROR during update:', err);
+main().catch((error) => {
+  console.error(`\nFATAL ERROR during update: ${error instanceof Error ? error.message : error}`);
   process.exit(1);
 });

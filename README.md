@@ -14,18 +14,39 @@ Data is drawn from Showdown's open-source files and continuously refined by comm
 
 ## What's Inside
 
-|   Directory   |                     Contents                     |
-|---------------|--------------------------------------------------|
-| `pokemon/`    | Roster, base stats, types, abilitiesm learnsets  |
-| `moves/`      | Move database (type, power, category, effects)   |
-| `abilities/`  | Ability descriptions and effect data             |
-| `items/`      | Item effects and competitive usage notes         |
-| `natures/`    | Nature stat modifiers                            |
-| `type-chart/` | 18x18 type effectiveness matrix                  |
-| `meta/`       | Version info and data sources                    |
-| `mechanics/`  | Game formula documentation and system guides     |
+| Directory | Contents |
+|---|---|
+| `data/master/` | Unfiltered Showdown roster, moves, abilities, and items |
+| `data/regm-*/` | Regulation delta source data and full regulation learnsets |
+| `dist/regm-*/` | Compiled roster, learnsets, moves, abilities, and items for consumers |
+| `data/mechanics/` | Game formula documentation and system guides |
 
 The playable characters include base forms, mega evolutions, and regional variants. Every form with distinct stats is represented as a separate entry.
+
+## Regulation data architecture
+
+The editable data is split into an unfiltered Showdown baseline and small, regulation-specific deltas:
+
+- `data/master/` contains all parsed Showdown roster, move, ability, and item entries.
+- `data/regm-a/delta.json` and `data/regm-b/delta.json` define legal roster entries and only the resource properties changed by that regulation. Learnsets are regulation-owned and stored in the delta because Showdown provides their complete regulation-specific sets.
+- `dist/regm-a/` and `dist/regm-b/` contain compiled consumer files: `roster.json`, `learnsets.json`, `moves.json`, `abilities.json`, and `items.json`.
+
+Reg M-B overrides master data. Each older regulation then overrides the resolved newer regulation, so Reg M-A is compiled as `master → Reg M-B → Reg M-A`.
+
+`overrides.roster` is the regulation's legal-species list: an empty object keeps a master Pokémon unchanged, while supplied properties patch it. `baseStats` patches by stat; all other override properties replace their master value.
+
+Compiled moves and abilities are selected from the regulation roster and learnsets, so separate move or ability legality lists are unnecessary. Items use their Showdown `isNonstandard` status to omit regulation-illegal entries.
+
+The updater preserves a manually maintained override when its `source` is not `smogon/pokemon-showdown`, and retains each delta's optional `begin` and `end` timestamps.
+
+To regenerate data locally, run:
+
+```bash
+bun run fetch-sd
+bun run generate
+```
+
+To rebuild already-generated source data without downloading Showdown files, run `bun run build-regulations`. The GitHub Action runs the full generation sequence on pushes and commits changed `dist/` files to that branch.
 
 ---
 
@@ -36,13 +57,13 @@ The playable characters include base forms, mega evolutions, and regional varian
 Fetch the full roster directly from the raw GitHub URL:
 
 ```bash
-curl https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/pokemon/roster.json
+curl https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/dist/regm-b/roster.json
 ```
 
 Fetch a single character's base stats:
 
 ```bash
-curl https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/pokemon/base-stats.json \
+curl https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/dist/regm-b/roster.json \
   | python3 -c "import sys, json; data = json.load(sys.stdin); print(json.dumps(data['charizard'], indent=2))"
 ```
 
@@ -51,17 +72,17 @@ curl https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-
 ```js
 // Fetch and filter to Fire-type characters
 const roster = await fetch(
-  'https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/pokemon/roster.json'
+  'https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/dist/regm-b/roster.json'
 ).then(r => r.json());
 
-const fireTypes = roster.filter(p => p.types.includes('Fire'));
+const fireTypes = Object.values(roster).filter(p => p.types.includes('Fire'));
 console.log(`Fire-type characters: ${fireTypes.length}`);
 ```
 
 ```js
 // Load roster and find the fastest characters
 const roster = await fetch(
-  'https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/pokemon/roster.json'
+  'https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/dist/regm-b/roster.json'
 ).then(r => r.json());
 
 const bySpeed = Object.entries(roster)
@@ -83,20 +104,20 @@ def fetch(path):
     with urllib.request.urlopen(f"{base}/{path}") as r:
         return json.load(r)
 
-roster    = fetch("pokemon/roster.json")
-learnsets = fetch("pokemon/learnsets.json")
-moves     = fetch("moves/moves.json")
+roster    = fetch("dist/regm-b/roster.json")
+learnsets = fetch("dist/regm-b/learnsets.json")
+moves     = fetch("dist/regm-b/moves.json")
 
 # Find all moves Charizard can learn
-charizard_moves = learnsets.get("Charizard", [])
-print([m["move"] for m in charizard_moves])
+charizard_moves = learnsets["charizard"]["moves"]
+print(charizard_moves)
 ```
 
 ---
 
 ## Data Format Examples
 
-### `pokemon/roster.json` — a single entry
+### `dist/<regulation>/roster.json` — a single entry
 
 ```json
 "venusaur": {
@@ -133,7 +154,7 @@ print([m["move"] for m in charizard_moves])
 }
 ```
 
-### `moves/moves.json` — a single move entry
+### `dist/<regulation>/moves.json` — a single move entry
 ```json
 "accelerock": {
   "name": "Accelerock",
