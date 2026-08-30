@@ -303,7 +303,11 @@ Options:
   // 5. Process Moves & Learnsets
   // ---------------------------------------------------------------------------
   logger.log(`\n--- Processing Moves & Learnsets ---`);
-  const movesMainParsed = parseMovesMain(MovesMain as Record<string, any>, MovesText as Record<string, any>);
+  const movesMainParsed = parseMovesMain(
+    MovesMain as Record<string, any>,
+    MovesText as Record<string, any>,
+    (msg) => logger.warn(msg)
+  );
   const moveModsParsed = parseMoveMods(ChampionsMoves as Record<string, any>);
 
   const sdChampionsMovedex: Record<string, ParsedMove> = { ...movesMainParsed };
@@ -319,9 +323,10 @@ Options:
       target: null,
       desc: null,
       shortDesc: null,
+      flags: {},
       isNonstandard: null,
     };
-    const merged: ParsedMove = mod.inherit ? { ...base } : { ...base };
+    const merged: ParsedMove = mod.inherit ? { ...base, flags: { ...base.flags } } : { ...base, flags: {} };
     if (mod.name !== undefined) merged.name = mod.name;
     if (mod.type !== undefined) merged.type = mod.type;
     if (mod.category !== undefined) merged.category = mod.category;
@@ -330,6 +335,7 @@ Options:
     if (mod.pp !== undefined) merged.pp = mod.pp;
     if (mod.priority !== undefined) merged.priority = mod.priority;
     if (mod.target !== undefined) merged.target = mod.target;
+    if (mod.flags !== undefined) merged.flags = { ...merged.flags, ...mod.flags };
 
     // Check mod descriptions or text overrides (including champions specific overrides)
     const textOverrides = extractTextOverrides((MovesText as Record<string, any>)[mid]);

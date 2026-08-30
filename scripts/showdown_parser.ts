@@ -36,6 +36,110 @@ export interface RepoLearnset {
   verified?: boolean;
 }
 
+import type { MoveFlags as ShowdownMoveFlags } from '../data/sources/types/dex-moves.ts';
+
+export type StatName = 'atk' | 'def' | 'spa' | 'spd' | 'spe' | 'accuracy' | 'evasion';
+
+export interface RecoilEffect {
+  percentage: number;
+  id: string;
+}
+
+export interface ZMoveData {
+  basePower?: number;
+  effect?: string;
+  boost?: Partial<Record<StatName, number>>;
+}
+
+export interface MaxMoveData {
+  basePower: number;
+}
+
+export interface MoveFlags extends Record<string, any> {
+  // Standard Showdown flags (excluding allyanim, mustpressure, nonsky, distance)
+  contact?: 1;
+  protect?: 1;
+  mirror?: 1;
+  slicing?: 1;
+  punch?: 1;
+  sound?: 1;
+  bullet?: 1;
+  pulse?: 1;
+  bite?: 1;
+  dance?: 1;
+  defrost?: 1;
+  wind?: 1;
+  powder?: 1;
+  bypasssub?: 1;
+  charge?: 1;
+  recharge?: 1;
+  snatch?: 1;
+  reflectable?: 1;
+  gravity?: 1;
+  metronome?: 1;
+  cantusetwice?: 1;
+  failcopycat?: 1;
+  failinstruct?: 1;
+  failmefirst?: 1;
+  failmimic?: 1;
+  failencore?: 1;
+  noassist?: 1;
+  nosketch?: 1;
+  nosleeptalk?: 1;
+  minimize?: 1;
+  noparentalbond?: 1;
+  pledgecombo?: 1;
+
+  // Stat alterations
+  raisesTarget?: Partial<Record<StatName, number>>;
+  lowersTarget?: Partial<Record<StatName, number>>;
+  raisesUser?: Partial<Record<StatName, number>>;
+  lowersUser?: Partial<Record<StatName, number>>;
+
+  // Status and conditions
+  status?: string[];
+  volatileStatus?: string[];
+  selfVolatileStatus?: string[];
+  sideCondition?: string[];
+  field?: string[];
+
+  // Hit effects & battle mechanics
+  ohko?: true | 'Ice';
+  thawsTarget?: true;
+  heal?: [number, number] | 1;
+  forceSwitch?: true;
+  selfSwitch?: true | 'copyvolatile' | 'shedtail';
+  selfdestruct?: 'always' | 'ifHit' | true;
+  breaksProtect?: true;
+  recoil?: [number, number] | RecoilEffect;
+  drain?: [number, number];
+  stealsBoosts?: true;
+  hasCrashDamage?: true;
+  stallingMove?: true;
+
+  // Hit effect modifiers
+  critRatio?: number;
+  multihit?: number | [number, number];
+  damage?: number | 'level';
+  overrideOffensiveStat?: StatName;
+  overrideOffensivePokemon?: 'target' | 'source';
+  overrideDefensiveStat?: StatName;
+  ignoreDefensive?: true;
+  ignoreEvasion?: true;
+  ignoreAbility?: true;
+  ignoreImmunity?: true | Record<string, boolean>;
+  callsMove?: true;
+  sleepUsable?: true;
+  smartTarget?: true;
+  tracksTarget?: true;
+
+  // Z-Move and Max Move data
+  isZ?: boolean | string;
+  zMove?: ZMoveData;
+  isMax?: boolean | string;
+  maxMove?: MaxMoveData;
+}
+
 export interface RepoMove {
   name: string;
   type: string;
@@ -47,6 +151,7 @@ export interface RepoMove {
   target: string | null;
   desc: string | null;
   shortDesc: string | null;
+  flags?: MoveFlags;
   source?: string;
   verified?: boolean;
 }
@@ -305,17 +410,255 @@ export function parseLearnsets(rawLearnsets: Record<string, { learnset?: Record<
   return out;
 }
 
+const IGNORED_FLAGS = new Set(['allyanim', 'mustpressure', 'nonsky', 'distance']);
+
+/**
+ * Extracts searchable effect tags and standard flags from a raw Showdown move definition.
+ */
+export function extractMoveFlags(
+  m: Record<string, any>,
+  id?: string,
+  onCallbackWarning?: (msg: string) => void
+): MoveFlags {
+  const flags: MoveFlags = {};
+
+  if (m.flags) {
+    for (const [k, v] of Object.entries(m.flags)) {
+      if (!IGNORED_FLAGS.has(k) && v) {
+        flags[k] = v;
+      }
+    }
+  }
+
+  // Status
+  const statuses = new Set<string>();
+  if (typeof m.status === 'string') statuses.add(m.status.toLowerCase());
+  if (typeof m.secondary?.status === 'string') statuses.add(m.secondary.status.toLowerCase());
+  if (Array.isArray(m.secondaries)) {
+    for (const sec of m.secondaries) {
+      if (typeof sec?.status === 'string') statuses.add(sec.status.toLowerCase());
+    }
+  }
+  if (statuses.size > 0) {
+    flags.status = Array.from(statuses).sort();
+  }
+
+  // Volatile status
+  const targetVolatiles = new Set<string>();
+  const userVolatiles = new Set<string>();
+
+  if (typeof m.volatileStatus === 'string') {
+    if (m.target === 'self') {
+      userVolatiles.add(m.volatileStatus.toLowerCase());
+    } else {
+      targetVolatiles.add(m.volatileStatus.toLowerCase());
+    }
+  }
+  if (typeof m.secondary?.volatileStatus === 'string') {
+    targetVolatiles.add(m.secondary.volatileStatus.toLowerCase());
+  }
+  if (typeof m.self?.volatileStatus === 'string') {
+    userVolatiles.add(m.self.volatileStatus.toLowerCase());
+  }
+  if (typeof m.secondary?.self?.volatileStatus === 'string') {
+    userVolatiles.add(m.secondary.self.volatileStatus.toLowerCase());
+  }
+  if (Array.isArray(m.secondaries)) {
+    for (const sec of m.secondaries) {
+      if (typeof sec?.volatileStatus === 'string') {
+        targetVolatiles.add(sec.volatileStatus.toLowerCase());
+      }
+      if (typeof sec?.self?.volatileStatus === 'string') {
+        userVolatiles.add(sec.self.volatileStatus.toLowerCase());
+      }
+    }
+  }
+
+  if (targetVolatiles.size > 0) {
+    flags.volatileStatus = Array.from(targetVolatiles).sort();
+  }
+  if (userVolatiles.size > 0) {
+    flags.selfVolatileStatus = Array.from(userVolatiles).sort();
+  }
+
+  // Side condition
+  const sideConditions = new Set<string>();
+  if (typeof m.sideCondition === 'string') sideConditions.add(m.sideCondition.toLowerCase());
+  if (typeof m.self?.sideCondition === 'string') sideConditions.add(m.self.sideCondition.toLowerCase());
+  if (typeof m.secondary?.self?.sideCondition === 'string') sideConditions.add(m.secondary.self.sideCondition.toLowerCase());
+  if (Array.isArray(m.secondaries)) {
+    for (const sec of m.secondaries) {
+      if (typeof sec?.sideCondition === 'string') sideConditions.add(sec.sideCondition.toLowerCase());
+      if (typeof sec?.self?.sideCondition === 'string') sideConditions.add(sec.self.sideCondition.toLowerCase());
+    }
+  }
+  if (sideConditions.size > 0) {
+    flags.sideCondition = Array.from(sideConditions).sort();
+  }
+
+  // Field (terrain, weather, pseudoWeather)
+  const fields = new Set<string>();
+  if (typeof m.terrain === 'string') fields.add(m.terrain.toLowerCase());
+  if (typeof m.weather === 'string') fields.add(m.weather.toLowerCase());
+  if (typeof m.pseudoWeather === 'string') fields.add(m.pseudoWeather.toLowerCase());
+  if (fields.size > 0) {
+    flags.field = Array.from(fields).sort();
+  }
+
+  // Boosts
+  const raisesTarget: Partial<Record<StatName, number>> = {};
+  const lowersTarget: Partial<Record<StatName, number>> = {};
+  const raisesUser: Partial<Record<StatName, number>> = {};
+  const lowersUser: Partial<Record<StatName, number>> = {};
+
+  function addBoosts(boosts: Record<string, number>, isUser: boolean) {
+    for (const [stat, val] of Object.entries(boosts)) {
+      if (typeof val !== 'number' || val === 0) continue;
+      const s = stat as StatName;
+      if (isUser) {
+        if (val > 0) raisesUser[s] = val;
+        else lowersUser[s] = Math.abs(val);
+      } else {
+        if (val > 0) raisesTarget[s] = val;
+        else lowersTarget[s] = Math.abs(val);
+      }
+    }
+  }
+
+  if (m.boosts) {
+    addBoosts(m.boosts, m.target === 'self');
+  }
+  if (m.selfBoost?.boosts) {
+    addBoosts(m.selfBoost.boosts, true);
+  }
+  if (m.self?.boosts) {
+    addBoosts(m.self.boosts, true);
+  }
+  if (m.secondary?.boosts) {
+    addBoosts(m.secondary.boosts, false);
+  }
+  if (m.secondary?.self?.boosts) {
+    addBoosts(m.secondary.self.boosts, true);
+  }
+  if (Array.isArray(m.secondaries)) {
+    for (const sec of m.secondaries) {
+      if (sec?.boosts) addBoosts(sec.boosts, false);
+      if (sec?.self?.boosts) addBoosts(sec.self.boosts, true);
+    }
+  }
+
+  if (Object.keys(raisesTarget).length > 0) flags.raisesTarget = raisesTarget;
+  if (Object.keys(lowersTarget).length > 0) flags.lowersTarget = lowersTarget;
+  if (Object.keys(raisesUser).length > 0) flags.raisesUser = raisesUser;
+  if (Object.keys(lowersUser).length > 0) flags.lowersUser = lowersUser;
+
+  // Hit effects & battle mechanics
+  if (m.ohko !== undefined) flags.ohko = m.ohko;
+  if (m.thawsTarget) flags.thawsTarget = true;
+  if (Array.isArray(m.heal)) flags.heal = m.heal as [number, number];
+  if (m.forceSwitch) flags.forceSwitch = true;
+  if (m.selfSwitch !== undefined) flags.selfSwitch = m.selfSwitch;
+  if (m.selfdestruct !== undefined) flags.selfdestruct = m.selfdestruct;
+  if (m.breaksProtect) flags.breaksProtect = true;
+
+  if (Array.isArray(m.recoil)) {
+    flags.recoil = m.recoil as [number, number];
+  } else if (m.mindBlownRecoil) {
+    flags.recoil = { percentage: 50, id: 'mindBlown' };
+  } else if (m.chloroblastRecoil) {
+    flags.recoil = { percentage: 50, id: 'chloroblast' };
+  } else if (m.struggleRecoil) {
+    flags.recoil = { percentage: 25, id: 'struggle' };
+  }
+
+  if (Array.isArray(m.drain)) flags.drain = m.drain as [number, number];
+  if (m.stealsBoosts) flags.stealsBoosts = true;
+  if (m.hasCrashDamage) flags.hasCrashDamage = true;
+  if (m.stallingMove) flags.stallingMove = true;
+
+  // Hit effect modifiers
+  if (typeof m.critRatio === 'number') {
+    flags.critRatio = m.critRatio;
+  } else if (m.willCrit) {
+    flags.critRatio = 4;
+  }
+
+  if (m.multihit !== undefined) flags.multihit = m.multihit;
+  if (m.damage !== undefined && m.damage !== false && m.damage !== null) flags.damage = m.damage;
+  if (m.overrideOffensiveStat) flags.overrideOffensiveStat = m.overrideOffensiveStat;
+  if (m.overrideOffensivePokemon) flags.overrideOffensivePokemon = m.overrideOffensivePokemon;
+  if (m.overrideDefensiveStat) flags.overrideDefensiveStat = m.overrideDefensiveStat;
+  if (m.ignoreDefensive) flags.ignoreDefensive = true;
+  if (m.ignoreEvasion) flags.ignoreEvasion = true;
+  if (m.ignoreAbility) flags.ignoreAbility = true;
+  if (m.ignoreImmunity !== undefined) flags.ignoreImmunity = m.ignoreImmunity;
+  if (m.callsMove) flags.callsMove = true;
+  if (m.sleepUsable) flags.sleepUsable = true;
+  if (m.smartTarget) flags.smartTarget = true;
+  if (m.tracksTarget) flags.tracksTarget = true;
+
+  // Z-Move and Max Move
+  if (m.isZ !== undefined) flags.isZ = m.isZ;
+  if (m.zMove !== undefined) flags.zMove = m.zMove;
+  if (m.isMax !== undefined) flags.isMax = m.isMax;
+  if (m.maxMove !== undefined) flags.maxMove = m.maxMove;
+
+  // Check for callback-only moves
+  if (id && onCallbackWarning) {
+    const hasCallback = typeof m.onHit === 'function' ||
+      typeof m.onAfterHit === 'function' ||
+      typeof m.onAfterMove === 'function' ||
+      typeof m.damageCallback === 'function' ||
+      typeof m.basePowerCallback === 'function' ||
+      typeof m.onTryHit === 'function';
+
+    const hasExtractedEffect = flags.status ||
+      flags.volatileStatus ||
+      flags.selfVolatileStatus ||
+      flags.sideCondition ||
+      flags.field ||
+      flags.raisesTarget ||
+      flags.lowersTarget ||
+      flags.raisesUser ||
+      flags.lowersUser ||
+      flags.drain ||
+      flags.recoil ||
+      flags.forceSwitch ||
+      flags.selfSwitch ||
+      flags.ohko ||
+      flags.stealsBoosts ||
+      flags.hasCrashDamage ||
+      flags.damage ||
+      flags.overrideOffensiveStat ||
+      flags.overrideOffensivePokemon ||
+      flags.overrideDefensiveStat ||
+      flags.ignoreDefensive ||
+      flags.ignoreEvasion ||
+      flags.ignoreAbility ||
+      flags.ignoreImmunity ||
+      flags.callsMove;
+
+    if (hasCallback && !hasExtractedEffect) {
+      onCallbackWarning(`[CALLBACK-ONLY] ${id}: has callback handler but no declarative effect flags`);
+    }
+  }
+
+  return flags;
+}
+
 /**
  * Normalizes main series moves from Showdown.
  */
 export function parseMovesMain(
   rawMoves: Record<string, any>,
-  textEntries?: Record<string, any>
+  textEntries?: Record<string, any>,
+  onCallbackWarning?: (msg: string) => void
 ): Record<string, ParsedMove> {
   const out: Record<string, ParsedMove> = {};
   for (const [key, m] of Object.entries(rawMoves)) {
     if (m.isNonstandard === 'CAP') continue;
     const text = extractTextOverrides(textEntries?.[key]);
+    const flags = extractMoveFlags(m, key, onCallbackWarning);
     out[key] = {
       name: m.name ?? '',
       type: m.type ?? '',
@@ -327,6 +670,7 @@ export function parseMovesMain(
       target: m.target ?? null,
       desc: text.desc ?? m.desc ?? null,
       shortDesc: text.shortDesc ?? m.shortDesc ?? null,
+      flags: Object.keys(flags).length > 0 ? flags : {},
       isNonstandard: m.isNonstandard ?? null,
     };
   }
@@ -352,6 +696,15 @@ export function parseMoveMods(rawMods: Record<string, any>): Record<string, Part
     if (mod.target !== undefined) entry.target = mod.target;
     if (mod.desc !== undefined) entry.desc = mod.desc;
     if (mod.shortDesc !== undefined) entry.shortDesc = mod.shortDesc;
+    if (mod.flags !== undefined) {
+      const cleanFlags: Record<string, any> = {};
+      for (const [k, v] of Object.entries(mod.flags)) {
+        if (!IGNORED_FLAGS.has(k) && v) {
+          cleanFlags[k] = v;
+        }
+      }
+      entry.flags = cleanFlags;
+    }
     if (mod.isNonstandard !== undefined) entry.isNonstandard = mod.isNonstandard;
     out[key] = entry;
   }
