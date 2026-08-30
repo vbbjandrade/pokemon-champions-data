@@ -1,6 +1,5 @@
 {
   "name": "pokemon-champions-data",
-  "module": "index.ts",
   "type": "module",
   "private": true,
   "scripts": {

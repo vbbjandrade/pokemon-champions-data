@@ -9,9 +9,9 @@
       },
       "ignoreKlutz": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "abomasite": {
     "name": "Abomasite",
@@ -25,9 +25,9 @@
         "Abomasnow"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "absolite": {
     "name": "Absolite",
@@ -41,9 +41,9 @@
         "Absol"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "absolitez": {
     "name": "Absolite Z",
@@ -57,9 +57,9 @@
         "Absol"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "absorbbulb": {
     "name": "Absorb Bulb",
@@ -73,9 +73,9 @@
         "spa": 1
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "adamantcrystal": {
     "name": "Adamant Crystal",
@@ -87,9 +87,9 @@
       ],
       "forcedForme": "Dialga-Origin"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "adamantorb": {
     "name": "Adamant Orb",
@@ -103,9 +103,9 @@
         "Dialga"
       ]
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "adrenalineorb": {
     "name": "Adrenaline Orb",
@@ -119,9 +119,9 @@
         "spe": 1
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "aerodactylite": {
     "name": "Aerodactylite",
@@ -135,9 +135,9 @@
         "Aerodactyl"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "aggronite": {
     "name": "Aggronite",
@@ -151,9 +151,9 @@
         "Aggron"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "aguavberry": {
     "name": "Aguav Berry",
@@ -166,9 +166,9 @@
         "type": "Dragon"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "airballoon": {
     "name": "Air Balloon",
@@ -179,9 +179,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "alakazite": {
     "name": "Alakazite",
@@ -195,9 +195,9 @@
         "Alakazam"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "aloraichiumz": {
     "name": "Aloraichium Z",
@@ -210,9 +210,9 @@
         "Raichu-Alola"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "altarianite": {
     "name": "Altarianite",
@@ -226,9 +226,9 @@
         "Altaria"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "ampharosite": {
     "name": "Ampharosite",
@@ -242,9 +242,9 @@
         "Ampharos"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "apicotberry": {
     "name": "Apicot Berry",
@@ -257,9 +257,9 @@
         "type": "Ground"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "armorfossil": {
     "name": "Armor Fossil",
@@ -270,9 +270,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "aspearberry": {
     "name": "Aspear Berry",
@@ -285,9 +285,9 @@
         "type": "Ice"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "assaultvest": {
     "name": "Assault Vest",
@@ -298,9 +298,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "audinite": {
     "name": "Audinite",
@@ -314,9 +314,9 @@
         "Audino"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "auspiciousarmor": {
     "name": "Auspicious Armor",
@@ -327,9 +327,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "babiriberry": {
     "name": "Babiri Berry",
@@ -342,9 +342,9 @@
         "type": "Steel"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "banettite": {
     "name": "Banettite",
@@ -358,9 +358,9 @@
         "Banette"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "barbaracite": {
     "name": "Barbaracite",
@@ -374,9 +374,9 @@
         "Barbaracle"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "baxcalibrite": {
     "name": "Baxcalibrite",
@@ -390,9 +390,9 @@
         "Baxcalibur"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "beastball": {
     "name": "Beast Ball",
@@ -401,9 +401,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "beedrillite": {
     "name": "Beedrillite",
@@ -417,9 +417,9 @@
         "Beedrill"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "belueberry": {
     "name": "Belue Berry",
@@ -432,9 +432,9 @@
         "type": "Electric"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "berry": {
     "name": "Berry",
@@ -447,9 +447,9 @@
         "type": "Poison"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "berryjuice": {
     "name": "Berry Juice",
@@ -460,9 +460,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "berrysweet": {
     "name": "Berry Sweet",
@@ -473,9 +473,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "berserkgene": {
     "name": "Berserk Gene",
@@ -486,9 +486,9 @@
         "atk": 2
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "bignugget": {
     "name": "Big Nugget",
@@ -499,9 +499,9 @@
         "basePower": 130
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "bigroot": {
     "name": "Big Root",
@@ -512,9 +512,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "bindingband": {
     "name": "Binding Band",
@@ -525,9 +525,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "bitterberry": {
     "name": "Bitter Berry",
@@ -540,9 +540,9 @@
         "type": "Ground"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "blackbelt": {
     "name": "Black Belt",
@@ -553,9 +553,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "blackglasses": {
     "name": "Black Glasses",
@@ -566,9 +566,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "blacksludge": {
     "name": "Black Sludge",
@@ -579,9 +579,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "blastoisinite": {
     "name": "Blastoisinite",
@@ -595,9 +595,9 @@
         "Blastoise"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "blazikenite": {
     "name": "Blazikenite",
@@ -611,9 +611,9 @@
         "Blaziken"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "blueorb": {
     "name": "Blue Orb",
@@ -625,9 +625,9 @@
         "Kyogre"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "blukberry": {
     "name": "Bluk Berry",
@@ -640,9 +640,9 @@
         "type": "Fire"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "blunderpolicy": {
     "name": "Blunder Policy",
@@ -653,9 +653,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "boosterenergy": {
     "name": "Booster Energy",
@@ -666,9 +666,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "bottlecap": {
     "name": "Bottle Cap",
@@ -679,9 +679,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "brightpowder": {
     "name": "Bright Powder",
@@ -692,9 +692,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "buggem": {
     "name": "Bug Gem",
@@ -703,9 +703,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "buginiumz": {
     "name": "Buginium Z",
@@ -717,9 +717,9 @@
       "zMoveType": "Bug",
       "forcedForme": "Arceus-Bug"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "bugmemory": {
     "name": "Bug Memory",
@@ -732,9 +732,9 @@
       ],
       "forcedForme": "Silvally-Bug"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "burndrive": {
     "name": "Burn Drive",
@@ -747,9 +747,9 @@
       ],
       "forcedForme": "Genesect-Burn"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "burntberry": {
     "name": "Burnt Berry",
@@ -762,9 +762,9 @@
         "type": "Ice"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "cameruptite": {
     "name": "Cameruptite",
@@ -778,9 +778,9 @@
         "Camerupt"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "cellbattery": {
     "name": "Cell Battery",
@@ -794,9 +794,9 @@
         "atk": 1
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "chandelurite": {
     "name": "Chandelurite",
@@ -810,9 +810,9 @@
         "Chandelure"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "charcoal": {
     "name": "Charcoal",
@@ -823,9 +823,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "charizarditex": {
     "name": "Charizardite X",
@@ -839,9 +839,9 @@
         "Charizard"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "charizarditey": {
     "name": "Charizardite Y",
@@ -855,9 +855,9 @@
         "Charizard"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "chartiberry": {
     "name": "Charti Berry",
@@ -870,9 +870,9 @@
         "type": "Rock"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "cheriberry": {
     "name": "Cheri Berry",
@@ -885,9 +885,9 @@
         "type": "Fire"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "cherishball": {
     "name": "Cherish Ball",
@@ -896,9 +896,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": "Unobtainable",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "chesnaughtite": {
     "name": "Chesnaughtite",
@@ -912,9 +912,9 @@
         "Chesnaught"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "chestoberry": {
     "name": "Chesto Berry",
@@ -927,9 +927,9 @@
         "type": "Water"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "chilanberry": {
     "name": "Chilan Berry",
@@ -942,9 +942,9 @@
         "type": "Normal"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "chilldrive": {
     "name": "Chill Drive",
@@ -957,9 +957,9 @@
       ],
       "forcedForme": "Genesect-Chill"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "chimechite": {
     "name": "Chimechite",
@@ -973,9 +973,9 @@
         "Chimecho"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "chippedpot": {
     "name": "Chipped Pot",
@@ -986,9 +986,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "choiceband": {
     "name": "Choice Band",
@@ -1000,9 +1000,9 @@
       },
       "isChoice": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "choicescarf": {
     "name": "Choice Scarf",
@@ -1014,9 +1014,9 @@
       },
       "isChoice": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "choicespecs": {
     "name": "Choice Specs",
@@ -1028,9 +1028,9 @@
       },
       "isChoice": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "chopleberry": {
     "name": "Chople Berry",
@@ -1043,9 +1043,9 @@
         "type": "Fighting"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "clawfossil": {
     "name": "Claw Fossil",
@@ -1056,9 +1056,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "clearamulet": {
     "name": "Clear Amulet",
@@ -1069,9 +1069,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "clefablite": {
     "name": "Clefablite",
@@ -1085,9 +1085,9 @@
         "Clefable"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "cloversweet": {
     "name": "Clover Sweet",
@@ -1098,9 +1098,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "cobaberry": {
     "name": "Coba Berry",
@@ -1113,9 +1113,9 @@
         "type": "Flying"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "colburberry": {
     "name": "Colbur Berry",
@@ -1128,9 +1128,9 @@
         "type": "Dark"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "cornerstonemask": {
     "name": "Cornerstone Mask",
@@ -1145,9 +1145,9 @@
       ],
       "forcedForme": "Ogerpon-Cornerstone"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "cornnberry": {
     "name": "Cornn Berry",
@@ -1160,9 +1160,9 @@
         "type": "Bug"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "coverfossil": {
     "name": "Cover Fossil",
@@ -1173,9 +1173,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "covertcloak": {
     "name": "Covert Cloak",
@@ -1186,9 +1186,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "crabominite": {
     "name": "Crabominite",
@@ -1202,9 +1202,9 @@
         "Crabominable"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "crackedpot": {
     "name": "Cracked Pot",
@@ -1215,9 +1215,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "crucibellite": {
     "name": "Crucibellite",
@@ -1231,9 +1231,9 @@
         "Crucibelle"
       ]
     },
-    "isNonstandard": "CAP",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "custapberry": {
     "name": "Custap Berry",
@@ -1246,9 +1246,9 @@
         "type": "Ghost"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "damprock": {
     "name": "Damp Rock",
@@ -1259,9 +1259,9 @@
         "basePower": 60
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "darkgem": {
     "name": "Dark Gem",
@@ -1270,9 +1270,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "darkiniumz": {
     "name": "Darkinium Z",
@@ -1284,9 +1284,9 @@
       "zMoveType": "Dark",
       "forcedForme": "Arceus-Dark"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "darkmemory": {
     "name": "Dark Memory",
@@ -1299,9 +1299,9 @@
       ],
       "forcedForme": "Silvally-Dark"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "darkranite": {
     "name": "Darkranite",
@@ -1315,9 +1315,9 @@
         "Darkrai"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "dawnstone": {
     "name": "Dawn Stone",
@@ -1328,9 +1328,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "decidiumz": {
     "name": "Decidium Z",
@@ -1343,9 +1343,9 @@
         "Decidueye"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "deepseascale": {
     "name": "Deep Sea Scale",
@@ -1359,9 +1359,9 @@
         "Clamperl"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "deepseatooth": {
     "name": "Deep Sea Tooth",
@@ -1375,9 +1375,9 @@
         "Clamperl"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "delphoxite": {
     "name": "Delphoxite",
@@ -1391,9 +1391,9 @@
         "Delphox"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "destinyknot": {
     "name": "Destiny Knot",
@@ -1404,9 +1404,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "diancite": {
     "name": "Diancite",
@@ -1420,9 +1420,9 @@
         "Diancie"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "diveball": {
     "name": "Dive Ball",
@@ -1431,9 +1431,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "domefossil": {
     "name": "Dome Fossil",
@@ -1444,9 +1444,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "dousedrive": {
     "name": "Douse Drive",
@@ -1459,9 +1459,9 @@
       ],
       "forcedForme": "Genesect-Douse"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "dracoplate": {
     "name": "Draco Plate",
@@ -1471,9 +1471,9 @@
       "onPlate": "Dragon",
       "forcedForme": "Arceus-Dragon"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "dragalgite": {
     "name": "Dragalgite",
@@ -1487,9 +1487,9 @@
         "Dragalge"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "dragonfang": {
     "name": "Dragon Fang",
@@ -1500,9 +1500,9 @@
         "basePower": 70
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "dragongem": {
     "name": "Dragon Gem",
@@ -1511,9 +1511,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "dragoninite": {
     "name": "Dragoninite",
@@ -1527,9 +1527,9 @@
         "Dragonite"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "dragoniumz": {
     "name": "Dragonium Z",
@@ -1541,9 +1541,9 @@
       "zMoveType": "Dragon",
       "forcedForme": "Arceus-Dragon"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "dragonmemory": {
     "name": "Dragon Memory",
@@ -1556,9 +1556,9 @@
       ],
       "forcedForme": "Silvally-Dragon"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "dragonscale": {
     "name": "Dragon Scale",
@@ -1569,9 +1569,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "drampanite": {
     "name": "Drampanite",
@@ -1585,9 +1585,9 @@
         "Drampa"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "dreadplate": {
     "name": "Dread Plate",
@@ -1597,9 +1597,9 @@
       "onPlate": "Dark",
       "forcedForme": "Arceus-Dark"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "dreamball": {
     "name": "Dream Ball",
@@ -1608,9 +1608,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "dubiousdisc": {
     "name": "Dubious Disc",
@@ -1621,9 +1621,9 @@
         "basePower": 50
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "durinberry": {
     "name": "Durin Berry",
@@ -1636,9 +1636,9 @@
         "type": "Water"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "duskball": {
     "name": "Dusk Ball",
@@ -1647,9 +1647,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "duskstone": {
     "name": "Dusk Stone",
@@ -1660,9 +1660,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "earthplate": {
     "name": "Earth Plate",
@@ -1672,9 +1672,9 @@
       "onPlate": "Ground",
       "forcedForme": "Arceus-Ground"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "eelektrossite": {
     "name": "Eelektrossite",
@@ -1688,9 +1688,9 @@
         "Eelektross"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "eeviumz": {
     "name": "Eevium Z",
@@ -1703,9 +1703,9 @@
         "Eevee"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "ejectbutton": {
     "name": "Eject Button",
@@ -1716,9 +1716,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "ejectpack": {
     "name": "Eject Pack",
@@ -1729,9 +1729,9 @@
         "basePower": 50
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "electirizer": {
     "name": "Electirizer",
@@ -1742,9 +1742,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "electricgem": {
     "name": "Electric Gem",
@@ -1753,9 +1753,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "electricmemory": {
     "name": "Electric Memory",
@@ -1768,9 +1768,9 @@
       ],
       "forcedForme": "Silvally-Electric"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "electricseed": {
     "name": "Electric Seed",
@@ -1784,9 +1784,9 @@
         "def": 1
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "electriumz": {
     "name": "Electrium Z",
@@ -1798,9 +1798,9 @@
       "zMoveType": "Electric",
       "forcedForme": "Arceus-Electric"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "emboarite": {
     "name": "Emboarite",
@@ -1814,9 +1814,9 @@
         "Emboar"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "enigmaberry": {
     "name": "Enigma Berry",
@@ -1829,9 +1829,9 @@
         "type": "Bug"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "eviolite": {
     "name": "Eviolite",
@@ -1842,9 +1842,9 @@
         "basePower": 40
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "excadrite": {
     "name": "Excadrite",
@@ -1858,9 +1858,9 @@
         "Excadrill"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "expertbelt": {
     "name": "Expert Belt",
@@ -1871,9 +1871,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "fairiumz": {
     "name": "Fairium Z",
@@ -1885,9 +1885,9 @@
       "zMoveType": "Fairy",
       "forcedForme": "Arceus-Fairy"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "fairyfeather": {
     "name": "Fairy Feather",
@@ -1898,9 +1898,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "fairygem": {
     "name": "Fairy Gem",
@@ -1909,9 +1909,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "fairymemory": {
     "name": "Fairy Memory",
@@ -1924,9 +1924,9 @@
       ],
       "forcedForme": "Silvally-Fairy"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "falinksite": {
     "name": "Falinksite",
@@ -1940,9 +1940,9 @@
         "Falinks"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "fastball": {
     "name": "Fast Ball",
@@ -1951,9 +1951,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "feraligite": {
     "name": "Feraligite",
@@ -1967,9 +1967,9 @@
         "Feraligatr"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "fightinggem": {
     "name": "Fighting Gem",
@@ -1978,9 +1978,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "fightingmemory": {
     "name": "Fighting Memory",
@@ -1993,9 +1993,9 @@
       ],
       "forcedForme": "Silvally-Fighting"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "fightiniumz": {
     "name": "Fightinium Z",
@@ -2007,9 +2007,9 @@
       "zMoveType": "Fighting",
       "forcedForme": "Arceus-Fighting"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "figyberry": {
     "name": "Figy Berry",
@@ -2022,9 +2022,9 @@
         "type": "Bug"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "firegem": {
     "name": "Fire Gem",
@@ -2033,9 +2033,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "firememory": {
     "name": "Fire Memory",
@@ -2048,9 +2048,9 @@
       ],
       "forcedForme": "Silvally-Fire"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "firestone": {
     "name": "Fire Stone",
@@ -2061,9 +2061,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "firiumz": {
     "name": "Firium Z",
@@ -2075,9 +2075,9 @@
       "zMoveType": "Fire",
       "forcedForme": "Arceus-Fire"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "fistplate": {
     "name": "Fist Plate",
@@ -2087,9 +2087,9 @@
       "onPlate": "Fighting",
       "forcedForme": "Arceus-Fighting"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "flameorb": {
     "name": "Flame Orb",
@@ -2101,9 +2101,9 @@
         "status": "brn"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "flameplate": {
     "name": "Flame Plate",
@@ -2113,9 +2113,9 @@
       "onPlate": "Fire",
       "forcedForme": "Arceus-Fire"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "floatstone": {
     "name": "Float Stone",
@@ -2126,9 +2126,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "floettite": {
     "name": "Floettite",
@@ -2142,9 +2142,9 @@
         "Floette-Eternal"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "flowersweet": {
     "name": "Flower Sweet",
@@ -2155,9 +2155,9 @@
         "basePower": 0
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "flyinggem": {
     "name": "Flying Gem",
@@ -2166,9 +2166,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "flyingmemory": {
     "name": "Flying Memory",
@@ -2181,9 +2181,9 @@
       ],
       "forcedForme": "Silvally-Flying"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "flyiniumz": {
     "name": "Flyinium Z",
@@ -2195,9 +2195,9 @@
       "zMoveType": "Flying",
       "forcedForme": "Arceus-Flying"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "focusband": {
     "name": "Focus Band",
@@ -2208,9 +2208,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "focussash": {
     "name": "Focus Sash",
@@ -2221,9 +2221,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "fossilizedbird": {
     "name": "Fossilized Bird",
@@ -2234,9 +2234,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "fossilizeddino": {
     "name": "Fossilized Dino",
@@ -2247,9 +2247,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "fossilizeddrake": {
     "name": "Fossilized Drake",
@@ -2260,9 +2260,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "fossilizedfish": {
     "name": "Fossilized Fish",
@@ -2273,9 +2273,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "friendball": {
     "name": "Friend Ball",
@@ -2284,9 +2284,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "froslassite": {
     "name": "Froslassite",
@@ -2300,9 +2300,9 @@
         "Froslass"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "fullincense": {
     "name": "Full Incense",
@@ -2313,9 +2313,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "galaricacuff": {
     "name": "Galarica Cuff",
@@ -2326,9 +2326,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "galaricawreath": {
     "name": "Galarica Wreath",
@@ -2339,9 +2339,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "galladite": {
     "name": "Galladite",
@@ -2355,9 +2355,9 @@
         "Gallade"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "ganlonberry": {
     "name": "Ganlon Berry",
@@ -2370,9 +2370,9 @@
         "type": "Ice"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "garchompite": {
     "name": "Garchompite",
@@ -2386,9 +2386,9 @@
         "Garchomp"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "garchompitez": {
     "name": "Garchompite Z",
@@ -2402,9 +2402,9 @@
         "Garchomp"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "gardevoirite": {
     "name": "Gardevoirite",
@@ -2418,9 +2418,9 @@
         "Gardevoir"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "gengarite": {
     "name": "Gengarite",
@@ -2434,9 +2434,9 @@
         "Gengar"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "ghostgem": {
     "name": "Ghost Gem",
@@ -2445,9 +2445,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "ghostiumz": {
     "name": "Ghostium Z",
@@ -2459,9 +2459,9 @@
       "zMoveType": "Ghost",
       "forcedForme": "Arceus-Ghost"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "ghostmemory": {
     "name": "Ghost Memory",
@@ -2474,9 +2474,9 @@
       ],
       "forcedForme": "Silvally-Ghost"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "glalitite": {
     "name": "Glalitite",
@@ -2490,9 +2490,9 @@
         "Glalie"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "glimmoranite": {
     "name": "Glimmoranite",
@@ -2506,9 +2506,9 @@
         "Glimmora"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "goldberry": {
     "name": "Gold Berry",
@@ -2521,9 +2521,9 @@
         "type": "Psychic"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "goldbottlecap": {
     "name": "Gold Bottle Cap",
@@ -2534,9 +2534,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "golisopite": {
     "name": "Golisopite",
@@ -2550,9 +2550,9 @@
         "Golisopod"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "golurkite": {
     "name": "Golurkite",
@@ -2566,9 +2566,9 @@
         "Golurk"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "grassgem": {
     "name": "Grass Gem",
@@ -2577,9 +2577,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "grassiumz": {
     "name": "Grassium Z",
@@ -2591,9 +2591,9 @@
       "zMoveType": "Grass",
       "forcedForme": "Arceus-Grass"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "grassmemory": {
     "name": "Grass Memory",
@@ -2606,9 +2606,9 @@
       ],
       "forcedForme": "Silvally-Grass"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "grassyseed": {
     "name": "Grassy Seed",
@@ -2622,9 +2622,9 @@
         "def": 1
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "greatball": {
     "name": "Great Ball",
@@ -2633,9 +2633,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "greninjite": {
     "name": "Greninjite",
@@ -2649,9 +2649,9 @@
         "Greninja"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "grepaberry": {
     "name": "Grepa Berry",
@@ -2664,9 +2664,9 @@
         "type": "Flying"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "gripclaw": {
     "name": "Grip Claw",
@@ -2677,9 +2677,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "griseouscore": {
     "name": "Griseous Core",
@@ -2691,9 +2691,9 @@
       ],
       "forcedForme": "Giratina-Origin"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "griseousorb": {
     "name": "Griseous Orb",
@@ -2707,9 +2707,9 @@
         "Giratina"
       ]
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "groundgem": {
     "name": "Ground Gem",
@@ -2718,9 +2718,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "groundiumz": {
     "name": "Groundium Z",
@@ -2732,9 +2732,9 @@
       "zMoveType": "Ground",
       "forcedForme": "Arceus-Ground"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "groundmemory": {
     "name": "Ground Memory",
@@ -2747,9 +2747,9 @@
       ],
       "forcedForme": "Silvally-Ground"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "gyaradosite": {
     "name": "Gyaradosite",
@@ -2763,9 +2763,9 @@
         "Gyarados"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "habanberry": {
     "name": "Haban Berry",
@@ -2778,9 +2778,9 @@
         "type": "Dragon"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "hardstone": {
     "name": "Hard Stone",
@@ -2791,9 +2791,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "hawluchanite": {
     "name": "Hawluchanite",
@@ -2807,9 +2807,9 @@
         "Hawlucha"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "healball": {
     "name": "Heal Ball",
@@ -2818,9 +2818,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "hearthflamemask": {
     "name": "Hearthflame Mask",
@@ -2835,9 +2835,9 @@
       ],
       "forcedForme": "Ogerpon-Hearthflame"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "heatranite": {
     "name": "Heatranite",
@@ -2851,9 +2851,9 @@
         "Heatran"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "heatrock": {
     "name": "Heat Rock",
@@ -2864,9 +2864,9 @@
         "basePower": 60
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "heavyball": {
     "name": "Heavy Ball",
@@ -2875,9 +2875,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "heavydutyboots": {
     "name": "Heavy-Duty Boots",
@@ -2888,9 +2888,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "helixfossil": {
     "name": "Helix Fossil",
@@ -2901,9 +2901,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "heracronite": {
     "name": "Heracronite",
@@ -2917,9 +2917,9 @@
         "Heracross"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "hondewberry": {
     "name": "Hondew Berry",
@@ -2932,9 +2932,9 @@
         "type": "Ground"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "houndoominite": {
     "name": "Houndoominite",
@@ -2948,9 +2948,9 @@
         "Houndoom"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "iapapaberry": {
     "name": "Iapapa Berry",
@@ -2963,9 +2963,9 @@
         "type": "Dark"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "iceberry": {
     "name": "Ice Berry",
@@ -2978,9 +2978,9 @@
         "type": "Grass"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "icegem": {
     "name": "Ice Gem",
@@ -2989,9 +2989,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "icememory": {
     "name": "Ice Memory",
@@ -3004,9 +3004,9 @@
       ],
       "forcedForme": "Silvally-Ice"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "icestone": {
     "name": "Ice Stone",
@@ -3017,9 +3017,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "icicleplate": {
     "name": "Icicle Plate",
@@ -3029,9 +3029,9 @@
       "onPlate": "Ice",
       "forcedForme": "Arceus-Ice"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "iciumz": {
     "name": "Icium Z",
@@ -3043,9 +3043,9 @@
       "zMoveType": "Ice",
       "forcedForme": "Arceus-Ice"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "icyrock": {
     "name": "Icy Rock",
@@ -3056,9 +3056,9 @@
         "basePower": 40
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "inciniumz": {
     "name": "Incinium Z",
@@ -3071,9 +3071,9 @@
         "Incineroar"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "insectplate": {
     "name": "Insect Plate",
@@ -3083,9 +3083,9 @@
       "onPlate": "Bug",
       "forcedForme": "Arceus-Bug"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "ironball": {
     "name": "Iron Ball",
@@ -3096,9 +3096,9 @@
         "basePower": 130
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "ironplate": {
     "name": "Iron Plate",
@@ -3108,9 +3108,9 @@
       "onPlate": "Steel",
       "forcedForme": "Arceus-Steel"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "jabocaberry": {
     "name": "Jaboca Berry",
@@ -3123,9 +3123,9 @@
         "type": "Dragon"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "jawfossil": {
     "name": "Jaw Fossil",
@@ -3136,9 +3136,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "kangaskhanite": {
     "name": "Kangaskhanite",
@@ -3152,9 +3152,9 @@
         "Kangaskhan"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "kasibberry": {
     "name": "Kasib Berry",
@@ -3167,9 +3167,9 @@
         "type": "Ghost"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "kebiaberry": {
     "name": "Kebia Berry",
@@ -3182,9 +3182,9 @@
         "type": "Poison"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "keeberry": {
     "name": "Kee Berry",
@@ -3197,9 +3197,9 @@
         "type": "Fairy"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "kelpsyberry": {
     "name": "Kelpsy Berry",
@@ -3212,9 +3212,9 @@
         "type": "Fighting"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "kingsrock": {
     "name": "King's Rock",
@@ -3226,9 +3226,9 @@
         "volatileStatus": "flinch"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "kommoniumz": {
     "name": "Kommonium Z",
@@ -3242,9 +3242,9 @@
         "Kommo-o-Totem"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "laggingtail": {
     "name": "Lagging Tail",
@@ -3255,9 +3255,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "lansatberry": {
     "name": "Lansat Berry",
@@ -3270,9 +3270,9 @@
         "type": "Flying"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "latiasite": {
     "name": "Latiasite",
@@ -3286,9 +3286,9 @@
         "Latias"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "latiosite": {
     "name": "Latiosite",
@@ -3302,9 +3302,9 @@
         "Latios"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "laxincense": {
     "name": "Lax Incense",
@@ -3315,9 +3315,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "leafstone": {
     "name": "Leaf Stone",
@@ -3328,9 +3328,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "leek": {
     "name": "Leek",
@@ -3346,9 +3346,9 @@
         "Sirfetch’d"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "leftovers": {
     "name": "Leftovers",
@@ -3359,9 +3359,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "leppaberry": {
     "name": "Leppa Berry",
@@ -3374,9 +3374,9 @@
         "type": "Fighting"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "levelball": {
     "name": "Level Ball",
@@ -3385,9 +3385,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "liechiberry": {
     "name": "Liechi Berry",
@@ -3400,9 +3400,9 @@
         "type": "Grass"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "lifeorb": {
     "name": "Life Orb",
@@ -3413,9 +3413,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "lightball": {
     "name": "Light Ball",
@@ -3445,9 +3445,9 @@
         "Pikachu-World"
       ]
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "lightclay": {
     "name": "Light Clay",
@@ -3458,9 +3458,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "loadeddice": {
     "name": "Loaded Dice",
@@ -3471,9 +3471,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "lopunnite": {
     "name": "Lopunnite",
@@ -3487,9 +3487,9 @@
         "Lopunny"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "loveball": {
     "name": "Love Ball",
@@ -3498,9 +3498,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "lovesweet": {
     "name": "Love Sweet",
@@ -3511,9 +3511,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "lucarionite": {
     "name": "Lucarionite",
@@ -3527,9 +3527,9 @@
         "Lucario"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "lucarionitez": {
     "name": "Lucarionite Z",
@@ -3543,9 +3543,9 @@
         "Lucario"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "luckypunch": {
     "name": "Lucky Punch",
@@ -3559,9 +3559,9 @@
         "Chansey"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "lumberry": {
     "name": "Lum Berry",
@@ -3574,9 +3574,9 @@
         "type": "Flying"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "luminousmoss": {
     "name": "Luminous Moss",
@@ -3590,9 +3590,9 @@
         "spd": 1
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "lunaliumz": {
     "name": "Lunalium Z",
@@ -3606,9 +3606,9 @@
         "Necrozma-Dawn-Wings"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "lureball": {
     "name": "Lure Ball",
@@ -3617,9 +3617,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "lustrousglobe": {
     "name": "Lustrous Globe",
@@ -3631,9 +3631,9 @@
       ],
       "forcedForme": "Palkia-Origin"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "lustrousorb": {
     "name": "Lustrous Orb",
@@ -3647,9 +3647,9 @@
         "Palkia"
       ]
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "luxuryball": {
     "name": "Luxury Ball",
@@ -3658,9 +3658,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "lycaniumz": {
     "name": "Lycanium Z",
@@ -3675,9 +3675,9 @@
         "Lycanroc-Dusk"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "machobrace": {
     "name": "Macho Brace",
@@ -3689,9 +3689,9 @@
       },
       "ignoreKlutz": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "magearnite": {
     "name": "Magearnite",
@@ -3707,9 +3707,9 @@
         "Magearna-Original"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "magmarizer": {
     "name": "Magmarizer",
@@ -3720,9 +3720,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "magnet": {
     "name": "Magnet",
@@ -3733,9 +3733,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "magoberry": {
     "name": "Mago Berry",
@@ -3748,9 +3748,9 @@
         "type": "Ghost"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "magostberry": {
     "name": "Magost Berry",
@@ -3763,17 +3763,17 @@
         "type": "Rock"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "mail": {
     "name": "Mail",
     "desc": null,
     "shortDesc": "Cannot be given to or taken from a Pokemon, except by Covet/Knock Off/Thief.",
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "malamarite": {
     "name": "Malamarite",
@@ -3787,9 +3787,9 @@
         "Malamar"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "maliciousarmor": {
     "name": "Malicious Armor",
@@ -3800,9 +3800,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "manectite": {
     "name": "Manectite",
@@ -3816,9 +3816,9 @@
         "Manectric"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "marangaberry": {
     "name": "Maranga Berry",
@@ -3831,9 +3831,9 @@
         "type": "Dark"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "marshadiumz": {
     "name": "Marshadium Z",
@@ -3846,9 +3846,9 @@
         "Marshadow"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "masterball": {
     "name": "Master Ball",
@@ -3857,9 +3857,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "masterpieceteacup": {
     "name": "Masterpiece Teacup",
@@ -3870,9 +3870,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "mawilite": {
     "name": "Mawilite",
@@ -3886,9 +3886,9 @@
         "Mawile"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "meadowplate": {
     "name": "Meadow Plate",
@@ -3898,9 +3898,9 @@
       "onPlate": "Grass",
       "forcedForme": "Arceus-Grass"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "medichamite": {
     "name": "Medichamite",
@@ -3914,9 +3914,9 @@
         "Medicham"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "meganiumite": {
     "name": "Meganiumite",
@@ -3930,9 +3930,9 @@
         "Meganium"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "mentalherb": {
     "name": "Mental Herb",
@@ -3943,9 +3943,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "meowsticite": {
     "name": "Meowsticite",
@@ -3961,9 +3961,9 @@
         "Meowstic-F"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "metagrossite": {
     "name": "Metagrossite",
@@ -3977,17 +3977,17 @@
         "Metagross"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "metalalloy": {
     "name": "Metal Alloy",
     "desc": null,
     "shortDesc": "Evolves Duraludon into Archaludon when used.",
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "metalcoat": {
     "name": "Metal Coat",
@@ -3998,9 +3998,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "metalpowder": {
     "name": "Metal Powder",
@@ -4014,9 +4014,9 @@
         "Ditto"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "metronome": {
     "name": "Metronome",
@@ -4027,9 +4027,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "mewniumz": {
     "name": "Mewnium Z",
@@ -4042,9 +4042,9 @@
         "Mew"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "mewtwonitex": {
     "name": "Mewtwonite X",
@@ -4058,9 +4058,9 @@
         "Mewtwo"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "mewtwonitey": {
     "name": "Mewtwonite Y",
@@ -4074,9 +4074,9 @@
         "Mewtwo"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "micleberry": {
     "name": "Micle Berry",
@@ -4089,9 +4089,9 @@
         "type": "Rock"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "mimikiumz": {
     "name": "Mimikium Z",
@@ -4107,9 +4107,9 @@
         "Mimikyu-Busted-Totem"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "mindplate": {
     "name": "Mind Plate",
@@ -4119,9 +4119,9 @@
       "onPlate": "Psychic",
       "forcedForme": "Arceus-Psychic"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "mintberry": {
     "name": "Mint Berry",
@@ -4134,9 +4134,9 @@
         "type": "Water"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "miracleberry": {
     "name": "Miracle Berry",
@@ -4149,9 +4149,9 @@
         "type": "Flying"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "miracleseed": {
     "name": "Miracle Seed",
@@ -4162,9 +4162,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "mirrorherb": {
     "name": "Mirror Herb",
@@ -4175,9 +4175,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "mistyseed": {
     "name": "Misty Seed",
@@ -4191,9 +4191,9 @@
         "spd": 1
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "moonball": {
     "name": "Moon Ball",
@@ -4202,9 +4202,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "moonstone": {
     "name": "Moon Stone",
@@ -4215,9 +4215,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "muscleband": {
     "name": "Muscle Band",
@@ -4228,9 +4228,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "mysteryberry": {
     "name": "Mystery Berry",
@@ -4243,9 +4243,9 @@
         "type": "Fighting"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "mysticwater": {
     "name": "Mystic Water",
@@ -4256,9 +4256,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "nanabberry": {
     "name": "Nanab Berry",
@@ -4271,9 +4271,9 @@
         "type": "Water"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "nestball": {
     "name": "Nest Ball",
@@ -4282,9 +4282,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "netball": {
     "name": "Net Ball",
@@ -4293,9 +4293,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "nevermeltice": {
     "name": "Never-Melt Ice",
@@ -4306,9 +4306,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "nomelberry": {
     "name": "Nomel Berry",
@@ -4321,9 +4321,9 @@
         "type": "Dragon"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "normalgem": {
     "name": "Normal Gem",
@@ -4332,9 +4332,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "normaliumz": {
     "name": "Normalium Z",
@@ -4344,9 +4344,9 @@
       "zMove": true,
       "zMoveType": "Normal"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "occaberry": {
     "name": "Occa Berry",
@@ -4359,9 +4359,9 @@
         "type": "Fire"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "oddincense": {
     "name": "Odd Incense",
@@ -4372,9 +4372,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "oldamber": {
     "name": "Old Amber",
@@ -4385,9 +4385,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "oranberry": {
     "name": "Oran Berry",
@@ -4400,9 +4400,9 @@
         "type": "Poison"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "ovalstone": {
     "name": "Oval Stone",
@@ -4413,9 +4413,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "pamtreberry": {
     "name": "Pamtre Berry",
@@ -4428,9 +4428,9 @@
         "type": "Steel"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "parkball": {
     "name": "Park Ball",
@@ -4439,9 +4439,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": "Unobtainable",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "passhoberry": {
     "name": "Passho Berry",
@@ -4454,9 +4454,9 @@
         "type": "Water"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "payapaberry": {
     "name": "Payapa Berry",
@@ -4469,9 +4469,9 @@
         "type": "Psychic"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "pechaberry": {
     "name": "Pecha Berry",
@@ -4484,9 +4484,9 @@
         "type": "Electric"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "persimberry": {
     "name": "Persim Berry",
@@ -4499,9 +4499,9 @@
         "type": "Ground"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "petayaberry": {
     "name": "Petaya Berry",
@@ -4514,9 +4514,9 @@
         "type": "Poison"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "pidgeotite": {
     "name": "Pidgeotite",
@@ -4530,9 +4530,9 @@
         "Pidgeot"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "pikaniumz": {
     "name": "Pikanium Z",
@@ -4545,9 +4545,9 @@
         "Pikachu"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "pikashuniumz": {
     "name": "Pikashunium Z",
@@ -4566,9 +4566,9 @@
         "Pikachu-Partner"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "pinapberry": {
     "name": "Pinap Berry",
@@ -4581,17 +4581,17 @@
         "type": "Grass"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "pinkbow": {
     "name": "Pink Bow",
     "desc": null,
     "shortDesc": "(Gen 2) Holder's Normal-type attacks have 1.1x power.",
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "pinsirite": {
     "name": "Pinsirite",
@@ -4605,9 +4605,9 @@
         "Pinsir"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "pixieplate": {
     "name": "Pixie Plate",
@@ -4617,9 +4617,9 @@
       "onPlate": "Fairy",
       "forcedForme": "Arceus-Fairy"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "plumefossil": {
     "name": "Plume Fossil",
@@ -4630,9 +4630,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "poisonbarb": {
     "name": "Poison Barb",
@@ -4644,9 +4644,9 @@
         "status": "psn"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "poisongem": {
     "name": "Poison Gem",
@@ -4655,9 +4655,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "poisoniumz": {
     "name": "Poisonium Z",
@@ -4669,9 +4669,9 @@
       "zMoveType": "Poison",
       "forcedForme": "Arceus-Poison"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "poisonmemory": {
     "name": "Poison Memory",
@@ -4684,9 +4684,9 @@
       ],
       "forcedForme": "Silvally-Poison"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "pokeball": {
     "name": "Poke Ball",
@@ -4695,17 +4695,17 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "polkadotbow": {
     "name": "Polkadot Bow",
     "desc": null,
     "shortDesc": "(Gen 2) Holder's Normal-type attacks have 1.1x power.",
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "pomegberry": {
     "name": "Pomeg Berry",
@@ -4718,9 +4718,9 @@
         "type": "Ice"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "poweranklet": {
     "name": "Power Anklet",
@@ -4732,9 +4732,9 @@
       },
       "ignoreKlutz": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "powerband": {
     "name": "Power Band",
@@ -4746,9 +4746,9 @@
       },
       "ignoreKlutz": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "powerbelt": {
     "name": "Power Belt",
@@ -4760,9 +4760,9 @@
       },
       "ignoreKlutz": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "powerbracer": {
     "name": "Power Bracer",
@@ -4774,9 +4774,9 @@
       },
       "ignoreKlutz": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "powerherb": {
     "name": "Power Herb",
@@ -4787,9 +4787,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "powerlens": {
     "name": "Power Lens",
@@ -4801,9 +4801,9 @@
       },
       "ignoreKlutz": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "powerweight": {
     "name": "Power Weight",
@@ -4815,9 +4815,9 @@
       },
       "ignoreKlutz": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "premierball": {
     "name": "Premier Ball",
@@ -4826,9 +4826,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "prettyfeather": {
     "name": "Pretty Feather",
@@ -4839,9 +4839,9 @@
         "basePower": 20
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "primariumz": {
     "name": "Primarium Z",
@@ -4854,9 +4854,9 @@
         "Primarina"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "prismscale": {
     "name": "Prism Scale",
@@ -4867,9 +4867,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "protectivepads": {
     "name": "Protective Pads",
@@ -4880,9 +4880,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "protector": {
     "name": "Protector",
@@ -4893,9 +4893,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "przcureberry": {
     "name": "PRZ Cure Berry",
@@ -4908,9 +4908,9 @@
         "type": "Fire"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "psncureberry": {
     "name": "PSN Cure Berry",
@@ -4923,9 +4923,9 @@
         "type": "Electric"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "psychicgem": {
     "name": "Psychic Gem",
@@ -4934,9 +4934,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "psychicmemory": {
     "name": "Psychic Memory",
@@ -4949,9 +4949,9 @@
       ],
       "forcedForme": "Silvally-Psychic"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "psychicseed": {
     "name": "Psychic Seed",
@@ -4965,9 +4965,9 @@
         "spd": 1
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "psychiumz": {
     "name": "Psychium Z",
@@ -4979,9 +4979,9 @@
       "zMoveType": "Psychic",
       "forcedForme": "Arceus-Psychic"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "punchingglove": {
     "name": "Punching Glove",
@@ -4992,9 +4992,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "pyroarite": {
     "name": "Pyroarite",
@@ -5008,9 +5008,9 @@
         "Pyroar"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "qualotberry": {
     "name": "Qualot Berry",
@@ -5023,9 +5023,9 @@
         "type": "Poison"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "quickball": {
     "name": "Quick Ball",
@@ -5034,9 +5034,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "quickclaw": {
     "name": "Quick Claw",
@@ -5047,9 +5047,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "quickpowder": {
     "name": "Quick Powder",
@@ -5063,9 +5063,9 @@
         "Ditto"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "rabutaberry": {
     "name": "Rabuta Berry",
@@ -5078,9 +5078,9 @@
         "type": "Ghost"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "raichunitex": {
     "name": "Raichunite X",
@@ -5094,9 +5094,9 @@
         "Raichu"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "raichunitey": {
     "name": "Raichunite Y",
@@ -5110,9 +5110,9 @@
         "Raichu"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "rarebone": {
     "name": "Rare Bone",
@@ -5123,9 +5123,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "rawstberry": {
     "name": "Rawst Berry",
@@ -5138,9 +5138,9 @@
         "type": "Grass"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "razorclaw": {
     "name": "Razor Claw",
@@ -5151,9 +5151,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "razorfang": {
     "name": "Razor Fang",
@@ -5165,9 +5165,9 @@
         "volatileStatus": "flinch"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "razzberry": {
     "name": "Razz Berry",
@@ -5180,9 +5180,9 @@
         "type": "Steel"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "reapercloth": {
     "name": "Reaper Cloth",
@@ -5193,9 +5193,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "redcard": {
     "name": "Red Card",
@@ -5206,9 +5206,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "redorb": {
     "name": "Red Orb",
@@ -5220,9 +5220,9 @@
         "Groudon"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "repeatball": {
     "name": "Repeat Ball",
@@ -5231,9 +5231,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "ribbonsweet": {
     "name": "Ribbon Sweet",
@@ -5244,9 +5244,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "rindoberry": {
     "name": "Rindo Berry",
@@ -5259,9 +5259,9 @@
         "type": "Grass"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "ringtarget": {
     "name": "Ring Target",
@@ -5272,9 +5272,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "rockgem": {
     "name": "Rock Gem",
@@ -5283,9 +5283,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "rockincense": {
     "name": "Rock Incense",
@@ -5296,9 +5296,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "rockiumz": {
     "name": "Rockium Z",
@@ -5310,9 +5310,9 @@
       "zMoveType": "Rock",
       "forcedForme": "Arceus-Rock"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "rockmemory": {
     "name": "Rock Memory",
@@ -5325,9 +5325,9 @@
       ],
       "forcedForme": "Silvally-Rock"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "rockyhelmet": {
     "name": "Rocky Helmet",
@@ -5338,9 +5338,9 @@
         "basePower": 60
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "roomservice": {
     "name": "Room Service",
@@ -5354,9 +5354,9 @@
         "spe": -1
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "rootfossil": {
     "name": "Root Fossil",
@@ -5367,9 +5367,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "roseincense": {
     "name": "Rose Incense",
@@ -5380,9 +5380,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "roseliberry": {
     "name": "Roseli Berry",
@@ -5395,9 +5395,9 @@
         "type": "Fairy"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "rowapberry": {
     "name": "Rowap Berry",
@@ -5410,9 +5410,9 @@
         "type": "Dark"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "rustedshield": {
     "name": "Rusted Shield",
@@ -5423,9 +5423,9 @@
         "Zamazenta-Crowned"
       ]
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "rustedsword": {
     "name": "Rusted Sword",
@@ -5436,9 +5436,9 @@
         "Zacian-Crowned"
       ]
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "sablenite": {
     "name": "Sablenite",
@@ -5452,9 +5452,9 @@
         "Sableye"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "sachet": {
     "name": "Sachet",
@@ -5465,9 +5465,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "safariball": {
     "name": "Safari Ball",
@@ -5476,9 +5476,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "safetygoggles": {
     "name": "Safety Goggles",
@@ -5489,9 +5489,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "sailfossil": {
     "name": "Sail Fossil",
@@ -5502,9 +5502,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "salacberry": {
     "name": "Salac Berry",
@@ -5517,9 +5517,9 @@
         "type": "Fighting"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "salamencite": {
     "name": "Salamencite",
@@ -5533,9 +5533,9 @@
         "Salamence"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "sceptilite": {
     "name": "Sceptilite",
@@ -5549,9 +5549,9 @@
         "Sceptile"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "scizorite": {
     "name": "Scizorite",
@@ -5565,9 +5565,9 @@
         "Scizor"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "scolipite": {
     "name": "Scolipite",
@@ -5581,9 +5581,9 @@
         "Scolipede"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "scopelens": {
     "name": "Scope Lens",
@@ -5594,9 +5594,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "scovillainite": {
     "name": "Scovillainite",
@@ -5610,9 +5610,9 @@
         "Scovillain"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "scraftinite": {
     "name": "Scraftinite",
@@ -5626,9 +5626,9 @@
         "Scrafty"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "seaincense": {
     "name": "Sea Incense",
@@ -5639,9 +5639,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "sharpbeak": {
     "name": "Sharp Beak",
@@ -5652,9 +5652,9 @@
         "basePower": 50
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "sharpedonite": {
     "name": "Sharpedonite",
@@ -5668,9 +5668,9 @@
         "Sharpedo"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "shedshell": {
     "name": "Shed Shell",
@@ -5681,9 +5681,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "shellbell": {
     "name": "Shell Bell",
@@ -5694,9 +5694,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "shinystone": {
     "name": "Shiny Stone",
@@ -5707,9 +5707,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "shockdrive": {
     "name": "Shock Drive",
@@ -5722,9 +5722,9 @@
       ],
       "forcedForme": "Genesect-Shock"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "shucaberry": {
     "name": "Shuca Berry",
@@ -5737,9 +5737,9 @@
         "type": "Ground"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "silkscarf": {
     "name": "Silk Scarf",
@@ -5750,9 +5750,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "silverpowder": {
     "name": "Silver Powder",
@@ -5763,9 +5763,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "sitrusberry": {
     "name": "Sitrus Berry",
@@ -5778,9 +5778,9 @@
         "type": "Psychic"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "skarmorite": {
     "name": "Skarmorite",
@@ -5794,9 +5794,9 @@
         "Skarmory"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "skullfossil": {
     "name": "Skull Fossil",
@@ -5807,9 +5807,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "skyplate": {
     "name": "Sky Plate",
@@ -5819,9 +5819,9 @@
       "onPlate": "Flying",
       "forcedForme": "Arceus-Flying"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "slowbronite": {
     "name": "Slowbronite",
@@ -5835,9 +5835,9 @@
         "Slowbro"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "smoothrock": {
     "name": "Smooth Rock",
@@ -5848,9 +5848,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "snorliumz": {
     "name": "Snorlium Z",
@@ -5863,9 +5863,9 @@
         "Snorlax"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "snowball": {
     "name": "Snowball",
@@ -5879,9 +5879,9 @@
         "atk": 1
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "softsand": {
     "name": "Soft Sand",
@@ -5892,9 +5892,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "solganiumz": {
     "name": "Solganium Z",
@@ -5908,9 +5908,9 @@
         "Necrozma-Dusk-Mane"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "souldew": {
     "name": "Soul Dew",
@@ -5925,9 +5925,9 @@
         "Latias"
       ]
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "spelltag": {
     "name": "Spell Tag",
@@ -5938,9 +5938,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "spelonberry": {
     "name": "Spelon Berry",
@@ -5953,9 +5953,9 @@
         "type": "Dark"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "splashplate": {
     "name": "Splash Plate",
@@ -5965,9 +5965,9 @@
       "onPlate": "Water",
       "forcedForme": "Arceus-Water"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "spookyplate": {
     "name": "Spooky Plate",
@@ -5977,9 +5977,9 @@
       "onPlate": "Ghost",
       "forcedForme": "Arceus-Ghost"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "sportball": {
     "name": "Sport Ball",
@@ -5988,9 +5988,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "staraptite": {
     "name": "Staraptite",
@@ -6004,9 +6004,9 @@
         "Staraptor"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "starfberry": {
     "name": "Starf Berry",
@@ -6019,9 +6019,9 @@
         "type": "Psychic"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "starminite": {
     "name": "Starminite",
@@ -6035,9 +6035,9 @@
         "Starmie"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "starsweet": {
     "name": "Star Sweet",
@@ -6048,9 +6048,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "steelgem": {
     "name": "Steel Gem",
@@ -6059,9 +6059,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "steeliumz": {
     "name": "Steelium Z",
@@ -6073,9 +6073,9 @@
       "zMoveType": "Steel",
       "forcedForme": "Arceus-Steel"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "steelixite": {
     "name": "Steelixite",
@@ -6089,9 +6089,9 @@
         "Steelix"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "steelmemory": {
     "name": "Steel Memory",
@@ -6104,9 +6104,9 @@
       ],
       "forcedForme": "Silvally-Steel"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "stick": {
     "name": "Stick",
@@ -6120,9 +6120,9 @@
         "Farfetch’d"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "stickybarb": {
     "name": "Sticky Barb",
@@ -6133,9 +6133,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "stoneplate": {
     "name": "Stone Plate",
@@ -6145,9 +6145,9 @@
       "onPlate": "Rock",
       "forcedForme": "Arceus-Rock"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "strangeball": {
     "name": "Strange Ball",
@@ -6156,9 +6156,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": "Unobtainable",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "strawberrysweet": {
     "name": "Strawberry Sweet",
@@ -6169,9 +6169,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "sunstone": {
     "name": "Sun Stone",
@@ -6182,9 +6182,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "swampertite": {
     "name": "Swampertite",
@@ -6198,9 +6198,9 @@
         "Swampert"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "sweetapple": {
     "name": "Sweet Apple",
@@ -6211,9 +6211,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "syrupyapple": {
     "name": "Syrupy Apple",
@@ -6224,9 +6224,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tamatoberry": {
     "name": "Tamato Berry",
@@ -6239,9 +6239,9 @@
         "type": "Psychic"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tangaberry": {
     "name": "Tanga Berry",
@@ -6254,9 +6254,9 @@
         "type": "Bug"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tapuniumz": {
     "name": "Tapunium Z",
@@ -6272,9 +6272,9 @@
         "Tapu Fini"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tartapple": {
     "name": "Tart Apple",
@@ -6285,9 +6285,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tatsugirinite": {
     "name": "Tatsugirinite",
@@ -6305,9 +6305,9 @@
         "Tatsugiri-Stretchy"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "terrainextender": {
     "name": "Terrain Extender",
@@ -6318,9 +6318,9 @@
         "basePower": 60
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "thickclub": {
     "name": "Thick Club",
@@ -6337,9 +6337,9 @@
         "Cubone"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "throatspray": {
     "name": "Throat Spray",
@@ -6353,9 +6353,9 @@
         "spa": 1
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "thunderstone": {
     "name": "Thunder Stone",
@@ -6366,9 +6366,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "timerball": {
     "name": "Timer Ball",
@@ -6377,9 +6377,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "toxicorb": {
     "name": "Toxic Orb",
@@ -6391,9 +6391,9 @@
         "status": "tox"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "toxicplate": {
     "name": "Toxic Plate",
@@ -6403,9 +6403,9 @@
       "onPlate": "Poison",
       "forcedForme": "Arceus-Poison"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr00": {
     "name": "TR00",
@@ -6416,9 +6416,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr01": {
     "name": "TR01",
@@ -6429,9 +6429,9 @@
         "basePower": 85
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr02": {
     "name": "TR02",
@@ -6442,9 +6442,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr03": {
     "name": "TR03",
@@ -6455,9 +6455,9 @@
         "basePower": 110
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr04": {
     "name": "TR04",
@@ -6468,9 +6468,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr05": {
     "name": "TR05",
@@ -6481,9 +6481,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr06": {
     "name": "TR06",
@@ -6494,9 +6494,9 @@
         "basePower": 110
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr07": {
     "name": "TR07",
@@ -6507,9 +6507,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr08": {
     "name": "TR08",
@@ -6520,9 +6520,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr09": {
     "name": "TR09",
@@ -6533,9 +6533,9 @@
         "basePower": 110
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr10": {
     "name": "TR10",
@@ -6546,9 +6546,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr11": {
     "name": "TR11",
@@ -6559,9 +6559,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr12": {
     "name": "TR12",
@@ -6572,9 +6572,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr13": {
     "name": "TR13",
@@ -6585,9 +6585,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr14": {
     "name": "TR14",
@@ -6598,9 +6598,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr15": {
     "name": "TR15",
@@ -6611,9 +6611,9 @@
         "basePower": 110
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr16": {
     "name": "TR16",
@@ -6624,9 +6624,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr17": {
     "name": "TR17",
@@ -6637,9 +6637,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr18": {
     "name": "TR18",
@@ -6650,9 +6650,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr19": {
     "name": "TR19",
@@ -6663,9 +6663,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr20": {
     "name": "TR20",
@@ -6676,9 +6676,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr21": {
     "name": "TR21",
@@ -6689,9 +6689,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr22": {
     "name": "TR22",
@@ -6702,9 +6702,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr23": {
     "name": "TR23",
@@ -6715,9 +6715,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr24": {
     "name": "TR24",
@@ -6728,9 +6728,9 @@
         "basePower": 120
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr25": {
     "name": "TR25",
@@ -6741,9 +6741,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr26": {
     "name": "TR26",
@@ -6754,9 +6754,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr27": {
     "name": "TR27",
@@ -6767,9 +6767,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr28": {
     "name": "TR28",
@@ -6780,9 +6780,9 @@
         "basePower": 120
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr29": {
     "name": "TR29",
@@ -6793,9 +6793,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr30": {
     "name": "TR30",
@@ -6806,9 +6806,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr31": {
     "name": "TR31",
@@ -6819,9 +6819,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr32": {
     "name": "TR32",
@@ -6832,9 +6832,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr33": {
     "name": "TR33",
@@ -6845,9 +6845,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr34": {
     "name": "TR34",
@@ -6858,9 +6858,9 @@
         "basePower": 120
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr35": {
     "name": "TR35",
@@ -6871,9 +6871,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr36": {
     "name": "TR36",
@@ -6884,9 +6884,9 @@
         "basePower": 95
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr37": {
     "name": "TR37",
@@ -6897,9 +6897,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr38": {
     "name": "TR38",
@@ -6910,9 +6910,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr39": {
     "name": "TR39",
@@ -6923,9 +6923,9 @@
         "basePower": 120
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr40": {
     "name": "TR40",
@@ -6936,9 +6936,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr41": {
     "name": "TR41",
@@ -6949,9 +6949,9 @@
         "basePower": 85
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr42": {
     "name": "TR42",
@@ -6962,9 +6962,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr43": {
     "name": "TR43",
@@ -6975,9 +6975,9 @@
         "basePower": 130
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr44": {
     "name": "TR44",
@@ -6988,9 +6988,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr45": {
     "name": "TR45",
@@ -7001,9 +7001,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr46": {
     "name": "TR46",
@@ -7014,9 +7014,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr47": {
     "name": "TR47",
@@ -7027,9 +7027,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr48": {
     "name": "TR48",
@@ -7040,9 +7040,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr49": {
     "name": "TR49",
@@ -7053,9 +7053,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr50": {
     "name": "TR50",
@@ -7066,9 +7066,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr51": {
     "name": "TR51",
@@ -7079,9 +7079,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr52": {
     "name": "TR52",
@@ -7092,9 +7092,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr53": {
     "name": "TR53",
@@ -7105,9 +7105,9 @@
         "basePower": 120
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr54": {
     "name": "TR54",
@@ -7118,9 +7118,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr55": {
     "name": "TR55",
@@ -7131,9 +7131,9 @@
         "basePower": 120
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr56": {
     "name": "TR56",
@@ -7144,9 +7144,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr57": {
     "name": "TR57",
@@ -7157,9 +7157,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr58": {
     "name": "TR58",
@@ -7170,9 +7170,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr59": {
     "name": "TR59",
@@ -7183,9 +7183,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr60": {
     "name": "TR60",
@@ -7196,9 +7196,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr61": {
     "name": "TR61",
@@ -7209,9 +7209,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr62": {
     "name": "TR62",
@@ -7222,9 +7222,9 @@
         "basePower": 85
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr63": {
     "name": "TR63",
@@ -7235,9 +7235,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr64": {
     "name": "TR64",
@@ -7248,9 +7248,9 @@
         "basePower": 120
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr65": {
     "name": "TR65",
@@ -7261,9 +7261,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr66": {
     "name": "TR66",
@@ -7274,9 +7274,9 @@
         "basePower": 120
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr67": {
     "name": "TR67",
@@ -7287,9 +7287,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr68": {
     "name": "TR68",
@@ -7300,9 +7300,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr69": {
     "name": "TR69",
@@ -7313,9 +7313,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr70": {
     "name": "TR70",
@@ -7326,9 +7326,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr71": {
     "name": "TR71",
@@ -7339,9 +7339,9 @@
         "basePower": 130
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr72": {
     "name": "TR72",
@@ -7352,9 +7352,9 @@
         "basePower": 120
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr73": {
     "name": "TR73",
@@ -7365,9 +7365,9 @@
         "basePower": 120
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr74": {
     "name": "TR74",
@@ -7378,9 +7378,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr75": {
     "name": "TR75",
@@ -7391,9 +7391,9 @@
         "basePower": 100
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr76": {
     "name": "TR76",
@@ -7404,9 +7404,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr77": {
     "name": "TR77",
@@ -7417,9 +7417,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr78": {
     "name": "TR78",
@@ -7430,9 +7430,9 @@
         "basePower": 95
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr79": {
     "name": "TR79",
@@ -7443,9 +7443,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr80": {
     "name": "TR80",
@@ -7456,9 +7456,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr81": {
     "name": "TR81",
@@ -7469,9 +7469,9 @@
         "basePower": 95
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr82": {
     "name": "TR82",
@@ -7482,9 +7482,9 @@
         "basePower": 20
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr83": {
     "name": "TR83",
@@ -7495,9 +7495,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr84": {
     "name": "TR84",
@@ -7508,9 +7508,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr85": {
     "name": "TR85",
@@ -7521,9 +7521,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr86": {
     "name": "TR86",
@@ -7534,9 +7534,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr87": {
     "name": "TR87",
@@ -7547,9 +7547,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr88": {
     "name": "TR88",
@@ -7560,9 +7560,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr89": {
     "name": "TR89",
@@ -7573,9 +7573,9 @@
         "basePower": 110
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr90": {
     "name": "TR90",
@@ -7586,9 +7586,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr91": {
     "name": "TR91",
@@ -7599,9 +7599,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr92": {
     "name": "TR92",
@@ -7612,9 +7612,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr93": {
     "name": "TR93",
@@ -7625,9 +7625,9 @@
         "basePower": 85
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr94": {
     "name": "TR94",
@@ -7638,9 +7638,9 @@
         "basePower": 95
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr95": {
     "name": "TR95",
@@ -7651,9 +7651,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr96": {
     "name": "TR96",
@@ -7664,9 +7664,9 @@
         "basePower": 90
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr97": {
     "name": "TR97",
@@ -7677,9 +7677,9 @@
         "basePower": 85
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr98": {
     "name": "TR98",
@@ -7690,9 +7690,9 @@
         "basePower": 85
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tr99": {
     "name": "TR99",
@@ -7703,9 +7703,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "twistedspoon": {
     "name": "Twisted Spoon",
@@ -7716,9 +7716,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "tyranitarite": {
     "name": "Tyranitarite",
@@ -7732,9 +7732,9 @@
         "Tyranitar"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "ultraball": {
     "name": "Ultra Ball",
@@ -7743,9 +7743,9 @@
     "flags": {
       "isPokeball": true
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "ultranecroziumz": {
     "name": "Ultranecrozium Z",
@@ -7758,9 +7758,9 @@
         "Necrozma-Ultra"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "unremarkableteacup": {
     "name": "Unremarkable Teacup",
@@ -7771,9 +7771,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "upgrade": {
     "name": "Up-Grade",
@@ -7784,9 +7784,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "utilityumbrella": {
     "name": "Utility Umbrella",
@@ -7797,9 +7797,9 @@
         "basePower": 60
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "venusaurite": {
     "name": "Venusaurite",
@@ -7813,9 +7813,9 @@
         "Venusaur"
       ]
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "victreebelite": {
     "name": "Victreebelite",
@@ -7829,9 +7829,9 @@
         "Victreebel"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "vilevial": {
     "name": "Vile Vial",
@@ -7846,9 +7846,9 @@
       ],
       "forcedForme": "Venomicon-Epilogue"
     },
-    "isNonstandard": "CAP",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "wacanberry": {
     "name": "Wacan Berry",
@@ -7861,9 +7861,9 @@
         "type": "Electric"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "watergem": {
     "name": "Water Gem",
@@ -7872,9 +7872,9 @@
     "flags": {
       "isGem": true
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "wateriumz": {
     "name": "Waterium Z",
@@ -7886,9 +7886,9 @@
       "zMoveType": "Water",
       "forcedForme": "Arceus-Water"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "watermemory": {
     "name": "Water Memory",
@@ -7901,9 +7901,9 @@
       ],
       "forcedForme": "Silvally-Water"
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "waterstone": {
     "name": "Water Stone",
@@ -7914,9 +7914,9 @@
         "basePower": 30
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "watmelberry": {
     "name": "Watmel Berry",
@@ -7929,9 +7929,9 @@
         "type": "Fire"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "waveincense": {
     "name": "Wave Incense",
@@ -7942,9 +7942,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "weaknesspolicy": {
     "name": "Weakness Policy",
@@ -7959,9 +7959,9 @@
         "spa": 2
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "wellspringmask": {
     "name": "Wellspring Mask",
@@ -7976,9 +7976,9 @@
       ],
       "forcedForme": "Ogerpon-Wellspring"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "wepearberry": {
     "name": "Wepear Berry",
@@ -7991,9 +7991,9 @@
         "type": "Electric"
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "whippeddream": {
     "name": "Whipped Dream",
@@ -8004,9 +8004,9 @@
         "basePower": 80
       }
     },
-    "isNonstandard": "Past",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "whiteherb": {
     "name": "White Herb",
@@ -8017,9 +8017,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "widelens": {
     "name": "Wide Lens",
@@ -8030,9 +8030,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "wikiberry": {
     "name": "Wiki Berry",
@@ -8045,9 +8045,9 @@
         "type": "Rock"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "wiseglasses": {
     "name": "Wise Glasses",
@@ -8058,9 +8058,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "yacheberry": {
     "name": "Yache Berry",
@@ -8073,9 +8073,9 @@
         "type": "Ice"
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "zapplate": {
     "name": "Zap Plate",
@@ -8085,9 +8085,9 @@
       "onPlate": "Electric",
       "forcedForme": "Arceus-Electric"
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "zeraorite": {
     "name": "Zeraorite",
@@ -8101,9 +8101,9 @@
         "Zeraora"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "zoomlens": {
     "name": "Zoom Lens",
@@ -8114,9 +8114,9 @@
         "basePower": 10
       }
     },
-    "isNonstandard": null,
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   },
   "zygardite": {
     "name": "Zygardite",
@@ -8130,8 +8130,8 @@
         "Zygarde-Complete"
       ]
     },
-    "isNonstandard": "Future",
-    "source": "smogon/pokemon-showdown",
-    "verified": false
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
   }
 }

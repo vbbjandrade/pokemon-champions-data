@@ -33,6 +33,8 @@ The editable data is split into an unfiltered Showdown baseline and small, regul
 
 Each regulation declares its `baseRegulationId` in `scripts/regulations.ts`. A regulation without one overrides master data; a regulation with one applies on top of that base. For example, Reg M-A is compiled as `master → Reg M-B → Reg M-A`. This supports separate regulation families, such as M-* and Z-*, without relying on list order.
 
+Each generated `delta.json` repeats that `baseRegulationId` as build metadata. Every override collection is a chained patch: omitted entries are inherited unchanged, `{}` adds an available entry with unchanged data, a populated object replaces only the changed fields, and `null` removes an inherited entry. The base regulation contains full learnsets because master has none; later regulations contain only changed, added, or removed learnsets. Move and ability availability is derived from those learnsets and roster entries, respectively; items use Showdown availability without retaining its `isNonstandard` reason strings.
+
 `overrides.roster` is the regulation's legal-species list: an empty object keeps a master Pokémon unchanged, while supplied properties patch it. `baseStats` patches by stat; all other override properties replace their master value.
 
 Compiled moves and abilities are selected from the regulation roster and learnsets, so separate move or ability legality lists are unnecessary. Items use their Showdown `isNonstandard` status to omit regulation-illegal entries.
@@ -149,8 +151,9 @@ print(charizard_moves)
     "spd": 100,
     "spe": 80
   },
-  "source": "smogon/pokemon-showdown",
-  "verified": true
+  "sources": [
+    "smogon/pokemon-showdown"
+  ]
 }
 ```
 

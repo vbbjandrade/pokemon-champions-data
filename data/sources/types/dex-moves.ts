@@ -1,7 +1,7 @@
 /**
  * AUTO-GENERATED — DO NOT EDIT MANUALLY
  * Synced from: https://raw.githubusercontent.com/smogon/pokemon-showdown/master/sim/dex-moves.ts
- * Synced at:   Sun, 30 Aug 2026 07:38:05 UTC
+ * Synced at:   Sun, 30 Aug 2026 16:40:38 UTC
  * Branch:      master
  *
  * Runtime-only Showdown types (Battle, Pokemon, Side, etc.) and all import

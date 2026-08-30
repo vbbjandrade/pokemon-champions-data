@@ -44,9 +44,14 @@ const SHOWDOWN_ALIASES: Record<string, string> = { meowsticmmega: 'Mega Meowstic
 type RawRecord = Record<string, any>;
 type ResolvedData = {
   roster: Record<string, RepoPokemon>;
+  legalSpecies: Set<string>;
+  learnsets: Record<string, RepoLearnset>;
   moves: Record<string, ParsedMove>;
+  availableMoves: Set<string>;
   abilities: Record<string, RepoAbility>;
+  availableAbilities: Set<string>;
   items: Record<string, RepoItem>;
+  availableItems: Set<string>;
 };
 
 function writeJson(path: string, value: unknown, dryRun: boolean): void {
@@ -60,14 +65,37 @@ function sorted<T>(entries: Record<string, T>): Record<string, T> {
   return Object.fromEntries(Object.entries(entries).sort(([a], [b]) => a.localeCompare(b)));
 }
 
-function withSource<T extends object>(entries: Record<string, T>): Record<string, T & { source: string; verified: boolean }> {
-  return Object.fromEntries(Object.entries(entries).map(([id, entry]) => [id, { ...entry, source: SHOWDOWN_SOURCE, verified: false }]));
+function withSources<T extends object>(entries: Record<string, T>): Record<string, T & { sources: string[] }> {
+  return Object.fromEntries(Object.entries(entries).map(([id, entry]) => [id, { ...entry, sources: [SHOWDOWN_SOURCE] }]));
 }
 
 function diffEntry(base: RawRecord | undefined, resolved: RawRecord): RawRecord {
   if (!base) return resolved;
   const delta: RawRecord = {};
   for (const [key, value] of Object.entries(resolved)) if (!isDeepEqual(base[key], value)) delta[key] = value;
+  return delta;
+}
+
+function withoutNonstandard<T extends RawRecord>(entry: T): Omit<T, 'isNonstandard'> {
+  const { isNonstandard: _ignored, ...output } = entry;
+  return output;
+}
+
+function availabilityDelta<T extends RawRecord>(
+  baseEntries: Record<string, T>,
+  baseAvailable: Set<string>,
+  currentEntries: Record<string, T>,
+  currentAvailable: Set<string>
+): Record<string, Partial<T> | null> {
+  const delta: Record<string, Partial<T> | null> = {};
+  for (const id of new Set([...baseAvailable, ...currentAvailable])) {
+    if (!currentAvailable.has(id)) {
+      delta[id] = null;
+      continue;
+    }
+    const changes = diffEntry(baseEntries[id], currentEntries[id]!);
+    if (!baseAvailable.has(id) || Object.keys(changes).length > 0) delta[id] = changes;
+  }
   return delta;
 }
 
@@ -82,8 +110,11 @@ function preserveCustomDeltaValues(delta: RegulationDelta, path: string): Regula
     const previous = existing.overrides?.[resource] as RawRecord | undefined;
     if (!previous) continue;
     for (const [id, override] of Object.entries(previous)) {
-      if ((override as RawRecord).source && (override as RawRecord).source !== SHOWDOWN_SOURCE) {
-        if (resource !== 'roster' || generated[id]) generated[id] = { ...generated[id], ...override };
+      const previousSources = override && Array.isArray((override as RawRecord).sources) ? (override as RawRecord).sources as string[] : [];
+      if (previousSources.some((source) => source !== SHOWDOWN_SOURCE)) {
+        if (resource !== 'roster' || generated[id]) {
+          generated[id] = { ...generated[id], ...override, sources: [...new Set([...(generated[id]?.sources ?? []), ...previousSources])] };
+        }
       }
     }
   }
@@ -119,9 +150,8 @@ function resolveMoves(master: Record<string, ParsedMove>, mods: ReturnType<typeo
     entry.desc = mod.desc ?? overrides.desc ?? entry.desc ?? null;
     entry.shortDesc = mod.shortDesc ?? overrides.shortDesc ?? entry.shortDesc ?? null;
     if (mod.isNonstandard !== undefined) entry.isNonstandard = mod.isNonstandard;
-    if (!entry.source) {
-      entry.source = SHOWDOWN_SOURCE;
-      entry.verified = false;
+    if (!entry.sources) {
+      entry.sources = [SHOWDOWN_SOURCE];
     }
     result[id] = entry;
   }
@@ -138,9 +168,8 @@ function resolveAbilities(master: Record<string, RepoAbility>, mods: ReturnType<
     entry.desc = mod.desc ?? overrides.desc ?? entry.desc ?? null;
     entry.shortDesc = mod.shortDesc ?? overrides.shortDesc ?? entry.shortDesc ?? null;
     if (mod.flags !== undefined) entry.flags = { ...entry.flags, ...mod.flags };
-    if (!entry.source) {
-      entry.source = SHOWDOWN_SOURCE;
-      entry.verified = false;
+    if (!entry.sources) {
+      entry.sources = [SHOWDOWN_SOURCE];
     }
     result[id] = entry;
   }
@@ -158,9 +187,8 @@ function resolveItems(master: Record<string, RepoItem>, mods: ReturnType<typeof 
     entry.shortDesc = mod.shortDesc ?? overrides.shortDesc ?? entry.shortDesc ?? null;
     if (mod.flags !== undefined) entry.flags = { ...entry.flags, ...mod.flags };
     if (mod.isNonstandard !== undefined) entry.isNonstandard = mod.isNonstandard;
-    if (!entry.source) {
-      entry.source = SHOWDOWN_SOURCE;
-      entry.verified = false;
+    if (!entry.sources) {
+      entry.sources = [SHOWDOWN_SOURCE];
     }
     result[id] = entry;
   }
@@ -179,41 +207,53 @@ function makeDelta(regulation: RegulationDefinition, base: ResolvedData, mod: Aw
   const textModId = regulation === REGULATIONS[0] ? 'champions' : regulation.regulationId;
   const roster: RegulationDelta['overrides']['roster'] = {};
   const learnsets: RegulationDelta['overrides']['learnsets'] = {};
-  for (const id of [...parseLegalSpecies(mod.formatsData)].filter((id) => !COLLAPSED_FORMS.has(id)).sort()) {
+  const legalSpecies = new Set([...parseLegalSpecies(mod.formatsData)].filter((id) => !COLLAPSED_FORMS.has(id)));
+  const baseLegalSpecies = regulation.baseRegulationId ? base.legalSpecies : new Set(Object.keys(base.roster));
+  const resolvedLearnsets: Record<string, RepoLearnset> = {};
+  for (const id of [...legalSpecies].sort()) {
     const pokemon = base.roster[id];
     if (!pokemon) throw new Error(`${regulation.regulationId}: legal species "${id}" is absent from master roster.`);
-    roster[id] = {};
+    if (!baseLegalSpecies.has(id)) roster[id] = {};
     const sourceId = learnsetId(id, mod.learnsets);
     const rawLearnset = mod.learnsets[sourceId]?.learnset;
     if (!rawLearnset) throw new Error(`${regulation.regulationId}: missing learnset for "${id}" (mapped to "${sourceId}").`);
-    learnsets[id] = { dexNumber: pokemon.dexNumber, form: pokemon.form, moves: Object.keys(rawLearnset).sort(), source: SHOWDOWN_SOURCE, verified: false } satisfies RepoLearnset;
+    const learnset = { dexNumber: pokemon.dexNumber, form: pokemon.form, moves: Object.keys(rawLearnset).sort(), sources: [SHOWDOWN_SOURCE] } satisfies RepoLearnset;
+    resolvedLearnsets[id] = learnset;
+    const learnsetDelta = diffEntry(base.learnsets[id] as RawRecord | undefined, learnset);
+    if (!base.learnsets[id] || Object.keys(learnsetDelta).length > 0) learnsets[id] = learnsetDelta;
+  }
+  for (const id of baseLegalSpecies) {
+    if (!legalSpecies.has(id)) {
+      roster[id] = null;
+      learnsets[id] = null;
+    }
   }
 
-  const moveDeltas: RegulationDelta['overrides']['moves'] = {};
   const resolvedMoves = resolveMoves(base.moves, parseMoveMods(mod.moves), text.moves, textModId);
-  for (const [id, entry] of Object.entries(resolvedMoves)) {
-    const { isNonstandard: _ignored, ...move } = entry;
-    const delta = diffEntry(base.moves[id] as RawRecord | undefined, move);
-    if (Object.keys(delta).length) moveDeltas[id] = delta;
-  }
+  const availableMoves = new Set(Object.values(resolvedLearnsets).flatMap((learnset) => learnset.moves));
+  const moveDeltas = availabilityDelta(
+    Object.fromEntries(Object.entries(base.moves).map(([id, move]) => [id, withoutNonstandard(move)])),
+    base.availableMoves,
+    Object.fromEntries(Object.entries(resolvedMoves).map(([id, move]) => [id, withoutNonstandard(move)])),
+    availableMoves
+  );
 
-  const abilityDeltas: RegulationDelta['overrides']['abilities'] = {};
   const resolvedAbilities = resolveAbilities(base.abilities, parseAbilitiesEntries(mod.abilities, text.abilities, undefined, textModId), text.abilities, textModId);
-  for (const [id, entry] of Object.entries(resolvedAbilities)) {
-    const delta = diffEntry(base.abilities[id] as RawRecord | undefined, entry);
-    if (Object.keys(delta).length) abilityDeltas[id] = delta;
-  }
+  const availableAbilities = new Set([...legalSpecies].flatMap((id) => Object.values(base.roster[id]!.abilities ?? {})));
+  const abilityDeltas = availabilityDelta(base.abilities, base.availableAbilities, resolvedAbilities, availableAbilities);
 
-  const itemDeltas: RegulationDelta['overrides']['items'] = {};
   const resolvedItems = resolveItems(base.items, parseItems(mod.items, text.items, undefined, textModId), text.items, textModId);
-  for (const [id, entry] of Object.entries(resolvedItems)) {
-    const delta = diffEntry(base.items[id] as RawRecord | undefined, entry);
-    if (Object.keys(delta).length) itemDeltas[id] = delta;
-  }
+  const availableItems = new Set(Object.entries(resolvedItems).filter(([, item]) => !item.isNonstandard).map(([id]) => id));
+  const itemDeltas = availabilityDelta(
+    Object.fromEntries(Object.entries(base.items).map(([id, item]) => [id, withoutNonstandard(item)])),
+    base.availableItems,
+    Object.fromEntries(Object.entries(resolvedItems).map(([id, item]) => [id, withoutNonstandard(item)])),
+    availableItems
+  );
 
   return {
-    delta: { regulationId: regulation.regulationId, regulationName: regulation.regulationName, begin: null, end: null, overrides: { roster: sorted(roster), learnsets: sorted(learnsets), moves: sorted(moveDeltas), abilities: sorted(abilityDeltas), items: sorted(itemDeltas) } },
-    resolved: { roster: base.roster, moves: resolvedMoves, abilities: resolvedAbilities, items: resolvedItems },
+    delta: { regulationId: regulation.regulationId, regulationName: regulation.regulationName, baseRegulationId: regulation.baseRegulationId ?? null, begin: null, end: null, overrides: { roster: sorted(roster), learnsets: sorted(learnsets), moves: sorted(moveDeltas), abilities: sorted(abilityDeltas), items: sorted(itemDeltas) } },
+    resolved: { roster: base.roster, legalSpecies, learnsets: resolvedLearnsets, moves: resolvedMoves, availableMoves, abilities: resolvedAbilities, availableAbilities, items: resolvedItems, availableItems },
   };
 }
 
@@ -232,21 +272,26 @@ async function main(): Promise<void> {
   const parsedAbilities = parseAbilitiesEntries(rawAbilities as RawRecord, AbilitiesText as RawRecord);
   const parsedItems = parseItems(rawItems as RawRecord, ItemsText as RawRecord);
   const master = {
-    roster: withSource(parsePokedex(Object.fromEntries(Object.entries(Pokedex as RawRecord).filter(([, entry]) => entry.isNonstandard !== 'CAP')), { nameToIdMap: abilityIds, aliases: SHOWDOWN_ALIASES })),    
-    moves: withSource(Object.fromEntries(Object.entries(parsedMoves).map(([id, entry]) => { const { isNonstandard: _ignored, ...move } = entry; return [id, move]; })) as Record<string, RepoMove>),
-    abilities: withSource(Object.fromEntries(Object.entries(parsedAbilities).map(([id, entry]) => [id, { name: entry.name ?? '', desc: entry.desc ?? null, shortDesc: entry.shortDesc ?? null, ...(entry.flags ? { flags: entry.flags } : {}) }])) as Record<string, RepoAbility>),
-    items: withSource(Object.fromEntries(Object.entries(parsedItems).map(([id, entry]) => [id, { name: entry.name ?? '', desc: entry.desc ?? null, shortDesc: entry.shortDesc ?? null, ...(entry.flags ? { flags: entry.flags } : {}), isNonstandard: entry.isNonstandard ?? null }])) as Record<string, RepoItem>),
+    roster: withSources(parsePokedex(Object.fromEntries(Object.entries(Pokedex as RawRecord).filter(([, entry]) => entry.isNonstandard !== 'CAP')), { nameToIdMap: abilityIds, aliases: SHOWDOWN_ALIASES })),
+    moves: withSources(Object.fromEntries(Object.entries(parsedMoves).map(([id, entry]) => { const { isNonstandard: _ignored, ...move } = entry; return [id, move]; })) as Record<string, RepoMove>),
+    abilities: withSources(Object.fromEntries(Object.entries(parsedAbilities).map(([id, entry]) => [id, { name: entry.name ?? '', desc: entry.desc ?? null, shortDesc: entry.shortDesc ?? null, ...(entry.flags ? { flags: entry.flags } : {}) }])) as Record<string, RepoAbility>),
+    items: withSources(Object.fromEntries(Object.entries(parsedItems).map(([id, entry]) => [id, { name: entry.name ?? '', desc: entry.desc ?? null, shortDesc: entry.shortDesc ?? null, ...(entry.flags ? { flags: entry.flags } : {}), isNonstandard: entry.isNonstandard ?? null }])) as Record<string, RepoItem>),
   };
   console.log('Writing unfiltered master data...');
   writeJson(join(MASTER_DIR, 'roster.json'), sorted(master.roster), dryRun);
   writeJson(join(MASTER_DIR, 'moves.json'), sorted(master.moves), dryRun);
   writeJson(join(MASTER_DIR, 'abilities.json'), sorted(master.abilities), dryRun);
-  writeJson(join(MASTER_DIR, 'items.json'), sorted(master.items), dryRun);
+  writeJson(join(MASTER_DIR, 'items.json'), sorted(Object.fromEntries(Object.entries(master.items).map(([id, item]) => [id, withoutNonstandard(item)]))), dryRun);
   const masterResolved: ResolvedData = {
     roster: master.roster,
-    moves: withSource(parsedMoves),
+    legalSpecies: new Set(),
+    learnsets: {},
+    moves: withSources(parsedMoves),
+    availableMoves: new Set(Object.keys(parsedMoves)),
     abilities: master.abilities,
+    availableAbilities: new Set(Object.keys(master.abilities)),
     items: master.items,
+    availableItems: new Set(Object.keys(master.items)),
   };
   const resolvedByRegulation = new Map<string, ResolvedData>();
   const generatedRegulations = new Set<string>();

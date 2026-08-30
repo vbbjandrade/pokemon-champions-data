@@ -45,17 +45,27 @@ function applyOverride<T extends object>(base: T, override: Partial<T>): T {
   const baseValues = base as JsonRecord;
   const resolved: JsonRecord = { ...baseValues };
   for (const [key, value] of Object.entries(override)) {
-    resolved[key] = key === 'baseStats' && isPlainObject(baseValues[key]) && isPlainObject(value)
-      ? { ...baseValues[key], ...value }
-      : value;
+    if (key === 'sources' && Array.isArray(baseValues[key]) && Array.isArray(value)) {
+      resolved[key] = [...new Set([...baseValues[key], ...value])];
+    } else {
+      resolved[key] = key === 'baseStats' && isPlainObject(baseValues[key]) && isPlainObject(value)
+        ? { ...baseValues[key], ...value }
+        : value;
+    }
   }
   return resolved as T;
 }
 
-function applyResource<T extends object>(master: Record<string, T>, overrides: Record<string, Partial<T>>): Record<string, T> {
-  const output: Record<string, T> = { ...master };
+function applyResource<T extends object>(current: Record<string, T>, overrides: Record<string, Partial<T> | null>, master: Record<string, T>): Record<string, T> {
+  const output: Record<string, T> = { ...current };
   for (const [id, override] of Object.entries(overrides)) {
-    output[id] = applyOverride(output[id] ?? ({} as T), override);
+    if (override === null) {
+      delete output[id];
+      continue;
+    }
+    const base = output[id] ?? master[id];
+    if (!base) throw new Error(`Resource override "${id}" is absent from master data.`);
+    output[id] = applyOverride(base, override);
   }
   return sorted(output);
 }
@@ -69,17 +79,6 @@ function selectEntries<T>(data: Record<string, T>, ids: Iterable<string>): Recor
   return sorted(selected);
 }
 
-function selectLegalItems(items: Record<string, RepoItem>): Record<string, RepoItem> {
-  return sorted(Object.fromEntries(
-    Object.entries(items)
-      .filter(([, item]) => !item.isNonstandard)
-      .map(([id, item]) => {
-        const { isNonstandard: _ignored, ...output } = item;
-        return [id, output];
-      })
-  ));
-}
-
 function compile(regulation: RegulationDefinition): void {
   const masterRoster = loadJson<Record<string, RepoPokemon>>(join(MASTER_DIR, 'roster.json'));
   const masterMoves = loadJson<Record<string, RepoMove>>(join(MASTER_DIR, 'moves.json'));
@@ -91,32 +90,47 @@ function compile(regulation: RegulationDefinition): void {
     if (delta.regulationId !== layer.regulationId) {
       throw new Error(`${layer.directoryName}/delta.json has regulationId "${delta.regulationId}"; expected "${layer.regulationId}".`);
     }
+    if (delta.baseRegulationId !== (layer.baseRegulationId ?? null)) {
+      throw new Error(`${layer.directoryName}/delta.json has baseRegulationId "${delta.baseRegulationId}"; expected "${layer.baseRegulationId ?? null}".`);
+    }
     return delta;
   });
 
-  let resolvedRoster = { ...masterRoster };
+  let resolvedRoster: Record<string, RepoPokemon> = { ...masterRoster };
+  let resolvedLearnsets: Record<string, RepoLearnset> = {};
   let resolvedMoves = { ...masterMoves };
   let resolvedAbilities = { ...masterAbilities };
   let resolvedItems = { ...masterItems };
   for (const layer of layers) {
     for (const [id, override] of Object.entries(layer.overrides.roster)) {
-      const base = resolvedRoster[id];
+      if (override === null) {
+        delete resolvedRoster[id];
+        continue;
+      }
+      const base = resolvedRoster[id] ?? masterRoster[id];
       if (!base) throw new Error(`${layer.regulationId}: roster override "${id}" is absent from master/roster.json.`);
       resolvedRoster[id] = applyOverride(base, override);
     }
-    resolvedMoves = applyResource(resolvedMoves, layer.overrides.moves);
-    resolvedAbilities = applyResource(resolvedAbilities, layer.overrides.abilities);
-    resolvedItems = applyResource(resolvedItems, layer.overrides.items);
+    for (const [id, override] of Object.entries(layer.overrides.learnsets)) {
+      if (override === null) {
+        delete resolvedLearnsets[id];
+        continue;
+      }
+      const base = resolvedLearnsets[id] ?? ({} as RepoLearnset);
+      resolvedLearnsets[id] = applyOverride(base, override);
+    }
+    resolvedMoves = applyResource(resolvedMoves, layer.overrides.moves, masterMoves);
+    resolvedAbilities = applyResource(resolvedAbilities, layer.overrides.abilities, masterAbilities);
+    resolvedItems = applyResource(resolvedItems, layer.overrides.items, masterItems);
 
   }
 
-  const targetDelta = layers[layers.length - 1]!;
-  const roster = selectEntries(resolvedRoster, Object.keys(targetDelta.overrides.roster));
+  const roster = sorted(resolvedRoster);
   if (Object.keys(roster).length === 0) throw new Error(`${regulation.regulationId}: roster overrides must list every legal species.`);
 
   const learnsets: Record<string, RepoLearnset> = {};
   for (const id of Object.keys(roster)) {
-    const learnset = targetDelta.overrides.learnsets[id];
+    const learnset = resolvedLearnsets[id];
     if (!learnset) throw new Error(`${regulation.regulationId}: legal species "${id}" has no regulation learnset.`);
     learnsets[id] = learnset;
   }
@@ -130,7 +144,7 @@ function compile(regulation: RegulationDefinition): void {
   writeJson(join(outputDirectory, 'learnsets.json'), sorted(learnsets));
   writeJson(join(outputDirectory, 'moves.json'), selectEntries(resolvedMoves, legalMoveIds));
   writeJson(join(outputDirectory, 'abilities.json'), selectEntries(resolvedAbilities, legalAbilityIds));
-  writeJson(join(outputDirectory, 'items.json'), selectLegalItems(resolvedItems));
+  writeJson(join(outputDirectory, 'items.json'), sorted(resolvedItems));
 }
 
 function main(): void {

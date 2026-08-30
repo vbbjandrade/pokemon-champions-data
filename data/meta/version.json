@@ -8,12 +8,6 @@
     "abilities": 317,
     "items": 148
   },
-  "verifications": {
-    "pokemon": 1,
-    "moves": 0,
-    "abilities": 0,
-    "items": 0
-  },
   "sources": [
     "smogon/pokemon-showdown"
   ]

@@ -24,16 +24,14 @@ export interface RepoPokemon {
   canEvolve: boolean;
   genders: string[];
   baseStats: BaseStats | null;
-  source?: string;
-  verified?: boolean;
+  sources?: string[];
 }
 
 export interface RepoLearnset {
   dexNumber: number;
   form: string | null;
   moves: string[];
-  source?: string;
-  verified?: boolean;
+  sources?: string[];
 }
 
 import type {
@@ -136,8 +134,7 @@ export interface RepoMove {
   desc: string | null;
   shortDesc: string | null;
   flags?: MoveFlags;
-  source?: string;
-  verified?: boolean;
+  sources?: string[];
 }
 
 /** Internal type used during parsing/merging; `isNonstandard` is stripped before output. */
@@ -156,8 +153,7 @@ export interface RepoAbility {
   desc: string | null;
   shortDesc: string | null;
   flags?: AbilityFlags;
-  source?: string;
-  verified?: boolean;
+  sources?: string[];
 }
 
 /** Declarative item properties preserved from the synced Showdown types. */
@@ -204,8 +200,7 @@ export interface RepoItem {
   shortDesc: string | null;
   flags?: ItemFlags;
   isNonstandard?: string | null;
-  source?: string;
-  verified?: boolean;
+  sources?: string[];
 }
 
 export interface VersionInfo {
@@ -219,25 +214,20 @@ export interface VersionInfo {
     abilities: number;
     items: number;
   };
-  verifications: {
-    pokemon: number;
-    moves: number;
-    abilities: number;
-    items: number;
-  };
 }
 
 export interface RegulationDelta {
   regulationId: string;
   regulationName: string;
+  baseRegulationId: string | null;
   begin: string | null;
   end: string | null;
   overrides: {
-    roster: Record<string, Partial<RepoPokemon>>;
-    learnsets: Record<string, RepoLearnset>;
-    moves: Record<string, Partial<RepoMove>>;
-    abilities: Record<string, Partial<RepoAbility>>;
-    items: Record<string, Partial<RepoItem>>;
+    roster: Record<string, Partial<RepoPokemon> | null>;
+    learnsets: Record<string, Partial<RepoLearnset> | null>;
+    moves: Record<string, Partial<RepoMove> | null>;
+    abilities: Record<string, Partial<RepoAbility> | null>;
+    items: Record<string, Partial<RepoItem> | null>;
   };
 }
 
@@ -940,175 +930,4 @@ export function isDeepEqual(a: any, b: any): boolean {
   }
 
   return true;
-}
-
-export interface SyncLogEntry {
-  type: 'NEW' | 'REMOVED_OR_MISSING' | 'UPDATED' | 'DIVERGENT' | 'UNCHANGED';
-  collection: string;
-  id: string;
-  name?: string;
-  message: string;
-  diffDetails?: string;
-}
-
-export interface SyncResult<T> {
-  result: Record<string, T>;
-  logs: SyncLogEntry[];
-  stats: {
-    total: number;
-    newCount: number;
-    updatedCount: number;
-    missingCount: number;
-    unchangedCount: number;
-    unverifiedCount: number;
-  };
-}
-
-/**
- * Synchronizes Showdown-derived data against existing repository data adhering to verification rules:
- * - If NOT in repo but IS in Showdown: add with verified = false.
- * - If IS in repo but NOT in Showdown: mark verified = false.
- * - If IS in both: deep compare payloads (excluding source & verified).
- * - If identical: keep repo entry (and its verified flag).
- * - If different: update payload, keep custom source if present, mark verified = false.
- */
-export function syncCollection<T extends { source?: string; verified?: boolean; name?: string;[key: string]: any }>(
-  collectionName: string,
-  repoData: Record<string, T>,
-  showdownData: Record<string, T>,
-  defaultSource = SHOWDOWN_SOURCE,
-  keyOrder?: string[]
-): SyncResult<T> {
-  const result: Record<string, T> = {};
-  const logs: SyncLogEntry[] = [];
-
-  let newCount = 0;
-  let updatedCount = 0;
-  let missingCount = 0;
-  let unchangedCount = 0;
-  let unverifiedCount = 0;
-
-  // 1. Check for items present in repo but missing from Showdown
-  for (const [id, repoEntry] of Object.entries(repoData)) {
-    if (!(id in showdownData)) {
-      const unverifiedEntry = {
-        ...repoEntry,
-        verified: false,
-      };
-      result[id] = unverifiedEntry;
-      missingCount++;
-      unverifiedCount++;
-      logs.push({
-        type: 'REMOVED_OR_MISSING',
-        collection: collectionName,
-        id,
-        name: repoEntry.name,
-        message: `Exists in repo but missing from Showdown. Marked as unverified for review.`,
-      });
-    }
-  }
-
-  // 2. Process Showdown entries against repo entries
-  for (const [id, sdEntry] of Object.entries(showdownData)) {
-    if (!(id in repoData)) {
-      // New entry from Showdown
-      const newEntry = {
-        ...sdEntry,
-        source: sdEntry.source ?? defaultSource,
-        verified: false,
-      };
-      result[id] = newEntry;
-      newCount++;
-      unverifiedCount++;
-      logs.push({
-        type: 'NEW',
-        collection: collectionName,
-        id,
-        name: sdEntry.name,
-        message: `New entry added from Showdown. Marked as unverified.`,
-      });
-    } else {
-      // Entry exists in both: deep compare payloads ignoring source and verified
-      const repoEntry = repoData[id]!;
-      const { source: repoSource, verified: repoVerified, ...repoPayload } = repoEntry;
-      const { source: _sdSource, verified: _sdVerified, ...sdPayload } = sdEntry;
-
-      const identical = isDeepEqual(repoPayload, sdPayload);
-
-      if (identical) {
-        result[id] = {
-          ...sdEntry,
-          source: repoSource ?? defaultSource,
-          verified: Boolean(repoVerified),
-        };
-        unchangedCount++;
-        if (!repoVerified) unverifiedCount++;
-        logs.push({
-          type: 'UNCHANGED',
-          collection: collectionName,
-          id,
-          name: sdEntry.name,
-          message: `Identical to repo data. Kept existing verification (${Boolean(repoVerified)}).`,
-        });
-      } else {
-        // Values changed
-        const isCustomSource = repoSource && repoSource !== defaultSource;
-        const finalSource = isCustomSource ? repoSource : defaultSource;
-
-        result[id] = {
-          ...sdEntry,
-          source: finalSource,
-          verified: false,
-        };
-        updatedCount++;
-        unverifiedCount++;
-
-        const logType = isCustomSource ? 'DIVERGENT' : 'UPDATED';
-        const msg = isCustomSource
-          ? `Divergent values found between repo (source: "${repoSource}") and Showdown. Marked as unverified for manual review.`
-          : `Values updated from Showdown. Marked as unverified.`;
-
-        logs.push({
-          type: logType,
-          collection: collectionName,
-          id,
-          name: sdEntry.name,
-          message: msg,
-        });
-      }
-    }
-  }
-
-  // Determine final key ordering: use custom keyOrder if provided, otherwise alphabetical
-  const sortedResult: Record<string, T> = {};
-  if (keyOrder && keyOrder.length > 0) {
-    const keySet = new Set(Object.keys(result));
-    for (const key of keyOrder) {
-      if (keySet.has(key)) {
-        sortedResult[key] = result[key]!;
-        keySet.delete(key);
-      }
-    }
-    // Append any remaining keys alphabetically
-    for (const key of Array.from(keySet).sort()) {
-      sortedResult[key] = result[key]!;
-    }
-  } else {
-    for (const key of Object.keys(result).sort()) {
-      sortedResult[key] = result[key]!;
-    }
-  }
-
-  return {
-    result: sortedResult,
-    logs,
-    stats: {
-      total: Object.keys(sortedResult).length,
-      newCount,
-      updatedCount,
-      missingCount,
-      unchangedCount,
-      unverifiedCount,
-    },
-  };
 }
