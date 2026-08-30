@@ -58,7 +58,7 @@
       "spe": 80
     },
     "source": "smogon/pokemon-showdown",
-    "verified": false
+    "verified": true
   },
   "charizard": {
     "dexNumber": 6,

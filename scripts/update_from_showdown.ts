@@ -205,6 +205,20 @@ Options:
   const dryRun = Boolean(values['dry-run']);
   const logFile = values['log-file']!;
   const logger = new UpdateLogger(logFile);
+  const sources: string[] = [];
+
+  function addUniqueSources<T extends { source?: string }>(collection: Record<string, T>): void {
+    for (const entry of Object.values(collection)) {
+      const source = entry.source;
+      if (source && source !== SHOWDOWN_SOURCE && !sources.includes(source)) {
+        sources.push(source);
+      }
+    }
+  }
+
+  function countVerified<T extends { verified?: boolean }>(collection: Record<string, T>): number {
+    return Object.values(collection).filter((entry) => entry.verified === true).length;
+  }
 
   logger.log(`\n========================================================`);
   logger.log(`Pokemon Champions Data Update from Showdown Sources`);
@@ -228,19 +242,22 @@ Options:
   const repoAbilities = loadJson<Record<string, RepoAbility>>('data/abilities/abilities.json', {});
   const repoItems = loadJson<Record<string, RepoItem>>('data/items/items.json', {});
   const repoVersion = loadJson<VersionInfo>('data/meta/version.json', {
-    version: '1.4.0',
-    lastUpdated: '',
-    gameVersion: 'Pokemon Champions',
-    dataFormat: 'JSON',
-    sources: [],
-    counts: {
+    lastUpdated: '08/04/2026',
+    gameVersion: '1.0.0',
+    latestRegulation: 'M-A',
+    records: {
       pokemon: 0,
+      moves: 0,
       abilities: 0,
       items: 0,
-      natures: 25,
-      types: 18,
     },
-    regulation: 'M-B',
+    verifications: {
+      pokemon: 0,
+      moves: 0,
+      abilities: 0,
+      items: 0
+    },
+    sources: [],
   });
 
   // 3. Dynamically import Showdown data files
@@ -294,6 +311,7 @@ Options:
   });
 
   const syncedRoster = syncCollection('Roster', repoRoster, sdParsedDex, SHOWDOWN_SOURCE, dexOrder);
+  addUniqueSources(syncedRoster.result);
   logger.addSyncLogs(syncedRoster.logs);
   logger.info(
     `Roster summary: ${syncedRoster.stats.total} total, ${syncedRoster.stats.newCount} new, ${syncedRoster.stats.updatedCount} updated, ${syncedRoster.stats.unchangedCount} unchanged, ${syncedRoster.stats.missingCount} missing from Showdown.`
@@ -398,6 +416,7 @@ Options:
   );
 
   const syncedMoves = syncCollection('Moves', repoMoves, usedMoves, SHOWDOWN_SOURCE);
+  addUniqueSources(syncedMoves.result);
   logger.addSyncLogs(syncedMoves.logs);
   logger.info(
     `Moves summary: ${syncedMoves.stats.total} total, ${syncedMoves.stats.newCount} new, ${syncedMoves.stats.updatedCount} updated, ${syncedMoves.stats.unchangedCount} unchanged.`
@@ -453,6 +472,7 @@ Options:
   }
 
   const syncedAbilities = syncCollection('Abilities', repoAbilities, legalAbilities, SHOWDOWN_SOURCE);
+  addUniqueSources(syncedAbilities.result);
   logger.addSyncLogs(syncedAbilities.logs);
   logger.info(
     `Abilities summary: ${syncedAbilities.stats.total} total, ${syncedAbilities.stats.newCount} new, ${syncedAbilities.stats.updatedCount} updated, ${syncedAbilities.stats.unchangedCount} unchanged.`
@@ -511,6 +531,7 @@ Options:
   }
 
   const syncedItems = syncCollection('Items', repoItems, legalItems, SHOWDOWN_SOURCE);
+  addUniqueSources(syncedItems.result);
   logger.addSyncLogs(syncedItems.logs);
   logger.info(
     `Items summary: ${syncedItems.stats.total} total, ${syncedItems.stats.newCount} new, ${syncedItems.stats.updatedCount} updated, ${syncedItems.stats.unchangedCount} unchanged.`
@@ -523,19 +544,19 @@ Options:
   const updatedVersion: VersionInfo = {
     ...repoVersion,
     lastUpdated: today,
-    sources: [
-      'smogon/pokemon-showdown',
-    ],
-    counts: {
+    records: {
       pokemon: Object.keys(syncedRoster.result).length,
       moves: Object.keys(syncedMoves.result).length,
-      movesInChampions: Object.keys(syncedMoves.result).length,
-      movesTotal: Object.keys(MovesMain).length,
       abilities: Object.keys(syncedAbilities.result).length,
       items: Object.keys(syncedItems.result).length,
-      natures: repoVersion.counts?.natures ?? 25,
-      types: 18,
     },
+    verifications: {
+      pokemon: countVerified(syncedRoster.result),
+      moves: countVerified(syncedMoves.result),
+      abilities: countVerified(syncedAbilities.result),
+      items: countVerified(syncedItems.result),
+    },
+    sources: [...sources, SHOWDOWN_SOURCE],
   };
 
   // ---------------------------------------------------------------------------

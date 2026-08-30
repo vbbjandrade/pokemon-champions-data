@@ -209,25 +209,22 @@ export interface RepoItem {
 }
 
 export interface VersionInfo {
-  version: string;
   lastUpdated: string;
-  gameVersion: string;
-  dataFormat: string;
   sources: string[];
-  verification?: Record<string, any>;
-  counts: {
+  gameVersion: string;
+  latestRegulation: string;
+  records: {
     pokemon: number;
-    moves?: number;
-    movesInChampions?: number;
-    movesTotal?: number;
+    moves: number;
     abilities: number;
     items: number;
-    natures: number;
-    types: number;
-    [key: string]: any;
   };
-  regulation: string;
-  [key: string]: any;
+  verifications: {
+    pokemon: number;
+    moves: number;
+    abilities: number;
+    items: number;
+  };
 }
 
 export const SHOWDOWN_SOURCE = 'smogon/pokemon-showdown';

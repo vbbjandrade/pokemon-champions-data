@@ -1,3 +1,4 @@
+<!-- TODO: expand -->
 # Stat Formula
 
 ## Base Stats
@@ -28,11 +29,6 @@ $$ HP=Base+StatPoints+75 $$
 
 $$ OtherStat=(Base+StatPoints+20) \times Alignment $$
 
-where:
-    Base is 
-    Alignment is .
-     
-
 Where:
 - `Base` = the species' base value for that stat.
 - `Alignment` = 0.9 if the Pokémon's stat alignment lowers that stat, 1.1 if it raises that stat, and 1 otherwise
@@ -40,11 +36,12 @@ Where:
 
 ## Battle Level
 
-Champions competitive play uses **Level 50** for all ranked battles. At Level 50:
+Champions competitive play uses **Level 50** for all ranked battles.
 
-- Every 4 EVs in a stat equals +1 to that stat's final value
-- Base stats have approximately 2x impact on the final value compared to EVs
-- Nature modifiers affect the final stat, not the base
+## In-battle calculations
+
+- TODO: explain base stats at Lvl 50
+- TODO: explain stat modifier order
 
 ## Sources
 

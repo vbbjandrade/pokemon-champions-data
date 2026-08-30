@@ -1,3 +1,5 @@
+<!-- TODO: format and expand -->
+
 List of Changes to Status Conditions
 
 Condition	Prior Effect	New Effect

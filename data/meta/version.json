@@ -1,40 +1,20 @@
 {
-  "version": "1.4.0",
   "lastUpdated": "2026-08-30",
-  "gameVersion": "Pokemon Champions",
-  "dataFormat": "JSON",
-  "sources": [
-    "smogon/pokemon-showdown"
-  ],
-  "verification": {
-    "description": "All data has been cross-referenced against Serebii's Champions pages or in-game data verified by contributors.",
-    "stats": {
-      "pokemon_verified": 258,
-      "pokemon_total": 258,
-      "abilities_verified": 191,
-      "abilities_total": 191,
-      "moves_verified": 900,
-      "moves_in_champions": 494,
-      "moves_total": 900,
-      "learnsets_verified": 258,
-      "learnsets_total": 258
-    },
-    "moveCorrectionSummary": {
-      "ppChanges": 399,
-      "powerChanges": 12,
-      "accuracyChanges": 2,
-      "notInChampions": 406
-    }
-  },
-  "counts": {
+  "gameVersion": "1.1.5",
+  "latestRegulation": "M-B",
+  "records": {
     "pokemon": 310,
     "moves": 496,
-    "movesInChampions": 496,
-    "movesTotal": 954,
     "abilities": 317,
-    "items": 148,
-    "natures": 25,
-    "types": 18
+    "items": 148
   },
-  "regulation": "M-B"
+  "verifications": {
+    "pokemon": 1,
+    "moves": 0,
+    "abilities": 0,
+    "items": 0
+  },
+  "sources": [
+    "smogon/pokemon-showdown"
+  ]
 }
