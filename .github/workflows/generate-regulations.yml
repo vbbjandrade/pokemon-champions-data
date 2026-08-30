@@ -31,7 +31,7 @@ jobs:
 
       - name: Commit generated data
         run: |
-          git add data/master data/regm-a data/regm-b dist
+          git add -f data/master data/regm-a data/regm-b dist
           if git diff --cached --quiet; then
             exit 0
           fi
