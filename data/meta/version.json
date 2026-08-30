@@ -1,6 +1,6 @@
 {
   "version": "1.4.0",
-  "lastUpdated": "2026-08-27",
+  "lastUpdated": "2026-08-30",
   "gameVersion": "Pokemon Champions",
   "dataFormat": "JSON",
   "sources": [
@@ -28,10 +28,11 @@
   },
   "counts": {
     "pokemon": 310,
-    "movesInChampions": 500,
-    "movesTotal": 900,
-    "abilities": 201,
-    "items": 583,
+    "moves": 496,
+    "movesInChampions": 496,
+    "movesTotal": 954,
+    "abilities": 319,
+    "items": 148,
     "natures": 25,
     "types": 18
   },

@@ -8,8 +8,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Overgrow",
-      "H": "Chlorophyll"
+      "0": "overgrow",
+      "H": "chlorophyll"
     },
     "weightKg": 100,
     "requiredItem": null,
@@ -19,7 +19,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 82,
+      "def": 83,
+      "spa": 100,
+      "spd": 100,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -32,9 +39,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Thick Fat"
+      "0": "thickfat"
     },
-    "weightKg": 155,
+    "weightKg": 155.5,
     "requiredItem": "Venusaurite",
     "requiredMove": null,
     "canEvolve": false,
@@ -42,7 +49,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 100,
+      "def": 123,
+      "spa": 122,
+      "spd": 120,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -55,10 +69,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Blaze",
-      "H": "Solar Power"
+      "0": "blaze",
+      "H": "solarpower"
     },
-    "weightKg": 90,
+    "weightKg": 90.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -66,7 +80,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 78,
+      "atk": 84,
+      "def": 78,
+      "spa": 109,
+      "spd": 85,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -79,9 +100,9 @@
     ],
     "form": "Mega-X",
     "abilities": {
-      "0": "Tough Claws"
+      "0": "toughclaws"
     },
-    "weightKg": 110,
+    "weightKg": 110.5,
     "requiredItem": "Charizardite X",
     "requiredMove": null,
     "canEvolve": false,
@@ -89,7 +110,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 78,
+      "atk": 130,
+      "def": 111,
+      "spa": 130,
+      "spd": 85,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -102,9 +130,9 @@
     ],
     "form": "Mega-Y",
     "abilities": {
-      "0": "Drought"
+      "0": "drought"
     },
-    "weightKg": 100,
+    "weightKg": 100.5,
     "requiredItem": "Charizardite Y",
     "requiredMove": null,
     "canEvolve": false,
@@ -112,7 +140,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 78,
+      "atk": 104,
+      "def": 78,
+      "spa": 159,
+      "spd": 115,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -124,10 +159,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Torrent",
-      "H": "Rain Dish"
+      "0": "torrent",
+      "H": "raindish"
     },
-    "weightKg": 85,
+    "weightKg": 85.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -135,7 +170,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 79,
+      "atk": 83,
+      "def": 100,
+      "spa": 85,
+      "spd": 105,
+      "spe": 78
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -147,9 +189,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Mega Launcher"
+      "0": "megalauncher"
     },
-    "weightKg": 101,
+    "weightKg": 101.1,
     "requiredItem": "Blastoisinite",
     "requiredMove": null,
     "canEvolve": false,
@@ -157,7 +199,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 79,
+      "atk": 103,
+      "def": 120,
+      "spa": 135,
+      "spd": 115,
+      "spe": 78
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -170,10 +219,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Swarm",
-      "H": "Sniper"
+      "0": "swarm",
+      "H": "sniper"
     },
-    "weightKg": 29,
+    "weightKg": 29.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -181,7 +230,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 90,
+      "def": 40,
+      "spa": 45,
+      "spd": 80,
+      "spe": 75
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -194,9 +250,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Adaptability"
+      "0": "adaptability"
     },
-    "weightKg": 40,
+    "weightKg": 40.5,
     "requiredItem": "Beedrillite",
     "requiredMove": null,
     "canEvolve": false,
@@ -204,7 +260,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 150,
+      "def": 40,
+      "spa": 15,
+      "spd": 80,
+      "spe": 145
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -217,11 +280,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Keen Eye",
-      "1": "Tangled Feet",
-      "H": "Big Pecks"
+      "0": "keeneye",
+      "1": "tangledfeet",
+      "H": "bigpecks"
     },
-    "weightKg": 39,
+    "weightKg": 39.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -229,7 +292,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 83,
+      "atk": 80,
+      "def": 75,
+      "spa": 70,
+      "spd": 70,
+      "spe": 101
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -242,9 +312,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "No Guard"
+      "0": "noguard"
     },
-    "weightKg": 50,
+    "weightKg": 50.5,
     "requiredItem": "Pidgeotite",
     "requiredMove": null,
     "canEvolve": false,
@@ -252,7 +322,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 83,
+      "atk": 80,
+      "def": 80,
+      "spa": 135,
+      "spd": 80,
+      "spe": 121
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -264,9 +341,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Intimidate",
-      "1": "Shed Skin",
-      "H": "Unnerve"
+      "0": "intimidate",
+      "1": "shedskin",
+      "H": "unnerve"
     },
     "weightKg": 65,
     "requiredItem": null,
@@ -276,7 +353,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 95,
+      "def": 69,
+      "spa": 65,
+      "spd": 79,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -288,8 +372,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Static",
-      "H": "Lightning Rod"
+      "0": "static",
+      "H": "lightningrod"
     },
     "weightKg": 6,
     "requiredItem": null,
@@ -299,7 +383,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 35,
+      "atk": 55,
+      "def": 40,
+      "spa": 50,
+      "spd": 50,
+      "spe": 90
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -311,8 +402,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Static",
-      "H": "Lightning Rod"
+      "0": "static",
+      "H": "lightningrod"
     },
     "weightKg": 30,
     "requiredItem": null,
@@ -322,7 +413,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 90,
+      "def": 55,
+      "spa": 90,
+      "spd": 80,
+      "spe": 110
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -335,7 +433,7 @@
     ],
     "form": "Alola",
     "abilities": {
-      "0": "Surge Surfer"
+      "0": "surgesurfer"
     },
     "weightKg": 21,
     "requiredItem": null,
@@ -345,7 +443,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 85,
+      "def": 50,
+      "spa": 95,
+      "spd": 85,
+      "spe": 110
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -357,7 +462,7 @@
     ],
     "form": "Mega-X",
     "abilities": {
-      "0": "Electric Surge"
+      "0": "electricsurge"
     },
     "weightKg": 38,
     "requiredItem": "Raichunite X",
@@ -367,7 +472,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 135,
+      "def": 95,
+      "spa": 90,
+      "spd": 95,
+      "spe": 110
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -379,7 +491,7 @@
     ],
     "form": "Mega-Y",
     "abilities": {
-      "0": "No Guard"
+      "0": "noguard"
     },
     "weightKg": 26,
     "requiredItem": "Raichunite Y",
@@ -389,7 +501,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 100,
+      "def": 55,
+      "spa": 160,
+      "spd": 80,
+      "spe": 130
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -401,9 +520,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Cute Charm",
-      "1": "Magic Guard",
-      "H": "Unaware"
+      "0": "cutecharm",
+      "1": "magicguard",
+      "H": "unaware"
     },
     "weightKg": 40,
     "requiredItem": null,
@@ -413,7 +532,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 70,
+      "def": 73,
+      "spa": 95,
+      "spd": 90,
+      "spe": 60
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -426,9 +552,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Magic Bounce"
+      "0": "magicbounce"
     },
-    "weightKg": 42,
+    "weightKg": 42.3,
     "requiredItem": "Clefablite",
     "requiredMove": null,
     "canEvolve": false,
@@ -436,7 +562,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 80,
+      "def": 93,
+      "spa": 135,
+      "spd": 110,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -448,10 +581,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Flash Fire",
-      "H": "Drought"
+      "0": "flashfire",
+      "H": "drought"
     },
-    "weightKg": 19,
+    "weightKg": 19.9,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -459,7 +592,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 73,
+      "atk": 76,
+      "def": 75,
+      "spa": 81,
+      "spd": 100,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -472,10 +612,10 @@
     ],
     "form": "Alola",
     "abilities": {
-      "0": "Snow Cloak",
-      "H": "Snow Warning"
+      "0": "snowcloak",
+      "H": "snowwarning"
     },
-    "weightKg": 19,
+    "weightKg": 19.9,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -483,7 +623,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 73,
+      "atk": 67,
+      "def": 75,
+      "spa": 81,
+      "spd": 100,
+      "spe": 109
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -496,10 +643,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Chlorophyll",
-      "H": "Effect Spore"
+      "0": "chlorophyll",
+      "H": "effectspore"
     },
-    "weightKg": 18,
+    "weightKg": 18.6,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -507,7 +654,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 80,
+      "def": 85,
+      "spa": 110,
+      "spd": 90,
+      "spe": 50
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -519,9 +673,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Intimidate",
-      "1": "Flash Fire",
-      "H": "Justified"
+      "0": "intimidate",
+      "1": "flashfire",
+      "H": "justified"
     },
     "weightKg": 155,
     "requiredItem": null,
@@ -531,7 +685,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 90,
+      "atk": 110,
+      "def": 80,
+      "spa": 100,
+      "spd": 80,
+      "spe": 95
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -544,9 +705,9 @@
     ],
     "form": "Hisui",
     "abilities": {
-      "0": "Intimidate",
-      "1": "Flash Fire",
-      "H": "Rock Head"
+      "0": "intimidate",
+      "1": "flashfire",
+      "H": "rockhead"
     },
     "weightKg": 168,
     "requiredItem": null,
@@ -556,7 +717,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 115,
+      "def": 80,
+      "spa": 95,
+      "spd": 80,
+      "spe": 90
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -568,9 +736,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Synchronize",
-      "1": "Inner Focus",
-      "H": "Magic Guard"
+      "0": "synchronize",
+      "1": "innerfocus",
+      "H": "magicguard"
     },
     "weightKg": 48,
     "requiredItem": null,
@@ -580,7 +748,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 55,
+      "atk": 50,
+      "def": 45,
+      "spa": 135,
+      "spd": 95,
+      "spe": 120
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -592,7 +767,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Trace"
+      "0": "trace"
     },
     "weightKg": 48,
     "requiredItem": "Alakazite",
@@ -602,7 +777,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 55,
+      "atk": 50,
+      "def": 65,
+      "spa": 175,
+      "spd": 105,
+      "spe": 150
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -614,9 +796,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Guts",
-      "1": "No Guard",
-      "H": "Steadfast"
+      "0": "guts",
+      "1": "noguard",
+      "H": "steadfast"
     },
     "weightKg": 130,
     "requiredItem": null,
@@ -626,7 +808,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 90,
+      "atk": 130,
+      "def": 80,
+      "spa": 65,
+      "spd": 85,
+      "spe": 55
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -639,10 +828,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Chlorophyll",
-      "H": "Gluttony"
+      "0": "chlorophyll",
+      "H": "gluttony"
     },
-    "weightKg": 15,
+    "weightKg": 15.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -650,7 +839,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 105,
+      "def": 65,
+      "spa": 100,
+      "spd": 70,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -663,9 +859,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Innards Out"
+      "0": "innardsout"
     },
-    "weightKg": 125,
+    "weightKg": 125.5,
     "requiredItem": "Victreebelite",
     "requiredMove": null,
     "canEvolve": false,
@@ -673,7 +869,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 125,
+      "def": 85,
+      "spa": 135,
+      "spd": 95,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -686,11 +889,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Oblivious",
-      "1": "Own Tempo",
-      "H": "Regenerator"
+      "0": "oblivious",
+      "1": "owntempo",
+      "H": "regenerator"
     },
-    "weightKg": 78,
+    "weightKg": 78.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -698,7 +901,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 75,
+      "def": 110,
+      "spa": 100,
+      "spd": 80,
+      "spe": 30
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -711,7 +921,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Shell Armor"
+      "0": "shellarmor"
     },
     "weightKg": 120,
     "requiredItem": "Slowbronite",
@@ -721,7 +931,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 75,
+      "def": 180,
+      "spa": 130,
+      "spd": 80,
+      "spe": 30
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -734,11 +951,11 @@
     ],
     "form": "Galar",
     "abilities": {
-      "0": "Quick Draw",
-      "1": "Own Tempo",
-      "H": "Regenerator"
+      "0": "quickdraw",
+      "1": "owntempo",
+      "H": "regenerator"
     },
-    "weightKg": 70,
+    "weightKg": 70.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -746,7 +963,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 100,
+      "def": 95,
+      "spa": 100,
+      "spd": 70,
+      "spe": 30
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -759,9 +983,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Cursed Body"
+      "0": "cursedbody"
     },
-    "weightKg": 40,
+    "weightKg": 40.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -769,7 +993,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 65,
+      "def": 60,
+      "spa": 130,
+      "spd": 75,
+      "spe": 110
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -782,9 +1013,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Shadow Tag"
+      "0": "shadowtag"
     },
-    "weightKg": 40,
+    "weightKg": 40.5,
     "requiredItem": "Gengarite",
     "requiredMove": null,
     "canEvolve": false,
@@ -792,7 +1023,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 65,
+      "def": 80,
+      "spa": 170,
+      "spd": 95,
+      "spe": 130
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -804,9 +1042,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Early Bird",
-      "1": "Scrappy",
-      "H": "Inner Focus"
+      "0": "earlybird",
+      "1": "scrappy",
+      "H": "innerfocus"
     },
     "weightKg": 80,
     "requiredItem": null,
@@ -815,7 +1053,14 @@
     "genders": [
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 105,
+      "atk": 95,
+      "def": 80,
+      "spa": 40,
+      "spd": 80,
+      "spe": 90
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -827,7 +1072,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Parental Bond"
+      "0": "parentalbond"
     },
     "weightKg": 100,
     "requiredItem": "Kangaskhanite",
@@ -836,7 +1081,14 @@
     "genders": [
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 105,
+      "atk": 125,
+      "def": 100,
+      "spa": 60,
+      "spd": 100,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -849,9 +1101,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Illuminate",
-      "1": "Natural Cure",
-      "H": "Analytic"
+      "0": "illuminate",
+      "1": "naturalcure",
+      "H": "analytic"
     },
     "weightKg": 80,
     "requiredItem": null,
@@ -860,7 +1112,14 @@
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 75,
+      "def": 85,
+      "spa": 100,
+      "spd": 85,
+      "spe": 115
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -873,7 +1132,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Huge Power"
+      "0": "hugepower"
     },
     "weightKg": 80,
     "requiredItem": "Starminite",
@@ -882,7 +1141,14 @@
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 100,
+      "def": 105,
+      "spa": 130,
+      "spd": 105,
+      "spe": 120
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -894,9 +1160,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Hyper Cutter",
-      "1": "Mold Breaker",
-      "H": "Moxie"
+      "0": "hypercutter",
+      "1": "moldbreaker",
+      "H": "moxie"
     },
     "weightKg": 55,
     "requiredItem": null,
@@ -906,7 +1172,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 125,
+      "def": 100,
+      "spa": 55,
+      "spd": 70,
+      "spe": 85
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -919,7 +1192,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Aerilate"
+      "0": "aerilate"
     },
     "weightKg": 59,
     "requiredItem": "Pinsirite",
@@ -929,7 +1202,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 155,
+      "def": 120,
+      "spa": 65,
+      "spd": 90,
+      "spe": 105
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -941,18 +1221,25 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Intimidate",
-      "1": "Anger Point",
-      "H": "Sheer Force"
+      "0": "intimidate",
+      "1": "angerpoint",
+      "H": "sheerforce"
     },
-    "weightKg": 88,
+    "weightKg": 88.4,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "M"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 100,
+      "def": 95,
+      "spa": 40,
+      "spd": 70,
+      "spe": 110
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -964,9 +1251,9 @@
     ],
     "form": "Paldea-Combat",
     "abilities": {
-      "0": "Intimidate",
-      "1": "Anger Point",
-      "H": "Cud Chew"
+      "0": "intimidate",
+      "1": "angerpoint",
+      "H": "cudchew"
     },
     "weightKg": 115,
     "requiredItem": null,
@@ -975,7 +1262,14 @@
     "genders": [
       "M"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 110,
+      "def": 105,
+      "spa": 30,
+      "spd": 70,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -988,9 +1282,9 @@
     ],
     "form": "Paldea-Blaze",
     "abilities": {
-      "0": "Intimidate",
-      "1": "Anger Point",
-      "H": "Cud Chew"
+      "0": "intimidate",
+      "1": "angerpoint",
+      "H": "cudchew"
     },
     "weightKg": 85,
     "requiredItem": null,
@@ -999,7 +1293,14 @@
     "genders": [
       "M"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 110,
+      "def": 105,
+      "spa": 30,
+      "spd": 70,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1012,9 +1313,9 @@
     ],
     "form": "Paldea-Aqua",
     "abilities": {
-      "0": "Intimidate",
-      "1": "Anger Point",
-      "H": "Cud Chew"
+      "0": "intimidate",
+      "1": "angerpoint",
+      "H": "cudchew"
     },
     "weightKg": 110,
     "requiredItem": null,
@@ -1023,7 +1324,14 @@
     "genders": [
       "M"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 110,
+      "def": 105,
+      "spa": 30,
+      "spd": 70,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1036,8 +1344,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Intimidate",
-      "H": "Moxie"
+      "0": "intimidate",
+      "H": "moxie"
     },
     "weightKg": 235,
     "requiredItem": null,
@@ -1047,7 +1355,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 125,
+      "def": 79,
+      "spa": 60,
+      "spd": 100,
+      "spe": 81
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1060,7 +1375,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Mold Breaker"
+      "0": "moldbreaker"
     },
     "weightKg": 305,
     "requiredItem": "Gyaradosite",
@@ -1070,7 +1385,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 155,
+      "def": 109,
+      "spa": 70,
+      "spd": 130,
+      "spe": 81
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1082,8 +1404,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Limber",
-      "H": "Imposter"
+      "0": "limber",
+      "H": "imposter"
     },
     "weightKg": 4,
     "requiredItem": null,
@@ -1092,7 +1414,14 @@
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 48,
+      "atk": 48,
+      "def": 48,
+      "spa": 48,
+      "spd": 48,
+      "spe": 48
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1104,8 +1433,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Water Absorb",
-      "H": "Hydration"
+      "0": "waterabsorb",
+      "H": "hydration"
     },
     "weightKg": 29,
     "requiredItem": null,
@@ -1115,7 +1444,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 130,
+      "atk": 65,
+      "def": 60,
+      "spa": 110,
+      "spd": 95,
+      "spe": 65
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1127,10 +1463,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Volt Absorb",
-      "H": "Quick Feet"
+      "0": "voltabsorb",
+      "H": "quickfeet"
     },
-    "weightKg": 24,
+    "weightKg": 24.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1138,7 +1474,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 65,
+      "def": 60,
+      "spa": 110,
+      "spd": 95,
+      "spe": 130
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1150,8 +1493,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Flash Fire",
-      "H": "Guts"
+      "0": "flashfire",
+      "H": "guts"
     },
     "weightKg": 25,
     "requiredItem": null,
@@ -1161,7 +1504,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 130,
+      "def": 60,
+      "spa": 95,
+      "spd": 110,
+      "spe": 65
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1174,9 +1524,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Rock Head",
-      "1": "Pressure",
-      "H": "Unnerve"
+      "0": "rockhead",
+      "1": "pressure",
+      "H": "unnerve"
     },
     "weightKg": 59,
     "requiredItem": null,
@@ -1186,7 +1536,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 105,
+      "def": 65,
+      "spa": 60,
+      "spd": 75,
+      "spe": 130
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1199,7 +1556,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Tough Claws"
+      "0": "toughclaws"
     },
     "weightKg": 79,
     "requiredItem": "Aerodactylite",
@@ -1209,7 +1566,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 135,
+      "def": 85,
+      "spa": 70,
+      "spd": 95,
+      "spe": 150
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1221,9 +1585,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Immunity",
-      "1": "Thick Fat",
-      "H": "Gluttony"
+      "0": "immunity",
+      "1": "thickfat",
+      "H": "gluttony"
     },
     "weightKg": 460,
     "requiredItem": null,
@@ -1233,7 +1597,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 160,
+      "atk": 110,
+      "def": 65,
+      "spa": 65,
+      "spd": 110,
+      "spe": 30
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1246,8 +1617,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Inner Focus",
-      "H": "Multiscale"
+      "0": "innerfocus",
+      "H": "multiscale"
     },
     "weightKg": 210,
     "requiredItem": null,
@@ -1257,7 +1628,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 91,
+      "atk": 134,
+      "def": 95,
+      "spa": 100,
+      "spd": 100,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1270,7 +1648,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Multiscale"
+      "0": "multiscale"
     },
     "weightKg": 290,
     "requiredItem": "Dragoninite",
@@ -1280,7 +1658,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 91,
+      "atk": 124,
+      "def": 115,
+      "spa": 145,
+      "spd": 125,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1292,10 +1677,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Overgrow",
-      "H": "Leaf Guard"
+      "0": "overgrow",
+      "H": "leafguard"
     },
-    "weightKg": 100,
+    "weightKg": 100.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1303,7 +1688,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 82,
+      "def": 100,
+      "spa": 83,
+      "spd": 100,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1316,7 +1708,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Mega Sol"
+      "0": "megasol"
     },
     "weightKg": 201,
     "requiredItem": "Meganiumite",
@@ -1326,7 +1718,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 92,
+      "def": 115,
+      "spa": 143,
+      "spd": 115,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1338,10 +1737,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Blaze",
-      "H": "Flash Fire"
+      "0": "blaze",
+      "H": "flashfire"
     },
-    "weightKg": 79,
+    "weightKg": 79.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1349,7 +1748,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 78,
+      "atk": 84,
+      "def": 78,
+      "spa": 109,
+      "spd": 85,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1362,10 +1768,10 @@
     ],
     "form": "Hisui",
     "abilities": {
-      "0": "Blaze",
-      "H": "Frisk"
+      "0": "blaze",
+      "H": "frisk"
     },
-    "weightKg": 69,
+    "weightKg": 69.8,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1373,7 +1779,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 73,
+      "atk": 84,
+      "def": 78,
+      "spa": 119,
+      "spd": 85,
+      "spe": 95
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1385,10 +1798,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Torrent",
-      "H": "Sheer Force"
+      "0": "torrent",
+      "H": "sheerforce"
     },
-    "weightKg": 88,
+    "weightKg": 88.8,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1396,7 +1809,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 105,
+      "def": 100,
+      "spa": 79,
+      "spd": 83,
+      "spe": 78
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1409,9 +1829,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Dragonize"
+      "0": "dragonize"
     },
-    "weightKg": 108,
+    "weightKg": 108.8,
     "requiredItem": "Feraligite",
     "requiredMove": null,
     "canEvolve": false,
@@ -1419,7 +1839,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 160,
+      "def": 125,
+      "spa": 89,
+      "spd": 93,
+      "spe": 78
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1432,11 +1859,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Swarm",
-      "1": "Insomnia",
-      "H": "Sniper"
+      "0": "swarm",
+      "1": "insomnia",
+      "H": "sniper"
     },
-    "weightKg": 33,
+    "weightKg": 33.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1444,7 +1871,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 90,
+      "def": 70,
+      "spa": 60,
+      "spd": 70,
+      "spe": 40
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1456,10 +1890,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Static",
-      "H": "Plus"
+      "0": "static",
+      "H": "plus"
     },
-    "weightKg": 61,
+    "weightKg": 61.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1467,7 +1901,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 90,
+      "atk": 75,
+      "def": 85,
+      "spa": 115,
+      "spd": 90,
+      "spe": 55
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1480,9 +1921,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Mold Breaker"
+      "0": "moldbreaker"
     },
-    "weightKg": 61,
+    "weightKg": 61.5,
     "requiredItem": "Ampharosite",
     "requiredMove": null,
     "canEvolve": false,
@@ -1490,7 +1931,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 90,
+      "atk": 95,
+      "def": 105,
+      "spa": 165,
+      "spd": 110,
+      "spe": 45
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1503,11 +1951,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Thick Fat",
-      "1": "Huge Power",
-      "H": "Sap Sipper"
+      "0": "thickfat",
+      "1": "hugepower",
+      "H": "sapsipper"
     },
-    "weightKg": 28,
+    "weightKg": 28.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1515,7 +1963,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 100,
+      "atk": 50,
+      "def": 80,
+      "spa": 60,
+      "spd": 80,
+      "spe": 50
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1527,11 +1982,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Water Absorb",
-      "1": "Damp",
-      "H": "Drizzle"
+      "0": "waterabsorb",
+      "1": "damp",
+      "H": "drizzle"
     },
-    "weightKg": 33,
+    "weightKg": 33.9,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1539,7 +1994,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 90,
+      "atk": 75,
+      "def": 75,
+      "spa": 90,
+      "spd": 100,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1551,10 +2013,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Synchronize",
-      "H": "Magic Bounce"
+      "0": "synchronize",
+      "H": "magicbounce"
     },
-    "weightKg": 26,
+    "weightKg": 26.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1562,7 +2024,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 65,
+      "def": 60,
+      "spa": 130,
+      "spd": 95,
+      "spe": 110
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1574,8 +2043,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Synchronize",
-      "H": "Inner Focus"
+      "0": "synchronize",
+      "H": "innerfocus"
     },
     "weightKg": 27,
     "requiredItem": null,
@@ -1585,7 +2054,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 65,
+      "def": 110,
+      "spa": 60,
+      "spd": 130,
+      "spe": 65
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1598,11 +2074,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Oblivious",
-      "1": "Own Tempo",
-      "H": "Regenerator"
+      "0": "oblivious",
+      "1": "owntempo",
+      "H": "regenerator"
     },
-    "weightKg": 79,
+    "weightKg": 79.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1610,7 +2086,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 75,
+      "def": 80,
+      "spa": 100,
+      "spd": 110,
+      "spe": 30
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1623,11 +2106,11 @@
     ],
     "form": "Galar",
     "abilities": {
-      "0": "Curious Medicine",
-      "1": "Own Tempo",
-      "H": "Regenerator"
+      "0": "curiousmedicine",
+      "1": "owntempo",
+      "H": "regenerator"
     },
-    "weightKg": 79,
+    "weightKg": 79.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1635,7 +2118,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 65,
+      "def": 80,
+      "spa": 110,
+      "spd": 110,
+      "spe": 30
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1648,10 +2138,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Sturdy",
-      "H": "Overcoat"
+      "0": "sturdy",
+      "H": "overcoat"
     },
-    "weightKg": 125,
+    "weightKg": 125.8,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1659,7 +2149,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 90,
+      "def": 140,
+      "spa": 60,
+      "spd": 60,
+      "spe": 40
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1672,9 +2169,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Rock Head",
-      "1": "Sturdy",
-      "H": "Sheer Force"
+      "0": "rockhead",
+      "1": "sturdy",
+      "H": "sheerforce"
     },
     "weightKg": 400,
     "requiredItem": null,
@@ -1684,7 +2181,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 85,
+      "def": 200,
+      "spa": 55,
+      "spd": 65,
+      "spe": 30
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1697,7 +2201,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Sand Force"
+      "0": "sandforce"
     },
     "weightKg": 740,
     "requiredItem": "Steelixite",
@@ -1707,7 +2211,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 125,
+      "def": 230,
+      "spa": 55,
+      "spd": 95,
+      "spe": 30
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1720,11 +2231,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Poison Point",
-      "1": "Swift Swim",
-      "H": "Intimidate"
+      "0": "poisonpoint",
+      "1": "swiftswim",
+      "H": "intimidate"
     },
-    "weightKg": 3,
+    "weightKg": 3.9,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1732,7 +2243,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 95,
+      "def": 85,
+      "spa": 55,
+      "spd": 55,
+      "spe": 85
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1745,9 +2263,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Swarm",
-      "1": "Technician",
-      "H": "Light Metal"
+      "0": "swarm",
+      "1": "technician",
+      "H": "lightmetal"
     },
     "weightKg": 118,
     "requiredItem": null,
@@ -1757,7 +2275,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 130,
+      "def": 100,
+      "spa": 55,
+      "spd": 80,
+      "spe": 65
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1770,7 +2295,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Technician"
+      "0": "technician"
     },
     "weightKg": 125,
     "requiredItem": "Scizorite",
@@ -1780,7 +2305,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 150,
+      "def": 140,
+      "spa": 65,
+      "spd": 100,
+      "spe": 75
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1793,9 +2325,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Swarm",
-      "1": "Guts",
-      "H": "Moxie"
+      "0": "swarm",
+      "1": "guts",
+      "H": "moxie"
     },
     "weightKg": 54,
     "requiredItem": null,
@@ -1805,7 +2337,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 125,
+      "def": 75,
+      "spa": 40,
+      "spd": 95,
+      "spe": 85
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1818,9 +2357,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Skill Link"
+      "0": "skilllink"
     },
-    "weightKg": 62,
+    "weightKg": 62.5,
     "requiredItem": "Heracronite",
     "requiredMove": null,
     "canEvolve": false,
@@ -1828,7 +2367,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 185,
+      "def": 115,
+      "spa": 40,
+      "spd": 105,
+      "spe": 75
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1841,11 +2387,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Keen Eye",
-      "1": "Sturdy",
-      "H": "Weak Armor"
+      "0": "keeneye",
+      "1": "sturdy",
+      "H": "weakarmor"
     },
-    "weightKg": 50,
+    "weightKg": 50.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1853,7 +2399,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 80,
+      "def": 140,
+      "spa": 40,
+      "spd": 70,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1866,9 +2419,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Stalwart"
+      "0": "stalwart"
     },
-    "weightKg": 40,
+    "weightKg": 40.4,
     "requiredItem": "Skarmorite",
     "requiredMove": null,
     "canEvolve": false,
@@ -1876,7 +2429,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 140,
+      "def": 110,
+      "spa": 40,
+      "spd": 100,
+      "spe": 110
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1889,9 +2449,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Early Bird",
-      "1": "Flash Fire",
-      "H": "Unnerve"
+      "0": "earlybird",
+      "1": "flashfire",
+      "H": "unnerve"
     },
     "weightKg": 35,
     "requiredItem": null,
@@ -1901,7 +2461,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 90,
+      "def": 50,
+      "spa": 110,
+      "spd": 80,
+      "spe": 95
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1914,9 +2481,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Solar Power"
+      "0": "solarpower"
     },
-    "weightKg": 49,
+    "weightKg": 49.5,
     "requiredItem": "Houndoominite",
     "requiredMove": null,
     "canEvolve": false,
@@ -1924,7 +2491,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 90,
+      "def": 90,
+      "spa": 140,
+      "spd": 90,
+      "spe": 115
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1937,8 +2511,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Sand Stream",
-      "H": "Unnerve"
+      "0": "sandstream",
+      "H": "unnerve"
     },
     "weightKg": 202,
     "requiredItem": null,
@@ -1948,7 +2522,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 100,
+      "atk": 134,
+      "def": 110,
+      "spa": 95,
+      "spd": 100,
+      "spe": 61
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1961,7 +2542,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Sand Stream"
+      "0": "sandstream"
     },
     "weightKg": 255,
     "requiredItem": "Tyranitarite",
@@ -1971,7 +2552,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 100,
+      "atk": 164,
+      "def": 150,
+      "spa": 95,
+      "spd": 120,
+      "spe": 71
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -1983,10 +2571,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Overgrow",
-      "H": "Unburden"
+      "0": "overgrow",
+      "H": "unburden"
     },
-    "weightKg": 52,
+    "weightKg": 52.2,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -1994,7 +2582,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 85,
+      "def": 65,
+      "spa": 105,
+      "spd": 85,
+      "spe": 120
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2007,9 +2602,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Lightning Rod"
+      "0": "lightningrod"
     },
-    "weightKg": 55,
+    "weightKg": 55.2,
     "requiredItem": "Sceptilite",
     "requiredMove": null,
     "canEvolve": false,
@@ -2017,7 +2612,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 110,
+      "def": 75,
+      "spa": 145,
+      "spd": 85,
+      "spe": 145
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2030,8 +2632,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Blaze",
-      "H": "Speed Boost"
+      "0": "blaze",
+      "H": "speedboost"
     },
     "weightKg": 52,
     "requiredItem": null,
@@ -2041,7 +2643,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 120,
+      "def": 70,
+      "spa": 110,
+      "spd": 70,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2054,7 +2663,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Speed Boost"
+      "0": "speedboost"
     },
     "weightKg": 52,
     "requiredItem": "Blazikenite",
@@ -2064,7 +2673,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 160,
+      "def": 80,
+      "spa": 130,
+      "spd": 80,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2077,10 +2693,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Torrent",
-      "H": "Damp"
+      "0": "torrent",
+      "H": "damp"
     },
-    "weightKg": 81,
+    "weightKg": 81.9,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -2088,7 +2704,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 100,
+      "atk": 110,
+      "def": 90,
+      "spa": 85,
+      "spd": 90,
+      "spe": 60
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2101,7 +2724,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Swift Swim"
+      "0": "swiftswim"
     },
     "weightKg": 102,
     "requiredItem": "Swampertite",
@@ -2111,7 +2734,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 100,
+      "atk": 150,
+      "def": 110,
+      "spa": 95,
+      "spd": 110,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2124,9 +2754,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Keen Eye",
-      "1": "Drizzle",
-      "H": "Rain Dish"
+      "0": "keeneye",
+      "1": "drizzle",
+      "H": "raindish"
     },
     "weightKg": 28,
     "requiredItem": null,
@@ -2136,7 +2766,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 50,
+      "def": 100,
+      "spa": 95,
+      "spd": 70,
+      "spe": 65
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2149,11 +2786,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Synchronize",
-      "1": "Trace",
-      "H": "Telepathy"
+      "0": "synchronize",
+      "1": "trace",
+      "H": "telepathy"
     },
-    "weightKg": 48,
+    "weightKg": 48.4,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -2161,7 +2798,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 68,
+      "atk": 65,
+      "def": 65,
+      "spa": 125,
+      "spd": 115,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2174,9 +2818,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Pixilate"
+      "0": "pixilate"
     },
-    "weightKg": 48,
+    "weightKg": 48.4,
     "requiredItem": "Gardevoirite",
     "requiredMove": null,
     "canEvolve": false,
@@ -2184,7 +2828,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 68,
+      "atk": 85,
+      "def": 65,
+      "spa": 165,
+      "spd": 135,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2197,9 +2848,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Keen Eye",
-      "1": "Stall",
-      "H": "Prankster"
+      "0": "keeneye",
+      "1": "stall",
+      "H": "prankster"
     },
     "weightKg": 11,
     "requiredItem": null,
@@ -2209,7 +2860,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 50,
+      "atk": 75,
+      "def": 75,
+      "spa": 65,
+      "spd": 65,
+      "spe": 50
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2222,7 +2880,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Magic Bounce"
+      "0": "magicbounce"
     },
     "weightKg": 161,
     "requiredItem": "Sablenite",
@@ -2232,7 +2890,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 50,
+      "atk": 85,
+      "def": 125,
+      "spa": 85,
+      "spd": 115,
+      "spe": 20
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2245,11 +2910,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Hyper Cutter",
-      "1": "Intimidate",
-      "H": "Sheer Force"
+      "0": "hypercutter",
+      "1": "intimidate",
+      "H": "sheerforce"
     },
-    "weightKg": 11,
+    "weightKg": 11.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -2257,7 +2922,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 50,
+      "atk": 85,
+      "def": 85,
+      "spa": 55,
+      "spd": 55,
+      "spe": 50
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2270,9 +2942,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Huge Power"
+      "0": "hugepower"
     },
-    "weightKg": 23,
+    "weightKg": 23.5,
     "requiredItem": "Mawilite",
     "requiredMove": null,
     "canEvolve": false,
@@ -2280,7 +2952,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 50,
+      "atk": 105,
+      "def": 125,
+      "spa": 55,
+      "spd": 95,
+      "spe": 50
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2293,9 +2972,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Sturdy",
-      "1": "Rock Head",
-      "H": "Heavy Metal"
+      "0": "sturdy",
+      "1": "rockhead",
+      "H": "heavymetal"
     },
     "weightKg": 360,
     "requiredItem": null,
@@ -2305,7 +2984,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 110,
+      "def": 180,
+      "spa": 60,
+      "spd": 60,
+      "spe": 50
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2317,7 +3003,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Filter"
+      "0": "filter"
     },
     "weightKg": 395,
     "requiredItem": "Aggronite",
@@ -2327,7 +3013,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 140,
+      "def": 230,
+      "spa": 60,
+      "spd": 80,
+      "spe": 50
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2340,10 +3033,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Pure Power",
-      "H": "Telepathy"
+      "0": "purepower",
+      "H": "telepathy"
     },
-    "weightKg": 31,
+    "weightKg": 31.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -2351,7 +3044,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 60,
+      "def": 75,
+      "spa": 60,
+      "spd": 75,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2364,9 +3064,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Pure Power"
+      "0": "purepower"
     },
-    "weightKg": 31,
+    "weightKg": 31.5,
     "requiredItem": "Medichamite",
     "requiredMove": null,
     "canEvolve": false,
@@ -2374,7 +3074,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 100,
+      "def": 85,
+      "spa": 80,
+      "spd": 85,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2386,11 +3093,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Static",
-      "1": "Lightning Rod",
-      "H": "Minus"
+      "0": "static",
+      "1": "lightningrod",
+      "H": "minus"
     },
-    "weightKg": 40,
+    "weightKg": 40.2,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -2398,7 +3105,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 75,
+      "def": 60,
+      "spa": 105,
+      "spd": 60,
+      "spe": 105
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2410,7 +3124,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Intimidate"
+      "0": "intimidate"
     },
     "weightKg": 44,
     "requiredItem": "Manectite",
@@ -2420,7 +3134,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 75,
+      "def": 80,
+      "spa": 135,
+      "spd": 80,
+      "spe": 135
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2433,10 +3154,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Rough Skin",
-      "H": "Speed Boost"
+      "0": "roughskin",
+      "H": "speedboost"
     },
-    "weightKg": 88,
+    "weightKg": 88.8,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -2444,7 +3165,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 120,
+      "def": 40,
+      "spa": 95,
+      "spd": 40,
+      "spe": 95
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2457,9 +3185,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Strong Jaw"
+      "0": "strongjaw"
     },
-    "weightKg": 130,
+    "weightKg": 130.3,
     "requiredItem": "Sharpedonite",
     "requiredMove": null,
     "canEvolve": false,
@@ -2467,7 +3195,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 140,
+      "def": 70,
+      "spa": 110,
+      "spd": 65,
+      "spe": 105
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2480,9 +3215,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Magma Armor",
-      "1": "Solid Rock",
-      "H": "Anger Point"
+      "0": "magmaarmor",
+      "1": "solidrock",
+      "H": "angerpoint"
     },
     "weightKg": 220,
     "requiredItem": null,
@@ -2492,7 +3227,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 100,
+      "def": 70,
+      "spa": 105,
+      "spd": 75,
+      "spe": 40
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2505,9 +3247,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Sheer Force"
+      "0": "sheerforce"
     },
-    "weightKg": 320,
+    "weightKg": 320.5,
     "requiredItem": "Cameruptite",
     "requiredMove": null,
     "canEvolve": false,
@@ -2515,7 +3257,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 120,
+      "def": 100,
+      "spa": 145,
+      "spd": 105,
+      "spe": 20
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2527,11 +3276,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "White Smoke",
-      "1": "Drought",
-      "H": "Shell Armor"
+      "0": "whitesmoke",
+      "1": "drought",
+      "H": "shellarmor"
     },
-    "weightKg": 80,
+    "weightKg": 80.4,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -2539,7 +3288,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 85,
+      "def": 140,
+      "spa": 85,
+      "spd": 70,
+      "spe": 20
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2552,10 +3308,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Natural Cure",
-      "H": "Cloud Nine"
+      "0": "naturalcure",
+      "H": "cloudnine"
     },
-    "weightKg": 20,
+    "weightKg": 20.6,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -2563,7 +3319,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 70,
+      "def": 90,
+      "spa": 70,
+      "spd": 105,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2576,9 +3339,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Pixilate"
+      "0": "pixilate"
     },
-    "weightKg": 20,
+    "weightKg": 20.6,
     "requiredItem": "Altarianite",
     "requiredMove": null,
     "canEvolve": false,
@@ -2586,7 +3349,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 110,
+      "def": 110,
+      "spa": 110,
+      "spd": 105,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2598,9 +3368,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Marvel Scale",
-      "1": "Competitive",
-      "H": "Cute Charm"
+      "0": "marvelscale",
+      "1": "competitive",
+      "H": "cutecharm"
     },
     "weightKg": 162,
     "requiredItem": null,
@@ -2610,7 +3380,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 60,
+      "def": 79,
+      "spa": 100,
+      "spd": 125,
+      "spe": 81
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2622,9 +3399,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Forecast"
+      "0": "forecast"
     },
-    "weightKg": 0,
+    "weightKg": 0.8,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -2632,7 +3409,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 70,
+      "def": 70,
+      "spa": 70,
+      "spd": 70,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2644,11 +3428,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Insomnia",
-      "1": "Frisk",
-      "H": "Cursed Body"
+      "0": "insomnia",
+      "1": "frisk",
+      "H": "cursedbody"
     },
-    "weightKg": 12,
+    "weightKg": 12.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -2656,7 +3440,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 64,
+      "atk": 115,
+      "def": 65,
+      "spa": 83,
+      "spd": 63,
+      "spe": 65
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2668,7 +3459,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Prankster"
+      "0": "prankster"
     },
     "weightKg": 13,
     "requiredItem": "Banettite",
@@ -2678,7 +3469,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 64,
+      "atk": 165,
+      "def": 75,
+      "spa": 93,
+      "spd": 83,
+      "spe": 75
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2690,7 +3488,7 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Levitate"
+      "0": "levitate"
     },
     "weightKg": 1,
     "requiredItem": null,
@@ -2700,7 +3498,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 50,
+      "def": 80,
+      "spa": 95,
+      "spd": 90,
+      "spe": 65
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2713,7 +3518,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Levitate"
+      "0": "levitate"
     },
     "weightKg": 8,
     "requiredItem": "Chimechite",
@@ -2723,7 +3528,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 50,
+      "def": 110,
+      "spa": 135,
+      "spd": 120,
+      "spe": 65
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2735,9 +3547,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Pressure",
-      "1": "Super Luck",
-      "H": "Justified"
+      "0": "pressure",
+      "1": "superluck",
+      "H": "justified"
     },
     "weightKg": 47,
     "requiredItem": null,
@@ -2747,7 +3559,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 130,
+      "def": 60,
+      "spa": 75,
+      "spd": 60,
+      "spe": 75
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2759,7 +3578,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Magic Bounce"
+      "0": "magicbounce"
     },
     "weightKg": 49,
     "requiredItem": "Absolite",
@@ -2769,7 +3588,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 150,
+      "def": 60,
+      "spa": 115,
+      "spd": 60,
+      "spe": 115
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2781,11 +3607,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Inner Focus",
-      "1": "Ice Body",
-      "H": "Moody"
+      "0": "innerfocus",
+      "1": "icebody",
+      "H": "moody"
     },
-    "weightKg": 256,
+    "weightKg": 256.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -2793,7 +3619,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 80,
+      "def": 80,
+      "spa": 80,
+      "spd": 80,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2805,9 +3638,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Refrigerate"
+      "0": "refrigerate"
     },
-    "weightKg": 350,
+    "weightKg": 350.2,
     "requiredItem": "Glalitite",
     "requiredMove": null,
     "canEvolve": false,
@@ -2815,7 +3648,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 120,
+      "def": 80,
+      "spa": 120,
+      "spd": 80,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2828,8 +3668,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Clear Body",
-      "H": "Light Metal"
+      "0": "clearbody",
+      "H": "lightmetal"
     },
     "weightKg": 550,
     "requiredItem": null,
@@ -2838,7 +3678,14 @@
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 135,
+      "def": 130,
+      "spa": 95,
+      "spd": 90,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2851,16 +3698,23 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Tough Claws"
+      "0": "toughclaws"
     },
-    "weightKg": 942,
+    "weightKg": 942.9,
     "requiredItem": "Metagrossite",
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 145,
+      "def": 150,
+      "spa": 105,
+      "spd": 110,
+      "spe": 110
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2873,8 +3727,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Overgrow",
-      "H": "Shell Armor"
+      "0": "overgrow",
+      "H": "shellarmor"
     },
     "weightKg": 310,
     "requiredItem": null,
@@ -2884,7 +3738,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 109,
+      "def": 105,
+      "spa": 75,
+      "spd": 85,
+      "spe": 56
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2897,8 +3758,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Blaze",
-      "H": "Iron Fist"
+      "0": "blaze",
+      "H": "ironfist"
     },
     "weightKg": 55,
     "requiredItem": null,
@@ -2908,7 +3769,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 76,
+      "atk": 104,
+      "def": 71,
+      "spa": 104,
+      "spd": 71,
+      "spe": 108
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2921,10 +3789,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Torrent",
-      "H": "Competitive"
+      "0": "torrent",
+      "H": "competitive"
     },
-    "weightKg": 84,
+    "weightKg": 84.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -2932,7 +3800,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 84,
+      "atk": 86,
+      "def": 88,
+      "spa": 111,
+      "spd": 101,
+      "spe": 60
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2945,10 +3820,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Intimidate",
-      "H": "Reckless"
+      "0": "intimidate",
+      "H": "reckless"
     },
-    "weightKg": 24,
+    "weightKg": 24.9,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -2956,7 +3831,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 120,
+      "def": 70,
+      "spa": 50,
+      "spd": 60,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2969,7 +3851,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Contrary"
+      "0": "contrary"
     },
     "weightKg": 50,
     "requiredItem": "Staraptite",
@@ -2979,7 +3861,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 140,
+      "def": 100,
+      "spa": 60,
+      "spd": 90,
+      "spe": 110
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -2991,9 +3880,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Rivalry",
-      "1": "Intimidate",
-      "H": "Guts"
+      "0": "rivalry",
+      "1": "intimidate",
+      "H": "guts"
     },
     "weightKg": 42,
     "requiredItem": null,
@@ -3003,7 +3892,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 120,
+      "def": 79,
+      "spa": 95,
+      "spd": 79,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3016,11 +3912,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Natural Cure",
-      "1": "Poison Point",
-      "H": "Technician"
+      "0": "naturalcure",
+      "1": "poisonpoint",
+      "H": "technician"
     },
-    "weightKg": 14,
+    "weightKg": 14.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3028,7 +3924,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 70,
+      "def": 65,
+      "spa": 125,
+      "spd": 105,
+      "spe": 90
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3040,10 +3943,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Mold Breaker",
-      "H": "Sheer Force"
+      "0": "moldbreaker",
+      "H": "sheerforce"
     },
-    "weightKg": 102,
+    "weightKg": 102.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3051,7 +3954,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 97,
+      "atk": 165,
+      "def": 60,
+      "spa": 65,
+      "spd": 50,
+      "spe": 58
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3064,10 +3974,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Sturdy",
-      "H": "Soundproof"
+      "0": "sturdy",
+      "H": "soundproof"
     },
-    "weightKg": 149,
+    "weightKg": 149.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3075,7 +3985,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 52,
+      "def": 168,
+      "spa": 47,
+      "spd": 138,
+      "spe": 30
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3087,11 +4004,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Cute Charm",
-      "1": "Klutz",
-      "H": "Limber"
+      "0": "cutecharm",
+      "1": "klutz",
+      "H": "limber"
     },
-    "weightKg": 33,
+    "weightKg": 33.3,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3099,7 +4016,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 76,
+      "def": 84,
+      "spa": 54,
+      "spd": 96,
+      "spe": 105
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3112,9 +4036,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Scrappy"
+      "0": "scrappy"
     },
-    "weightKg": 28,
+    "weightKg": 28.3,
     "requiredItem": "Lopunnite",
     "requiredMove": null,
     "canEvolve": false,
@@ -3122,7 +4046,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 136,
+      "def": 94,
+      "spa": 54,
+      "spd": 96,
+      "spe": 135
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3135,8 +4066,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Pressure",
-      "H": "Infiltrator"
+      "0": "pressure",
+      "H": "infiltrator"
     },
     "weightKg": 108,
     "requiredItem": null,
@@ -3146,7 +4077,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 50,
+      "atk": 92,
+      "def": 108,
+      "spa": 92,
+      "spd": 108,
+      "spe": 35
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3159,8 +4097,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Sand Veil",
-      "H": "Rough Skin"
+      "0": "sandveil",
+      "H": "roughskin"
     },
     "weightKg": 95,
     "requiredItem": null,
@@ -3170,7 +4108,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 108,
+      "atk": 130,
+      "def": 95,
+      "spa": 80,
+      "spd": 85,
+      "spe": 102
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3183,7 +4128,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Sand Force"
+      "0": "sandforce"
     },
     "weightKg": 95,
     "requiredItem": "Garchompite",
@@ -3193,7 +4138,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 108,
+      "atk": 170,
+      "def": 115,
+      "spa": 120,
+      "spd": 95,
+      "spe": 92
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3206,9 +4158,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Steadfast",
-      "1": "Inner Focus",
-      "H": "Justified"
+      "0": "steadfast",
+      "1": "innerfocus",
+      "H": "justified"
     },
     "weightKg": 54,
     "requiredItem": null,
@@ -3218,7 +4170,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 110,
+      "def": 70,
+      "spa": 115,
+      "spd": 70,
+      "spe": 90
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3231,9 +4190,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Adaptability"
+      "0": "adaptability"
     },
-    "weightKg": 57,
+    "weightKg": 57.5,
     "requiredItem": "Lucarionite",
     "requiredMove": null,
     "canEvolve": false,
@@ -3241,7 +4200,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 145,
+      "def": 88,
+      "spa": 140,
+      "spd": 70,
+      "spe": 112
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3253,8 +4219,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Sand Stream",
-      "H": "Sand Force"
+      "0": "sandstream",
+      "H": "sandforce"
     },
     "weightKg": 300,
     "requiredItem": null,
@@ -3264,7 +4230,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 108,
+      "atk": 112,
+      "def": 118,
+      "spa": 68,
+      "spd": 72,
+      "spe": 47
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3277,11 +4250,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Anticipation",
-      "1": "Dry Skin",
-      "H": "Poison Touch"
+      "0": "anticipation",
+      "1": "dryskin",
+      "H": "poisontouch"
     },
-    "weightKg": 44,
+    "weightKg": 44.4,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3289,7 +4262,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 83,
+      "atk": 106,
+      "def": 65,
+      "spa": 86,
+      "spd": 65,
+      "spe": 85
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3302,10 +4282,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Snow Warning",
-      "H": "Soundproof"
+      "0": "snowwarning",
+      "H": "soundproof"
     },
-    "weightKg": 135,
+    "weightKg": 135.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3313,7 +4293,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 90,
+      "atk": 92,
+      "def": 75,
+      "spa": 92,
+      "spd": 85,
+      "spe": 60
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3326,7 +4313,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Snow Warning"
+      "0": "snowwarning"
     },
     "weightKg": 185,
     "requiredItem": "Abomasite",
@@ -3336,7 +4323,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 90,
+      "atk": 132,
+      "def": 105,
+      "spa": 132,
+      "spd": 105,
+      "spe": 30
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3349,8 +4343,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Pressure",
-      "H": "Pickpocket"
+      "0": "pressure",
+      "H": "pickpocket"
     },
     "weightKg": 34,
     "requiredItem": null,
@@ -3360,7 +4354,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 120,
+      "def": 65,
+      "spa": 45,
+      "spd": 85,
+      "spe": 125
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3373,11 +4374,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Lightning Rod",
-      "1": "Solid Rock",
-      "H": "Reckless"
+      "0": "lightningrod",
+      "1": "solidrock",
+      "H": "reckless"
     },
-    "weightKg": 282,
+    "weightKg": 282.8,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3385,7 +4386,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 115,
+      "atk": 140,
+      "def": 130,
+      "spa": 55,
+      "spd": 55,
+      "spe": 40
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3397,10 +4405,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Leaf Guard",
-      "H": "Chlorophyll"
+      "0": "leafguard",
+      "H": "chlorophyll"
     },
-    "weightKg": 25,
+    "weightKg": 25.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3408,7 +4416,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 110,
+      "def": 130,
+      "spa": 60,
+      "spd": 65,
+      "spe": 95
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3420,10 +4435,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Snow Cloak",
-      "H": "Ice Body"
+      "0": "snowcloak",
+      "H": "icebody"
     },
-    "weightKg": 25,
+    "weightKg": 25.9,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3431,7 +4446,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 60,
+      "def": 110,
+      "spa": 130,
+      "spd": 95,
+      "spe": 65
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3444,11 +4466,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Hyper Cutter",
-      "1": "Sand Veil",
-      "H": "Poison Heal"
+      "0": "hypercutter",
+      "1": "sandveil",
+      "H": "poisonheal"
     },
-    "weightKg": 42,
+    "weightKg": 42.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3456,7 +4478,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 95,
+      "def": 125,
+      "spa": 45,
+      "spd": 75,
+      "spe": 95
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3469,9 +4498,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Oblivious",
-      "1": "Snow Cloak",
-      "H": "Thick Fat"
+      "0": "oblivious",
+      "1": "snowcloak",
+      "H": "thickfat"
     },
     "weightKg": 291,
     "requiredItem": null,
@@ -3481,7 +4510,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 110,
+      "atk": 130,
+      "def": 80,
+      "spa": 70,
+      "spd": 60,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3494,9 +4530,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Steadfast",
-      "1": "Sharpness",
-      "H": "Justified"
+      "0": "steadfast",
+      "1": "sharpness",
+      "H": "justified"
     },
     "weightKg": 52,
     "requiredItem": null,
@@ -3505,7 +4541,14 @@
     "genders": [
       "M"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 68,
+      "atk": 125,
+      "def": 65,
+      "spa": 65,
+      "spd": 115,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3518,16 +4561,23 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Inner Focus"
+      "0": "innerfocus"
     },
-    "weightKg": 56,
+    "weightKg": 56.4,
     "requiredItem": "Galladite",
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "M"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 68,
+      "atk": 165,
+      "def": 95,
+      "spa": 65,
+      "spd": 115,
+      "spe": 110
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3540,17 +4590,24 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Snow Cloak",
-      "H": "Cursed Body"
+      "0": "snowcloak",
+      "H": "cursedbody"
     },
-    "weightKg": 26,
+    "weightKg": 26.6,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 80,
+      "def": 70,
+      "spa": 80,
+      "spd": 70,
+      "spe": 110
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3563,16 +4620,23 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Snow Warning"
+      "0": "snowwarning"
     },
-    "weightKg": 29,
+    "weightKg": 29.6,
     "requiredItem": "Froslassite",
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 80,
+      "def": 70,
+      "spa": 140,
+      "spd": 100,
+      "spe": 120
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3585,16 +4649,23 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Levitate"
+      "0": "levitate"
     },
-    "weightKg": 0,
+    "weightKg": 0.3,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 50,
+      "atk": 50,
+      "def": 77,
+      "spa": 95,
+      "spd": 77,
+      "spe": 91
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3607,16 +4678,23 @@
     ],
     "form": "Heat",
     "abilities": {
-      "0": "Levitate"
+      "0": "levitate"
     },
-    "weightKg": 0,
+    "weightKg": 0.3,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spa": 105,
+      "spd": 107,
+      "spe": 86
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3629,16 +4707,23 @@
     ],
     "form": "Wash",
     "abilities": {
-      "0": "Levitate"
+      "0": "levitate"
     },
-    "weightKg": 0,
+    "weightKg": 0.3,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spa": 105,
+      "spd": 107,
+      "spe": 86
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3651,16 +4736,23 @@
     ],
     "form": "Frost",
     "abilities": {
-      "0": "Levitate"
+      "0": "levitate"
     },
-    "weightKg": 0,
+    "weightKg": 0.3,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spa": 105,
+      "spd": 107,
+      "spe": 86
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3673,16 +4765,23 @@
     ],
     "form": "Fan",
     "abilities": {
-      "0": "Levitate"
+      "0": "levitate"
     },
-    "weightKg": 0,
+    "weightKg": 0.3,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spa": 105,
+      "spd": 107,
+      "spe": 86
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3695,16 +4794,23 @@
     ],
     "form": "Mow",
     "abilities": {
-      "0": "Levitate"
+      "0": "levitate"
     },
-    "weightKg": 0,
+    "weightKg": 0.3,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spa": 105,
+      "spd": 107,
+      "spe": 86
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3716,8 +4822,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Overgrow",
-      "H": "Contrary"
+      "0": "overgrow",
+      "H": "contrary"
     },
     "weightKg": 63,
     "requiredItem": null,
@@ -3727,7 +4833,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 75,
+      "def": 95,
+      "spa": 75,
+      "spd": 95,
+      "spe": 113
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3740,8 +4853,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Blaze",
-      "H": "Reckless"
+      "0": "blaze",
+      "H": "reckless"
     },
     "weightKg": 150,
     "requiredItem": null,
@@ -3751,7 +4864,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 110,
+      "atk": 123,
+      "def": 65,
+      "spa": 100,
+      "spd": 65,
+      "spe": 65
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3764,9 +4884,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Mold Breaker"
+      "0": "moldbreaker"
     },
-    "weightKg": 180,
+    "weightKg": 180.3,
     "requiredItem": "Emboarite",
     "requiredMove": null,
     "canEvolve": false,
@@ -3774,7 +4894,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 110,
+      "atk": 148,
+      "def": 75,
+      "spa": 110,
+      "spd": 110,
+      "spe": 75
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3786,10 +4913,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Torrent",
-      "H": "Shell Armor"
+      "0": "torrent",
+      "H": "shellarmor"
     },
-    "weightKg": 94,
+    "weightKg": 94.6,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3797,7 +4924,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 100,
+      "def": 85,
+      "spa": 108,
+      "spd": 70,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3810,10 +4944,10 @@
     ],
     "form": "Hisui",
     "abilities": {
-      "0": "Torrent",
-      "H": "Sharpness"
+      "0": "torrent",
+      "H": "sharpness"
     },
-    "weightKg": 58,
+    "weightKg": 58.2,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3821,7 +4955,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 90,
+      "atk": 108,
+      "def": 80,
+      "spa": 100,
+      "spd": 65,
+      "spe": 85
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3833,9 +4974,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Illuminate",
-      "1": "Keen Eye",
-      "H": "Analytic"
+      "0": "illuminate",
+      "1": "keeneye",
+      "H": "analytic"
     },
     "weightKg": 27,
     "requiredItem": null,
@@ -3845,7 +4986,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 85,
+      "def": 69,
+      "spa": 60,
+      "spd": 69,
+      "spe": 77
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3857,11 +5005,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Limber",
-      "1": "Unburden",
-      "H": "Prankster"
+      "0": "limber",
+      "1": "unburden",
+      "H": "prankster"
     },
-    "weightKg": 37,
+    "weightKg": 37.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3869,7 +5017,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 64,
+      "atk": 88,
+      "def": 50,
+      "spa": 88,
+      "spd": 50,
+      "spe": 106
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3881,10 +5036,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Gluttony",
-      "H": "Overgrow"
+      "0": "gluttony",
+      "H": "overgrow"
     },
-    "weightKg": 30,
+    "weightKg": 30.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3892,7 +5047,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 98,
+      "def": 63,
+      "spa": 98,
+      "spd": 63,
+      "spe": 101
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3904,8 +5066,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Gluttony",
-      "H": "Blaze"
+      "0": "gluttony",
+      "H": "blaze"
     },
     "weightKg": 28,
     "requiredItem": null,
@@ -3915,7 +5077,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 98,
+      "def": 63,
+      "spa": 98,
+      "spd": 63,
+      "spe": 101
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3927,8 +5096,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Gluttony",
-      "H": "Torrent"
+      "0": "gluttony",
+      "H": "torrent"
     },
     "weightKg": 29,
     "requiredItem": null,
@@ -3938,7 +5107,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 98,
+      "def": 63,
+      "spa": 98,
+      "spd": 63,
+      "spe": 101
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3950,11 +5126,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Forewarn",
-      "1": "Synchronize",
-      "H": "Telepathy"
+      "0": "forewarn",
+      "1": "synchronize",
+      "H": "telepathy"
     },
-    "weightKg": 60,
+    "weightKg": 60.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3962,7 +5138,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 116,
+      "atk": 55,
+      "def": 85,
+      "spa": 107,
+      "spd": 95,
+      "spe": 29
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -3975,11 +5158,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Sand Rush",
-      "1": "Sand Force",
-      "H": "Mold Breaker"
+      "0": "sandrush",
+      "1": "sandforce",
+      "H": "moldbreaker"
     },
-    "weightKg": 40,
+    "weightKg": 40.4,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -3987,7 +5170,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 110,
+      "atk": 135,
+      "def": 60,
+      "spa": 50,
+      "spd": 65,
+      "spe": 88
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4000,7 +5190,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Piercing Drill"
+      "0": "piercingdrill"
     },
     "weightKg": 60,
     "requiredItem": "Excadrite",
@@ -4010,7 +5200,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 110,
+      "atk": 165,
+      "def": 100,
+      "spa": 65,
+      "spd": 65,
+      "spe": 103
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4022,9 +5219,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Healer",
-      "1": "Regenerator",
-      "H": "Klutz"
+      "0": "healer",
+      "1": "regenerator",
+      "H": "klutz"
     },
     "weightKg": 31,
     "requiredItem": null,
@@ -4034,7 +5231,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 103,
+      "atk": 60,
+      "def": 86,
+      "spa": 60,
+      "spd": 86,
+      "spe": 50
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4047,7 +5251,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Healer"
+      "0": "healer"
     },
     "weightKg": 32,
     "requiredItem": "Audinite",
@@ -4057,7 +5261,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 103,
+      "atk": 60,
+      "def": 126,
+      "spa": 80,
+      "spd": 126,
+      "spe": 50
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4069,9 +5280,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Guts",
-      "1": "Sheer Force",
-      "H": "Iron Fist"
+      "0": "guts",
+      "1": "sheerforce",
+      "H": "ironfist"
     },
     "weightKg": 87,
     "requiredItem": null,
@@ -4081,7 +5292,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 105,
+      "atk": 140,
+      "def": 95,
+      "spa": 55,
+      "spd": 65,
+      "spe": 45
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4094,11 +5312,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Poison Point",
-      "1": "Swarm",
-      "H": "Speed Boost"
+      "0": "poisonpoint",
+      "1": "swarm",
+      "H": "speedboost"
     },
-    "weightKg": 200,
+    "weightKg": 200.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -4106,7 +5324,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 100,
+      "def": 89,
+      "spa": 55,
+      "spd": 69,
+      "spe": 112
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4119,9 +5344,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Shell Armor"
+      "0": "shellarmor"
     },
-    "weightKg": 230,
+    "weightKg": 230.5,
     "requiredItem": "Scolipite",
     "requiredMove": null,
     "canEvolve": false,
@@ -4129,7 +5354,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 140,
+      "def": 149,
+      "spa": 75,
+      "spd": 99,
+      "spe": 62
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4142,11 +5374,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Prankster",
-      "1": "Infiltrator",
-      "H": "Chlorophyll"
+      "0": "prankster",
+      "1": "infiltrator",
+      "H": "chlorophyll"
     },
-    "weightKg": 6,
+    "weightKg": 6.6,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -4154,7 +5386,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 67,
+      "def": 85,
+      "spa": 77,
+      "spd": 75,
+      "spe": 116
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4167,11 +5406,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Intimidate",
-      "1": "Moxie",
-      "H": "Anger Point"
+      "0": "intimidate",
+      "1": "moxie",
+      "H": "angerpoint"
     },
-    "weightKg": 96,
+    "weightKg": 96.3,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -4179,7 +5418,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 117,
+      "def": 80,
+      "spa": 65,
+      "spd": 70,
+      "spe": 92
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4192,9 +5438,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Shed Skin",
-      "1": "Moxie",
-      "H": "Intimidate"
+      "0": "shedskin",
+      "1": "moxie",
+      "H": "intimidate"
     },
     "weightKg": 30,
     "requiredItem": null,
@@ -4204,7 +5450,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 90,
+      "def": 115,
+      "spa": 45,
+      "spd": 115,
+      "spe": 58
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4217,7 +5470,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Intimidate"
+      "0": "intimidate"
     },
     "weightKg": 31,
     "requiredItem": "Scraftinite",
@@ -4227,7 +5480,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 130,
+      "def": 135,
+      "spa": 55,
+      "spd": 135,
+      "spe": 68
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4239,9 +5499,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Mummy"
+      "0": "mummy"
     },
-    "weightKg": 76,
+    "weightKg": 76.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -4249,7 +5509,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 58,
+      "atk": 50,
+      "def": 145,
+      "spa": 95,
+      "spd": 105,
+      "spe": 30
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4261,11 +5528,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Stench",
-      "1": "Weak Armor",
-      "H": "Aftermath"
+      "0": "stench",
+      "1": "weakarmor",
+      "H": "aftermath"
     },
-    "weightKg": 107,
+    "weightKg": 107.3,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -4273,7 +5540,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 95,
+      "def": 82,
+      "spa": 60,
+      "spd": 82,
+      "spe": 75
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4285,9 +5559,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Illusion"
+      "0": "illusion"
     },
-    "weightKg": 81,
+    "weightKg": 81.1,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -4295,7 +5569,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 105,
+      "def": 60,
+      "spa": 120,
+      "spd": 60,
+      "spe": 105
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4308,7 +5589,7 @@
     ],
     "form": "Hisui",
     "abilities": {
-      "0": "Illusion"
+      "0": "illusion"
     },
     "weightKg": 73,
     "requiredItem": null,
@@ -4318,7 +5599,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 55,
+      "atk": 100,
+      "def": 60,
+      "spa": 125,
+      "spd": 60,
+      "spe": 110
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4330,11 +5618,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Overcoat",
-      "1": "Magic Guard",
-      "H": "Regenerator"
+      "0": "overcoat",
+      "1": "magicguard",
+      "H": "regenerator"
     },
-    "weightKg": 20,
+    "weightKg": 20.1,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -4342,7 +5630,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 110,
+      "atk": 65,
+      "def": 75,
+      "spa": 125,
+      "spd": 85,
+      "spe": 30
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4354,11 +5649,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Ice Body",
-      "1": "Snow Warning",
-      "H": "Weak Armor"
+      "0": "icebody",
+      "1": "snowwarning",
+      "H": "weakarmor"
     },
-    "weightKg": 57,
+    "weightKg": 57.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -4366,7 +5661,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 71,
+      "atk": 95,
+      "def": 85,
+      "spa": 110,
+      "spd": 95,
+      "spe": 79
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4379,8 +5681,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Static",
-      "H": "Motor Drive"
+      "0": "static",
+      "H": "motordrive"
     },
     "weightKg": 5,
     "requiredItem": null,
@@ -4390,7 +5692,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 55,
+      "atk": 75,
+      "def": 60,
+      "spa": 75,
+      "spd": 60,
+      "spe": 103
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4402,9 +5711,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Levitate"
+      "0": "levitate"
     },
-    "weightKg": 80,
+    "weightKg": 80.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -4412,7 +5721,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 115,
+      "def": 80,
+      "spa": 105,
+      "spd": 80,
+      "spe": 50
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4424,7 +5740,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Eelevate"
+      "0": "eelevate"
     },
     "weightKg": 180,
     "requiredItem": "Eelektrossite",
@@ -4434,7 +5750,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 145,
+      "def": 80,
+      "spa": 135,
+      "spd": 90,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4447,11 +5770,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Flash Fire",
-      "1": "Flame Body",
-      "H": "Infiltrator"
+      "0": "flashfire",
+      "1": "flamebody",
+      "H": "infiltrator"
     },
-    "weightKg": 34,
+    "weightKg": 34.3,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -4459,7 +5782,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 55,
+      "def": 90,
+      "spa": 145,
+      "spd": 90,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4472,9 +5802,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Infiltrator"
+      "0": "infiltrator"
     },
-    "weightKg": 69,
+    "weightKg": 69.6,
     "requiredItem": "Chandelurite",
     "requiredMove": null,
     "canEvolve": false,
@@ -4482,7 +5812,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 75,
+      "def": 110,
+      "spa": 175,
+      "spd": 110,
+      "spe": 90
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4494,9 +5831,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Snow Cloak",
-      "1": "Slush Rush",
-      "H": "Swift Swim"
+      "0": "snowcloak",
+      "1": "slushrush",
+      "H": "swiftswim"
     },
     "weightKg": 260,
     "requiredItem": null,
@@ -4506,7 +5843,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 130,
+      "def": 80,
+      "spa": 70,
+      "spd": 80,
+      "spe": 50
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4519,9 +5863,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Static",
-      "1": "Limber",
-      "H": "Sand Veil"
+      "0": "static",
+      "1": "limber",
+      "H": "sandveil"
     },
     "weightKg": 11,
     "requiredItem": null,
@@ -4531,7 +5875,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 109,
+      "atk": 66,
+      "def": 84,
+      "spa": 81,
+      "spd": 99,
+      "spe": 32
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4544,9 +5895,9 @@
     ],
     "form": "Galar",
     "abilities": {
-      "0": "Mimicry"
+      "0": "mimicry"
     },
-    "weightKg": 20,
+    "weightKg": 20.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -4554,7 +5905,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 109,
+      "atk": 81,
+      "def": 99,
+      "spa": 66,
+      "spd": 84,
+      "spe": 32
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4567,9 +5925,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Iron Fist",
-      "1": "Klutz",
-      "H": "No Guard"
+      "0": "ironfist",
+      "1": "klutz",
+      "H": "noguard"
     },
     "weightKg": 330,
     "requiredItem": null,
@@ -4578,7 +5936,14 @@
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 89,
+      "atk": 124,
+      "def": 80,
+      "spa": 55,
+      "spd": 80,
+      "spe": 55
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4591,7 +5956,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Unseen Fist"
+      "0": "unseenfist"
     },
     "weightKg": 330,
     "requiredItem": "Golurkite",
@@ -4600,7 +5965,14 @@
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 89,
+      "atk": 159,
+      "def": 105,
+      "spa": 70,
+      "spd": 105,
+      "spe": 55
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4613,7 +5985,7 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Levitate"
+      "0": "levitate"
     },
     "weightKg": 160,
     "requiredItem": null,
@@ -4623,7 +5995,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 92,
+      "atk": 105,
+      "def": 90,
+      "spa": 125,
+      "spd": 90,
+      "spe": 98
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4636,8 +6015,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Flame Body",
-      "H": "Swarm"
+      "0": "flamebody",
+      "H": "swarm"
     },
     "weightKg": 46,
     "requiredItem": null,
@@ -4647,7 +6026,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 60,
+      "def": 65,
+      "spa": 135,
+      "spd": 105,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4660,8 +6046,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Overgrow",
-      "H": "Bulletproof"
+      "0": "overgrow",
+      "H": "bulletproof"
     },
     "weightKg": 90,
     "requiredItem": null,
@@ -4671,7 +6057,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 88,
+      "atk": 107,
+      "def": 122,
+      "spa": 74,
+      "spd": 75,
+      "spe": 64
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4684,7 +6077,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Bulletproof"
+      "0": "bulletproof"
     },
     "weightKg": 90,
     "requiredItem": "Chesnaughtite",
@@ -4694,7 +6087,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 88,
+      "atk": 137,
+      "def": 172,
+      "spa": 74,
+      "spd": 115,
+      "spe": 44
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4707,8 +6107,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Blaze",
-      "H": "Magician"
+      "0": "blaze",
+      "H": "magician"
     },
     "weightKg": 39,
     "requiredItem": null,
@@ -4718,7 +6118,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 69,
+      "def": 72,
+      "spa": 114,
+      "spd": 100,
+      "spe": 104
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4731,7 +6138,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Levitate"
+      "0": "levitate"
     },
     "weightKg": 39,
     "requiredItem": "Delphoxite",
@@ -4741,7 +6148,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 69,
+      "def": 72,
+      "spa": 159,
+      "spd": 125,
+      "spe": 134
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4754,9 +6168,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Torrent",
-      "H": "Protean",
-      "S": "Battle Bond"
+      "0": "torrent",
+      "H": "protean",
+      "S": "battlebond"
     },
     "weightKg": 40,
     "requiredItem": null,
@@ -4766,7 +6180,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 72,
+      "atk": 95,
+      "def": 67,
+      "spa": 103,
+      "spd": 71,
+      "spe": 122
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4779,7 +6200,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Protean"
+      "0": "protean"
     },
     "weightKg": 40,
     "requiredItem": "Greninjite",
@@ -4789,7 +6210,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 72,
+      "atk": 125,
+      "def": 77,
+      "spa": 133,
+      "spd": 81,
+      "spe": 142
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4802,11 +6230,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Pickup",
-      "1": "Cheek Pouch",
-      "H": "Huge Power"
+      "0": "pickup",
+      "1": "cheekpouch",
+      "H": "hugepower"
     },
-    "weightKg": 42,
+    "weightKg": 42.4,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -4814,7 +6242,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 56,
+      "def": 77,
+      "spa": 50,
+      "spd": 77,
+      "spe": 78
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4827,10 +6262,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Flame Body",
-      "H": "Gale Wings"
+      "0": "flamebody",
+      "H": "galewings"
     },
-    "weightKg": 24,
+    "weightKg": 24.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -4838,7 +6273,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 78,
+      "atk": 81,
+      "def": 71,
+      "spa": 74,
+      "spd": 69,
+      "spe": 126
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4851,9 +6293,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Shield Dust",
-      "1": "Compound Eyes",
-      "H": "Friend Guard"
+      "0": "shielddust",
+      "1": "compoundeyes",
+      "H": "friendguard"
     },
     "weightKg": 17,
     "requiredItem": null,
@@ -4863,7 +6305,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 52,
+      "def": 50,
+      "spa": 90,
+      "spd": 50,
+      "spe": 89
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4876,11 +6325,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Rivalry",
-      "1": "Unnerve",
-      "H": "Moxie"
+      "0": "rivalry",
+      "1": "unnerve",
+      "H": "moxie"
     },
-    "weightKg": 81,
+    "weightKg": 81.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -4888,7 +6337,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 86,
+      "atk": 68,
+      "def": 72,
+      "spa": 109,
+      "spd": 66,
+      "spe": 106
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4901,9 +6357,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Fire Mane"
+      "0": "firemane"
     },
-    "weightKg": 93,
+    "weightKg": 93.3,
     "requiredItem": "Pyroarite",
     "requiredMove": null,
     "canEvolve": false,
@@ -4911,7 +6367,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 86,
+      "atk": 88,
+      "def": 92,
+      "spa": 129,
+      "spd": 86,
+      "spe": 126
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4923,17 +6386,24 @@
     ],
     "form": "Eternal",
     "abilities": {
-      "0": "Flower Veil",
-      "H": "Symbiosis"
+      "0": "flowerveil",
+      "H": "symbiosis"
     },
-    "weightKg": 0,
+    "weightKg": 0.9,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 74,
+      "atk": 65,
+      "def": 67,
+      "spa": 125,
+      "spd": 128,
+      "spe": 92
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4945,16 +6415,23 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Fairy Aura"
+      "0": "fairyaura"
     },
-    "weightKg": 100,
+    "weightKg": 100.8,
     "requiredItem": "Floettite",
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 74,
+      "atk": 85,
+      "def": 87,
+      "spa": 155,
+      "spd": 148,
+      "spe": 102
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4966,8 +6443,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Flower Veil",
-      "H": "Symbiosis"
+      "0": "flowerveil",
+      "H": "symbiosis"
     },
     "weightKg": 10,
     "requiredItem": null,
@@ -4976,7 +6453,14 @@
     "genders": [
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 78,
+      "atk": 65,
+      "def": 68,
+      "spa": 112,
+      "spd": 154,
+      "spe": 75
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -4989,9 +6473,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Iron Fist",
-      "1": "Mold Breaker",
-      "H": "Scrappy"
+      "0": "ironfist",
+      "1": "moldbreaker",
+      "H": "scrappy"
     },
     "weightKg": 136,
     "requiredItem": null,
@@ -5001,7 +6485,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 124,
+      "def": 78,
+      "spa": 69,
+      "spd": 71,
+      "spe": 58
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5013,7 +6504,7 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Fur Coat"
+      "0": "furcoat"
     },
     "weightKg": 28,
     "requiredItem": null,
@@ -5023,7 +6514,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 80,
+      "def": 60,
+      "spa": 65,
+      "spd": 90,
+      "spe": 102
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5035,18 +6533,25 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Keen Eye",
-      "1": "Infiltrator",
-      "H": "Prankster"
+      "0": "keeneye",
+      "1": "infiltrator",
+      "H": "prankster"
     },
-    "weightKg": 8,
+    "weightKg": 8.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "M"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 74,
+      "atk": 48,
+      "def": 76,
+      "spa": 83,
+      "spd": 81,
+      "spe": 104
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5058,16 +6563,23 @@
     ],
     "form": "M-Mega",
     "abilities": {
-      "0": "Trace"
+      "0": "trace"
     },
-    "weightKg": 10,
+    "weightKg": 10.1,
     "requiredItem": "Meowsticite",
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "M"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 74,
+      "atk": 48,
+      "def": 76,
+      "spa": 143,
+      "spd": 101,
+      "spe": 124
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5079,16 +6591,23 @@
     ],
     "form": "F-Mega",
     "abilities": {
-      "0": "Trace"
+      "0": "trace"
     },
-    "weightKg": 10,
+    "weightKg": 10.1,
     "requiredItem": "Meowsticite",
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 74,
+      "atk": 48,
+      "def": 76,
+      "spa": 143,
+      "spd": 101,
+      "spe": 124
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5101,7 +6620,7 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Stance Change"
+      "0": "stancechange"
     },
     "weightKg": 53,
     "requiredItem": null,
@@ -5111,7 +6630,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 50,
+      "def": 140,
+      "spa": 50,
+      "spd": 140,
+      "spe": 60
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5123,10 +6649,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Healer",
-      "H": "Aroma Veil"
+      "0": "healer",
+      "H": "aromaveil"
     },
-    "weightKg": 15,
+    "weightKg": 15.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -5134,7 +6660,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 101,
+      "atk": 72,
+      "def": 72,
+      "spa": 99,
+      "spd": 89,
+      "spe": 29
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5146,8 +6679,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Sweet Veil",
-      "H": "Unburden"
+      "0": "sweetveil",
+      "H": "unburden"
     },
     "weightKg": 5,
     "requiredItem": null,
@@ -5157,7 +6690,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 82,
+      "atk": 80,
+      "def": 86,
+      "spa": 85,
+      "spd": 75,
+      "spe": 72
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5170,9 +6710,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Contrary",
-      "1": "Suction Cups",
-      "H": "Infiltrator"
+      "0": "contrary",
+      "1": "suctioncups",
+      "H": "infiltrator"
     },
     "weightKg": 47,
     "requiredItem": null,
@@ -5182,7 +6722,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 86,
+      "atk": 92,
+      "def": 88,
+      "spa": 68,
+      "spd": 75,
+      "spe": 73
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5195,9 +6742,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Contrary"
+      "0": "contrary"
     },
-    "weightKg": 69,
+    "weightKg": 69.8,
     "requiredItem": "Malamarite",
     "requiredMove": null,
     "canEvolve": false,
@@ -5205,7 +6752,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 86,
+      "atk": 102,
+      "def": 88,
+      "spa": 98,
+      "spd": 120,
+      "spe": 88
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5218,9 +6772,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Tough Claws",
-      "1": "Sniper",
-      "H": "Pickpocket"
+      "0": "toughclaws",
+      "1": "sniper",
+      "H": "pickpocket"
     },
     "weightKg": 96,
     "requiredItem": null,
@@ -5230,7 +6784,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 72,
+      "atk": 105,
+      "def": 115,
+      "spa": 54,
+      "spd": 86,
+      "spe": 68
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5243,7 +6804,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Tough Claws"
+      "0": "toughclaws"
     },
     "weightKg": 100,
     "requiredItem": "Barbaracite",
@@ -5253,7 +6814,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 72,
+      "atk": 140,
+      "def": 130,
+      "spa": 64,
+      "spd": 106,
+      "spe": 88
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5266,11 +6834,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Poison Point",
-      "1": "Poison Touch",
-      "H": "Adaptability"
+      "0": "poisonpoint",
+      "1": "poisontouch",
+      "H": "adaptability"
     },
-    "weightKg": 81,
+    "weightKg": 81.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -5278,7 +6846,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 75,
+      "def": 90,
+      "spa": 97,
+      "spd": 123,
+      "spe": 44
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5291,9 +6866,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Regenerator"
+      "0": "regenerator"
     },
-    "weightKg": 100,
+    "weightKg": 100.3,
     "requiredItem": "Dragalgite",
     "requiredMove": null,
     "canEvolve": false,
@@ -5301,7 +6876,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 85,
+      "def": 105,
+      "spa": 132,
+      "spd": 163,
+      "spe": 44
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5313,9 +6895,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Mega Launcher"
+      "0": "megalauncher"
     },
-    "weightKg": 35,
+    "weightKg": 35.3,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -5323,7 +6905,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 71,
+      "atk": 73,
+      "def": 88,
+      "spa": 120,
+      "spd": 89,
+      "spe": 59
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5336,9 +6925,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Dry Skin",
-      "1": "Sand Veil",
-      "H": "Solar Power"
+      "0": "dryskin",
+      "1": "sandveil",
+      "H": "solarpower"
     },
     "weightKg": 21,
     "requiredItem": null,
@@ -5348,7 +6937,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 62,
+      "atk": 55,
+      "def": 52,
+      "spa": 109,
+      "spd": 94,
+      "spe": 109
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5361,8 +6957,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Strong Jaw",
-      "H": "Rock Head"
+      "0": "strongjaw",
+      "H": "rockhead"
     },
     "weightKg": 270,
     "requiredItem": null,
@@ -5372,7 +6968,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 82,
+      "atk": 121,
+      "def": 119,
+      "spa": 69,
+      "spd": 59,
+      "spe": 71
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5385,8 +6988,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Refrigerate",
-      "H": "Snow Warning"
+      "0": "refrigerate",
+      "H": "snowwarning"
     },
     "weightKg": 225,
     "requiredItem": null,
@@ -5396,7 +6999,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 123,
+      "atk": 77,
+      "def": 72,
+      "spa": 99,
+      "spd": 92,
+      "spe": 58
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5408,10 +7018,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Cute Charm",
-      "H": "Pixilate"
+      "0": "cutecharm",
+      "H": "pixilate"
     },
-    "weightKg": 23,
+    "weightKg": 23.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -5419,7 +7029,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 65,
+      "def": 65,
+      "spa": 110,
+      "spd": 130,
+      "spe": 60
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5432,11 +7049,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Limber",
-      "1": "Unburden",
-      "H": "Mold Breaker"
+      "0": "limber",
+      "1": "unburden",
+      "H": "moldbreaker"
     },
-    "weightKg": 21,
+    "weightKg": 21.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -5444,7 +7061,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 78,
+      "atk": 92,
+      "def": 75,
+      "spa": 74,
+      "spd": 63,
+      "spe": 118
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5457,7 +7081,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "No Guard"
+      "0": "noguard"
     },
     "weightKg": 25,
     "requiredItem": "Hawluchanite",
@@ -5467,7 +7091,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 78,
+      "atk": 137,
+      "def": 100,
+      "spa": 74,
+      "spd": 93,
+      "spe": 118
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5480,11 +7111,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Cheek Pouch",
-      "1": "Pickup",
-      "H": "Plus"
+      "0": "cheekpouch",
+      "1": "pickup",
+      "H": "plus"
     },
-    "weightKg": 2,
+    "weightKg": 2.2,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -5492,7 +7123,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 67,
+      "atk": 58,
+      "def": 57,
+      "spa": 81,
+      "spd": 67,
+      "spe": 101
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5504,11 +7142,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Sap Sipper",
-      "1": "Hydration",
-      "H": "Gooey"
+      "0": "sapsipper",
+      "1": "hydration",
+      "H": "gooey"
     },
-    "weightKg": 150,
+    "weightKg": 150.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -5516,7 +7154,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 90,
+      "atk": 100,
+      "def": 70,
+      "spa": 110,
+      "spd": 150,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5529,11 +7174,11 @@
     ],
     "form": "Hisui",
     "abilities": {
-      "0": "Sap Sipper",
-      "1": "Shell Armor",
-      "H": "Gooey"
+      "0": "sapsipper",
+      "1": "shellarmor",
+      "H": "gooey"
     },
-    "weightKg": 334,
+    "weightKg": 334.1,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -5541,7 +7186,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 100,
+      "def": 100,
+      "spa": 110,
+      "spd": 150,
+      "spe": 60
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5554,8 +7206,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Prankster",
-      "H": "Magician"
+      "0": "prankster",
+      "H": "magician"
     },
     "weightKg": 3,
     "requiredItem": null,
@@ -5565,7 +7217,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 57,
+      "atk": 80,
+      "def": 91,
+      "spa": 80,
+      "spd": 87,
+      "spe": 75
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5578,9 +7237,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Natural Cure",
-      "1": "Frisk",
-      "H": "Harvest"
+      "0": "naturalcure",
+      "1": "frisk",
+      "H": "harvest"
     },
     "weightKg": 71,
     "requiredItem": null,
@@ -5590,7 +7249,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 110,
+      "def": 76,
+      "spa": 65,
+      "spd": 82,
+      "spe": 56
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5603,11 +7269,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Pickup",
-      "1": "Frisk",
-      "H": "Insomnia"
+      "0": "pickup",
+      "1": "frisk",
+      "H": "insomnia"
     },
-    "weightKg": 12,
+    "weightKg": 12.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -5615,7 +7281,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 90,
+      "def": 122,
+      "spa": 58,
+      "spd": 75,
+      "spe": 84
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5628,11 +7301,11 @@
     ],
     "form": "Small",
     "abilities": {
-      "0": "Pickup",
-      "1": "Frisk",
-      "H": "Insomnia"
+      "0": "pickup",
+      "1": "frisk",
+      "H": "insomnia"
     },
-    "weightKg": 9,
+    "weightKg": 9.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -5640,7 +7313,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 55,
+      "atk": 85,
+      "def": 122,
+      "spa": 58,
+      "spd": 75,
+      "spe": 99
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5653,9 +7333,9 @@
     ],
     "form": "Large",
     "abilities": {
-      "0": "Pickup",
-      "1": "Frisk",
-      "H": "Insomnia"
+      "0": "pickup",
+      "1": "frisk",
+      "H": "insomnia"
     },
     "weightKg": 14,
     "requiredItem": null,
@@ -5665,7 +7345,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 95,
+      "def": 122,
+      "spa": 58,
+      "spd": 75,
+      "spe": 69
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5678,9 +7365,9 @@
     ],
     "form": "Super",
     "abilities": {
-      "0": "Pickup",
-      "1": "Frisk",
-      "H": "Insomnia"
+      "0": "pickup",
+      "1": "frisk",
+      "H": "insomnia"
     },
     "weightKg": 39,
     "requiredItem": null,
@@ -5690,7 +7377,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 100,
+      "def": 122,
+      "spa": 58,
+      "spd": 75,
+      "spe": 54
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5702,9 +7396,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Own Tempo",
-      "1": "Ice Body",
-      "H": "Sturdy"
+      "0": "owntempo",
+      "1": "icebody",
+      "H": "sturdy"
     },
     "weightKg": 505,
     "requiredItem": null,
@@ -5714,7 +7408,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 117,
+      "def": 184,
+      "spa": 44,
+      "spd": 46,
+      "spe": 28
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5727,11 +7428,11 @@
     ],
     "form": "Hisui",
     "abilities": {
-      "0": "Strong Jaw",
-      "1": "Ice Body",
-      "H": "Sturdy"
+      "0": "strongjaw",
+      "1": "icebody",
+      "H": "sturdy"
     },
-    "weightKg": 262,
+    "weightKg": 262.4,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -5739,7 +7440,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 127,
+      "def": 184,
+      "spa": 34,
+      "spd": 36,
+      "spe": 38
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5752,9 +7460,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Frisk",
-      "1": "Infiltrator",
-      "H": "Telepathy"
+      "0": "frisk",
+      "1": "infiltrator",
+      "H": "telepathy"
     },
     "weightKg": 85,
     "requiredItem": null,
@@ -5764,7 +7472,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 70,
+      "def": 80,
+      "spa": 97,
+      "spd": 80,
+      "spe": 123
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5777,10 +7492,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Overgrow",
-      "H": "Long Reach"
+      "0": "overgrow",
+      "H": "longreach"
     },
-    "weightKg": 36,
+    "weightKg": 36.6,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -5788,7 +7503,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 78,
+      "atk": 107,
+      "def": 75,
+      "spa": 100,
+      "spd": 100,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5801,8 +7523,8 @@
     ],
     "form": "Hisui",
     "abilities": {
-      "0": "Overgrow",
-      "H": "Scrappy"
+      "0": "overgrow",
+      "H": "scrappy"
     },
     "weightKg": 37,
     "requiredItem": null,
@@ -5812,7 +7534,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 88,
+      "atk": 112,
+      "def": 80,
+      "spa": 95,
+      "spd": 95,
+      "spe": 60
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5825,8 +7554,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Blaze",
-      "H": "Intimidate"
+      "0": "blaze",
+      "H": "intimidate"
     },
     "weightKg": 83,
     "requiredItem": null,
@@ -5836,7 +7565,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 115,
+      "def": 90,
+      "spa": 80,
+      "spd": 90,
+      "spe": 60
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5849,8 +7585,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Torrent",
-      "H": "Liquid Voice"
+      "0": "torrent",
+      "H": "liquidvoice"
     },
     "weightKg": 44,
     "requiredItem": null,
@@ -5860,7 +7596,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 74,
+      "def": 74,
+      "spa": 126,
+      "spd": 116,
+      "spe": 60
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5873,9 +7616,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Keen Eye",
-      "1": "Skill Link",
-      "H": "Sheer Force"
+      "0": "keeneye",
+      "1": "skilllink",
+      "H": "sheerforce"
     },
     "weightKg": 26,
     "requiredItem": null,
@@ -5885,7 +7628,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 120,
+      "def": 75,
+      "spa": 75,
+      "spd": 75,
+      "spe": 60
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5898,9 +7648,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Hyper Cutter",
-      "1": "Iron Fist",
-      "H": "Anger Point"
+      "0": "hypercutter",
+      "1": "ironfist",
+      "H": "angerpoint"
     },
     "weightKg": 180,
     "requiredItem": null,
@@ -5910,7 +7660,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 97,
+      "atk": 132,
+      "def": 77,
+      "spa": 62,
+      "spd": 67,
+      "spe": 43
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5923,9 +7680,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Iron Fist"
+      "0": "ironfist"
     },
-    "weightKg": 252,
+    "weightKg": 252.8,
     "requiredItem": "Crabominite",
     "requiredMove": null,
     "canEvolve": false,
@@ -5933,7 +7690,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 97,
+      "atk": 157,
+      "def": 122,
+      "spa": 62,
+      "spd": 107,
+      "spe": 33
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5945,9 +7709,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Keen Eye",
-      "1": "Sand Rush",
-      "H": "Steadfast"
+      "0": "keeneye",
+      "1": "sandrush",
+      "H": "steadfast"
     },
     "weightKg": 25,
     "requiredItem": null,
@@ -5957,7 +7721,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 115,
+      "def": 65,
+      "spa": 55,
+      "spd": 65,
+      "spe": 112
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5969,9 +7740,9 @@
     ],
     "form": "Midnight",
     "abilities": {
-      "0": "Keen Eye",
-      "1": "Vital Spirit",
-      "H": "No Guard"
+      "0": "keeneye",
+      "1": "vitalspirit",
+      "H": "noguard"
     },
     "weightKg": 25,
     "requiredItem": null,
@@ -5981,7 +7752,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 115,
+      "def": 75,
+      "spa": 55,
+      "spd": 75,
+      "spe": 82
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -5993,7 +7771,7 @@
     ],
     "form": "Dusk",
     "abilities": {
-      "0": "Tough Claws"
+      "0": "toughclaws"
     },
     "weightKg": 25,
     "requiredItem": null,
@@ -6003,7 +7781,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 117,
+      "def": 65,
+      "spa": 55,
+      "spd": 65,
+      "spe": 110
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6016,11 +7801,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Merciless",
-      "1": "Limber",
-      "H": "Regenerator"
+      "0": "merciless",
+      "1": "limber",
+      "H": "regenerator"
     },
-    "weightKg": 14,
+    "weightKg": 14.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -6028,7 +7813,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 50,
+      "atk": 63,
+      "def": 152,
+      "spa": 53,
+      "spd": 142,
+      "spe": 35
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6040,9 +7832,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Own Tempo",
-      "1": "Stamina",
-      "H": "Inner Focus"
+      "0": "owntempo",
+      "1": "stamina",
+      "H": "innerfocus"
     },
     "weightKg": 920,
     "requiredItem": null,
@@ -6052,7 +7844,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 100,
+      "atk": 125,
+      "def": 100,
+      "spa": 55,
+      "spd": 85,
+      "spe": 35
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6065,8 +7864,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Water Bubble",
-      "H": "Water Absorb"
+      "0": "waterbubble",
+      "H": "waterabsorb"
     },
     "weightKg": 82,
     "requiredItem": null,
@@ -6076,7 +7875,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 68,
+      "atk": 70,
+      "def": 92,
+      "spa": 50,
+      "spd": 132,
+      "spe": 42
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6089,17 +7895,24 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Corrosion",
-      "H": "Oblivious"
+      "0": "corrosion",
+      "H": "oblivious"
     },
-    "weightKg": 22,
+    "weightKg": 22.2,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 68,
+      "atk": 64,
+      "def": 60,
+      "spa": 111,
+      "spd": 60,
+      "spe": 117
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6111,18 +7924,25 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Leaf Guard",
-      "1": "Queenly Majesty",
-      "H": "Sweet Veil"
+      "0": "leafguard",
+      "1": "queenlymajesty",
+      "H": "sweetveil"
     },
-    "weightKg": 21,
+    "weightKg": 21.4,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 72,
+      "atk": 120,
+      "def": 98,
+      "spa": 50,
+      "spd": 98,
+      "spe": 72
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6135,9 +7955,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Inner Focus",
-      "1": "Telepathy",
-      "H": "Symbiosis"
+      "0": "innerfocus",
+      "1": "telepathy",
+      "H": "symbiosis"
     },
     "weightKg": 76,
     "requiredItem": null,
@@ -6147,7 +7967,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 90,
+      "atk": 60,
+      "def": 80,
+      "spa": 90,
+      "spd": 110,
+      "spe": 60
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6159,10 +7986,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Receiver",
-      "H": "Defiant"
+      "0": "receiver",
+      "H": "defiant"
     },
-    "weightKg": 82,
+    "weightKg": 82.8,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -6170,7 +7997,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 100,
+      "atk": 120,
+      "def": 90,
+      "spa": 40,
+      "spd": 60,
+      "spe": 80
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6183,9 +8017,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Disguise"
+      "0": "disguise"
     },
-    "weightKg": 0,
+    "weightKg": 0.7,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -6193,7 +8027,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 55,
+      "atk": 90,
+      "def": 80,
+      "spa": 50,
+      "spd": 105,
+      "spe": 96
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6206,9 +8047,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Berserk",
-      "1": "Sap Sipper",
-      "H": "Cloud Nine"
+      "0": "berserk",
+      "1": "sapsipper",
+      "H": "cloudnine"
     },
     "weightKg": 185,
     "requiredItem": null,
@@ -6218,7 +8059,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 78,
+      "atk": 60,
+      "def": 85,
+      "spa": 135,
+      "spd": 91,
+      "spe": 36
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6231,9 +8079,9 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Berserk"
+      "0": "berserk"
     },
-    "weightKg": 240,
+    "weightKg": 240.5,
     "requiredItem": "Drampanite",
     "requiredMove": null,
     "canEvolve": false,
@@ -6241,7 +8089,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 78,
+      "atk": 85,
+      "def": 110,
+      "spa": 160,
+      "spd": 116,
+      "spe": 36
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6254,11 +8109,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Bulletproof",
-      "1": "Soundproof",
-      "H": "Overcoat"
+      "0": "bulletproof",
+      "1": "soundproof",
+      "H": "overcoat"
     },
-    "weightKg": 78,
+    "weightKg": 78.2,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -6266,7 +8121,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 110,
+      "def": 125,
+      "spa": 100,
+      "spd": 105,
+      "spe": 85
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6279,9 +8141,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Pressure",
-      "1": "Unnerve",
-      "H": "Mirror Armor"
+      "0": "pressure",
+      "1": "unnerve",
+      "H": "mirrorarmor"
     },
     "weightKg": 75,
     "requiredItem": null,
@@ -6291,7 +8153,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 98,
+      "atk": 87,
+      "def": 105,
+      "spa": 53,
+      "spd": 85,
+      "spe": 67
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6304,9 +8173,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Ripen",
-      "1": "Gluttony",
-      "H": "Hustle"
+      "0": "ripen",
+      "1": "gluttony",
+      "H": "hustle"
     },
     "weightKg": 1,
     "requiredItem": null,
@@ -6316,7 +8185,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 110,
+      "def": 80,
+      "spa": 95,
+      "spd": 60,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6329,9 +8205,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Ripen",
-      "1": "Gluttony",
-      "H": "Thick Fat"
+      "0": "ripen",
+      "1": "gluttony",
+      "H": "thickfat"
     },
     "weightKg": 13,
     "requiredItem": null,
@@ -6341,7 +8217,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 110,
+      "atk": 85,
+      "def": 80,
+      "spa": 100,
+      "spd": 80,
+      "spe": 30
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6353,11 +8236,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Sand Spit",
-      "1": "Shed Skin",
-      "H": "Sand Veil"
+      "0": "sandspit",
+      "1": "shedskin",
+      "H": "sandveil"
     },
-    "weightKg": 65,
+    "weightKg": 65.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -6365,7 +8248,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 72,
+      "atk": 107,
+      "def": 125,
+      "spa": 65,
+      "spd": 70,
+      "spe": 71
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6377,17 +8267,24 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Weak Armor",
-      "H": "Cursed Body"
+      "0": "weakarmor",
+      "H": "cursedbody"
     },
-    "weightKg": 0,
+    "weightKg": 0.4,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 60,
+      "atk": 65,
+      "def": 65,
+      "spa": 134,
+      "spd": 114,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6400,18 +8297,25 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Healer",
-      "1": "Anticipation",
-      "H": "Magic Bounce"
+      "0": "healer",
+      "1": "anticipation",
+      "H": "magicbounce"
     },
-    "weightKg": 5,
+    "weightKg": 5.1,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 57,
+      "atk": 90,
+      "def": 95,
+      "spa": 136,
+      "spd": 103,
+      "spe": 29
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6424,9 +8328,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Prankster",
-      "1": "Frisk",
-      "H": "Pickpocket"
+      "0": "prankster",
+      "1": "frisk",
+      "H": "pickpocket"
     },
     "weightKg": 61,
     "requiredItem": null,
@@ -6435,7 +8339,14 @@
     "genders": [
       "M"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 120,
+      "def": 65,
+      "spa": 95,
+      "spd": 75,
+      "spe": 60
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6448,11 +8359,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Tangled Feet",
-      "1": "Screen Cleaner",
-      "H": "Ice Body"
+      "0": "tangledfeet",
+      "1": "screencleaner",
+      "H": "icebody"
     },
-    "weightKg": 58,
+    "weightKg": 58.2,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -6460,7 +8371,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 85,
+      "def": 75,
+      "spa": 110,
+      "spd": 100,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6473,9 +8391,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Wandering Spirit"
+      "0": "wanderingspirit"
     },
-    "weightKg": 66,
+    "weightKg": 66.6,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -6483,7 +8401,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 58,
+      "atk": 95,
+      "def": 145,
+      "spa": 50,
+      "spd": 105,
+      "spe": 30
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6495,17 +8420,24 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Sweet Veil",
-      "H": "Aroma Veil"
+      "0": "sweetveil",
+      "H": "aromaveil"
     },
-    "weightKg": 0,
+    "weightKg": 0.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 60,
+      "def": 75,
+      "spa": 110,
+      "spd": 121,
+      "spe": 64
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6517,8 +8449,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Battle Armor",
-      "H": "Defiant"
+      "0": "battlearmor",
+      "H": "defiant"
     },
     "weightKg": 62,
     "requiredItem": null,
@@ -6527,7 +8459,14 @@
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 100,
+      "def": 100,
+      "spa": 70,
+      "spd": 60,
+      "spe": 75
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6539,7 +8478,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Defiant"
+      "0": "defiant"
     },
     "weightKg": 99,
     "requiredItem": "Falinksite",
@@ -6548,7 +8487,14 @@
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 135,
+      "def": 135,
+      "spa": 70,
+      "spd": 65,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6561,7 +8507,7 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Hunger Switch"
+      "0": "hungerswitch"
     },
     "weightKg": 3,
     "requiredItem": null,
@@ -6571,7 +8517,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 58,
+      "atk": 95,
+      "def": 58,
+      "spa": 70,
+      "spd": 58,
+      "spe": 97
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6584,9 +8537,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Clear Body",
-      "1": "Infiltrator",
-      "H": "Cursed Body"
+      "0": "clearbody",
+      "1": "infiltrator",
+      "H": "cursedbody"
     },
     "weightKg": 50,
     "requiredItem": null,
@@ -6596,7 +8549,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 88,
+      "atk": 120,
+      "def": 75,
+      "spa": 100,
+      "spd": 75,
+      "spe": 142
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6609,11 +8569,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Intimidate",
-      "1": "Frisk",
-      "H": "Sap Sipper"
+      "0": "intimidate",
+      "1": "frisk",
+      "H": "sapsipper"
     },
-    "weightKg": 95,
+    "weightKg": 95.1,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -6621,7 +8581,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 103,
+      "atk": 105,
+      "def": 72,
+      "spa": 105,
+      "spd": 75,
+      "spe": 65
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6634,9 +8601,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Swarm",
-      "1": "Sheer Force",
-      "H": "Sharpness"
+      "0": "swarm",
+      "1": "sheerforce",
+      "H": "sharpness"
     },
     "weightKg": 89,
     "requiredItem": null,
@@ -6646,7 +8613,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 135,
+      "def": 95,
+      "spa": 45,
+      "spd": 70,
+      "spe": 85
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6659,9 +8633,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Swift Swim",
-      "1": "Adaptability",
-      "H": "Mold Breaker"
+      "0": "swiftswim",
+      "1": "adaptability",
+      "H": "moldbreaker"
     },
     "weightKg": 110,
     "requiredItem": null,
@@ -6670,7 +8644,14 @@
     "genders": [
       "M"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 120,
+      "atk": 112,
+      "def": 65,
+      "spa": 80,
+      "spd": 75,
+      "spe": 78
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6683,9 +8664,9 @@
     ],
     "form": "F",
     "abilities": {
-      "0": "Swift Swim",
-      "1": "Adaptability",
-      "H": "Mold Breaker"
+      "0": "swiftswim",
+      "1": "adaptability",
+      "H": "moldbreaker"
     },
     "weightKg": 110,
     "requiredItem": null,
@@ -6694,7 +8675,14 @@
     "genders": [
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 120,
+      "atk": 92,
+      "def": 65,
+      "spa": 100,
+      "spd": 75,
+      "spe": 78
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6707,9 +8695,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Pressure",
-      "1": "Unburden",
-      "H": "Poison Touch"
+      "0": "pressure",
+      "1": "unburden",
+      "H": "poisontouch"
     },
     "weightKg": 43,
     "requiredItem": null,
@@ -6719,7 +8707,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 80,
+      "atk": 130,
+      "def": 60,
+      "spa": 40,
+      "spd": 80,
+      "spe": 120
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6732,11 +8727,11 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Poison Point",
-      "1": "Swift Swim",
-      "H": "Intimidate"
+      "0": "poisonpoint",
+      "1": "swiftswim",
+      "H": "intimidate"
     },
-    "weightKg": 60,
+    "weightKg": 60.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -6744,7 +8739,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 115,
+      "def": 95,
+      "spa": 65,
+      "spd": 65,
+      "spe": 85
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6757,10 +8759,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Overgrow",
-      "H": "Protean"
+      "0": "overgrow",
+      "H": "protean"
     },
-    "weightKg": 31,
+    "weightKg": 31.2,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -6768,7 +8770,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 76,
+      "atk": 110,
+      "def": 70,
+      "spa": 81,
+      "spd": 70,
+      "spe": 123
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6781,10 +8790,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Blaze",
-      "H": "Unaware"
+      "0": "blaze",
+      "H": "unaware"
     },
-    "weightKg": 326,
+    "weightKg": 326.5,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -6792,7 +8801,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 104,
+      "atk": 75,
+      "def": 100,
+      "spa": 110,
+      "spd": 75,
+      "spe": 66
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6805,10 +8821,10 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Torrent",
-      "H": "Moxie"
+      "0": "torrent",
+      "H": "moxie"
     },
-    "weightKg": 61,
+    "weightKg": 61.9,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -6816,7 +8832,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 120,
+      "def": 80,
+      "spa": 85,
+      "spd": 75,
+      "spe": 85
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6828,18 +8851,25 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Friend Guard",
-      "1": "Cheek Pouch",
-      "H": "Technician"
+      "0": "friendguard",
+      "1": "cheekpouch",
+      "H": "technician"
     },
-    "weightKg": 2,
+    "weightKg": 2.3,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 74,
+      "atk": 75,
+      "def": 70,
+      "spa": 65,
+      "spd": 75,
+      "spe": 111
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6851,9 +8881,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Purifying Salt",
-      "1": "Sturdy",
-      "H": "Clear Body"
+      "0": "purifyingsalt",
+      "1": "sturdy",
+      "H": "clearbody"
     },
     "weightKg": 240,
     "requiredItem": null,
@@ -6863,7 +8893,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 100,
+      "atk": 100,
+      "def": 130,
+      "spa": 45,
+      "spd": 90,
+      "spe": 35
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6876,8 +8913,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Flash Fire",
-      "H": "Weak Armor"
+      "0": "flashfire",
+      "H": "weakarmor"
     },
     "weightKg": 85,
     "requiredItem": null,
@@ -6887,7 +8924,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 60,
+      "def": 100,
+      "spa": 125,
+      "spd": 80,
+      "spe": 75
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6900,8 +8944,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Flash Fire",
-      "H": "Weak Armor"
+      "0": "flashfire",
+      "H": "weakarmor"
     },
     "weightKg": 62,
     "requiredItem": null,
@@ -6911,7 +8955,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 75,
+      "atk": 125,
+      "def": 80,
+      "spa": 60,
+      "spd": 100,
+      "spe": 85
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6923,9 +8974,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Electromorphosis",
-      "1": "Static",
-      "H": "Damp"
+      "0": "electromorphosis",
+      "1": "static",
+      "H": "damp"
     },
     "weightKg": 113,
     "requiredItem": null,
@@ -6935,7 +8986,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 109,
+      "atk": 64,
+      "def": 91,
+      "spa": 103,
+      "spd": 83,
+      "spe": 45
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6948,9 +9006,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Chlorophyll",
-      "1": "Insomnia",
-      "H": "Moody"
+      "0": "chlorophyll",
+      "1": "insomnia",
+      "H": "moody"
     },
     "weightKg": 15,
     "requiredItem": null,
@@ -6960,7 +9018,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 108,
+      "def": 65,
+      "spa": 108,
+      "spd": 65,
+      "spe": 75
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6973,7 +9038,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Spicy Spray"
+      "0": "spicyspray"
     },
     "weightKg": 22,
     "requiredItem": "Scovillainite",
@@ -6983,7 +9048,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 65,
+      "atk": 138,
+      "def": 85,
+      "spa": 138,
+      "spd": 85,
+      "spe": 75
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -6995,9 +9067,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Opportunist",
-      "1": "Frisk",
-      "H": "Speed Boost"
+      "0": "opportunist",
+      "1": "frisk",
+      "H": "speedboost"
     },
     "weightKg": 90,
     "requiredItem": null,
@@ -7007,7 +9079,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 95,
+      "atk": 60,
+      "def": 60,
+      "spa": 101,
+      "spd": 60,
+      "spe": 105
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -7020,18 +9099,25 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Mold Breaker",
-      "1": "Own Tempo",
-      "H": "Pickpocket"
+      "0": "moldbreaker",
+      "1": "owntempo",
+      "H": "pickpocket"
     },
-    "weightKg": 112,
+    "weightKg": 112.8,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 85,
+      "atk": 75,
+      "def": 77,
+      "spa": 70,
+      "spd": 105,
+      "spe": 94
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -7043,9 +9129,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Zero to Hero"
+      "0": "zerotohero"
     },
-    "weightKg": 60,
+    "weightKg": 60.2,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
@@ -7053,7 +9139,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 100,
+      "atk": 70,
+      "def": 72,
+      "spa": 53,
+      "spd": 62,
+      "spe": 100
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -7065,8 +9158,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Earth Eater",
-      "H": "Sand Veil"
+      "0": "eartheater",
+      "H": "sandveil"
     },
     "weightKg": 310,
     "requiredItem": null,
@@ -7076,7 +9169,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 70,
+      "atk": 85,
+      "def": 145,
+      "spa": 60,
+      "spd": 55,
+      "spe": 65
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -7089,8 +9189,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Toxic Debris",
-      "H": "Corrosion"
+      "0": "toxicdebris",
+      "H": "corrosion"
     },
     "weightKg": 45,
     "requiredItem": null,
@@ -7100,7 +9200,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 83,
+      "atk": 55,
+      "def": 90,
+      "spa": 130,
+      "spd": 81,
+      "spe": 86
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -7113,7 +9220,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "Adaptability"
+      "0": "adaptability"
     },
     "weightKg": 77,
     "requiredItem": "Glimmoranite",
@@ -7123,7 +9230,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 83,
+      "atk": 90,
+      "def": 105,
+      "spa": 150,
+      "spd": 96,
+      "spe": 101
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -7135,8 +9249,8 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Sand Rush",
-      "H": "Fluffy"
+      "0": "sandrush",
+      "H": "fluffy"
     },
     "weightKg": 15,
     "requiredItem": null,
@@ -7146,7 +9260,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 72,
+      "atk": 101,
+      "def": 100,
+      "spa": 50,
+      "spd": 97,
+      "spe": 68
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -7159,9 +9280,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Vital Spirit",
-      "1": "Inner Focus",
-      "H": "Defiant"
+      "0": "vitalspirit",
+      "1": "innerfocus",
+      "H": "defiant"
     },
     "weightKg": 56,
     "requiredItem": null,
@@ -7171,7 +9292,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 110,
+      "atk": 115,
+      "def": 80,
+      "spa": 50,
+      "spd": 90,
+      "spe": 90
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -7184,9 +9312,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Cud Chew",
-      "1": "Armor Tail",
-      "H": "Sap Sipper"
+      "0": "cudchew",
+      "1": "armortail",
+      "H": "sapsipper"
     },
     "weightKg": 160,
     "requiredItem": null,
@@ -7196,7 +9324,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 120,
+      "atk": 90,
+      "def": 70,
+      "spa": 110,
+      "spd": 70,
+      "spe": 60
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -7209,9 +9344,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Defiant",
-      "1": "Supreme Overlord",
-      "H": "Pressure"
+      "0": "defiant",
+      "1": "supremeoverlord",
+      "H": "pressure"
     },
     "weightKg": 120,
     "requiredItem": null,
@@ -7221,7 +9356,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 100,
+      "atk": 135,
+      "def": 120,
+      "spa": 60,
+      "spd": 85,
+      "spe": 50
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -7234,7 +9376,7 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Good as Gold"
+      "0": "goodasgold"
     },
     "weightKg": 30,
     "requiredItem": null,
@@ -7243,7 +9385,14 @@
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 87,
+      "atk": 60,
+      "def": 95,
+      "spa": 133,
+      "spd": 91,
+      "spe": 84
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -7256,17 +9405,24 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Hospitality",
-      "H": "Heatproof"
+      "0": "hospitality",
+      "H": "heatproof"
     },
-    "weightKg": 2,
+    "weightKg": 2.2,
     "requiredItem": null,
     "requiredMove": null,
     "canEvolve": false,
     "genders": [
       "N"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 71,
+      "atk": 60,
+      "def": 106,
+      "spa": 121,
+      "spd": 80,
+      "spe": 70
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -7279,9 +9435,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Stamina",
-      "1": "Sturdy",
-      "H": "Stalwart"
+      "0": "stamina",
+      "1": "sturdy",
+      "H": "stalwart"
     },
     "weightKg": 60,
     "requiredItem": null,
@@ -7291,7 +9447,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 90,
+      "atk": 105,
+      "def": 130,
+      "spa": 125,
+      "spd": 65,
+      "spe": 85
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   },
@@ -7304,9 +9467,9 @@
     ],
     "form": null,
     "abilities": {
-      "0": "Supersweet Syrup",
-      "1": "Regenerator",
-      "H": "Sticky Hold"
+      "0": "supersweetsyrup",
+      "1": "regenerator",
+      "H": "stickyhold"
     },
     "weightKg": 93,
     "requiredItem": null,
@@ -7316,7 +9479,14 @@
       "M",
       "F"
     ],
-    "baseStats": null,
+    "baseStats": {
+      "hp": 106,
+      "atk": 80,
+      "def": 110,
+      "spa": 120,
+      "spd": 80,
+      "spe": 44
+    },
     "source": "smogon/pokemon-showdown",
     "verified": false
   }
