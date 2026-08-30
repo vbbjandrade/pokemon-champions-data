@@ -1,0 +1,14 @@
+{
+  "lastUpdated": "2026-08-30",
+  "gameVersion": "1.1.5",
+  "latestRegulation": "M-B",
+  "records": {
+    "pokemon": 310,
+    "moves": 496,
+    "abilities": 317,
+    "items": 148
+  },
+  "sources": [
+    "smogon/pokemon-showdown"
+  ]
+}

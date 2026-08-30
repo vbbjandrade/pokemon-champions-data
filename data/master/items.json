@@ -1,0 +1,8137 @@
+{
+  "abilityshield": {
+    "name": "Ability Shield",
+    "desc": null,
+    "shortDesc": "Holder's Ability cannot be changed, suppressed, or ignored by any effect.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      },
+      "ignoreKlutz": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "abomasite": {
+    "name": "Abomasite",
+    "desc": null,
+    "shortDesc": "If held by an Abomasnow, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Abomasnow": "Abomasnow-Mega"
+      },
+      "itemUser": [
+        "Abomasnow"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "absolite": {
+    "name": "Absolite",
+    "desc": null,
+    "shortDesc": "If held by an Absol, this item allows it to Mega Evolve into Mega Absol in battle.",
+    "flags": {
+      "megaStone": {
+        "Absol": "Absol-Mega"
+      },
+      "itemUser": [
+        "Absol"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "absolitez": {
+    "name": "Absolite Z",
+    "desc": null,
+    "shortDesc": "If held by an Absol, this item allows it to Mega Evolve into Mega Absol Z in battle.",
+    "flags": {
+      "megaStone": {
+        "Absol": "Absol-Mega-Z"
+      },
+      "itemUser": [
+        "Absol"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "absorbbulb": {
+    "name": "Absorb Bulb",
+    "desc": null,
+    "shortDesc": "Raises holder's Sp. Atk by 1 stage if hit by a Water-type attack. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      },
+      "boosts": {
+        "spa": 1
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "adamantcrystal": {
+    "name": "Adamant Crystal",
+    "desc": null,
+    "shortDesc": "If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.",
+    "flags": {
+      "itemUser": [
+        "Dialga-Origin"
+      ],
+      "forcedForme": "Dialga-Origin"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "adamantorb": {
+    "name": "Adamant Orb",
+    "desc": null,
+    "shortDesc": "If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      },
+      "itemUser": [
+        "Dialga"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "adrenalineorb": {
+    "name": "Adrenaline Orb",
+    "desc": null,
+    "shortDesc": "Raises holder's Speed by 1 stage if it gets affected by Intimidate. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      },
+      "boosts": {
+        "spe": 1
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "aerodactylite": {
+    "name": "Aerodactylite",
+    "desc": null,
+    "shortDesc": "If held by an Aerodactyl, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Aerodactyl": "Aerodactyl-Mega"
+      },
+      "itemUser": [
+        "Aerodactyl"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "aggronite": {
+    "name": "Aggronite",
+    "desc": null,
+    "shortDesc": "If held by an Aggron, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Aggron": "Aggron-Mega"
+      },
+      "itemUser": [
+        "Aggron"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "aguavberry": {
+    "name": "Aguav Berry",
+    "desc": null,
+    "shortDesc": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Dragon"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "airballoon": {
+    "name": "Air Balloon",
+    "desc": null,
+    "shortDesc": "Holder is immune to Ground-type attacks. Pops when holder is hit.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "alakazite": {
+    "name": "Alakazite",
+    "desc": null,
+    "shortDesc": "If held by an Alakazam, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Alakazam": "Alakazam-Mega"
+      },
+      "itemUser": [
+        "Alakazam"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "aloraichiumz": {
+    "name": "Aloraichium Z",
+    "desc": null,
+    "shortDesc": "If held by an Alolan Raichu with Thunderbolt, it can use Stoked Sparksurfer.",
+    "flags": {
+      "zMove": "Stoked Sparksurfer",
+      "zMoveFrom": "Thunderbolt",
+      "itemUser": [
+        "Raichu-Alola"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "altarianite": {
+    "name": "Altarianite",
+    "desc": null,
+    "shortDesc": "If held by an Altaria, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Altaria": "Altaria-Mega"
+      },
+      "itemUser": [
+        "Altaria"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "ampharosite": {
+    "name": "Ampharosite",
+    "desc": null,
+    "shortDesc": "If held by an Ampharos, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Ampharos": "Ampharos-Mega"
+      },
+      "itemUser": [
+        "Ampharos"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "apicotberry": {
+    "name": "Apicot Berry",
+    "desc": null,
+    "shortDesc": "Raises holder's Sp. Def by 1 stage when at 1/4 max HP or less. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Ground"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "armorfossil": {
+    "name": "Armor Fossil",
+    "desc": null,
+    "shortDesc": "Can be revived into Shieldon.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "aspearberry": {
+    "name": "Aspear Berry",
+    "desc": null,
+    "shortDesc": "Holder is cured if it is frozen. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Ice"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "assaultvest": {
+    "name": "Assault Vest",
+    "desc": null,
+    "shortDesc": "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "audinite": {
+    "name": "Audinite",
+    "desc": null,
+    "shortDesc": "If held by an Audino, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Audino": "Audino-Mega"
+      },
+      "itemUser": [
+        "Audino"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "auspiciousarmor": {
+    "name": "Auspicious Armor",
+    "desc": null,
+    "shortDesc": "Evolves Charcadet into Armarouge when used.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "babiriberry": {
+    "name": "Babiri Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Steel-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Steel"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "banettite": {
+    "name": "Banettite",
+    "desc": null,
+    "shortDesc": "If held by a Banette, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Banette": "Banette-Mega"
+      },
+      "itemUser": [
+        "Banette"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "barbaracite": {
+    "name": "Barbaracite",
+    "desc": null,
+    "shortDesc": "If held by a Barbaracle, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Barbaracle": "Barbaracle-Mega"
+      },
+      "itemUser": [
+        "Barbaracle"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "baxcalibrite": {
+    "name": "Baxcalibrite",
+    "desc": null,
+    "shortDesc": "If held by a Baxcalibur, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Baxcalibur": "Baxcalibur-Mega"
+      },
+      "itemUser": [
+        "Baxcalibur"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "beastball": {
+    "name": "Beast Ball",
+    "desc": null,
+    "shortDesc": "A special Poke Ball designed to catch Ultra Beasts.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "beedrillite": {
+    "name": "Beedrillite",
+    "desc": null,
+    "shortDesc": "If held by a Beedrill, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Beedrill": "Beedrill-Mega"
+      },
+      "itemUser": [
+        "Beedrill"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "belueberry": {
+    "name": "Belue Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Electric"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "berry": {
+    "name": "Berry",
+    "desc": null,
+    "shortDesc": "(Gen 2) Restores 10 HP when at 1/2 max HP or less. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Poison"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "berryjuice": {
+    "name": "Berry Juice",
+    "desc": null,
+    "shortDesc": "Restores 20 HP when at 1/2 max HP or less. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "berrysweet": {
+    "name": "Berry Sweet",
+    "desc": null,
+    "shortDesc": "Evolves Milcery into Alcremie when held and spun around.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "berserkgene": {
+    "name": "Berserk Gene",
+    "desc": null,
+    "shortDesc": "(Gen 2) On switch-in, raises holder's Attack by 2 and confuses it. Single use.",
+    "flags": {
+      "boosts": {
+        "atk": 2
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "bignugget": {
+    "name": "Big Nugget",
+    "desc": null,
+    "shortDesc": "A big nugget of pure gold that gives off a lustrous gleam.",
+    "flags": {
+      "fling": {
+        "basePower": 130
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "bigroot": {
+    "name": "Big Root",
+    "desc": null,
+    "shortDesc": "Holder gains 1.3x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "bindingband": {
+    "name": "Binding Band",
+    "desc": null,
+    "shortDesc": "Holder's partial-trapping moves deal 1/6 max HP per turn instead of 1/8.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "bitterberry": {
+    "name": "Bitter Berry",
+    "desc": null,
+    "shortDesc": "(Gen 2) Holder is cured if it is confused. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Ground"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "blackbelt": {
+    "name": "Black Belt",
+    "desc": null,
+    "shortDesc": "Holder's Fighting-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "blackglasses": {
+    "name": "Black Glasses",
+    "desc": null,
+    "shortDesc": "Holder's Dark-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "blacksludge": {
+    "name": "Black Sludge",
+    "desc": null,
+    "shortDesc": "Each turn, if holder is a Poison type, restores 1/16 max HP; loses 1/8 if not.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "blastoisinite": {
+    "name": "Blastoisinite",
+    "desc": null,
+    "shortDesc": "If held by a Blastoise, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Blastoise": "Blastoise-Mega"
+      },
+      "itemUser": [
+        "Blastoise"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "blazikenite": {
+    "name": "Blazikenite",
+    "desc": null,
+    "shortDesc": "If held by a Blaziken, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Blaziken": "Blaziken-Mega"
+      },
+      "itemUser": [
+        "Blaziken"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "blueorb": {
+    "name": "Blue Orb",
+    "desc": null,
+    "shortDesc": "If held by a Kyogre, this item triggers its Primal Reversion in battle.",
+    "flags": {
+      "isPrimalOrb": true,
+      "itemUser": [
+        "Kyogre"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "blukberry": {
+    "name": "Bluk Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Fire"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "blunderpolicy": {
+    "name": "Blunder Policy",
+    "desc": null,
+    "shortDesc": "If the holder misses due to accuracy, its Speed is raised by 2 stages. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "boosterenergy": {
+    "name": "Booster Energy",
+    "desc": null,
+    "shortDesc": "Activates the Protosynthesis or Quark Drive Abilities. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "bottlecap": {
+    "name": "Bottle Cap",
+    "desc": null,
+    "shortDesc": "Used for Hyper Training. One of a Pokemon's stats is calculated with an IV of 31.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "brightpowder": {
+    "name": "Bright Powder",
+    "desc": null,
+    "shortDesc": "The accuracy of attacks against the holder is 0.9x.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "buggem": {
+    "name": "Bug Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Bug-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "buginiumz": {
+    "name": "Buginium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Bug move, this item allows it to use a Bug Z-Move.",
+    "flags": {
+      "onPlate": "Bug",
+      "zMove": true,
+      "zMoveType": "Bug",
+      "forcedForme": "Arceus-Bug"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "bugmemory": {
+    "name": "Bug Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Bug type.",
+    "flags": {
+      "onMemory": "Bug",
+      "itemUser": [
+        "Silvally-Bug"
+      ],
+      "forcedForme": "Silvally-Bug"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "burndrive": {
+    "name": "Burn Drive",
+    "desc": null,
+    "shortDesc": "Holder's Techno Blast is Fire type.",
+    "flags": {
+      "onDrive": "Fire",
+      "itemUser": [
+        "Genesect-Burn"
+      ],
+      "forcedForme": "Genesect-Burn"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "burntberry": {
+    "name": "Burnt Berry",
+    "desc": null,
+    "shortDesc": "(Gen 2) Holder is cured if it is frozen. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Ice"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "cameruptite": {
+    "name": "Cameruptite",
+    "desc": null,
+    "shortDesc": "If held by a Camerupt, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Camerupt": "Camerupt-Mega"
+      },
+      "itemUser": [
+        "Camerupt"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "cellbattery": {
+    "name": "Cell Battery",
+    "desc": null,
+    "shortDesc": "Raises holder's Attack by 1 if hit by an Electric-type attack. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      },
+      "boosts": {
+        "atk": 1
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "chandelurite": {
+    "name": "Chandelurite",
+    "desc": null,
+    "shortDesc": "If held by a Chandelure, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Chandelure": "Chandelure-Mega"
+      },
+      "itemUser": [
+        "Chandelure"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "charcoal": {
+    "name": "Charcoal",
+    "desc": null,
+    "shortDesc": "Holder's Fire-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "charizarditex": {
+    "name": "Charizardite X",
+    "desc": null,
+    "shortDesc": "If held by a Charizard, this item allows it to Mega Evolve into Mega Charizard X.",
+    "flags": {
+      "megaStone": {
+        "Charizard": "Charizard-Mega-X"
+      },
+      "itemUser": [
+        "Charizard"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "charizarditey": {
+    "name": "Charizardite Y",
+    "desc": null,
+    "shortDesc": "If held by a Charizard, this item allows it to Mega Evolve into Mega Charizard Y.",
+    "flags": {
+      "megaStone": {
+        "Charizard": "Charizard-Mega-Y"
+      },
+      "itemUser": [
+        "Charizard"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "chartiberry": {
+    "name": "Charti Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Rock-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Rock"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "cheriberry": {
+    "name": "Cheri Berry",
+    "desc": null,
+    "shortDesc": "Holder cures itself if it is paralyzed. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Fire"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "cherishball": {
+    "name": "Cherish Ball",
+    "desc": null,
+    "shortDesc": "A rare Poke Ball that has been crafted to commemorate an occasion.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "chesnaughtite": {
+    "name": "Chesnaughtite",
+    "desc": null,
+    "shortDesc": "If held by a Chesnaught, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Chesnaught": "Chesnaught-Mega"
+      },
+      "itemUser": [
+        "Chesnaught"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "chestoberry": {
+    "name": "Chesto Berry",
+    "desc": null,
+    "shortDesc": "Holder wakes up if it is asleep. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Water"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "chilanberry": {
+    "name": "Chilan Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a Normal-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Normal"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "chilldrive": {
+    "name": "Chill Drive",
+    "desc": null,
+    "shortDesc": "Holder's Techno Blast is Ice type.",
+    "flags": {
+      "onDrive": "Ice",
+      "itemUser": [
+        "Genesect-Chill"
+      ],
+      "forcedForme": "Genesect-Chill"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "chimechite": {
+    "name": "Chimechite",
+    "desc": null,
+    "shortDesc": "If held by a Chimecho, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Chimecho": "Chimecho-Mega"
+      },
+      "itemUser": [
+        "Chimecho"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "chippedpot": {
+    "name": "Chipped Pot",
+    "desc": null,
+    "shortDesc": "Evolves Sinistea-Antique into Polteageist-Antique when used.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "choiceband": {
+    "name": "Choice Band",
+    "desc": null,
+    "shortDesc": "Holder's Attack is 1.5x, but it can only select the first move it executes.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      },
+      "isChoice": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "choicescarf": {
+    "name": "Choice Scarf",
+    "desc": null,
+    "shortDesc": "Holder's Speed is 1.5x, but it can only select the first move it executes.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      },
+      "isChoice": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "choicespecs": {
+    "name": "Choice Specs",
+    "desc": null,
+    "shortDesc": "Holder's Sp. Atk is 1.5x, but it can only select the first move it executes.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      },
+      "isChoice": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "chopleberry": {
+    "name": "Chople Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Fighting-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Fighting"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "clawfossil": {
+    "name": "Claw Fossil",
+    "desc": null,
+    "shortDesc": "Can be revived into Anorith.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "clearamulet": {
+    "name": "Clear Amulet",
+    "desc": null,
+    "shortDesc": "Prevents other Pokemon from lowering the holder's stat stages.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "clefablite": {
+    "name": "Clefablite",
+    "desc": null,
+    "shortDesc": "If held by a Clefable, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Clefable": "Clefable-Mega"
+      },
+      "itemUser": [
+        "Clefable"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "cloversweet": {
+    "name": "Clover Sweet",
+    "desc": null,
+    "shortDesc": "Evolves Milcery into Alcremie when held and spun around.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "cobaberry": {
+    "name": "Coba Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Flying-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Flying"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "colburberry": {
+    "name": "Colbur Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Dark-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Dark"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "cornerstonemask": {
+    "name": "Cornerstone Mask",
+    "desc": null,
+    "shortDesc": "Ogerpon-Cornerstone: 1.2x power attacks; Terastallize to gain Embody Aspect.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      },
+      "itemUser": [
+        "Ogerpon-Cornerstone"
+      ],
+      "forcedForme": "Ogerpon-Cornerstone"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "cornnberry": {
+    "name": "Cornn Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Bug"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "coverfossil": {
+    "name": "Cover Fossil",
+    "desc": null,
+    "shortDesc": "Can be revived into Tirtouga.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "covertcloak": {
+    "name": "Covert Cloak",
+    "desc": "The holder is not affected by the secondary effect of another Pokemon's attack. Attacks with secondary effects that are prevented include those with a chance (even 100%) to paralyze, sleep, freeze, burn, poison, confuse, cause the holder to flinch, cause the holder's stat stages to be lowered, as well as Anchor Shot, Eerie Spell, Fling, Psychic Noise, Salt Cure, Spirit Shackle, Syrup Bomb, and Throat Chop. The effect of Sparkling Aria is prevented if the holder is the only target. Secondary effects added by King's Rock, Razor Fang, and the Poison Touch, Stench, and Toxic Chain Abilities are also prevented against the holder.",
+    "shortDesc": "Holder is not affected by the secondary effect of another Pokemon's attack.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "crabominite": {
+    "name": "Crabominite",
+    "desc": null,
+    "shortDesc": "If held by a Crabominable, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Crabominable": "Crabominable-Mega"
+      },
+      "itemUser": [
+        "Crabominable"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "crackedpot": {
+    "name": "Cracked Pot",
+    "desc": null,
+    "shortDesc": "Evolves Sinistea into Polteageist when used.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "crucibellite": {
+    "name": "Crucibellite",
+    "desc": null,
+    "shortDesc": "If held by a Crucibelle, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Crucibelle": "Crucibelle-Mega"
+      },
+      "itemUser": [
+        "Crucibelle"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "custapberry": {
+    "name": "Custap Berry",
+    "desc": null,
+    "shortDesc": "Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Ghost"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "damprock": {
+    "name": "Damp Rock",
+    "desc": null,
+    "shortDesc": "Holder's use of Rain Dance lasts 8 turns instead of 5.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "darkgem": {
+    "name": "Dark Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Dark-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "darkiniumz": {
+    "name": "Darkinium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Dark move, this item allows it to use a Dark Z-Move.",
+    "flags": {
+      "onPlate": "Dark",
+      "zMove": true,
+      "zMoveType": "Dark",
+      "forcedForme": "Arceus-Dark"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "darkmemory": {
+    "name": "Dark Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Dark type.",
+    "flags": {
+      "onMemory": "Dark",
+      "itemUser": [
+        "Silvally-Dark"
+      ],
+      "forcedForme": "Silvally-Dark"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "darkranite": {
+    "name": "Darkranite",
+    "desc": null,
+    "shortDesc": "If held by a Darkrai, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Darkrai": "Darkrai-Mega"
+      },
+      "itemUser": [
+        "Darkrai"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "dawnstone": {
+    "name": "Dawn Stone",
+    "desc": "Evolves male Kirlia into Gallade and female Snorunt into Froslass when used.",
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "decidiumz": {
+    "name": "Decidium Z",
+    "desc": null,
+    "shortDesc": "If held by a Decidueye with Spirit Shackle, it can use Sinister Arrow Raid.",
+    "flags": {
+      "zMove": "Sinister Arrow Raid",
+      "zMoveFrom": "Spirit Shackle",
+      "itemUser": [
+        "Decidueye"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "deepseascale": {
+    "name": "Deep Sea Scale",
+    "desc": "If held by a Clamperl, its Sp. Def is doubled. Evolves Clamperl into Gorebyss when traded.",
+    "shortDesc": "If held by a Clamperl, its Sp. Def is doubled.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      },
+      "itemUser": [
+        "Clamperl"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "deepseatooth": {
+    "name": "Deep Sea Tooth",
+    "desc": "If held by a Clamperl, its Sp. Atk is doubled. Evolves Clamperl into Huntail when traded.",
+    "shortDesc": "If held by a Clamperl, its Sp. Atk is doubled.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      },
+      "itemUser": [
+        "Clamperl"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "delphoxite": {
+    "name": "Delphoxite",
+    "desc": null,
+    "shortDesc": "If held by a Delphox, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Delphox": "Delphox-Mega"
+      },
+      "itemUser": [
+        "Delphox"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "destinyknot": {
+    "name": "Destiny Knot",
+    "desc": null,
+    "shortDesc": "If holder becomes infatuated, the other Pokemon also becomes infatuated.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "diancite": {
+    "name": "Diancite",
+    "desc": null,
+    "shortDesc": "If held by a Diancie, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Diancie": "Diancie-Mega"
+      },
+      "itemUser": [
+        "Diancie"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "diveball": {
+    "name": "Dive Ball",
+    "desc": null,
+    "shortDesc": "A Poke Ball that works especially well on Pokemon that live underwater.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "domefossil": {
+    "name": "Dome Fossil",
+    "desc": null,
+    "shortDesc": "Can be revived into Kabuto.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "dousedrive": {
+    "name": "Douse Drive",
+    "desc": null,
+    "shortDesc": "Holder's Techno Blast is Water type.",
+    "flags": {
+      "onDrive": "Water",
+      "itemUser": [
+        "Genesect-Douse"
+      ],
+      "forcedForme": "Genesect-Douse"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "dracoplate": {
+    "name": "Draco Plate",
+    "desc": null,
+    "shortDesc": "Holder's Dragon-type attacks have 1.2x power. Judgment is Dragon type.",
+    "flags": {
+      "onPlate": "Dragon",
+      "forcedForme": "Arceus-Dragon"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "dragalgite": {
+    "name": "Dragalgite",
+    "desc": null,
+    "shortDesc": "If held by a Dragalge, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Dragalge": "Dragalge-Mega"
+      },
+      "itemUser": [
+        "Dragalge"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "dragonfang": {
+    "name": "Dragon Fang",
+    "desc": null,
+    "shortDesc": "Holder's Dragon-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 70
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "dragongem": {
+    "name": "Dragon Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Dragon-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "dragoninite": {
+    "name": "Dragoninite",
+    "desc": null,
+    "shortDesc": "If held by a Dragonite, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Dragonite": "Dragonite-Mega"
+      },
+      "itemUser": [
+        "Dragonite"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "dragoniumz": {
+    "name": "Dragonium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Dragon move, this item allows it to use a Dragon Z-Move.",
+    "flags": {
+      "onPlate": "Dragon",
+      "zMove": true,
+      "zMoveType": "Dragon",
+      "forcedForme": "Arceus-Dragon"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "dragonmemory": {
+    "name": "Dragon Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Dragon type.",
+    "flags": {
+      "onMemory": "Dragon",
+      "itemUser": [
+        "Silvally-Dragon"
+      ],
+      "forcedForme": "Silvally-Dragon"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "dragonscale": {
+    "name": "Dragon Scale",
+    "desc": null,
+    "shortDesc": "Evolves Seadra into Kingdra when traded.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "drampanite": {
+    "name": "Drampanite",
+    "desc": null,
+    "shortDesc": "If held by a Drampa, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Drampa": "Drampa-Mega"
+      },
+      "itemUser": [
+        "Drampa"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "dreadplate": {
+    "name": "Dread Plate",
+    "desc": null,
+    "shortDesc": "Holder's Dark-type attacks have 1.2x power. Judgment is Dark type.",
+    "flags": {
+      "onPlate": "Dark",
+      "forcedForme": "Arceus-Dark"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "dreamball": {
+    "name": "Dream Ball",
+    "desc": null,
+    "shortDesc": "A Poke Ball that makes it easier to catch wild Pokémon while they're asleep.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "dubiousdisc": {
+    "name": "Dubious Disc",
+    "desc": null,
+    "shortDesc": "Evolves Porygon2 into Porygon-Z when traded.",
+    "flags": {
+      "fling": {
+        "basePower": 50
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "durinberry": {
+    "name": "Durin Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Water"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "duskball": {
+    "name": "Dusk Ball",
+    "desc": null,
+    "shortDesc": "A Poke Ball that makes it easier to catch wild Pokemon at night or in caves.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "duskstone": {
+    "name": "Dusk Stone",
+    "desc": "Evolves Murkrow into Honchkrow, Misdreavus into Mismagius, Lampent into Chandelure, and Doublade into Aegislash when used.",
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "earthplate": {
+    "name": "Earth Plate",
+    "desc": null,
+    "shortDesc": "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type.",
+    "flags": {
+      "onPlate": "Ground",
+      "forcedForme": "Arceus-Ground"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "eelektrossite": {
+    "name": "Eelektrossite",
+    "desc": null,
+    "shortDesc": "If held by an Eelektross, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Eelektross": "Eelektross-Mega"
+      },
+      "itemUser": [
+        "Eelektross"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "eeviumz": {
+    "name": "Eevium Z",
+    "desc": null,
+    "shortDesc": "If held by an Eevee with Last Resort, it can use Extreme Evoboost.",
+    "flags": {
+      "zMove": "Extreme Evoboost",
+      "zMoveFrom": "Last Resort",
+      "itemUser": [
+        "Eevee"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "ejectbutton": {
+    "name": "Eject Button",
+    "desc": null,
+    "shortDesc": "If holder survives a hit, it immediately switches out to a chosen ally. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "ejectpack": {
+    "name": "Eject Pack",
+    "desc": null,
+    "shortDesc": "If the holder's stat stages are lowered, it switches to a chosen ally. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 50
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "electirizer": {
+    "name": "Electirizer",
+    "desc": null,
+    "shortDesc": "Evolves Electabuzz into Electivire when traded.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "electricgem": {
+    "name": "Electric Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Electric-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "electricmemory": {
+    "name": "Electric Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Electric type.",
+    "flags": {
+      "onMemory": "Electric",
+      "itemUser": [
+        "Silvally-Electric"
+      ],
+      "forcedForme": "Silvally-Electric"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "electricseed": {
+    "name": "Electric Seed",
+    "desc": null,
+    "shortDesc": "If the terrain is Electric Terrain, raises holder's Defense by 1 stage. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      },
+      "boosts": {
+        "def": 1
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "electriumz": {
+    "name": "Electrium Z",
+    "desc": null,
+    "shortDesc": "If holder has an Electric move, this item allows it to use an Electric Z-Move.",
+    "flags": {
+      "onPlate": "Electric",
+      "zMove": true,
+      "zMoveType": "Electric",
+      "forcedForme": "Arceus-Electric"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "emboarite": {
+    "name": "Emboarite",
+    "desc": null,
+    "shortDesc": "If held by an Emboar, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Emboar": "Emboar-Mega"
+      },
+      "itemUser": [
+        "Emboar"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "enigmaberry": {
+    "name": "Enigma Berry",
+    "desc": null,
+    "shortDesc": "Restores 1/4 max HP after holder is hit by a supereffective move. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Bug"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "eviolite": {
+    "name": "Eviolite",
+    "desc": null,
+    "shortDesc": "If holder's species can evolve, its Defense and Sp. Def are 1.5x.",
+    "flags": {
+      "fling": {
+        "basePower": 40
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "excadrite": {
+    "name": "Excadrite",
+    "desc": null,
+    "shortDesc": "If held by an Excadrill, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Excadrill": "Excadrill-Mega"
+      },
+      "itemUser": [
+        "Excadrill"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "expertbelt": {
+    "name": "Expert Belt",
+    "desc": null,
+    "shortDesc": "Holder's attacks that are super effective against the target do 1.2x damage.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "fairiumz": {
+    "name": "Fairium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Fairy move, this item allows it to use a Fairy Z-Move.",
+    "flags": {
+      "onPlate": "Fairy",
+      "zMove": true,
+      "zMoveType": "Fairy",
+      "forcedForme": "Arceus-Fairy"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "fairyfeather": {
+    "name": "Fairy Feather",
+    "desc": null,
+    "shortDesc": "Holder's Fairy-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "fairygem": {
+    "name": "Fairy Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Fairy-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "fairymemory": {
+    "name": "Fairy Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Fairy type.",
+    "flags": {
+      "onMemory": "Fairy",
+      "itemUser": [
+        "Silvally-Fairy"
+      ],
+      "forcedForme": "Silvally-Fairy"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "falinksite": {
+    "name": "Falinksite",
+    "desc": null,
+    "shortDesc": "If held by a Falinks, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Falinks": "Falinks-Mega"
+      },
+      "itemUser": [
+        "Falinks"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "fastball": {
+    "name": "Fast Ball",
+    "desc": null,
+    "shortDesc": "A Poke Ball that makes it easier to catch Pokemon which are quick to run away.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "feraligite": {
+    "name": "Feraligite",
+    "desc": null,
+    "shortDesc": "If held by a Feraligatr, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Feraligatr": "Feraligatr-Mega"
+      },
+      "itemUser": [
+        "Feraligatr"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "fightinggem": {
+    "name": "Fighting Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Fighting-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "fightingmemory": {
+    "name": "Fighting Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Fighting type.",
+    "flags": {
+      "onMemory": "Fighting",
+      "itemUser": [
+        "Silvally-Fighting"
+      ],
+      "forcedForme": "Silvally-Fighting"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "fightiniumz": {
+    "name": "Fightinium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Fighting move, this item allows it to use a Fighting Z-Move.",
+    "flags": {
+      "onPlate": "Fighting",
+      "zMove": true,
+      "zMoveType": "Fighting",
+      "forcedForme": "Arceus-Fighting"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "figyberry": {
+    "name": "Figy Berry",
+    "desc": null,
+    "shortDesc": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Bug"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "firegem": {
+    "name": "Fire Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Fire-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "firememory": {
+    "name": "Fire Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Fire type.",
+    "flags": {
+      "onMemory": "Fire",
+      "itemUser": [
+        "Silvally-Fire"
+      ],
+      "forcedForme": "Silvally-Fire"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "firestone": {
+    "name": "Fire Stone",
+    "desc": "Evolves Vulpix into Ninetales, Growlithe into Arcanine, Eevee into Flareon, and Pansear into Simisear when used.",
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "firiumz": {
+    "name": "Firium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Fire move, this item allows it to use a Fire Z-Move.",
+    "flags": {
+      "onPlate": "Fire",
+      "zMove": true,
+      "zMoveType": "Fire",
+      "forcedForme": "Arceus-Fire"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "fistplate": {
+    "name": "Fist Plate",
+    "desc": null,
+    "shortDesc": "Holder's Fighting-type attacks have 1.2x power. Judgment is Fighting type.",
+    "flags": {
+      "onPlate": "Fighting",
+      "forcedForme": "Arceus-Fighting"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "flameorb": {
+    "name": "Flame Orb",
+    "desc": null,
+    "shortDesc": "At the end of every turn, this item attempts to burn the holder.",
+    "flags": {
+      "fling": {
+        "basePower": 30,
+        "status": "brn"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "flameplate": {
+    "name": "Flame Plate",
+    "desc": null,
+    "shortDesc": "Holder's Fire-type attacks have 1.2x power. Judgment is Fire type.",
+    "flags": {
+      "onPlate": "Fire",
+      "forcedForme": "Arceus-Fire"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "floatstone": {
+    "name": "Float Stone",
+    "desc": null,
+    "shortDesc": "Holder's weight is halved.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "floettite": {
+    "name": "Floettite",
+    "desc": null,
+    "shortDesc": "If held by an Eternal Flower Floette, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Floette-Eternal": "Floette-Mega"
+      },
+      "itemUser": [
+        "Floette-Eternal"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "flowersweet": {
+    "name": "Flower Sweet",
+    "desc": null,
+    "shortDesc": "Evolves Milcery into Alcremie when held and spun around.",
+    "flags": {
+      "fling": {
+        "basePower": 0
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "flyinggem": {
+    "name": "Flying Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Flying-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "flyingmemory": {
+    "name": "Flying Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Flying type.",
+    "flags": {
+      "onMemory": "Flying",
+      "itemUser": [
+        "Silvally-Flying"
+      ],
+      "forcedForme": "Silvally-Flying"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "flyiniumz": {
+    "name": "Flyinium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Flying move, this item allows it to use a Flying Z-Move.",
+    "flags": {
+      "onPlate": "Flying",
+      "zMove": true,
+      "zMoveType": "Flying",
+      "forcedForme": "Arceus-Flying"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "focusband": {
+    "name": "Focus Band",
+    "desc": null,
+    "shortDesc": "Holder has a 10% chance to survive an attack that would KO it with 1 HP.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "focussash": {
+    "name": "Focus Sash",
+    "desc": null,
+    "shortDesc": "If holder's HP is full, will survive an attack that would KO it with 1 HP. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "fossilizedbird": {
+    "name": "Fossilized Bird",
+    "desc": null,
+    "shortDesc": "Can revive into Dracozolt with Fossilized Drake or Arctozolt with Fossilized Dino.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "fossilizeddino": {
+    "name": "Fossilized Dino",
+    "desc": null,
+    "shortDesc": "Can revive into Arctovish with Fossilized Fish or Arctozolt with Fossilized Bird.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "fossilizeddrake": {
+    "name": "Fossilized Drake",
+    "desc": null,
+    "shortDesc": "Can revive into Dracozolt with Fossilized Bird or Dracovish with Fossilized Fish.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "fossilizedfish": {
+    "name": "Fossilized Fish",
+    "desc": null,
+    "shortDesc": "Can revive into Dracovish with Fossilized Drake or Arctovish with Fossilized Dino.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "friendball": {
+    "name": "Friend Ball",
+    "desc": null,
+    "shortDesc": "A Poke Ball that makes caught Pokemon more friendly.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "froslassite": {
+    "name": "Froslassite",
+    "desc": null,
+    "shortDesc": "If held by a Froslass, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Froslass": "Froslass-Mega"
+      },
+      "itemUser": [
+        "Froslass"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "fullincense": {
+    "name": "Full Incense",
+    "desc": null,
+    "shortDesc": "Holder moves last in its priority bracket.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "galaricacuff": {
+    "name": "Galarica Cuff",
+    "desc": null,
+    "shortDesc": "Evolves Galarian Slowpoke into Galarian Slowbro when used.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "galaricawreath": {
+    "name": "Galarica Wreath",
+    "desc": null,
+    "shortDesc": "Evolves Galarian Slowpoke into Galarian Slowking when used.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "galladite": {
+    "name": "Galladite",
+    "desc": null,
+    "shortDesc": "If held by a Gallade, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Gallade": "Gallade-Mega"
+      },
+      "itemUser": [
+        "Gallade"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "ganlonberry": {
+    "name": "Ganlon Berry",
+    "desc": null,
+    "shortDesc": "Raises holder's Defense by 1 stage when at 1/4 max HP or less. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Ice"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "garchompite": {
+    "name": "Garchompite",
+    "desc": null,
+    "shortDesc": "If held by a Garchomp, this item allows it to Mega Evolve into Mega Garchomp.",
+    "flags": {
+      "megaStone": {
+        "Garchomp": "Garchomp-Mega"
+      },
+      "itemUser": [
+        "Garchomp"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "garchompitez": {
+    "name": "Garchompite Z",
+    "desc": null,
+    "shortDesc": "If held by a Garchomp, this item allows it to Mega Evolve into Mega Garchomp Z.",
+    "flags": {
+      "megaStone": {
+        "Garchomp": "Garchomp-Mega-Z"
+      },
+      "itemUser": [
+        "Garchomp"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "gardevoirite": {
+    "name": "Gardevoirite",
+    "desc": null,
+    "shortDesc": "If held by a Gardevoir, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Gardevoir": "Gardevoir-Mega"
+      },
+      "itemUser": [
+        "Gardevoir"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "gengarite": {
+    "name": "Gengarite",
+    "desc": null,
+    "shortDesc": "If held by a Gengar, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Gengar": "Gengar-Mega"
+      },
+      "itemUser": [
+        "Gengar"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "ghostgem": {
+    "name": "Ghost Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Ghost-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "ghostiumz": {
+    "name": "Ghostium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Ghost move, this item allows it to use a Ghost Z-Move.",
+    "flags": {
+      "onPlate": "Ghost",
+      "zMove": true,
+      "zMoveType": "Ghost",
+      "forcedForme": "Arceus-Ghost"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "ghostmemory": {
+    "name": "Ghost Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Ghost type.",
+    "flags": {
+      "onMemory": "Ghost",
+      "itemUser": [
+        "Silvally-Ghost"
+      ],
+      "forcedForme": "Silvally-Ghost"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "glalitite": {
+    "name": "Glalitite",
+    "desc": null,
+    "shortDesc": "If held by a Glalie, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Glalie": "Glalie-Mega"
+      },
+      "itemUser": [
+        "Glalie"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "glimmoranite": {
+    "name": "Glimmoranite",
+    "desc": null,
+    "shortDesc": "If held by a Glimmora, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Glimmora": "Glimmora-Mega"
+      },
+      "itemUser": [
+        "Glimmora"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "goldberry": {
+    "name": "Gold Berry",
+    "desc": null,
+    "shortDesc": "(Gen 2) Restores 30 HP when at 1/2 max HP or less. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Psychic"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "goldbottlecap": {
+    "name": "Gold Bottle Cap",
+    "desc": null,
+    "shortDesc": "Used for Hyper Training. All of a Pokemon's stats are calculated with an IV of 31.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "golisopite": {
+    "name": "Golisopite",
+    "desc": null,
+    "shortDesc": "If held by a Golisopod, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Golisopod": "Golisopod-Mega"
+      },
+      "itemUser": [
+        "Golisopod"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "golurkite": {
+    "name": "Golurkite",
+    "desc": null,
+    "shortDesc": "If held by a Golurk, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Golurk": "Golurk-Mega"
+      },
+      "itemUser": [
+        "Golurk"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "grassgem": {
+    "name": "Grass Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Grass-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "grassiumz": {
+    "name": "Grassium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Grass move, this item allows it to use a Grass Z-Move.",
+    "flags": {
+      "onPlate": "Grass",
+      "zMove": true,
+      "zMoveType": "Grass",
+      "forcedForme": "Arceus-Grass"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "grassmemory": {
+    "name": "Grass Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Grass type.",
+    "flags": {
+      "onMemory": "Grass",
+      "itemUser": [
+        "Silvally-Grass"
+      ],
+      "forcedForme": "Silvally-Grass"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "grassyseed": {
+    "name": "Grassy Seed",
+    "desc": null,
+    "shortDesc": "If the terrain is Grassy Terrain, raises holder's Defense by 1 stage. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      },
+      "boosts": {
+        "def": 1
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "greatball": {
+    "name": "Great Ball",
+    "desc": null,
+    "shortDesc": "A high-performance Ball that provides a higher catch rate than a Poke Ball.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "greninjite": {
+    "name": "Greninjite",
+    "desc": null,
+    "shortDesc": "If held by a Greninja, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Greninja": "Greninja-Mega"
+      },
+      "itemUser": [
+        "Greninja"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "grepaberry": {
+    "name": "Grepa Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Flying"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "gripclaw": {
+    "name": "Grip Claw",
+    "desc": null,
+    "shortDesc": "Holder's partial-trapping moves always last 7 turns.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "griseouscore": {
+    "name": "Griseous Core",
+    "desc": null,
+    "shortDesc": "If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.",
+    "flags": {
+      "itemUser": [
+        "Giratina-Origin"
+      ],
+      "forcedForme": "Giratina-Origin"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "griseousorb": {
+    "name": "Griseous Orb",
+    "desc": null,
+    "shortDesc": "If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      },
+      "itemUser": [
+        "Giratina"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "groundgem": {
+    "name": "Ground Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Ground-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "groundiumz": {
+    "name": "Groundium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Ground move, this item allows it to use a Ground Z-Move.",
+    "flags": {
+      "onPlate": "Ground",
+      "zMove": true,
+      "zMoveType": "Ground",
+      "forcedForme": "Arceus-Ground"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "groundmemory": {
+    "name": "Ground Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Ground type.",
+    "flags": {
+      "onMemory": "Ground",
+      "itemUser": [
+        "Silvally-Ground"
+      ],
+      "forcedForme": "Silvally-Ground"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "gyaradosite": {
+    "name": "Gyaradosite",
+    "desc": null,
+    "shortDesc": "If held by a Gyarados, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Gyarados": "Gyarados-Mega"
+      },
+      "itemUser": [
+        "Gyarados"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "habanberry": {
+    "name": "Haban Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Dragon-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Dragon"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "hardstone": {
+    "name": "Hard Stone",
+    "desc": null,
+    "shortDesc": "Holder's Rock-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "hawluchanite": {
+    "name": "Hawluchanite",
+    "desc": null,
+    "shortDesc": "If held by a Hawlucha, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Hawlucha": "Hawlucha-Mega"
+      },
+      "itemUser": [
+        "Hawlucha"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "healball": {
+    "name": "Heal Ball",
+    "desc": null,
+    "shortDesc": "A remedial Poke Ball that restores the caught Pokemon's HP and status problem.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "hearthflamemask": {
+    "name": "Hearthflame Mask",
+    "desc": null,
+    "shortDesc": "Ogerpon-Hearthflame: 1.2x power attacks; Terastallize to gain Embody Aspect.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      },
+      "itemUser": [
+        "Ogerpon-Hearthflame"
+      ],
+      "forcedForme": "Ogerpon-Hearthflame"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "heatranite": {
+    "name": "Heatranite",
+    "desc": null,
+    "shortDesc": "If held by a Heatran, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Heatran": "Heatran-Mega"
+      },
+      "itemUser": [
+        "Heatran"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "heatrock": {
+    "name": "Heat Rock",
+    "desc": null,
+    "shortDesc": "Holder's use of Sunny Day lasts 8 turns instead of 5.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "heavyball": {
+    "name": "Heavy Ball",
+    "desc": null,
+    "shortDesc": "A Poke Ball for catching very heavy Pokemon.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "heavydutyboots": {
+    "name": "Heavy-Duty Boots",
+    "desc": null,
+    "shortDesc": "When switching in, the holder is unaffected by hazards on its side of the field.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "helixfossil": {
+    "name": "Helix Fossil",
+    "desc": null,
+    "shortDesc": "Can be revived into Omanyte.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "heracronite": {
+    "name": "Heracronite",
+    "desc": null,
+    "shortDesc": "If held by a Heracross, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Heracross": "Heracross-Mega"
+      },
+      "itemUser": [
+        "Heracross"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "hondewberry": {
+    "name": "Hondew Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Ground"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "houndoominite": {
+    "name": "Houndoominite",
+    "desc": null,
+    "shortDesc": "If held by a Houndoom, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Houndoom": "Houndoom-Mega"
+      },
+      "itemUser": [
+        "Houndoom"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "iapapaberry": {
+    "name": "Iapapa Berry",
+    "desc": null,
+    "shortDesc": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -Def Nature. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Dark"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "iceberry": {
+    "name": "Ice Berry",
+    "desc": null,
+    "shortDesc": "(Gen 2) Holder is cured if it is burned. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Grass"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "icegem": {
+    "name": "Ice Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Ice-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "icememory": {
+    "name": "Ice Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Ice type.",
+    "flags": {
+      "onMemory": "Ice",
+      "itemUser": [
+        "Silvally-Ice"
+      ],
+      "forcedForme": "Silvally-Ice"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "icestone": {
+    "name": "Ice Stone",
+    "desc": "Evolves Alolan Sandshrew into Alolan Sandslash, Alolan Vulpix into Alolan Ninetales, Eevee into Glaceon, and Galarian Darumaka into Galarian Darmanitan when used.",
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "icicleplate": {
+    "name": "Icicle Plate",
+    "desc": null,
+    "shortDesc": "Holder's Ice-type attacks have 1.2x power. Judgment is Ice type.",
+    "flags": {
+      "onPlate": "Ice",
+      "forcedForme": "Arceus-Ice"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "iciumz": {
+    "name": "Icium Z",
+    "desc": null,
+    "shortDesc": "If holder has an Ice move, this item allows it to use an Ice Z-Move.",
+    "flags": {
+      "onPlate": "Ice",
+      "zMove": true,
+      "zMoveType": "Ice",
+      "forcedForme": "Arceus-Ice"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "icyrock": {
+    "name": "Icy Rock",
+    "desc": null,
+    "shortDesc": "Holder's use of Snowscape lasts 8 turns instead of 5.",
+    "flags": {
+      "fling": {
+        "basePower": 40
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "inciniumz": {
+    "name": "Incinium Z",
+    "desc": null,
+    "shortDesc": "If held by an Incineroar with Darkest Lariat, it can use Malicious Moonsault.",
+    "flags": {
+      "zMove": "Malicious Moonsault",
+      "zMoveFrom": "Darkest Lariat",
+      "itemUser": [
+        "Incineroar"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "insectplate": {
+    "name": "Insect Plate",
+    "desc": null,
+    "shortDesc": "Holder's Bug-type attacks have 1.2x power. Judgment is Bug type.",
+    "flags": {
+      "onPlate": "Bug",
+      "forcedForme": "Arceus-Bug"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "ironball": {
+    "name": "Iron Ball",
+    "desc": null,
+    "shortDesc": "Holder is grounded, Speed halved. If Flying type, takes neutral Ground damage.",
+    "flags": {
+      "fling": {
+        "basePower": 130
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "ironplate": {
+    "name": "Iron Plate",
+    "desc": null,
+    "shortDesc": "Holder's Steel-type attacks have 1.2x power. Judgment is Steel type.",
+    "flags": {
+      "onPlate": "Steel",
+      "forcedForme": "Arceus-Steel"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "jabocaberry": {
+    "name": "Jaboca Berry",
+    "desc": null,
+    "shortDesc": "If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Dragon"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "jawfossil": {
+    "name": "Jaw Fossil",
+    "desc": null,
+    "shortDesc": "Can be revived into Tyrunt.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "kangaskhanite": {
+    "name": "Kangaskhanite",
+    "desc": null,
+    "shortDesc": "If held by a Kangaskhan, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Kangaskhan": "Kangaskhan-Mega"
+      },
+      "itemUser": [
+        "Kangaskhan"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "kasibberry": {
+    "name": "Kasib Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Ghost-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Ghost"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "kebiaberry": {
+    "name": "Kebia Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Poison-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Poison"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "keeberry": {
+    "name": "Kee Berry",
+    "desc": null,
+    "shortDesc": "Raises holder's Defense by 1 stage after it is hit by a physical attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Fairy"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "kelpsyberry": {
+    "name": "Kelpsy Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Fighting"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "kingsrock": {
+    "name": "King's Rock",
+    "desc": "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Poliwhirl into Politoed and Slowpoke into Slowking when traded.",
+    "shortDesc": "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
+    "flags": {
+      "fling": {
+        "basePower": 30,
+        "volatileStatus": "flinch"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "kommoniumz": {
+    "name": "Kommonium Z",
+    "desc": null,
+    "shortDesc": "If held by a Kommo-o with Clanging Scales, it can use Clangorous Soulblaze.",
+    "flags": {
+      "zMove": "Clangorous Soulblaze",
+      "zMoveFrom": "Clanging Scales",
+      "itemUser": [
+        "Kommo-o",
+        "Kommo-o-Totem"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "laggingtail": {
+    "name": "Lagging Tail",
+    "desc": null,
+    "shortDesc": "Holder moves last in its priority bracket.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "lansatberry": {
+    "name": "Lansat Berry",
+    "desc": null,
+    "shortDesc": "Holder gains the Focus Energy effect when at 1/4 max HP or less. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Flying"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "latiasite": {
+    "name": "Latiasite",
+    "desc": null,
+    "shortDesc": "If held by a Latias, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Latias": "Latias-Mega"
+      },
+      "itemUser": [
+        "Latias"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "latiosite": {
+    "name": "Latiosite",
+    "desc": null,
+    "shortDesc": "If held by a Latios, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Latios": "Latios-Mega"
+      },
+      "itemUser": [
+        "Latios"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "laxincense": {
+    "name": "Lax Incense",
+    "desc": null,
+    "shortDesc": "The accuracy of attacks against the holder is 0.9x.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "leafstone": {
+    "name": "Leaf Stone",
+    "desc": "Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used.",
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "leek": {
+    "name": "Leek",
+    "desc": null,
+    "shortDesc": "If held by a Farfetch’d or Sirfetch’d, its critical hit ratio is raised by 2 stages.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      },
+      "itemUser": [
+        "Farfetch’d",
+        "Farfetch’d-Galar",
+        "Sirfetch’d"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "leftovers": {
+    "name": "Leftovers",
+    "desc": null,
+    "shortDesc": "At the end of every turn, holder restores 1/16 of its max HP.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "leppaberry": {
+    "name": "Leppa Berry",
+    "desc": null,
+    "shortDesc": "Restores 10 PP to the first of the holder's moves to reach 0 PP. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Fighting"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "levelball": {
+    "name": "Level Ball",
+    "desc": null,
+    "shortDesc": "A Poke Ball for catching Pokemon that are a lower level than your own.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "liechiberry": {
+    "name": "Liechi Berry",
+    "desc": null,
+    "shortDesc": "Raises holder's Attack by 1 stage when at 1/4 max HP or less. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Grass"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "lifeorb": {
+    "name": "Life Orb",
+    "desc": null,
+    "shortDesc": "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "lightball": {
+    "name": "Light Ball",
+    "desc": null,
+    "shortDesc": "If held by a Pikachu, its Attack and Sp. Atk are doubled.",
+    "flags": {
+      "fling": {
+        "basePower": 30,
+        "status": "par"
+      },
+      "itemUser": [
+        "Pikachu",
+        "Pikachu-Cosplay",
+        "Pikachu-Rock-Star",
+        "Pikachu-Belle",
+        "Pikachu-Pop-Star",
+        "Pikachu-PhD",
+        "Pikachu-Libre",
+        "Pikachu-Original",
+        "Pikachu-Hoenn",
+        "Pikachu-Sinnoh",
+        "Pikachu-Unova",
+        "Pikachu-Kalos",
+        "Pikachu-Alola",
+        "Pikachu-Partner",
+        "Pikachu-Starter",
+        "Pikachu-World"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "lightclay": {
+    "name": "Light Clay",
+    "desc": null,
+    "shortDesc": "Holder's use of Aurora Veil, Light Screen, or Reflect lasts 8 turns instead of 5.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "loadeddice": {
+    "name": "Loaded Dice",
+    "desc": "The holder's moves that normally hit 2 to 5 times instead hit 4 or 5 times. If the first hit is successful, the holder's use of Triple Kick or Triple Axel hits 3 times, and Population Bomb hits 4 to 10 times, at random.",
+    "shortDesc": "Holder's moves that hit 2-5 times hit 4-5 times; Population Bomb hits 4-10 times.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "lopunnite": {
+    "name": "Lopunnite",
+    "desc": null,
+    "shortDesc": "If held by a Lopunny, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Lopunny": "Lopunny-Mega"
+      },
+      "itemUser": [
+        "Lopunny"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "loveball": {
+    "name": "Love Ball",
+    "desc": null,
+    "shortDesc": "Poke Ball for catching Pokemon that are the opposite gender of your Pokemon.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "lovesweet": {
+    "name": "Love Sweet",
+    "desc": null,
+    "shortDesc": "Evolves Milcery into Alcremie when held and spun around.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "lucarionite": {
+    "name": "Lucarionite",
+    "desc": null,
+    "shortDesc": "If held by a Lucario, this item allows it to Mega Evolve into Mega Lucario in battle.",
+    "flags": {
+      "megaStone": {
+        "Lucario": "Lucario-Mega"
+      },
+      "itemUser": [
+        "Lucario"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "lucarionitez": {
+    "name": "Lucarionite Z",
+    "desc": null,
+    "shortDesc": "If held by a Lucario, this item allows it to Mega Evolve into Mega Lucario Z in battle.",
+    "flags": {
+      "megaStone": {
+        "Lucario": "Lucario-Mega-Z"
+      },
+      "itemUser": [
+        "Lucario"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "luckypunch": {
+    "name": "Lucky Punch",
+    "desc": null,
+    "shortDesc": "If held by a Chansey, its critical hit ratio is raised by 2 stages.",
+    "flags": {
+      "fling": {
+        "basePower": 40
+      },
+      "itemUser": [
+        "Chansey"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "lumberry": {
+    "name": "Lum Berry",
+    "desc": null,
+    "shortDesc": "Holder cures itself if it has a non-volatile status or is confused. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Flying"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "luminousmoss": {
+    "name": "Luminous Moss",
+    "desc": null,
+    "shortDesc": "Raises holder's Sp. Def by 1 stage if hit by a Water-type attack. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      },
+      "boosts": {
+        "spd": 1
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "lunaliumz": {
+    "name": "Lunalium Z",
+    "desc": null,
+    "shortDesc": "Lunala or Dawn Wings Necrozma with Moongeist Beam can use a special Z-Move.",
+    "flags": {
+      "zMove": "Menacing Moonraze Maelstrom",
+      "zMoveFrom": "Moongeist Beam",
+      "itemUser": [
+        "Lunala",
+        "Necrozma-Dawn-Wings"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "lureball": {
+    "name": "Lure Ball",
+    "desc": null,
+    "shortDesc": "A Poke Ball for catching Pokemon hooked by a Rod when fishing.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "lustrousglobe": {
+    "name": "Lustrous Globe",
+    "desc": null,
+    "shortDesc": "If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.",
+    "flags": {
+      "itemUser": [
+        "Palkia-Origin"
+      ],
+      "forcedForme": "Palkia-Origin"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "lustrousorb": {
+    "name": "Lustrous Orb",
+    "desc": null,
+    "shortDesc": "If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      },
+      "itemUser": [
+        "Palkia"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "luxuryball": {
+    "name": "Luxury Ball",
+    "desc": null,
+    "shortDesc": "A comfortable Poke Ball that makes a caught wild Pokemon quickly grow friendly.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "lycaniumz": {
+    "name": "Lycanium Z",
+    "desc": null,
+    "shortDesc": "If held by a Lycanroc forme with Stone Edge, it can use Splintered Stormshards.",
+    "flags": {
+      "zMove": "Splintered Stormshards",
+      "zMoveFrom": "Stone Edge",
+      "itemUser": [
+        "Lycanroc",
+        "Lycanroc-Midnight",
+        "Lycanroc-Dusk"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "machobrace": {
+    "name": "Macho Brace",
+    "desc": null,
+    "shortDesc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      },
+      "ignoreKlutz": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "magearnite": {
+    "name": "Magearnite",
+    "desc": null,
+    "shortDesc": "If held by a Magearna, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Magearna": "Magearna-Mega",
+        "Magearna-Original": "Magearna-Original-Mega"
+      },
+      "itemUser": [
+        "Magearna",
+        "Magearna-Original"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "magmarizer": {
+    "name": "Magmarizer",
+    "desc": null,
+    "shortDesc": "Evolves Magmar into Magmortar when traded.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "magnet": {
+    "name": "Magnet",
+    "desc": null,
+    "shortDesc": "Holder's Electric-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "magoberry": {
+    "name": "Mago Berry",
+    "desc": null,
+    "shortDesc": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Ghost"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "magostberry": {
+    "name": "Magost Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Rock"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "mail": {
+    "name": "Mail",
+    "desc": null,
+    "shortDesc": "Cannot be given to or taken from a Pokemon, except by Covet/Knock Off/Thief.",
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "malamarite": {
+    "name": "Malamarite",
+    "desc": null,
+    "shortDesc": "If held by a Malamar, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Malamar": "Malamar-Mega"
+      },
+      "itemUser": [
+        "Malamar"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "maliciousarmor": {
+    "name": "Malicious Armor",
+    "desc": null,
+    "shortDesc": "Evolves Charcadet into Ceruledge when used.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "manectite": {
+    "name": "Manectite",
+    "desc": null,
+    "shortDesc": "If held by a Manectric, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Manectric": "Manectric-Mega"
+      },
+      "itemUser": [
+        "Manectric"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "marangaberry": {
+    "name": "Maranga Berry",
+    "desc": null,
+    "shortDesc": "Raises holder's Sp. Def by 1 stage after it is hit by a special attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Dark"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "marshadiumz": {
+    "name": "Marshadium Z",
+    "desc": null,
+    "shortDesc": "If held by Marshadow with Spectral Thief, it can use Soul-Stealing 7-Star Strike.",
+    "flags": {
+      "zMove": "Soul-Stealing 7-Star Strike",
+      "zMoveFrom": "Spectral Thief",
+      "itemUser": [
+        "Marshadow"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "masterball": {
+    "name": "Master Ball",
+    "desc": null,
+    "shortDesc": "The best Ball with the ultimate performance. It will catch any wild Pokemon.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "masterpieceteacup": {
+    "name": "Masterpiece Teacup",
+    "desc": null,
+    "shortDesc": "Evolves Poltchageist-Artisan into Sinistcha-Masterpiece when used.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "mawilite": {
+    "name": "Mawilite",
+    "desc": null,
+    "shortDesc": "If held by a Mawile, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Mawile": "Mawile-Mega"
+      },
+      "itemUser": [
+        "Mawile"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "meadowplate": {
+    "name": "Meadow Plate",
+    "desc": null,
+    "shortDesc": "Holder's Grass-type attacks have 1.2x power. Judgment is Grass type.",
+    "flags": {
+      "onPlate": "Grass",
+      "forcedForme": "Arceus-Grass"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "medichamite": {
+    "name": "Medichamite",
+    "desc": null,
+    "shortDesc": "If held by a Medicham, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Medicham": "Medicham-Mega"
+      },
+      "itemUser": [
+        "Medicham"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "meganiumite": {
+    "name": "Meganiumite",
+    "desc": null,
+    "shortDesc": "If held by a Meganium, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Meganium": "Meganium-Mega"
+      },
+      "itemUser": [
+        "Meganium"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "mentalherb": {
+    "name": "Mental Herb",
+    "desc": null,
+    "shortDesc": "Cures holder of Attract, Disable, Encore, Heal Block, Taunt, Torment. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "meowsticite": {
+    "name": "Meowsticite",
+    "desc": null,
+    "shortDesc": "If held by a Meowstic, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Meowstic": "Meowstic-M-Mega",
+        "Meowstic-F": "Meowstic-F-Mega"
+      },
+      "itemUser": [
+        "Meowstic",
+        "Meowstic-F"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "metagrossite": {
+    "name": "Metagrossite",
+    "desc": null,
+    "shortDesc": "If held by a Metagross, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Metagross": "Metagross-Mega"
+      },
+      "itemUser": [
+        "Metagross"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "metalalloy": {
+    "name": "Metal Alloy",
+    "desc": null,
+    "shortDesc": "Evolves Duraludon into Archaludon when used.",
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "metalcoat": {
+    "name": "Metal Coat",
+    "desc": "Holder's Steel-type attacks have 1.2x power. Evolves Onix into Steelix and Scyther into Scizor when traded.",
+    "shortDesc": "Holder's Steel-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "metalpowder": {
+    "name": "Metal Powder",
+    "desc": null,
+    "shortDesc": "If held by a Ditto that hasn't Transformed, its Defense is doubled.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      },
+      "itemUser": [
+        "Ditto"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "metronome": {
+    "name": "Metronome",
+    "desc": null,
+    "shortDesc": "Damage of moves used on consecutive turns is increased. Max 2x after 5 turns.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "mewniumz": {
+    "name": "Mewnium Z",
+    "desc": null,
+    "shortDesc": "If held by a Mew with Psychic, it can use Genesis Supernova.",
+    "flags": {
+      "zMove": "Genesis Supernova",
+      "zMoveFrom": "Psychic",
+      "itemUser": [
+        "Mew"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "mewtwonitex": {
+    "name": "Mewtwonite X",
+    "desc": null,
+    "shortDesc": "If held by a Mewtwo, this item allows it to Mega Evolve into Mega Mewtwo X in battle.",
+    "flags": {
+      "megaStone": {
+        "Mewtwo": "Mewtwo-Mega-X"
+      },
+      "itemUser": [
+        "Mewtwo"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "mewtwonitey": {
+    "name": "Mewtwonite Y",
+    "desc": null,
+    "shortDesc": "If held by a Mewtwo, this item allows it to Mega Evolve into Mega Mewtwo Y in battle.",
+    "flags": {
+      "megaStone": {
+        "Mewtwo": "Mewtwo-Mega-Y"
+      },
+      "itemUser": [
+        "Mewtwo"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "micleberry": {
+    "name": "Micle Berry",
+    "desc": null,
+    "shortDesc": "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Rock"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "mimikiumz": {
+    "name": "Mimikium Z",
+    "desc": null,
+    "shortDesc": "If held by a Mimikyu with Play Rough, it can use Let's Snuggle Forever.",
+    "flags": {
+      "zMove": "Let's Snuggle Forever",
+      "zMoveFrom": "Play Rough",
+      "itemUser": [
+        "Mimikyu",
+        "Mimikyu-Busted",
+        "Mimikyu-Totem",
+        "Mimikyu-Busted-Totem"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "mindplate": {
+    "name": "Mind Plate",
+    "desc": null,
+    "shortDesc": "Holder's Psychic-type attacks have 1.2x power. Judgment is Psychic type.",
+    "flags": {
+      "onPlate": "Psychic",
+      "forcedForme": "Arceus-Psychic"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "mintberry": {
+    "name": "Mint Berry",
+    "desc": null,
+    "shortDesc": "(Gen 2) Holder wakes up if it is asleep. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Water"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "miracleberry": {
+    "name": "Miracle Berry",
+    "desc": null,
+    "shortDesc": "(Gen 2) Holder cures itself if it is confused or has a status condition. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Flying"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "miracleseed": {
+    "name": "Miracle Seed",
+    "desc": null,
+    "shortDesc": "Holder's Grass-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "mirrorherb": {
+    "name": "Mirror Herb",
+    "desc": null,
+    "shortDesc": "When an opposing Pokemon raises a stat stage, the holder copies it. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "mistyseed": {
+    "name": "Misty Seed",
+    "desc": null,
+    "shortDesc": "If the terrain is Misty Terrain, raises holder's Sp. Def by 1 stage. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      },
+      "boosts": {
+        "spd": 1
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "moonball": {
+    "name": "Moon Ball",
+    "desc": null,
+    "shortDesc": "A Poke Ball for catching Pokemon that evolve using the Moon Stone.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "moonstone": {
+    "name": "Moon Stone",
+    "desc": "Evolves Nidorina into Nidoqueen, Nidorino into Nidoking, Clefairy into Clefable, Jigglypuff into Wigglytuff, Skitty into Delcatty, and Munna into Musharna when used.",
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "muscleband": {
+    "name": "Muscle Band",
+    "desc": null,
+    "shortDesc": "Holder's physical attacks have 1.1x power.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "mysteryberry": {
+    "name": "Mystery Berry",
+    "desc": null,
+    "shortDesc": "(Gen 2) Restores 5 PP to the first of the holder's moves to reach 0 PP. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Fighting"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "mysticwater": {
+    "name": "Mystic Water",
+    "desc": null,
+    "shortDesc": "Holder's Water-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "nanabberry": {
+    "name": "Nanab Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Water"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "nestball": {
+    "name": "Nest Ball",
+    "desc": null,
+    "shortDesc": "A Poke Ball that works especially well on weaker Pokemon in the wild.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "netball": {
+    "name": "Net Ball",
+    "desc": null,
+    "shortDesc": "A Poke Ball that works especially well on Water- and Bug-type Pokemon.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "nevermeltice": {
+    "name": "Never-Melt Ice",
+    "desc": null,
+    "shortDesc": "Holder's Ice-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "nomelberry": {
+    "name": "Nomel Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Dragon"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "normalgem": {
+    "name": "Normal Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Normal-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "normaliumz": {
+    "name": "Normalium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Normal move, this item allows it to use a Normal Z-Move.",
+    "flags": {
+      "zMove": true,
+      "zMoveType": "Normal"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "occaberry": {
+    "name": "Occa Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Fire-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Fire"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "oddincense": {
+    "name": "Odd Incense",
+    "desc": null,
+    "shortDesc": "Holder's Psychic-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "oldamber": {
+    "name": "Old Amber",
+    "desc": null,
+    "shortDesc": "Can be revived into Aerodactyl.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "oranberry": {
+    "name": "Oran Berry",
+    "desc": null,
+    "shortDesc": "Restores 10 HP when at 1/2 max HP or less. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Poison"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "ovalstone": {
+    "name": "Oval Stone",
+    "desc": null,
+    "shortDesc": "Evolves Happiny into Chansey when held and leveled up during the day.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "pamtreberry": {
+    "name": "Pamtre Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Steel"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "parkball": {
+    "name": "Park Ball",
+    "desc": null,
+    "shortDesc": "A special Poke Ball for the Pal Park.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "passhoberry": {
+    "name": "Passho Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Water-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Water"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "payapaberry": {
+    "name": "Payapa Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Psychic-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Psychic"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "pechaberry": {
+    "name": "Pecha Berry",
+    "desc": null,
+    "shortDesc": "Holder is cured if it is poisoned. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Electric"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "persimberry": {
+    "name": "Persim Berry",
+    "desc": null,
+    "shortDesc": "Holder is cured if it is confused. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Ground"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "petayaberry": {
+    "name": "Petaya Berry",
+    "desc": null,
+    "shortDesc": "Raises holder's Sp. Atk by 1 stage when at 1/4 max HP or less. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Poison"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "pidgeotite": {
+    "name": "Pidgeotite",
+    "desc": null,
+    "shortDesc": "If held by a Pidgeot, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Pidgeot": "Pidgeot-Mega"
+      },
+      "itemUser": [
+        "Pidgeot"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "pikaniumz": {
+    "name": "Pikanium Z",
+    "desc": null,
+    "shortDesc": "If held by a Pikachu with Volt Tackle, it can use Catastropika.",
+    "flags": {
+      "zMove": "Catastropika",
+      "zMoveFrom": "Volt Tackle",
+      "itemUser": [
+        "Pikachu"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "pikashuniumz": {
+    "name": "Pikashunium Z",
+    "desc": null,
+    "shortDesc": "If held by cap Pikachu with Thunderbolt, it can use 10,000,000 Volt Thunderbolt.",
+    "flags": {
+      "zMove": "10,000,000 Volt Thunderbolt",
+      "zMoveFrom": "Thunderbolt",
+      "itemUser": [
+        "Pikachu-Original",
+        "Pikachu-Hoenn",
+        "Pikachu-Sinnoh",
+        "Pikachu-Unova",
+        "Pikachu-Kalos",
+        "Pikachu-Alola",
+        "Pikachu-Partner"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "pinapberry": {
+    "name": "Pinap Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Grass"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "pinkbow": {
+    "name": "Pink Bow",
+    "desc": null,
+    "shortDesc": "(Gen 2) Holder's Normal-type attacks have 1.1x power.",
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "pinsirite": {
+    "name": "Pinsirite",
+    "desc": null,
+    "shortDesc": "If held by a Pinsir, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Pinsir": "Pinsir-Mega"
+      },
+      "itemUser": [
+        "Pinsir"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "pixieplate": {
+    "name": "Pixie Plate",
+    "desc": null,
+    "shortDesc": "Holder's Fairy-type attacks have 1.2x power. Judgment is Fairy type.",
+    "flags": {
+      "onPlate": "Fairy",
+      "forcedForme": "Arceus-Fairy"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "plumefossil": {
+    "name": "Plume Fossil",
+    "desc": null,
+    "shortDesc": "Can be revived into Archen.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "poisonbarb": {
+    "name": "Poison Barb",
+    "desc": null,
+    "shortDesc": "Holder's Poison-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 70,
+        "status": "psn"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "poisongem": {
+    "name": "Poison Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Poison-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "poisoniumz": {
+    "name": "Poisonium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Poison move, this item allows it to use a Poison Z-Move.",
+    "flags": {
+      "onPlate": "Poison",
+      "zMove": true,
+      "zMoveType": "Poison",
+      "forcedForme": "Arceus-Poison"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "poisonmemory": {
+    "name": "Poison Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Poison type.",
+    "flags": {
+      "onMemory": "Poison",
+      "itemUser": [
+        "Silvally-Poison"
+      ],
+      "forcedForme": "Silvally-Poison"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "pokeball": {
+    "name": "Poke Ball",
+    "desc": null,
+    "shortDesc": "A device for catching wild Pokemon. It is designed as a capsule system.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "polkadotbow": {
+    "name": "Polkadot Bow",
+    "desc": null,
+    "shortDesc": "(Gen 2) Holder's Normal-type attacks have 1.1x power.",
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "pomegberry": {
+    "name": "Pomeg Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Ice"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "poweranklet": {
+    "name": "Power Anklet",
+    "desc": null,
+    "shortDesc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+    "flags": {
+      "fling": {
+        "basePower": 70
+      },
+      "ignoreKlutz": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "powerband": {
+    "name": "Power Band",
+    "desc": null,
+    "shortDesc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+    "flags": {
+      "fling": {
+        "basePower": 70
+      },
+      "ignoreKlutz": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "powerbelt": {
+    "name": "Power Belt",
+    "desc": null,
+    "shortDesc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+    "flags": {
+      "fling": {
+        "basePower": 70
+      },
+      "ignoreKlutz": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "powerbracer": {
+    "name": "Power Bracer",
+    "desc": null,
+    "shortDesc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+    "flags": {
+      "fling": {
+        "basePower": 70
+      },
+      "ignoreKlutz": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "powerherb": {
+    "name": "Power Herb",
+    "desc": null,
+    "shortDesc": "Holder's two-turn moves complete in one turn (except Sky Drop). Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "powerlens": {
+    "name": "Power Lens",
+    "desc": null,
+    "shortDesc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+    "flags": {
+      "fling": {
+        "basePower": 70
+      },
+      "ignoreKlutz": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "powerweight": {
+    "name": "Power Weight",
+    "desc": null,
+    "shortDesc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+    "flags": {
+      "fling": {
+        "basePower": 70
+      },
+      "ignoreKlutz": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "premierball": {
+    "name": "Premier Ball",
+    "desc": null,
+    "shortDesc": "A rare Poke Ball that has been crafted to commemorate an event.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "prettyfeather": {
+    "name": "Pretty Feather",
+    "desc": null,
+    "shortDesc": "Though this feather is beautiful, it's just a regular feather and has no effect.",
+    "flags": {
+      "fling": {
+        "basePower": 20
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "primariumz": {
+    "name": "Primarium Z",
+    "desc": null,
+    "shortDesc": "If held by a Primarina with Sparkling Aria, it can use Oceanic Operetta.",
+    "flags": {
+      "zMove": "Oceanic Operetta",
+      "zMoveFrom": "Sparkling Aria",
+      "itemUser": [
+        "Primarina"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "prismscale": {
+    "name": "Prism Scale",
+    "desc": null,
+    "shortDesc": "Evolves Feebas into Milotic when traded.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "protectivepads": {
+    "name": "Protective Pads",
+    "desc": null,
+    "shortDesc": "Holder's moves are protected from adverse contact effects, except Pickpocket.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "protector": {
+    "name": "Protector",
+    "desc": null,
+    "shortDesc": "Evolves Rhydon into Rhyperior when traded.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "przcureberry": {
+    "name": "PRZ Cure Berry",
+    "desc": null,
+    "shortDesc": "(Gen 2) Holder cures itself if it is paralyzed. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Fire"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "psncureberry": {
+    "name": "PSN Cure Berry",
+    "desc": null,
+    "shortDesc": "(Gen 2) Holder is cured if it is poisoned. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Electric"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "psychicgem": {
+    "name": "Psychic Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Psychic-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "psychicmemory": {
+    "name": "Psychic Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Psychic type.",
+    "flags": {
+      "onMemory": "Psychic",
+      "itemUser": [
+        "Silvally-Psychic"
+      ],
+      "forcedForme": "Silvally-Psychic"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "psychicseed": {
+    "name": "Psychic Seed",
+    "desc": null,
+    "shortDesc": "If the terrain is Psychic Terrain, raises holder's Sp. Def by 1 stage. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      },
+      "boosts": {
+        "spd": 1
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "psychiumz": {
+    "name": "Psychium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Psychic move, this item allows it to use a Psychic Z-Move.",
+    "flags": {
+      "onPlate": "Psychic",
+      "zMove": true,
+      "zMoveType": "Psychic",
+      "forcedForme": "Arceus-Psychic"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "punchingglove": {
+    "name": "Punching Glove",
+    "desc": null,
+    "shortDesc": "Holder's punch-based attacks have 1.1x power and do not make contact.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "pyroarite": {
+    "name": "Pyroarite",
+    "desc": null,
+    "shortDesc": "If held by a Pyroar, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Pyroar": "Pyroar-Mega"
+      },
+      "itemUser": [
+        "Pyroar"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "qualotberry": {
+    "name": "Qualot Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Poison"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "quickball": {
+    "name": "Quick Ball",
+    "desc": null,
+    "shortDesc": "A Poke Ball that provides a better catch rate at the start of a wild encounter.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "quickclaw": {
+    "name": "Quick Claw",
+    "desc": null,
+    "shortDesc": "Each turn, holder has a 20% chance to move first in its priority bracket.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "quickpowder": {
+    "name": "Quick Powder",
+    "desc": null,
+    "shortDesc": "If held by a Ditto that hasn't Transformed, its Speed is doubled.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      },
+      "itemUser": [
+        "Ditto"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "rabutaberry": {
+    "name": "Rabuta Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Ghost"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "raichunitex": {
+    "name": "Raichunite X",
+    "desc": null,
+    "shortDesc": "If held by a Raichu, this item allows it to Mega Evolve into Mega Raichu X in battle.",
+    "flags": {
+      "megaStone": {
+        "Raichu": "Raichu-Mega-X"
+      },
+      "itemUser": [
+        "Raichu"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "raichunitey": {
+    "name": "Raichunite Y",
+    "desc": null,
+    "shortDesc": "If held by a Raichu, this item allows it to Mega Evolve into Mega Raichu Y in battle.",
+    "flags": {
+      "megaStone": {
+        "Raichu": "Raichu-Mega-Y"
+      },
+      "itemUser": [
+        "Raichu"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "rarebone": {
+    "name": "Rare Bone",
+    "desc": null,
+    "shortDesc": "No competitive use other than when used with Fling.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "rawstberry": {
+    "name": "Rawst Berry",
+    "desc": null,
+    "shortDesc": "Holder is cured if it is burned. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Grass"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "razorclaw": {
+    "name": "Razor Claw",
+    "desc": "Holder's critical hit ratio is raised by 1 stage. Evolves Sneasel into Weavile when held and leveled up during the night.",
+    "shortDesc": "Holder's critical hit ratio is raised by 1 stage.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "razorfang": {
+    "name": "Razor Fang",
+    "desc": "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Gligar into Gliscor when held and leveled up during the night.",
+    "shortDesc": "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
+    "flags": {
+      "fling": {
+        "basePower": 30,
+        "volatileStatus": "flinch"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "razzberry": {
+    "name": "Razz Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Steel"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "reapercloth": {
+    "name": "Reaper Cloth",
+    "desc": null,
+    "shortDesc": "Evolves Dusclops into Dusknoir when traded.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "redcard": {
+    "name": "Red Card",
+    "desc": null,
+    "shortDesc": "If holder survives a hit, attacker is forced to switch to a random ally. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "redorb": {
+    "name": "Red Orb",
+    "desc": null,
+    "shortDesc": "If held by a Groudon, this item triggers its Primal Reversion in battle.",
+    "flags": {
+      "isPrimalOrb": true,
+      "itemUser": [
+        "Groudon"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "repeatball": {
+    "name": "Repeat Ball",
+    "desc": null,
+    "shortDesc": "A Poke Ball that works well on Pokemon species that were previously caught.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "ribbonsweet": {
+    "name": "Ribbon Sweet",
+    "desc": null,
+    "shortDesc": "Evolves Milcery into Alcremie when held and spun around.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "rindoberry": {
+    "name": "Rindo Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Grass-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Grass"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "ringtarget": {
+    "name": "Ring Target",
+    "desc": null,
+    "shortDesc": "The holder's type immunities granted solely by its typing are negated.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "rockgem": {
+    "name": "Rock Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Rock-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "rockincense": {
+    "name": "Rock Incense",
+    "desc": null,
+    "shortDesc": "Holder's Rock-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "rockiumz": {
+    "name": "Rockium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Rock move, this item allows it to use a Rock Z-Move.",
+    "flags": {
+      "onPlate": "Rock",
+      "zMove": true,
+      "zMoveType": "Rock",
+      "forcedForme": "Arceus-Rock"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "rockmemory": {
+    "name": "Rock Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Rock type.",
+    "flags": {
+      "onMemory": "Rock",
+      "itemUser": [
+        "Silvally-Rock"
+      ],
+      "forcedForme": "Silvally-Rock"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "rockyhelmet": {
+    "name": "Rocky Helmet",
+    "desc": null,
+    "shortDesc": "If holder is hit by a contact move, the attacker loses 1/6 of its max HP.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "roomservice": {
+    "name": "Room Service",
+    "desc": null,
+    "shortDesc": "If Trick Room is active, the holder's Speed is lowered by 1 stage. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      },
+      "boosts": {
+        "spe": -1
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "rootfossil": {
+    "name": "Root Fossil",
+    "desc": null,
+    "shortDesc": "Can be revived into Lileep.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "roseincense": {
+    "name": "Rose Incense",
+    "desc": null,
+    "shortDesc": "Holder's Grass-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "roseliberry": {
+    "name": "Roseli Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Fairy-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Fairy"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "rowapberry": {
+    "name": "Rowap Berry",
+    "desc": null,
+    "shortDesc": "If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Dark"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "rustedshield": {
+    "name": "Rusted Shield",
+    "desc": null,
+    "shortDesc": "If held by a Zamazenta, this item changes its forme to Crowned Shield.",
+    "flags": {
+      "itemUser": [
+        "Zamazenta-Crowned"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "rustedsword": {
+    "name": "Rusted Sword",
+    "desc": null,
+    "shortDesc": "If held by a Zacian, this item changes its forme to Crowned Sword.",
+    "flags": {
+      "itemUser": [
+        "Zacian-Crowned"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "sablenite": {
+    "name": "Sablenite",
+    "desc": null,
+    "shortDesc": "If held by a Sableye, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Sableye": "Sableye-Mega"
+      },
+      "itemUser": [
+        "Sableye"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "sachet": {
+    "name": "Sachet",
+    "desc": null,
+    "shortDesc": "Evolves Spritzee into Aromatisse when traded.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "safariball": {
+    "name": "Safari Ball",
+    "desc": null,
+    "shortDesc": "A special Poke Ball that is used only in the Safari Zone and Great Marsh.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "safetygoggles": {
+    "name": "Safety Goggles",
+    "desc": null,
+    "shortDesc": "Holder is immune to powder moves and damage from Sandstorm or Hail.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "sailfossil": {
+    "name": "Sail Fossil",
+    "desc": null,
+    "shortDesc": "Can be revived into Amaura.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "salacberry": {
+    "name": "Salac Berry",
+    "desc": null,
+    "shortDesc": "Raises holder's Speed by 1 stage when at 1/4 max HP or less. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Fighting"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "salamencite": {
+    "name": "Salamencite",
+    "desc": null,
+    "shortDesc": "If held by a Salamence, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Salamence": "Salamence-Mega"
+      },
+      "itemUser": [
+        "Salamence"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "sceptilite": {
+    "name": "Sceptilite",
+    "desc": null,
+    "shortDesc": "If held by a Sceptile, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Sceptile": "Sceptile-Mega"
+      },
+      "itemUser": [
+        "Sceptile"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "scizorite": {
+    "name": "Scizorite",
+    "desc": null,
+    "shortDesc": "If held by a Scizor, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Scizor": "Scizor-Mega"
+      },
+      "itemUser": [
+        "Scizor"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "scolipite": {
+    "name": "Scolipite",
+    "desc": null,
+    "shortDesc": "If held by a Scolipede, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Scolipede": "Scolipede-Mega"
+      },
+      "itemUser": [
+        "Scolipede"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "scopelens": {
+    "name": "Scope Lens",
+    "desc": null,
+    "shortDesc": "Holder's critical hit ratio is raised by 1 stage.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "scovillainite": {
+    "name": "Scovillainite",
+    "desc": null,
+    "shortDesc": "If held by a Scovillain, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Scovillain": "Scovillain-Mega"
+      },
+      "itemUser": [
+        "Scovillain"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "scraftinite": {
+    "name": "Scraftinite",
+    "desc": null,
+    "shortDesc": "If held by a Scrafty, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Scrafty": "Scrafty-Mega"
+      },
+      "itemUser": [
+        "Scrafty"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "seaincense": {
+    "name": "Sea Incense",
+    "desc": null,
+    "shortDesc": "Holder's Water-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "sharpbeak": {
+    "name": "Sharp Beak",
+    "desc": null,
+    "shortDesc": "Holder's Flying-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 50
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "sharpedonite": {
+    "name": "Sharpedonite",
+    "desc": null,
+    "shortDesc": "If held by a Sharpedo, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Sharpedo": "Sharpedo-Mega"
+      },
+      "itemUser": [
+        "Sharpedo"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "shedshell": {
+    "name": "Shed Shell",
+    "desc": null,
+    "shortDesc": "Holder cannot be prevented from choosing to switch out by any effect.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "shellbell": {
+    "name": "Shell Bell",
+    "desc": null,
+    "shortDesc": "After an attack, holder gains 1/8 of the damage in HP dealt to other Pokemon.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "shinystone": {
+    "name": "Shiny Stone",
+    "desc": "Evolves Togetic into Togekiss, Roselia into Roserade, Minccino into Cinccino, and Floette into Florges when used.",
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "shockdrive": {
+    "name": "Shock Drive",
+    "desc": null,
+    "shortDesc": "Holder's Techno Blast is Electric type.",
+    "flags": {
+      "onDrive": "Electric",
+      "itemUser": [
+        "Genesect-Shock"
+      ],
+      "forcedForme": "Genesect-Shock"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "shucaberry": {
+    "name": "Shuca Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Ground-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Ground"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "silkscarf": {
+    "name": "Silk Scarf",
+    "desc": null,
+    "shortDesc": "Holder's Normal-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "silverpowder": {
+    "name": "Silver Powder",
+    "desc": null,
+    "shortDesc": "Holder's Bug-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "sitrusberry": {
+    "name": "Sitrus Berry",
+    "desc": null,
+    "shortDesc": "Restores 1/4 max HP when at 1/2 max HP or less. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Psychic"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "skarmorite": {
+    "name": "Skarmorite",
+    "desc": null,
+    "shortDesc": "If held by a Skarmory, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Skarmory": "Skarmory-Mega"
+      },
+      "itemUser": [
+        "Skarmory"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "skullfossil": {
+    "name": "Skull Fossil",
+    "desc": null,
+    "shortDesc": "Can be revived into Cranidos.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "skyplate": {
+    "name": "Sky Plate",
+    "desc": null,
+    "shortDesc": "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type.",
+    "flags": {
+      "onPlate": "Flying",
+      "forcedForme": "Arceus-Flying"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "slowbronite": {
+    "name": "Slowbronite",
+    "desc": null,
+    "shortDesc": "If held by a Slowbro, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Slowbro": "Slowbro-Mega"
+      },
+      "itemUser": [
+        "Slowbro"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "smoothrock": {
+    "name": "Smooth Rock",
+    "desc": null,
+    "shortDesc": "Holder's use of Sandstorm lasts 8 turns instead of 5.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "snorliumz": {
+    "name": "Snorlium Z",
+    "desc": null,
+    "shortDesc": "If held by a Snorlax with Giga Impact, it can use Pulverizing Pancake.",
+    "flags": {
+      "zMove": "Pulverizing Pancake",
+      "zMoveFrom": "Giga Impact",
+      "itemUser": [
+        "Snorlax"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "snowball": {
+    "name": "Snowball",
+    "desc": null,
+    "shortDesc": "Raises holder's Attack by 1 if hit by an Ice-type attack. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      },
+      "boosts": {
+        "atk": 1
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "softsand": {
+    "name": "Soft Sand",
+    "desc": null,
+    "shortDesc": "Holder's Ground-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "solganiumz": {
+    "name": "Solganium Z",
+    "desc": null,
+    "shortDesc": "Solgaleo or Dusk Mane Necrozma with Sunsteel Strike can use a special Z-Move.",
+    "flags": {
+      "zMove": "Searing Sunraze Smash",
+      "zMoveFrom": "Sunsteel Strike",
+      "itemUser": [
+        "Solgaleo",
+        "Necrozma-Dusk-Mane"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "souldew": {
+    "name": "Soul Dew",
+    "desc": null,
+    "shortDesc": "If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      },
+      "itemUser": [
+        "Latios",
+        "Latias"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "spelltag": {
+    "name": "Spell Tag",
+    "desc": null,
+    "shortDesc": "Holder's Ghost-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "spelonberry": {
+    "name": "Spelon Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Dark"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "splashplate": {
+    "name": "Splash Plate",
+    "desc": null,
+    "shortDesc": "Holder's Water-type attacks have 1.2x power. Judgment is Water type.",
+    "flags": {
+      "onPlate": "Water",
+      "forcedForme": "Arceus-Water"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "spookyplate": {
+    "name": "Spooky Plate",
+    "desc": null,
+    "shortDesc": "Holder's Ghost-type attacks have 1.2x power. Judgment is Ghost type.",
+    "flags": {
+      "onPlate": "Ghost",
+      "forcedForme": "Arceus-Ghost"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "sportball": {
+    "name": "Sport Ball",
+    "desc": null,
+    "shortDesc": "A special Poke Ball for the Bug-Catching Contest.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "staraptite": {
+    "name": "Staraptite",
+    "desc": null,
+    "shortDesc": "If held by a Staraptor, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Staraptor": "Staraptor-Mega"
+      },
+      "itemUser": [
+        "Staraptor"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "starfberry": {
+    "name": "Starf Berry",
+    "desc": null,
+    "shortDesc": "Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Psychic"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "starminite": {
+    "name": "Starminite",
+    "desc": null,
+    "shortDesc": "If held by a Starmie, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Starmie": "Starmie-Mega"
+      },
+      "itemUser": [
+        "Starmie"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "starsweet": {
+    "name": "Star Sweet",
+    "desc": null,
+    "shortDesc": "Evolves Milcery into Alcremie when held and spun around.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "steelgem": {
+    "name": "Steel Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Steel-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "steeliumz": {
+    "name": "Steelium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Steel move, this item allows it to use a Steel Z-Move.",
+    "flags": {
+      "onPlate": "Steel",
+      "zMove": true,
+      "zMoveType": "Steel",
+      "forcedForme": "Arceus-Steel"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "steelixite": {
+    "name": "Steelixite",
+    "desc": null,
+    "shortDesc": "If held by a Steelix, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Steelix": "Steelix-Mega"
+      },
+      "itemUser": [
+        "Steelix"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "steelmemory": {
+    "name": "Steel Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Steel type.",
+    "flags": {
+      "onMemory": "Steel",
+      "itemUser": [
+        "Silvally-Steel"
+      ],
+      "forcedForme": "Silvally-Steel"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "stick": {
+    "name": "Stick",
+    "desc": null,
+    "shortDesc": "If held by a Farfetch’d, its critical hit ratio is raised by 2 stages.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      },
+      "itemUser": [
+        "Farfetch’d"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "stickybarb": {
+    "name": "Sticky Barb",
+    "desc": null,
+    "shortDesc": "Each turn, holder loses 1/8 max HP. An attacker making contact can receive it.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "stoneplate": {
+    "name": "Stone Plate",
+    "desc": null,
+    "shortDesc": "Holder's Rock-type attacks have 1.2x power. Judgment is Rock type.",
+    "flags": {
+      "onPlate": "Rock",
+      "forcedForme": "Arceus-Rock"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "strangeball": {
+    "name": "Strange Ball",
+    "desc": null,
+    "shortDesc": "Placeholder if caught in Poke Ball not in current game.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "strawberrysweet": {
+    "name": "Strawberry Sweet",
+    "desc": null,
+    "shortDesc": "Evolves Milcery into Alcremie when held and spun around.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "sunstone": {
+    "name": "Sun Stone",
+    "desc": "Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used.",
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "swampertite": {
+    "name": "Swampertite",
+    "desc": null,
+    "shortDesc": "If held by a Swampert, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Swampert": "Swampert-Mega"
+      },
+      "itemUser": [
+        "Swampert"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "sweetapple": {
+    "name": "Sweet Apple",
+    "desc": null,
+    "shortDesc": "Evolves Applin into Appletun when used.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "syrupyapple": {
+    "name": "Syrupy Apple",
+    "desc": null,
+    "shortDesc": "Evolves Applin into Dipplin when used.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tamatoberry": {
+    "name": "Tamato Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Psychic"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tangaberry": {
+    "name": "Tanga Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Bug-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Bug"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tapuniumz": {
+    "name": "Tapunium Z",
+    "desc": null,
+    "shortDesc": "If held by a Tapu with Nature's Madness, it can use Guardian of Alola.",
+    "flags": {
+      "zMove": "Guardian of Alola",
+      "zMoveFrom": "Nature's Madness",
+      "itemUser": [
+        "Tapu Koko",
+        "Tapu Lele",
+        "Tapu Bulu",
+        "Tapu Fini"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tartapple": {
+    "name": "Tart Apple",
+    "desc": null,
+    "shortDesc": "Evolves Applin into Flapple when used.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tatsugirinite": {
+    "name": "Tatsugirinite",
+    "desc": null,
+    "shortDesc": "If held by a Tatsugiri, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Tatsugiri": "Tatsugiri-Curly-Mega",
+        "Tatsugiri-Droopy": "Tatsugiri-Droopy-Mega",
+        "Tatsugiri-Stretchy": "Tatsugiri-Stretchy-Mega"
+      },
+      "itemUser": [
+        "Tatsugiri",
+        "Tatsugiri-Droopy",
+        "Tatsugiri-Stretchy"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "terrainextender": {
+    "name": "Terrain Extender",
+    "desc": null,
+    "shortDesc": "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "thickclub": {
+    "name": "Thick Club",
+    "desc": null,
+    "shortDesc": "If held by a Cubone or a Marowak, its Attack is doubled.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      },
+      "itemUser": [
+        "Marowak",
+        "Marowak-Alola",
+        "Marowak-Alola-Totem",
+        "Cubone"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "throatspray": {
+    "name": "Throat Spray",
+    "desc": null,
+    "shortDesc": "Raises holder's Special Attack by 1 stage after it uses a sound move. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      },
+      "boosts": {
+        "spa": 1
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "thunderstone": {
+    "name": "Thunder Stone",
+    "desc": "Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, Eelektrik into Eelektross, and Charjabug into Vikavolt when used.",
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "timerball": {
+    "name": "Timer Ball",
+    "desc": null,
+    "shortDesc": "A Poke Ball that becomes better the more turns there are in a battle.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "toxicorb": {
+    "name": "Toxic Orb",
+    "desc": null,
+    "shortDesc": "At the end of every turn, this item attempts to badly poison the holder.",
+    "flags": {
+      "fling": {
+        "basePower": 30,
+        "status": "tox"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "toxicplate": {
+    "name": "Toxic Plate",
+    "desc": null,
+    "shortDesc": "Holder's Poison-type attacks have 1.2x power. Judgment is Poison type.",
+    "flags": {
+      "onPlate": "Poison",
+      "forcedForme": "Arceus-Poison"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr00": {
+    "name": "TR00",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Swords Dance. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr01": {
+    "name": "TR01",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Body Slam. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 85
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr02": {
+    "name": "TR02",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Flamethrower. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr03": {
+    "name": "TR03",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Hydro Pump. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 110
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr04": {
+    "name": "TR04",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Surf. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr05": {
+    "name": "TR05",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Ice Beam. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr06": {
+    "name": "TR06",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Blizzard. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 110
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr07": {
+    "name": "TR07",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Low Kick. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr08": {
+    "name": "TR08",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Thunderbolt. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr09": {
+    "name": "TR09",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Thunder. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 110
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr10": {
+    "name": "TR10",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Earthquake. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr11": {
+    "name": "TR11",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Psychic. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr12": {
+    "name": "TR12",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Agility. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr13": {
+    "name": "TR13",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Focus Energy. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr14": {
+    "name": "TR14",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Metronome. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr15": {
+    "name": "TR15",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Fire Blast. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 110
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr16": {
+    "name": "TR16",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Waterfall. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr17": {
+    "name": "TR17",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Amnesia. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr18": {
+    "name": "TR18",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Leech Life. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr19": {
+    "name": "TR19",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Tri Attack. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr20": {
+    "name": "TR20",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Substitute. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr21": {
+    "name": "TR21",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Reversal. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr22": {
+    "name": "TR22",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Sludge Bomb. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr23": {
+    "name": "TR23",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Spikes. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr24": {
+    "name": "TR24",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Outrage. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 120
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr25": {
+    "name": "TR25",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Psyshock. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr26": {
+    "name": "TR26",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Endure. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr27": {
+    "name": "TR27",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Sleep Talk. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr28": {
+    "name": "TR28",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Megahorn. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 120
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr29": {
+    "name": "TR29",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Baton Pass. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr30": {
+    "name": "TR30",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Encore. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr31": {
+    "name": "TR31",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Iron Tail. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr32": {
+    "name": "TR32",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Crunch. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr33": {
+    "name": "TR33",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Shadow Ball. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr34": {
+    "name": "TR34",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Future Sight. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 120
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr35": {
+    "name": "TR35",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Uproar. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr36": {
+    "name": "TR36",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Heat Wave. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 95
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr37": {
+    "name": "TR37",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Taunt. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr38": {
+    "name": "TR38",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Trick. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr39": {
+    "name": "TR39",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Superpower. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 120
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr40": {
+    "name": "TR40",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Skill Swap. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr41": {
+    "name": "TR41",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Blaze Kick. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 85
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr42": {
+    "name": "TR42",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Hyper Voice. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr43": {
+    "name": "TR43",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Overheat. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 130
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr44": {
+    "name": "TR44",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Cosmic Power. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr45": {
+    "name": "TR45",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Muddy Water. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr46": {
+    "name": "TR46",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Iron Defense. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr47": {
+    "name": "TR47",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Dragon Claw. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr48": {
+    "name": "TR48",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Bulk Up. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr49": {
+    "name": "TR49",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Calm Mind. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr50": {
+    "name": "TR50",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Leaf Blade. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr51": {
+    "name": "TR51",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Dragon Dance. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr52": {
+    "name": "TR52",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Gyro Ball. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr53": {
+    "name": "TR53",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Close Combat. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 120
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr54": {
+    "name": "TR54",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Toxic Spikes. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr55": {
+    "name": "TR55",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Flare Blitz. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 120
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr56": {
+    "name": "TR56",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Aura Sphere. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr57": {
+    "name": "TR57",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Poison Jab. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr58": {
+    "name": "TR58",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Dark Pulse. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr59": {
+    "name": "TR59",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Seed Bomb. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr60": {
+    "name": "TR60",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move X-Scissor. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr61": {
+    "name": "TR61",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Bug Buzz. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr62": {
+    "name": "TR62",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Dragon Pulse. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 85
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr63": {
+    "name": "TR63",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Power Gem. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr64": {
+    "name": "TR64",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Focus Blast. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 120
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr65": {
+    "name": "TR65",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Energy Ball. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr66": {
+    "name": "TR66",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Brave Bird. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 120
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr67": {
+    "name": "TR67",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Earth Power. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr68": {
+    "name": "TR68",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Nasty Plot. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr69": {
+    "name": "TR69",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Zen Headbutt. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr70": {
+    "name": "TR70",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Flash Cannon. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr71": {
+    "name": "TR71",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Leaf Storm. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 130
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr72": {
+    "name": "TR72",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Power Whip. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 120
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr73": {
+    "name": "TR73",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Gunk Shot. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 120
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr74": {
+    "name": "TR74",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Iron Head. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr75": {
+    "name": "TR75",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Stone Edge. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 100
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr76": {
+    "name": "TR76",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Stealth Rock. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr77": {
+    "name": "TR77",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Grass Knot. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr78": {
+    "name": "TR78",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Sludge Wave. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 95
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr79": {
+    "name": "TR79",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Heavy Slam. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr80": {
+    "name": "TR80",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Electro Ball. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr81": {
+    "name": "TR81",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Foul Play. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 95
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr82": {
+    "name": "TR82",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Stored Power. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 20
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr83": {
+    "name": "TR83",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Ally Switch. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr84": {
+    "name": "TR84",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Scald. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr85": {
+    "name": "TR85",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Work Up. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr86": {
+    "name": "TR86",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Wild Charge. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr87": {
+    "name": "TR87",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Drill Run. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr88": {
+    "name": "TR88",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Heat Crash. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr89": {
+    "name": "TR89",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Hurricane. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 110
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr90": {
+    "name": "TR90",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Play Rough. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr91": {
+    "name": "TR91",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Venom Drench. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr92": {
+    "name": "TR92",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Dazzling Gleam. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr93": {
+    "name": "TR93",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Darkest Lariat. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 85
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr94": {
+    "name": "TR94",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move High Horsepower. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 95
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr95": {
+    "name": "TR95",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Throat Chop. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr96": {
+    "name": "TR96",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Pollen Puff. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 90
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr97": {
+    "name": "TR97",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Psychic Fangs. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 85
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr98": {
+    "name": "TR98",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Liquidation. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 85
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tr99": {
+    "name": "TR99",
+    "desc": null,
+    "shortDesc": "Teaches certain Pokemon the move Body Press. One use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "twistedspoon": {
+    "name": "Twisted Spoon",
+    "desc": null,
+    "shortDesc": "Holder's Psychic-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "tyranitarite": {
+    "name": "Tyranitarite",
+    "desc": null,
+    "shortDesc": "If held by a Tyranitar, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Tyranitar": "Tyranitar-Mega"
+      },
+      "itemUser": [
+        "Tyranitar"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "ultraball": {
+    "name": "Ultra Ball",
+    "desc": null,
+    "shortDesc": "An ultra-performance Ball that provides a higher catch rate than a Great Ball.",
+    "flags": {
+      "isPokeball": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "ultranecroziumz": {
+    "name": "Ultranecrozium Z",
+    "desc": null,
+    "shortDesc": "Dusk Mane/Dawn Wings Necrozma: Ultra Burst, then Z-Move w/ Photon Geyser.",
+    "flags": {
+      "zMove": "Light That Burns the Sky",
+      "zMoveFrom": "Photon Geyser",
+      "itemUser": [
+        "Necrozma-Ultra"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "unremarkableteacup": {
+    "name": "Unremarkable Teacup",
+    "desc": null,
+    "shortDesc": "Evolves Poltchageist into Sinistcha when used.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "upgrade": {
+    "name": "Up-Grade",
+    "desc": null,
+    "shortDesc": "Evolves Porygon into Porygon2 when traded.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "utilityumbrella": {
+    "name": "Utility Umbrella",
+    "desc": "The holder ignores rain- and sun-based effects, including those of its Ability unless it is Orichalcum Pulse or Protosynthesis. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.",
+    "shortDesc": "The holder ignores rain- and sun-based effects.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "venusaurite": {
+    "name": "Venusaurite",
+    "desc": null,
+    "shortDesc": "If held by a Venusaur, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Venusaur": "Venusaur-Mega"
+      },
+      "itemUser": [
+        "Venusaur"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "victreebelite": {
+    "name": "Victreebelite",
+    "desc": null,
+    "shortDesc": "If held by a Victreebel, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Victreebel": "Victreebel-Mega"
+      },
+      "itemUser": [
+        "Victreebel"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "vilevial": {
+    "name": "Vile Vial",
+    "desc": null,
+    "shortDesc": "If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      },
+      "itemUser": [
+        "Venomicon-Epilogue"
+      ],
+      "forcedForme": "Venomicon-Epilogue"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "wacanberry": {
+    "name": "Wacan Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Electric-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Electric"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "watergem": {
+    "name": "Water Gem",
+    "desc": null,
+    "shortDesc": "Holder's first successful Water-type attack will have 1.3x power. Single use.",
+    "flags": {
+      "isGem": true
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "wateriumz": {
+    "name": "Waterium Z",
+    "desc": null,
+    "shortDesc": "If holder has a Water move, this item allows it to use a Water Z-Move.",
+    "flags": {
+      "onPlate": "Water",
+      "zMove": true,
+      "zMoveType": "Water",
+      "forcedForme": "Arceus-Water"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "watermemory": {
+    "name": "Water Memory",
+    "desc": null,
+    "shortDesc": "Holder's Multi-Attack is Water type.",
+    "flags": {
+      "onMemory": "Water",
+      "itemUser": [
+        "Silvally-Water"
+      ],
+      "forcedForme": "Silvally-Water"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "waterstone": {
+    "name": "Water Stone",
+    "desc": "Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.",
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "flags": {
+      "fling": {
+        "basePower": 30
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "watmelberry": {
+    "name": "Watmel Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 100,
+        "type": "Fire"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "waveincense": {
+    "name": "Wave Incense",
+    "desc": null,
+    "shortDesc": "Holder's Water-type attacks have 1.2x power.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "weaknesspolicy": {
+    "name": "Weakness Policy",
+    "desc": null,
+    "shortDesc": "If holder is hit super effectively, raises Attack, Sp. Atk by 2 stages. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      },
+      "boosts": {
+        "atk": 2,
+        "spa": 2
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "wellspringmask": {
+    "name": "Wellspring Mask",
+    "desc": null,
+    "shortDesc": "Ogerpon-Wellspring: 1.2x power attacks; Terastallize to gain Embody Aspect.",
+    "flags": {
+      "fling": {
+        "basePower": 60
+      },
+      "itemUser": [
+        "Ogerpon-Wellspring"
+      ],
+      "forcedForme": "Ogerpon-Wellspring"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "wepearberry": {
+    "name": "Wepear Berry",
+    "desc": null,
+    "shortDesc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 90,
+        "type": "Electric"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "whippeddream": {
+    "name": "Whipped Dream",
+    "desc": null,
+    "shortDesc": "Evolves Swirlix into Slurpuff when traded.",
+    "flags": {
+      "fling": {
+        "basePower": 80
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "whiteherb": {
+    "name": "White Herb",
+    "desc": null,
+    "shortDesc": "Restores all lowered stat stages to 0 when one is less than 0. Single use.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "widelens": {
+    "name": "Wide Lens",
+    "desc": null,
+    "shortDesc": "The accuracy of attacks by the holder is 1.1x.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "wikiberry": {
+    "name": "Wiki Berry",
+    "desc": null,
+    "shortDesc": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Rock"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "wiseglasses": {
+    "name": "Wise Glasses",
+    "desc": null,
+    "shortDesc": "Holder's special attacks have 1.1x power.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "yacheberry": {
+    "name": "Yache Berry",
+    "desc": null,
+    "shortDesc": "Halves damage taken from a supereffective Ice-type attack. Single use.",
+    "flags": {
+      "isBerry": true,
+      "naturalGift": {
+        "basePower": 80,
+        "type": "Ice"
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "zapplate": {
+    "name": "Zap Plate",
+    "desc": null,
+    "shortDesc": "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
+    "flags": {
+      "onPlate": "Electric",
+      "forcedForme": "Arceus-Electric"
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "zeraorite": {
+    "name": "Zeraorite",
+    "desc": null,
+    "shortDesc": "If held by a Zeraora, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Zeraora": "Zeraora-Mega"
+      },
+      "itemUser": [
+        "Zeraora"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "zoomlens": {
+    "name": "Zoom Lens",
+    "desc": null,
+    "shortDesc": "The accuracy of attacks by the holder is 1.2x if it moves after its target.",
+    "flags": {
+      "fling": {
+        "basePower": 10
+      }
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  },
+  "zygardite": {
+    "name": "Zygardite",
+    "desc": null,
+    "shortDesc": "If held by a Zygarde in Complete Forme, this item allows it to Mega Evolve in battle.",
+    "flags": {
+      "megaStone": {
+        "Zygarde-Complete": "Zygarde-Mega"
+      },
+      "itemUser": [
+        "Zygarde-Complete"
+      ]
+    },
+    "sources": [
+      "smogon/pokemon-showdown"
+    ]
+  }
+}

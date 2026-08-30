@@ -1,0 +1,19 @@
+{
+  "name": "pokemon-champions-data",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "fetch-sd": "./scripts/fetch_sources.sh",
+    "sync-sd-types": "./scripts/sync_showdown_types.sh",
+    "update": "bun run scripts/update_from_showdown.ts",
+    "build-regulations": "bun run scripts/build_regulations.ts",
+    "generate": "bun run scripts/update_from_showdown.ts && bun run scripts/build_regulations.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
