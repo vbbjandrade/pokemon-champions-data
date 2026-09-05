@@ -30,13 +30,21 @@ jobs:
       - run: ./scripts/fetch_sources.sh
       - run: bun run generate
 
-      - name: Commit generated data
+      - name: Push dist to data branch
         run: |
-          git add -f data/master data/regm-a data/regm-b dist
-          if git diff --cached --quiet; then
-            exit 0
-          fi
+          # 1. Initialize a clean git tree inside dist
+          cd dist
+          git init
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'chore: regenerate regulation data'
-          git push
+          
+          # 2. Stage everything inside dist/ as the root of the 'data' branch
+          git checkout -b data
+          git add -A
+          
+          # 3. Commit only if there are changes
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: regenerate regulation data [skip ci]'
+            # Reuses the authentication already stored by actions/checkout
+            git push -f origin data
+          fi
