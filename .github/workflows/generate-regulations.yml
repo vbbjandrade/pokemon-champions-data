@@ -35,14 +35,17 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
-          # 1. Create a temporary index and stage dist contents at root
-          export GIT_INDEX_FILE=.git/temp_index
-          git read-tree --prefix=/ $(git hash-object -t tree /dev/null)
+          # 1. Switch to a clean temporary orphan branch
+          git checkout --orphan temp-data-branch
+          git reset
+
+          # 2. Add dist contents to index forcefully
           git add -f dist
 
-          # 2. Extract dist directory tree ID and write a commit
-          TREE_ID=$(git write-tree --prefix=dist)
-          COMMIT_ID=$(echo "chore: regenerate regulation data [skip ci]" | git commit-tree $TREE_ID)
+          # 3. Create a clean working directory with dist/ contents at root level
+          git mv dist/* .
+          git rm -rf --cached dist/
 
-          # 3. Force push the commit to the remote data branch
-          git push -f origin $COMMIT_ID:refs/heads/data
+          # 4. Commit and force push to origin/data
+          git commit -m "chore: regenerate regulation data [skip ci]"
+          git push -f origin temp-data-branch:data
