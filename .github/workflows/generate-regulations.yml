@@ -35,8 +35,14 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
-          # Stage dist temporarily so Git can construct the tree object
+          # 1. Create a temporary index and stage dist contents at root
+          export GIT_INDEX_FILE=.git/temp_index
+          git read-tree --prefix=/ $(git hash-object -t tree /dev/null)
           git add -f dist
 
-          # Extract dist/ as the root of the 'data' branch and force-push to remote
-          git push origin $(git subtree split --prefix dist):refs/heads/data --force
+          # 2. Extract dist directory tree ID and write a commit
+          TREE_ID=$(git write-tree --prefix=dist)
+          COMMIT_ID=$(echo "chore: regenerate regulation data [skip ci]" | git commit-tree $TREE_ID)
+
+          # 3. Force push the commit to the remote data branch
+          git push -f origin $COMMIT_ID:refs/heads/data
