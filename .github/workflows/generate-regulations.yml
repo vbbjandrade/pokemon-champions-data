@@ -30,22 +30,10 @@ jobs:
       - run: ./scripts/fetch_sources.sh
       - run: bun run generate
 
-      - name: Deploy dist to data branch
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-
-          # 1. Switch to a clean temporary orphan branch
-          git checkout --orphan temp-data-branch
-          git reset
-
-          # 2. Add dist contents to index forcefully
-          git add -f dist
-
-          # 3. Create a clean working directory with dist/ contents at root level
-          git mv dist/* .
-          git rm -rf --cached dist/
-
-          # 4. Commit and force push to origin/data
-          git commit -m "chore: regenerate regulation data [skip ci]"
-          git push -f origin temp-data-branch:data
+      - name: Deploy dist contents to data branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: data
+          force_orphan: true
