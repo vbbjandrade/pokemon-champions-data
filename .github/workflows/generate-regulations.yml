@@ -30,21 +30,13 @@ jobs:
       - run: ./scripts/fetch_sources.sh
       - run: bun run generate
 
-      - name: Push dist to data branch
+      - name: Deploy dist to data branch
         run: |
-          # 1. Initialize a clean git tree inside dist
-          cd dist
-          git init
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          
-          # 2. Stage everything inside dist/ as the root of the 'data' branch
-          git checkout -b data
-          git add -A
-          
-          # 3. Commit only if there are changes
-          if ! git diff --cached --quiet; then
-            git commit -m 'chore: regenerate regulation data [skip ci]'
-            # Reuses the authentication already stored by actions/checkout
-            git push -f origin data
-          fi
+
+          # Stage dist temporarily so Git can construct the tree object
+          git add -f dist
+
+          # Extract dist/ as the root of the 'data' branch and force-push to remote
+          git push origin $(git subtree split --prefix dist):refs/heads/data --force
