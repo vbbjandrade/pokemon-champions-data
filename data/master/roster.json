@@ -2908,8 +2908,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "thermalexchange",
-      "H": "icebody"
+      "0": "thermalexchange"
     },
     "weightKg": 315,
     "requiredItem": "Baxcalibrite",
@@ -14741,7 +14740,7 @@
     ],
     "form": "Mega",
     "abilities": {
-      "0": "emergencyexit"
+      "0": "toughclaws"
     },
     "weightKg": 148,
     "requiredItem": "Golisopite",

@@ -1,31 +1,78 @@
 // @ts-nocheck
 export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTable = {
-	disguise: {
+	angershell: {
 		inherit: true,
-		onEffectiveness(typeMod, target, type, move) {
-			if (!target || move.category === 'Status') return;
-
-			if (move.hit === 1) delete this.effectState.neutral;
-			if (this.effectState.neutral) return 0;
-
-			if (!['mimikyu', 'mimikyutotem'].includes(target.species.id)) {
-				return;
+		onDamage(damage, target, source, effect) {
+			this.effectState.checkedAngerShell = !(effect.effectType === "Move" && !effect.multihit);
+		},
+	},
+	berserk: {
+		inherit: true,
+		onDamage(damage, target, source, effect) {
+			this.effectState.checkedBerserk = !(effect.effectType === "Move" && !effect.multihit);
+		},
+	},
+	dragonize: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	eelevate: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	firemane: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	healer: {
+		inherit: true,
+		onResidual(pokemon) {
+			for (const allyActive of pokemon.adjacentAllies()) {
+				if (allyActive.status && this.randomChance(1, 2)) {
+					this.add('-activate', pokemon, 'ability: Healer');
+					allyActive.cureStatus();
+				}
 			}
+		},
+	},
+	megasol: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	naturalcure: {
+		inherit: true,
+		onCheckShow: undefined, // no inherit
+		onSwitchOut(pokemon) {
+			if (!pokemon.status || pokemon.status === 'fnt') return;
 
-			const hitSub = target.volatiles['substitute'] && !move.flags['bypasssub'] && !(move.infiltrates && this.gen >= 6);
-			if (hitSub) return;
-
-			if (!target.runImmunity(move)) return;
-			this.effectState.neutral = true;
-			return 0;
+			this.add('-curestatus', pokemon, pokemon.status, '[from] ability: Natural Cure', '[silent]');
+			pokemon.clearStatus();
+		},
+	},
+	piercingdrill: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	regenerator: {
+		inherit: true,
+		onSwitchOut(pokemon) {
+			if (pokemon.heal(pokemon.baseMaxhp / 3)) {
+				this.add('-heal', pokemon, pokemon.getHealth, '[from] ability: Regenerator', '[silent]');
+			}
 		},
 	},
 	spicyspray: {
 		inherit: true,
-		onDamagingHit(damage, target, source, move) {
-			if (!source.trySetStatus('brn', target) && !source.status && source.hasType('Fire')) {
-				this.add('-immune', source);
+		isNonstandard: null,
+	},
+	unseenfist: {
+		onModifyMove: undefined, // no inherit
+		onHitProtect(source, target, move) {
+			if (move.flags['contact']) {
+				target.getMoveHitData(move).bypassProtect = this.effect;
+				return false;
 			}
 		},
+		inherit: true,
 	},
 };

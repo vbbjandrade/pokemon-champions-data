@@ -14,12 +14,12 @@ Data is drawn from Showdown's open-source files and continuously refined by comm
 
 ## What's Inside
 
-| Directory | Contents |
+| Location | Contents |
 |---|---|
 | `data/master/` | Unfiltered Showdown roster, moves, abilities, and items |
-| `data/champions-base/` | Data from `data/master/` with Champions-specific overrides (**TODO**), game formula and systems documentation |
-| `data/regm-*/` | Regulation delta source data and full regulation learnsets |
-| `dist/regm-*/` | Compiled roster, learnsets, moves, abilities, and items for consumers |
+| `data/mechanics/` | Game formula and systems documentation |
+| `data/regm-*/` | Regulation ruleset delta files |
+| `data` branch | Compiled roster, learnsets, moves, abilities, and items for consumers (built locally in `dist/`) |
 
 The playable characters include base forms, regional variants and other alternate forms. Every form with distinct relevant attributes is represented as a separate entry.
 
@@ -29,10 +29,10 @@ The editable data is split into an unfiltered Showdown baseline and small, regul
 
 - `data/master/` contains all parsed Showdown roster, move, ability, and item entries.
 - `data/regm-a/delta.json` and `data/regm-b/delta.json` define legal roster entries and only the resource properties changed by that regulation. Learnsets are regulation-owned and stored in the delta because Showdown provides their complete regulation-specific sets.
-- `dist/regm-a/` and `dist/regm-b/` contain compiled consumer files: `roster.json`, `learnsets.json`, `moves.json`, `abilities.json`, and `items.json`.
+- `dist/regm-*/` contains compiled consumer files (`roster.json`, `learnsets.json`, `moves.json`, `abilities.json`, and `items.json`). On pushes to `main`, the GitHub Actions deployment workflow automatically publishes these compiled files to the dedicated orphan `data` branch.
 
-Each regulation declares its `baseRegulationId` in `scripts/regulations.ts`. This is this repository's chronological ownership model, and though technically reliant on it, does not follow Showdown's mod inheritance structure. A regulation without a `baseRegulationId` overrides master data (**TODO:** add a base "champions" data built on top of master data from which to inherit all other regulations); a regulation with one applies on top of that base.
-e.g. Reg M-C is compiled as `master → Reg M-A → Reg M-B → Reg M-C`.s
+Each regulation declares its `baseRegulationId` in `scripts/regulations.ts`. This is this repository's chronological ownership model, and though technically reliant on it, does not follow Showdown's mod inheritance structure. A regulation without a `baseRegulationId` overrides master data; a regulation with one applies on top of that base.
+e.g. Reg M-C is compiled as `master → Reg M-A → Reg M-B → Reg M-C`.
 
 Each generated `delta.json` repeats that `baseRegulationId` as build metadata. Every override collection is a chained patch: omitted entries are inherited unchanged, `{}` adds an available entry with unchanged data, a populated object replaces only the changed fields, and `null` removes an inherited entry. The base regulation contains full learnsets because master has none; later regulations contain only changed, added, or removed learnsets. Move and ability availability is derived from those learnsets and roster entries, respectively; items use Showdown availability without retaining its `isNonstandard` reason strings.
 
@@ -49,16 +49,26 @@ bun run fetch-sd
 bun run generate
 ```
 
-`fetch-sd` downloads only the current Showdown `champions` mod and its immediate preceding regulation (**TODO:** if it exists), then reports exactly which regulation snapshots it found. It writes a local, ignored manifest used by `update` so old source folders cannot be accidentally reused. To reconstruct or revise an older regulation, point both commands at the Showdown commit that still exposed it:
+`fetch-sd` is a zero-config, self-documenting fetcher driven by `scripts/regulations.ts`. By default, it automatically targets the latest configured regulation, resolves its preceding base regulation from `baseRegulationId`, and pulls Showdown data using the pinned commit SHA or branch.
+
+To target or reconstruct an older regulation snapshot, simply pass its regulation ID or directory name:
 
 ```bash
-SHOWDOWN_REF=<commit-sha> SHOWDOWN_CURRENT_REGULATION=championsregma SHOWDOWN_PREVIOUS_REGULATION= bun run fetch-sd
-bun run update --regulation championsregma
+# Automatically fetches Reg M-B and its base Reg M-A using its pinned Showdown commit
+bun run fetch-sd regm-b
+bun run update --regulation championsregmb
 ```
 
-`SHOWDOWN_CURRENT_REGULATION` and `SHOWDOWN_PREVIOUS_REGULATION` are **repository regulation IDs**. The current ID is mapped to Showdown's `champions` folder; the optional previous ID is mapped to its named predecessor. Do not use `champions` as either value. For example, when M-B is current and M-A is previous, use `SHOWDOWN_CURRENT_REGULATION=championsregmb` and `SHOWDOWN_PREVIOUS_REGULATION=championsregma`. When any layer does not define a resource file, the fetcher records an empty overlay rather than copying another regulation's file. The current `champions` layer then inherits from Showdown base data, while the previous layer inherits from `champions`. The fetched source files remain local and ignored—only this repository's master data and regulation deltas are committed.
+You can also override the commit SHA directly or test WIP branches:
 
-To rebuild already-generated source data without downloading Showdown files, run `bun run build-regulations`. The GitHub Action runs the full generation sequence on pushes and commits changed `dist/` files to that branch.
+```bash
+# Test against a specific Showdown commit or branch
+bun run fetch-sd --ref <commit-sha>
+```
+
+Each regulation entry in `scripts/regulations.ts` tracks its pinned Showdown commit SHA and provides a direct link to the Showdown commit history for that mod. This ensures complete auditability and reproducibility without hunting through external commit logs.
+
+To rebuild consumer files without re-downloading Showdown files, run `bun run build-regulations`. The GitHub Actions workflow runs the full generation sequence on pushes to `main` and publishes the resulting `./dist` contents directly to the orphan `data` branch.
 
 ---
 
@@ -66,16 +76,16 @@ To rebuild already-generated source data without downloading Showdown files, run
 
 ### curl
 
-Fetch the full roster directly from the raw GitHub URL:
+Fetch the full roster directly from the raw GitHub URL on the `data` branch:
 
 ```bash
-curl https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/dist/regm-b/roster.json
+curl https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/data/regm-b/roster.json
 ```
 
 Fetch a single character's base stats:
 
 ```bash
-curl https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/dist/regm-b/roster.json \
+curl https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/data/regm-b/roster.json \
   | python3 -c "import sys, json; data = json.load(sys.stdin); print(json.dumps(data['charizard'], indent=2))"
 ```
 
@@ -84,7 +94,7 @@ curl https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-
 ```js
 // Fetch and filter to Fire-type characters
 const roster = await fetch(
-  'https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/dist/regm-b/roster.json'
+  'https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/data/regm-b/roster.json'
 ).then(r => r.json());
 
 const fireTypes = Object.values(roster).filter(p => p.types.includes('Fire'));
@@ -94,7 +104,7 @@ console.log(`Fire-type characters: ${fireTypes.length}`);
 ```js
 // Load roster and find the fastest characters
 const roster = await fetch(
-  'https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main/dist/regm-b/roster.json'
+  'https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/data/regm-b/roster.json'
 ).then(r => r.json());
 
 const bySpeed = Object.entries(roster)
@@ -112,13 +122,13 @@ bySpeed.forEach(([name, stats]) => {
 import json, urllib.request
 
 def fetch(path):
-    base = "https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/main"
+    base = "https://raw.githubusercontent.com/pokemon-champions-data/pokemon-champions-data/data"
     with urllib.request.urlopen(f"{base}/{path}") as r:
         return json.load(r)
 
-roster    = fetch("dist/regm-b/roster.json")
-learnsets = fetch("dist/regm-b/learnsets.json")
-moves     = fetch("dist/regm-b/moves.json")
+roster    = fetch("regm-b/roster.json")
+learnsets = fetch("regm-b/learnsets.json")
+moves     = fetch("regm-b/moves.json")
 
 # Find all moves Charizard can learn
 charizard_moves = learnsets["charizard"]["moves"]
@@ -129,7 +139,7 @@ print(charizard_moves)
 
 ## Data Format Examples
 
-### `dist/<regulation>/roster.json` — a single entry
+### `data/<regulation>/roster.json` — a single entry
 
 ```json
 "venusaur": {

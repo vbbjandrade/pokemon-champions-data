@@ -1,7 +1,13 @@
 {
-  "showdownRef": "10f47c9de12a9eb15cc3db0fab9105a1d1f7149b",
+  "showdownRef": "master",
   "regulations": [
-    {"regulationId": "championsregmb", "sourceModId": "champions"},
-    {"regulationId": "championsregma", "sourceModId": "championsregma"}
+    {
+      "regulationId": "championsregmc",
+      "sourceModId": "champions"
+    },
+    {
+      "regulationId": "championsregmb",
+      "sourceModId": "championsregmb"
+    }
   ]
 }

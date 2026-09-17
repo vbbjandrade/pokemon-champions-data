@@ -12,6 +12,10 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	absolitez: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
 	absorbbulb: {
 		inherit: true,
 		isNonstandard: "Past",
@@ -79,6 +83,10 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	barbaracite: {
 		inherit: true,
 		isNonstandard: null,
+	},
+	baxcalibrite: {
+		inherit: true,
+		isNonstandard: "Past",
 	},
 	beastball: {
 		inherit: true,
@@ -368,6 +376,10 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		isNonstandard: null,
 	},
+	garchompitez: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
 	gardevoirite: {
 		inherit: true,
 		isNonstandard: null,
@@ -512,6 +524,10 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		isNonstandard: "Past",
 	},
+	leek: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
 	levelball: {
 		inherit: true,
 		isNonstandard: "Past",
@@ -539,6 +555,10 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	lucarionite: {
 		inherit: true,
 		isNonstandard: null,
+	},
+	lucarionitez: {
+		inherit: true,
+		isNonstandard: "Past",
 	},
 	luminousmoss: {
 		inherit: true,
@@ -829,6 +849,10 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		isNonstandard: "Past",
 	},
 	salacberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	salamencite: {
 		inherit: true,
 		isNonstandard: "Past",
 	},

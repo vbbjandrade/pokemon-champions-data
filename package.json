@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "fetch-sd": "./scripts/fetch_sources.sh",
+    "fetch-sd": "bun run scripts/fetch_sources.ts",
     "sync-sd-types": "./scripts/sync_showdown_types.sh",
     "update": "bun run scripts/update_from_showdown.ts",
     "build-regulations": "bun run scripts/build_regulations.ts",

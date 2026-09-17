@@ -27,7 +27,7 @@
     "pp": 25,
     "priority": 0,
     "target": "normal",
-    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down.",
     "shortDesc": "User recovers 50% of the damage dealt.",
     "flags": {
       "protect": 1,
@@ -545,7 +545,7 @@
     "pp": 20,
     "priority": 0,
     "target": "self",
-    "desc": "The user has 1/16 of its maximum HP, rounded down, restored at the end of each turn while it remains active. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. If the user uses Baton Pass, the replacement will receive the healing effect.",
+    "desc": "The user has 1/16 of its maximum HP, rounded down, restored at the end of each turn while it remains active. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down. If the user uses Baton Pass, the replacement will receive the healing effect.",
     "shortDesc": "User recovers 1/16 max HP per turn.",
     "flags": {
       "snatch": 1,
@@ -919,7 +919,7 @@
     "pp": 20,
     "priority": 0,
     "target": "allySide",
-    "desc": "For 5 turns, the user and its party members take 0.5x damage from physical and special attacks, or 0.66x damage if in a Double Battle; does not reduce damage further with Reflect or Light Screen. Critical hits ignore this protection. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Brick Break and Psychic Fangs remove the effect before damage is calculated. Lasts for 8 turns if the user is holding Light Clay. Fails unless the weather is Snow.",
+    "desc": "For 5 turns, the user and its party members take 0.5× damage from physical and special attacks, or 0.66× damage if in a Double Battle; does not reduce damage further with Reflect or Light Screen. Critical hits ignore this protection. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Brick Break and Psychic Fangs remove the effect before damage is calculated. Lasts for 8 turns if the user is holding Light Clay. Fails unless the weather is Snow.",
     "shortDesc": "For 5 turns, damage to allies halved. Snow only.",
     "flags": {
       "snatch": 1,
@@ -1097,7 +1097,7 @@
     "priority": 0,
     "target": "normal",
     "desc": "Has a 50% chance to poison the target. Power doubles if the target is already poisoned.",
-    "shortDesc": "50% psn. 2x power if target already poisoned.",
+    "shortDesc": "50% psn. 2× power if target already poisoned.",
     "flags": {
       "protect": 1,
       "mirror": 1,
@@ -1427,7 +1427,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down.",
     "shortDesc": "User recovers 50% of the damage dealt.",
     "flags": {
       "contact": 1,
@@ -1927,7 +1927,7 @@
     "pp": 20,
     "priority": 0,
     "target": "normal",
-    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down.",
     "shortDesc": "User recovers 50% of the damage dealt.",
     "flags": {
       "protect": 1,
@@ -2534,7 +2534,7 @@
     "priority": 0,
     "target": "self",
     "desc": "Raises the user's Special Defense by 1 stage. The user's next Electric-type attack will have its power doubled; the effect ends when the user is no longer active, or after the user attempts to use any Electric-type move besides Charge, even if it is not successful.",
-    "shortDesc": "+1 SpD, user's next Electric move 2x power.",
+    "shortDesc": "+1 SpD, user's next Electric move 2× power.",
     "flags": {
       "snatch": 1,
       "metronome": 1,
@@ -2957,7 +2957,7 @@
     "priority": 0,
     "target": "normal",
     "desc": "Damage is multiplied by 1.3333 if this move is super effective against the target.",
-    "shortDesc": "Deals 1.3333x damage with supereffective hits.",
+    "shortDesc": "Deals 1.3333× damage with supereffective hits.",
     "flags": {
       "contact": 1,
       "protect": 1,
@@ -3035,7 +3035,7 @@
     "priority": 0,
     "target": "scripted",
     "desc": "Deals damage to the last opposing Pokemon to hit the user with a physical or special attack this turn equal to 1.5 times the HP lost by the user from that attack, rounded down. If the user did not lose HP from that attack, this move deals 1 HP of damage instead. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. Only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's physical or special attack this turn.",
-    "shortDesc": "If hit by an attack, returns 1.5x damage.",
+    "shortDesc": "If hit by an attack, returns 1.5× damage.",
     "flags": {
       "contact": 1,
       "protect": 1,
@@ -3612,7 +3612,7 @@
     "pp": 5,
     "priority": 0,
     "target": "normal",
-    "desc": "Power is equal to 120 * (target's current HP / target's maximum HP), rounded half down, but not less than 1.",
+    "desc": "Power is equal to 120 × (target's current HP / target's maximum HP), rounded half down, but not less than 1.",
     "shortDesc": "More power the more HP the target has left.",
     "flags": {
       "contact": 1,
@@ -4530,7 +4530,7 @@
     "pp": 5,
     "priority": 0,
     "target": "allAdjacentFoes",
-    "desc": "Power is equal to (user's current HP * 150 / user's maximum HP), rounded down, but not less than 1.",
+    "desc": "Power is equal to (user's current HP × 150 / user's maximum HP), rounded down, but not less than 1.",
     "shortDesc": "Less power as user's HP decreases. Hits foe(s).",
     "flags": {
       "protect": 1,
@@ -4661,7 +4661,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+    "desc": "The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down.",
     "shortDesc": "User recovers 75% of the damage dealt.",
     "flags": {
       "contact": 1,
@@ -4687,7 +4687,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down.",
     "shortDesc": "User recovers 50% of the damage dealt.",
     "flags": {
       "contact": 1,
@@ -4714,7 +4714,7 @@
     "pp": 15,
     "priority": 0,
     "target": "normal",
-    "desc": "The target is unaffected by this move unless it is asleep. The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+    "desc": "The target is unaffected by this move unless it is asleep. The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down.",
     "shortDesc": "User gains 1/2 HP inflicted. Sleeping target only.",
     "flags": {
       "protect": 1,
@@ -5122,7 +5122,7 @@
     "priority": 0,
     "target": "normal",
     "desc": "Damage is multiplied by 1.3333 if this move is super effective against the target.",
-    "shortDesc": "Deals 1.3333x damage with supereffective hits.",
+    "shortDesc": "Deals 1.3333× damage with supereffective hits.",
     "flags": {
       "contact": 1,
       "protect": 1,
@@ -5372,7 +5372,7 @@
     "pp": 5,
     "priority": 0,
     "target": "allAdjacentFoes",
-    "desc": "Power is equal to (user's current HP * 150 / user's maximum HP), rounded down, but not less than 1.",
+    "desc": "Power is equal to (user's current HP × 150 / user's maximum HP), rounded down, but not less than 1.",
     "shortDesc": "Less power as user's HP decreases. Hits foe(s).",
     "flags": {
       "protect": 1,
@@ -5440,7 +5440,7 @@
     "priority": 0,
     "target": "normal",
     "desc": "If the current terrain is Psychic Terrain and the user is grounded, this move hits all opposing Pokemon and has its power multiplied by 1.5.",
-    "shortDesc": "User on Psychic Terrain: 1.5x power, hits foes.",
+    "shortDesc": "User on Psychic Terrain: 1.5× power, hits foes.",
     "flags": {
       "protect": 1,
       "mirror": 1,
@@ -6134,7 +6134,7 @@
     "pp": 15,
     "priority": 0,
     "target": "normal",
-    "desc": "The power of this move is 20 if X is 33 to 48, 40 if X is 17 to 32, 80 if X is 10 to 16, 100 if X is 5 to 9, 150 if X is 2 to 4, and 200 if X is 0 or 1, where X is equal to (user's current HP * 48 / user's maximum HP), rounded down.",
+    "desc": "The power of this move is 20 if X is 33 to 48, 40 if X is 17 to 32, 80 if X is 10 to 16, 100 if X is 5 to 9, 150 if X is 2 to 4, and 200 if X is 0 or 1, where X is equal to (user's current HP × 48 / user's maximum HP), rounded down.",
     "shortDesc": "More power the less HP the user has left.",
     "flags": {
       "contact": 1,
@@ -6914,7 +6914,7 @@
     "pp": 20,
     "priority": 0,
     "target": "normal",
-    "desc": "Power is equal to the greater of ((255 - user's Happiness) * 2/5), rounded down, or 1.",
+    "desc": "Power is equal to the greater of ((255 - user's Happiness) × 2/5), rounded down, or 1.",
     "shortDesc": "Max 102 power at minimum Happiness.",
     "flags": {
       "contact": 1,
@@ -7212,7 +7212,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down.",
     "shortDesc": "User recovers 50% of the damage dealt.",
     "flags": {
       "protect": 1,
@@ -7344,7 +7344,7 @@
     "priority": 0,
     "target": "normal",
     "desc": "If this move is successful, moves targeted at the user deal double damage and do not check accuracy until the user's next turn.",
-    "shortDesc": "User takes sure-hit 2x damage until its next turn.",
+    "shortDesc": "User takes sure-hit 2× damage until its next turn.",
     "flags": {
       "contact": 1,
       "protect": 1,
@@ -7820,7 +7820,7 @@
     "pp": 5,
     "priority": 0,
     "target": "adjacentFoe",
-    "desc": "Power is equal to the base move's Max Move power. If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Steel type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+    "desc": "Power is equal to the base move's Max Move power. If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Steel type; 0.25×, 0.5×, neutral, 2×, or 4×, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
     "shortDesc": "Base move affects power. Foes: Steel hazard.",
     "flags": {
       "isMax": "Copperajah"
@@ -7838,7 +7838,7 @@
     "pp": 5,
     "priority": 0,
     "target": "adjacentFoe",
-    "desc": "Power is equal to the base move's Max Move power. If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+    "desc": "Power is equal to the base move's Max Move power. If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25×, 0.5×, neutral, 2×, or 4×, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
     "shortDesc": "Base move affects power. Foes: Stealth Rock.",
     "flags": {
       "isMax": "Drednaw"
@@ -8145,7 +8145,7 @@
     "priority": 0,
     "target": "normal",
     "desc": "Has a 100% chance to lower the target's Defense by 1 stage. Power is multiplied by 1.5 during Gravity's effect.",
-    "shortDesc": "Target: 100% -1 Def. During Gravity: 1.5x power.",
+    "shortDesc": "Target: 100% -1 Def. During Gravity: 1.5× power.",
     "flags": {
       "protect": 1,
       "mirror": 1,
@@ -8167,7 +8167,7 @@
     "priority": 0,
     "target": "all",
     "desc": "For 5 turns, the evasiveness of all active Pokemon is multiplied by 0.6. At the time of use, Bounce, Fly, Magnet Rise, Sky Drop, and Telekinesis end immediately for all active Pokemon. During the effect, Bounce, Fly, Flying Press, High Jump Kick, Jump Kick, Magnet Rise, Sky Drop, Splash, and Telekinesis are prevented from being used by all active Pokemon. Ground-type attacks, Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability can affect Flying types or Pokemon with the Levitate Ability. Fails if this move is already in effect.",
-    "shortDesc": "5 turns: no Ground immunities, 1.67x accuracy.",
+    "shortDesc": "5 turns: no Ground immunities, 1.67× accuracy.",
     "flags": {
       "metronome": 1,
       "field": [
@@ -8549,7 +8549,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "Power is equal to 100 * (target's current HP / target's maximum HP), rounded half down, but not less than 1.",
+    "desc": "Power is equal to 100 × (target's current HP / target's maximum HP), rounded half down, but not less than 1.",
     "shortDesc": "More power the more HP the target has left.",
     "flags": {
       "contact": 1,
@@ -8946,7 +8946,7 @@
     "priority": 5,
     "target": "adjacentAlly",
     "desc": "The power of the target's attack this turn is multiplied by 1.5 (this effect is stackable). Fails if there is no ally adjacent to the user or if the ally already moved this turn, but does not fail if the ally is using a two-turn move.",
-    "shortDesc": "One adjacent ally's move power is 1.5x this turn.",
+    "shortDesc": "One adjacent ally's move power is 1.5× this turn.",
     "flags": {
       "bypasssub": 1,
       "noassist": 1,
@@ -9492,7 +9492,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down.",
     "shortDesc": "User recovers 50% of the damage dealt.",
     "flags": {
       "contact": 1,
@@ -9615,7 +9615,7 @@
     "priority": 0,
     "target": "normal",
     "desc": "If the current weather is Sun and the user is not holding Utility Umbrella, this move's damage is multiplied by 1.5 instead of halved for being Water type.",
-    "shortDesc": "During Sun: 1.5x damage instead of half.",
+    "shortDesc": "During Sun: 1.5× damage instead of half.",
     "flags": {
       "protect": 1,
       "mirror": 1,
@@ -10134,7 +10134,7 @@
     "priority": 0,
     "target": "normal",
     "desc": "Has a 30% chance to burn the target. Power doubles if the target has a non-volatile status condition.",
-    "shortDesc": "30% burn. 2x power if target is already statused.",
+    "shortDesc": "30% burn. 2× power if target is already statused.",
     "flags": {
       "protect": 1,
       "mirror": 1,
@@ -10577,7 +10577,7 @@
     "priority": 0,
     "target": "normal",
     "desc": "This move's power is multiplied by 1.5 if the target is holding an item, and the target loses its held item if the user has not fainted. A target with the Sticky Hold Ability does not lose its held item if it has not fainted. This move does not increase in power or remove the target's item if it is a Blue Orb, Red Orb, Adamant Crystal, Lustrous Globe, Griseous Core, Plate, Drive, Memory, Rusted Sword, Rusted Shield, Booster Energy, or Mask held by a Kyogre, Groudon, Dialga, Palkia, Giratina, Arceus, Genesect, Silvally, Zacian, Zamazenta, Paradox Pokemon, or Ogerpon, respectively, or if the user is one of those species and the target is holding the respective item. In this case, Paradox Pokemon include every species with the Protosynthesis and Quark Drive Abilities, except Gouging Fire, Raging Bolt, Iron Boulder, and Iron Crown. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
-    "shortDesc": "1.5x damage if foe holds an item. Removes item.",
+    "shortDesc": "1.5× damage if foe holds an item. Removes item.",
     "flags": {
       "contact": 1,
       "protect": 1,
@@ -10670,7 +10670,7 @@
     "priority": 0,
     "target": "normal",
     "desc": "Power doubles if the user had a stat stage lowered this turn.",
-    "shortDesc": "2x power if the user had a stat lowered this turn.",
+    "shortDesc": "2× power if the user had a stat lowered this turn.",
     "flags": {
       "contact": 1,
       "protect": 1,
@@ -10711,7 +10711,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "Power is equal to 50+(X*50), where X is the total number of times any Pokemon has fainted on the user's side, and X cannot be greater than 100.",
+    "desc": "Power is equal to 50+(X × 50), where X is the total number of times any Pokemon has fainted on the user's side, and X cannot be greater than 100.",
     "shortDesc": "+50 power for each time a party member fainted.",
     "flags": {
       "protect": 1,
@@ -10843,7 +10843,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down.",
     "shortDesc": "User recovers 50% of the damage dealt.",
     "flags": {
       "contact": 1,
@@ -10869,7 +10869,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "The Pokemon at the user's position steals 1/8 of the target's maximum HP, rounded down, at the end of each turn. If Big Root is held by the recipient, the HP recovered is 1.3x normal, rounded half down. If the target uses Baton Pass, the replacement will continue being leeched. If the target switches out or uses Mortal Spin or Rapid Spin successfully, the effect ends. Grass-type Pokemon are immune to this move on use, but not its effect.",
+    "desc": "The Pokemon at the user's position steals 1/8 of the target's maximum HP, rounded down, at the end of each turn. If Big Root is held by the recipient, the HP recovered is 1.3× normal, rounded half down. If the target uses Baton Pass, the replacement will continue being leeched. If the target switches out or uses Mortal Spin or Rapid Spin successfully, the effect ends. Grass-type Pokemon are immune to this move on use, but not its effect.",
     "shortDesc": "1/8 of target's HP is restored to user every turn.",
     "flags": {
       "protect": 1,
@@ -11014,7 +11014,7 @@
     "pp": 30,
     "priority": 0,
     "target": "allySide",
-    "desc": "For 5 turns, the user and its party members take 0.5x damage from special attacks, or 0.66x damage if in a Double Battle. Damage is not reduced further with Aurora Veil. Critical hits ignore this effect. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Lasts for 8 turns if the user is holding Light Clay. Fails if the effect is already active on the user's side.",
+    "desc": "For 5 turns, the user and its party members take 0.5× damage from special attacks, or 0.66× damage if in a Double Battle. Damage is not reduced further with Aurora Veil. Critical hits ignore this effect. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Lasts for 8 turns if the user is holding Light Clay. Fails if the effect is already active on the user's side.",
     "shortDesc": "For 5 turns, special damage to allies is halved.",
     "flags": {
       "snatch": 1,
@@ -11569,7 +11569,7 @@
     "priority": 0,
     "target": "allAdjacent",
     "desc": "The power of this move varies; 5% chances for 10 and 150 power, 10% chances for 30 and 110 power, 20% chances for 50 and 90 power, and 30% chance for 70 power. Damage doubles if the target is using Dig.",
-    "shortDesc": "Hits adjacent Pokemon. Power varies; 2x on Dig.",
+    "shortDesc": "Hits adjacent Pokemon. Power varies; 2× on Dig.",
     "flags": {
       "protect": 1,
       "mirror": 1,
@@ -11688,7 +11688,7 @@
     "pp": 15,
     "priority": 0,
     "target": "allAdjacentFoes",
-    "desc": "Has a 20% chance to burn the target. The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. The target thaws out if it is frozen.",
+    "desc": "Has a 20% chance to burn the target. The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down. The target thaws out if it is frozen.",
     "shortDesc": "20% burn. Recovers 50% dmg dealt. Thaws foe(s).",
     "flags": {
       "protect": 1,
@@ -12117,7 +12117,7 @@
     "priority": 0,
     "target": "adjacentFoe",
     "desc": "The user uses the move the target chose for use this turn against it, if possible, with its power multiplied by 1.5. The move must be a damaging move other than Beak Blast, Belch, Blazing Torque, Combat Torque, Comeuppance, Counter, Covet, Focus Punch, Magical Torque, Me First, Metal Burst, Mirror Coat, Noxious Torque, Shell Trap, Struggle, Thief, or Wicked Torque. Fails if the target moves before the user. Ignores the target's substitute for the purpose of copying the move.",
-    "shortDesc": "Copies a foe at 1.5x power. User must be faster.",
+    "shortDesc": "Copies a foe at 1.5× power. User must be faster.",
     "flags": {
       "protect": 1,
       "bypasssub": 1,
@@ -12148,7 +12148,7 @@
     "pp": 15,
     "priority": 0,
     "target": "normal",
-    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down.",
     "shortDesc": "User recovers 50% of the damage dealt.",
     "flags": {
       "protect": 1,
@@ -12288,7 +12288,7 @@
     "priority": 0,
     "target": "scripted",
     "desc": "Deals damage to the last opposing Pokemon to hit the user with a physical or special attack this turn equal to 1.5 times the HP lost by the user from that attack, rounded down. If the user did not lose HP from that attack, this move deals 1 HP of damage instead. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. Only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's physical or special attack this turn.",
-    "shortDesc": "If hit by an attack, returns 1.5x damage.",
+    "shortDesc": "If hit by an attack, returns 1.5× damage.",
     "flags": {
       "protect": 1,
       "mirror": 1,
@@ -12762,7 +12762,7 @@
     "priority": 0,
     "target": "allAdjacent",
     "desc": "If the current terrain is Misty Terrain and the user is grounded, this move's power is multiplied by 1.5. The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
-    "shortDesc": "User faints. User on Misty Terrain: 1.5x power.",
+    "shortDesc": "User faints. User on Misty Terrain: 1.5× power.",
     "flags": {
       "protect": 1,
       "mirror": 1,
@@ -13506,7 +13506,7 @@
     "pp": 10,
     "priority": 0,
     "target": "any",
-    "desc": "The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+    "desc": "The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down.",
     "shortDesc": "User recovers 75% of the damage dealt.",
     "flags": {
       "protect": 1,
@@ -13829,7 +13829,7 @@
     "pp": 20,
     "priority": 0,
     "target": "allAdjacent",
-    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down.",
     "shortDesc": "User recovers 50% of the damage dealt.",
     "flags": {
       "protect": 1,
@@ -14058,7 +14058,7 @@
     "pp": 20,
     "priority": 0,
     "target": "normal",
-    "desc": "Power is equal to the greater of (user's Happiness * 2/5), rounded down, or 1.",
+    "desc": "Power is equal to the greater of (user's Happiness × 2/5), rounded down, or 1.",
     "shortDesc": "Max happiness: 102 power. Can't miss.",
     "flags": {
       "protect": 1,
@@ -14664,7 +14664,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "Power is equal to 20+(X*20), where X is the user's total stat stage changes that are greater than 0.",
+    "desc": "Power is equal to 20+(X × 20), where X is the user's total stat stage changes that are greater than 0.",
     "shortDesc": " + 20 power for each of the user's stat boosts.",
     "flags": {
       "contact": 1,
@@ -14850,7 +14850,7 @@
     "priority": 0,
     "target": "normal",
     "desc": "If the current terrain is Electric Terrain, this move's power is multiplied by 1.5.",
-    "shortDesc": "During Electric Terrain: 1.5x power.",
+    "shortDesc": "During Electric Terrain: 1.5× power.",
     "flags": {
       "contact": 1,
       "protect": 1,
@@ -15125,8 +15125,8 @@
     "pp": 15,
     "priority": 0,
     "target": "normal",
-    "desc": "Deals damage to the target equal to (user's level) * (X + 50) / 100, where X is a random number from 0 to 100, rounded down, but not less than 1 HP.",
-    "shortDesc": "Random damage equal to 0.5x-1.5x user's level.",
+    "desc": "Deals damage to the target equal to (user's level) × (X + 50) / 100, where X is a random number from 0 to 100, rounded down, but not less than 1 HP.",
+    "shortDesc": "Random damage equal to 0.5×-1.5× user's level.",
     "flags": {
       "protect": 1,
       "mirror": 1,
@@ -15164,7 +15164,7 @@
     "pp": 5,
     "priority": 0,
     "target": "normal",
-    "desc": "Power is equal to 60+(X*20), where X is the target's total stat stage changes that are greater than 0, but not more than 200 power.",
+    "desc": "Power is equal to 60+(X × 20), where X is the target's total stat stage changes that are greater than 0, but not more than 200 power.",
     "shortDesc": "60 power +20 for each of the target's stat boosts.",
     "flags": {
       "contact": 1,
@@ -15222,7 +15222,7 @@
     "priority": 0,
     "target": "normal",
     "desc": "If an opposing Pokemon switches out this turn, this move hits that Pokemon before it leaves the field, even if it was not the original target. If the user moves after an opponent using Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch, but not Baton Pass, it will hit that opponent before it leaves the field. Power doubles and no accuracy check is done if the user hits an opponent switching out, and the user's turn is over; if an opponent faints from this, the replacement Pokemon does not become active until the end of the turn.",
-    "shortDesc": "If a foe is switching out, hits it at 2x power.",
+    "shortDesc": "If a foe is switching out, hits it at 2× power.",
     "flags": {
       "contact": 1,
       "protect": 1,
@@ -15389,7 +15389,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "Power is equal to 50+(X*50), where X is the total number of times the user has been hit by a damaging attack during the battle, even if the user did not lose HP from the attack. X cannot be greater than 6 and does not reset upon switching out or fainting. Each hit of a multi-hit attack is counted, but confusion damage is not counted.",
+    "desc": "Power is equal to 50+(X × 50), where X is the total number of times the user has been hit by a damaging attack during the battle, even if the user did not lose HP from the attack. X cannot be greater than 6 and does not reset upon switching out or fainting. Each hit of a multi-hit attack is counted, but confusion damage is not counted.",
     "shortDesc": "+50 power for each time user was hit. Max 6 hits.",
     "flags": {
       "contact": 1,
@@ -15649,7 +15649,7 @@
     "pp": 20,
     "priority": 0,
     "target": "allySide",
-    "desc": "For 5 turns, the user and its party members take 0.5x damage from physical attacks, or 0.66x damage if in a Double Battle. Damage is not reduced further with Aurora Veil. Critical hits ignore this effect. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Lasts for 8 turns if the user is holding Light Clay. Fails if the effect is already active on the user's side.",
+    "desc": "For 5 turns, the user and its party members take 0.5× damage from physical attacks, or 0.66× damage if in a Double Battle. Damage is not reduced further with Aurora Veil. Critical hits ignore this effect. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Lasts for 8 turns if the user is holding Light Clay. Fails if the effect is already active on the user's side.",
     "shortDesc": "For 5 turns, physical damage to allies is halved.",
     "flags": {
       "snatch": 1,
@@ -15791,7 +15791,7 @@
     "pp": 20,
     "priority": 0,
     "target": "normal",
-    "desc": "Power is equal to the greater of (user's Happiness * 2/5), rounded down, or 1.",
+    "desc": "Power is equal to the greater of (user's Happiness × 2/5), rounded down, or 1.",
     "shortDesc": "Max 102 power at maximum Happiness.",
     "flags": {
       "contact": 1,
@@ -15860,7 +15860,7 @@
     "pp": 15,
     "priority": 0,
     "target": "normal",
-    "desc": "The power of this move is 20 if X is 33 to 48, 40 if X is 17 to 32, 80 if X is 10 to 16, 100 if X is 5 to 9, 150 if X is 2 to 4, and 200 if X is 0 or 1, where X is equal to (user's current HP * 48 / user's maximum HP), rounded down.",
+    "desc": "The power of this move is 20 if X is 33 to 48, 40 if X is 17 to 32, 80 if X is 10 to 16, 100 if X is 5 to 9, 150 if X is 2 to 4, and 200 if X is 0 or 1, where X is equal to (user's current HP × 48 / user's maximum HP), rounded down.",
     "shortDesc": "More power the less HP the user has left.",
     "flags": {
       "contact": 1,
@@ -15905,7 +15905,7 @@
     "priority": 0,
     "target": "normal",
     "desc": "If the current terrain is Electric Terrain and the target is grounded, this move's power is doubled.",
-    "shortDesc": "2x power if target is grounded in Electric Terrain.",
+    "shortDesc": "2× power if target is grounded in Electric Terrain.",
     "flags": {
       "protect": 1,
       "mirror": 1,
@@ -16491,7 +16491,7 @@
     "priority": 0,
     "target": "all",
     "desc": "For 5 turns, the weather becomes Sandstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Ground, Rock, or Steel type, or have the Magic Guard, Overcoat, Sand Force, Sand Rush, or Sand Veil Abilities. During the effect, the Special Defense of Rock-type Pokemon is multiplied by 1.5 when taking damage from a special attack. Lasts for 8 turns if the user is holding Smooth Rock. Fails if the current weather is Sandstorm.",
-    "shortDesc": "For 5 turns, a sandstorm rages. Rock: 1.5x SpD.",
+    "shortDesc": "For 5 turns, a sandstorm rages. Rock: 1.5× SpD.",
     "flags": {
       "metronome": 1,
       "wind": 1,
@@ -17180,7 +17180,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "Has a 20% chance to poison the target. This move becomes a physical attack that makes contact if the value of ((((2 * the user's level / 5 + 2) * 90 * X) / Y) / 50), where X is the user's Attack stat and Y is the target's Defense stat, is greater than the same value where X is the user's Special Attack stat and Y is the target's Special Defense stat. No stat modifiers other than stat stage changes are considered for this purpose. If the two values are equal, this move chooses a damage category at random.",
+    "desc": "Has a 20% chance to poison the target. This move becomes a physical attack that makes contact if the value of ((((2 × the user's level / 5 + 2) × 90 × X) / Y) / 50), where X is the user's Attack stat and Y is the target's Defense stat, is greater than the same value where X is the user's Special Attack stat and Y is the target's Special Defense stat. No stat modifiers other than stat stage changes are considered for this purpose. If the two values are equal, this move chooses a damage category at random.",
     "shortDesc": "20% psn. Physical+contact if it would be stronger.",
     "flags": {
       "protect": 1,
@@ -17664,7 +17664,8 @@
       "metronome": 1,
       "nosleeptalk": 1,
       "noassist": 1,
-      "failinstruct": 1
+      "failinstruct": 1,
+      "tracksTarget": true
     },
     "sources": [
       "smogon/pokemon-showdown"
@@ -18139,7 +18140,7 @@
     "priority": 0,
     "target": "all",
     "desc": "For 5 turns, the weather becomes Snow. During the effect, the Defense of Ice-type Pokemon is multiplied by 1.5 when taking damage from a physical attack. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Snow.",
-    "shortDesc": "For 5 turns, snow falls. Ice: 1.5x Def.",
+    "shortDesc": "For 5 turns, snow falls. Ice: 1.5× Def.",
     "flags": {
       "field": [
         "snowscape"
@@ -18233,7 +18234,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "This attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Heavy Rain, Rain, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Intense Sun or Sun, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Intense Sun or Sun, the move still requires a turn to charge.",
+    "desc": "This attack charges on the first turn and executes on the second. Power is halved if the weather is Heavy Rain, Rain, Sandstorm, or Snow and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Intense Sun or Sun, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Intense Sun or Sun, the move still requires a turn to charge.",
     "shortDesc": "Charges turn 1. Hits turn 2. No charge in sunlight.",
     "flags": {
       "contact": 1,
@@ -18824,7 +18825,7 @@
     "pp": 20,
     "priority": 0,
     "target": "foeSide",
-    "desc": "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
+    "desc": "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25×, 0.5×, neutral, 2×, or 4×, respectively. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
     "shortDesc": "Hurts foes on switch-in. Factors Rock weakness.",
     "flags": {
       "reflectable": 1,
@@ -19087,7 +19088,7 @@
     "pp": 15,
     "priority": 0,
     "target": "normal",
-    "desc": "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
+    "desc": "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25×, 0.5×, neutral, 2×, or 4×, respectively. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
     "shortDesc": "Sets Stealth Rock on the target's side.",
     "flags": {
       "contact": 1,
@@ -19130,7 +19131,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "Power is equal to 20+(X*20), where X is the user's total stat stage changes that are greater than 0.",
+    "desc": "Power is equal to 20+(X × 20), where X is the user's total stat stage changes that are greater than 0.",
     "shortDesc": " + 20 power for each of the user's stat boosts.",
     "flags": {
       "protect": 1,
@@ -19221,7 +19222,7 @@
     "pp": 10,
     "priority": 0,
     "target": "normal",
-    "desc": "Lowers the target's Attack by 1 stage. The user restores its HP equal to the target's Attack stat calculated with its stat stage before this move was used. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. Fails if the target's Attack stat stage is -6.",
+    "desc": "Lowers the target's Attack by 1 stage. The user restores its HP equal to the target's Attack stat calculated with its stat stage before this move was used. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down. Fails if the target's Attack stat stage is -6.",
     "shortDesc": "User heals HP=target's Atk stat. Lowers Atk by 1.",
     "flags": {
       "protect": 1,
@@ -21516,7 +21517,7 @@
     "pp": 20,
     "priority": 0,
     "target": "normal",
-    "desc": "Power is equal to the greater of (user's Happiness * 2/5), rounded down, or 1.",
+    "desc": "Power is equal to the greater of (user's Happiness × 2/5), rounded down, or 1.",
     "shortDesc": "Max happiness: 102 power. Can't miss.",
     "flags": {
       "contact": 1,
@@ -21879,7 +21880,7 @@
     "pp": 5,
     "priority": 0,
     "target": "allAdjacentFoes",
-    "desc": "Power is equal to (user's current HP * 150 / user's maximum HP), rounded down, but not less than 1.",
+    "desc": "Power is equal to (user's current HP × 150 / user's maximum HP), rounded down, but not less than 1.",
     "shortDesc": "Less power as user's HP decreases. Hits foe(s).",
     "flags": {
       "protect": 1,
@@ -22362,7 +22363,7 @@
     "pp": 5,
     "priority": 0,
     "target": "normal",
-    "desc": "Power is equal to 120 * (target's current HP / target's maximum HP), rounded half down, but not less than 1.",
+    "desc": "Power is equal to 120 × (target's current HP / target's maximum HP), rounded half down, but not less than 1.",
     "shortDesc": "More power the more HP the target has left.",
     "flags": {
       "contact": 1,
