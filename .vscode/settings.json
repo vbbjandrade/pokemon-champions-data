@@ -1,0 +1,10 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/data/**/delta.json"
+      ],
+      "url": "./schemas/delta.schema.json"
+    }
+  ]
+}

@@ -204,6 +204,7 @@ export interface RepoItem {
 }
 
 export interface RegulationDelta {
+  $schema?: string;
   regulationId: string;
   regulationName: string;
   baseRegulationId: string | null;

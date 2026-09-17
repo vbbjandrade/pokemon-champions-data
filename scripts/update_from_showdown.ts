@@ -113,6 +113,7 @@ function preserveCustomDeltaValues(delta: RegulationDelta, path: string): Regula
   if (!existsSync(path)) return delta;
   const existing = JSON.parse(readFileSync(path, 'utf-8')) as RegulationDelta;
   if (existing.regulationId !== delta.regulationId) return delta;
+  delta.$schema = existing.$schema ?? '../../schemas/delta.schema.json';
   delta.begin = existing.begin;
   delta.end = existing.end;
   for (const resource of ['roster', 'learnsets', 'moves', 'abilities', 'items'] as const) {
@@ -316,7 +317,7 @@ function makeDelta(regulation: RegulationDefinition, sourceModId: string, base: 
   );
 
   return {
-    delta: { regulationId: regulation.regulationId, regulationName: regulation.regulationName, baseRegulationId: regulation.baseRegulationId ?? null, begin: null, end: null, overrides: { roster: sorted(roster), learnsets: sorted(learnsets), moves: sorted(moveDeltas), abilities: sorted(abilityDeltas), items: sorted(itemDeltas) } },
+    delta: { $schema: '../../schemas/delta.schema.json', regulationId: regulation.regulationId, regulationName: regulation.regulationName, baseRegulationId: regulation.baseRegulationId ?? null, begin: null, end: null, overrides: { roster: sorted(roster), learnsets: sorted(learnsets), moves: sorted(moveDeltas), abilities: sorted(abilityDeltas), items: sorted(itemDeltas) } },
     resolved: { roster: resolvedRoster, legalSpecies, learnsets: resolvedLearnsets, moves: resolvedMoves, availableMoves, abilities: resolvedAbilities, availableAbilities, items: resolvedItems, availableItems },
   };
 }

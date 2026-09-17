@@ -8,10 +8,11 @@ Thank you for helping build the first competitive data resource for Pokemon Cham
 
 1. [Reporting Data Errors](#reporting-data-errors)
 2. [Champions-Specific Corrections](#champions-specific-corrections)
-3. [Pull Request Format](#pull-request-format)
-4. [Verification Priority](#verification-priority)
-5. [Data Standards](#data-standards)
-6. [Code of Conduct](#code-of-conduct)
+3. [Editing Regulation Deltas (delta.json)](#editing-regulation-deltas-deltajson)
+4. [Pull Request Format](#pull-request-format)
+5. [Verification Priority](#verification-priority)
+6. [Data Standards](#data-standards)
+7. [Code of Conduct](#code-of-conduct)
 
 ---
 
@@ -61,6 +62,32 @@ A character's ability slots may differ from their assignments in prior games. If
 ### Move Effects
 
 Some moves may have Champions-specific behavior (different power, accuracy, PP, or effect) compared to prior games. When filing a move correction, specify the exact field that is wrong and how you measured it (damage calculator test, move description screen, observed behavior in battle).
+
+---
+
+## Editing Regulation Deltas (delta.json)
+
+When editing or maintaining a regulation's `data/reg*/delta.json` file, keep in mind how the repository's build engine resolves overrides:
+
+> **`baseStats` is the sole nested merge field; all other properties replace wholesale.**
+
+### Override Behavior Cheatsheet
+
+| Target Property | Behavior | How to specify in `delta.json` |
+| :--- | :--- | :--- |
+| `baseStats` | **Partial Merge** | Specify **only** the modified stat(s) (e.g. `{"spe": 105}`). All other stats retain their base values. |
+| Scalar fields (`power`, `pp`, `accuracy`, `priority`, `desc`, etc.) | **Field Replacement** | Specify **only** the changed field (e.g. `{"pp": 12}`). |
+| `flags` (move, ability, item) | **Object Replacement** | **Redeclare all** active flags. Providing a new flags object completely overwrites the base flags. |
+| `abilities` (roster entry) | **Object Replacement** | **Redeclare all** ability slots (`"0"`, `"1"`, `"H"`). |
+| `types` (roster entry) | **Array Replacement** | **Redeclare all** types in the array (e.g. `["Grass", "Dragon"]`). |
+| `sources` | **Array Merge** | Merges and deduplicates with any inherited sources. |
+
+### Real-Time IDE Autocompletion & Error Detection
+
+All delta files are linked to the repository's JSON schema at `schemas/delta.schema.json`:
+- In VS Code and Antigravity IDE, typing quotes `"` inside an override object displays instant autocompletion for valid properties.
+- Any misspelled property name, invalid flag, or incorrect data type immediately displays a **red squiggly line** with diagnostic warnings.
+- Hovering over any field in your editor displays the documentation and override behavior directly.
 
 ---
 

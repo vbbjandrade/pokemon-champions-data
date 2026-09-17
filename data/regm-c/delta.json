@@ -1,4 +1,5 @@
 {
+  "$schema": "../../schemas/delta.schema.json",
   "regulationId": "championsregmc",
   "regulationName": "Reg M-C",
   "baseRegulationId": "championsregmb",

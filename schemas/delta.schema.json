@@ -1,0 +1,186 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Regulation Delta",
+  "description": "JSON schema for Pokémon Champions regulation delta files.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Path or URL to this JSON schema."
+    },
+    "regulationId": {
+      "type": "string",
+      "description": "Unique identifier for the regulation (e.g. 'championsregmc')."
+    },
+    "regulationName": {
+      "type": "string",
+      "description": "Display name of the regulation (e.g. 'Reg M-C')."
+    },
+    "baseRegulationId": {
+      "type": ["string", "null"],
+      "description": "Preceding regulation this delta builds on, or null if deriving directly from master."
+    },
+    "begin": {
+      "type": ["string", "null"],
+      "description": "Start timestamp (ISO-8601 date string or null)."
+    },
+    "end": {
+      "type": ["string", "null"],
+      "description": "End timestamp (ISO-8601 date string or null)."
+    },
+    "overrides": {
+      "type": "object",
+      "description": "Delta overrides for game resources and legal format entries.",
+      "required": ["roster", "learnsets", "moves", "abilities", "items"],
+      "properties": {
+        "roster": {
+          "type": "object",
+          "description": "Legal species list and overrides. An empty object keeps the base Pokémon unchanged, a populated object replaces supplied fields (with baseStats partial-merging), and null removes the species from legality.",
+          "additionalProperties": {
+            "type": ["object", "null"],
+            "properties": {
+              "dexNumber": { "type": "integer" },
+              "name": { "type": "string" },
+              "types": {
+                "type": "array",
+                "description": "Array replacement: redeclare all types if overriding.",
+                "items": { "type": "string" }
+              },
+              "form": { "type": ["string", "null"] },
+              "abilities": {
+                "type": "object",
+                "description": "Object replacement: redeclare all active ability slots (0, 1, H) if overriding.",
+                "additionalProperties": { "type": "string" }
+              },
+              "weightKg": { "type": "number" },
+              "requiredItem": { "type": ["string", "null"] },
+              "requiredMove": { "type": ["string", "null"] },
+              "canEvolve": { "type": "boolean" },
+              "genders": {
+                "type": "array",
+                "items": { "type": "string", "enum": ["M", "F", "N"] }
+              },
+              "baseStats": {
+                "type": "object",
+                "description": "PARTIAL MERGE: Specify ONLY the modified stat(s). Unspecified stats are inherited from the base.",
+                "properties": {
+                  "hp": { "type": "integer", "description": "Base HP stat." },
+                  "atk": { "type": "integer", "description": "Base Attack stat." },
+                  "def": { "type": "integer", "description": "Base Defense stat." },
+                  "spa": { "type": "integer", "description": "Base Special Attack stat." },
+                  "spd": { "type": "integer", "description": "Base Special Defense stat." },
+                  "spe": { "type": "integer", "description": "Base Speed stat." }
+                },
+                "additionalProperties": false
+              },
+              "sources": {
+                "type": "array",
+                "description": "Array merge: sources are merged and deduplicated with base sources.",
+                "items": { "type": "string" }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "learnsets": {
+          "type": "object",
+          "description": "Regulation learnsets. Empty object or populated object updates/adds, null removes.",
+          "additionalProperties": {
+            "type": ["object", "null"],
+            "properties": {
+              "dexNumber": { "type": "integer" },
+              "form": { "type": ["string", "null"] },
+              "moves": {
+                "type": "array",
+                "description": "Array of learned move IDs.",
+                "items": { "type": "string" }
+              },
+              "sources": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "moves": {
+          "type": "object",
+          "description": "Move attribute overrides. Top-level scalar properties replace only that field; flags replace wholesale.",
+          "additionalProperties": {
+            "type": ["object", "null"],
+            "properties": {
+              "name": { "type": "string" },
+              "type": { "type": "string" },
+              "category": { "type": "string", "enum": ["Physical", "Special", "Status"] },
+              "power": { "type": ["integer", "null"], "description": "Move Base Power (scalar replacement)." },
+              "accuracy": { "type": ["integer", "null"], "description": "Move Accuracy percentage or null if never misses (scalar replacement)." },
+              "pp": { "type": ["integer", "null"], "description": "Move base Power Points (scalar replacement)." },
+              "priority": { "type": "integer", "description": "Move speed priority (scalar replacement)." },
+              "target": { "type": ["string", "null"] },
+              "desc": { "type": ["string", "null"], "description": "Detailed in-depth move description." },
+              "shortDesc": { "type": ["string", "null"], "description": "Short concise move description." },
+              "flags": {
+                "type": "object",
+                "description": "WHOLESALE REPLACEMENT: If modifying flags, you MUST redeclare all active flags that the move possesses.",
+                "additionalProperties": true
+              },
+              "sources": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "abilities": {
+          "type": "object",
+          "description": "Ability attribute overrides. Top-level properties replace only that field; flags replace wholesale.",
+          "additionalProperties": {
+            "type": ["object", "null"],
+            "properties": {
+              "name": { "type": "string" },
+              "desc": { "type": ["string", "null"] },
+              "shortDesc": { "type": ["string", "null"] },
+              "flags": {
+                "type": "object",
+                "description": "WHOLESALE REPLACEMENT: Redeclare all active ability flags if overriding.",
+                "additionalProperties": true
+              },
+              "sources": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "items": {
+          "type": "object",
+          "description": "Item attribute overrides. Top-level properties replace only that field; flags replace wholesale.",
+          "additionalProperties": {
+            "type": ["object", "null"],
+            "properties": {
+              "name": { "type": "string" },
+              "desc": { "type": ["string", "null"] },
+              "shortDesc": { "type": ["string", "null"] },
+              "flags": {
+                "type": "object",
+                "description": "WHOLESALE REPLACEMENT: Redeclare all active item flags if overriding.",
+                "additionalProperties": true
+              },
+              "isNonstandard": { "type": ["string", "null"] },
+              "sources": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["regulationId", "regulationName", "baseRegulationId", "overrides"],
+  "additionalProperties": false
+}
