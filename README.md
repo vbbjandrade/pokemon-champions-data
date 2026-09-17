@@ -31,7 +31,8 @@ The editable data is split into an unfiltered Showdown baseline and small, regul
 - `data/regm-a/delta.json` and `data/regm-b/delta.json` define legal roster entries and only the resource properties changed by that regulation. Learnsets are regulation-owned and stored in the delta because Showdown provides their complete regulation-specific sets.
 - `dist/regm-a/` and `dist/regm-b/` contain compiled consumer files: `roster.json`, `learnsets.json`, `moves.json`, `abilities.json`, and `items.json`.
 
-Each regulation declares its `baseRegulationId` in `scripts/regulations.ts`. A regulation without one overrides master data; a regulation with one applies on top of that base. For example, Reg M-A is compiled as `master → Reg M-B → Reg M-A`. This supports separate regulation families, such as M-* and Z-*, without relying on list order.
+Each regulation declares its `baseRegulationId` in `scripts/regulations.ts`. This is this repository's chronological ownership model, and though technically reliant on it, does not follow Showdown's mod inheritance structure. A regulation without a `baseRegulationId` overrides master data (**TODO:** add a base "champions" data built on top of master data from which to inherit all other regulations); a regulation with one applies on top of that base.
+e.g. Reg M-C is compiled as `master → Reg M-A → Reg M-B → Reg M-C`.s
 
 Each generated `delta.json` repeats that `baseRegulationId` as build metadata. Every override collection is a chained patch: omitted entries are inherited unchanged, `{}` adds an available entry with unchanged data, a populated object replaces only the changed fields, and `null` removes an inherited entry. The base regulation contains full learnsets because master has none; later regulations contain only changed, added, or removed learnsets. Move and ability availability is derived from those learnsets and roster entries, respectively; items use Showdown availability without retaining its `isNonstandard` reason strings.
 
@@ -47,6 +48,15 @@ To regenerate data locally, run:
 bun run fetch-sd
 bun run generate
 ```
+
+`fetch-sd` downloads only the current Showdown `champions` mod and its immediate preceding regulation (**TODO:** if it exists), then reports exactly which regulation snapshots it found. It writes a local, ignored manifest used by `update` so old source folders cannot be accidentally reused. To reconstruct or revise an older regulation, point both commands at the Showdown commit that still exposed it:
+
+```bash
+SHOWDOWN_REF=<commit-sha> SHOWDOWN_CURRENT_REGULATION=championsregma SHOWDOWN_PREVIOUS_REGULATION= bun run fetch-sd
+bun run update --regulation championsregma
+```
+
+`SHOWDOWN_CURRENT_REGULATION` and `SHOWDOWN_PREVIOUS_REGULATION` are **repository regulation IDs**. The current ID is mapped to Showdown's `champions` folder; the optional previous ID is mapped to its named predecessor. Do not use `champions` as either value. For example, when M-B is current and M-A is previous, use `SHOWDOWN_CURRENT_REGULATION=championsregmb` and `SHOWDOWN_PREVIOUS_REGULATION=championsregma`. When any layer does not define a resource file, the fetcher records an empty overlay rather than copying another regulation's file. The current `champions` layer then inherits from Showdown base data, while the previous layer inherits from `champions`. The fetched source files remain local and ignored—only this repository's master data and regulation deltas are committed.
 
 To rebuild already-generated source data without downloading Showdown files, run `bun run build-regulations`. The GitHub Action runs the full generation sequence on pushes and commits changed `dist/` files to that branch.
 

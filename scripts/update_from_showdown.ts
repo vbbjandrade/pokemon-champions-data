@@ -28,7 +28,7 @@ import { getRegulation, REGULATIONS, type RegulationDefinition } from './regulat
 const ROOT_DIR = resolve(import.meta.dir, '..');
 const SOURCES_DIR = join(ROOT_DIR, 'data', 'sources');
 const MASTER_DIR = join(ROOT_DIR, 'data', 'master');
-const MAIN_FILES = ['pokedex.ts', 'moves-main.ts', 'moves-text.ts', 'items-main.ts', 'items-text.ts', 'abilities-main.ts', 'abilities-text.ts'];
+const MAIN_FILES = ['pokedex.ts', 'moves-main.ts', 'moves-text.ts', 'items-main.ts', 'items-text.ts', 'abilities-main.ts', 'abilities-text.ts', 'formats-data-main.ts', 'learnsets-main.ts'];
 const MOD_FILES = ['formats-data.ts', 'learnsets.ts', 'moves.ts', 'items.ts', 'abilities.ts'];
 // These forms only exist during battle and do not have standalone learnsets.
 const COLLAPSED_FORMS = new Set([
@@ -42,6 +42,10 @@ const LEARNSET_FALLBACKS: Record<string, string> = { gourgeistsmall: 'gourgeist'
 const SHOWDOWN_ALIASES: Record<string, string> = { meowsticmmega: 'Mega Meowstic', taurospaldeacombat: 'Paldean Tauros' };
 
 type RawRecord = Record<string, any>;
+type SourceManifest = {
+  showdownRef: string;
+  regulations: Array<{ regulationId: string; sourceModId: string }>;
+};
 type ResolvedData = {
   roster: Record<string, RepoPokemon>;
   legalSpecies: Set<string>;
@@ -59,6 +63,10 @@ function writeJson(path: string, value: unknown, dryRun: boolean): void {
   mkdirSync(dirname(path), { recursive: true });
   writeFileSync(path, `${JSON.stringify(value, null, 2)}\n`, 'utf-8');
   console.log(`  wrote ${path.slice(ROOT_DIR.length + 1)}`);
+}
+
+function loadJson<T>(path: string): T {
+  return JSON.parse(readFileSync(path, 'utf-8')) as T;
 }
 
 function sorted<T>(entries: Record<string, T>): Record<string, T> {
@@ -132,6 +140,18 @@ function learnsetId(speciesId: string, learnsets: RawRecord): string {
   return speciesId;
 }
 
+function findLearnsetId(speciesId: string, pokemon: RepoPokemon, roster: Record<string, RepoPokemon>, learnsets: RawRecord): string {
+  const direct = learnsetId(speciesId, learnsets);
+  if (learnsets[direct]?.learnset) return direct;
+  // Showdown often stores a form's learnset only under its base form. Prefer
+  // that form, then any same-national-dex entry that actually has a learnset.
+  const candidates = Object.entries(roster)
+    .filter(([, entry]) => entry.dexNumber === pokemon.dexNumber)
+    .sort(([, left], [, right]) => Number(left.form !== null) - Number(right.form !== null));
+  const matching = candidates.find(([id]) => learnsets[learnsetId(id, learnsets)]?.learnset);
+  return matching ? learnsetId(matching[0], learnsets) : direct;
+}
+
 function resolveMoves(master: Record<string, ParsedMove>, mods: ReturnType<typeof parseMoveMods>, text: RawRecord, textModId: string): Record<string, ParsedMove> {
   const result = { ...master };
   for (const [id, mod] of Object.entries(mods)) {
@@ -197,26 +217,65 @@ function resolveItems(master: Record<string, RepoItem>, mods: ReturnType<typeof 
   return result;
 }
 
-async function importMod(regulation: RegulationDefinition) {
-  const source = `../data/sources/${regulation.regulationId}`;
-  const [{ FormatsData }, { Learnsets }, { Moves }, { Items }, { Abilities }] = await Promise.all([
+async function importMod(regulation: RegulationDefinition, parent?: RegulationDefinition) {
+  const load = async (entry: RegulationDefinition) => {
+    const source = `../data/sources/${entry.regulationId}`;
+    const [{ FormatsData }, { Learnsets }, { Moves }, { Items }, { Abilities }] = await Promise.all([
     import(`${source}/formats-data.ts`), import(`${source}/learnsets.ts`), import(`${source}/moves.ts`), import(`${source}/items.ts`), import(`${source}/abilities.ts`),
-  ]);
-  return { formatsData: FormatsData as RawRecord, learnsets: Learnsets as RawRecord, moves: Moves as RawRecord, items: Items as RawRecord, abilities: Abilities as RawRecord };
+    ]);
+    return { formatsData: FormatsData as RawRecord, learnsets: Learnsets as RawRecord, moves: Moves as RawRecord, items: Items as RawRecord, abilities: Abilities as RawRecord };
+  };
+  const mod = await load(regulation);
+  const inherited = parent
+    ? await load(parent)
+    : await (async () => {
+      const [{ FormatsData }, { Learnsets }] = await Promise.all([
+        import('../data/sources/formats-data-main.ts'),
+        import('../data/sources/learnsets-main.ts'),
+      ]);
+      return { formatsData: FormatsData as RawRecord, learnsets: Learnsets as RawRecord, moves: {}, items: {}, abilities: {} };
+    })();
+  /**
+   * Showdown replaces a data entry unless it explicitly sets `inherit: true`.
+   * A shallow merge for every entry kept old `isNonstandard` flags alive—for
+   * example, Reg M-B's Raichu Mega entries remained unavailable despite their
+   * replacement entries omitting that flag.
+   */
+  const overlay = (base: RawRecord, overrides: RawRecord): RawRecord => Object.fromEntries(
+    new Set([...Object.keys(base), ...Object.keys(overrides)]).values().map((id) => {
+      if (!(id in overrides)) return [id, base[id]];
+      const override = overrides[id];
+      return [id, override?.inherit === true ? { ...base[id], ...override } : override];
+    })
+  );
+  return {
+    formatsData: overlay(inherited.formatsData, mod.formatsData),
+    learnsets: overlay(inherited.learnsets, mod.learnsets),
+    moves: parent ? overlay(inherited.moves, mod.moves) : mod.moves,
+    items: parent ? overlay(inherited.items, mod.items) : mod.items,
+    abilities: parent ? overlay(inherited.abilities, mod.abilities) : mod.abilities,
+  };
 }
 
-function makeDelta(regulation: RegulationDefinition, base: ResolvedData, mod: Awaited<ReturnType<typeof importMod>>, text: { moves: RawRecord; abilities: RawRecord; items: RawRecord }): { delta: RegulationDelta; resolved: ResolvedData } {
-  const textModId = regulation === REGULATIONS[0] ? 'champions' : regulation.regulationId;
+function makeDelta(regulation: RegulationDefinition, sourceModId: string, base: ResolvedData, master: ResolvedData, mod: Awaited<ReturnType<typeof importMod>>, text: { moves: RawRecord; abilities: RawRecord; items: RawRecord }): { delta: RegulationDelta; resolved: ResolvedData } {
+  const textModId = sourceModId;
   const roster: RegulationDelta['overrides']['roster'] = {};
   const learnsets: RegulationDelta['overrides']['learnsets'] = {};
   const legalSpecies = new Set([...parseLegalSpecies(mod.formatsData)].filter((id) => !COLLAPSED_FORMS.has(id)));
   const baseLegalSpecies = regulation.baseRegulationId ? base.legalSpecies : new Set(Object.keys(base.roster));
+  const resolvedRoster: Record<string, RepoPokemon> = { ...base.roster };
   const resolvedLearnsets: Record<string, RepoLearnset> = {};
   for (const id of [...legalSpecies].sort()) {
-    const pokemon = base.roster[id];
+    // A progressive regulation can re-add a species its base removed. Its
+    // immutable data comes from master; its prior regulation override, if any,
+    // remains the preferred value.
+    const pokemon = base.roster[id] ?? master.roster[id];
     if (!pokemon) throw new Error(`${regulation.regulationId}: legal species "${id}" is absent from master roster.`);
-    if (!baseLegalSpecies.has(id)) roster[id] = {};
-    const sourceId = learnsetId(id, mod.learnsets);
+    if (!baseLegalSpecies.has(id)) {
+      roster[id] = {};
+      resolvedRoster[id] = pokemon;
+    }
+    const sourceId = findLearnsetId(id, pokemon, master.roster, mod.learnsets);
     const rawLearnset = mod.learnsets[sourceId]?.learnset;
     if (!rawLearnset) throw new Error(`${regulation.regulationId}: missing learnset for "${id}" (mapped to "${sourceId}").`);
     const learnset = { dexNumber: pokemon.dexNumber, form: pokemon.form, moves: Object.keys(rawLearnset).sort(), sources: [SHOWDOWN_SOURCE] } satisfies RepoLearnset;
@@ -228,10 +287,13 @@ function makeDelta(regulation: RegulationDefinition, base: ResolvedData, mod: Aw
     if (!legalSpecies.has(id)) {
       roster[id] = null;
       learnsets[id] = null;
+      delete resolvedRoster[id];
     }
   }
 
-  const resolvedMoves = resolveMoves(base.moves, parseMoveMods(mod.moves), text.moves, textModId);
+  // Keep master records available for a later regulation to re-add unchanged
+  // resources. Availability is tracked separately by the corresponding set.
+  const resolvedMoves = resolveMoves({ ...master.moves, ...base.moves }, parseMoveMods(mod.moves), text.moves, textModId);
   const availableMoves = new Set(Object.values(resolvedLearnsets).flatMap((learnset) => learnset.moves));
   const moveDeltas = availabilityDelta(
     Object.fromEntries(Object.entries(base.moves).map(([id, move]) => [id, withoutNonstandard(move)])),
@@ -240,11 +302,11 @@ function makeDelta(regulation: RegulationDefinition, base: ResolvedData, mod: Aw
     availableMoves
   );
 
-  const resolvedAbilities = resolveAbilities(base.abilities, parseAbilitiesEntries(mod.abilities, text.abilities, undefined, textModId), text.abilities, textModId);
-  const availableAbilities = new Set([...legalSpecies].flatMap((id) => Object.values(base.roster[id]!.abilities ?? {})));
+  const resolvedAbilities = resolveAbilities({ ...master.abilities, ...base.abilities }, parseAbilitiesEntries(mod.abilities, text.abilities, undefined, textModId), text.abilities, textModId);
+  const availableAbilities = new Set([...legalSpecies].flatMap((id) => Object.values(resolvedRoster[id]!.abilities ?? {})));
   const abilityDeltas = availabilityDelta(base.abilities, base.availableAbilities, resolvedAbilities, availableAbilities);
 
-  const resolvedItems = resolveItems(base.items, parseItems(mod.items, text.items, undefined, textModId), text.items, textModId);
+  const resolvedItems = resolveItems({ ...master.items, ...base.items }, parseItems(mod.items, text.items, undefined, textModId), text.items, textModId);
   const availableItems = new Set(Object.entries(resolvedItems).filter(([, item]) => !item.isNonstandard).map(([id]) => id));
   const itemDeltas = availabilityDelta(
     Object.fromEntries(Object.entries(base.items).map(([id, item]) => [id, withoutNonstandard(item)])),
@@ -255,15 +317,86 @@ function makeDelta(regulation: RegulationDefinition, base: ResolvedData, mod: Aw
 
   return {
     delta: { regulationId: regulation.regulationId, regulationName: regulation.regulationName, baseRegulationId: regulation.baseRegulationId ?? null, begin: null, end: null, overrides: { roster: sorted(roster), learnsets: sorted(learnsets), moves: sorted(moveDeltas), abilities: sorted(abilityDeltas), items: sorted(itemDeltas) } },
-    resolved: { roster: base.roster, legalSpecies, learnsets: resolvedLearnsets, moves: resolvedMoves, availableMoves, abilities: resolvedAbilities, availableAbilities, items: resolvedItems, availableItems },
+    resolved: { roster: resolvedRoster, legalSpecies, learnsets: resolvedLearnsets, moves: resolvedMoves, availableMoves, abilities: resolvedAbilities, availableAbilities, items: resolvedItems, availableItems },
+  };
+}
+
+function applyOverride<T extends object>(base: T, override: Partial<T>): T {
+  const output: RawRecord = { ...(base as RawRecord) };
+  for (const [key, value] of Object.entries(override)) {
+    if (key === 'sources' && Array.isArray(output[key]) && Array.isArray(value)) {
+      output[key] = [...new Set([...output[key], ...value])];
+    } else if (key === 'baseStats' && output[key] && typeof output[key] === 'object' && !Array.isArray(output[key]) && value && typeof value === 'object' && !Array.isArray(value)) {
+      output[key] = { ...output[key], ...value };
+    } else {
+      output[key] = value;
+    }
+  }
+  return output as T;
+}
+
+function applyResource<T extends object>(current: Record<string, T>, overrides: Record<string, Partial<T> | null>, master: Record<string, T>): Record<string, T> {
+  const output = { ...current };
+  for (const [id, override] of Object.entries(overrides)) {
+    if (override === null) delete output[id];
+    else {
+      const base = output[id] ?? master[id];
+      if (!base) throw new Error(`Resource override "${id}" is absent from master data.`);
+      output[id] = applyOverride(base, override);
+    }
+  }
+  return output;
+}
+
+/** Resolves a committed delta when its source snapshot was not fetched. */
+function resolveStoredDelta(regulation: RegulationDefinition, base: ResolvedData): ResolvedData {
+  const path = join(ROOT_DIR, 'data', regulation.directoryName, 'delta.json');
+  if (!existsSync(path)) throw new Error(`Missing ${path.slice(ROOT_DIR.length + 1)}. Fetch this regulation from its historical Showdown ref before generating a descendant.`);
+  const delta = loadJson<RegulationDelta>(path);
+  if (delta.regulationId !== regulation.regulationId || delta.baseRegulationId !== (regulation.baseRegulationId ?? null)) {
+    throw new Error(`${path.slice(ROOT_DIR.length + 1)} does not match the configured historical lineage. Regenerate ${regulation.regulationName} from its Showdown snapshot first.`);
+  }
+  const roster = applyResource(base.roster, delta.overrides.roster, base.roster);
+  const learnsets: Record<string, RepoLearnset> = { ...base.learnsets };
+  for (const [id, override] of Object.entries(delta.overrides.learnsets)) {
+    if (override === null) delete learnsets[id];
+    else learnsets[id] = applyOverride(learnsets[id] ?? ({} as RepoLearnset), override);
+  }
+  const moves = applyResource(base.moves, delta.overrides.moves, base.moves) as Record<string, ParsedMove>;
+  const abilities = applyResource(base.abilities, delta.overrides.abilities, base.abilities);
+  const items = applyResource(base.items, delta.overrides.items, base.items);
+  return {
+    roster,
+    legalSpecies: new Set(Object.keys(roster)),
+    learnsets,
+    moves,
+    availableMoves: new Set(Object.keys(moves)),
+    abilities,
+    availableAbilities: new Set(Object.values(roster).flatMap((pokemon) => Object.values(pokemon.abilities ?? {}))),
+    items,
+    availableItems: new Set(Object.keys(items)),
   };
 }
 
 async function main(): Promise<void> {
-  const { values } = parseArgs({ args: process.argv.slice(2), options: { 'dry-run': { type: 'boolean', default: false } } });
+  const { values } = parseArgs({ args: process.argv.slice(2), options: { 'dry-run': { type: 'boolean', default: false }, regulation: { type: 'string' } } });
   const dryRun = Boolean(values['dry-run']);
   for (const file of MAIN_FILES) if (!existsSync(join(SOURCES_DIR, file))) throw new Error(`Missing data/sources/${file}. Run scripts/fetch_sources.sh first.`);
-  for (const regulation of REGULATIONS) for (const file of MOD_FILES) if (!existsSync(join(SOURCES_DIR, regulation.regulationId, file))) throw new Error(`Missing data/sources/${regulation.regulationId}/${file}. Run scripts/fetch_sources.sh first.`);
+  const manifestPath = join(SOURCES_DIR, 'fetch-manifest.json');
+  if (!existsSync(manifestPath)) throw new Error('Missing data/sources/fetch-manifest.json. Run scripts/fetch_sources.sh first.');
+  const manifest = loadJson<SourceManifest>(manifestPath);
+  const sourceModIds = new Map(manifest.regulations.map((entry) => [entry.regulationId, entry.sourceModId]));
+  if (values.regulation && !sourceModIds.has(values.regulation) && !sourceModIds.has(getRegulation(values.regulation).regulationId)) {
+    throw new Error(`Regulation "${values.regulation}" was not fetched from Showdown ref ${manifest.showdownRef}.`);
+  }
+  for (const regulationId of sourceModIds.keys()) {
+    const regulation = REGULATIONS.find((entry) => entry.regulationId === regulationId);
+    if (!regulation) {
+      throw new Error(`Invalid data/sources/fetch-manifest.json: "${regulationId}" is not a configured repository regulation. Run fetch-sd with SHOWDOWN_CURRENT_REGULATION and SHOWDOWN_PREVIOUS_REGULATION set to repository IDs (for example, championsregmb and championsregma), not Showdown source-mod names such as "champions".`);
+    }
+    for (const file of MOD_FILES) if (!existsSync(join(SOURCES_DIR, regulation.regulationId, file))) throw new Error(`Missing data/sources/${regulation.regulationId}/${file}. Run scripts/fetch_sources.sh first.`);
+  }
+  console.log(`Using Showdown ref ${manifest.showdownRef}; fetched regulations: ${[...sourceModIds.entries()].map(([id, mod]) => `${id} (${mod})`).join(', ')}`);
 
   const [{ Pokedex }, { Moves: rawMoves }, { MovesText }, { Items: rawItems }, { ItemsText }, { Abilities: rawAbilities }, { AbilitiesText }] = await Promise.all([
     import('../data/sources/pokedex.ts'), import('../data/sources/moves-main.ts'), import('../data/sources/moves-text.ts'), import('../data/sources/items-main.ts'), import('../data/sources/items-text.ts'), import('../data/sources/abilities-main.ts'), import('../data/sources/abilities-text.ts'),
@@ -302,6 +435,13 @@ async function main(): Promise<void> {
   const generatedRegulations = new Set<string>();
   const generatingRegulations = new Set<string>();
 
+  function resolveCommittedRegulation(regulation: RegulationDefinition): ResolvedData {
+    const base = regulation.baseRegulationId
+      ? resolvedByRegulation.get(regulation.baseRegulationId) ?? resolveCommittedRegulation(getRegulation(regulation.baseRegulationId))
+      : masterResolved;
+    return resolveStoredDelta(regulation, base);
+  }
+
   async function generateRegulation(regulation: RegulationDefinition): Promise<void> {
     if (generatedRegulations.has(regulation.regulationId)) return;
     if (generatingRegulations.has(regulation.regulationId)) {
@@ -311,22 +451,27 @@ async function main(): Promise<void> {
 
     let base = masterResolved;
     if (regulation.baseRegulationId) {
-      await generateRegulation(getRegulation(regulation.baseRegulationId));
-      base = resolvedByRegulation.get(regulation.baseRegulationId)!;
+      const baseRegulation = getRegulation(regulation.baseRegulationId);
+      if (sourceModIds.has(baseRegulation.regulationId)) await generateRegulation(baseRegulation);
+      else base = resolveCommittedRegulation(baseRegulation);
+      base = resolvedByRegulation.get(regulation.baseRegulationId) ?? base;
     }
 
     console.log(`Generating ${regulation.regulationId} delta...`);
     const deltaPath = join(ROOT_DIR, 'data', regulation.directoryName, 'delta.json');
-    const generated = makeDelta(regulation, base, await importMod(regulation), { moves: MovesText as RawRecord, abilities: AbilitiesText as RawRecord, items: ItemsText as RawRecord });
+    const sourceModId = sourceModIds.get(regulation.regulationId)!;
+    const showdownBase = sourceModId === 'champions'
+      ? undefined
+      : REGULATIONS.find((entry) => sourceModIds.get(entry.regulationId) === 'champions');
+    const generated = makeDelta(regulation, sourceModId, base, masterResolved, await importMod(regulation, showdownBase), { moves: MovesText as RawRecord, abilities: AbilitiesText as RawRecord, items: ItemsText as RawRecord });
     writeJson(deltaPath, preserveCustomDeltaValues(generated.delta, deltaPath), dryRun);
     resolvedByRegulation.set(regulation.regulationId, generated.resolved);
     generatedRegulations.add(regulation.regulationId);
     generatingRegulations.delete(regulation.regulationId);
   }
 
-  for (const regulation of REGULATIONS) {
-    await generateRegulation(regulation);
-  }
+  const selected = values.regulation ? [getRegulation(values.regulation)] : REGULATIONS.filter((regulation) => sourceModIds.has(regulation.regulationId));
+  for (const regulation of selected) await generateRegulation(regulation);
 }
 
 main().catch((error) => {

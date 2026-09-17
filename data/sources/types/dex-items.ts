@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * AUTO-GENERATED — DO NOT EDIT MANUALLY
  * Synced from: https://raw.githubusercontent.com/smogon/pokemon-showdown/master/sim/dex-items.ts

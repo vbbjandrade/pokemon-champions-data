@@ -165,7 +165,7 @@
     ],
     "form": "Mega-Z",
     "abilities": {
-      "0": "magicbounce"
+      "0": "sharpness"
     },
     "weightKg": 49,
     "requiredItem": "Absolite Z",
@@ -13392,7 +13392,7 @@
     ],
     "form": "Mega-Z",
     "abilities": {
-      "0": "sandforce"
+      "0": "levitate"
     },
     "weightKg": 99,
     "requiredItem": "Garchompite Z",
@@ -20870,7 +20870,7 @@
     ],
     "form": "Mega-Z",
     "abilities": {
-      "0": "adaptability"
+      "0": "auraguard"
     },
     "weightKg": 49.4,
     "requiredItem": "Lucarionite Z",

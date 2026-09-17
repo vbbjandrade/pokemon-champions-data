@@ -6,17 +6,29 @@ export interface RegulationDefinition {
   baseRegulationId?: string;
 }
 
-/** Newest first: Showdown exposes the first entry as the `champions` mod. */
+/**
+ * Our historical lineage, ordered from oldest to newest.
+ *
+ * This is deliberately independent from Pokemon Showdown's mod inheritance.
+ * Showdown's `champions` mod is only a source snapshot; it is not a regulation
+ * base in this repository.
+ */
 export const REGULATIONS: RegulationDefinition[] = [
-  {
-    regulationId: 'championsregmb',
-    regulationName: 'Reg M-B',
-    directoryName: 'regm-b',
-  },
   {
     regulationId: 'championsregma',
     regulationName: 'Reg M-A',
     directoryName: 'regm-a',
+  },
+  {
+    regulationId: 'championsregmb',
+    regulationName: 'Reg M-B',
+    directoryName: 'regm-b',
+    baseRegulationId: 'championsregma',
+  },
+  {
+    regulationId: 'championsregmc',
+    regulationName: 'Reg M-C',
+    directoryName: 'regm-c',
     baseRegulationId: 'championsregmb',
   },
 ];
