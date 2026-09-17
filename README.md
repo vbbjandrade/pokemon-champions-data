@@ -17,11 +17,11 @@ Data is drawn from Showdown's open-source files and continuously refined by comm
 | Directory | Contents |
 |---|---|
 | `data/master/` | Unfiltered Showdown roster, moves, abilities, and items |
+| `data/champions-base/` | Data from `data/master/` with Champions-specific overrides (**TODO**), game formula and systems documentation |
 | `data/regm-*/` | Regulation delta source data and full regulation learnsets |
 | `dist/regm-*/` | Compiled roster, learnsets, moves, abilities, and items for consumers |
-| `data/mechanics/` | Game formula documentation and system guides |
 
-The playable characters include base forms, mega evolutions, and regional variants. Every form with distinct stats is represented as a separate entry.
+The playable characters include base forms, regional variants and other alternate forms. Every form with distinct relevant attributes is represented as a separate entry.
 
 ## Regulation data architecture
 

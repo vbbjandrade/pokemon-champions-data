@@ -203,19 +203,6 @@ export interface RepoItem {
   sources?: string[];
 }
 
-export interface VersionInfo {
-  lastUpdated: string;
-  sources: string[];
-  gameVersion: string;
-  latestRegulation: string;
-  records: {
-    pokemon: number;
-    moves: number;
-    abilities: number;
-    items: number;
-  };
-}
-
 export interface RegulationDelta {
   regulationId: string;
   regulationName: string;
