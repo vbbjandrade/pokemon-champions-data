@@ -26,8 +26,6 @@ jobs:
       - uses: oven-sh/setup-bun@v2
 
       - run: bun install --frozen-lockfile
-      - run: chmod +x ./scripts/fetch_sources.sh
-      - run: ./scripts/fetch_sources.sh
       - run: bun run generate
 
       - name: Deploy dist contents to data branch
