@@ -1,3 +1,18 @@
+/**
+ * Base game Showdown snapshot configuration.
+ *
+ * This pins the exact ref used to fetch the main game data files (pokedex,
+ * moves, items, abilities, learnsets, and text files). Update this ref
+ * explicitly when you want to upgrade the base game baseline — it will never
+ * be re-downloaded automatically during routine regulation fetches.
+ *
+ * To update base files, run: `bun run fetch-sd --base`
+ */
+export const SHOWDOWN_BASE_CONFIG = {
+  repo: 'smogon/pokemon-showdown',
+  ref: 'master',
+} as const;
+
 export interface ShowdownSourceConfig {
   /** Pinned Pokemon Showdown commit SHA, branch, or tag representing this regulation snapshot. */
   ref: string;
@@ -32,6 +47,7 @@ export const REGULATIONS: RegulationDefinition[] = [
     baseRegulationId: 'championsregmb',
     showdown: {
       ref: 'master',
+      sourceModId: 'champions', // Current live regulation. Data lives in Showdown's 'champions' mod folder.
       historyUrl: 'https://github.com/smogon/pokemon-showdown/commits/master/data/mods/champions',
     },
   },

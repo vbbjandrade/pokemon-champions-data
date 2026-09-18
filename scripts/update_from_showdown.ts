@@ -43,7 +43,7 @@ const SHOWDOWN_ALIASES: Record<string, string> = { meowsticmmega: 'Mega Meowstic
 
 type RawRecord = Record<string, any>;
 type SourceManifest = {
-  showdownRef: string;
+  baseRef: string;
   regulations: Array<{ regulationId: string; sourceModId: string }>;
 };
 type ResolvedData = {
@@ -102,9 +102,7 @@ function availabilityDelta<T extends RawRecord>(
       continue;
     }
     const changes = diffEntry(baseEntries[id], currentEntries[id]!);
-    // @ts-ignore
-    // TODO: fix this
-    if (!baseAvailable.has(id) || Object.keys(changes).length > 0) delta[id] = changes;
+    if (!baseAvailable.has(id) || Object.keys(changes).length > 0) delta[id] = changes as Partial<T>;
   }
   return delta;
 }
@@ -388,7 +386,7 @@ async function main(): Promise<void> {
   const manifest = loadJson<SourceManifest>(manifestPath);
   const sourceModIds = new Map(manifest.regulations.map((entry) => [entry.regulationId, entry.sourceModId]));
   if (values.regulation && !sourceModIds.has(values.regulation) && !sourceModIds.has(getRegulation(values.regulation).regulationId)) {
-    throw new Error(`Regulation "${values.regulation}" was not fetched from Showdown ref ${manifest.showdownRef}.`);
+    throw new Error(`Regulation "${values.regulation}" was not fetched. Check data/sources/fetch-manifest.json (base ref: ${manifest.baseRef}).`);
   }
   for (const regulationId of sourceModIds.keys()) {
     const regulation = REGULATIONS.find((entry) => entry.regulationId === regulationId);
@@ -397,7 +395,7 @@ async function main(): Promise<void> {
     }
     for (const file of MOD_FILES) if (!existsSync(join(SOURCES_DIR, regulation.regulationId, file))) throw new Error(`Missing data/sources/${regulation.regulationId}/${file}. Run scripts/fetch_sources.sh first.`);
   }
-  console.log(`Using Showdown ref ${manifest.showdownRef}; fetched regulations: ${[...sourceModIds.entries()].map(([id, mod]) => `${id} (${mod})`).join(', ')}`);
+  console.log(`Using Showdown base ref ${manifest.baseRef}; fetched regulations: ${[...sourceModIds.entries()].map(([id, mod]) => `${id} (${mod})`).join(', ')}`);
 
   const [{ Pokedex }, { Moves: rawMoves }, { MovesText }, { Items: rawItems }, { ItemsText }, { Abilities: rawAbilities }, { AbilitiesText }] = await Promise.all([
     import('../data/sources/pokedex.ts'), import('../data/sources/moves-main.ts'), import('../data/sources/moves-text.ts'), import('../data/sources/items-main.ts'), import('../data/sources/items-text.ts'), import('../data/sources/abilities-main.ts'), import('../data/sources/abilities-text.ts'),

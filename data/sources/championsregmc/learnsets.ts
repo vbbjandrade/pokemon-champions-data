@@ -1,4 +1,13 @@
 // @ts-nocheck
+/**
+ * Auto-generated source snapshot from smogon/pokemon-showdown.
+ * Do not edit directly; run 'bun run fetch-sd' to regenerate.
+ *
+ * Remote URL: https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/mods/champions/learnsets.ts
+ * Git Ref:    master
+ * Fetched At: 2026-09-18T02:16:34.867Z
+ */
+
 export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTable = {
 	venusaur: {
 		learnset: {

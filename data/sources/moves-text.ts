@@ -1,4 +1,13 @@
 // @ts-nocheck
+/**
+ * Auto-generated source snapshot from smogon/pokemon-showdown.
+ * Do not edit directly; run 'bun run fetch-sd' to regenerate.
+ *
+ * Remote URL: https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/text/moves.ts
+ * Git Ref:    master
+ * Fetched At: 2026-09-18T01:43:43.559Z
+ */
+
 export const MovesText: { [id: IDEntry]: MoveText } = {
 	"10000000voltthunderbolt": {
 		name: "10,000,000 Volt Thunderbolt",

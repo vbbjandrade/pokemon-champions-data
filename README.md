@@ -45,28 +45,35 @@ The updater preserves a manually maintained override when its `source` is not `s
 To regenerate data locally, run:
 
 ```bash
-bun run fetch-sd
-bun run generate
+bun run fetch-sd          # download regulation mod overlays only
+bun run generate          # rebuild master data + regulation deltas + dist files
 ```
 
-`fetch-sd` is a zero-config, self-documenting fetcher driven by `scripts/regulations.ts`. By default, it automatically targets the latest configured regulation, resolves its preceding base regulation from `baseRegulationId`, and pulls Showdown data using the pinned commit SHA or branch.
+`fetch-sd` is a zero-config, self-documenting fetcher driven by `scripts/regulations.ts`. By default, it **only** downloads regulation mod overlays — the base game files (`pokedex.ts`, `moves-main.ts`, etc.) are pinned to the ref configured in `SHOWDOWN_BASE_CONFIG` and are **never touched** unless explicitly requested. This prevents routine regulation fetches from overwriting the base game snapshot with stale commits.
+
+To update base game files (e.g. after a new Showdown release), pass `--base`:
+
+```bash
+bun run fetch-sd --base           # Update base game files to SHOWDOWN_BASE_CONFIG ref
+bun run fetch-sd --base-ref abc1  # Update base game files to a specific commit
+bun run fetch-sd --all            # Fetch both base files + latest regulation mods
+```
 
 To target or reconstruct an older regulation snapshot, simply pass its regulation ID or directory name:
 
 ```bash
-# Automatically fetches Reg M-B and its base Reg M-A using its pinned Showdown commit
+# Fetches Reg M-B mod and its base Reg M-A using their pinned Showdown commits
 bun run fetch-sd regm-b
-bun run update --regulation championsregmb
 ```
 
 You can also override the commit SHA directly or test WIP branches:
 
 ```bash
-# Test against a specific Showdown commit or branch
+# Test against a specific Showdown commit or branch for mods
 bun run fetch-sd --ref <commit-sha>
 ```
 
-Each regulation entry in `scripts/regulations.ts` tracks its pinned Showdown commit SHA and provides a direct link to the Showdown commit history for that mod. This ensures complete auditability and reproducibility without hunting through external commit logs.
+Each regulation entry in `scripts/regulations.ts` tracks its pinned Showdown commit SHA and provides a direct link to the Showdown commit history for that mod. `SHOWDOWN_BASE_CONFIG` at the top of the same file pins the base game ref. This ensures complete auditability and reproducibility without hunting through external commit logs.
 
 To rebuild consumer files without re-downloading Showdown files, run `bun run build-regulations`. The GitHub Actions workflow runs the full generation sequence on pushes to `main` and publishes the resulting `./dist` contents directly to the orphan `data` branch.
 
@@ -204,17 +211,16 @@ Champions replaces the traditional 510 EV system with a streamlined **SP (Stat P
 - Fewer points mean harder tradeoffs — you cannot invest heavily in every stat simultaneously
 - Speed tiers are compressed, making small SP differences more decisive than in standard games
 
-Full documentation is in [`mechanics/sp-system.md`](mechanics/sp-system.md). Stat calculation details, including the SP-to-stat mapping, are in [`mechanics/stat-formula.md`](mechanics/stat-formula.md).
+Full documentation is in [`data/mechanics/sp-system.md`](data/mechanics/sp-system.md). Stat calculation details, including the SP-to-stat mapping, are in [`data/mechanics/stat-formula.md`](data/mechanics/stat-formula.md).
 
 ---
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
+We welcome community contributions and verification! See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 
-The base data comes from Showdown's open-source files, which are accurate for the main series games. Pokemon Champions may have modified learnsets, stat values, ability assignments, and mega evolution parameters. Community verification of Champions-specific differences is the highest-priority contribution this project needs right now.
-
-If you have found an error — wrong stats, a move a character cannot actually learn, an ability that does not match the in game behavior — please file an issue using the [data correction template](.github/ISSUE_TEMPLATE/data-correction.yml).
+- If you notice a data discrepancy in-game, please file an issue using our structured [Data Discrepancy Report template](.github/ISSUE_TEMPLATE/data-correction.yml).
+- When submitting pull requests, edit the target regulation's `data/<regulation>/delta.json` file. All delta files feature real-time editor autocompletion and type validation powered by `schemas/delta.schema.json`.
 
 ---
 
@@ -235,16 +241,3 @@ Pokemon is a trademark of Nintendo / Game Freak / The Pokemon Company Internatio
 Licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE). You are free to use, share, and adapt this data for any purpose, including commercial applications, as long as you give appropriate credit.
 
 **Credit line:** `Pokemon Champions Data — github.com/pokemon-champions-data/pokemon-champions-data (CC BY 4.0)`
-
----
-
-## Tournament Calendar
-
-| Event | Location | Date |
-|-------|----------|------|
-| Indianapolis Regionals | Indianapolis, IN, USA | May 29, 2026 |
-| Turin Regional | Turin, Italy | June 6-7, 2026 |
-| North American International Championship (NAIC) | TBD | June 12-14, 2026 |
-| World Championships | TBD | August 28-30, 2026 |
-
-Tournament result data will be added to this repository as events conclude. If you have information about additional tournaments, open an issue or submit a pull request to `meta/tournaments.json`.

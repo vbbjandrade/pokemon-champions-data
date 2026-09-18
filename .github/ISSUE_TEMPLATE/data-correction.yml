@@ -1,0 +1,71 @@
+name: Data Discrepancy Report
+description: Report an error or discrepancy in Pokémon stats, moves, abilities, items, or learnsets.
+title: "[Data Fix]: "
+labels: ["data-correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping verify and maintain the Pokémon Champions dataset!
+        Please fill out the fields below so we can quickly analyze, verify, and merge the fix into the appropriate regulation delta.
+  - type: dropdown
+    id: regulation
+    attributes:
+      label: Target Regulation
+      description: In which regulation does this discrepancy occur?
+      options:
+        - "Reg M-C (championsregmc - Current)"
+        - "Reg M-B (championsregmb)"
+        - "Reg M-A (championsregma)"
+        - "Baseline Game Mechanics (data/mechanics/)"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Resource Category
+      description: Which data domain is affected?
+      options:
+        - "moves (power, accuracy, PP, priority, flags, descriptions)"
+        - "roster (base stats, types, abilities, forms, weight)"
+        - "learnsets (move pool additions or removals)"
+        - "abilities (description, flags, effect)"
+        - "items (effect, description, flags, legality)"
+        - "mechanics (SP distribution, stat formulas, damage formulas)"
+    validations:
+      required: true
+  - type: input
+    id: identifier
+    attributes:
+      label: Resource Identifier (Key)
+      description: The exact identifier used in JSON (e.g. 'charizard', 'courtchange', 'dragapult', 'goodasgold').
+      placeholder: "e.g. courtchange"
+    validations:
+      required: true
+  - type: input
+    id: property
+    attributes:
+      label: Affected Property / Field
+      description: The exact field being corrected (e.g. 'power', 'pp', 'baseStats.spe', 'flags.contact').
+      placeholder: "e.g. pp"
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Current vs. Correct Values
+      description: What does the dataset currently show, and what is the verified in-game value?
+      placeholder: |
+        Current value in dataset: PP is 10
+        Verified in-game value: PP is 12
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Verification Evidence
+      description: |
+        Provide evidence from Pokémon Champions (in-game screenshot, video clip, damage test log, move summary screen).
+        Reports without verifiable proof cannot be merged.
+    validations:
+      required: true

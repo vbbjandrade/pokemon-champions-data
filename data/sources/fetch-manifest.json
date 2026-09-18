@@ -1,13 +1,35 @@
 {
-  "showdownRef": "master",
+  "showdownRepo": "smogon/pokemon-showdown",
+  "baseRef": "master",
+  "fetchedAt": "2026-09-18T02:16:34.867Z",
+  "targetRegulation": "championsregmc",
+  "baseFetched": false,
   "regulations": [
     {
       "regulationId": "championsregmc",
-      "sourceModId": "champions"
+      "regulationName": "Reg M-C",
+      "sourceModId": "champions",
+      "ref": "master",
+      "historyUrl": "https://github.com/smogon/pokemon-showdown/commits/master/data/mods/champions"
     },
     {
       "regulationId": "championsregmb",
-      "sourceModId": "championsregmb"
+      "regulationName": "Reg M-B",
+      "sourceModId": "championsregmb",
+      "ref": "master",
+      "historyUrl": "https://github.com/smogon/pokemon-showdown/commits/master/data/mods/championsregmb"
     }
+  ],
+  "files": [
+    "data/sources/championsregmc/formats-data.ts",
+    "data/sources/championsregmc/learnsets.ts",
+    "data/sources/championsregmc/items.ts",
+    "data/sources/championsregmc/moves.ts",
+    "data/sources/championsregmc/abilities.ts",
+    "data/sources/championsregmb/formats-data.ts",
+    "data/sources/championsregmb/learnsets.ts",
+    "data/sources/championsregmb/items.ts",
+    "data/sources/championsregmb/moves.ts",
+    "data/sources/championsregmb/abilities.ts"
   ]
 }

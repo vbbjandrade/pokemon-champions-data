@@ -1,73 +1,62 @@
 # Contributing to Pokemon Champions Data
 
-Thank you for helping build the first competitive data resource for Pokemon Champions. Since the game launched April 8, 2026 and competitive play is just beginning, community verification is essential. Every corrected learnset, fixed move description, or identified stat discrepancy makes this dataset more useful for every builder, analyst, and competitor.
+Thank you for helping build and maintain the premier competitive data resource for Pokémon Champions. Because Champions is a live-service competitive game with unique balance adjustments, custom mechanics, and distinct regulation formats, community verification is essential. Every verified learnset, stat correction, or move update directly benefits the community's team builders, calculators, and tournament tools.
 
 ---
 
 ## Table of Contents
 
-1. [Reporting Data Errors](#reporting-data-errors)
-2. [Champions-Specific Corrections](#champions-specific-corrections)
+1. [Reporting Data Discrepancies](#reporting-data-discrepancies)
+2. [Champions-Specific Divergences](#champions-specific-divergences)
 3. [Editing Regulation Deltas (delta.json)](#editing-regulation-deltas-deltajson)
-4. [Pull Request Format](#pull-request-format)
-5. [Verification Priority](#verification-priority)
-6. [Data Standards](#data-standards)
-7. [Code of Conduct](#code-of-conduct)
+4. [Pull Request Workflow](#pull-request-workflow)
+5. [Data Standards](#data-standards)
+6. [Code of Conduct](#code-of-conduct)
 
 ---
 
-## Reporting Data Errors
+## Reporting Data Discrepancies
 
-Use the GitHub Issues system. Select the **Data Correction** issue template, which prompts you for all required fields.
+If you spot incorrect data (such as wrong stats, unverified moves, or inaccurate descriptions), please file an issue using the [Data Discrepancy Report template](.github/ISSUE_TEMPLATE/data-correction.yml).
 
-**Before filing:**
+To ensure reports can be quickly verified and merged into the appropriate delta files, each report should include:
 
-- Search open and closed issues to avoid duplicates.
-- If an error has already been reported and is awaiting a fix, leave a comment on the existing issue to confirm the error rather than filing a new one.
-
-**Every valid report must include:**
-
-- The character name (exact, including form if applicable), move, ability, or item name
-- The incorrect data as it currently appears in the repository
-- The correct data as it should appear
-- Your source: in-game screenshot, video timestamp, or confirmation from multiple players. "I think" or "I remember" is not sufficient evidence for data changes.
+1. **Target Regulation**: Which regulation format this discrepancy applies to (e.g. `Reg M-C`, `Reg M-B`, or `Baseline Game Mechanics`).
+2. **Resource Category**: One of our six core data domains:
+   - `moves`: Base power, PP, accuracy, priority, flags, descriptions.
+   - `roster`: Base stats, typings, ability slots, form attributes, weight.
+   - `learnsets`: Verified move pool additions or removals.
+   - `abilities`: Effects, flags, or activation conditions.
+   - `items`: Competitive effects, battle items, mega stones, legality.
+   - `mechanics`: SP allocation system, stat formulas, damage formulas.
+3. **Identifier / Key**: The exact identifier in the dataset (e.g. `courtchange`, `charizard`, `goodasgold`, `covertcloak`).
+4. **Affected Field**: The exact property name (e.g. `power`, `pp`, `baseStats.spe`, `flags.contact`).
+5. **Current vs. Correct Value**: What the dataset currently has versus what the game displays.
+6. **In-game Verification Evidence**: Clear proof from the game (screenshot, video clip, or combat calculation test). Reports without verifiable evidence cannot be merged.
 
 ---
 
-## Champions-Specific Corrections
+## Champions-Specific Divergences
 
-The base data in this repository comes from Showdown's open-source files, cross-referenced against Gen 9 data where Champions-specific values were unavailable at launch. Champions is a new standalone game and it diverges from prior titles in several ways. The following categories are the most likely to contain errors.
+Baseline data is drawn from Pokémon Showdown's open-source files and adapted for Pokémon Champions. Champions introduces several game-wide differences from mainline titles:
 
 ### Learnsets
+Some Pokémon learn moves in Champions that were unavailable in prior main-series generations, and vice versa. When reporting a learnset discrepancy, verify the move in the in-game move reminder screen or TM compatibility list.
 
-Some characters learn moves in Champions that they cannot learn in recent main-series games, and vice versa. When filing a learnset correction, include:
+### Base Stats & Mega Evolutions
+Champions features custom balance adjustments for certain species and exclusive Mega Evolution forms. If you notice a stat difference in-game, provide a screenshot of the Pokémon summary screen displaying its nature and stats.
 
-- The character name and form
-- The move name
-- The correct learn method: level number, TM/TR, or breed-only
-- Whether the move appears in the in-game move reminder or only on level-up
+### Move Attributes & Balance Patches
+Many moves feature Champions-specific balance updates (e.g. altered Base Power, modified PP, or adjusted secondary effect chances). When reporting move discrepancies, consult the move detail screen or verify battle logs.
 
-**How to verify learnsets in-game:**
-
-For level-up moves, navigate to the character's summary screen and open the move reminder section. Record every available move and the level listed. For TM/TR compatibility, sort your TM/TR bag by compatibility while the target character is selected and record which items are marked as usable. A screenshot of the full learnset list is the gold standard evidence.
-
-### Mega Evolution Stats
-
-Champions includes Mega Evolution forms. Some Champions-exclusive Mega stats may differ from the Mega forms in prior games, or Champions may include Mega Evolutions for characters that never had them in the main series. If you have verified a Mega form's base stats in-game, submit a correction with a screenshot clearly showing all six stat values.
-
-### Ability Assignments
-
-A character's ability slots may differ from their assignments in prior games. If a character's available abilities do not match what `pokemon/roster.json` lists, file a correction with your in-game verification.
-
-### Move Effects
-
-Some moves may have Champions-specific behavior (different power, accuracy, PP, or effect) compared to prior games. When filing a move correction, specify the exact field that is wrong and how you measured it (damage calculator test, move description screen, observed behavior in battle).
+### The SP System
+Champions replaces EVs with the **SP (Stat Points)** system (66 total SP, max 32 per stat). Formula documentation and alignments are maintained in [`data/mechanics/`](data/mechanics/).
 
 ---
 
 ## Editing Regulation Deltas (delta.json)
 
-When editing or maintaining a regulation's `data/reg*/delta.json` file, keep in mind how the repository's build engine resolves overrides:
+Manual balance adjustments, legal rosters, and regulation-specific patches are stored in `data/<regulation>/delta.json`. When making changes, keep in mind how our build engine processes overrides:
 
 > **`baseStats` is the sole nested merge field; all other properties replace wholesale.**
 
@@ -75,93 +64,79 @@ When editing or maintaining a regulation's `data/reg*/delta.json` file, keep in 
 
 | Target Property | Behavior | How to specify in `delta.json` |
 | :--- | :--- | :--- |
-| `baseStats` | **Partial Merge** | Specify **only** the modified stat(s) (e.g. `{"spe": 105}`). All other stats retain their base values. |
+| `baseStats` | **Partial Merge** | Specify **only** the modified stat(s) (e.g. `{"spe": 105}`). Unmentioned stats remain inherited from base. |
 | Scalar fields (`power`, `pp`, `accuracy`, `priority`, `desc`, etc.) | **Field Replacement** | Specify **only** the changed field (e.g. `{"pp": 12}`). |
-| `flags` (move, ability, item) | **Object Replacement** | **Redeclare all** active flags. Providing a new flags object completely overwrites the base flags. |
-| `abilities` (roster entry) | **Object Replacement** | **Redeclare all** ability slots (`"0"`, `"1"`, `"H"`). |
+| `flags` (move, ability, item) | **Object Replacement** | **Redeclare all** active flags. Providing an override object replaces the entire inherited flags object. |
+| `abilities` (roster entry) | **Object Replacement** | **Redeclare all** active ability slots (`"0"`, `"1"`, `"H"`). |
 | `types` (roster entry) | **Array Replacement** | **Redeclare all** types in the array (e.g. `["Grass", "Dragon"]`). |
-| `sources` | **Array Merge** | Merges and deduplicates with any inherited sources. |
+| `sources` | **Array Merge** | Merges and deduplicates with inherited sources automatically. |
 
 ### Real-Time IDE Autocompletion & Error Detection
 
-All delta files are linked to the repository's JSON schema at `schemas/delta.schema.json`:
-- In VS Code and Antigravity IDE, typing quotes `"` inside an override object displays instant autocompletion for valid properties.
-- Any misspelled property name, invalid flag, or incorrect data type immediately displays a **red squiggly line** with diagnostic warnings.
-- Hovering over any field in your editor displays the documentation and override behavior directly.
+All delta files are bound to the repository schema at `schemas/delta.schema.json`:
+- In VS Code and Antigravity IDE, typing quotes `"` inside an override object provides **instant autocompletion** for valid properties.
+- Any misspelled property name, invalid flag, or incorrect type immediately displays a **red squiggly line** with diagnostic explanations.
+- Hovering over fields displays built-in documentation and merge instructions directly in your editor.
 
 ---
 
-## Pull Request Format
+## Pull Request Workflow
 
-For small corrections (a single wrong value), filing an issue is preferred so the correction can be reviewed before merging. For larger contributions — verifying an entire character's learnset, adding a missing form — a pull request is welcome.
+For larger contributions or direct data fixes, pull requests are welcome.
 
-**One correction per PR.** Do not bundle multiple unrelated fixes into a single pull request.
+**Rule: One logical correction per PR.** Avoid bundling multiple unrelated fixes into a single PR so they can be independently reviewed.
 
 ### Steps
 
-1. Fork the repository
-2. Create a branch: `git checkout -b fix/venusaur-learnset`
-3. Edit the relevant JSON file
-4. Validate that your JSON is well-formed: `python3 -m json.tool path/to/file.json`
-5. Commit with a descriptive message (see format below)
-6. Open a pull request against `main`
+1. Fork and clone the repository.
+2. Create a feature branch:
+   ```bash
+   git checkout -b fix/courtchange-pp
+   ```
+3. Edit the relevant regulation delta (`data/regm-*/delta.json`) or mechanics file (`data/mechanics/`).
+4. Validate your changes locally:
+   ```bash
+   bun run typecheck
+   bun run generate
+   ```
+5. Commit your changes using conventional commit formatting:
+   ```bash
+   git commit -m "fix(moves): courtchange PP is 12 in Reg M-C"
+   ```
+6. Open a pull request against `main`.
 
-### Commit message format
+### Commit Message Format
 
+```text
+fix(moves): courtchange PP is 12 in Reg M-C
+
+Court Change has 12 PP in Pokemon Champions. Verified via in-game
+move summary screen. Closes #42.
 ```
-fix(learnsets): Venusaur cannot learn Hyper Voice in Champions
 
-Removed Hyper Voice from Venusaur's learnset. Verified via in-game
-move reminder screen. Source: screenshot attached to issue #42.
-```
+Allowed categories: `moves`, `roster`, `learnsets`, `abilities`, `items`, `mechanics`.
 
-Prefix: `fix`, `add`, `update`, or `remove`. Category in parentheses: `learnsets`, `moves`, `abilities`, `items`, `pokemon`, `type-chart`, `natures`, `mechanics`.
+### Pull Request Checklist
 
-### Pull request checklist
-
-- [ ] JSON is valid (`python3 -m json.tool` passes)
-- [ ] Format and indentation match existing records
-- [ ] No unrelated changes included
-- [ ] Evidence linked (screenshot, video, or issue number)
-
----
-
-## Verification Priority
-
-Community effort should focus on the areas most likely to differ from our source data, in this order:
-
-1. **Learnsets** — most likely to diverge from standard games. Every character's move availability in Champions should be verified independently.
-2. **Mega Evolution stats** — Champions-exclusive Mega forms may have unique stat distributions not present in any prior dataset.
-3. **Ability assignments** — ability slot assignments may differ for some characters.
-4. **Move effects** — check for Champions-specific modifications to power, accuracy, PP, or behavior.
+- [ ] `bun run typecheck` passes with zero errors.
+- [ ] `bun run generate` compiles without issues.
+- [ ] In-game verification evidence is linked in the PR description.
+- [ ] No unrelated files or unintended formatting changes included.
 
 ---
 
 ## Data Standards
 
-**JSON formatting:**
-
-- 2-space indentation
-- UTF-8 encoding, no BOM
-- No trailing commas
-- String values for names exactly as they appear in-game (capitalization matters)
-- `null` for missing optional values — do not use `""` or `0` as null substitutes
-
-**Character names:** Use the name as displayed in the Champions game UI. For forms, use the full display name (e.g., `"Mega Charizard X"`).
-
-**Move and ability names:** Match the exact in-game capitalization and hyphenation. `"Double-Edge"` not `"Double Edge"`.
-
-**Types:** Capitalize the first letter only: `"Fire"`, `"Water"`, `"Dragon"`.
-
-**Numeric values:** Use integers for values that are always whole numbers (power, PP, priority). Use `null` for fields that are not applicable — `power: null` for status moves, not `power: 0`.
+- **Formatting**: 2-space indentation, UTF-8 encoding, no trailing commas.
+- **Identifiers**: Identifiers in keys must use Showdown-style lowercase alphanumeric strings (`courtchange`, `charizard`, `dragapult`).
+- **Display Names**: Capitalization and punctuation in `name` fields must match the in-game display exactly (`"Court Change"`, `"Double-Edge"`, `"Mega Charizard X"`).
+- **Numeric values**: Use integers for power, PP, and priority. Use `null` when a value is not applicable (e.g. `power: null` for status moves, not `power: 0`).
 
 ---
 
 ## Code of Conduct
 
-- Be respectful in issues and pull request discussions.
-- Cite your sources. Corrections without verifiable evidence will not be merged.
-- Do not submit data you have not personally verified or cannot point to a credible source for.
-- Speculation about unreleased content or future updates is out of scope for this repository.
-
-This repository tracks static game data only. Tier lists, set recommendations, and competitive analysis belong in community discussion spaces, not in issues or pull requests here.
+- Treat fellow contributors with respect.
+- Always provide verifiable in-game evidence for data modifications.
+- Speculation about unreleased or data-mined future content that is not active in the live game belongs in community forums, not in data pull requests.
+- This repository tracks factual, structured game data. Tier lists, usage commentary, and team builds belong in dedicated community platforms.
