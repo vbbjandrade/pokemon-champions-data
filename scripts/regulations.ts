@@ -46,8 +46,8 @@ export const REGULATIONS: RegulationDefinition[] = [
     directoryName: 'regm-c',
     baseRegulationId: 'championsregmb',
     showdown: {
-      ref: 'master',
       sourceModId: 'champions', // Current live regulation. Data lives in Showdown's 'champions' mod folder.
+      ref: 'master',
       historyUrl: 'https://github.com/smogon/pokemon-showdown/commits/master/data/mods/champions',
     },
   },

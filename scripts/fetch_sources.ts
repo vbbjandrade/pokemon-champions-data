@@ -55,6 +55,8 @@ const MAIN_FILES: Array<{ remote: string; local: string }> = [
 ];
 
 const MOD_RESOURCES = ['formats-data', 'learnsets', 'items', 'moves', 'abilities'] as const;
+/** Historical Champions mods overlay this live Showdown folder at the same commit. */
+const SHOWDOWN_LIVE_MOD_ID = 'champions';
 
 function formatHeader(remoteUrl: string, showdownRef: string, fetchedAt: string): string {
   return `// @ts-nocheck
@@ -108,6 +110,57 @@ async function fetchFile(
   }
 }
 
+function sourceModIdFor(reg: RegulationDefinition): string {
+  return reg.showdown?.sourceModId ?? reg.regulationId;
+}
+
+function needsParentSnapshot(sourceModId: string): boolean {
+  return sourceModId !== SHOWDOWN_LIVE_MOD_ID;
+}
+
+function getFetchChain(target: RegulationDefinition, prevOverride?: string): RegulationDefinition[] {
+  if (prevOverride) {
+    const previous = findRegulation(prevOverride) ?? getRegulation(prevOverride);
+    return previous.regulationId === target.regulationId ? [target] : [target, previous];
+  }
+
+  const chain: RegulationDefinition[] = [];
+  const visited = new Set<string>();
+  let current: RegulationDefinition | undefined = target;
+  while (current) {
+    if (visited.has(current.regulationId)) {
+      throw new Error(`Circular regulation base detected at "${current.regulationId}".`);
+    }
+    visited.add(current.regulationId);
+    chain.push(current);
+    current = current.baseRegulationId ? getRegulation(current.baseRegulationId) : undefined;
+  }
+  return chain;
+}
+
+async function fetchModOverlay(
+  sourceModId: string,
+  destDir: string,
+  modRef: string,
+  fetchedAt: string,
+  dryRun: boolean
+): Promise<string[]> {
+  const written: string[] = [];
+  const modBaseUrl = `https://raw.githubusercontent.com/${SHOWDOWN_BASE_CONFIG.repo}/${modRef}/data`;
+  for (const resource of MOD_RESOURCES) {
+    const url = `${modBaseUrl}/mods/${sourceModId}/${resource}.ts`;
+    const result = await fetchFile(url, modRef, fetchedAt);
+    const destPath = join(destDir, `${resource}.ts`);
+    if (result.ok) {
+      written.push(writeFile(destPath, result.text, dryRun));
+    } else {
+      console.log(`  INFO: ${sourceModId}/${resource}.ts has no direct override; generating empty overlay.`);
+      written.push(writeFile(destPath, emptyOverlay(resource, sourceModId, fetchedAt), dryRun));
+    }
+  }
+  return written;
+}
+
 function writeFile(path: string, content: string, dryRun: boolean): string {
   const relPath = path.slice(ROOT_DIR.length + 1);
   if (dryRun) {
@@ -129,14 +182,20 @@ By default, only regulation mod overlay files are fetched. Base game files
 configured in SHOWDOWN_BASE_CONFIG (scripts/regulations.ts) and are only
 downloaded when explicitly requested with --base or --all.
 
+Archived Showdown mods (anything other than the live "champions" folder) also
+download data/mods/champions/ from the same commit into
+data/sources/<regulationId>/_parent/. Overlay resolution uses that snapshot
+instead of the live Champions mod.
+
 Arguments:
   [regulation]           Target regulation ID (e.g. championsregmc) or folder (e.g. regm-c).
                          Defaults to the latest regulation in scripts/regulations.ts.
+                         Also fetches every ancestor in the configured base chain.
 
 Options:
   -r, --regulation <id>  Same as positional argument: specify target regulation.
-  -p, --previous <id>    Override preceding regulation.
-                         Defaults to target's baseRegulationId from scripts/regulations.ts.
+  -p, --previous <id>    Fetch only the target plus this regulation, instead of
+                         walking the full baseRegulationId chain.
       --ref <sha|branch> Override Showdown git ref/commit SHA for regulation mod overlays.
       --base             Fetch base game files using SHOWDOWN_BASE_CONFIG ref.
                          Without this flag, base files are never touched.
@@ -147,8 +206,8 @@ Options:
   -h, --help             Show this help message.
 
 Examples:
-  bun run fetch-sd                    # Fetch latest regulation mods only
-  bun run fetch-sd regm-a             # Fetch Reg M-A mods from its pinned commit
+  bun run fetch-sd                    # Fetch latest regulation + ancestor mods
+  bun run fetch-sd regm-a             # Fetch Reg M-A mods + contemporaneous champions parent
   bun run fetch-sd --base             # Update base game files to configured ref
   bun run fetch-sd --base-ref abc123  # Update base game files to a specific commit
   bun run fetch-sd --all              # Fetch base files + latest regulation mods
@@ -190,9 +249,8 @@ async function main(): Promise<void> {
     ? (findRegulation(regQuery) ?? getRegulation(regQuery))
     : getLatestRegulation();
 
-  // Resolve previous regulation (defaults automatically to target's baseRegulationId)
-  const prevQuery = values.previous ?? process.env.SHOWDOWN_PREVIOUS_REGULATION ?? targetReg.baseRegulationId;
-  const prevReg: RegulationDefinition | undefined = prevQuery ? (findRegulation(prevQuery) ?? getRegulation(prevQuery)) : undefined;
+  const prevOverride = values.previous;
+  const fetchChain = fetchMods ? getFetchChain(targetReg, prevOverride) : [];
 
   // Resolve Showdown git refs
   const baseRef = values['base-ref'] ?? SHOWDOWN_BASE_CONFIG.ref;
@@ -202,10 +260,11 @@ async function main(): Promise<void> {
 
   console.log('--- Showdown Source Fetcher ---');
   console.log(`Target Regulation:   ${targetReg.regulationName} (${targetReg.regulationId})`);
-  if (prevReg) {
-    console.log(`Previous Regulation: ${prevReg.regulationName} (${prevReg.regulationId}) [auto-resolved from base]`);
+  if (fetchChain.length > 1) {
+    const ancestors = fetchChain.slice(1).map((reg) => `${reg.regulationName} (${reg.regulationId})`).join(', ');
+    console.log(`Ancestor Chain:      ${ancestors}`);
   } else {
-    console.log(`Previous Regulation: None (root base)`);
+    console.log(`Ancestor Chain:      None (root base)`);
   }
   console.log(`Base Game Ref:       ${baseRef} (${fetchBase ? 'fetching' : 'not requested — use --base or --all'})`);
   console.log(`Fetched Timestamp:   ${fetchedAt}`);
@@ -232,39 +291,19 @@ async function main(): Promise<void> {
   const manifestEntries: ManifestEntry[] = [];
 
   if (fetchMods) {
-    const plannedRegulations: Array<{ reg: RegulationDefinition; sourceModId: string }> = [
-      {
-        reg: targetReg,
-        sourceModId: targetReg.showdown?.sourceModId ?? targetReg.regulationId,
-      },
-    ];
-
-    if (prevReg) {
-      plannedRegulations.push({
-        reg: prevReg,
-        sourceModId: prevReg.showdown?.sourceModId ?? prevReg.regulationId,
-      });
-    }
-
-    for (const { reg, sourceModId } of plannedRegulations) {
+    for (const reg of fetchChain) {
+      const sourceModId = sourceModIdFor(reg);
       const modRef = values.ref ?? reg.showdown?.ref ?? 'master';
-      const modBaseUrl = `https://raw.githubusercontent.com/${SHOWDOWN_BASE_CONFIG.repo}/${modRef}/data`;
+      const destDir = join(SOURCES_DIR, reg.regulationId);
 
       console.log(`Fetching mod overlays for ${reg.regulationName} (Showdown mod: "${sourceModId}", ref: ${modRef})...`);
-      for (const resource of MOD_RESOURCES) {
-        const url = `${modBaseUrl}/mods/${sourceModId}/${resource}.ts`;
-        const result = await fetchFile(url, modRef, fetchedAt);
-        const destPath = join(SOURCES_DIR, reg.regulationId, `${resource}.ts`);
+      writtenFiles.push(...await fetchModOverlay(sourceModId, destDir, modRef, fetchedAt, dryRun));
 
-        if (result.ok) {
-          const saved = writeFile(destPath, result.text, dryRun);
-          writtenFiles.push(saved);
-        } else {
-          console.log(`  INFO: ${sourceModId}/${resource}.ts has no direct override; generating empty overlay.`);
-          const saved = writeFile(destPath, emptyOverlay(resource, sourceModId, fetchedAt), dryRun);
-          writtenFiles.push(saved);
-        }
+      if (needsParentSnapshot(sourceModId)) {
+        console.log(`Fetching contemporaneous parent "${SHOWDOWN_LIVE_MOD_ID}" for ${reg.regulationName} into _parent/ (ref: ${modRef})...`);
+        writtenFiles.push(...await fetchModOverlay(SHOWDOWN_LIVE_MOD_ID, join(destDir, '_parent'), modRef, fetchedAt, dryRun));
       }
+
       manifestEntries.push({
         regulationId: reg.regulationId,
         regulationName: reg.regulationName,

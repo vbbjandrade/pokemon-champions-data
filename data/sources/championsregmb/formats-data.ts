@@ -5,7 +5,7 @@
  *
  * Remote URL: https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/mods/championsregmb/formats-data.ts
  * Git Ref:    master
- * Fetched At: 2026-09-18T02:16:34.867Z
+ * Fetched At: 2026-09-18T03:20:06.807Z
  */
 
 export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormatsDataTable = {

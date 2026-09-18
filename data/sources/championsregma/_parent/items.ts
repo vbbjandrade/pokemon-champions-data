@@ -3,1119 +3,1037 @@
  * Auto-generated source snapshot from smogon/pokemon-showdown.
  * Do not edit directly; run 'bun run fetch-sd' to regenerate.
  *
- * Remote URL: https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/mods/champions/moves.ts
- * Git Ref:    master
+ * Remote URL: https://raw.githubusercontent.com/smogon/pokemon-showdown/10f47c9de12a9eb15cc3db0fab9105a1d1f7149b/data/mods/champions/items.ts
+ * Git Ref:    10f47c9de12a9eb15cc3db0fab9105a1d1f7149b
  * Fetched At: 2026-09-18T03:20:06.807Z
  */
 
-export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
-	absorb: {
+export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
+	abilityshield: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	acid: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	aeroblast: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	anchorshot: {
-		inherit: true,
-		basePower: 90,
-	},
-	appleacid: {
-		inherit: true,
-		basePower: 90,
-	},
-	armthrust: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	astonish: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	astralbarrage: {
-		inherit: true,
-		basePower: 110,
-		isNonstandard: "Past",
-	},
-	attackorder: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	aurorabeam: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	banefulbunker: {
-		inherit: true,
-		pp: 5,
-	},
-	beakblast: {
-		inherit: true,
-		basePower: 120,
-		pp: 5,
-	},
-	belch: {
-		inherit: true,
-		onDisableMove: undefined, // no inherit
-	},
-	behemothbash: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	behemothblade: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	blazingtorque: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	bleakwindstorm: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	bloodmoon: {
-		inherit: true,
-		basePower: 130,
-		isNonstandard: "Past",
-	},
-	blueflare: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	boltbeak: {
-		inherit: true,
-		basePower: 80,
-	},
-	boltstrike: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	bonerush: {
-		inherit: true,
-		basePower: 30,
-	},
-	branchpoke: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	brine: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	bubblebeam: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	burningbulwark: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	burnup: {
+	abomasite: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	celebrate: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	chloroblast: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	clangoroussoul: {
-		inherit: true,
-		accuracy: true,
-	},
-	collisioncourse: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	combattorque: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	confide: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	confusion: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	conversion: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	conversion2: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	corrosivegas: {
+	absolite: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	crabhammer: {
-		inherit: true,
-		accuracy: 95,
-	},
-	crushclaw: {
-		inherit: true,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
-	},
-	crushgrip: {
+	absorbbulb: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	cut: {
+	adamantcrystal: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	darkvoid: {
+	adamantorb: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	defendorder: {
+	adrenalineorb: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	defensecurl: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	diamondstorm: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	direclaw: {
-		inherit: true,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
-		secondary: {
-			chance: 30,
-			onHit(target, source) {
-				const status = this.sample(['psn', 'par', 'slp']);
-				target.trySetStatus(status, source);
-			},
-		},
-	},
-	disable: {
-		inherit: true,
-		condition: {
-			inherit: true,
-			onBeforeMove(attacker, defender, move) {
-				if (!(move.isZ && move.isZOrMaxPowered) && move.id === this.effectState.move && !move.flags['cantusetwice']) {
-					this.add('cant', attacker, 'Disable', move);
-					return false;
-				}
-			},
-		},
-	},
-	disarmingvoice: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	doodle: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	doomdesire: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	doublekick: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	doubleshock: {
-		inherit: true,
-		flags: { contact: 1, protect: 1, mirror: 1, punch: 1 },
-	},
-	dragonascent: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	dragonbreath: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	dragoncheer: {
-		inherit: true,
-		flags: { bypasssub: 1, allyanim: 1, metronome: 1, sound: 1 },
-	},
-	dragonclaw: {
-		inherit: true,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
-	},
-	dragonenergy: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	dragonhammer: {
-		inherit: true,
-		basePower: 100,
-		isNonstandard: "Past",
-	},
-	dreameater: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	dynamaxcannon: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	echoedvoice: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	electrify: {
+	aerodactylite: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	electrodrift: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	ember: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	encore: {
-		inherit: true,
-		condition: {
-			inherit: true,
-			onStart(target) {
-				let move: Move | ActiveMove | null = target.lastMove;
-				if (!move || target.volatiles['dynamax']) return false;
-
-				// Encore only works on Max Moves if the base move is not itself a Max Move
-				if (move.isMax && move.baseMove) move = this.dex.moves.get(move.baseMove);
-				const moveSlot = target.getMoveData(move.id);
-				if (move.isZ || move.isMax || move.flags['failencore'] || !moveSlot || moveSlot.pp <= 0) {
-					// it failed
-					return false;
-				}
-				this.effectState.move = move.id;
-				this.add('-start', target, 'Encore');
-				const action = this.queue.willMove(target);
-				if (!action) {
-					this.effectState.duration!++;
-					// TODO: this is a quick fix, check if move priority is changed when Mental Herb cures Encore
-				} else if (action.moveid !== move.id && !target.hasItem('mentalherb')) {
-					const priority = action.priority -
-						this.dex.moves.get(action.moveid).priority +
-						this.dex.moves.get(move.id).priority;
-					this.queue.changeAction(target, {
-						choice: 'move',
-						// target: undefined,
-						// targetLoc: undefined,
-						moveid: move.id,
-						order: action.order,
-					});
-					this.queue.willMove(target)!.priority = priority;
-				}
-			},
-		},
-	},
-	esperwing: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	fairywind: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	fakeout: {
-		inherit: true,
-		onDisableMove(pokemon) {
-			if (pokemon.activeMoveActions) {
-				pokemon.disableMove('fakeout');
-			}
-		},
-	},
-	falsesurrender: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	falseswipe: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	fierywrath: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	filletaway: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	firelash: {
-		inherit: true,
-		basePower: 90,
-	},
-	firepledge: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	firstimpression: {
-		inherit: true,
-		basePower: 100,
-		onDisableMove(pokemon) {
-			if (pokemon.activeMoveActions) {
-				pokemon.disableMove('firstimpression');
-			}
-		},
-	},
-	fishiousrend: {
-		inherit: true,
-		basePower: 80,
-	},
-	flamewheel: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	fleurcannon: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	floralhealing: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	forcepalm: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	freezedry: {
-		inherit: true,
-		secondary: undefined, // no inherit
-	},
-	freezeshock: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	freezingglare: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	furyattack: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	furycutter: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	furyswipes: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	fusionbolt: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	fusionflare: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	geargrind: {
-		inherit: true,
-		accuracy: 90,
-		basePower: 60,
-	},
-	glaciallance: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	glaciate: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	grasspledge: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	gravapple: {
-		inherit: true,
-		basePower: 90,
-	},
-	growl: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	growth: {
-		inherit: true,
-		type: "Grass",
-	},
-	gust: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	happyhour: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	harden: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	headbutt: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	heartswap: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	holdback: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	holdhands: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	honeclaws: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	hornattack: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	howl: {
-		inherit: true,
-		flags: { snatch: 1, sound: 1, bypasssub: 1, metronome: 1 },
-	},
-	hydrosteam: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	hyperdrill: {
-		inherit: true,
-		basePower: 120,
-		isNonstandard: "Past",
-	},
-	hyperspacefury: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	hyperspacehole: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	iceburn: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	incinerate: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	infernalparade: {
-		inherit: true,
-		basePower: 65,
-	},
-	ironhead: {
-		inherit: true,
-		secondary: {
-			chance: 20,
-			volatileStatus: 'flinch',
-		},
-	},
-	ivycudgel: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	judgment: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	junglehealing: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	kingsshield: {
-		inherit: true,
-		isNonstandard: null,
-		pp: 5,
-	},
-	leafage: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	leer: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	lick: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	lightofruin: {
+	aggronite: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	lunarblessing: {
+	aguavberry: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	lunardance: {
+	airballoon: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	lusterpurge: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	magicalleaf: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	magicaltorque: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	magmastorm: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	makeitrain: {
-		inherit: true,
-		accuracy: 95,
-		self: {
-			boosts: {
-				spa: -2,
-			},
-		},
-	},
-	malignantchain: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	megadrain: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	megapunch: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	metalclaw: {
-		inherit: true,
-		isNonstandard: "Past",
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
-	},
-	meteorassault: {
-		inherit: true,
-		basePower: 170,
-		isNonstandard: null,
-	},
-	metronome: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	mightycleave: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	milkdrink: {
-		inherit: true,
-		target: "adjacentAllyOrSelf",
-	},
-	mimic: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	mist: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	mistball: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	moonblast: {
-		inherit: true,
-		secondary: {
-			chance: 10,
-			boosts: {
-				spa: -1,
-			},
-		},
-	},
-	moongeistbeam: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	mountaingale: {
-		inherit: true,
-		basePower: 120,
-	},
-	mysticalpower: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	nightdaze: {
-		inherit: true,
-		basePower: 90,
-	},
-	nightslash: {
-		inherit: true,
-		pp: 20,
-	},
-	nihillight: {
-		inherit: true,
-		pp: 5,
-	},
-	noxioustorque: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	obstruct: {
-		inherit: true,
-		pp: 5,
-	},
-	octolock: {
+	alakazite: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	orderup: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	originpulse: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	payday: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	peck: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	photongeyser: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	playnice: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	poisongas: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	poisonsting: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	poisontail: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	powdersnow: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	powershift: {
+	altarianite: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	precipiceblades: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	present: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	prismaticlaser: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	protect: {
-		inherit: true,
-		pp: 5,
-	},
-	psybeam: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	psyblade: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	psychoboost: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	psyshieldbash: {
-		inherit: true,
-		basePower: 90,
-	},
-	psystrike: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	purify: {
-		inherit: true,
-		pp: 5,
-	},
-	ragefist: {
-		inherit: true,
-		// Hit counter reset is implemented in Pokemon#clearVolatile
-	},
-	razorleaf: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	relicsong: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	retaliate: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	revelationdance: {
-		inherit: true,
-		basePower: 100,
-		isNonstandard: "Past",
-	},
-	roaroftime: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	rocksmash: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	rockthrow: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	rollout: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	ruination: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	sacredfire: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	saltcure: {
-		inherit: true,
-		condition: {
-			inherit: true,
-			onResidual(pokemon) {
-				this.damage(pokemon.baseMaxhp / (pokemon.hasType(['Water', 'Steel']) ? 8 : 16));
-			},
-		},
-	},
-	sandattack: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	sandsearstorm: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	sandstorm: {
-		inherit: true,
-		pp: 5,
-	},
-	scratch: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	secretsword: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	seedflare: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	shadowclaw: {
-		inherit: true,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
-	},
-	shadowforce: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	shelltrap: {
-		inherit: true,
-		pp: 10,
-	},
-	shockwave: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	shoreup: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	silktrap: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	sketch: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	slam: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	slash: {
-		inherit: true,
-		basePower: 80,
-	},
-	sludge: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	smog: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	smokescreen: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	snaptrap: {
-		inherit: true,
-		isNonstandard: null,
-		type: "Steel",
-	},
-	snipeshot: {
-		inherit: true,
-		basePower: 85,
-	},
-	snowscape: {
-		inherit: true,
-		pp: 5,
-	},
-	spacialrend: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	spark: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	spikyshield: {
-		inherit: true,
-		pp: 5,
-	},
-	spinout: {
-		inherit: true,
-		isNonstandard: "Past",
-		pp: 10,
-	},
-	spiritshackle: {
-		inherit: true,
-		basePower: 90,
-	},
-	splash: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	springtidestorm: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	steameruption: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	stomp: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	stormthrow: {
+	ampharosite: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	strangesteam: {
+	apicotberry: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	strength: {
+	assaultvest: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	strengthsap: {
-		inherit: true,
-		pp: 5,
-	},
-	stuffcheeks: {
-		inherit: true,
-		onDisableMove: undefined, // no inherit
-	},
-	sunsteelstrike: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	supersonic: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	surgingstrikes: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	swift: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	syrupbomb: {
-		inherit: true,
-		accuracy: 90,
-	},
-	tachyoncutter: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	tackle: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	tailglow: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	tailwhip: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	takedown: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	takeheart: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	tarshot: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	teleport: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	terablast: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	terastarstorm: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	thundercage: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	thunderclap: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	thunderouskick: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	thundershock: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	toxicthread: {
-		inherit: true,
-		boosts: {
-			spe: -2,
-		},
-	},
-	trickortreat: {
+	audinite: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	tripledive: {
-		inherit: true,
-		basePower: 35,
-		isNonstandard: "Past",
-	},
-	triplekick: {
+	auspiciousarmor: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	tropkick: {
+	banettite: {
 		inherit: true,
-		basePower: 85,
+		isNonstandard: null,
 	},
-	twister: {
+	barbaracite: {
 		inherit: true,
-		isNonstandard: "Past",
+		isNonstandard: null,
 	},
-	vcreate: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	victorydance: {
+	beastball: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	vinewhip: {
+	beedrillite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	berrysweet: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	visegrip: {
+	bignugget: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	watergun: {
+	bindingband: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	waterpledge: {
+	blacksludge: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	wickedblow: {
+	blastoisinite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	blazikenite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	blunderpolicy: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	wickedtorque: {
+	boosterenergy: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	wildboltstorm: {
+	bottlecap: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	wingattack: {
+	cameruptite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	cellbattery: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	wish: {
+	chandelurite: {
 		inherit: true,
-		pp: 5,
+		isNonstandard: null,
 	},
-	withdraw: {
+	charizarditex: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	charizarditey: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	chesnaughtite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	chimechite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	chippedpot: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	workup: {
+	choiceband: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	choicespecs: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	clearamulet: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	clefablite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	cloversweet: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	cornerstonemask: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	covertcloak: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	crabominite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	crackedpot: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	custapberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	darkranite: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	dawnstone: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	delphoxite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	destinyknot: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	diveball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	dracoplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	dragalgite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	dragoninite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	dragonscale: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	drampanite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	dreadplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	dreamball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	dubiousdisc: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	duskball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	duskstone: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	earthplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	eelektrossite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	ejectbutton: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	ejectpack: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	electirizer: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	electricseed: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	emboarite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	enigmaberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	eviolite: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	excadrite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	falinksite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	fastball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	feraligite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	figyberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	firestone: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	fistplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	flameorb: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	flameplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	floatstone: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	floettite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	flowersweet: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	friendball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	froslassite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	galaricacuff: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	galaricawreath: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	galladite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	ganlonberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	garchompite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	gardevoirite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	gengarite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	glalitite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	glimmoranite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	goldbottlecap: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	golisopite: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	golurkite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	grassyseed: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	greatball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	greninjite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	grepaberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	gripclaw: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	griseouscore: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	griseousorb: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	gyaradosite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	hawluchanite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	healball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	hearthflamemask: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	heatranite: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	heavyball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	heavydutyboots: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	heracronite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	hondewberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	houndoominite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	iapapaberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	icestone: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	icicleplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	insectplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	ironplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	jabocaberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	kangaskhanite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	keeberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	kelpsyberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	laggingtail: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	lansatberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	leafstone: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	levelball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	liechiberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	loadeddice: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	lopunnite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	loveball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	lovesweet: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	lucarionite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	luminousmoss: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	lureball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	lustrousglobe: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	lustrousorb: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	luxuryball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	magmarizer: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	magoberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	malamarite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	maliciousarmor: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	manectite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	marangaberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	masterball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	masterpieceteacup: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	mawilite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	meadowplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	medichamite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	meganiumite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	meowsticite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	metalalloy: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	metagrossite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	micleberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	mindplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	mirrorherb: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	mistyseed: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	moonball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	moonstone: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	nestball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	netball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	normalgem: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	ovalstone: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	parkball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	petayaberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	pidgeotite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	pinsirite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	pixieplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	pokeball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	pomegberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	poweranklet: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	powerband: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	powerbelt: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	powerbracer: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	powerherb: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	powerlens: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	powerweight: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	premierball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	prettyfeather: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	prismscale: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	protectivepads: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	protector: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	psychicseed: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	punchingglove: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	pyroarite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	qualotberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	quickball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	raichunitex: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	raichunitey: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	rarebone: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	razorclaw: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	razorfang: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	reapercloth: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	redcard: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	repeatball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	ribbonsweet: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	ringtarget: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	rockyhelmet: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	roomservice: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	rowapberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	rustedshield: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	rustedsword: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	sablenite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	safariball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	safetygoggles: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	salacberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	sceptilite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	scizorite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	scolipite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	scovillainite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	scraftinite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	sharpedonite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	shinystone: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	skarmorite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	skyplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	slowbronite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	snowball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	souldew: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	spelltag: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	splashplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	spookyplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	sportball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	staraptite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	starfberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	starminite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	starsweet: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	steelixite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	stickybarb: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	stoneplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	strangeball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	strawberrysweet: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	sunstone: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	sweetapple: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	syrupyapple: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	swampertite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	tamatoberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	tartapple: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	terrainextender: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	throatspray: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	thunderstone: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	timerball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	toxicorb: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	toxicplate: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	tyranitarite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	ultraball: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	unremarkableteacup: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	upgrade: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	utilityumbrella: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	venusaurite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	victreebelite: {
+		inherit: true,
+		isNonstandard: null,
+	},
+	waterstone: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	weaknesspolicy: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	wellspringmask: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	wikiberry: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	zapplate: {
 		inherit: true,
 		isNonstandard: "Past",
 	},

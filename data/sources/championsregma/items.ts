@@ -5,7 +5,7 @@
  *
  * Remote URL: https://raw.githubusercontent.com/smogon/pokemon-showdown/10f47c9de12a9eb15cc3db0fab9105a1d1f7149b/data/mods/championsregma/items.ts
  * Git Ref:    10f47c9de12a9eb15cc3db0fab9105a1d1f7149b
- * Fetched At: 2026-09-18T02:15:56.352Z
+ * Fetched At: 2026-09-18T03:20:06.807Z
  */
 
 export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {

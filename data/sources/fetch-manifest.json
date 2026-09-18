@@ -1,7 +1,7 @@
 {
   "showdownRepo": "smogon/pokemon-showdown",
   "baseRef": "master",
-  "fetchedAt": "2026-09-18T02:16:34.867Z",
+  "fetchedAt": "2026-09-18T03:20:06.807Z",
   "targetRegulation": "championsregmc",
   "baseFetched": false,
   "regulations": [
@@ -18,6 +18,13 @@
       "sourceModId": "championsregmb",
       "ref": "master",
       "historyUrl": "https://github.com/smogon/pokemon-showdown/commits/master/data/mods/championsregmb"
+    },
+    {
+      "regulationId": "championsregma",
+      "regulationName": "Reg M-A",
+      "sourceModId": "championsregma",
+      "ref": "10f47c9de12a9eb15cc3db0fab9105a1d1f7149b",
+      "historyUrl": "https://github.com/smogon/pokemon-showdown/commits/master/data/mods/championsregma"
     }
   ],
   "files": [
@@ -30,6 +37,21 @@
     "data/sources/championsregmb/learnsets.ts",
     "data/sources/championsregmb/items.ts",
     "data/sources/championsregmb/moves.ts",
-    "data/sources/championsregmb/abilities.ts"
+    "data/sources/championsregmb/abilities.ts",
+    "data/sources/championsregmb/_parent/formats-data.ts",
+    "data/sources/championsregmb/_parent/learnsets.ts",
+    "data/sources/championsregmb/_parent/items.ts",
+    "data/sources/championsregmb/_parent/moves.ts",
+    "data/sources/championsregmb/_parent/abilities.ts",
+    "data/sources/championsregma/formats-data.ts",
+    "data/sources/championsregma/learnsets.ts",
+    "data/sources/championsregma/items.ts",
+    "data/sources/championsregma/moves.ts",
+    "data/sources/championsregma/abilities.ts",
+    "data/sources/championsregma/_parent/formats-data.ts",
+    "data/sources/championsregma/_parent/learnsets.ts",
+    "data/sources/championsregma/_parent/items.ts",
+    "data/sources/championsregma/_parent/moves.ts",
+    "data/sources/championsregma/_parent/abilities.ts"
   ]
 }

@@ -216,17 +216,36 @@ function resolveItems(master: Record<string, RepoItem>, mods: ReturnType<typeof 
   return result;
 }
 
-async function importMod(regulation: RegulationDefinition, parent?: RegulationDefinition) {
-  const load = async (entry: RegulationDefinition) => {
-    const source = `../data/sources/${entry.regulationId}`;
-    const [{ FormatsData }, { Learnsets }, { Moves }, { Items }, { Abilities }] = await Promise.all([
-    import(`${source}/formats-data.ts`), import(`${source}/learnsets.ts`), import(`${source}/moves.ts`), import(`${source}/items.ts`), import(`${source}/abilities.ts`),
-    ]);
-    return { formatsData: FormatsData as RawRecord, learnsets: Learnsets as RawRecord, moves: Moves as RawRecord, items: Items as RawRecord, abilities: Abilities as RawRecord };
+function parentSnapshotDir(regulationId: string): string {
+  return join(SOURCES_DIR, regulationId, '_parent');
+}
+
+function hasParentSnapshot(regulationId: string): boolean {
+  return MOD_FILES.every((file) => existsSync(join(parentSnapshotDir(regulationId), file)));
+}
+
+async function loadModDir(source: string) {
+  const [{ FormatsData }, { Learnsets }, { Moves }, { Items }, { Abilities }] = await Promise.all([
+    import(`${source}/formats-data.ts`),
+    import(`${source}/learnsets.ts`),
+    import(`${source}/moves.ts`),
+    import(`${source}/items.ts`),
+    import(`${source}/abilities.ts`),
+  ]);
+  return {
+    formatsData: FormatsData as RawRecord,
+    learnsets: Learnsets as RawRecord,
+    moves: Moves as RawRecord,
+    items: Items as RawRecord,
+    abilities: Abilities as RawRecord,
   };
-  const mod = await load(regulation);
-  const inherited = parent
-    ? await load(parent)
+}
+
+async function importMod(regulation: RegulationDefinition) {
+  const mod = await loadModDir(`../data/sources/${regulation.regulationId}`);
+  const useParentSnapshot = hasParentSnapshot(regulation.regulationId);
+  const inherited = useParentSnapshot
+    ? await loadModDir(`../data/sources/${regulation.regulationId}/_parent`)
     : await (async () => {
       const [{ FormatsData }, { Learnsets }] = await Promise.all([
         import('../data/sources/formats-data-main.ts'),
@@ -250,9 +269,9 @@ async function importMod(regulation: RegulationDefinition, parent?: RegulationDe
   return {
     formatsData: overlay(inherited.formatsData, mod.formatsData),
     learnsets: overlay(inherited.learnsets, mod.learnsets),
-    moves: parent ? overlay(inherited.moves, mod.moves) : mod.moves,
-    items: parent ? overlay(inherited.items, mod.items) : mod.items,
-    abilities: parent ? overlay(inherited.abilities, mod.abilities) : mod.abilities,
+    moves: useParentSnapshot ? overlay(inherited.moves, mod.moves) : mod.moves,
+    items: useParentSnapshot ? overlay(inherited.items, mod.items) : mod.items,
+    abilities: useParentSnapshot ? overlay(inherited.abilities, mod.abilities) : mod.abilities,
   };
 }
 
@@ -279,8 +298,6 @@ function makeDelta(regulation: RegulationDefinition, sourceModId: string, base: 
     if (!rawLearnset) throw new Error(`${regulation.regulationId}: missing learnset for "${id}" (mapped to "${sourceId}").`);
     const learnset = { dexNumber: pokemon.dexNumber, form: pokemon.form, moves: Object.keys(rawLearnset).sort(), sources: [SHOWDOWN_SOURCE] } satisfies RepoLearnset;
     resolvedLearnsets[id] = learnset;
-    const learnsetDelta = diffEntry(base.learnsets[id] as RawRecord | undefined, learnset);
-    if (!base.learnsets[id] || Object.keys(learnsetDelta).length > 0) learnsets[id] = learnsetDelta;
   }
   for (const id of baseLegalSpecies) {
     if (!legalSpecies.has(id)) {
@@ -293,6 +310,17 @@ function makeDelta(regulation: RegulationDefinition, sourceModId: string, base: 
   // Keep master records available for a later regulation to re-add unchanged
   // resources. Availability is tracked separately by the corresponding set.
   const resolvedMoves = resolveMoves({ ...master.moves, ...base.moves }, parseMoveMods(mod.moves), text.moves, textModId);
+  for (const [id, learnset] of Object.entries(resolvedLearnsets)) {
+    const knownMoves = learnset.moves.filter((moveId) => resolvedMoves[moveId]);
+    if (knownMoves.length !== learnset.moves.length) {
+      const omitted = learnset.moves.filter((moveId) => !resolvedMoves[moveId]);
+      console.warn(`${regulation.regulationId}: omitting unknown moves from "${id}": ${omitted.join(', ')}`);
+    }
+    const next = { ...learnset, moves: knownMoves };
+    resolvedLearnsets[id] = next;
+    const learnsetDelta = diffEntry(base.learnsets[id] as RawRecord | undefined, next);
+    if (!base.learnsets[id] || Object.keys(learnsetDelta).length > 0) learnsets[id] = learnsetDelta;
+  }
   const availableMoves = new Set(Object.values(resolvedLearnsets).flatMap((learnset) => learnset.moves));
   const moveDeltas = availabilityDelta(
     Object.fromEntries(Object.entries(base.moves).map(([id, move]) => [id, withoutNonstandard(move)])),
@@ -380,9 +408,9 @@ function resolveStoredDelta(regulation: RegulationDefinition, base: ResolvedData
 async function main(): Promise<void> {
   const { values } = parseArgs({ args: process.argv.slice(2), options: { 'dry-run': { type: 'boolean', default: false }, regulation: { type: 'string' } } });
   const dryRun = Boolean(values['dry-run']);
-  for (const file of MAIN_FILES) if (!existsSync(join(SOURCES_DIR, file))) throw new Error(`Missing data/sources/${file}. Run scripts/fetch_sources.sh first.`);
+  for (const file of MAIN_FILES) if (!existsSync(join(SOURCES_DIR, file))) throw new Error(`Missing data/sources/${file}. Run bun run fetch-sd --base first.`);
   const manifestPath = join(SOURCES_DIR, 'fetch-manifest.json');
-  if (!existsSync(manifestPath)) throw new Error('Missing data/sources/fetch-manifest.json. Run scripts/fetch_sources.sh first.');
+  if (!existsSync(manifestPath)) throw new Error('Missing data/sources/fetch-manifest.json. Run bun run fetch-sd first.');
   const manifest = loadJson<SourceManifest>(manifestPath);
   const sourceModIds = new Map(manifest.regulations.map((entry) => [entry.regulationId, entry.sourceModId]));
   if (values.regulation && !sourceModIds.has(values.regulation) && !sourceModIds.has(getRegulation(values.regulation).regulationId)) {
@@ -393,7 +421,11 @@ async function main(): Promise<void> {
     if (!regulation) {
       throw new Error(`Invalid data/sources/fetch-manifest.json: "${regulationId}" is not a configured repository regulation. Run fetch-sd with SHOWDOWN_CURRENT_REGULATION and SHOWDOWN_PREVIOUS_REGULATION set to repository IDs (for example, championsregmb and championsregma), not Showdown source-mod names such as "champions".`);
     }
-    for (const file of MOD_FILES) if (!existsSync(join(SOURCES_DIR, regulation.regulationId, file))) throw new Error(`Missing data/sources/${regulation.regulationId}/${file}. Run scripts/fetch_sources.sh first.`);
+    for (const file of MOD_FILES) if (!existsSync(join(SOURCES_DIR, regulation.regulationId, file))) throw new Error(`Missing data/sources/${regulation.regulationId}/${file}. Run bun run fetch-sd first.`);
+    const sourceModId = sourceModIds.get(regulationId)!;
+    if (sourceModId !== 'champions' && !hasParentSnapshot(regulation.regulationId)) {
+      throw new Error(`Missing contemporaneous parent snapshot at data/sources/${regulation.regulationId}/_parent/. Run bun run fetch-sd so archived mods do not inherit the live Champions folder.`);
+    }
   }
   console.log(`Using Showdown base ref ${manifest.baseRef}; fetched regulations: ${[...sourceModIds.entries()].map(([id, mod]) => `${id} (${mod})`).join(', ')}`);
 
@@ -459,10 +491,7 @@ async function main(): Promise<void> {
     console.log(`Generating ${regulation.regulationId} delta...`);
     const deltaPath = join(ROOT_DIR, 'data', regulation.directoryName, 'delta.json');
     const sourceModId = sourceModIds.get(regulation.regulationId)!;
-    const showdownBase = sourceModId === 'champions'
-      ? undefined
-      : REGULATIONS.find((entry) => sourceModIds.get(entry.regulationId) === 'champions');
-    const generated = makeDelta(regulation, sourceModId, base, masterResolved, await importMod(regulation, showdownBase), { moves: MovesText as RawRecord, abilities: AbilitiesText as RawRecord, items: ItemsText as RawRecord });
+    const generated = makeDelta(regulation, sourceModId, base, masterResolved, await importMod(regulation), { moves: MovesText as RawRecord, abilities: AbilitiesText as RawRecord, items: ItemsText as RawRecord });
     writeJson(deltaPath, preserveCustomDeltaValues(generated.delta, deltaPath), dryRun);
     resolvedByRegulation.set(regulation.regulationId, generated.resolved);
     generatedRegulations.add(regulation.regulationId);

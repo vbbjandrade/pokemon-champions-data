@@ -135,6 +135,15 @@ function compile(regulation: RegulationDefinition): void {
     learnsets[id] = learnset;
   }
 
+  const omittedMoveIds = new Set<string>();
+  for (const [id, learnset] of Object.entries(learnsets)) {
+    const knownMoves = learnset.moves.filter((moveId) => resolvedMoves[moveId]);
+    for (const moveId of learnset.moves) if (!resolvedMoves[moveId]) omittedMoveIds.add(moveId);
+    learnsets[id] = { ...learnset, moves: knownMoves };
+  }
+  if (omittedMoveIds.size > 0) {
+    console.warn(`${regulation.regulationId}: omitting unknown moves from compiled learnsets: ${[...omittedMoveIds].sort().join(', ')}`);
+  }
   const legalMoveIds = new Set(Object.values(learnsets).flatMap((learnset) => learnset.moves));
   const legalAbilityIds = new Set(Object.values(roster).flatMap((pokemon) => Object.values(pokemon.abilities ?? {})));
 

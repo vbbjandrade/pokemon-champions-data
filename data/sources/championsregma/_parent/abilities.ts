@@ -3,8 +3,8 @@
  * Auto-generated source snapshot from smogon/pokemon-showdown.
  * Do not edit directly; run 'bun run fetch-sd' to regenerate.
  *
- * Remote URL: https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/mods/champions/abilities.ts
- * Git Ref:    master
+ * Remote URL: https://raw.githubusercontent.com/smogon/pokemon-showdown/10f47c9de12a9eb15cc3db0fab9105a1d1f7149b/data/mods/champions/abilities.ts
+ * Git Ref:    10f47c9de12a9eb15cc3db0fab9105a1d1f7149b
  * Fetched At: 2026-09-18T03:20:06.807Z
  */
 
@@ -70,23 +70,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 	},
-	runaway: {
-		inherit: true,
-		onTrapPokemonPriority: -10,
-		onTrapPokemon(pokemon) {
-			pokemon.trapped = false;
-		},
-		onMaybeTrapPokemonPriority: -10,
-		onMaybeTrapPokemon(pokemon) {
-			pokemon.maybeTrapped = false;
-		},
-	},
 	spicyspray: {
 		inherit: true,
 		isNonstandard: null,
 	},
 	unseenfist: {
-		inherit: true,
 		onModifyMove: undefined, // no inherit
 		onHitProtect(source, target, move) {
 			if (move.flags['contact']) {
@@ -94,5 +82,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return false;
 			}
 		},
+		inherit: true,
 	},
 };
