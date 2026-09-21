@@ -419,40 +419,6 @@
       "Steel": 1.0,
       "Stellar": 1.0,
       "Water": 0.5
-    },
-    "brn": {
-      "Fire": 0.0
-    },
-    "frz": {
-      "Ice": 0.0
-    },
-    "hail": {
-      "Ice": 0.0
-    },
-    "par": {
-      "Electric": 0.0
-    },
-    "powder": {
-      "Grass": 0.0
-    },
-    "prankster": {
-      "Dark": 0.0
-    },
-    "psn": {
-      "Poison": 0.0,
-      "Steel": 0.0
-    },
-    "sandstorm": {
-      "Ground": 0.0,
-      "Rock": 0.0,
-      "Steel": 0.0
-    },
-    "tox": {
-      "Poison": 0.0,
-      "Steel": 0.0
-    },
-    "trapped": {
-      "Ghost": 0.0
     }
   },
   "legend": {

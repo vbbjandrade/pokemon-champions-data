@@ -1,0 +1,1 @@
+TODO: Document singles and doubles rulesets (https://www.pokemon-zone.com/champions/regulations/).

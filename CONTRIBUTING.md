@@ -56,7 +56,7 @@ Champions replaces EVs with the **SP (Stat Points)** system (66 total SP, max 32
 
 ## Editing Regulation Deltas (delta.json)
 
-Manual balance adjustments, legal rosters, and regulation-specific patches are stored in `data/<regulation>/delta.json`. When making changes, keep in mind how our build engine processes overrides:
+Manual balance adjustments, legal rosters, and regulation-specific patches are stored in `data/regulations/<regulation>/delta.json`. When making changes, keep in mind how our build engine processes overrides:
 
 > **`baseStats` is the sole nested merge field; all other properties replace wholesale.**
 
@@ -93,7 +93,7 @@ For larger contributions or direct data fixes, pull requests are welcome.
    ```bash
    git checkout -b fix/courtchange-pp
    ```
-3. Edit the relevant regulation delta (`data/regm-*/delta.json`) or mechanics file (`data/mechanics/`).
+3. Edit the relevant regulation delta (`data/regulations/<regulation>/delta.json`) or mechanics file (`data/mechanics/`).
 4. Validate your changes locally:
    ```bash
    bun run typecheck

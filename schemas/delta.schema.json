@@ -8,7 +8,7 @@
       "type": "string",
       "description": "Path or URL to this JSON schema."
     },
-    "regulationId": {
+    "id": {
       "type": "string",
       "description": "Unique identifier for the regulation (e.g. 'championsregmc')."
     },
@@ -16,7 +16,7 @@
       "type": "string",
       "description": "Display name of the regulation (e.g. 'Reg M-C')."
     },
-    "baseRegulationId": {
+    "previousRegulationId": {
       "type": ["string", "null"],
       "description": "Preceding regulation this delta builds on, or null if deriving directly from master."
     },
@@ -37,7 +37,6 @@
           "type": "object",
           "description": "Legal species list and overrides. An empty object keeps the base Pokémon unchanged, a populated object replaces supplied fields (with baseStats partial-merging), and null removes the species from legality.",
           "additionalProperties": {
-            "type": ["object", "null"],
             "properties": {
               "dexNumber": { "type": "integer" },
               "name": { "type": "string" },
@@ -62,7 +61,7 @@
               },
               "baseStats": {
                 "type": "object",
-                "description": "PARTIAL MERGE: Specify ONLY the modified stat(s). Unspecified stats are inherited from the base.",
+                "description": "Object replacement: redeclare all stats if any change.",
                 "properties": {
                   "hp": { "type": "integer", "description": "Base HP stat." },
                   "atk": { "type": "integer", "description": "Base Attack stat." },
@@ -86,14 +85,18 @@
           "type": "object",
           "description": "Regulation learnsets. Empty object or populated object updates/adds, null removes.",
           "additionalProperties": {
-            "type": ["object", "null"],
+						"type": ["object", "null"],
             "properties": {
-              "dexNumber": { "type": "integer" },
-              "form": { "type": ["string", "null"] },
+              "form": { 
+								"type": ["string", "null"] 
+							},
               "moves": {
-                "type": "array",
-                "description": "Array of learned move IDs.",
-                "items": { "type": "string" }
+                "type": "object",
+                "description": "Key-value pair of learned move IDs.",
+								"additionalProperties": {
+									"type": "boolean",
+									"description": "Move diff. Boolean, true if adding a move to the learnset, false if removing."
+								}
               },
               "sources": {
                 "type": "array",
@@ -107,7 +110,6 @@
           "type": "object",
           "description": "Move attribute overrides. Top-level scalar properties replace only that field; flags replace wholesale.",
           "additionalProperties": {
-            "type": ["object", "null"],
             "properties": {
               "name": { "type": "string" },
               "type": { "type": "string" },
@@ -122,7 +124,8 @@
               "flags": {
                 "type": "object",
                 "description": "WHOLESALE REPLACEMENT: If modifying flags, you MUST redeclare all active flags that the move possesses.",
-                "additionalProperties": true
+                "additionalProperties": true,
+								"_comment": "TODO: specify and define known and accepted flags for moves"
               },
               "sources": {
                 "type": "array",
@@ -181,6 +184,6 @@
       "additionalProperties": false
     }
   },
-  "required": ["regulationId", "regulationName", "baseRegulationId", "overrides"],
+  "required": ["id", "regulationName", "previousRegulationId", "overrides"],
   "additionalProperties": false
 }

@@ -5826,7 +5826,7 @@
   "slowbronite": {
     "name": "Slowbronite",
     "desc": null,
-    "shortDesc": "If held by a Slowbro, this item allows it to Mega Evolve in battle.",
+    "shortDesc": "If held by a Slowbro (not Galarian Slowbro), this item allows it to Mega Evolve.",
     "flags": {
       "megaStone": {
         "Slowbro": "Slowbro-Mega"

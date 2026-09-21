@@ -3,11 +3,10 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "fetch-sd": "bun run scripts/fetch_sources.ts",
-    "sync-sd-types": "./scripts/sync_showdown_types.sh",
-    "update": "bun run scripts/update_from_showdown.ts",
-    "build-regulations": "bun run scripts/build_regulations.ts",
-    "generate": "bun run scripts/update_from_showdown.ts && bun run scripts/build_regulations.ts",
+    "fetch-sd": "bun run scripts/showdown/fetch_sources.ts",
+    "update-deltas-sd": "bun run scripts/showdown/update_deltas.ts",
+    "generate": "bun run scripts/build_regulations.ts",
+    "sync-types-sd": "bun run scripts/showdown/sync_types.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

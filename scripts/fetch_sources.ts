@@ -15,17 +15,16 @@ import { parseArgs } from 'node:util';
 
 import {
   SHOWDOWN_BASE_CONFIG,
-  findRegulation,
   getLatestRegulation,
   getRegulation,
   type RegulationDefinition,
-} from './regulations.ts';
+} from '../utils/regulations.ts';
 
 const ROOT_DIR = resolve(import.meta.dir, '..');
 const SOURCES_DIR = join(ROOT_DIR, 'data', 'sources');
 
 type ManifestEntry = {
-  regulationId: string;
+  id: string;
   regulationName: string;
   sourceModId: string;
   ref: string;
@@ -64,9 +63,10 @@ function formatHeader(remoteUrl: string, showdownRef: string, fetchedAt: string)
  * Auto-generated source snapshot from smogon/pokemon-showdown.
  * Do not edit directly; run 'bun run fetch-sd' to regenerate.
  *
- * Remote URL: ${remoteUrl}
  * Git Ref:    ${showdownRef}
+ * Raw Remote URL: ${remoteUrl}
  * Fetched At: ${fetchedAt}
+ * Commit Tree URL:	https://github.com/smogon/pokemon-showdown/tree/${showdownRef}
  */
 `;
 }
@@ -110,30 +110,26 @@ async function fetchFile(
   }
 }
 
-function sourceModIdFor(reg: RegulationDefinition): string {
-  return reg.showdown?.sourceModId ?? reg.regulationId;
-}
-
 function needsParentSnapshot(sourceModId: string): boolean {
   return sourceModId !== SHOWDOWN_LIVE_MOD_ID;
 }
 
 function getFetchChain(target: RegulationDefinition, prevOverride?: string): RegulationDefinition[] {
   if (prevOverride) {
-    const previous = findRegulation(prevOverride) ?? getRegulation(prevOverride);
-    return previous.regulationId === target.regulationId ? [target] : [target, previous];
+    const previous = getRegulation(prevOverride);
+    return previous.id === target.id ? [target] : [target, previous];
   }
 
   const chain: RegulationDefinition[] = [];
   const visited = new Set<string>();
   let current: RegulationDefinition | undefined = target;
   while (current) {
-    if (visited.has(current.regulationId)) {
-      throw new Error(`Circular regulation base detected at "${current.regulationId}".`);
+    if (visited.has(current.id)) {
+      throw new Error(`Circular regulation base detected at "${current.id}".`);
     }
-    visited.add(current.regulationId);
+    visited.add(current.id);
     chain.push(current);
-    current = current.baseRegulationId ? getRegulation(current.baseRegulationId) : undefined;
+    current = current.previousRegulationId ? getRegulation(current.previousRegulationId) : undefined;
   }
   return chain;
 }
@@ -184,18 +180,18 @@ downloaded when explicitly requested with --base or --all.
 
 Archived Showdown mods (anything other than the live "champions" folder) also
 download data/mods/champions/ from the same commit into
-data/sources/<regulationId>/_parent/. Overlay resolution uses that snapshot
+data/sources/<id>/_parent/. Overlay resolution uses that snapshot
 instead of the live Champions mod.
 
 Arguments:
-  [regulation]           Target regulation ID (e.g. championsregmc) or folder (e.g. regm-c).
+  [regulation]           Target regulation ID (e.g. championsregmc) or folder (e.g. m-c).
                          Defaults to the latest regulation in scripts/regulations.ts.
                          Also fetches every ancestor in the configured base chain.
 
 Options:
   -r, --regulation <id>  Same as positional argument: specify target regulation.
   -p, --previous <id>    Fetch only the target plus this regulation, instead of
-                         walking the full baseRegulationId chain.
+                         walking the full previousRegulationId chain.
       --ref <sha|branch> Override Showdown git ref/commit SHA for regulation mod overlays.
       --base             Fetch base game files using SHOWDOWN_BASE_CONFIG ref.
                          Without this flag, base files are never touched.
@@ -207,11 +203,11 @@ Options:
 
 Examples:
   bun run fetch-sd                    # Fetch latest regulation + ancestor mods
-  bun run fetch-sd regm-a             # Fetch Reg M-A mods + contemporaneous champions parent
+  bun run fetch-sd m-a             # Fetch Reg M-A mods + contemporaneous champions parent
   bun run fetch-sd --base             # Update base game files to configured ref
   bun run fetch-sd --base-ref abc123  # Update base game files to a specific commit
   bun run fetch-sd --all              # Fetch base files + latest regulation mods
-  bun run fetch-sd --all regm-b       # Fetch base files + Reg M-B mods
+  bun run fetch-sd --all m-b       # Fetch base files + Reg M-B mods
   bun run fetch-sd --ref 10f47c9      # Fetch using a custom Showdown commit for mods
   bun run fetch-sd --dry-run          # Preview fetch without modifying any files
 `;
@@ -246,7 +242,7 @@ async function main(): Promise<void> {
   // Resolve target regulation (defaults to latest configured regulation, i.e. REGULATIONS[0])
   const regQuery = values.regulation ?? positionals[0] ?? process.env.SHOWDOWN_CURRENT_REGULATION;
   const targetReg: RegulationDefinition = regQuery
-    ? (findRegulation(regQuery) ?? getRegulation(regQuery))
+    ? getRegulation(regQuery)
     : getLatestRegulation();
 
   const prevOverride = values.previous;
@@ -259,16 +255,16 @@ async function main(): Promise<void> {
   const writtenFiles: string[] = [];
 
   console.log('--- Showdown Source Fetcher ---');
-  console.log(`Target Regulation:   ${targetReg.regulationName} (${targetReg.regulationId})`);
+  console.log(`Target Regulation:   ${targetReg.regulationName} (${targetReg.id})`);
   if (fetchChain.length > 1) {
-    const ancestors = fetchChain.slice(1).map((reg) => `${reg.regulationName} (${reg.regulationId})`).join(', ');
+    const ancestors = fetchChain.slice(1).map((reg) => `${reg.regulationName} (${reg.id})`).join(', ');
     console.log(`Ancestor Chain:      ${ancestors}`);
   } else {
     console.log(`Ancestor Chain:      None (root base)`);
   }
   console.log(`Base Game Ref:       ${baseRef} (${fetchBase ? 'fetching' : 'not requested — use --base or --all'})`);
   console.log(`Fetched Timestamp:   ${fetchedAt}`);
-  if (targetReg.showdown?.historyUrl) {
+  if (targetReg.showdown.historyUrl) {
     console.log(`Mod Commit History:  ${targetReg.showdown.historyUrl}`);
   }
   console.log('--------------------------------\n');
@@ -292,24 +288,23 @@ async function main(): Promise<void> {
 
   if (fetchMods) {
     for (const reg of fetchChain) {
-      const sourceModId = sourceModIdFor(reg);
-      const modRef = values.ref ?? reg.showdown?.ref ?? 'master';
-      const destDir = join(SOURCES_DIR, reg.regulationId);
+      const modRef = values.ref ?? reg.showdown.ref;
+      const destDir = join(SOURCES_DIR, reg.id);
 
-      console.log(`Fetching mod overlays for ${reg.regulationName} (Showdown mod: "${sourceModId}", ref: ${modRef})...`);
-      writtenFiles.push(...await fetchModOverlay(sourceModId, destDir, modRef, fetchedAt, dryRun));
+      console.log(`Fetching mod overlays for ${reg.regulationName} (Showdown mod: "${reg.showdown.sourceModId}", ref: ${modRef})...`);
+      writtenFiles.push(...await fetchModOverlay(reg.showdown.sourceModId, destDir, modRef, fetchedAt, dryRun));
 
-      if (needsParentSnapshot(sourceModId)) {
+      if (needsParentSnapshot(reg.showdown.sourceModId)) {
         console.log(`Fetching contemporaneous parent "${SHOWDOWN_LIVE_MOD_ID}" for ${reg.regulationName} into _parent/ (ref: ${modRef})...`);
         writtenFiles.push(...await fetchModOverlay(SHOWDOWN_LIVE_MOD_ID, join(destDir, '_parent'), modRef, fetchedAt, dryRun));
       }
 
       manifestEntries.push({
-        regulationId: reg.regulationId,
+        id: reg.id,
         regulationName: reg.regulationName,
-        sourceModId,
+        sourceModId: reg.showdown.sourceModId,
         ref: modRef,
-        ...(reg.showdown?.historyUrl ? { historyUrl: reg.showdown.historyUrl } : {}),
+        ...(reg.showdown.historyUrl ? { historyUrl: reg.showdown.historyUrl } : {}),
       });
     }
   }
@@ -319,7 +314,7 @@ async function main(): Promise<void> {
     showdownRepo: SHOWDOWN_BASE_CONFIG.repo,
     baseRef,
     fetchedAt,
-    targetRegulation: targetReg.regulationId,
+    targetRegulation: targetReg.id,
     baseFetched: fetchBase,
     regulations: manifestEntries,
     files: writtenFiles,

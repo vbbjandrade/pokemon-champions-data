@@ -6,14 +6,16 @@ import { dirname, join, resolve } from 'node:path';
 import { parseArgs } from 'node:util';
 
 import type {
-  RegulationDelta,
+	RegulationDelta,
   RepoAbility,
   RepoItem,
   RepoLearnset,
   RepoMove,
   RepoPokemon,
-} from './showdown_parser.ts';
-import { getRegulationChain, REGULATIONS, type RegulationDefinition } from './regulations.ts';
+} from '../utils/showdown_parser.ts';
+import { getRegulationChain, REGULATIONS, type RegulationDefinition } from '../utils/regulations.ts';
+import { loadJson, sorted, writeJson } from '../utils/helpers.ts';
+import { DATA_MASTER_DIR, DATA_REGULATIONS_DIR } from '../utils/directories.ts';
 
 const ROOT_DIR = resolve(import.meta.dir, '..');
 const MASTER_DIR = join(ROOT_DIR, 'data', 'master');
@@ -21,26 +23,6 @@ const DIST_DIR = join(ROOT_DIR, 'dist');
 
 type JsonRecord = Record<string, any>;
 
-function loadJson<T>(path: string): T {
-  if (!existsSync(path)) throw new Error(`Missing ${path.slice(ROOT_DIR.length + 1)}. Run the Showdown updater first.`);
-  return JSON.parse(readFileSync(path, 'utf-8')) as T;
-}
-
-function writeJson(path: string, data: unknown): void {
-  mkdirSync(dirname(path), { recursive: true });
-  writeFileSync(path, `${JSON.stringify(data, null, 2)}\n`, 'utf-8');
-  console.log(`  wrote ${path.slice(ROOT_DIR.length + 1)}`);
-}
-
-function sorted<T>(data: Record<string, T>): Record<string, T> {
-  return Object.fromEntries(Object.entries(data).sort(([a], [b]) => a.localeCompare(b)));
-}
-
-function isPlainObject(value: unknown): value is JsonRecord {
-  return value !== null && typeof value === 'object' && !Array.isArray(value);
-}
-
-/** `baseStats` is the sole nested merge field; all other values replace. */
 function applyOverride<T extends object>(base: T, override: Partial<T>): T {
   const baseValues = base as JsonRecord;
   const resolved: JsonRecord = { ...baseValues };
@@ -48,9 +30,7 @@ function applyOverride<T extends object>(base: T, override: Partial<T>): T {
     if (key === 'sources' && Array.isArray(baseValues[key]) && Array.isArray(value)) {
       resolved[key] = [...new Set([...baseValues[key], ...value])];
     } else {
-      resolved[key] = key === 'baseStats' && isPlainObject(baseValues[key]) && isPlainObject(value)
-        ? { ...baseValues[key], ...value }
-        : value;
+      resolved[key] = value;
     }
   }
   return resolved as T;
@@ -80,27 +60,28 @@ function selectEntries<T>(data: Record<string, T>, ids: Iterable<string>): Recor
 }
 
 function compile(regulation: RegulationDefinition): void {
-  const masterRoster = loadJson<Record<string, RepoPokemon>>(join(MASTER_DIR, 'roster.json'));
-  const masterMoves = loadJson<Record<string, RepoMove>>(join(MASTER_DIR, 'moves.json'));
-  const masterAbilities = loadJson<Record<string, RepoAbility>>(join(MASTER_DIR, 'abilities.json'));
-  const masterItems = loadJson<Record<string, RepoItem>>(join(MASTER_DIR, 'items.json'));
-
-  const layers = getRegulationChain(regulation.regulationId).map((layer) => {
-    const delta = loadJson<RegulationDelta>(join(ROOT_DIR, 'data', layer.directoryName, 'delta.json'));
-    if (delta.regulationId !== layer.regulationId) {
-      throw new Error(`${layer.directoryName}/delta.json has regulationId "${delta.regulationId}"; expected "${layer.regulationId}".`);
-    }
-    if (delta.baseRegulationId !== (layer.baseRegulationId ?? null)) {
-      throw new Error(`${layer.directoryName}/delta.json has baseRegulationId "${delta.baseRegulationId}"; expected "${layer.baseRegulationId ?? null}".`);
-    }
-    return delta;
-  });
+  const masterRoster = loadJson<Record<string, RepoPokemon>>(join(DATA_MASTER_DIR, 'roster.json'));
+  const masterMoves = loadJson<Record<string, RepoMove>>(join(DATA_MASTER_DIR, 'moves.json'));
+  const masterAbilities = loadJson<Record<string, RepoAbility>>(join(DATA_MASTER_DIR, 'abilities.json'));
+  const masterItems = loadJson<Record<string, RepoItem>>(join(DATA_MASTER_DIR, 'items.json'));
 
   let resolvedRoster: Record<string, RepoPokemon> = { ...masterRoster };
   let resolvedLearnsets: Record<string, RepoLearnset> = {};
   let resolvedMoves = { ...masterMoves };
   let resolvedAbilities = { ...masterAbilities };
   let resolvedItems = { ...masterItems };
+
+	const layers = getRegulationChain(regulation.id).map((layer) => {
+    const delta = loadJson<RegulationDelta>(join(DATA_REGULATIONS_DIR, layer.id, 'delta.json'));
+    if (delta.id !== layer.id) {
+      throw new Error(`${layer.id}/delta.json has id "${delta.id}"; expected "${layer.id}".`);
+    }
+    if (delta.previousRegulationId !== (layer.previousRegulationId ?? null)) {
+      throw new Error(`${layer.id}/delta.json has previousRegulationId "${delta.previousRegulationId}"; expected "${layer.previousRegulationId ?? null}".`);
+    }
+    return delta;
+  });
+
   for (const layer of layers) {
     for (const [id, override] of Object.entries(layer.overrides.roster)) {
       if (override === null) {
@@ -108,30 +89,55 @@ function compile(regulation: RegulationDefinition): void {
         continue;
       }
       const base = resolvedRoster[id] ?? masterRoster[id];
-      if (!base) throw new Error(`${layer.regulationId}: roster override "${id}" is absent from master/roster.json.`);
+      if (!base) throw new Error(`${layer.id}: roster override "${id}" is absent from master/roster.json.`);
       resolvedRoster[id] = applyOverride(base, override);
     }
-    for (const [id, override] of Object.entries(layer.overrides.learnsets)) {
+
+		Object.entries(layer.overrides.learnsets).forEach(([id, override]) => {
+			console.log(`${layer.id} | learnset override for ${id}`, override)
+
       if (override === null) {
         delete resolvedLearnsets[id];
-        continue;
+        return;
       }
-      const base = resolvedLearnsets[id] ?? ({} as RepoLearnset);
-      resolvedLearnsets[id] = applyOverride(base, override);
-    }
+
+      const base = resolvedLearnsets[id] || { moves: [], sources: [] };
+			const newMoves: string[] = [...base.moves]
+
+			Object.entries(override.moves).forEach(([id, operation]) => {
+				const moveIndex = newMoves.findIndex((move) => move === id)
+
+				if (operation === true) {
+					if (moveIndex < 0) newMoves.push(id)
+				} else {
+					if (moveIndex >= 0) newMoves.splice(moveIndex, 1)
+				}
+
+			})
+
+			const newLearnset: RepoLearnset = {
+				sources: [...base.sources, ...override.sources],
+				moves: newMoves
+			}
+
+			// console.log(`${id}`, newLearnset)
+
+			override.moves
+      resolvedLearnsets[id] = applyOverride(base, newLearnset);
+		})
+
     resolvedMoves = applyResource(resolvedMoves, layer.overrides.moves, masterMoves);
     resolvedAbilities = applyResource(resolvedAbilities, layer.overrides.abilities, masterAbilities);
     resolvedItems = applyResource(resolvedItems, layer.overrides.items, masterItems);
-
   }
 
   const roster = sorted(resolvedRoster);
-  if (Object.keys(roster).length === 0) throw new Error(`${regulation.regulationId}: roster overrides must list every legal species.`);
+  if (Object.keys(roster).length === 0) throw new Error(`${regulation.id}: roster overrides must list every legal species.`);
 
   const learnsets: Record<string, RepoLearnset> = {};
   for (const id of Object.keys(roster)) {
     const learnset = resolvedLearnsets[id];
-    if (!learnset) throw new Error(`${regulation.regulationId}: legal species "${id}" has no regulation learnset.`);
+    if (!learnset) throw new Error(`${regulation.id}: legal species "${id}" has no regulation learnset.`);
     learnsets[id] = learnset;
   }
 
@@ -142,18 +148,19 @@ function compile(regulation: RegulationDefinition): void {
     learnsets[id] = { ...learnset, moves: knownMoves };
   }
   if (omittedMoveIds.size > 0) {
-    console.warn(`${regulation.regulationId}: omitting unknown moves from compiled learnsets: ${[...omittedMoveIds].sort().join(', ')}`);
+    console.warn(`${regulation.id}: omitting unknown moves from compiled learnsets: ${[...omittedMoveIds].sort().join(', ')}`);
   }
   const legalMoveIds = new Set(Object.values(learnsets).flatMap((learnset) => learnset.moves));
   const legalAbilityIds = new Set(Object.values(roster).flatMap((pokemon) => Object.values(pokemon.abilities ?? {})));
 
-  const outputDirectory = join(DIST_DIR, regulation.directoryName);
-  console.log(`Building ${regulation.regulationId}...`);
+  const outputDirectory = join(DIST_DIR, regulation.id);
+  console.log(`Building ${regulation.id}...`);
   writeJson(join(outputDirectory, 'roster.json'), sorted(roster));
   writeJson(join(outputDirectory, 'learnsets.json'), sorted(learnsets));
   writeJson(join(outputDirectory, 'moves.json'), selectEntries(resolvedMoves, legalMoveIds));
   writeJson(join(outputDirectory, 'abilities.json'), selectEntries(resolvedAbilities, legalAbilityIds));
   writeJson(join(outputDirectory, 'items.json'), sorted(resolvedItems));
+	// TODO: output .json and .md files from /data/mechanics to /dist
 }
 
 function main(): void {
@@ -162,7 +169,7 @@ function main(): void {
     options: { regulation: { type: 'string' }, all: { type: 'boolean', default: false } },
   });
   const selected = values.regulation
-    ? REGULATIONS.filter((regulation) => regulation.regulationId === values.regulation || regulation.directoryName === values.regulation)
+    ? REGULATIONS.filter((regulation) => regulation.id === values.regulation || regulation.id === values.regulation)
     : REGULATIONS;
   if (values.regulation && selected.length === 0) throw new Error(`Unknown regulation "${values.regulation}".`);
   if (!values.all && !values.regulation) console.log('Building all configured regulations...');
