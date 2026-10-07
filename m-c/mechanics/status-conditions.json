@@ -1,0 +1,331 @@
+{
+	"_comment": "TODO: map the status conditions to their corresponding abilities and moves. Define if a better structure is needed for specifying how the effects interact with different abilities and moves or if just the simple relationship list is enough.",
+	"non-volatile": {
+		"brn": {
+			"name": "Burn",
+			"effect": "The Pokémon takes damage equal to 1/16 of its max HP at the end of every turn. The damage dealt by its physical moves is also halved.",
+			"affects": {
+				"except": {
+					"abilities": ["leafguard", "flowerveil", "comatose", "purifyingsalt", "shieldsdown", "thermalexchange", "waterbubble"],
+					"types": ["Fire"]
+				}
+			}
+		},
+		"par": {
+			"name": "Paralysis",
+			"effect": "The Pokémon has a 1/8 chance of being unable to use moves. Its Speed stat is also halved. Electric-type Pokémon are unaffects.",
+			"affects": {
+				"except": {
+					"abilities": ["leafguard", "comatose", "limber", "purifyingsalt", "shieldsdown"],
+					"types": ["Electric"]
+				}
+			}
+		},
+		"psn": {
+			"name": "Poison",
+			"effect": "The Pokémon takes damage equal to 1/8 of its max HP at the end of every turn. Poison- and Steel-type Pokémon are unaffects.",
+			"affects": {
+				"except": {
+					"abilities": ["leafguard","comatose", "immunity", "pastelveil", "purifyingsalt", "shieldsdown"],
+					"types": ["Poison", "Steel"]
+				}
+			}
+		},
+		"tox":	 {
+			"name": "Badly poisoned",
+			"effect": "The Pokémon takes increasing poison damage at the end of every turn, starting at 1/16 of the Pokémon's max HP, then 2/16, then 3/16, and so on. If the Pokémon switches out and reenters battle, the damage restarts at 1/16 of its max HP. Poison- and Steel-type Pokémon are unaffects.",
+			"affects": {
+				"except": {
+					"abilities": ["leafguard","comatose", "immunity", "pastelveil", "purifyingsalt", "shieldsdown"],
+					"types": ["Poison", "Steel"]
+				}
+			}
+		},
+		"frz": {
+			"name": "Freeze",
+			"effect": "The Pokémon can't use almost any moves but has a 1/4 chance of being cured each time it tries to do so. The Pokémon will be cured on its third turn after becoming frozen or if it takes damage from a Fire-type move or certain other moves. Ice-type Pokémon are unaffects.",
+			"affects": {
+				"except": {
+					"abilities": ["leafguard","comatose", "magmaarmor", "purifyingsalt", "shieldsdown"],
+					"types": ["Ice"]
+				}
+			}
+		},
+		"slp": {
+			"name": "Sleep",
+			"effect": "The Pokémon can't use moves other than Snore or Sleep Talk. After a Pokémon is put to sleep, it will remain asleep on its first turn, it will have a 1/3 chance of being cured on its second turn, and it will be cured on its third turn. A Pokémon that used the move Rest has no chance of being cured until its third turn.",
+			"affects": {
+				"except": {
+					"abilities": ["leafguard", "insomnia", "vitalspirit", "sweetveil", "comatose", "purifyingsalt", "shieldsdown"]
+				}
+			}
+		}
+	},
+	"volatile": {
+		"confused": {
+			"name": "Confused",
+			"effect": "The Pokémon has a 1/3 chance of hurting itself in its confusion instead of using the intended move. Confusion damage is calculated as if it were a typeless physical move with a power of 40; it cannot score a critical hit, does not receive STAB, and does not interact with damage amplifying items and abilities.",
+			"affects": {
+				"except": {
+					"abilities": ["owntempo"]
+				}
+			}
+		},
+		"infatuated": {
+			"name": "Infatuated",
+			"effect": "The Pokémon has a 1/2 chance of being unable to use its moves while the Pokémon that gave it the Infatuated status is on the field.",
+			"affects": {
+				"except": {
+					"abilities": ["oblivious"]
+				}
+			}
+		},
+		"flinch": {
+			"name": "Flinch",
+			"effect": "The Pokémon is unable to use its move for the turn. A Pokémon can only be flinched if it has not moved yet in the turn.",
+			"affects": {
+				"except": {
+					"abilities": ["innerfocus"]
+				}
+			}
+		},
+		"encore": {
+			"name": "Encore",
+			"effect": "For 3 turns, the Pokémon can only use whichever move it last used before gaining the Encore status. \nIf a Pokémon is forced to use a move with different priority than the one it has selected, the move will now use its own priority rather than of the selected move. \nEncore fails if the last move the target used was Transform, Mimic, Sketch, Mirror Move, Encore itself, Struggle, or a move that has no PP left. It also fails if the foe has not used a move yet. \nIf the Pokémon affects by Encore runs out of PP for the affects move, the effects of Encore end immediately. If the move the Pokémon is locked into by Encore is currently blocked,  the Pokémon will be forced to use Struggle.",
+			"affects": {
+				"except": {
+					"abilities": ["aromaveil"]
+				}
+			}
+		},
+		"taunted": {
+			"name": "Taunted",
+			"effect": "The Pokémon can only use damage dealing moves. Lasts between 3 and 5 turns.",
+			"affects": {
+				"except": {
+					"abilities": ["aromaveil", "oblivious"]
+				}
+			}
+		},
+		"drowsy": {
+			"name": "Drowsy",
+			"effect": "The Pokémon will fall asleep at the end of the next turn after becoming drowsy.",
+			"affects": {
+				"except": {
+					"abilities": ["insomnia", "vitalspirit", "sweetveil", "comatose"]
+				}
+			}
+		},
+		"cursed": {
+			"name": "Cursed",
+			"effect": "The Pokémon loses 1/4 of its max HP at the end of every turn."
+		},
+		"uproar": {
+			"name": "Uproar",
+			"effect": "For 3 turns, the Pokémon continues its attack and is unable to take any other actions. During this time, no Pokémon on the field can fall asleep."
+		},
+		"wideopen": {
+			"name": "Wide Open",
+			"effect": "Opponents' moves will not miss the Pokémon and will deal double damage."
+		},
+		"wish": {
+			"name": "Wish",
+			"effect": "At the end of the next turn after the Wish status is activated, the HP of the Pokémon in the affects spot will be restored by 1/2 of the max HP of the Pokémon that caused the status."
+		},
+		"underground": {
+			"name": "Underground",
+			"effect": "The Pokémon cannot be hit by most moves, but Earthquake will hit and will deal double damage. The Pokémon is also unaffects by the terrain."
+		},
+		"submerged": {
+			"name": "Submerged",
+			"effect": "The Pokémon cannot be hit by most moves, but Surf and Whirlpool will hit and will deal double damage. The Pokémon is also unaffects by the terrain."
+		},
+		"skyhigh": {
+			"name": "Sky High",
+			"effect": "The Pokémon cannot be hit by most moves, excluding moves such as Thunder, Hurricane, and Smack Down. The Pokémon is also unaffects by the terrain."
+		},
+		"concealed": {
+			"name": "Concealed",
+			"effect": "The Pokémon cannot be hit by moves and is unaffects by the terrain."
+		},
+		"sealingoff": {
+			"name": "Sealing Off",
+			"effect": "Any moves known by the Pokémon that caused this status cannot be used by its opponents."
+		},
+		"atkdefswapped": {
+			"name": "Atk/Def Swapped",
+			"effect": "The Pokémon's Attack and Defense stats are swapped."
+		},
+		"aquaring": {
+			"name": "Aqua Ring",
+			"effect": "The Pokémon has 1/16 of its max HP restored at the end of every turn."
+		},
+		"charging": {
+			"name": "Charging",
+			"effect": "The Pokémon spends 1 turn charging before using a move."
+		},
+		"recharging": {
+			"name": "Recharging",
+			"effect": "The Pokémon cannot take any actions for 1 turn."
+		},
+		"rampaging": {
+			"name": "Rampaging",
+			"effect": "For 2-3 turns, the Pokémon continues its attack and is unable to take any other actions. After that, it becomes confused."
+		},
+		"minimized": {
+			"name": "Minimized",
+			"effect": "Moves such as Supercell Slam, Body Slam, Dragon Rush, Flying Press, Heat Crash, and Heavy Slam will not miss the Pokémon and will deal double damage."
+		},
+		"magnetrise": {
+			"name": "Magnet Rise",
+			"effect": "The Pokémon floats off the ground, making it immune to Ground-type moves, as well as the Spikes, Toxic Spikes, and Sticky Web statuses."
+		},
+		"ingrained": {
+			"name": "Ingrained",
+			"effect": "The Pokémon has 1/16 of its max HP restored at the end of every turn. It also becomes grounded and cannot be switched out of battle."
+		},
+		"flashfire": {
+			"name": "Flash Fire",
+			"effect": "Boosts the power of the Pokémon's Fire-type moves by 50%."
+		},
+		"electricboost": {
+			"name": "Electric Boost",
+			"effect": "The power of the next Electric-type move used by the Pokémon will be doubled."
+		},
+		"destinybound": {
+			"name": "Destiny Bound",
+			"effect": "If the Pokémon is knocked out by an opponent, that opponent will also be knocked out."
+		},
+		"stockpiling": {
+			"name": "Stockpiling",
+			"effect": "Counts up to 3 stacks. Stacks are used for Swallow and Spit Up."
+		},
+		"syrupy": {
+			"name": "Syrupy",
+			"effect": "The Pokémon's Speed stat is lowered by 1 stage at the end of every turn."
+		},
+		"saltcured": {
+			"name": "Salt Cured",
+			"effect": "The Pokémon takes damage equal to 1/16 of its max HP at the end of every turn. If the Pokémon is a Steel type or a Water type, it takes damage equal to 1/8 of its max HP instead."
+		},
+		"perishing": {
+			"name": "Perishing",
+			"effect": "The Pokémon will faint 3 turns after gaining the Perishing status."
+		},
+		"bound": {
+			"name": "Bound",
+			"effect": "For 4-5 turns, the Pokémon takes damage equal to 1/8 of its max HP at the end of every turn. Applies the Can't Escape status.",
+			"applies": ["cantescape"]
+		},
+		"cantescape": {
+			"name": "Can't Escape",
+			"effect": "The Pokémon cannot be switched out of battle.",
+			"affects": {
+				"except": {
+					"types": ["Ghost"],
+					"abilities": ["runaway"]
+				}
+			}
+		},
+		"throatchopped": {
+			"name": "Throat Chopped",
+			"effect": "The Pokémon cannot use any sound-based moves for 2 turns."
+		},
+		"trickortreating": {
+			"name": "Trick-or-Treating",
+			"effect": "The Pokémon gains the Ghost type."
+		},
+		"forestcursed": {
+			"name": "Forest Cursed",
+			"effect": "The Pokémon gains the Grass type."
+		},
+		"unabletorepeat": {
+			"name": "Unable to Repeat",
+			"effect": "The Pokémon cannot use the same move twice in a row.",
+			"affects": {
+				"except": {
+					"abilities": ["aromaveil"]
+				}
+			}
+		},
+		"octlocked": {
+			"name": "Octo-Locked",
+			"effect": "The Pokémon's Defense and Sp. Def are lowered by 1 stage at the end of every turn."
+		},
+		"noability": {
+			"name": "No Ability",
+			"effect": "The Pokémon's Ability loses its effect.",
+			"affects": {
+				"except": {
+					"abilities": [
+						"asone", 
+						"battlebond", 
+						"comatose", 
+						"disguise", 
+						"gulpmissile", 
+						"iceface", 
+						"lingeringaroma", 
+						"multitype", 
+						"powerconstruct", 
+						"rkssystem", 
+						"schooling", 
+						"shieldsdown", 
+						"stancechange", 
+						"terashift", 
+						"zenmode", 
+						"zerotohero"
+					]
+				}
+			}
+		},
+		"movedisabled": {
+			"name": "Move Disabled",
+			"effect": "The Pokémon cannot use whichever move it last used before gaining the Move Disabled status.",
+			"affects": {
+				"except": {
+					"abilities": ["aromaveil"]
+				}
+			}
+		},
+		"lockedon": {
+			"name": "Locked On",
+			"effect": "On the next turn after gaining the Locked On status, the Pokémon's move will not miss if targeting the Pokémon that was locked onto."
+		},
+		"leechseeded": {
+			"name": "Leech Seeded",
+			"effect": "The Pokémon takes damage equal to 1/8 of its max HP at the end of every turn. Whichever Pokémon is in the spot of the Pokémon that caused the Leech Seeded status has its HP restored by the same amount.",
+			"affects": {
+				"except": {
+					"types": ["Grass"]
+				}
+			}
+		},
+		"landed": {
+			"name": "Landed",
+			"effect": "The Pokémon is now grounded and can be affects by Ground-type moves.",
+			"affects": {
+				"except": {
+					"types": ["Flying"],
+					"abilities": ["levitate"]
+				}
+			}
+		},
+		"identified": {
+			"name": "Identified",
+			"effect": "The Pokémon will be hit by certain moves that usually don't have any effect on it. The effect of the Pokémon's boosted evasiveness will be ignored when attacked."
+		},
+		"healingprevented": {
+			"name": "Healing Prevented",
+			"effect": "The Pokémon is unable to restore HP through moves, Abilities, or held items.",
+			"affects": {
+				"except": {
+					"abilities": ["aromaveil"]
+				}
+			}
+		},
+		"futureattack": {
+			"name": "Future Attack",
+			"effect": "The Pokémon in the targeted spot will take damage 2 turns after the Future Attack status is activated."
+		}
+	}
+}

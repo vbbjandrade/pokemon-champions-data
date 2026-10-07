@@ -1,0 +1,45 @@
+{
+	"_comment": "TODO: map the field conditions to their corresponding abilities and moves. Finish filling this.",
+	"terrain": {
+
+	},
+	"weather": {
+
+	},
+	"hazards": {
+
+	},
+	"screens": {
+		"_comment": "Define if this is a formal group",
+		"reflect": {
+
+		},
+		"light-screen": {
+
+		},
+		"aurora-veil": {
+
+		}
+	},
+	"trick-room": {
+
+	},
+	"magic-room": {
+
+	},
+	"wonder-room": {
+
+	},
+	"tailwind": {
+
+	},
+	"safeguard": {
+
+	},
+	"gravity": {
+
+	},
+	"fairy-lock": {
+
+	}
+}

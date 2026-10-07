@@ -1,0 +1,131 @@
+{
+	"adamant": {
+		"name": "Adamant",
+		"increasedStat": "atk",
+		"decreasedStat": "spa"
+	},
+	"bashful": {
+		"name": "Bashful",
+		"increasedStat": "spa",
+		"decreasedStat": "spa",
+		"replacedBy": "serious"
+	},
+	"bold": {
+		"name": "Bold",
+		"increasedStat": "def",
+		"decreasedStat": "atk"
+	},
+	"brave": {
+		"name": "Brave",
+		"increasedStat": "atk",
+		"decreasedStat": "spe"
+	},
+	"calm": {
+		"name": "Calm",
+		"increasedStat": "spd",
+		"decreasedStat": "atk"
+	},
+	"careful": {
+		"name": "Careful",
+		"increasedStat": "spd",
+		"decreasedStat": "spa"
+	},
+	"docile": {
+		"name": "Docile",
+		"increasedStat": "def",
+		"decreasedStat": "def",
+		"replacedBy": "serious"
+	},
+	"gentle": {
+		"name": "Gentle",
+		"increasedStat": "spd",
+		"decreasedStat": "def"
+	},
+	"hardy": {
+		"name": "Hardy",
+		"increasedStat": "atk",
+		"decreasedStat": "atk",
+		"replacedBy": "serious"
+	},
+	"hasty": {
+		"name": "Hasty",
+		"increasedStat": "spe",
+		"decreasedStat": "def"
+	},
+	"impish": {
+		"name": "Impish",
+		"increasedStat": "def",
+		"decreasedStat": "spa"
+	},
+	"jolly": {
+		"name": "Jolly",
+		"increasedStat": "spe",
+		"decreasedStat": "spa"
+	},
+	"lax": {
+		"name": "Lax",
+		"increasedStat": "def",
+		"decreasedStat": "spd"
+	},
+	"lonely": {
+		"name": "Lonely",
+		"increasedStat": "atk",
+		"decreasedStat": "def"
+	},
+	"mild": {
+		"name": "Mild",
+		"increasedStat": "spa",
+		"decreasedStat": "def"
+	},
+	"modest": {
+		"name": "Modest",
+		"increasedStat": "spa",
+		"decreasedStat": "atk"
+	},
+	"naive": {
+		"name": "Naive",
+		"increasedStat": "spe",
+		"decreasedStat": "spd"
+	},
+	"naughty": {
+		"name": "Naughty",
+		"increasedStat": "atk",
+		"decreasedStat": "spd"
+	},
+	"quiet": {
+		"name": "Quiet",
+		"increasedStat": "spa",
+		"decreasedStat": "spe"
+	},
+	"quirky": {
+		"name": "Quirky",
+		"increasedStat": "spd",
+		"decreasedStat": "spd",
+		"replacedBy": "serious"
+	},
+	"rash": {
+		"name": "Rash",
+		"increasedStat": "spa",
+		"decreasedStat": "spd"
+	},
+	"relaxed": {
+		"name": "Relaxed",
+		"increasedStat": "def",
+		"decreasedStat": "spe"
+	},
+	"sassy": {
+		"name": "Sassy",
+		"increasedStat": "spd",
+		"decreasedStat": "spe"
+	},
+	"serious": {
+		"name": "Serious",
+		"increasedStat": "spe",
+		"decreasedStat": "spe"
+	},
+	"timid": {
+		"name": "Timid",
+		"increasedStat": "spe",
+		"decreasedStat": "atk"
+	}
+}
