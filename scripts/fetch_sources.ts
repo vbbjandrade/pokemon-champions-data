@@ -25,7 +25,7 @@ const SOURCES_DIR = join(ROOT_DIR, 'data', 'sources');
 
 type ManifestEntry = {
   id: string;
-  regulationName: string;
+  name: string;
   sourceModId: string;
   ref: string;
   historyUrl?: string;
@@ -255,9 +255,9 @@ async function main(): Promise<void> {
   const writtenFiles: string[] = [];
 
   console.log('--- Showdown Source Fetcher ---');
-  console.log(`Target Regulation:   ${targetReg.regulationName} (${targetReg.id})`);
+  console.log(`Target Regulation:   ${targetReg.name} (${targetReg.id})`);
   if (fetchChain.length > 1) {
-    const ancestors = fetchChain.slice(1).map((reg) => `${reg.regulationName} (${reg.id})`).join(', ');
+    const ancestors = fetchChain.slice(1).map((reg) => `${reg.name} (${reg.id})`).join(', ');
     console.log(`Ancestor Chain:      ${ancestors}`);
   } else {
     console.log(`Ancestor Chain:      None (root base)`);
@@ -291,17 +291,17 @@ async function main(): Promise<void> {
       const modRef = values.ref ?? reg.showdown.ref;
       const destDir = join(SOURCES_DIR, reg.id);
 
-      console.log(`Fetching mod overlays for ${reg.regulationName} (Showdown mod: "${reg.showdown.sourceModId}", ref: ${modRef})...`);
+      console.log(`Fetching mod overlays for ${reg.name} (Showdown mod: "${reg.showdown.sourceModId}", ref: ${modRef})...`);
       writtenFiles.push(...await fetchModOverlay(reg.showdown.sourceModId, destDir, modRef, fetchedAt, dryRun));
 
       if (needsParentSnapshot(reg.showdown.sourceModId)) {
-        console.log(`Fetching contemporaneous parent "${SHOWDOWN_LIVE_MOD_ID}" for ${reg.regulationName} into _parent/ (ref: ${modRef})...`);
+        console.log(`Fetching contemporaneous parent "${SHOWDOWN_LIVE_MOD_ID}" for ${reg.name} into _parent/ (ref: ${modRef})...`);
         writtenFiles.push(...await fetchModOverlay(SHOWDOWN_LIVE_MOD_ID, join(destDir, '_parent'), modRef, fetchedAt, dryRun));
       }
 
       manifestEntries.push({
         id: reg.id,
-        regulationName: reg.regulationName,
+        name: reg.name,
         sourceModId: reg.showdown.sourceModId,
         ref: modRef,
         ...(reg.showdown.historyUrl ? { historyUrl: reg.showdown.historyUrl } : {}),

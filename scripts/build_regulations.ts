@@ -1,12 +1,13 @@
 #!/usr/bin/env bun
 /** Compiles master data plus a regulation delta into consumer-ready JSON. */
 
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { dirname, join, resolve } from 'node:path';
+import { execSync } from 'node:child_process';
+import { copyFileSync, existsSync, mkdirSync, readdirSync } from 'node:fs';
+import { join, resolve } from 'node:path';
 import { parseArgs } from 'node:util';
 
 import type {
-	RegulationDelta,
+  RegulationDelta,
   RepoAbility,
   RepoItem,
   RepoLearnset,
@@ -18,8 +19,9 @@ import { loadJson, sorted, writeJson } from '../utils/helpers.ts';
 import { DATA_MASTER_DIR, DATA_REGULATIONS_DIR } from '../utils/directories.ts';
 
 const ROOT_DIR = resolve(import.meta.dir, '..');
-const MASTER_DIR = join(ROOT_DIR, 'data', 'master');
+// const MASTER_DIR = join(ROOT_DIR, 'data', 'master');
 const DIST_DIR = join(ROOT_DIR, 'dist');
+
 
 type JsonRecord = Record<string, any>;
 
@@ -71,7 +73,7 @@ function compile(regulation: RegulationDefinition): void {
   let resolvedAbilities = { ...masterAbilities };
   let resolvedItems = { ...masterItems };
 
-	const layers = getRegulationChain(regulation.id).map((layer) => {
+  const layers = getRegulationChain(regulation.id).map((layer) => {
     const delta = loadJson<RegulationDelta>(join(DATA_REGULATIONS_DIR, layer.id, 'delta.json'));
     if (delta.id !== layer.id) {
       throw new Error(`${layer.id}/delta.json has id "${delta.id}"; expected "${layer.id}".`);
@@ -93,8 +95,8 @@ function compile(regulation: RegulationDefinition): void {
       resolvedRoster[id] = applyOverride(base, override);
     }
 
-		Object.entries(layer.overrides.learnsets).forEach(([id, override]) => {
-			console.log(`${layer.id} | learnset override for ${id}`, override)
+    Object.entries(layer.overrides.learnsets).forEach(([id, override]) => {
+      console.log(`${layer.id} | learnset override for ${id}`, override)
 
       if (override === null) {
         delete resolvedLearnsets[id];
@@ -102,29 +104,29 @@ function compile(regulation: RegulationDefinition): void {
       }
 
       const base = resolvedLearnsets[id] || { moves: [], sources: [] };
-			const newMoves: string[] = [...base.moves]
+      const newMoves: string[] = [...base.moves]
 
-			Object.entries(override.moves).forEach(([id, operation]) => {
-				const moveIndex = newMoves.findIndex((move) => move === id)
+      Object.entries(override.moves).forEach(([id, operation]) => {
+        const moveIndex = newMoves.findIndex((move) => move === id)
 
-				if (operation === true) {
-					if (moveIndex < 0) newMoves.push(id)
-				} else {
-					if (moveIndex >= 0) newMoves.splice(moveIndex, 1)
-				}
+        if (operation === true) {
+          if (moveIndex < 0) newMoves.push(id)
+        } else {
+          if (moveIndex >= 0) newMoves.splice(moveIndex, 1)
+        }
 
-			})
+      })
 
-			const newLearnset: RepoLearnset = {
-				sources: [...base.sources, ...override.sources],
-				moves: newMoves
-			}
+      const newLearnset: RepoLearnset = {
+        sources: [...base.sources, ...override.sources],
+        moves: newMoves
+      }
 
-			// console.log(`${id}`, newLearnset)
+      // console.log(`${id}`, newLearnset)
 
-			override.moves
+      override.moves
       resolvedLearnsets[id] = applyOverride(base, newLearnset);
-		})
+    })
 
     resolvedMoves = applyResource(resolvedMoves, layer.overrides.moves, masterMoves);
     resolvedAbilities = applyResource(resolvedAbilities, layer.overrides.abilities, masterAbilities);
@@ -160,7 +162,39 @@ function compile(regulation: RegulationDefinition): void {
   writeJson(join(outputDirectory, 'moves.json'), selectEntries(resolvedMoves, legalMoveIds));
   writeJson(join(outputDirectory, 'abilities.json'), selectEntries(resolvedAbilities, legalAbilityIds));
   writeJson(join(outputDirectory, 'items.json'), sorted(resolvedItems));
-	// TODO: output .json and .md files from /data/mechanics to /dist
+  copyMechanics(outputDirectory);
+}
+
+function compileWasm(): void {
+  console.log('Compiling AssemblyScript damage calculator Wasm module...');
+  const mechanicsDistDir = join(DIST_DIR, 'mechanics');
+  if (!existsSync(mechanicsDistDir)) mkdirSync(mechanicsDistDir, { recursive: true });
+  execSync('bun asc data/mechanics/damage-formula.ts --target release -o dist/mechanics/damage-formula.wasm --optimize', {
+    cwd: ROOT_DIR,
+    stdio: 'inherit',
+  });
+}
+
+function copyMechanics(outputDirectory: string): void {
+  const mechanicsSourceDir = join(ROOT_DIR, 'data', 'mechanics');
+  const mechanicsDistDir = join(outputDirectory, 'mechanics');
+  const rootMechanicsDistDir = join(DIST_DIR, 'mechanics');
+
+  if (!existsSync(mechanicsDistDir)) mkdirSync(mechanicsDistDir, { recursive: true });
+  if (!existsSync(rootMechanicsDistDir)) mkdirSync(rootMechanicsDistDir, { recursive: true });
+
+  const files = readdirSync(mechanicsSourceDir);
+  for (const file of files) {
+    if (file.endsWith('.ts') || file === 'tsconfig.json') continue;
+    const src = join(mechanicsSourceDir, file);
+    copyFileSync(src, join(mechanicsDistDir, file));
+    copyFileSync(src, join(rootMechanicsDistDir, file));
+  }
+
+  const wasmSrc = join(rootMechanicsDistDir, 'damage-formula.wasm');
+  if (existsSync(wasmSrc)) {
+    copyFileSync(wasmSrc, join(mechanicsDistDir, 'damage-formula.wasm'));
+  }
 }
 
 function main(): void {
@@ -173,6 +207,7 @@ function main(): void {
     : REGULATIONS;
   if (values.regulation && selected.length === 0) throw new Error(`Unknown regulation "${values.regulation}".`);
   if (!values.all && !values.regulation) console.log('Building all configured regulations...');
+  compileWasm();
   for (const regulation of selected) compile(regulation);
 }
 
@@ -182,3 +217,4 @@ try {
   console.error(`\nFATAL ERROR during regulation build: ${error instanceof Error ? error.message : error}`);
   process.exit(1);
 }
+

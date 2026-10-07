@@ -6,11 +6,13 @@
     "fetch-sd": "bun run scripts/showdown/fetch_sources.ts",
     "update-deltas-sd": "bun run scripts/showdown/update_deltas.ts",
     "generate": "bun run scripts/build_regulations.ts",
+    "build:wasm": "asc data/mechanics/damage-formula.ts --target release -o dist/mechanics/damage-formula.wasm --optimize",
     "sync-types-sd": "bun run scripts/showdown/sync_types.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "assemblyscript": "^0.28.20"
   },
   "peerDependencies": {
     "typescript": "^7"

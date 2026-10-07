@@ -79,6 +79,12 @@ export const REGULATIONS: RegulationDefinition[] = [
   },
 ];
 
+export function getLatestRegulation(): RegulationDefinition {
+  const latest = REGULATIONS[0];
+  if (!latest) throw new Error('No regulations configured.');
+  return latest;
+}
+
 export function getRegulation(id: string): RegulationDefinition {
   const regulation = REGULATIONS.find((entry) => entry.id === id);
   if (!regulation) throw new Error(`Unknown regulation "${id}".`);

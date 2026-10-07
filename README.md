@@ -215,7 +215,7 @@ Champions replaces the traditional 510 EV system with a streamlined **SP (Stat P
 - Fewer points mean harder tradeoffs — you cannot invest heavily in every stat simultaneously
 - Speed tiers are compressed, making small SP differences more decisive than in standard games
 
-Full documentation is in [`data/mechanics/sp-system.md`](data/mechanics/sp-system.md). Stat calculation details, including the SP-to-stat mapping, are in [`data/mechanics/stat-formula.md`](data/mechanics/stat-formula.md).
+Full documentation is in [`data/mechanics/sp-system.md`](data/mechanics/sp-system.md). Stat calculation details, including the SP-to-stat mapping, are in [`data/mechanics/stat-formula.md`](data/mechanics/stat-formula.md). Damage calculation formula details are in [`data/mechanics/damage-formula.md`](data/mechanics/damage-formula.md).
 
 ---
 

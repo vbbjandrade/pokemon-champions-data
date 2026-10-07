@@ -1,6 +1,6 @@
-TODO: Document moves (https://bulbapedia.bulbagarden.net/wiki/Move)
-TODO: Document damage calculation (https://bulbapedia.bulbagarden.net/wiki/Damage#Damage_calculation)
-TODO: Structure accuracy, evasion and critical-hit ratio boost sections
+# TODO: Document moves (https://bulbapedia.bulbagarden.net/wiki/Move)
+
+# TODO: Structure accuracy, evasion and critical-hit ratio boost sections
 
 Stat changes can affect more than just a Pokémon's stats, such as Attack and Defense. They can also affect a Pokémon's evasiveness, accuracy and critial-hit ratio.
 
